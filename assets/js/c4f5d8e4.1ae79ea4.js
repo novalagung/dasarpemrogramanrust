@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdasarpemrogramanrust=self.webpackChunkdasarpemrogramanrust||[]).push([[4195],{2841:(r,a,e)=>{e.r(a),e.d(a,{default:()=>s});var t=e(7294),n=e(6775);function s(){return t.createElement(n.l_,{to:"/intro"})}}}]);
