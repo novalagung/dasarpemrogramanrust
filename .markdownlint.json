@@ -1,0 +1,16 @@
+{
+  "MD013": {
+    "line_length": 999
+  },
+  "MD033": {
+    "allowed_elements": [
+      "pre",
+      "a",
+      "br",
+      "sup",
+      "span"
+    ]
+  },
+  "MD034": false,
+  "MD038": false
+}
