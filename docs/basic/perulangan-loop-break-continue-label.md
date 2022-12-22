@@ -4,11 +4,11 @@ title: A.11. Perulangan → loop, break, continue, label
 sidebar_label: A.11. Perulangan → loop, break, continue, label
 ---
 
-Selain keyword `loop`, ada juga keyword `loop` yang fungsi dasarnya adalah sama, yaitu untuk perulangan.
+Selain keyword `while`, ada juga keyword `loop` yang fungsi dasarnya adalah sama, yaitu untuk perulangan.
 
 ## A.11.1. Keyword `loop`
 
-Notasi penulisan dan cara penggunaan `loop` ada sedikit beda dibanding `loop`. Keyword `loop` tidak membutuhkan argument. Blok kode loop akan terus dieksekusi selama program tidak di-stop.
+Notasi penulisan dan cara penggunaan `loop` ada sedikit beda dibanding `while`. Keyword `loop` tidak membutuhkan argument. Blok kode loop akan terus dieksekusi selama program tidak di-stop.
 
 Silakan coba praktekan kode berikut. Angka `i` akan ditampilkan setiap perulangan kemudian di-increment nilainya. Angka akan muncul terus sampai aplikasi di-stop.
 
