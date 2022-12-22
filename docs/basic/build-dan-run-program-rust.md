@@ -36,7 +36,7 @@ Hasilnya:
 
 ## A.2.2. Optimized build
 
-Catatan tambahan saja, command `cargo build` dan juga `cargo run` menghasilkan file binary yang *unoptimized* dan berisi beberapa informasi tambahan untuk proses debugging. Untuk distribution/production dianjurkan untuk generate *optimized* binary. Caranya dengan cukup menambahkan flag `--release` pada saat eksekusi command `cargo run`.
+Catatan tambahan saja, command `cargo build` dan juga `cargo run` menghasilkan file binary yang *unoptimized* dan berisi beberapa informasi tambahan untuk proses debugging. Untuk distribution/production dianjurkan untuk generate *optimized* binary. Caranya dengan cukup menambahkan flag `--release` pada saat eksekusi command `cargo build`.
 
 ```bash
 cargo build --release
