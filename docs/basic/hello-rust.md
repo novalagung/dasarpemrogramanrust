@@ -65,7 +65,7 @@ fn main() {
 
 ### ◉ Notasi pendefinisian fungsi
 
-Pembuatan fungsi di Rust menggunakan keyword fn dengan notasi penulisan sebagai berikut, contoh:
+Pembuatan fungsi di rust menggunakan keyword `fn` dengan notasi penulisan sebagai berikut, contoh:
 
 ```bash
 fn namaFungsi() {
