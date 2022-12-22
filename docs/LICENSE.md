@@ -11,7 +11,7 @@ Ebook Dasar Pemrograman Rust gratis untuk disebarluaskan secara bebas, dengan ca
 
 Dengan catatan:
 
-- Harus ada credit sumber aslinya, yaitu Dasar Pemrograman Golang atau novalagung
+- Harus ada credit sumber aslinya, yaitu Dasar Pemrograman Rust atau novalagung
 - Tidak mengubah lisensi aslinya, yaitu CC BY-SA 4.0
 - Tidak ditambahi restrictions baru
 - Lebih jelasnya silakan cek https://creativecommons.org/licenses/by-sa/4.0/.
