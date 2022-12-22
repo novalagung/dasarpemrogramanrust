@@ -65,7 +65,7 @@ fn main() {
 
 ### ◉ Notasi pendefinisian fungsi
 
-Pembuatan fungsi di rusat menggunakan keyword `fn` dengan notasi penulisan sebagai berikut, contoh:
+Pembuatan fungsi di rust menggunakan keyword `fn` dengan notasi penulisan sebagai berikut, contoh:
 
 ```bash
 fn namaFungsi() {
@@ -104,7 +104,7 @@ Agar pembaca tidak bertambah bingung, setidaknya untuk sekarang pada chapter awa
 println!("Hello, world!");
 ```
 
-Macro `println` digunakan digunakan untuk menampilkan string atau pesan ke console output (`stdout`) dan diikuti oleh baris baru (newline/enter). Agar lebih jelas jalankan kode berikut:
+Macro `println` digunakan untuk menampilkan string atau pesan ke console output (`stdout`) dan diikuti oleh baris baru (newline/enter). Agar lebih jelas jalankan kode berikut:
 
 ```rust title="src/main.rs"
 fn main() {

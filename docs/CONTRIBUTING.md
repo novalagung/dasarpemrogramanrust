@@ -17,4 +17,5 @@ E-book ini di-inisialisasi oleh Noval Agung Prayogo.
 Berikut merupakan hall of fame kontributor yang sudah berbaik hati menyisihkan waktunya untuk membantu pengembangan e-book ini.
 
 1. [I Putu Saputrayana](https://github.com/iyansr)
-1. ... anda :-)
+2. [Theis Andatu](https://github.com/antheiz)
+3. ... anda :-)
