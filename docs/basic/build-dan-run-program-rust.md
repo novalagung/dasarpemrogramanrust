@@ -67,7 +67,7 @@ Kemudian *compile* lalu jalankan file *executable*-nya, hasilnya adalah sama sep
     ./hello
     ```
 
-- MacOS, Linux, Unix, WSL
+- Windows
 
     ```bash
     rustc hello.rs
