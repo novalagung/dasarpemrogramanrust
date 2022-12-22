@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
-title: Lisensi dan Distribusi Konten
-sidebar_label: Lisensi dan Distribusi Konten
+title: Lisensi & Distribusi Konten
+sidebar_label: Lisensi & Distribusi Konten
 ---
 
 Ebook Dasar Pemrograman Rust gratis untuk disebarluaskan secara bebas, dengan catatan sesuai dengan aturan lisensi CC BY-SA 4.0 yang kurang lebih sebagai berikut:
