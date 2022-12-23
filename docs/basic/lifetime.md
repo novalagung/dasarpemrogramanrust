@@ -6,7 +6,7 @@ sidebar_label: A.42. Lifetime
 
 Pada chapter ini kita akan belajar tentang lifetime. Lifetime adalah yang digunakan oleh Rust compiler untuk memonitor umur dari references agar tetap dianggap valid.
 
-Normalnya kita tidak perlu berurusan dengan lifetime, karena Rust-lah yang mengelola lifetime sebuah reference. Namun diluar itu, pada beberapa case kita bisa me-manage lifetime data dengan memanfaatkan *annotation*.
+Normalnya kita tidak perlu berurusan dengan lifetime, karena Rust-lah yang mengelola lifetime sebuah reference. Namun di luar itu, pada beberapa case kita bisa me-manage lifetime data dengan memanfaatkan *annotation*.
 
 Ketika berurusan dengan data primitif maupun non-primitif tak perlu khawatir perihal urusan lifetime. Aspek lifetime hanya perlu diperhatikan sewaktu berurusan dengan data pointer/reference, apalagi kalau data tersebut keluar masuk block scope.
 
@@ -16,7 +16,7 @@ Ketika berurusan dengan data primitif maupun non-primitif tak perlu khawatir per
 
 Lifetime adalah yang digunakan oleh Rust compiler untuk memonitor umur dari references agar tetap valid. Lifetime menempel di variabel, lebih tepatnya di reference variabel.
 
-Rust menerapkan default lifetime dalam pengecekan reference. Beberapa aturan pada default lifetime sudah kita pelajari pada chapter sebelumnya, seperti variabel yang hanya akan valid didalam block dan invalid diluar block dan data yang akan di-dealokasi ketika sudah tidak ada reference-nya.
+Rust menerapkan default lifetime dalam pengecekan reference. Beberapa aturan pada default lifetime sudah kita pelajari pada chapter sebelumnya, seperti variabel yang hanya akan valid didalam block dan invalid di luar block dan data yang akan di-dealokasi ketika sudah tidak ada reference-nya.
 
 > Rust mengidentifikasi default lifetime menggunakan **lifetime elision**, yang juga akan dibahas pada chapter ini.
 
@@ -53,7 +53,7 @@ Setiap data memiliki default lifetime.
 - Variabel `r` memiliki lifetime yang pada contoh di atas diilustrasikan sebagai `'lf1`.
 - Variabel `x` memiliki lifetime yang pada contoh di atas diilustrasikan sebagai `'lf2`.
 - Lifetime `'lf2` milik variabel `x` menjadikan umur variabel tersebut valid mulai variabel tersebut dideklarasikan, hingga block expression selesai.
-- Lifetime `'lf2` sudah tidak valid diluar block expression. Inilah kenapa program di atas menjadi error.
+- Lifetime `'lf2` sudah tidak valid di luar block expression. Inilah kenapa program di atas menjadi error.
 - Lifetime `'lf1` milik variabel `r` menjadikan umur variabel tersebut valid mulai variabel tersebut dideklarasikan, hingga block fungsi `main` selesai.
 
 Default lifetime bisa di-override menggunakan lifetime yang kita definisikan sendiri.

@@ -27,7 +27,7 @@ println!("{} | {} | {}", numerik1, numerik2, numerik3);
 
 Dengan menggunakan teknik deklarasi *type inference*, maka default angka numerik tipe datanya adalah `i32`.
 
-Range value pada tipe data itu cukup penting untuk diperhatikan, jika ada sebuah variabel yang tipe datanya pasti dan diisi dengan nilai diluar kapasitas yang bisa ditampung, maka akan muncul error. Contoh, tipe data `i8`, jika diisi nilai `128` maka error.
+Range value pada tipe data itu cukup penting untuk diperhatikan, jika ada sebuah variabel yang tipe datanya pasti dan diisi dengan nilai di luar kapasitas yang bisa ditampung, maka akan muncul error. Contoh, tipe data `i8`, jika diisi nilai `128` maka error.
 
 ![data type error](img/tipe-data-primitive-scalar-1.png)
 
