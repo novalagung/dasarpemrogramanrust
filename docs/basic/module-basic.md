@@ -38,7 +38,7 @@ Ok, langsung saja, buat package/project baru dengan nama bebas. Di sini penulis 
 cargo new module_1
 ```
 
-Setelah itu siapkan 1 buah file bernama `my_io.rs`, letakan di dalam folder `src` (1 level dengan file `main.rs`). File ini difungsikan sebagai tempat definisi *module item* milik sebuah module bernama `my_io` (io disini kependekan dari *input output*).
+Setelah itu siapkan 1 buah file bernama `my_io.rs`, letakan di dalam folder `src` (1 level dengan file `main.rs`). File ini difungsikan sebagai tempat definisi *module item* milik sebuah module bernama `my_io` (io di sini kependekan dari *input output*).
 
 ```bash title="package source code structure"
 module_1

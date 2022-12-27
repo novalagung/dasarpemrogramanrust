@@ -17,7 +17,7 @@ Chapter ini hanya fokus pada string literal, dengan level pembahasan yang tidak 
 
 Rust adalah bahasa yang *statically typed*, tipe data harus diketahui saat kompilasi. Setiap pendefinisian variabel, entah itu dengan di-specify tipe datanya (contoh: `let x: i32 = 5`) atau menggunakan teknik *type inference* (contoh: `let x = 5`), tipe datanya akan diketahui di awal saat kompilasi program.
 
-Begitu juga pada tipe string. Sebagai contoh, statement `let y = "hello"`, variabel `y` disini memiliki tipe data, yaitu `&str`.
+Begitu juga pada tipe string. Sebagai contoh, statement `let y = "hello"`, variabel `y` di sini memiliki tipe data, yaitu `&str`.
 
 Apa itu tipe `&str`? Tipe `str` merupakan salah satu tipe primitif yang ada di Rust. Penulisan `&str` menandakan bahwa tipe tersebut adalah **pointer `str`**.
 

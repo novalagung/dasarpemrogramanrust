@@ -4,7 +4,7 @@ title: A.47. Trait → Function (Fn, FnMut, FnOnce)
 sidebar_label: A.47. Trait → Function (Fn, FnMut, FnOnce)
 ---
 
-Chapter ini merupakan topik lanjutan dari chapter sebelumnya, disini kita akan bahas beberapa jenis trait yang digunakan di closure.
+Chapter ini merupakan topik lanjutan dari chapter sebelumnya, di sini kita akan bahas beberapa jenis trait yang digunakan di closure.
 
 Rust memiliki 3 buah trait yang otomatis ter-implement pada closure, yaitu `Fn`, `FnMut`, dan `FnOnce`. Ketiga trait ini juga otomatis ter-implement pada fungsi yang didefinisikan menggunakan keyword `fn`.
 

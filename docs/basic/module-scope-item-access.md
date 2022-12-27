@@ -279,7 +279,7 @@ mod module_b {
             println!("call `module_b::submodule_b_two::my_func()`");
 
             // current module scope adalah module `submodule_b_two`.
-            // keyword `super` disini mengarah ke parent scope, yaitu `module`.
+            // keyword `super` di sini mengarah ke parent scope, yaitu `module`.
             //
             // statement `super::my_func()` berikut adalah
             // ekuivalen dengan `module_b::my_func()`
@@ -312,7 +312,7 @@ mod module_b {
         self::my_func();
 
         // current module scope adalah `module_b`.
-        // keyword `super` disini mengarah ke parent scope, yaitu root atau scope paling luar.
+        // keyword `super` di sini mengarah ke parent scope, yaitu root atau scope paling luar.
         //
         // statement `super::my_func()` berikut adalah
         // memanggil fungsi `my_func` yang ada di crate root,

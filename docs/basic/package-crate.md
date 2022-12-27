@@ -8,7 +8,7 @@ Chapter ini membahas mengenai konsep package dan path dalam Rust programming. Pe
 
 ## A.19.1. Rust Crate
 
-**Crate** adalah satu unit kompilasi di Rust. Eksekusi command `cargo run`, `cargo build`, atau `rustc` men-*trigger* proses kompilasi, dan unit (yang disini disebut dengan crate) akan di-compile.
+**Crate** adalah satu unit kompilasi di Rust. Eksekusi command `cargo run`, `cargo build`, atau `rustc` men-*trigger* proses kompilasi, dan unit (yang di sini disebut dengan crate) akan di-compile.
 
 Crate bisa berisi banyak *module*. Sebuah module definisinya bisa berada di banyak file. Agar lebih jelas silakan perhatikan contoh berikut:
 
@@ -81,7 +81,7 @@ Blok `package` berisi berisi 3 buah field:
 
 - `name` isinya adalah nama package, sesuai dengan argument command `cargo new <nama_package>`.
 - `version` default-nya selalu `0.1.0`, namun kita bisa ubah nilainya seiring berjalannya proses pengembangan aplikasi.
-- `edition` disini me-refer ke edisi rust yang dipakai. Di ebook ini, rust versi **1.65.0** digunakan, dan edisi untuk versi tersebut adalah `2021`.
+- `edition` di sini me-refer ke edisi rust yang dipakai. Di ebook ini, rust versi **1.65.0** digunakan, dan edisi untuk versi tersebut adalah `2021`.
 
 Blok `dependencies` default-nya berisi kosong. Jika kita menambahkan external dependencies atau crates, maka detailnya tercatat pada blok `dependencies` ini.
 
@@ -133,7 +133,7 @@ Jadi kurang lebih seperti itu cara menambahkan dependency di Rust. Seiring berja
 
 Ok, sekarang kita lanjutkan praktek pembuatan program sederhana untuk menampilkan angka random.
 
-Angka random disini akan di-generate menggunakan fungsi yang ada dalam dependency `rand` yang sudah ditambahkan ke package.
+Angka random di sini akan di-generate menggunakan fungsi yang ada dalam dependency `rand` yang sudah ditambahkan ke package.
 
 Silakan tulis kode berikut ke file `src/main.rs`.
 

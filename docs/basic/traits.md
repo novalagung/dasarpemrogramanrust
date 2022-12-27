@@ -375,7 +375,7 @@ Tambahkan tanda `()` sebelum `impl NamaTrait`, lalu ganti `NamaTrait` dengan tra
 
 Penerapan trait sebagai parameter fungsi juga bisa dituliskan dalam notasi yang memanfaatkan generic. Teknik penulisan ini disebut dengan *trait bound syntax*.
 
-Contohnya bisa dilihat pada kode berikut. Ada generic bernama `T` yang merepresentasikan trait `Area`, kemudian pada definisi parameter ke-2 fungsi (yaitu parameter `item`) tipenya menggunakan `&T`. Tipe `&T` disini adalah ekuivalen dengan `&impl Area`.
+Contohnya bisa dilihat pada kode berikut. Ada generic bernama `T` yang merepresentasikan trait `Area`, kemudian pada definisi parameter ke-2 fungsi (yaitu parameter `item`) tipenya menggunakan `&T`. Tipe `&T` di sini adalah ekuivalen dengan `&impl Area`.
 
 ```rust
 fn calculate_and_print_result2<T: Area>(name: String, item: &T) {

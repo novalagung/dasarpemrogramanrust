@@ -199,7 +199,7 @@ Kedua poin tersebut merupakan syarat untuk penerapan *return value* tanpa keywor
 
 ### ◉ Statemen sebagai *return value* tanpa keyword `return`
 
-Cara selanjutnya yang akan kita bahas ini sebenarnya sama seperti sebelumnya, hanya saja bedanya disini tidak menggunakan nama variabel sebagai nilai balik, melainkan langsung statement, yang hasil eksekusi statement tersebut dijadikan nilai balik fungsi.
+Cara selanjutnya yang akan kita bahas ini sebenarnya sama seperti sebelumnya, hanya saja bedanya di sini tidak menggunakan nama variabel sebagai nilai balik, melainkan langsung statement, yang hasil eksekusi statement tersebut dijadikan nilai balik fungsi.
 
 Langsung saja kita praktekan. Siapkan fungsi `calculate_box_volume3` berikut:
 
@@ -232,7 +232,7 @@ Bisa dilihat hasilnya sama seperti pada program sebelumnya.
 
 Bagian ini adalah penjelasan tambahan dari kode program yang baru saja dipraktekan.
 
-Macro `format` digunakan untuk *formatting* sebuah string. *Formatting* disini maksudnya adalah pembuatan string dengan menggunakan teknik penyusunan isi string dalam format tertentu, mirip seperti yang dilakukan menggunakan macro `print` atau `println`, bedanya hanya pada macro `format` hasilnya bukan sebuah output ke console output, melainkan sebagai nilai balik.
+Macro `format` digunakan untuk *formatting* sebuah string. *Formatting* di sini maksudnya adalah pembuatan string dengan menggunakan teknik penyusunan isi string dalam format tertentu, mirip seperti yang dilakukan menggunakan macro `print` atau `println`, bedanya hanya pada macro `format` hasilnya bukan sebuah output ke console output, melainkan sebagai nilai balik.
 
 ```rust
 // 2 bari statements berikut ...
