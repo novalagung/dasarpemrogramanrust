@@ -356,7 +356,7 @@ let square_one = two_dimensional::Square{ length: 5 };
 calculate_and_print_result("square".to_string(), &square_one);
 ```
 
-> `&impl Area` ini tipe data pointer ya, tipe non-pointer-nya adalah `impl Area`. Disini digunakan tipe data pointer untuk antisipasi *move semantics* pada tipe data custom type (borrowing).
+> `&impl Area` ini tipe data pointer ya, tipe non-pointer-nya adalah `impl Area`. Di sini digunakan tipe data pointer untuk antisipasi *move semantics* pada tipe data custom type (borrowing).
 
 Dimisalkan, fungsi tersebut parameter `item`-nya bisa menampung beberapa jenis traits, kira-kira apakah bisa dibuat seperti itu? Misalnya ada trait lain bernama `Circumference`, dan parameter `item` milik fungsi `calculate_and_print_result` harus bisa menampung data baik dari tipe yang implement trait `Area` ataupun trait `Circumference`.
 

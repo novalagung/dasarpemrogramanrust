@@ -12,7 +12,7 @@ Setiap bahasa pemrograman memiliki caranya sendiri dalam hal pengelolahan strukt
 
 Di Rust, module memiliki hirarki (biasa disebut dengan *module tree*) yang *root*/akarnya adalah file entrypoint crate, yaitu `main.rs` untuk *binary crate* dan `lib.rs` untuk *library crate*. Kedua file ini biasa disebut dengan *crate root file*.
 
-> Disini pembahasan akan fokus pada penerapan module dalam *binary crate*. Kita belum masuk ke pembahasan tentang *library crate*.
+> Di sini pembahasan akan fokus pada penerapan module dalam *binary crate*. Kita belum masuk ke pembahasan tentang *library crate*.
 
 Rust memiliki 2 jenis modul, yaitu *normal module* dan *inline module*. Pembahasan dimulai dengan normal module terlebih dahulu.
 
@@ -32,7 +32,7 @@ Pendefinisian nama module sendiri berada pada file entrypoint *crate* yaitu `mai
 
 Mari buat program sederhana, yang isinya mencakup pembahasan tentang module. Pada program kecil ini, inputan user ditampung ke sebuah variabel, kemudian ditampilkan ke layar. Proses pembacaan inputan user akan di-split sebagai module.
 
-Ok, langsung saja, buat package/project baru dengan nama bebas. Disini penulis menggunakan nama package `module_1`.
+Ok, langsung saja, buat package/project baru dengan nama bebas. Di sini penulis menggunakan nama package `module_1`.
 
 ```rust
 cargo new module_1

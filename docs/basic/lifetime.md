@@ -190,7 +190,7 @@ Lifetime dituliskan dengan notasi `'nama_lifetime`. Dengan notasi tersebut, kita
 
 > Lifetime dan block label memiliki bentuk literal yang sama, keduanya diawali tanda kutip `'`. Yang membedakan hanya pada tempat dimana syntax tersebut ditulis.
 
-Kegunaan dari lifetime annotation adalah untuk menginformasikan compiler agar reference tidak langsung didealokasikan setelah eksekusi block selesai. Agar lebih jelas mari kita langsung terapkan saja pada fungsi `get_number` yang sudah ditulis. Silakan tambahkan lifetime dengan nama bebas. Disini penulis gunakan `'my_lifetime`.nnnn
+Kegunaan dari lifetime annotation adalah untuk menginformasikan compiler agar reference tidak langsung didealokasikan setelah eksekusi block selesai. Agar lebih jelas mari kita langsung terapkan saja pada fungsi `get_number` yang sudah ditulis. Silakan tambahkan lifetime dengan nama bebas. Di sini penulis gunakan `'my_lifetime`.nnnn
 
 ```rust
 fn get_number() -> &'my_lifetime i32 {

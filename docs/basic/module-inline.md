@@ -201,7 +201,7 @@ Module item dalam inline module masih sama seperti pada module normal, yaitu ada
 
 Dalam *real project* hampir tidak mungkin semua kode ditulis di file `main.rs`. Pastinya kode akan di-split menjadi banyak module sesuai kebutuhan.
 
-Kode sebelumya, akan kita refactor. Module `utilities` yang berada di `main.rs` perlu dipindah ke file baru yang sesuai dengan aturan penulisan module, yaitu `nama_module.rs` atau `nama_module/mod.rs`. Disini penulis memilih `nama_module.rs`, jadi silakan buat file bernama `utilities.rs`, lalu pindah isi itemnya kesana (statement definisi inline module `utilities` tidak perlu ikut dipindah, hanya isinya saja, seperti normalnya definisi module).
+Kode sebelumya, akan kita refactor. Module `utilities` yang berada di `main.rs` perlu dipindah ke file baru yang sesuai dengan aturan penulisan module, yaitu `nama_module.rs` atau `nama_module/mod.rs`. Di sini penulis memilih `nama_module.rs`, jadi silakan buat file bernama `utilities.rs`, lalu pindah isi itemnya kesana (statement definisi inline module `utilities` tidak perlu ikut dipindah, hanya isinya saja, seperti normalnya definisi module).
 
 O iya, jangan lupa untuk menambahkan statement `mod utilities` pada `main.rs`, agar module terdaftar dan bisa digunakan.
 
