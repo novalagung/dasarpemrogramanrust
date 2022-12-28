@@ -84,7 +84,7 @@ Data untuk tipe primitif (seperti `i32`, `bool`, dll) disimpan di stack.
 
 ### ◉ Contoh ke-1
 
-Selanjutnya kita akan pelajari secara garis besar tentang bagaimana sebuah data dialokasikan di stack. Silakan mulai dengan mempelajari kode sederhana berikut (tanpa perlu dipraktekan), kemudian ikuti pembahasan setelahnya.
+Selanjutnya kita akan pelajari secara garis besar tentang bagaimana sebuah data dialokasikan di stack. Silakan mulai dengan mempelajari kode sederhana berikut (tanpa perlu dipraktikkan), kemudian ikuti pembahasan setelahnya.
 
 ```rust
 fn main() {

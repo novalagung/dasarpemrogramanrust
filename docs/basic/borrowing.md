@@ -148,7 +148,7 @@ Jadi sampai sini cukup jelas ya. Sebuah data dalam waktu yang sama hanya diperbo
 
 Kita telah belajar tentang [valid/invalid variable dan juga variable scope](/basic/ownership#a333-variable-scope) pada chapter sebelumnya. Sekarang kita akan coba gabungkan dua aspek tersebut dengan borrowing.
 
-Silakan praktekan kode berikut:
+Silakan praktikkan kode berikut:
 
 ```rust
 fn main() {
@@ -193,7 +193,7 @@ Kita sudah cukup paham kapan waktu terjadinya alokasi alamat memory dan juga kap
 
 Scope di sini adalah variable scope, yang maksudnya adalah block scope, bisa berupa block expression, fungsi, block seleksi kondisi `if`, dan juga jenis block lainnya.
 
-Ok, sekarang mari kita praktekan beberapa jenis block untuk isolasi operasi borrowing. Dengan ini maka klausul **dalam satu waktu** akan terpenuhi.
+Ok, sekarang mari kita praktikkan beberapa jenis block untuk isolasi operasi borrowing. Dengan ini maka klausul **dalam satu waktu** akan terpenuhi.
 
 Silakan modifikasi program sebelumnya menjadi seperti berikut:
 

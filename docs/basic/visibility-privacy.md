@@ -43,7 +43,7 @@ Jika item `some_black_magic` disitu adalah publik, maka idealnya pengaksesan men
 
 Intinya, **sebuah item bisa diakses jika item tersebut adalah publik, dan parent item tersebut juga publik. Sedangkan default visibility untuk hampir semua item adalah private.**
 
-Ok, sekarang mari lanjut ke praktik menggunakan contoh dengan pembahasan yang lebih mendetail. Silakan perhatikan dan praktekan kode berikut:
+Ok, sekarang mari lanjut ke praktik menggunakan contoh dengan pembahasan yang lebih mendetail. Silakan perhatikan dan praktikkan kode berikut:
 
 ```bash title="package source code structure"
 my_package
@@ -194,7 +194,7 @@ Keyword `pub` digunakan untuk mengubah visibility item menjadi publik. Keyword i
 
 ### ◉ Keyword `pub`
 
-Penulis rasa untuk penerapan keyword `pub` ini sudah sangat jelas, kita beberapa kali mempraktekannya.
+Penulis rasa untuk penerapan keyword `pub` ini sudah sangat jelas, kita beberapa kali mempraktikkannya.
 
 Dengan keyword `pub`, sebuah item visibility-nya menjadi publik.
 

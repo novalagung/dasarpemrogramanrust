@@ -353,7 +353,7 @@ run_x_times(4, |i: i32| println!("hello rust {i}"));
 
 ### ◉ Praktek ke-2
 
-Ok, sekarang mari kita coba praktekan contoh yang lebih kompleks.
+Ok, sekarang mari kita coba praktikkan contoh yang lebih kompleks.
 
 Pada praktik ini kita akan buat sebuah fungsi yang tugasnya melakukan pencarian indeks slice dengan kondisi pencarian didapat dari eksekusi closure.
 

@@ -400,7 +400,7 @@ println!("{:?} {:?}", some_data.0, some_data.1);
 
 ## A.23.8. Struct property visibility
 
-Sekarang mari kita coba praktekan satu program lagi, namun kali ini sedikit berbeda, struct kita definisikan sebagai module item.
+Sekarang mari kita coba praktikkan satu program lagi, namun kali ini sedikit berbeda, struct kita definisikan sebagai module item.
 
 Silakan siapkan program dengan struktur seperti berikut:
 

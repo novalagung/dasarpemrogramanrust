@@ -172,7 +172,7 @@ Tipe data `Self` (perhatikan huruf `S`-nya adalah kapital) merupakan representas
 
 > Tipe data `Self` hanya bisa digunakan dalam blok kode `impl`
 
-Sebagai contoh, pada kode yang sudah dipraktekan, keyword `impl` diterapkan dalam pembuatan *associated items* untuk struct `LegoSet`. Dalam blok kode tersebut, tipe data `LegoSet` bisa diganti dengan `Self`.
+Sebagai contoh, pada kode yang sudah dipraktikkan, keyword `impl` diterapkan dalam pembuatan *associated items* untuk struct `LegoSet`. Dalam blok kode tersebut, tipe data `LegoSet` bisa diganti dengan `Self`.
 
 Silakan lihat contoh dibawah ini, ada 4 buah cara deklarasi fungsi `new` yang kesemuanya adalah ekuivalen.
 
@@ -212,7 +212,7 @@ impl LegoSet {
 
 Struct adalah salah satu dari beberapa item yang ada di Rust. Struct bisa saja berada dalam sebuah module, baik inline maupun *normal* module.
 
-Sekarang, kode yang sudah dipraktekan di atas akan kita refactor. Struct `LegoSet` beserta associated items-nya dipindah ke module file bernama `lego`, dengan itu maka pemanggilan struct tersebut harus menggunakan path `lego::LegoSet`.
+Sekarang, kode yang sudah dipraktikkan di atas akan kita refactor. Struct `LegoSet` beserta associated items-nya dipindah ke module file bernama `lego`, dengan itu maka pemanggilan struct tersebut harus menggunakan path `lego::LegoSet`.
 
 Kurang lebih struktur package mendi seperti ini:
 

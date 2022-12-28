@@ -36,7 +36,7 @@ Sebelum kita masuk ke pembahasan yang lebih detail mengenai ownership, mari pela
 
 Variable scope maksudnya adalah di block scope mana suatu variabel dideklarasikan, dan dalam block scope tersebut variabel menjadi valid (bisa digunakan). Di luar scope-nya variabel menjadi tidak valid, tidak bisa digunakan.
 
-Agar lebih jelas, silakan perhatikan kode berikut, tidak perlu dipraktekan.
+Agar lebih jelas, silakan perhatikan kode berikut, tidak perlu dipraktikkan.
 
 ```rust
 fn do_something() {
@@ -126,7 +126,7 @@ Ok, sampai sini cukup jelas. Tapi kenapa bisa error? Error muncul karena variabe
 
 Intinya, variabel yang mengadopsi *move semantics*, setiap kali ada operasi assignment maka owner akan berpindah ke variabel baru.
 
-Jika perlu, silakan coba praktekan dengan tipe data non-primitif lainnya, seperti struct atau lainnya. Dengan pseudocode yang sama seperti contoh di atas, hasilnya adalah sama, yaitu error.
+Jika perlu, silakan coba praktikkan dengan tipe data non-primitif lainnya, seperti struct atau lainnya. Dengan pseudocode yang sama seperti contoh di atas, hasilnya adalah sama, yaitu error.
 
 ```rust
 #[derive(Debug)]

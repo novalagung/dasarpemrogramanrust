@@ -212,7 +212,7 @@ Hingga praktik ke-2 ini, kita telah belajar penerapan module dengan mengaplikasi
 
 ### ◉ Konversi string ke numerik
 
-Rust mengenal beberapa jenis konversi antar tipe data. Teknik konversi yang kita praktekan pada chapter ini menggunakan method `.parse()`, cara ini bisa dilakukan untuk konversi tipe data dari custom types ke primitive. Contohnya seperti di atas, dari `String` ke `i32`.
+Rust mengenal beberapa jenis konversi antar tipe data. Teknik konversi yang kita praktikkan pada chapter ini menggunakan method `.parse()`, cara ini bisa dilakukan untuk konversi tipe data dari custom types ke primitive. Contohnya seperti di atas, dari `String` ke `i32`.
 
 Penggunaannya cukup mudah, akses saja method `.parse()` kemudian sisipkan tipe data sebagai parameter generic. Lalu chain dengan method `unwrap` (yang method tersebut merupakan item milik tipe data *generic result type* atau `Result<T, E>`).
 
@@ -344,7 +344,7 @@ conversion_utility(message);
 
 Selain menggunakan dua teknik definisi module item di atas yang fokusnya ada pada penamaan file, ada juga cara lain pendefinisian module item, yaitu dengan memanfaatkan `path` attribute.
 
-Mari kita praktekan, silakan ubah struktur package yang sudah dibuat dari ...
+Mari kita praktikkan, silakan ubah struktur package yang sudah dibuat dari ...
 
 ```bash title="package source code structure"
 my_package

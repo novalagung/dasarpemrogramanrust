@@ -34,7 +34,7 @@ fn main() {
 
 ### ◉ Import items dari module yang sama
 
-Pada contoh selanjutnya ini, kita akan coba praktekan penerapan fungsi `std::env::args` untuk mengambil *argument* saat eksekusi program, kemudian menampilkannya ke layar.
+Pada contoh selanjutnya ini, kita akan coba praktikkan penerapan fungsi `std::env::args` untuk mengambil *argument* saat eksekusi program, kemudian menampilkannya ke layar.
 
 Ok, berarti akan ada 2 path yang akan di-import:
 

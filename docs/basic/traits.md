@@ -219,7 +219,7 @@ Masih sama dengan metode sebelumnya, pembelajaran dilakukan dengan praktik. Kita
 3. Buat trait bernama `Area` dengan isi satu buah method untuk menghitung luas bangun datar (`calculate`).
 4. Implementasikan trait `Area` ke dua struct tersebut.
 
-Ok, mari mulai praktekan skenario di atas. Pertama siapkan project dengan struktur berikut:
+Ok, mari mulai praktikkan skenario di atas. Pertama siapkan project dengan struktur berikut:
 
 ```bash title="package source code structure"
 my_package

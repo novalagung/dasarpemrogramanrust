@@ -166,7 +166,7 @@ Oke, Penulis rasa sudah cukup jelas perihal bagaimana cara menggunakan path untu
 
 Ada alternatif cara lain untuk memperpendek penulisan dan pengaksesan path, yaitu dengan menggunakan keyword `use`.
 
-> Penggunaan `use` juga sempat dipraktekan pada chapter sebelumnya, yaitu [Perulangan → while](/basic/perulangan-while).
+> Penggunaan `use` juga sempat dipraktikkan pada chapter sebelumnya, yaitu [Perulangan → while](/basic/perulangan-while).
 
 Cara penerapannya bisa dilihat pada kode berikut:
 

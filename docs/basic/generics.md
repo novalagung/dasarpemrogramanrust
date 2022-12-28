@@ -63,7 +63,7 @@ Tipe `R` digunakan sebagai tipe parameter `arg1` dan tipe `T` pada parameter `ar
 
 ## A.37.2. Mengasosiasikan traits ke parameter generic
 
-Fungsi `do_something` yang telah dipraktekan, susah untuk diisi dengan apapun. Memang parameter `arg1` tipe-nya adalah `i32`, dan harusnya mudah untuk bermain-main dengan parameter tersebut. Yang agak repot adalah parameter ke-2, yaitu `arg2` yang bertipe `T`.
+Fungsi `do_something` yang telah dipraktikkan, susah untuk diisi dengan apapun. Memang parameter `arg1` tipe-nya adalah `i32`, dan harusnya mudah untuk bermain-main dengan parameter tersebut. Yang agak repot adalah parameter ke-2, yaitu `arg2` yang bertipe `T`.
 
 ```rust
 fn do_something<T>(arg1: i32, arg2: T) {
@@ -266,7 +266,7 @@ impl<T> Square<T> {
 >
 > Jika tidak sama akan muncul error.
 
-Ok, sekarang mari kita praktekan. Struct `Point` yang sudah dibuat, kita siapkan method-nya. Ada 3 buah method yang akan dibuat dan kesemuanya adalah method *getter* untuk masing-masing property struct (yaitu `x`, `y`, dan `z`).
+Ok, sekarang mari kita praktikkan. Struct `Point` yang sudah dibuat, kita siapkan method-nya. Ada 3 buah method yang akan dibuat dan kesemuanya adalah method *getter* untuk masing-masing property struct (yaitu `x`, `y`, dan `z`).
 
 ```rust
 struct Point<T, U> {

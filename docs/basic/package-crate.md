@@ -34,7 +34,7 @@ Library crate berbeda dengan binary crate. Library crate tidak di-compile ke ben
 
 > Library crate di-import/digunakan dalam binary crate. Dalam proses kompilasinya, yang di-compile adalah binary crate. Library crate juga akan ikut dalam kompilasi tersebut.
 
-Sebagai contoh item `Duration` (yang sudah dipraktekan pada chapter [Perulangan → while](/basic/perulangan-while)) dan `stdin` (pada chapter [Module System → Path & Item](/basic/path-item)) adalah dua buah item milik crate *Rust Standard Library* atau `std`. Crate `std` ini akan sangat sering kita gunakan dalam package/project, isinya banyak sekali functionality untuk keperluan standar dalam Rust programming.
+Sebagai contoh item `Duration` (yang sudah dipraktikkan pada chapter [Perulangan → while](/basic/perulangan-while)) dan `stdin` (pada chapter [Module System → Path & Item](/basic/path-item)) adalah dua buah item milik crate *Rust Standard Library* atau `std`. Crate `std` ini akan sangat sering kita gunakan dalam package/project, isinya banyak sekali functionality untuk keperluan standar dalam Rust programming.
 
 > Di komunitas Rust, ketika ada kata *library* atau *crate* maka yang dimaksud biasanya adalah *library crate*
 

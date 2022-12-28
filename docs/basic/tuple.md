@@ -62,7 +62,7 @@ Ada beberapa cara yang bisa digunakan dalam deklarasi tuple.
 
 ### ◉ Type inference
 
-Cara pertama menggunakan teknik *type inference* seperti yang sudah dipraktekan pada contoh pertama.
+Cara pertama menggunakan teknik *type inference* seperti yang sudah dipraktikkan pada contoh pertama.
 
 ```rust
 let tuple_a = ("jason", 27, ["racing", "working out"], true);
