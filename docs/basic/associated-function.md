@@ -69,7 +69,7 @@ impl LegoSet {
 }
 ```
 
-Notasi penulisan keyword `impl` bisa dilihat pada contoh diatas, cukup tulis saja keyword tersebut diikuti nama struct yang diinginkan, kemudian diikuti dengan blok kode berisi definisi fungsi.
+Notasi penulisan keyword `impl` bisa dilihat pada contoh di atas, cukup tulis saja keyword tersebut diikuti nama struct yang diinginkan, kemudian diikuti dengan blok kode berisi definisi fungsi.
 
 Fungsi dalam blok kode `impl` adalah yang disebut dengan *associated function*. Pada contoh di atas, fungsi `new` memiliki asosiasi dengan struct `LegoSet`.
 

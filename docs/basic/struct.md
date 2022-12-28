@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-Jalankan program diatas, lihat hasilnya.
+Jalankan program di atas, lihat hasilnya.
 
 ![Struct](img/struct-1.png)
 
@@ -353,7 +353,7 @@ Teknik pembuatan struct ini berguna ketika ada case dimana ada kebutuhan untuk m
 
 Lalu jika ingin melihat nilai property struct bagaimana solusinya? Bisa dengan menampilkan nilai property satu per satu, tapi pastinya butuh effort.
 
-Cara yang lebih elegan adalah dengan menggunakan atribute `#[derive(Debug)]`. Penerapannya cukup dengan menuliskan atribut tersebut tepat diatas deklarasi struct. Contoh:
+Cara yang lebih elegan adalah dengan menggunakan atribute `#[derive(Debug)]`. Penerapannya cukup dengan menuliskan atribut tersebut tepat di atas deklarasi struct. Contoh:
 
 ```rust
 #[derive(Debug)]

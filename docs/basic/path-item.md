@@ -145,7 +145,7 @@ Eksekusi dari statement `stdin_reader.read_line(&mut message)` adalah blocking, 
 
 ### ◉ Pengecekan error `stdin_reader`
 
-Blok statement `if` pada contoh diatas bertugas melakukan pengecekan error. Jika ada error, maka `reader_res.is_err()` bernilai `true`, dan pesan error-nya dimunculkan.
+Blok statement `if` pada contoh di atas bertugas melakukan pengecekan error. Jika ada error, maka `reader_res.is_err()` bernilai `true`, dan pesan error-nya dimunculkan.
 
 ```rust
 if reader_res.is_err() {

@@ -33,7 +33,7 @@ fn main() {
 }
 ```
 
-Kode di atas kalau di jalankan hasilnya error, karena `x` di-dealokasi ketika block expression selesai dieksekusi, meskipun data tersebut dipinjamkan pada `r` yang scope-nya berada diatasnya.
+Kode di atas kalau di jalankan hasilnya error, karena `x` di-dealokasi ketika block expression selesai dieksekusi, meskipun data tersebut dipinjamkan pada `r` yang scope-nya berada di atasnya.
 
 Kalau diilustrasikan, lifetime variabel `r` dan `x` kurang lebih seperti ini:
 

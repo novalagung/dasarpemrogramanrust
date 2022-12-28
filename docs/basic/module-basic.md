@@ -64,7 +64,7 @@ pub fn read_entry() -> String {
 }
 ```
 
-Ok, kita telah menyiapkan satu item milik module `my_io` yaitu sebuah fungsi bernama `read_entry`. 1 hal yang sedikit berbeda pada definisi fungsi diatas adalah penambahan keyword `pub` yang ditulis sebagai prefix definisi fungsi.
+Ok, kita telah menyiapkan satu item milik module `my_io` yaitu sebuah fungsi bernama `read_entry`. 1 hal yang sedikit berbeda pada definisi fungsi di atas adalah penambahan keyword `pub` yang ditulis sebagai prefix definisi fungsi.
 
 Keyword `pub` digunakan untuk menjadikan suatu item menjadi **public**, agar bisa diakses dari luar module.
 
@@ -389,7 +389,7 @@ pub mod conversion_utility;
 
 Lalu run, dan program akan jalan normal tanpa error.
 
-Statement `#[path = "conversion.rs"]` diatas merupakan contoh penerapan dari Rust path attributes. Dengannya kita bisa menempatkan isi sebuah module pada file yang namanya bebas (pada contoh di atas, file bernama `conversion.rs`).
+Statement `#[path = "conversion.rs"]` di atas merupakan contoh penerapan dari Rust path attributes. Dengannya kita bisa menempatkan isi sebuah module pada file yang namanya bebas (pada contoh di atas, file bernama `conversion.rs`).
 
 ### ◉ Summary praktek #4
 
