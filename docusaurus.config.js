@@ -77,7 +77,6 @@ const config = {
           alt: 'Ebook Dasar Pemrograman Rust - Belajar Rust Mulai Dari 0',
           src: 'https://dasarpemrogramanrust.novalagung.com/img/logo_small.png?v=1',
         },
-        items: [ ],
       },
       footer: {
         style: 'dark',
