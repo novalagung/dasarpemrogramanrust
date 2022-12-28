@@ -23,7 +23,7 @@ Vector bisa bertambah jumlah isinya selama size dibawah kapasitas yang sudah dia
 > - Lebih jelasnya mengenai generic dibahas pada chapter [Generics](/basic/generics)
 > - Lebih jelasnya mengenai heap dibahas pada chapter [Basic Memory Management](/basic/basic-memory-management)
 
-Langsung saja kita praktekan.
+Langsung saja kita praktikkan.
 
 ### ◉ Deklarasi vektor, size, dan capacity
 
@@ -350,7 +350,7 @@ Cara membuat vector `VecDeque<T>` bisa menggunakan `VecDeque::from` dengan param
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/vector">

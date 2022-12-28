@@ -115,7 +115,7 @@ Penulis anjurkan untuk mempelajari chapter-chapter berikutnya secara urut terleb
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/tipe_data_string_literal">

@@ -20,7 +20,7 @@ Array (atau *fixed size array*) adalah kumpulan data dengan tipe sejenis, disimp
 
 Ada beberapa notasi deklarasi array yang bisa dipakai, kesemuanya akan dibahas pada chapter ini.
 
-Ok, Sekarang kita mulai praktek dengan bermain-main terlebih dahulu dengan tipe data array ini. Silakan pelajari dan praktekan contoh berikut, sebuah program yang isinya menampilkan data array.
+Ok, Sekarang kita mulai praktik dengan bermain-main terlebih dahulu dengan tipe data array ini. Silakan pelajari dan praktikkan contoh berikut, sebuah program yang isinya menampilkan data array.
 
 ```rust
 let mut numbers = [24, 12, 32, 7];
@@ -94,7 +94,7 @@ Array hanya bisa diakses elemennya sesuai size saat deklarasi. Sebagai contoh, v
 
 Array bisa diubah isi elemen-nya jika variabel tersebut adalah `mutable`. Pada contoh yang sudah dibuat, variabel `numbers` dideklarasikan mutable dengan tipe data elemen adalah numerik. Dengan ini kita bisa merubah value elemen array dengan value baru bertipe data sama.
 
-Bisa dilihat pada contoh yang sudah dipraktekan, elemen indeks ke-1 diubah nilainya menjadi `16`, dan elemen indeks ke-3 value-nya menjadi `8`
+Bisa dilihat pada contoh yang sudah dipraktikkan, elemen indeks ke-1 diubah nilainya menjadi `16`, dan elemen indeks ke-3 value-nya menjadi `8`
 
 ```rust
 numbers[1] = 16;
@@ -126,7 +126,7 @@ println!("array {numbers:?}");
 
 ## A.13.2. Notasi penulisan tipe data array
 
-Pada contoh program yang sudah dipraktekan, variabel `number` tipe datanya adalah array numerik, terlihat saat deklarasinya *predefined value* diisi dengan literal elemen array bertipe `i32`.
+Pada contoh program yang sudah dipraktikkan, variabel `number` tipe datanya adalah array numerik, terlihat saat deklarasinya *predefined value* diisi dengan literal elemen array bertipe `i32`.
 
 Tipe data `i32` di sini adalah milik elemen array, sedang array `numbers` itu sendiri tipe datanya adalah `[i32; 4]`, yang artinya adalah **sebuah array dengan elemen bertipe `i32` dengan size `4`**.
 
@@ -259,9 +259,9 @@ Iterasi array menggunakan `while` dan `loop` umumnya kurang praktis jika dibandi
 
 ## A.13.7. Iterasi array menggunakan `for in` dan *tuple*
 
-Mengiterasi value sekaligus *counter* perulangan sebenarnya bisa juga dilakukan menggunakan `for in`, contohnya seperti yang sudah kita praktekan di atas yaitu `for i in 0..names.len()`.
+Mengiterasi value sekaligus *counter* perulangan sebenarnya bisa juga dilakukan menggunakan `for in`, contohnya seperti yang sudah kita praktikkan di atas yaitu `for i in 0..names.len()`.
 
-Ada juga bentuk lain pemanfaatan `for in` untuk mengiterasi sebuah array. Caranya dengan menggunakan teknik tuple untuk menampung data *counter* sekaligus value tiap elemen. Lebih jelasnya silakan lihat dan praktekan contoh berikut:
+Ada juga bentuk lain pemanfaatan `for in` untuk mengiterasi sebuah array. Caranya dengan menggunakan teknik tuple untuk menampung data *counter* sekaligus value tiap elemen. Lebih jelasnya silakan lihat dan praktikkan contoh berikut:
 
 ```rust
 let names: [&str; 4] = ["jason", "grayon", "drake", "damian"];
@@ -315,7 +315,7 @@ Variabel `data_arr` pada contoh di atas bertipe data`[[&str; 2] 3]`, yang artiny
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/array">

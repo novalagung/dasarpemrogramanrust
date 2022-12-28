@@ -283,7 +283,7 @@ Sedangkan fungsi `do_something` sendiri juga menampilkan pesan string lainnya, y
 
 ### ◉ Praktek ke-2
 
-Pada contoh di atas, closure yang dikembalikan fungsi memiliki skema sangat sederhana, tanpa parameter dan argument. Mari coba praktek dengan contoh yang lebih kompleks.
+Pada contoh di atas, closure yang dikembalikan fungsi memiliki skema sangat sederhana, tanpa parameter dan argument. Mari coba praktik dengan contoh yang lebih kompleks.
 
 ```rust
 fn do_something_v2() -> impl Fn(i32, String) -> String {
@@ -353,9 +353,9 @@ run_x_times(4, |i: i32| println!("hello rust {i}"));
 
 ### ◉ Praktek ke-2
 
-Ok, sekarang mari kita coba praktekan contoh yang lebih kompleks.
+Ok, sekarang mari kita coba praktikkan contoh yang lebih kompleks.
 
-Pada praktek ini kita akan buat sebuah fungsi yang tugasnya melakukan pencarian indeks slice dengan kondisi pencarian didapat dari eksekusi closure.
+Pada praktik ini kita akan buat sebuah fungsi yang tugasnya melakukan pencarian indeks slice dengan kondisi pencarian didapat dari eksekusi closure.
 
 ```rust
 fn find_index<T, F>(data: &[T], cond_fn: F) -> i32
@@ -410,7 +410,7 @@ Bisa dilihat program berjalan sesuai harapan.
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/closures">

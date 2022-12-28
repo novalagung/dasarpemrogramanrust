@@ -41,7 +41,7 @@ Aturan definisi submodule dan item pada inline module masih sama seperti pada *n
 
 ## A.21.2. Praktek inline module
 
-Mari lanjut proses pembalajaran dengan praktek. Kita akan buat program sederhana yang didalamnya ada proses generate random string, yang kemudian di-hash.
+Mari lanjut proses pembalajaran dengan praktik. Kita akan buat program sederhana yang didalamnya ada proses generate random string, yang kemudian di-hash.
 
 Silakan buat package baru menggunakan `cargo new`. Penulis di sini memilih nama `inline_module_1` sebagai nama package. Setelah itu, siapkan fungsi main dan juga module bernama `utilities` dengan penulisan kode menerapkan inline module. O iya, tulis keduanya (`module utilities` dan fungsi `main`) dalam satu file yang sama yaitu `main.rs`.
 
@@ -152,7 +152,7 @@ mod utilities {
 }
 ```
 
-Dalam enkripsi menggunakan bcrypt ada dua hal yang penting diketahui, yang pertama adalah data yang akan di-hash (pada contoh di atas adalah `text`), dan *cost* atau biaya enkripsi dalam bentuk numerik. Pada praktek ini, `bcrypt::DEFAULT_COST` digunakan sebagai cost enkripsi.
+Dalam enkripsi menggunakan bcrypt ada dua hal yang penting diketahui, yang pertama adalah data yang akan di-hash (pada contoh di atas adalah `text`), dan *cost* atau biaya enkripsi dalam bentuk numerik. Pada praktik ini, `bcrypt::DEFAULT_COST` digunakan sebagai cost enkripsi.
 
 Pengecekan apakah data terenkripsi adalah sama dengan data asli dilakukan menggunakan fungsi `bcrypt::verify`.
 
@@ -243,13 +243,13 @@ Silakan coba ubah isi `path` attribute menjadi `utilities/random.rs`, hasilnya a
 
 ![Rust Inline Module](img/module-inline-4.png)
 
-Module system di Rust merupakan topik yang cukup membingungkan (menurut penulis) karena desain-nya yang cukup unik jika dibandingkan dengan bagaimana bahasa pemrograman lain mengelola module-nya. Penulis anjurkan untuk mencoba praktek membuat program lainnya yang menerapkan module system, agar cepat terbiasa.
+Module system di Rust merupakan topik yang cukup membingungkan (menurut penulis) karena desain-nya yang cukup unik jika dibandingkan dengan bagaimana bahasa pemrograman lain mengelola module-nya. Penulis anjurkan untuk mencoba praktik membuat program lainnya yang menerapkan module system, agar cepat terbiasa.
 
 ---
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/module_inline">

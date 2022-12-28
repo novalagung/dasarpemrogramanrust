@@ -35,7 +35,7 @@ let sliced_value3 = &data[start_index..end_index]
 
 > Slice juga bisa dibuat dari tipe data vector. Lebih jelasnya dibahas pada chapter [Vector](/basic/vector).
 
-Silakan perhatikan contoh berikut dan praktekan:
+Silakan perhatikan contoh berikut dan praktikkan:
 
 ```rust
 let numbers = [12, 16, 8, 3];
@@ -280,7 +280,7 @@ Catatan ringkas perihal slice:
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/slice">

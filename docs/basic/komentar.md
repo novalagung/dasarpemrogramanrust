@@ -41,7 +41,7 @@ Bisa dilihat, komentar tidak menghasilkan efek apa-apa pada program yang dibuat.
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/komentar">

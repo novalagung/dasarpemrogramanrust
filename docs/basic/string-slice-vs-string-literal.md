@@ -132,7 +132,7 @@ Dalam case normal, sangat dianjurkan untuk menggunakan `&str`, kecuali memang ya
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/string_slice_vs_string_literal">

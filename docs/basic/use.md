@@ -34,7 +34,7 @@ fn main() {
 
 ### ◉ Import items dari module yang sama
 
-Pada contoh selanjutnya ini, kita akan coba praktekan penerapan fungsi `std::env::args` untuk mengambil *argument* saat eksekusi program, kemudian menampilkannya ke layar.
+Pada contoh selanjutnya ini, kita akan coba praktikkan penerapan fungsi `std::env::args` untuk mengambil *argument* saat eksekusi program, kemudian menampilkannya ke layar.
 
 Ok, berarti akan ada 2 path yang akan di-import:
 
@@ -49,7 +49,7 @@ Ada notasi penulisan import path lainnya yang bisa digunakan jika path-nya memil
 use std::env::{current_dir, args};
 ```
 
-Ok, lanjut ke praktek. Silakan tulis kode berikut:
+Ok, lanjut ke praktik. Silakan tulis kode berikut:
 
 ```rust
 use std::env::{current_dir, args};
@@ -150,7 +150,7 @@ fn main() {
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/use">

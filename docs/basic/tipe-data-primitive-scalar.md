@@ -141,7 +141,7 @@ Selain beberapa tipe data yang sudah dibahas di atas, ada juga jenis tipe data p
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/tipe_data_primitive_scalar">

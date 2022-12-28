@@ -101,7 +101,7 @@ Setelah eksekusi block selesai, nilai `number` pada scope tidak berubah, yaitu `
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/shadowing">

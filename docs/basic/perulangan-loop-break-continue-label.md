@@ -10,7 +10,7 @@ Selain keyword `while`, ada juga keyword `loop` yang fungsi dasarnya adalah sama
 
 Notasi penulisan dan cara penggunaan `loop` ada sedikit beda dibanding `while`. Keyword `loop` tidak membutuhkan argument. Blok kode loop akan terus dieksekusi selama program tidak di-stop.
 
-Silakan coba praktekan kode berikut. Angka `i` akan ditampilkan setiap perulangan kemudian di-increment nilainya. Angka akan muncul terus sampai aplikasi di-stop.
+Silakan coba praktikkan kode berikut. Angka `i` akan ditampilkan setiap perulangan kemudian di-increment nilainya. Angka akan muncul terus sampai aplikasi di-stop.
 
 ```rust
 fn main() {
@@ -130,7 +130,7 @@ loop {
 }
 ```
 
-Mari kita pelajari dan praktekan kode berikut ini. Dibawah ini adalah sebuah program sederhana menampilkan angka yang hasilnya bisa dilihat digambar dibawahnya. Perulangan di level 2 akan dihentikan secara paksa ketika `j > i`. Sedangkan perulangan level pertama atau terluar (dengan label `'mainLoop`) akan dihentikan paksa dari perulangan level 2 jika kondisi `i > max`.
+Mari kita pelajari dan praktikkan kode berikut ini. Dibawah ini adalah sebuah program sederhana menampilkan angka yang hasilnya bisa dilihat digambar dibawahnya. Perulangan di level 2 akan dihentikan secara paksa ketika `j > i`. Sedangkan perulangan level pertama atau terluar (dengan label `'mainLoop`) akan dihentikan paksa dari perulangan level 2 jika kondisi `i > max`.
 
 ```rust
 let mut i = 0;
@@ -187,7 +187,7 @@ Variabel `counter` yang nilai awalnya 0, di-increment dalam perulangan. Ketika n
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/perulangan_loop_break_continue_label">

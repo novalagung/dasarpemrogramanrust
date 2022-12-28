@@ -212,14 +212,14 @@ impl std::fmt::Display for Circle {
 
 Pada section di atas kita telah membahas bagaimana cara implementasi traits ke tipe data. Pada bagian ini kita akan belajar tentang cara membuat definisi trait (membuat custom trait).
 
-Masih sama dengan metode sebelumnya, pembelajaran dilakukan dengan praktek. Kita gunakan skenario praktek berikut pada program selanjutnya:
+Masih sama dengan metode sebelumnya, pembelajaran dilakukan dengan praktik. Kita gunakan skenario praktik berikut pada program selanjutnya:
 
 1. Buat struct bernama `Circle`.
 2. Buat struct bernama `Square`.
 3. Buat trait bernama `Area` dengan isi satu buah method untuk menghitung luas bangun datar (`calculate`).
 4. Implementasikan trait `Area` ke dua struct tersebut.
 
-Ok, mari mulai praktekan skenario di atas. Pertama siapkan project dengan struktur berikut:
+Ok, mari mulai praktikkan skenario di atas. Pertama siapkan project dengan struktur berikut:
 
 ```bash title="package source code structure"
 my_package
@@ -484,7 +484,7 @@ Tipe data aslinya tetap bisa diakses, tapi butuh tambahan effort. Lebih jelasnya
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/traits">

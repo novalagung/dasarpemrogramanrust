@@ -62,7 +62,7 @@ Ada beberapa cara yang bisa digunakan dalam deklarasi tuple.
 
 ### ◉ Type inference
 
-Cara pertama menggunakan teknik *type inference* seperti yang sudah dipraktekan pada contoh pertama.
+Cara pertama menggunakan teknik *type inference* seperti yang sudah dipraktikkan pada contoh pertama.
 
 ```rust
 let tuple_a = ("jason", 27, ["racing", "working out"], true);
@@ -141,7 +141,7 @@ Pembahasan mengenai tuple structs dibahas pada chapter [Struct](/basic/struct#a2
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/tuple">
