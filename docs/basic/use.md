@@ -74,7 +74,7 @@ Statement `args().nth(i)` mengembalikan nilai argument pada index ke-`i` dalam t
 > - Lebih jelasnya mengenai Iterator akan dibahas pada chapter terpisah, [Trait → Iterator](/wip/trait-iterator).
 > - Lebih jelasnya mengenai tipe `Option` akan dibahas pada chapter terpisah, [Tipe Data → Option](/basic/option-type).
 
-Silakan coba jalankan menggunakan dua command, yang pertama `cargo run`, kemudian `cargo run tulis argumen disini dengan pembatas spasi`.
+Silakan coba jalankan menggunakan dua command, yang pertama `cargo run`, kemudian `cargo run tulis argumen di sini dengan pembatas spasi`.
 
 Bisa dilihat pada gambar berikut, jika ada argument disisipkan dalam eksekusi program, maka ditampilkan. Pada gambar berikut dicontohkan argument yang dipakai adalah `hello` dan `world`.
 

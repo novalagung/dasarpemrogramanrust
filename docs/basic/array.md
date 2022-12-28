@@ -128,7 +128,7 @@ println!("array {numbers:?}");
 
 Pada contoh program yang sudah dipraktekan, variabel `number` tipe datanya adalah array numerik, terlihat saat deklarasinya *predefined value* diisi dengan literal elemen array bertipe `i32`.
 
-Tipe data `i32` disini adalah milik elemen array, sedang array `numbers` itu sendiri tipe datanya adalah `[i32; 4]`, yang artinya adalah **sebuah array dengan elemen bertipe `i32` dengan size `4`**.
+Tipe data `i32` di sini adalah milik elemen array, sedang array `numbers` itu sendiri tipe datanya adalah `[i32; 4]`, yang artinya adalah **sebuah array dengan elemen bertipe `i32` dengan size `4`**.
 
 Jika kawan-kawan menggunakan ekstensi VSCode `rust-analyzer`, akan terlihat informasi tipe data array-nya.
 

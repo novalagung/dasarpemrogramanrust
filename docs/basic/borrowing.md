@@ -173,7 +173,7 @@ Ketika program di run, hasilnya sukses. Kok bisa? padahal jelas di aturan tertul
 
 ![Borrowing](img/borrowing-5.png)
 
-Kata **dalam waktu yang sama** disini adalah yang penting untuk dipahami. Arti *dalam waktu yang sama* adalah dalam 1 scope yang sama. Jika ada 2 scope, maka itu sudah bukan dalam waktu yang sama lagi.
+Kata **dalam waktu yang sama** di sini adalah yang penting untuk dipahami. Arti *dalam waktu yang sama* adalah dalam 1 scope yang sama. Jika ada 2 scope, maka itu sudah bukan dalam waktu yang sama lagi.
 
 Pada contoh di atas, statement `&mut fact_one` terjadi pada block fungsi `change_value`, lebih tepatnya pada parameter `txt` fungsi tersebut.
 
@@ -191,7 +191,7 @@ Ok sampai sini semoga cukup jelas ya. Jika perlu silakan ulang-ulang penjelasan 
 
 Kita sudah cukup paham kapan waktu terjadinya alokasi alamat memory dan juga kapan proses dealokasi terjadi, yaitu ketika variabel **into scope** dan ketika variabel **out of scope**.
 
-Scope disini adalah variable scope, yang maksudnya adalah block scope, bisa berupa block expression, fungsi, block seleksi kondisi `if`, dan juga jenis block lainnya.
+Scope di sini adalah variable scope, yang maksudnya adalah block scope, bisa berupa block expression, fungsi, block seleksi kondisi `if`, dan juga jenis block lainnya.
 
 Ok, sekarang mari kita praktekan beberapa jenis block untuk isolasi operasi borrowing. Dengan ini maka klausul **dalam satu waktu** akan terpenuhi.
 

@@ -356,7 +356,7 @@ let square_one = two_dimensional::Square{ length: 5 };
 calculate_and_print_result("square".to_string(), &square_one);
 ```
 
-> `&impl Area` ini tipe data pointer ya, tipe non-pointer-nya adalah `impl Area`. Disini digunakan tipe data pointer untuk antisipasi *move semantics* pada tipe data custom type (borrowing).
+> `&impl Area` ini tipe data pointer ya, tipe non-pointer-nya adalah `impl Area`. Di sini digunakan tipe data pointer untuk antisipasi *move semantics* pada tipe data custom type (borrowing).
 
 Dimisalkan, fungsi tersebut parameter `item`-nya bisa menampung beberapa jenis traits, kira-kira apakah bisa dibuat seperti itu? Misalnya ada trait lain bernama `Circumference`, dan parameter `item` milik fungsi `calculate_and_print_result` harus bisa menampung data baik dari tipe yang implement trait `Area` ataupun trait `Circumference`.
 
@@ -375,7 +375,7 @@ Tambahkan tanda `()` sebelum `impl NamaTrait`, lalu ganti `NamaTrait` dengan tra
 
 Penerapan trait sebagai parameter fungsi juga bisa dituliskan dalam notasi yang memanfaatkan generic. Teknik penulisan ini disebut dengan *trait bound syntax*.
 
-Contohnya bisa dilihat pada kode berikut. Ada generic bernama `T` yang merepresentasikan trait `Area`, kemudian pada definisi parameter ke-2 fungsi (yaitu parameter `item`) tipenya menggunakan `&T`. Tipe `&T` disini adalah ekuivalen dengan `&impl Area`.
+Contohnya bisa dilihat pada kode berikut. Ada generic bernama `T` yang merepresentasikan trait `Area`, kemudian pada definisi parameter ke-2 fungsi (yaitu parameter `item`) tipenya menggunakan `&T`. Tipe `&T` di sini adalah ekuivalen dengan `&impl Area`.
 
 ```rust
 fn calculate_and_print_result2<T: Area>(name: String, item: &T) {

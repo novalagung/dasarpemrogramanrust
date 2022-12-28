@@ -50,7 +50,7 @@ Berikut merupakan list tipe data signed integers yang ada di Rust. Tidak perlu d
 
 Perbedaan antara signed dan unsigned adalah pada range value yang ditampung, size-nya sama, hanya angka minimal dan maksimalnya berbeda.
 
-Unsigned disini maksudnya adalah hanya bisa menampung angka mulai dari 0. Tipe data unsigned tidak bisa menampung angka negatif (jika dipaksa akan memunculkan error).
+Unsigned di sini maksudnya adalah hanya bisa menampung angka mulai dari 0. Tipe data unsigned tidak bisa menampung angka negatif (jika dipaksa akan memunculkan error).
 
 Berikut list tipe data unsigned integer pada Rust:
 

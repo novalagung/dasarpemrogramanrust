@@ -10,7 +10,7 @@ Kita telah mempelajari tipe data [Array](/basic/array) dan [Vector](/basic/vecto
 
 Pada chapter ini, kita akan bahas lebih dalam lagi tentang apa itu slice terutama bagian memory management-nya.
 
-> Perbedaan chapter ini dengan chapter ini dengan chapter [Slice (Basic)](/basic/slice) adalah disini fokusnya lebih banyak di memory management.
+> Perbedaan chapter ini dengan chapter ini dengan chapter [Slice (Basic)](/basic/slice) adalah di sini fokusnya lebih banyak di memory management.
 
 ## A.43.1. Konsep slice
 

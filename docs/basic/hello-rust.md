@@ -10,7 +10,7 @@ Seperti pada umumnya bahasa pemrograman, belajar membuat program pasti diawali d
 
 ## A.1.1. Pembuatan project/package
 
-Pembuatan project baru di Rust bisa dilakukan dengan 2 cara, dengan `cargo` atau tanpanya. Disini kita akan skip bagian pembuatan project tanpa `cargo`, karena akan butuh effort lebih banyak nantinya dalam mengelola package dan manajemen build.
+Pembuatan project baru di Rust bisa dilakukan dengan 2 cara, dengan `cargo` atau tanpanya. Di sini kita akan skip bagian pembuatan project tanpa `cargo`, karena akan butuh effort lebih banyak nantinya dalam mengelola package dan manajemen build.
 
 > Di Rust istilah project lebih dikenal dengan **package**, dan pada ebook ini maknanya adalah sama.
 

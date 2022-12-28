@@ -8,7 +8,7 @@ Kita sebenarnya sudah mempelajari banyak hal yang berhubungan dengan visibility 
 
 Chapter ini merupakan pembahasan tambahan untuk ke-4 keyword tersebut, dan fokusnya lebih ke visibility & privacy di Rust secara general.
 
-O iya, perihal *visbility* dan *privacy* itu sendiri, kedua istilah tersebut disini kita maknai sama, yang artinya kurang lebih adalah tentang manajemen akses item di Rust.
+O iya, perihal *visbility* dan *privacy* itu sendiri, kedua istilah tersebut di sini kita maknai sama, yang artinya kurang lebih adalah tentang manajemen akses item di Rust.
 
 ## A.28.1. Pembahasan module system
 
@@ -27,7 +27,7 @@ Di Rust, *by default*, hampir semua item adalah private. Apa efeknya ketika item
 1. Jika suatu item adalah private, maka item tersebut hanya bisa diakses dari *current module scope* dan dari *submodules* milik *current module*.
 2. Jika suatu item adalah publik, maka dia bisa diakses dari module lain di luar *current module scope*, dengan catatan parent module scope item tersebut harus publik.
 
-> Kita sepakati disini, pada istilah **current module** kata *module* disitu bisa saja tertuju untuk module atau juga submodule
+> Kita sepakati di sini, pada istilah **current module** kata *module* disitu bisa saja tertuju untuk module atau juga submodule
 
 Dua point di atas sangat penting untuk dipahami, karena digunakan sebagai landasan pertimbangan dalam penyusunan hirarki module. Sebagai contoh, kita bisa membuat program yang hanya meng-expose API tertentu (yang memang diperlukan untuk diakses oleh publik), tanpa perlu ikut meng-expose detail implementasinya.
 

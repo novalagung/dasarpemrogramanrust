@@ -43,7 +43,7 @@ Aturan definisi submodule dan item pada inline module masih sama seperti pada *n
 
 Mari lanjut proses pembalajaran dengan praktek. Kita akan buat program sederhana yang didalamnya ada proses generate random string, yang kemudian di-hash.
 
-Silakan buat package baru menggunakan `cargo new`. Penulis disini memilih nama `inline_module_1` sebagai nama package. Setelah itu, siapkan fungsi main dan juga module bernama `utilities` dengan penulisan kode menerapkan inline module. O iya, tulis keduanya (`module utilities` dan fungsi `main`) dalam satu file yang sama yaitu `main.rs`.
+Silakan buat package baru menggunakan `cargo new`. Penulis di sini memilih nama `inline_module_1` sebagai nama package. Setelah itu, siapkan fungsi main dan juga module bernama `utilities` dengan penulisan kode menerapkan inline module. O iya, tulis keduanya (`module utilities` dan fungsi `main`) dalam satu file yang sama yaitu `main.rs`.
 
 ```rust title="src/main.rs"
 mod utilities {
@@ -201,7 +201,7 @@ Module item dalam inline module masih sama seperti pada module normal, yaitu ada
 
 Dalam *real project* hampir tidak mungkin semua kode ditulis di file `main.rs`. Pastinya kode akan di-split menjadi banyak module sesuai kebutuhan.
 
-Kode sebelumya, akan kita refactor. Module `utilities` yang berada di `main.rs` perlu dipindah ke file baru yang sesuai dengan aturan penulisan module, yaitu `nama_module.rs` atau `nama_module/mod.rs`. Disini penulis memilih `nama_module.rs`, jadi silakan buat file bernama `utilities.rs`, lalu pindah isi itemnya kesana (statement definisi inline module `utilities` tidak perlu ikut dipindah, hanya isinya saja, seperti normalnya definisi module).
+Kode sebelumya, akan kita refactor. Module `utilities` yang berada di `main.rs` perlu dipindah ke file baru yang sesuai dengan aturan penulisan module, yaitu `nama_module.rs` atau `nama_module/mod.rs`. Di sini penulis memilih `nama_module.rs`, jadi silakan buat file bernama `utilities.rs`, lalu pindah isi itemnya kesana (statement definisi inline module `utilities` tidak perlu ikut dipindah, hanya isinya saja, seperti normalnya definisi module).
 
 O iya, jangan lupa untuk menambahkan statement `mod utilities` pada `main.rs`, agar module terdaftar dan bisa digunakan.
 
