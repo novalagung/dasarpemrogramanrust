@@ -127,6 +127,7 @@ Berikut merupakan list operator untuk operasi logika `bool` beserta contoh pener
 |:-:|-|
 | `&&` | logika `AND` |
 | \|\| | logika `OR` |
+| `!` | logika `NOT` |
 
 ```rust
 let (bool_left, bool_right) = (false, true);
