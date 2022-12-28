@@ -102,10 +102,10 @@ println!("res_two: {res_two}");
 
 Berikut merupakan list operator untuk operasi negasi beserta contoh penerapannya di rust.
 
-| Simbol | Kegunaan |
-|:-:|-|
-| `-` | negasi numerik |
-| `!` | logika `NOT` untuk bool, bitwise `NOT` untuk intenger |
+| Simbol | Kegunaan | Catatan |
+|:-:|-|-|
+| `-` | negasi numerik | bisa digunakan pada tipe data integer dan float |
+| `!` | logika `NOT` atau bitwise `NOT` | bisa digunakan pada tipe data integer dan bool |
 
 ```rust
 let (value_left, value_right) = (12, -12);
