@@ -8,7 +8,7 @@ sidebar_label: A.8. Operator
 
 Chapter ini membahas mengenai operator pada pemrograman rust.
 
-## A.8.1. Operator Aritmatika
+## A.8.1. Operator aritmatika
 
 Berikut merupakan list operator untuk operasi aritmatika beserta contoh penerapannya di rust.
 
@@ -44,7 +44,7 @@ println!("{} % {} = {}", num1, num2, value_mod);
 // output => 12 % 4 = 0
 ```
 
-## A.8.2. Operator Perbandingan
+## A.8.2. Operator perbandingan
 
 Operator perbandingan selalu menghasilkan nilai bertipe data `bool`.
 
@@ -98,14 +98,14 @@ println!("res_two: {res_two}");
 // output => res_one: true
 ```
 
-## A.8.3. Operator Negasi
+## A.8.3. Operator negasi
 
 Berikut merupakan list operator untuk operasi negasi beserta contoh penerapannya di rust.
 
-| Simbol | Kegunaan |
-|:-:|-|
-| `-` | negasi numerik |
-| `!` | logika `NOT` |
+| Simbol | Kegunaan | Catatan |
+|:-:|-|-|
+| `-` | negasi numerik | bisa digunakan pada tipe data integer dan float |
+| `!` | logika `NOT` atau bitwise `NOT` | bisa digunakan pada tipe data integer dan bool |
 
 ```rust
 let (value_left, value_right) = (12, -12);
@@ -155,9 +155,10 @@ Rust mendukung operator bitwise standar yang ada di bahasa pemrograman.
 
 | Simbol | Kegunaan |
 |:-:|-|
-| `&` | bitwise AND |
-| <code>\|</code> | bitwise OR |
-| `^` | bitwise XOR |
+| `&` | bitwise `AND` |
+| <code>\|</code> | bitwise `OR` |
+| `^` | bitwise `XOR` |
+| `!` | bitwise `NOT` |
 | `<<` | left shift |
 | `>>` | right shift |
 
