@@ -218,7 +218,7 @@ Nantinya akan dibahas juga tentang beberapa error saat compile time yang error t
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/memory_management">

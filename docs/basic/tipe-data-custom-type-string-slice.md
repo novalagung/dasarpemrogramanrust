@@ -185,7 +185,7 @@ println!("{str}"); // iPhone 12 Pro
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/tipe_data_custom_type_string_slice">

@@ -137,7 +137,7 @@ Selamat! Anda telah menjadi programmer Rust!
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/hello_rust">

@@ -380,7 +380,7 @@ let kendaraan3 = Kendaraan::<&str>::Gledekan("Artco");
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/generics">

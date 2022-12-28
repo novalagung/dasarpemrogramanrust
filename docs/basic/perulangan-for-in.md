@@ -13,7 +13,7 @@ sidebar_label: A.12. Perulangan → for in
 > - Lebih jelasnya mengenai traits dibahas pada chapter [Traits](/basic/traits)
 > - Lebih jelasnya mengenai trait `Iterator` dibahas pada chapter [Trait → Iterator](/wip/trait-iterator)
 
-Tipe data range dibuat dengan notasi penulisan `a..b`. Mari lanjut dengan praktek agar lebih jelas. Silakan coba kode sederhana berikut lalu jalankan.
+Tipe data range dibuat dengan notasi penulisan `a..b`. Mari lanjut dengan praktik agar lebih jelas. Silakan coba kode sederhana berikut lalu jalankan.
 
 ```rust
 for i in 0..5 {
@@ -79,7 +79,7 @@ Di Rust ada banyak cara membuat object iterator. Mengenai topik satu ini kita ak
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/perulangan_for_in">

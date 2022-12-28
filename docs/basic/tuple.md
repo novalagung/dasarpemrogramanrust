@@ -141,7 +141,7 @@ Pembahasan mengenai tuple structs dibahas pada chapter [Struct](/basic/struct#a2
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/tuple">

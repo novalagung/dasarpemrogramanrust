@@ -15,7 +15,7 @@ Fungsi yang terhubung dengan suatu struct atau trait disebut dengan *associated 
 > - Lebih jelasnya mengenai trait dibahas pada chapter [Traits](/basic/traits)
 > - Lebih jelasnya mengenai macam-macam item dibahas pada chapter [Path & Item](/basic/path-item#a183-rust-items)
 
-Ok, mari kita lanjut ke bagian praktek. Silakan tulis kode berikut terlebih dahulu.
+Ok, mari kita lanjut ke bagian praktik. Silakan tulis kode berikut terlebih dahulu.
 
 ```rust
 #[derive(Debug)]
@@ -319,7 +319,7 @@ Hmm, ada yang aneh, karena suatu alasan statement `model::Color` dianggap error.
 
 ![Associated function](img/associated-function-5.png)
 
-Error ini sebenarnya mirip dengan error praktek sebelumnya, ketika mencoba membuat object baru dari struct sedangkan property struct tersebut adalah private.
+Error ini sebenarnya mirip dengan error praktik sebelumnya, ketika mencoba membuat object baru dari struct sedangkan property struct tersebut adalah private.
 
 Pada kasus struct, solusinya cukup dengan tambahkan keyword `pub` atau siapkan *associated function* untuk pembuatan object. Pada tuple struct, solusinya juga mirip, ada dua opsi yang bisa dipilih.
 
@@ -362,7 +362,7 @@ Pada kasus struct, solusinya cukup dengan tambahkan keyword `pub` atau siapkan *
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/associated_function">

@@ -247,7 +247,7 @@ Tipe ini dipakai salah satunya untuk manajemen error. Lebih jelasnya mengenai to
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/result_type">

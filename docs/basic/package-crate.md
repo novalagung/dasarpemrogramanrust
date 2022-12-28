@@ -48,7 +48,7 @@ Istilah package dalam Rust programming masih sama dengan package dalam pemrogram
 
 Package di-manage oleh Cargo, yang merupakan package manager Rust. Command `cargo new <nama_package>` digunakan untuk membuat package. Command tersebut menghasilkan beberapa file yaitu `src/main.rs` yang isinya adalah kode program, dan juga file `Cargo.toml` yang isinya adalah informasi mengenai package tersebut.
 
-Ok, sekalian praktek mungkin lebih pas. Silakan jalankan command berikut, kemudian ikuti penjelasan selanjutnya.
+Ok, sekalian praktik mungkin lebih pas. Silakan jalankan command berikut, kemudian ikuti penjelasan selanjutnya.
 
 ```bash
 cargo new belajar_package_crate
@@ -93,7 +93,7 @@ Blok `dependencies` default-nya berisi kosong. Jika kita menambahkan external de
 
 ### ◉ Menambahkan dependency atau external crate
 
-proses pembelajaran akan dilanjutkan sambil praktek. Pada bagian ini kita akan buat program sederhana yang didalamnya memanfaatkan sebuah dependency atau external crate.
+proses pembelajaran akan dilanjutkan sambil praktik. Pada bagian ini kita akan buat program sederhana yang didalamnya memanfaatkan sebuah dependency atau external crate.
 
 Pertama-tama buka [crates.io](https://crates.io/), lalu gunakan keyword `rand` dalam pencarian, hasilnya adalah dependency bernama `rand`.
 
@@ -131,7 +131,7 @@ Jadi kurang lebih seperti itu cara menambahkan dependency di Rust. Seiring berja
 
 ## A.19.3. Praktek membuat program menampilkan angka random
 
-Ok, sekarang kita lanjutkan praktek pembuatan program sederhana untuk menampilkan angka random.
+Ok, sekarang kita lanjutkan praktik pembuatan program sederhana untuk menampilkan angka random.
 
 Angka random di sini akan di-generate menggunakan fungsi yang ada dalam dependency `rand` yang sudah ditambahkan ke package.
 
@@ -187,7 +187,7 @@ Masih dalam topik *module system*, penulis anjurkan untuk lanjut ke chapter beri
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/package_crate">

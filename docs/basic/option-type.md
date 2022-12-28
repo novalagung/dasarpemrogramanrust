@@ -228,7 +228,7 @@ Closure harus dalam notasi `FnOnce() -> T` dimana `T` pada konteks ini adalah `i
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/option_type">

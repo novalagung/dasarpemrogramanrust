@@ -128,7 +128,7 @@ Jika ingin jeda durasi yang lebih lama, ubah saja angka `1` pada `Duration::from
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/perulangan_while">

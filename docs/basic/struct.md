@@ -466,7 +466,7 @@ Bisa dilihat keyword `pub` ditambahkan pada deklarasi property struct. yang sebe
 
 ## A.23.9. Tuple struct property visibility
 
-Lalu bagaimana dengan tuple struct? apakah property-nya juga harus didefinisikan publik agar bisa diakses dari tempat lain? Jawabannya ada di praktek berikut:
+Lalu bagaimana dengan tuple struct? apakah property-nya juga harus didefinisikan publik agar bisa diakses dari tempat lain? Jawabannya ada di praktik berikut:
 
 ```bash title="package source code structure"
 my_package
@@ -522,7 +522,7 @@ Pembahasan mengenai generic pada struct ada pada chapter [Generics](/basic/gener
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/struct">

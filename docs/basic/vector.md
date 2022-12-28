@@ -350,7 +350,7 @@ Cara membuat vector `VecDeque<T>` bisa menggunakan `VecDeque::from` dengan param
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/vector">

@@ -140,7 +140,7 @@ Dari data tersebut bisa kita chain lagi dengan method `unwrap` dan `as_second` u
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/type_alias_casting">

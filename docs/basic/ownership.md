@@ -372,7 +372,7 @@ Lebih jelasnya mengenai macro dibahas pada chapter [Macro](/wip/macro).
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/ownership">

@@ -20,7 +20,7 @@ Array (atau *fixed size array*) adalah kumpulan data dengan tipe sejenis, disimp
 
 Ada beberapa notasi deklarasi array yang bisa dipakai, kesemuanya akan dibahas pada chapter ini.
 
-Ok, Sekarang kita mulai praktek dengan bermain-main terlebih dahulu dengan tipe data array ini. Silakan pelajari dan praktekan contoh berikut, sebuah program yang isinya menampilkan data array.
+Ok, Sekarang kita mulai praktik dengan bermain-main terlebih dahulu dengan tipe data array ini. Silakan pelajari dan praktekan contoh berikut, sebuah program yang isinya menampilkan data array.
 
 ```rust
 let mut numbers = [24, 12, 32, 7];
@@ -315,7 +315,7 @@ Variabel `data_arr` pada contoh di atas bertipe data`[[&str; 2] 3]`, yang artiny
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/array">

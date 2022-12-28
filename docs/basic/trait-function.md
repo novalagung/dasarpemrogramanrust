@@ -10,7 +10,7 @@ Rust memiliki 3 buah trait yang otomatis ter-implement pada closure, yaitu `Fn`,
 
 ## A.47.1. Trait `Fn`
 
-`Fn` sudah kita terapkan beberapa kali saat praktek pembuatan closure di chapter sebelumnya. Fn adalah trait ([std::ops::Fn](https://doc.rust-lang.org/std/ops/trait.Fn.html)), yang dipakai oleh Rust untuk menandai bahwa suatu closure bisa dipanggil berkali-kali dengan catatan di dalam closure tersebut tidak ada operasi mutable terhadap variabel yang scope-nya berada di luar block closure.
+`Fn` sudah kita terapkan beberapa kali saat praktik pembuatan closure di chapter sebelumnya. Fn adalah trait ([std::ops::Fn](https://doc.rust-lang.org/std/ops/trait.Fn.html)), yang dipakai oleh Rust untuk menandai bahwa suatu closure bisa dipanggil berkali-kali dengan catatan di dalam closure tersebut tidak ada operasi mutable terhadap variabel yang scope-nya berada di luar block closure.
 
 Contoh penerapan trait `Fn` bisa dilihat pada kode berikut. Trait tersebut secara otomatis ter-implement pada closure `pow`.
 
@@ -156,7 +156,7 @@ Dari contoh di atas terbukti bahwa fungsi `double` dan juga `pow_number` memenuh
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/trait_function">

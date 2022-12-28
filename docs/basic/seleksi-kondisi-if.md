@@ -183,7 +183,7 @@ Keyword `if let` berbeda dengan kombinasi `let` dan  `if`. Kita akan bahas topik
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/seleksi_kondisi_if">

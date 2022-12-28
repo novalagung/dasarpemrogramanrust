@@ -91,7 +91,7 @@ fn func_name(param_a: int32, param_b: bool, param_c: &str) {
 // ...
 ```
 
-Kembali ke praktek, pada bagian ini kita akan buat sebuah fungsi bernama `greet_custom_message`. Fungsi ini tugasnya masih sama seperti seperti `greet` hanya saja pesan yang ditampilkan adalah sesuai dengan value parameter fungsi.
+Kembali ke praktik, pada bagian ini kita akan buat sebuah fungsi bernama `greet_custom_message`. Fungsi ini tugasnya masih sama seperti seperti `greet` hanya saja pesan yang ditampilkan adalah sesuai dengan value parameter fungsi.
 
 ```rust
 fn greet_custom_message(name: &str, message: &str) {
@@ -320,7 +320,7 @@ Untuk sekarang silakan lanjut ke pembahasan chapter berikutnya terlebih dahulu, 
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/function">

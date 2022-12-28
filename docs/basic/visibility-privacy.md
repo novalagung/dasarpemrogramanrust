@@ -43,7 +43,7 @@ Jika item `some_black_magic` disitu adalah publik, maka idealnya pengaksesan men
 
 Intinya, **sebuah item bisa diakses jika item tersebut adalah publik, dan parent item tersebut juga publik. Sedangkan default visibility untuk hampir semua item adalah private.**
 
-Ok, sekarang mari lanjut ke praktek menggunakan contoh dengan pembahasan yang lebih mendetail. Silakan perhatikan dan praktekan kode berikut:
+Ok, sekarang mari lanjut ke praktik menggunakan contoh dengan pembahasan yang lebih mendetail. Silakan perhatikan dan praktekan kode berikut:
 
 ```bash title="package source code structure"
 my_package
@@ -112,7 +112,7 @@ fn main() {
 
 Pada contoh, fungsi `messaging::say_hello` didesain sebagai media untuk mengakses fungsi `some_black_magic`. Di situasi *real world* pastinya sangat jarang terjadi sebuah fungsi isinya hanya satu baris pemanggilan fungsi lainnya. Jika memang ada situasi seperti itu, (kontekstual) lebih baik hapus saja fungsi yang jadi media pemanggilan dan langsung saja panggil fungsi didalamnya sesuai kebutuhan.
 
-Pada praktek selanjutnya ini kita misalkan bahwa fungsi `say_hello` isinya memang cuma 1 baris, dan yang paling penting adalah isi fungsi `some_black_magic` perlu untuk bisa diakses dari `main`. Untuk kasus seperti ini ada 3 alternatif solusi:
+Pada praktik selanjutnya ini kita misalkan bahwa fungsi `say_hello` isinya memang cuma 1 baris, dan yang paling penting adalah isi fungsi `some_black_magic` perlu untuk bisa diakses dari `main`. Untuk kasus seperti ini ada 3 alternatif solusi:
 
 1. Tidak perlu mengubah apapun, gunakan saja kode yang sudah ditulis di atas. Kode tersebut sudah bisa mengakomodir pemanggilan `some_black_magic` via `say_hello`.
 2. Atau, hapus saja fungsi `say_hello`, lalu ubah visibility module `service_layer` menjadi publik, dengan demikian kita bisa mengakses `some_black_magic` dari `main` menggunakan path `messaging::service_layer::some_black_magic`.
@@ -324,7 +324,7 @@ fn main() {
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/visibility_privacy">

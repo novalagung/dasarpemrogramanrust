@@ -105,7 +105,7 @@ self::my_mod::run_the_app("2nd call");
 
 ## A.22.4. Keyword `self` pada module scope
 
-Lanjut ke praktek berikutnya. Masih tentang keyword `self`, kita akan gunakan keyword ini untuk mengakses item dalam module.
+Lanjut ke praktik berikutnya. Masih tentang keyword `self`, kita akan gunakan keyword ini untuk mengakses item dalam module.
 
 Silakan tulis kode berikut kemudian jalankan.
 
@@ -232,7 +232,7 @@ Dalam fungsi `run_the_app`, ketiga fungsi dengan nama tersebut dipanggil.
 
 ![Module item access super](img/module-scope-item-access-4.png)
 
-Semoga cukup jelas ya. Silakan ulangi terus praktek di atas jika perlu, agar makin paham.
+Semoga cukup jelas ya. Silakan ulangi terus praktik di atas jika perlu, agar makin paham.
 
 O iya, keyword `super` ini bisa digunakan banyak kali sesuai kebutuhan. Setiap kali keyword ditulis sebagai segment path, maka artinya 1 level parent module scope.
 
@@ -340,7 +340,7 @@ fn main() {
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/module_scope_item_access">

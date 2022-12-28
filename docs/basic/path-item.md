@@ -198,7 +198,7 @@ Jawabannya akan ada di beberapa chapter berikutnya. Untuk sekarang khusus pada b
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/path_item">

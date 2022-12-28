@@ -187,7 +187,7 @@ Variabel `counter` yang nilai awalnya 0, di-increment dalam perulangan. Ketika n
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/perulangan_loop_break_continue_label">

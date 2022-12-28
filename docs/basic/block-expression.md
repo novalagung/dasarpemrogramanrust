@@ -75,7 +75,7 @@ let varTwo: tipeData = {
 
 Dalam block expression, tidak perlu menuliskan keyword `return` dan tidak perlu juga menuliskan tanda semicolon di akhir statement return value.
 
-Berikut adalah contoh praktek return value block. Ada sebuah block yang nilai baliknya ditampung ke variabel `a`. Isi block sendiri adalah generate data numerik random, yang kemudian dikalikan dengan angka `2`, lalu dijadikan return value.
+Berikut adalah contoh praktik return value block. Ada sebuah block yang nilai baliknya ditampung ke variabel `a`. Isi block sendiri adalah generate data numerik random, yang kemudian dikalikan dengan angka `2`, lalu dijadikan return value.
 
 ```rust
 use rand::Rng;
@@ -175,7 +175,7 @@ Rust menerapkan konsep memory management bernama **ownership**. Setiap kali Rust
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/block_expression">
