@@ -93,7 +93,7 @@ Blok `dependencies` default-nya berisi kosong. Jika kita menambahkan external de
 
 ### ◉ Menambahkan dependency atau external crate
 
-proses pembelajaran akan dilanjutkan sambil praktik. Pada bagian ini kita akan buat program sederhana yang didalamnya memanfaatkan sebuah dependency atau external crate.
+proses pembelajaran akan dilanjutkan sambil praktik. Pada bagian ini kita akan buat program sederhana yang di dalamnya memanfaatkan sebuah dependency atau external crate.
 
 Pertama-tama buka [crates.io](https://crates.io/), lalu gunakan keyword `rand` dalam pencarian, hasilnya adalah dependency bernama `rand`.
 
