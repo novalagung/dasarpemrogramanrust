@@ -110,7 +110,7 @@ Cara pengaksesan item dari sebuah module yang kita definisikan sendiri adalah sa
 
 Pada praktik pertama ini kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
 
-- Penggunaan normal module dalam binary carete
+- Penggunaan normal module dalam binary crate
 - Pembuatan module dengan nama `my_io`, dengan isi/item ditulis pada file `my_io.rs`
 - Penggunaan keyword `pub` untuk meng-export atau menjadikan item menjadi public, agar bisa diakses dari luar module
 - Pengaksesan item milik module, yaitu: `my_io::read_entry`
@@ -202,7 +202,7 @@ Jalankan program, lihat hasilnya.
 
 Hingga praktik ke-2 ini, kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
 
-- Penggunaan normal module dalam binary carete
+- Penggunaan normal module dalam binary crate
 - Pembuatan module dengan nama `my_io`, dengan isi/item ditulis pada file `my_io.rs`
 - Pembuatan module dengan nama `my_number`, dengan isi/item ditulis pada file `my_number/mod.rs`
 - Penggunaan keyword `pub` untuk meng-export atau menjadikan item menjadi public, agar bisa diakses dari luar module
@@ -313,7 +313,7 @@ Jalankan program untuk mengetest hasilnya.
 
 Hingga pembahasan pada praktik submodule, kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
 
-- Penggunaan normal module dalam binary carete
+- Penggunaan normal module dalam binary crate
 - Pembuatan module dengan nama `my_io`, dengan isi/item ditulis pada file `my_io.rs`
 - Pembuatan module dengan nama `my_number`, dengan isi/item ditulis pada file `my_number/mod.rs`
 - Pembuatan submodule dengan nama `my_number/conversion_utility`, dengan isi/item ditulis pada file `my_number/conversion.rs` yang di-import menggunakan `path` attribute.
@@ -395,7 +395,7 @@ Statement `#[path = "conversion.rs"]` di atas merupakan contoh penerapan dari Ru
 
 Hingga pembahasan pada praktik module `path` attribute, kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
 
-- Penggunaan normal module dalam binary carete
+- Penggunaan normal module dalam binary crate
 - Pembuatan module dengan nama `my_io`, dengan isi/item ditulis pada file `my_io.rs`
 - Pembuatan module dengan nama `my_number`, dengan isi/item ditulis pada file `my_number/mod.rs`
 - Pembuatan submodule dengan nama `my_number/conversion_utility`, dengan isi/item ditulis pada file `my_number/conversion_utility/mod.rs`
