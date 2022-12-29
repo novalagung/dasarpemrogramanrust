@@ -121,7 +121,7 @@ Sesuai anjuran di [halaman dokumentasi Rust](https://rust-lang.github.io/api-gui
 
 ### ◉ Module item
 
-Module item adalah apapun yang didefinisikan didalam sebuah module. Pada contoh praktik ke-1 di atas, module `my_io` memiliki 1 buah item yaitu fungsi bernama `read_entry`.
+Module item adalah apapun yang didefinisikan di dalam sebuah module. Pada contoh praktik ke-1 di atas, module `my_io` memiliki 1 buah item yaitu fungsi bernama `read_entry`.
 
 Selain fungsi, module item bisa dalam bentuk lainnya, contohnya: konstanta, submodule, struct, dan lainnya.
 

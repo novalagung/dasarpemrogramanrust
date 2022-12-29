@@ -200,7 +200,7 @@ Dengan keyword `pub`, sebuah item visibility-nya menjadi publik.
 
 ### ◉ Keyword `pub(in path)`
 
-Keyword ini menjadikan visibility item hanya didalam `path` yang ditulis di `pub(in path)`, dengan ketentuan `path` tersebut merupakan parent dari module item dimana keyword digunakan.
+Keyword ini menjadikan visibility item hanya di dalam `path` yang ditulis di `pub(in path)`, dengan ketentuan `path` tersebut merupakan parent dari module item dimana keyword digunakan.
 
 Contohnya bisa dilihat pada kode berikut. Fungsi `say_hello` didefinisikan publik dengan scope path ditentukan secara eksplisit adalah `crate::outer_mod`. Dengan demikian fungsi `say_hello` hanya bisa diakses dari dalam `outer_mod`.
 

@@ -51,7 +51,7 @@ Karena semua baris baru pada contoh di atas di-escape, jadinya string akan tetap
 
 ## A.6.3. Multiline string literal
 
-Penulisan string banyak baris atau *multiline string* adalah sama seperti penulisan string biasa, yaitu langsung tulis saja string dengan diapit tanda `"`, tambahkan baris baru didalam string tersebut sesuai kebutuhan.
+Penulisan string banyak baris atau *multiline string* adalah sama seperti penulisan string biasa, yaitu langsung tulis saja string dengan diapit tanda `"`, tambahkan baris baru di dalam string tersebut sesuai kebutuhan.
 
 ```rust
 let var3 = "baris satu

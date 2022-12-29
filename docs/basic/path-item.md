@@ -186,7 +186,7 @@ let stdin_reader = stdin();
 
 Dengan menggunakan `use` kita bisa memperpendek pengaksesan sebuah path.
 
-O iya keyword ini bisa digunakan dimana saja, artinya tidak harus di luar fungsi `main`. Bisa saja di dalam fungsi, atau didalam blok kode seleksi kondisi atau lainnya.
+O iya keyword ini bisa digunakan dimana saja, artinya tidak harus di luar fungsi `main`. Bisa saja di dalam fungsi, atau di dalam blok kode seleksi kondisi atau lainnya.
 
 ## A.18.6. Pembahasan lanjutan
 
