@@ -115,11 +115,11 @@ const config = {
         additionalLanguages: ['bash', 'rust', 'toml'],
       },
       algolia: {
-        appId: 'N8KUI3GN0I',
-        apiKey: 'f9ec438558a717ce1df37d25b2504121',
-        indexName: 'dasarpemrogramanrust',
+        appId: 'DD3TAVK705',
+        apiKey: '6c174b58b088b4bed49357cdb9108a1b',
+        indexName: 'CONTENT',
         contextualSearch: true,
-        externalUrlRegex: 'dasarpemrogramanrust\\.novalagung\\.com',
+        // externalUrlRegex: 'dasarpemrogramanrust\\.novalagung\\.com',
         searchParameters: {},
         searchPagePath: 'search', // `false` to disable
       },
