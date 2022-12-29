@@ -169,7 +169,7 @@ O iya, penggunaan fungsi `gen_range` mewajibkan kita untuk import path `rand::Rn
 
 ### ◉ Fungsi `main`
 
-Dalam blok kode `main`, isinya sebuah perulangan sederhana yang menampilkan angka random hasil eksekusi fungsi `generate_random_number` disetiap iterasinya.
+Dalam blok kode `main`, isinya sebuah perulangan sederhana yang menampilkan angka random hasil eksekusi fungsi `generate_random_number` di setiap iterasinya.
 
 ```rust
 for i in 0..5 {
