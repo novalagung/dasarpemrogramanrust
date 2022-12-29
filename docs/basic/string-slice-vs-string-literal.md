@@ -88,7 +88,7 @@ println!("str5_slice1: {str5_slice1}");
 
 ![String slcie vs string literal](img/string-slice-vs-string-literal-2.png)
 
-Hmm, error. Perlu diingat kembali aturan [Borrowing](/basic/borrowing) bahwa tidak boleh ada operasi borrow dan juga mutable borrow dalam satu waktu. Pada contoh di atas, `str5` dipinjam oleh `str5_slice1` menggunakan method `as_mut_str` (yang didalamnya menjalankan operasi mutable borrow). Selain itu, operasi mutable borrow maksimal hanya boleh dilakukan 1x dalam satu waktu, inilah kenapa ketika kita berusaha menampilkan data `str5` hasilnya error, karena statement print data `str5` adalah operasi borrow.
+Hmm, error. Perlu diingat kembali aturan [Borrowing](/basic/borrowing) bahwa tidak boleh ada operasi borrow dan juga mutable borrow dalam satu waktu. Pada contoh di atas, `str5` dipinjam oleh `str5_slice1` menggunakan method `as_mut_str` (yang di dalamnya menjalankan operasi mutable borrow). Selain itu, operasi mutable borrow maksimal hanya boleh dilakukan 1x dalam satu waktu, inilah kenapa ketika kita berusaha menampilkan data `str5` hasilnya error, karena statement print data `str5` adalah operasi borrow.
 
 Solusinya masalah di atas bisa menggunakan block expression:
 

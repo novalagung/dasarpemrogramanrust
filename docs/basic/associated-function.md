@@ -10,7 +10,7 @@ Chapter ini membahas tentang *associated function*. Kita akan belajar apa itu as
 
 *Associated item* adalah item yang memiliki asosiasi/hubungan dengan struct atau trait. Item di sini bisa dalam banyak hal, bisa berupa fungsi atau lainnya.
 
-Fungsi yang terhubung dengan suatu struct atau trait disebut dengan *associated function*. Fungsi jenis ini ekuivalen seperti fungsi biasa, perbedaannya adalah pada deklarasinya yang harus berada didalam blok kode `impl`, dan pemanggilannya harus menggunakan notasi path `NamaStruct::nama_fungsi`.
+Fungsi yang terhubung dengan suatu struct atau trait disebut dengan *associated function*. Fungsi jenis ini ekuivalen seperti fungsi biasa, perbedaannya adalah pada deklarasinya yang harus berada di dalam blok kode `impl`, dan pemanggilannya harus menggunakan notasi path `NamaStruct::nama_fungsi`.
 
 > - Lebih jelasnya mengenai trait dibahas pada chapter [Traits](/basic/traits)
 > - Lebih jelasnya mengenai macam-macam item dibahas pada chapter [Path & Item](/basic/path-item#a183-rust-items)

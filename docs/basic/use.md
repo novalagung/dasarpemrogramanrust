@@ -98,7 +98,7 @@ pub use self::sub_module::say_hello_message;
 pub use self::sub_module::say_hello_message as say_hello;
 ```
 
-Contoh penerapan bisa dilihat pada kode berikut. Submodule `sub_module` milik module `messaging` adalah private module, yang didalamnya ada item dengan visibility publik.
+Contoh penerapan bisa dilihat pada kode berikut. Submodule `sub_module` milik module `messaging` adalah private module, yang di dalamnya ada item dengan visibility publik.
 
 Agar `say_hello_message` tidak bisa diakses dari *crate root* karena `sub_module` yang merupakan module scope item tersebut adalah private. Agar item tersebut bisa diakses dari publik, maka bisa dengan menggunakan teknik *re-export*.
 

@@ -61,7 +61,7 @@ Silakan bermain dengan nilai variabel `number_b` untuk coba-coba.
 
 ## A.9.3. Nested `if`
 
-Sebuah blok kode `if` bisa saja berada didalam sebuah `if`, dan seperti ini umum terjadi di bahasa pemrograman. Di Rust penerapan nested `if` sama seperti pada bahasa lainnya, yaitu dengan langsung tuliskan saja blok kode `if` ke dalam blok kode `if`. Contoh:
+Sebuah blok kode `if` bisa saja berada di dalam sebuah `if`, dan seperti ini umum terjadi di bahasa pemrograman. Di Rust penerapan nested `if` sama seperti pada bahasa lainnya, yaitu dengan langsung tuliskan saja blok kode `if` ke dalam blok kode `if`. Contoh:
 
 ```rust
 let number_c = 10;

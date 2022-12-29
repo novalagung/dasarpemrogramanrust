@@ -16,7 +16,7 @@ Crate bisa berisi banyak *module*. Sebuah module definisinya bisa berada di bany
 - `Mod_ABC` adalah module yang didefinisikan dalam crate `XYZ`, source code-nya berada di file bernama `modul_a.rs`.
 - `Mod_DEF` adalah module yang didefinisikan dalam crate `XYZ`, source code-nya berada di beberapa file `module_b_one.rs` dan `module_b_two.rs`.
 
-Dari contoh di atas, crate `XYZ` adalah 1 unit kompilasi, yang dimana didalam crate tersebut ada dua modules yaitu `Mod_ABC` dan `Mod_DEF`
+Dari contoh di atas, crate `XYZ` adalah 1 unit kompilasi, yang dimana di dalam crate tersebut ada dua modules yaitu `Mod_ABC` dan `Mod_DEF`
 
 Rust mengkategorikan crate menjadi 2 jenis, *binary crate* dan *library crate*
 
@@ -93,7 +93,7 @@ Blok `dependencies` default-nya berisi kosong. Jika kita menambahkan external de
 
 ### ◉ Menambahkan dependency atau external crate
 
-proses pembelajaran akan dilanjutkan sambil praktik. Pada bagian ini kita akan buat program sederhana yang didalamnya memanfaatkan sebuah dependency atau external crate.
+proses pembelajaran akan dilanjutkan sambil praktik. Pada bagian ini kita akan buat program sederhana yang di dalamnya memanfaatkan sebuah dependency atau external crate.
 
 Pertama-tama buka [crates.io](https://crates.io/), lalu gunakan keyword `rand` dalam pencarian, hasilnya adalah dependency bernama `rand`.
 
