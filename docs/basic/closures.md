@@ -245,7 +245,7 @@ Bisa dilihat dari gambar di atas, statement `print` dari dalam block closure has
 
 ## A.46.6. Closure sebagai return type
 
-### ◉ Praktek ke-1
+### ◉ Praktik ke-1
 
 Fungsi bisa memiliki nilai balik bertipe closure. Caranya dengan menggunakan `impl Fn()` sebagai tipe data nilai balik. Contoh penerapannya:
 
@@ -281,7 +281,7 @@ Bisa dilihat, fungsi `do_something` di atas mengembalikan closure yang menampilk
 
 Sedangkan fungsi `do_something` sendiri juga menampilkan pesan string lainnya, yaitu `hello (from do_something)`, yang pesan ini adalah muncul langsung saat pemanggilan fungsi `do_something`. Berbeda dengan pesan `hello (from closure)` yang hanya muncul ketika closure dieksekusi.
 
-### ◉ Praktek ke-2
+### ◉ Praktik ke-2
 
 Pada contoh di atas, closure yang dikembalikan fungsi memiliki skema sangat sederhana, tanpa parameter dan argument. Mari coba praktik dengan contoh yang lebih kompleks.
 
@@ -316,7 +316,7 @@ println!("{message} (from main)");
 
 ## A.46.7. Closure sebagai parameter fungsi
 
-### ◉ Praktek ke-1
+### ◉ Praktik ke-1
 
 Pengaplikasian closure sebagai parameter fungsi banyak di lakukan di Rust, hal ini bisa dilakukan dengan memanfaatkan generic parameter. Silakan perhatikan kode berikut untuk contoh penerapannya.
 
@@ -351,7 +351,7 @@ O iya, closure di atas juga bisa dituliskan dalam bentuk seperti ini. Bebas, pil
 run_x_times(4, |i: i32| println!("hello rust {i}"));
 ```
 
-### ◉ Praktek ke-2
+### ◉ Praktik ke-2
 
 Ok, sekarang mari kita coba praktikkan contoh yang lebih kompleks.
 

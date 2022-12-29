@@ -56,7 +56,7 @@ Output program di atas saat di-run:
 
 Dalam penerapannya, ketika ada data bertipe `Option` artinya data tersebut berpotensi untuk berisi nilai `None` atau `Some<T>`, pasti antara 2 nilai tersebut.
 
-Umumnya penggunaan tipe `Option` selalu diikuti dengan seleksi kondisi. Keyword `if` bisa digunakan dalam seleksi kondisi, namun dalam prakteknya lebih baik menggunakan keyword `match` karena memberikan kemudahan dalam pengaksesan nilai `T` milik `Some` (dimana `T` adalah data yang kita cari dibungkus dalam enum value `Some`).
+Umumnya penggunaan tipe `Option` selalu diikuti dengan seleksi kondisi. Keyword `if` bisa digunakan dalam seleksi kondisi, namun dalam Praktiknya lebih baik menggunakan keyword `match` karena memberikan kemudahan dalam pengaksesan nilai `T` milik `Some` (dimana `T` adalah data yang kita cari dibungkus dalam enum value `Some`).
 
 Mari kita praktikkan. Ubah isi fungsi `main` dengan kode berikut:
 

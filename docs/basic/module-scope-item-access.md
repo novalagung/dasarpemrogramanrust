@@ -243,7 +243,7 @@ crate::my_func();
 super::super::my_func();
 ```
 
-## A.22.7. Praktek lanjutan
+## A.22.7. Praktik lanjutan
 
 Agar pemahaman makin mantab, silakan pelajari program berikut.
 
