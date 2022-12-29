@@ -75,7 +75,8 @@ const config = {
         title: 'Dasar Pemrograman Rust',
         logo: {
           alt: 'Ebook Dasar Pemrograman Rust - Belajar Rust Mulai Dari 0',
-          src: 'https://dasarpemrogramanrust.novalagung.com/img/logo_small.png?v=1',
+          src: 'https://dasarpemrogramanrust.novalagung.com/img/logo_small_dark.png',
+          srcDark: 'https://dasarpemrogramanrust.novalagung.com/img/logo_small_light.png',
         },
         items: [
           {
