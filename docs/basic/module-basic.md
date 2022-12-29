@@ -28,7 +28,7 @@ Pendefinisian nama module sendiri berada pada file entrypoint *crate* yaitu `mai
 
 > Sebenarnya ada beberapa hal lainnya lagi yang masih relevan yang perlu dibahas di-awal, yaitu perihal sub-module. Akan tetapi agar tidak makin bingung, mari kita lanjut ke praktik terlebih dahulu.
 
-## A.20.2. Praktek #1 - `nama_module.rs`
+## A.20.2. Praktik #1 - `nama_module.rs`
 
 Mari buat program sederhana, yang isinya mencakup pembahasan tentang module. Pada program kecil ini, inputan user ditampung ke sebuah variabel, kemudian ditampilkan ke layar. Proses pembacaan inputan user akan di-split sebagai module.
 
@@ -127,7 +127,7 @@ Selain fungsi, module item bisa dalam bentuk lainnya, contohnya: konstanta, subm
 
 > Lebih jelasnya tentang macam-macam item dibahas pada chapter [Module System → Path & Item](/basic/path-item)
 
-## A.20.3. Praktek #2 - `nama_module/mod.rs`
+## A.20.3. Praktik #2 - `nama_module/mod.rs`
 
 Bagian ini merupakan kelanjutan dari praktik sebelumnya. Program sederhana yang sudah di-buat ditambahi beberapa hal. Data inputan user dikonversi ke bentuk angka untuk kemudian dicek apakah angka tersebut bilangan ganjil atau genap.
 

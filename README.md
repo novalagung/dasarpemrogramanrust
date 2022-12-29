@@ -20,7 +20,7 @@ Ebook ini bisa di-download dalam bentuk file, silakan gunakan link berikut:
 
 - [Dasar Pemrograman Rust v1.0.0-alpha1.20221221.pdf](https://github.com/novalagung/dasarpemrogramanrust/raw/ebooks/dasarpemrogramanrust.pdf?v=1.0.0-alpha1.20221221)
 
-## Source Code Praktek
+## Source Code Praktik
 
 Source code contoh program bisa diunduh di [github.com/novalagung/dasarpemrogramanrust-example](https://github.com/novalagung/dasarpemrogramanrust-example). Dianjurkan untuk sekedar tidak copy-paste dari source code dalam proses belajar, usahakan tulis sendiri kode program agar cepat terbiasa dengan bahasa Rust.
 

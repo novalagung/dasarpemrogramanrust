@@ -129,7 +129,7 @@ Sukses! Sekarang dependency `rand` sudah bisa digunakan dalam package yang sudah
 
 Jadi kurang lebih seperti itu cara menambahkan dependency di Rust. Seiring berjalannya proses pembelajaran penulis yakin pembaca akan terbiasa dengan flow dan juga command di atas.
 
-## A.19.3. Praktek membuat program menampilkan angka random
+## A.19.3. Praktik membuat program menampilkan angka random
 
 Ok, sekarang kita lanjutkan praktik pembuatan program sederhana untuk menampilkan angka random.
 

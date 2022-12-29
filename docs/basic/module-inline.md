@@ -39,7 +39,7 @@ Pada contoh di atas, `module_a` memiliki beberapa item:
 
 Aturan definisi submodule dan item pada inline module masih sama seperti pada *normal module*, salah satunya adalah agar item bisa diakses dari luar module maka perlu menggunakan keyword `pub`.
 
-## A.21.2. Praktek inline module
+## A.21.2. Praktik inline module
 
 Mari lanjut proses pembalajaran dengan praktik. Kita akan buat program sederhana yang didalamnya ada proses generate random string, yang kemudian di-hash.
 
