@@ -97,7 +97,7 @@ fn main() {
   - Fungsi ini **bisa diakses** dari submodule milik *current module*, yaitu submodule dari `messaging::service_layer`. Contohnya bisa dilihat pada fungsi `messaging::say_hello` yang disitu ada statement pemanggilan fungsi `some_black_magic`.
   - Fungsi ini **bisa diakses** dari luar *current module scope* (`messaging::service_layer`).
   - Namun meskipun demikian, bisa tidaknya fungsi ini diakses dari luar *current module scope* (`messaging::service_layer`) juga tergantung dengan visibility dari current module itu sendiri, yaitu `messaging::service_layer`.
-  - Karena module `messaging::service_layer` adalah private, meskipun fungsi `some_black_magic` didalamnya adalah publik, pengaksesan fungsi tersebut dari luar module scope `messaging::service_layer` tidak dimungkinkan.
+  - Karena module `messaging::service_layer` adalah private, meskipun fungsi `some_black_magic` di dalamnya adalah publik, pengaksesan fungsi tersebut dari luar module scope `messaging::service_layer` tidak dimungkinkan.
     - Pengaksesan `service_layer::some_black_magic` dari `messaging::say_hello` tidak error karena submodule `service_layer` meskipun private, posisinya adalah masih dalam satu module scope yang sama dengan fungsi `say_hello`.
     - Dimisalkan jika `service_layer::some_black_magic` dipaksa diakses dari `main`, maka muncul error karena `service_layer` adalah private dan posisinya tidak berada dalam module scope yang sama dengan crate root (`main`).
 
@@ -110,7 +110,7 @@ fn main() {
 
 ## A.28.3. Re-export item
 
-Pada contoh, fungsi `messaging::say_hello` didesain sebagai media untuk mengakses fungsi `some_black_magic`. Di situasi *real world* pastinya sangat jarang terjadi sebuah fungsi isinya hanya satu baris pemanggilan fungsi lainnya. Jika memang ada situasi seperti itu, (kontekstual) lebih baik hapus saja fungsi yang jadi media pemanggilan dan langsung saja panggil fungsi didalamnya sesuai kebutuhan.
+Pada contoh, fungsi `messaging::say_hello` didesain sebagai media untuk mengakses fungsi `some_black_magic`. Di situasi *real world* pastinya sangat jarang terjadi sebuah fungsi isinya hanya satu baris pemanggilan fungsi lainnya. Jika memang ada situasi seperti itu, (kontekstual) lebih baik hapus saja fungsi yang jadi media pemanggilan dan langsung saja panggil fungsi di dalamnya sesuai kebutuhan.
 
 Pada praktik selanjutnya ini kita misalkan bahwa fungsi `say_hello` isinya memang cuma 1 baris, dan yang paling penting adalah isi fungsi `some_black_magic` perlu untuk bisa diakses dari `main`. Untuk kasus seperti ini ada 3 alternatif solusi:
 
@@ -200,7 +200,7 @@ Dengan keyword `pub`, sebuah item visibility-nya menjadi publik.
 
 ### ◉ Keyword `pub(in path)`
 
-Keyword ini menjadikan visibility item hanya didalam `path` yang ditulis di `pub(in path)`, dengan ketentuan `path` tersebut merupakan parent dari module item dimana keyword digunakan.
+Keyword ini menjadikan visibility item hanya di dalam `path` yang ditulis di `pub(in path)`, dengan ketentuan `path` tersebut merupakan parent dari module item dimana keyword digunakan.
 
 Contohnya bisa dilihat pada kode berikut. Fungsi `say_hello` didefinisikan publik dengan scope path ditentukan secara eksplisit adalah `crate::outer_mod`. Dengan demikian fungsi `say_hello` hanya bisa diakses dari dalam `outer_mod`.
 

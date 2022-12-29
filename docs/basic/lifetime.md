@@ -16,7 +16,7 @@ Ketika berurusan dengan data primitif maupun non-primitif tak perlu khawatir per
 
 Lifetime adalah yang digunakan oleh Rust compiler untuk memonitor umur dari references agar tetap valid. Lifetime menempel di variabel, lebih tepatnya di reference variabel.
 
-Rust menerapkan default lifetime dalam pengecekan reference. Beberapa aturan pada default lifetime sudah kita pelajari pada chapter sebelumnya, seperti variabel yang hanya akan valid didalam block dan invalid diluar block dan data yang akan di-dealokasi ketika sudah tidak ada reference-nya.
+Rust menerapkan default lifetime dalam pengecekan reference. Beberapa aturan pada default lifetime sudah kita pelajari pada chapter sebelumnya, seperti variabel yang hanya akan valid di dalam block dan invalid diluar block dan data yang akan di-dealokasi ketika sudah tidak ada reference-nya.
 
 > Rust mengidentifikasi default lifetime menggunakan **lifetime elision**, yang juga akan dibahas pada chapter ini.
 

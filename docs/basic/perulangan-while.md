@@ -36,7 +36,7 @@ Variabel `i` pada contoh di atas menjadi penentu kapan perulangan berhenti. Dida
 
 ## A.10.2. Nested `while`
 
-Penerapan nested while (atau `while` didalam `while`) cukup mudah, tulis saja statement `while` didalam `while` sesuai kebutuhan. Contoh bisa dilihat pada kode berikut, yaitu penerapan teknik nested while untuk print karakter `*` membuat bentuk segitiga.
+Penerapan nested while (atau `while` di dalam `while`) cukup mudah, tulis saja statement `while` di dalam `while` sesuai kebutuhan. Contoh bisa dilihat pada kode berikut, yaitu penerapan teknik nested while untuk print karakter `*` membuat bentuk segitiga.
 
 ```rust
 let mut i = 0;

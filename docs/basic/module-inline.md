@@ -8,7 +8,7 @@ Pada chapter sebelumnya kita telah belajar cara manajemen module. Pembahasan ter
 
 ## A.21.1. Inline Module
 
-Inline module adalah cara lain dalam pendefinisian module beserta item-nya, caranya dengan tetap menggunakan keyword `mod` hanya saja isi/item ditulis didalam blok kode keyword `mod` tersebut. Agar lebih jelas silakan lihat penerapan inline module berikut:
+Inline module adalah cara lain dalam pendefinisian module beserta item-nya, caranya dengan tetap menggunakan keyword `mod` hanya saja isi/item ditulis di dalam blok kode keyword `mod` tersebut. Agar lebih jelas silakan lihat penerapan inline module berikut:
 
 ```rust
 mod module_a {
@@ -41,7 +41,7 @@ Aturan definisi submodule dan item pada inline module masih sama seperti pada *n
 
 ## A.21.2. Praktik inline module
 
-Mari lanjut proses pembalajaran dengan praktik. Kita akan buat program sederhana yang didalamnya ada proses generate random string, yang kemudian di-hash.
+Mari lanjut proses pembalajaran dengan praktik. Kita akan buat program sederhana yang di dalamnya ada proses generate random string, yang kemudian di-hash.
 
 Silakan buat package baru menggunakan `cargo new`. Penulis di sini memilih nama `inline_module_1` sebagai nama package. Setelah itu, siapkan fungsi main dan juga module bernama `utilities` dengan penulisan kode menerapkan inline module. O iya, tulis keduanya (`module utilities` dan fungsi `main`) dalam satu file yang sama yaitu `main.rs`.
 
@@ -187,7 +187,7 @@ Variabel `password` kemudian di-hash menggunakan `utilities::password::hash`, ke
 
 ## A.21.3. Inline module item
 
-Module item dalam inline module masih sama seperti pada module normal, yaitu adalah apapun yang didefinisikan didalam sebuah module. Bisa berupa fungsi, konstanta, submodule, dan lainnya. Pada contoh di atas ada beberapa item didefinisikan:
+Module item dalam inline module masih sama seperti pada module normal, yaitu adalah apapun yang didefinisikan di dalam sebuah module. Bisa berupa fungsi, konstanta, submodule, dan lainnya. Pada contoh di atas ada beberapa item didefinisikan:
 
 - Item `utilities::random` yang merupakan sebuah submodule (inline module).
 - Item `utilities::random::string` yang merupakan sebuah fungsi.

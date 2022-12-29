@@ -33,7 +33,7 @@ Ok, sampai sini yang paling penting adalah dipahami dulu bahwa string literal ti
 
 Tanda `\` digunakan untuk *escape* beberapa karakter string.
 
-Silakan perhatikan contoh berikut. Variabel `var2` isinya adalah string yang didalamnya ada beberapa karakter yang di escape, yaitu tanda `"` dan baris baru atau newline.
+Silakan perhatikan contoh berikut. Variabel `var2` isinya adalah string yang di dalamnya ada beberapa karakter yang di escape, yaitu tanda `"` dan baris baru atau newline.
 
 ```rust
 let var2 = "hello \
@@ -51,7 +51,7 @@ Karena semua baris baru pada contoh di atas di-escape, jadinya string akan tetap
 
 ## A.6.3. Multiline string literal
 
-Penulisan string banyak baris atau *multiline string* adalah sama seperti penulisan string biasa, yaitu langsung tulis saja string dengan diapit tanda `"`, tambahkan baris baru didalam string tersebut sesuai kebutuhan.
+Penulisan string banyak baris atau *multiline string* adalah sama seperti penulisan string biasa, yaitu langsung tulis saja string dengan diapit tanda `"`, tambahkan baris baru di dalam string tersebut sesuai kebutuhan.
 
 ```rust
 let var3 = "baris satu
