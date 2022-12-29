@@ -134,7 +134,7 @@ fn main() {
 
 Pada contoh bisa dilihat ada dua buah fungsi dideklarasikan dengan nama yang sama persis, yang satu berada di *crate root*, satunya lagi merupakan item milik `my_mod`.
 
-Didalam `my_mod::run_the_app` ada 2 kali pemanggilan fungsi `my_func`, satunya menggunakan keyword `self` dan satunya tidak. Fungsi `my_func` manakah yang dipanggil? Hasilnya bisa dilihat pada gambar dibawah ini.
+Di dalam `my_mod::run_the_app` ada 2 kali pemanggilan fungsi `my_func`, satunya menggunakan keyword `self` dan satunya tidak. Fungsi `my_func` manakah yang dipanggil? Hasilnya bisa dilihat pada gambar dibawah ini.
 
 ![Module item access self](img/module-scope-item-access-2.png)
 
