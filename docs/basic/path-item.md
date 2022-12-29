@@ -54,7 +54,7 @@ Seperti yang sudah dibahas bahwa path adalah notasi penulisan alamat untuk item.
 - constant items *(dibahas pada chapter [Konstanta](/basic/konstanta))*
 - static items *(dibahas pada chapter [Static Items](/basic/static))*
 - trait definitions *(dibahas pada chapter [Traits](/basic/traits))*
-- implementations ((dibahas pada chapter [Function](/basic/function), [Associated Function](/basic/associated-function), dan [Method](/basic/method)))
+- implementations *(dibahas pada chapter [Function](/basic/function), [Associated Function](/basic/associated-function), dan [Method](/basic/method))*
 - extern blocks
 
 ## A.18.4. Penerapan paths dalam penggaksesan item
