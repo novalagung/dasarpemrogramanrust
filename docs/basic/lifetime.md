@@ -97,7 +97,7 @@ fn get_message() -> &String {
 
 Esensi program ke-2 ini sama seperti program sebelumnya, yaitu menampilkan pesan string yang sama persis. Perbedaannya, pesan string datanya ada di dalam fungsi `get_message`. Fungsi tersebut dipanggil kemudian reference dari pesan string dipinjamkan, maka dengan ini variabel `m` pada fungsi `main` nilainya adalah data pinjaman (borrowing).
 
-Ketika di run, hasilnya error.
+Ketika di-run, hasilnya error.
 
 ![Lifetime](img/lifetime-1.png)
 

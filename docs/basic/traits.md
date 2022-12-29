@@ -109,7 +109,7 @@ fn main() {
 }
 ```
 
-Ketika program di run, hasilnya sukses tanpa error. Artinya implementasi trait `Debug` pada tipe data struct `Circle` adalah sukses.
+Ketika program di-run, hasilnya sukses tanpa error. Artinya implementasi trait `Debug` pada tipe data struct `Circle` adalah sukses.
 
 ![Trait](img/traits-3.png)
 

@@ -51,7 +51,7 @@ Perihal method `len` dan `capacity`:
 - Method `len` digunakan untuk mencari tahu size atau jumlah elemen yang ada pada sebuah vector
 - Method `capacity` digunakan untuk mencari tahu kapasitas atau jumlah maksimum elemen yang ada pada sebuah vector
 
-> O iya, kode program di atas akan menghasilkan warning saat di run. Hal ini dikarenakan variabel `data_one` yang didefinisikan mutable belum diubah nilainya. Hiraukan saja, karena selanjutnya kita akan manipulasi data variabel tersebut.
+> O iya, kode program di atas akan menghasilkan warning saat di-run. Hal ini dikarenakan variabel `data_one` yang didefinisikan mutable belum diubah nilainya. Hiraukan saja, karena selanjutnya kita akan manipulasi data variabel tersebut.
 
 ### ◉ Method `pop` → menghapus elemen terakhir
 

@@ -169,7 +169,7 @@ Pada kode di atas, ada satu buah mutable string bernama `fact_one`. String terse
 
 Kemudian, ada operasi peminjaman lagi (yang juga mutable borrow) dari variabel `fact_one` ke `fact_one`.
 
-Ketika program di run, hasilnya sukses. Kok bisa? padahal jelas di aturan tertulis bahwa dalam waktu yang sama tidak boleh ada lebih dari satu mutable borrow.
+Ketika program di-run, hasilnya sukses. Kok bisa? padahal jelas di aturan tertulis bahwa dalam waktu yang sama tidak boleh ada lebih dari satu mutable borrow.
 
 ![Borrowing](img/borrowing-5.png)
 

@@ -307,7 +307,7 @@ fn main() {
 }
 ```
 
-Hasilnya ketika di run:
+Hasilnya ketika di-run:
 
 ![Generics](img/generics-4.png)
 
