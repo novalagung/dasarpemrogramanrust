@@ -109,7 +109,7 @@ Bisa dilihat tanda `::` digunakan pada statement tersebut. Path tersebut jika di
 
 > Terkesan banyak sekali penjelasan dalam 1 baris kode, tapi tidak perlu dihafal, lama-kelamaan akan terbiasa.
 
-Salah satu yang menarik dari create *Rust Standard Library* adalah, beberapa segmen otomatis di-import atau dipakai. Jadi tidak perlu menuliskan path secara full.
+Salah satu yang menarik dari crate *Rust Standard Library* adalah, beberapa segmen otomatis di-import atau dipakai. Jadi tidak perlu menuliskan path secara full.
 
 Pada contoh yang sudah dibuat, statement pembuatan data `String` bisa diubah dari ...
 
