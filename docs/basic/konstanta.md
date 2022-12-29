@@ -22,7 +22,7 @@ Dalam pendefinisian konstanta, tipe data harus dituliskan secara eksplist. Dekla
 
 Nilai sebuah konstanta juga bisa dari variabel atau konstanta lain, atau hasil sebuah operasi seperti operasi aritmatika `22.0/7.0`.
 
-Disini penulis tidak menggunakan `22/7` karena hasilnya akan bertipe integer. Di Rust operasi aritmatika harus dilakukan dengan tipe data yang sama, dan hasilnya akan memiliki tipe data sesuai operand. Lebih jelasnya akan kita bahas pada chapter selanjutnya.
+Di sini penulis tidak menggunakan `22/7` karena hasilnya akan bertipe integer. Di Rust operasi aritmatika harus dilakukan dengan tipe data yang sama, dan hasilnya akan memiliki tipe data sesuai operand. Lebih jelasnya akan kita bahas pada chapter selanjutnya.
 
 > Keyword `mut` tidak bisa diterapkan pada konstanta. Jika dipaksa akan menghasilkan error.
 
@@ -55,7 +55,7 @@ Sesuai anjuran di [halaman dokumentasi Rust](https://rust-lang.github.io/api-gui
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/konstanta">

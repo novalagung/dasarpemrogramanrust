@@ -36,7 +36,7 @@ Sebelum kita masuk ke pembahasan yang lebih detail mengenai ownership, mari pela
 
 Variable scope maksudnya adalah di block scope mana suatu variabel dideklarasikan, dan dalam block scope tersebut variabel menjadi valid (bisa digunakan). Di luar scope-nya variabel menjadi tidak valid, tidak bisa digunakan.
 
-Agar lebih jelas, silakan perhatikan kode berikut, tidak perlu dipraktekan.
+Agar lebih jelas, silakan perhatikan kode berikut, tidak perlu dipraktikkan.
 
 ```rust
 fn do_something() {
@@ -126,7 +126,7 @@ Ok, sampai sini cukup jelas. Tapi kenapa bisa error? Error muncul karena variabe
 
 Intinya, variabel yang mengadopsi *move semantics*, setiap kali ada operasi assignment maka owner akan berpindah ke variabel baru.
 
-Jika perlu, silakan coba praktekan dengan tipe data non-primitif lainnya, seperti struct atau lainnya. Dengan pseudocode yang sama seperti contoh di atas, hasilnya adalah sama, yaitu error.
+Jika perlu, silakan coba praktikkan dengan tipe data non-primitif lainnya, seperti struct atau lainnya. Dengan pseudocode yang sama seperti contoh di atas, hasilnya adalah sama, yaitu error.
 
 ```rust
 #[derive(Debug)]
@@ -151,7 +151,7 @@ println!("g: {:?}, h: {:?}", g, h);
 
 Ok, masuk ke pembahasan selanjutnya, yaitu tentang alokasi dan dealokasi sebuah variabel dalam scope-nya.
 
-Disini kita akan gunakan custom type `String` sebagai contoh untuk mempelajari ownership. Untuk tipe non-primitif lainnya yang juga mengadopsi **move semantics** sebenarnya bisa dijadikan contoh. Tapi penulis memilih tipe `String` karena sering digunakan.
+Di sini kita akan gunakan custom type `String` sebagai contoh untuk mempelajari ownership. Untuk tipe non-primitif lainnya yang juga mengadopsi **move semantics** sebenarnya bisa dijadikan contoh. Tapi penulis memilih tipe `String` karena sering digunakan.
 
 Sekarang perhatikan kode berikut:
 
@@ -261,7 +261,7 @@ fn say_hello(param: String) {
 
 Pada kode di atas, data variabel `msg` owner-nya berpindah ke parameter bernama `param` milik fungsi `say_hello`.
 
-Ok, sampai disini semoga cukup jelas ya tentang bagaimana proses transfer ownership terjadi pada data yang mengadopsi *move semantics*.
+Ok, sampai di sini semoga cukup jelas ya tentang bagaimana proses transfer ownership terjadi pada data yang mengadopsi *move semantics*.
 
 Untuk data bertipe primitif (yang mengadopsi *copy semantics*) kita tidak perlu repot memikirkan dimana owner datanya, karena setiap operasi assignment, data akan di-copy dan hasilnya ada data baru dengan owner baru.
 
@@ -285,7 +285,7 @@ Lalu apa solusinya? apakah harus mengembalikannya via return value? Contohnya se
 
 ```rust
 fn main() {
-    let mut msg = String::from("hello rust");   // 1. awalnya data disini
+    let mut msg = String::from("hello rust");   // 1. awalnya data di sini
     msg = say_hello(msg);                       // 3. lalu dikembalikan lagi ke sini
     println!("{:?}", msg);
 }
@@ -372,7 +372,7 @@ Lebih jelasnya mengenai macro dibahas pada chapter [Macro](/wip/macro).
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/ownership">

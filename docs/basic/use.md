@@ -34,7 +34,7 @@ fn main() {
 
 ### ◉ Import items dari module yang sama
 
-Pada contoh selanjutnya ini, kita akan coba praktekan penerapan fungsi `std::env::args` untuk mengambil *argument* saat eksekusi program, kemudian menampilkannya ke layar.
+Pada contoh selanjutnya ini, kita akan coba praktikkan penerapan fungsi `std::env::args` untuk mengambil *argument* saat eksekusi program, kemudian menampilkannya ke layar.
 
 Ok, berarti akan ada 2 path yang akan di-import:
 
@@ -49,7 +49,7 @@ Ada notasi penulisan import path lainnya yang bisa digunakan jika path-nya memil
 use std::env::{current_dir, args};
 ```
 
-Ok, lanjut ke praktek. Silakan tulis kode berikut:
+Ok, lanjut ke praktik. Silakan tulis kode berikut:
 
 ```rust
 use std::env::{current_dir, args};
@@ -74,7 +74,7 @@ Statement `args().nth(i)` mengembalikan nilai argument pada index ke-`i` dalam t
 > - Lebih jelasnya mengenai Iterator akan dibahas pada chapter terpisah, [Trait → Iterator](/wip/trait-iterator).
 > - Lebih jelasnya mengenai tipe `Option` akan dibahas pada chapter terpisah, [Tipe Data → Option](/basic/option-type).
 
-Silakan coba jalankan menggunakan dua command, yang pertama `cargo run`, kemudian `cargo run tulis argumen disini dengan pembatas spasi`.
+Silakan coba jalankan menggunakan dua command, yang pertama `cargo run`, kemudian `cargo run tulis argumen di sini dengan pembatas spasi`.
 
 Bisa dilihat pada gambar berikut, jika ada argument disisipkan dalam eksekusi program, maka ditampilkan. Pada gambar berikut dicontohkan argument yang dipakai adalah `hello` dan `world`.
 
@@ -150,7 +150,7 @@ fn main() {
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/use">

@@ -35,7 +35,7 @@ let sliced_value3 = &data[start_index..end_index]
 
 > Slice juga bisa dibuat dari tipe data vector. Lebih jelasnya dibahas pada chapter [Vector](/basic/vector).
 
-Silakan perhatikan contoh berikut dan praktekan:
+Silakan perhatikan contoh berikut dan praktikkan:
 
 ```rust
 let numbers = [12, 16, 8, 3];
@@ -64,7 +64,7 @@ Bisa dilihat pada statement print `slice_a[0]` dan `slice_a[1]`, nilai elemennya
 
 Slice `slice_a` bukan merupakan pemilik sebenarnya data `[12, 16, 8]`, slice tersebut hanya meminjam datanya dari `numbers` yang notabene dalah owner data `[12, 16, 8]`.
 
-Meminjam disini artinya variabel baru `slice_a` memiliki data yang sama, dan alamat memori (atau pointer) data tersebut juga sama yaitu mengarah ke owner sebenarnya, yang pada contoh ini adalah `numbers`.
+Meminjam di sini artinya variabel baru `slice_a` memiliki data yang sama, dan alamat memori (atau pointer) data tersebut juga sama yaitu mengarah ke owner sebenarnya, yang pada contoh ini adalah `numbers`.
 
 > Di Rust, proses meminjam data secara umum disebut dengan **borrowing**. Variabel atau data hasil dari borrowing biasa disebut dengan **reference**. Lebih jelasnya akan dibahas pada chapter [Pointer & References](/basic/pointer-references) dan [Borrowing](/basic/borrowing).
 >
@@ -280,7 +280,7 @@ Catatan ringkas perihal slice:
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/slice">

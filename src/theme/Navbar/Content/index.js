@@ -36,7 +36,7 @@ function NavbarContentLayout({left, right}) {
     <div className="navbar__inner">
       <div className="navbar__items">{left}</div>
       <div className="navbar__items navbar__items--right">
-        <div style={{ marginTop: '8px', marginRight: '30px' }}>
+        <div style={{ marginTop: '8px', marginRight: '15px' }}>
           <a className="github-button" href="https://github.com/novalagung/dasarpemrogramanrust" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star novalagung/dasarpemrogramanrust on GitHub">Star</a>
           &nbsp;
           <a className="github-button" href="https://github.com/novalagung" data-size="large" aria-label="Follow @novalagung on GitHub">Follow @novalagung</a>

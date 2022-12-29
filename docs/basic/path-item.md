@@ -145,7 +145,7 @@ Eksekusi dari statement `stdin_reader.read_line(&mut message)` adalah blocking, 
 
 ### ◉ Pengecekan error `stdin_reader`
 
-Blok statement `if` pada contoh diatas bertugas melakukan pengecekan error. Jika ada error, maka `reader_res.is_err()` bernilai `true`, dan pesan error-nya dimunculkan.
+Blok statement `if` pada contoh di atas bertugas melakukan pengecekan error. Jika ada error, maka `reader_res.is_err()` bernilai `true`, dan pesan error-nya dimunculkan.
 
 ```rust
 if reader_res.is_err() {
@@ -166,7 +166,7 @@ Oke, Penulis rasa sudah cukup jelas perihal bagaimana cara menggunakan path untu
 
 Ada alternatif cara lain untuk memperpendek penulisan dan pengaksesan path, yaitu dengan menggunakan keyword `use`.
 
-> Penggunaan `use` juga sempat dipraktekan pada chapter sebelumnya, yaitu [Perulangan → while](/basic/perulangan-while).
+> Penggunaan `use` juga sempat dipraktikkan pada chapter sebelumnya, yaitu [Perulangan → while](/basic/perulangan-while).
 
 Cara penerapannya bisa dilihat pada kode berikut:
 
@@ -198,7 +198,7 @@ Jawabannya akan ada di beberapa chapter berikutnya. Untuk sekarang khusus pada b
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/path_item">

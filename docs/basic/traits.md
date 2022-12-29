@@ -212,14 +212,14 @@ impl std::fmt::Display for Circle {
 
 Pada section di atas kita telah membahas bagaimana cara implementasi traits ke tipe data. Pada bagian ini kita akan belajar tentang cara membuat definisi trait (membuat custom trait).
 
-Masih sama dengan metode sebelumnya, pembelajaran dilakukan dengan praktek. Kita gunakan skenario praktek berikut pada program selanjutnya:
+Masih sama dengan metode sebelumnya, pembelajaran dilakukan dengan praktik. Kita gunakan skenario praktik berikut pada program selanjutnya:
 
 1. Buat struct bernama `Circle`.
 2. Buat struct bernama `Square`.
 3. Buat trait bernama `Area` dengan isi satu buah method untuk menghitung luas bangun datar (`calculate`).
 4. Implementasikan trait `Area` ke dua struct tersebut.
 
-Ok, mari mulai praktekan skenario di atas. Pertama siapkan project dengan struktur berikut:
+Ok, mari mulai praktikkan skenario di atas. Pertama siapkan project dengan struktur berikut:
 
 ```bash title="package source code structure"
 my_package
@@ -356,7 +356,7 @@ let square_one = two_dimensional::Square{ length: 5 };
 calculate_and_print_result("square".to_string(), &square_one);
 ```
 
-> `&impl Area` ini tipe data pointer ya, tipe non-pointer-nya adalah `impl Area`. Disini digunakan tipe data pointer untuk antisipasi *move semantics* pada tipe data custom type (borrowing).
+> `&impl Area` ini tipe data pointer ya, tipe non-pointer-nya adalah `impl Area`. Di sini digunakan tipe data pointer untuk antisipasi *move semantics* pada tipe data custom type (borrowing).
 
 Dimisalkan, fungsi tersebut parameter `item`-nya bisa menampung beberapa jenis traits, kira-kira apakah bisa dibuat seperti itu? Misalnya ada trait lain bernama `Circumference`, dan parameter `item` milik fungsi `calculate_and_print_result` harus bisa menampung data baik dari tipe yang implement trait `Area` ataupun trait `Circumference`.
 
@@ -375,7 +375,7 @@ Tambahkan tanda `()` sebelum `impl NamaTrait`, lalu ganti `NamaTrait` dengan tra
 
 Penerapan trait sebagai parameter fungsi juga bisa dituliskan dalam notasi yang memanfaatkan generic. Teknik penulisan ini disebut dengan *trait bound syntax*.
 
-Contohnya bisa dilihat pada kode berikut. Ada generic bernama `T` yang merepresentasikan trait `Area`, kemudian pada definisi parameter ke-2 fungsi (yaitu parameter `item`) tipenya menggunakan `&T`. Tipe `&T` disini adalah ekuivalen dengan `&impl Area`.
+Contohnya bisa dilihat pada kode berikut. Ada generic bernama `T` yang merepresentasikan trait `Area`, kemudian pada definisi parameter ke-2 fungsi (yaitu parameter `item`) tipenya menggunakan `&T`. Tipe `&T` di sini adalah ekuivalen dengan `&impl Area`.
 
 ```rust
 fn calculate_and_print_result2<T: Area>(name: String, item: &T) {
@@ -484,7 +484,7 @@ Tipe data aslinya tetap bisa diakses, tapi butuh tambahan effort. Lebih jelasnya
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/traits">

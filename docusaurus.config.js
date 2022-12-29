@@ -77,29 +77,36 @@ const config = {
           alt: 'Ebook Dasar Pemrograman Rust - Belajar Rust Mulai Dari 0',
           src: 'https://dasarpemrogramanrust.novalagung.com/img/logo_small.png?v=1',
         },
-        items: [ ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
+        items: [
           {
-            title: 'Referensi Belajar Lainnya',
+            position: 'left',
+            label: '📖 Ebook lainnya',
             items: [
               {
-                label: 'E-book: Dasar Pemrograman Golang',
+                label: 'Ebook: Dasar Pemrograman Golang ',
                 href: 'https://dasarpemrogramangolang.novalagung.com',
               },
               {
-                label: 'E-book: Belajar Devops',
-                href: 'https://devops.novalagung.com',
+                label: 'Ebook: Learn Devops ',
+                href: 'https://learndevops.novalagung.com',
               },
+            ]
+          },
+          {
+            position: 'left',
+            label: '▶️ Udemy courses',
+            items: [
               {
-                label: 'Udemy Course: Praktis Belajar Docker dan Kubernetes',
+                label: 'Udemy Course: Praktis Belajar Docker dan Kubernetes ',
                 href: 'https://www.udemy.com/course/praktis-belajar-docker-dan-kubernetes-untuk-pemula/?couponCode=BIGSALEMAY2021',
               },
-            ],
-          },
+            ]
+          }
         ],
+      },
+      footer: {
+        style: 'dark',
+        links: [ ],
         copyright: `${new Date().getFullYear()} | Maintained by Noval Agung Prayogo`,
       },
       prism: {

@@ -36,7 +36,7 @@ let info: String = my_car.info();
 
 Pengaksesan *associated function* dilakukan menggunakan notasi path dengan separator `::`, contohnya seperti `Car::new()`. Sedangkan pengaksesan method menggunakan separator `.`, contoh: `my_car.info()`.
 
-Agar lebih jelas, mari lanjut ke bagian praktek. Siapkan package dengan struktur seperti berikut:
+Agar lebih jelas, mari lanjut ke bagian praktik. Siapkan package dengan struktur seperti berikut:
 
 ```bash title="package source code structure"
 my_package
@@ -141,7 +141,7 @@ impl NamaStruct {
 
 Ok, penulis rasa sudah cukup jelas perihal perbedaan *associated function* dengan method. Sekarang, bagaimana dengan method yang ada parameternya? Cara deklarasinya adalah cukup dengan menuliskan parameter yang diinginkan setelah `&self`.
 
-Lanjut ke praktek berikutnya. Silakan buat method baru bernama `congratulate` yang memiliki 1 buah parameter bertipe `String`, dengan tugas adalah menampilkan pesan selamat.
+Lanjut ke praktik berikutnya. Silakan buat method baru bernama `congratulate` yang memiliki 1 buah parameter bertipe `String`, dengan tugas adalah menampilkan pesan selamat.
 
 ```rust title="src/models.rs"
 // ...
@@ -253,7 +253,7 @@ Pembahasan mengenai generic pada method ada pada chapter [Generics](/basic/gener
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/method">

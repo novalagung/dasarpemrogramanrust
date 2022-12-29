@@ -10,7 +10,7 @@ Pada chapter ini kita akan belajar tentang *function* atau fungsi.
 
 ## A.17.1. Keyword `fn`
 
-Fungsi di Rust dibuat menggunakan keyword `fn`. Salah satu contoh penerapan keyword ini dalam pembuatan fungsi sudah kita praktekan berulang kali pada definisi fungsi `main`, yang merupakan fungsi utama atau entrypoint sebuah program.
+Fungsi di Rust dibuat menggunakan keyword `fn`. Salah satu contoh penerapan keyword ini dalam pembuatan fungsi sudah kita praktikkan berulang kali pada definisi fungsi `main`, yang merupakan fungsi utama atau entrypoint sebuah program.
 
 ```rust
 fn main() {
@@ -91,7 +91,7 @@ fn func_name(param_a: int32, param_b: bool, param_c: &str) {
 // ...
 ```
 
-Kembali ke praktek, pada bagian ini kita akan buat sebuah fungsi bernama `greet_custom_message`. Fungsi ini tugasnya masih sama seperti seperti `greet` hanya saja pesan yang ditampilkan adalah sesuai dengan value parameter fungsi.
+Kembali ke praktik, pada bagian ini kita akan buat sebuah fungsi bernama `greet_custom_message`. Fungsi ini tugasnya masih sama seperti seperti `greet` hanya saja pesan yang ditampilkan adalah sesuai dengan value parameter fungsi.
 
 ```rust
 fn greet_custom_message(name: &str, message: &str) {
@@ -156,7 +156,7 @@ Jalankan program, hasilnya adalah sesuai harapan. Volume dari persegi panjang de
 
 ### ◉ Keyword `return` untuk penentuan nilai balik
 
-Salah satu hal yang unik yang ada di Rust adalah beberapa variasi cara penulisan nilai balik fungsi. Cara pertama adalah menggunakan keyword `return` seperti yang sudah dipraktekan.
+Salah satu hal yang unik yang ada di Rust adalah beberapa variasi cara penulisan nilai balik fungsi. Cara pertama adalah menggunakan keyword `return` seperti yang sudah dipraktikkan.
 
 ```rust
 fn calculate_box_volume1(width: i32, height: i32, length: i32) -> i32 {
@@ -169,7 +169,7 @@ Untuk cara ini penulis rasa cukup jelas.
 
 ### ◉ *Return value* tanpa keyword `return`
 
-Cara ke-2 kita langsung praktekan menggunakan kode berikut, silakan tulis lalu jalankan program:
+Cara ke-2 kita langsung praktikkan menggunakan kode berikut, silakan tulis lalu jalankan program:
 
 ```rust
 fn calculate_box_volume2(width: i32, height: i32, length: i32) -> i32 {
@@ -199,9 +199,9 @@ Kedua poin tersebut merupakan syarat untuk penerapan *return value* tanpa keywor
 
 ### ◉ Statemen sebagai *return value* tanpa keyword `return`
 
-Cara selanjutnya yang akan kita bahas ini sebenarnya sama seperti sebelumnya, hanya saja bedanya disini tidak menggunakan nama variabel sebagai nilai balik, melainkan langsung statement, yang hasil eksekusi statement tersebut dijadikan nilai balik fungsi.
+Cara selanjutnya yang akan kita bahas ini sebenarnya sama seperti sebelumnya, hanya saja bedanya di sini tidak menggunakan nama variabel sebagai nilai balik, melainkan langsung statement, yang hasil eksekusi statement tersebut dijadikan nilai balik fungsi.
 
-Langsung saja kita praktekan. Siapkan fungsi `calculate_box_volume3` berikut:
+Langsung saja kita praktikkan. Siapkan fungsi `calculate_box_volume3` berikut:
 
 ```rust
 fn calculate_box_volume3(width: i32, height: i32, length: i32) -> i32 {
@@ -230,9 +230,9 @@ Bisa dilihat hasilnya sama seperti pada program sebelumnya.
 
 ### ◉ Macro `format` untuk membuat *formatted* string
 
-Bagian ini adalah penjelasan tambahan dari kode program yang baru saja dipraktekan.
+Bagian ini adalah penjelasan tambahan dari kode program yang baru saja dipraktikkan.
 
-Macro `format` digunakan untuk *formatting* sebuah string. *Formatting* disini maksudnya adalah pembuatan string dengan menggunakan teknik penyusunan isi string dalam format tertentu, mirip seperti yang dilakukan menggunakan macro `print` atau `println`, bedanya hanya pada macro `format` hasilnya bukan sebuah output ke console output, melainkan sebagai nilai balik.
+Macro `format` digunakan untuk *formatting* sebuah string. *Formatting* di sini maksudnya adalah pembuatan string dengan menggunakan teknik penyusunan isi string dalam format tertentu, mirip seperti yang dilakukan menggunakan macro `print` atau `println`, bedanya hanya pada macro `format` hasilnya bukan sebuah output ke console output, melainkan sebagai nilai balik.
 
 ```rust
 // 2 bari statements berikut ...
@@ -320,7 +320,7 @@ Untuk sekarang silakan lanjut ke pembahasan chapter berikutnya terlebih dahulu, 
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/function">

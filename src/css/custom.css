@@ -54,3 +54,7 @@ blockquote {
   background: #2e8555 !important;
   color: #ffffff !important;
 }
+
+.navbar__brand {
+  margin-right: 1.5rem;
+}

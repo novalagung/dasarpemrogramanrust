@@ -12,7 +12,7 @@ Setiap bahasa pemrograman memiliki caranya sendiri dalam hal pengelolahan strukt
 
 Di Rust, module memiliki hirarki (biasa disebut dengan *module tree*) yang *root*/akarnya adalah file entrypoint crate, yaitu `main.rs` untuk *binary crate* dan `lib.rs` untuk *library crate*. Kedua file ini biasa disebut dengan *crate root file*.
 
-> Disini pembahasan akan fokus pada penerapan module dalam *binary crate*. Kita belum masuk ke pembahasan tentang *library crate*.
+> Di sini pembahasan akan fokus pada penerapan module dalam *binary crate*. Kita belum masuk ke pembahasan tentang *library crate*.
 
 Rust memiliki 2 jenis modul, yaitu *normal module* dan *inline module*. Pembahasan dimulai dengan normal module terlebih dahulu.
 
@@ -26,19 +26,19 @@ Pendefinisian nama module sendiri berada pada file entrypoint *crate* yaitu `mai
 - Nama module ditulis di `main.rs` (atau `lib.rs` untuk library crate)
 - Item atau isi module ditulis dalam file `nama_module.rs` atau `nama_module/mod.rs`
 
-> Sebenarnya ada beberapa hal lainnya lagi yang masih relevan yang perlu dibahas di-awal, yaitu perihal sub-module. Akan tetapi agar tidak makin bingung, mari kita lanjut ke praktek terlebih dahulu.
+> Sebenarnya ada beberapa hal lainnya lagi yang masih relevan yang perlu dibahas di-awal, yaitu perihal sub-module. Akan tetapi agar tidak makin bingung, mari kita lanjut ke praktik terlebih dahulu.
 
-## A.20.2. Praktek #1 - `nama_module.rs`
+## A.20.2. Praktik #1 - `nama_module.rs`
 
 Mari buat program sederhana, yang isinya mencakup pembahasan tentang module. Pada program kecil ini, inputan user ditampung ke sebuah variabel, kemudian ditampilkan ke layar. Proses pembacaan inputan user akan di-split sebagai module.
 
-Ok, langsung saja, buat package/project baru dengan nama bebas. Disini penulis menggunakan nama package `module_1`.
+Ok, langsung saja, buat package/project baru dengan nama bebas. Di sini penulis menggunakan nama package `module_1`.
 
 ```rust
 cargo new module_1
 ```
 
-Setelah itu siapkan 1 buah file bernama `my_io.rs`, letakan di dalam folder `src` (1 level dengan file `main.rs`). File ini difungsikan sebagai tempat definisi *module item* milik sebuah module bernama `my_io` (io disini kependekan dari *input output*).
+Setelah itu siapkan 1 buah file bernama `my_io.rs`, letakan di dalam folder `src` (1 level dengan file `main.rs`). File ini difungsikan sebagai tempat definisi *module item* milik sebuah module bernama `my_io` (io di sini kependekan dari *input output*).
 
 ```bash title="package source code structure"
 module_1
@@ -64,7 +64,7 @@ pub fn read_entry() -> String {
 }
 ```
 
-Ok, kita telah menyiapkan satu item milik module `my_io` yaitu sebuah fungsi bernama `read_entry`. 1 hal yang sedikit berbeda pada definisi fungsi diatas adalah penambahan keyword `pub` yang ditulis sebagai prefix definisi fungsi.
+Ok, kita telah menyiapkan satu item milik module `my_io` yaitu sebuah fungsi bernama `read_entry`. 1 hal yang sedikit berbeda pada definisi fungsi di atas adalah penambahan keyword `pub` yang ditulis sebagai prefix definisi fungsi.
 
 Keyword `pub` digunakan untuk menjadikan suatu item menjadi **public**, agar bisa diakses dari luar module.
 
@@ -106,9 +106,9 @@ Jalankan program, masukan sebuah angka, lalu enter. Lihat hasilnya, program berj
 
 Cara pengaksesan item dari sebuah module yang kita definisikan sendiri adalah sama seperti pengaksesan item dari crate lainnya, yaitu menggunakan *path*. Statement `my_io::read_entry()` artinya item `read_entry` yang merupakan fungsi dalam module `my_io` digunakan.
 
-### ◉ Summary praktek #1
+### ◉ Summary praktik #1
 
-Pada praktek pertama ini kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
+Pada praktik pertama ini kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
 
 - Penggunaan normal module dalam binary carete
 - Pembuatan module dengan nama `my_io`, dengan isi/item ditulis pada file `my_io.rs`
@@ -121,15 +121,15 @@ Sesuai anjuran di [halaman dokumentasi Rust](https://rust-lang.github.io/api-gui
 
 ### ◉ Module item
 
-Module item adalah apapun yang didefinisikan didalam sebuah module. Pada contoh praktek ke-1 di atas, module `my_io` memiliki 1 buah item yaitu fungsi bernama `read_entry`.
+Module item adalah apapun yang didefinisikan didalam sebuah module. Pada contoh praktik ke-1 di atas, module `my_io` memiliki 1 buah item yaitu fungsi bernama `read_entry`.
 
 Selain fungsi, module item bisa dalam bentuk lainnya, contohnya: konstanta, submodule, struct, dan lainnya.
 
 > Lebih jelasnya tentang macam-macam item dibahas pada chapter [Module System → Path & Item](/basic/path-item)
 
-## A.20.3. Praktek #2 - `nama_module/mod.rs`
+## A.20.3. Praktik #2 - `nama_module/mod.rs`
 
-Bagian ini merupakan kelanjutan dari praktek sebelumnya. Program sederhana yang sudah di-buat ditambahi beberapa hal. Data inputan user dikonversi ke bentuk angka untuk kemudian dicek apakah angka tersebut bilangan ganjil atau genap.
+Bagian ini merupakan kelanjutan dari praktik sebelumnya. Program sederhana yang sudah di-buat ditambahi beberapa hal. Data inputan user dikonversi ke bentuk angka untuk kemudian dicek apakah angka tersebut bilangan ganjil atau genap.
 
 Fungsi untuk konversi string ke bentuk numerik dan juga untuk pengecekan bilangan ganjil genap, adalah dua buah item milik module bernama `my_number` yang akan kita definisikan sebentar lagi.
 
@@ -198,9 +198,9 @@ Jalankan program, lihat hasilnya.
 
 ![Rust module](img/module-2.png)
 
-### ◉ Summary praktek #2
+### ◉ Summary praktik #2
 
-Hingga praktek ke-2 ini, kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
+Hingga praktik ke-2 ini, kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
 
 - Penggunaan normal module dalam binary carete
 - Pembuatan module dengan nama `my_io`, dengan isi/item ditulis pada file `my_io.rs`
@@ -212,7 +212,7 @@ Hingga praktek ke-2 ini, kita telah belajar penerapan module dengan mengaplikasi
 
 ### ◉ Konversi string ke numerik
 
-Rust mengenal beberapa jenis konversi antar tipe data. Teknik konversi yang kita praktekan pada chapter ini menggunakan method `.parse()`, cara ini bisa dilakukan untuk konversi tipe data dari custom types ke primitive. Contohnya seperti di atas, dari `String` ke `i32`.
+Rust mengenal beberapa jenis konversi antar tipe data. Teknik konversi yang kita praktikkan pada chapter ini menggunakan method `.parse()`, cara ini bisa dilakukan untuk konversi tipe data dari custom types ke primitive. Contohnya seperti di atas, dari `String` ke `i32`.
 
 Penggunaannya cukup mudah, akses saja method `.parse()` kemudian sisipkan tipe data sebagai parameter generic. Lalu chain dengan method `unwrap` (yang method tersebut merupakan item milik tipe data *generic result type* atau `Result<T, E>`).
 
@@ -269,7 +269,7 @@ my_package
 
 Lalu bagaimana jika sebuah submodule memiliki submodule yang memiliki submodule ... dst, aturannya tetap sama seperti aturan submodule.
 
-Mari lanjut praktek agar tidak bingung. Kita akan modifikasi program sebelumnya. Item `string_to_number` yang sebelumnya adalah item milik `my_number` kita pindah ke sebuah module baru bernama `conversion_utility` yang merupakan submodule dari `my_number`. Silakan buat file baru `my_number/conversion_utility/mod.rs`, kemudian isi dengan fungsi berikut:
+Mari lanjut praktik agar tidak bingung. Kita akan modifikasi program sebelumnya. Item `string_to_number` yang sebelumnya adalah item milik `my_number` kita pindah ke sebuah module baru bernama `conversion_utility` yang merupakan submodule dari `my_number`. Silakan buat file baru `my_number/conversion_utility/mod.rs`, kemudian isi dengan fungsi berikut:
 
 ```rust title="src/my_number/conversion_utility/mod.rs"
 pub fn string_to_number(text: String) -> i32 {
@@ -309,9 +309,9 @@ Kurang lebih strukturnya menjadi seperti berikut:
 
 Jalankan program untuk mengetest hasilnya.
 
-### ◉ Summary praktek #3
+### ◉ Summary praktik #3
 
-Hingga pembahasan pada praktek submodule, kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
+Hingga pembahasan pada praktik submodule, kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
 
 - Penggunaan normal module dalam binary carete
 - Pembuatan module dengan nama `my_io`, dengan isi/item ditulis pada file `my_io.rs`
@@ -344,7 +344,7 @@ conversion_utility(message);
 
 Selain menggunakan dua teknik definisi module item di atas yang fokusnya ada pada penamaan file, ada juga cara lain pendefinisian module item, yaitu dengan memanfaatkan `path` attribute.
 
-Mari kita praktekan, silakan ubah struktur package yang sudah dibuat dari ...
+Mari kita praktikkan, silakan ubah struktur package yang sudah dibuat dari ...
 
 ```bash title="package source code structure"
 my_package
@@ -389,11 +389,11 @@ pub mod conversion_utility;
 
 Lalu run, dan program akan jalan normal tanpa error.
 
-Statement `#[path = "conversion.rs"]` diatas merupakan contoh penerapan dari Rust path attributes. Dengannya kita bisa menempatkan isi sebuah module pada file yang namanya bebas (pada contoh di atas, file bernama `conversion.rs`).
+Statement `#[path = "conversion.rs"]` di atas merupakan contoh penerapan dari Rust path attributes. Dengannya kita bisa menempatkan isi sebuah module pada file yang namanya bebas (pada contoh di atas, file bernama `conversion.rs`).
 
-### ◉ Summary praktek #4
+### ◉ Summary praktik #4
 
-Hingga pembahasan pada praktek module `path` attribute, kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
+Hingga pembahasan pada praktik module `path` attribute, kita telah belajar penerapan module dengan mengaplikasikan beberapa hal berikut:
 
 - Penggunaan normal module dalam binary carete
 - Pembuatan module dengan nama `my_io`, dengan isi/item ditulis pada file `my_io.rs`
@@ -411,7 +411,7 @@ Pembahasan topik module dilanjutkan pada beberapa chapter lain. Pada chapter [Mo
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/module">

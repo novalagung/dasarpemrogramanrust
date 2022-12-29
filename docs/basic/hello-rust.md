@@ -10,7 +10,7 @@ Seperti pada umumnya bahasa pemrograman, belajar membuat program pasti diawali d
 
 ## A.1.1. Pembuatan project/package
 
-Pembuatan project baru di Rust bisa dilakukan dengan 2 cara, dengan `cargo` atau tanpanya. Disini kita akan skip bagian pembuatan project tanpa `cargo`, karena akan butuh effort lebih banyak nantinya dalam mengelola package dan manajemen build.
+Pembuatan project baru di Rust bisa dilakukan dengan 2 cara, dengan `cargo` atau tanpanya. Di sini kita akan skip bagian pembuatan project tanpa `cargo`, karena akan butuh effort lebih banyak nantinya dalam mengelola package dan manajemen build.
 
 > Di Rust istilah project lebih dikenal dengan **package**, dan pada ebook ini maknanya adalah sama.
 
@@ -121,7 +121,7 @@ Bisa dilihat, setiap pesan yang ditampilkan menggunakan macro `println` muncul d
 
 ### ◉ Notasi penulisan statement
 
-Di Rust, statement harus diikuti dengan tanda `;` atau titik koma. Wajib hukumnya. Tanpa tanda `;` maka beberapa statement akan dianggap 1 baris dan kemungkinan menghasilkan error jika sintaks dianggap tidak valid. Tanda `;` adalah penanda akhir statement. Contoh `println!("Hello, world!")`.
+Di Rust, statement harus diikuti dengan tanda `;` atau titik koma. Wajib hukumnya. Tanpa tanda `;` maka beberapa statement akan dianggap 1 baris dan kemungkinan menghasilkan error jika sintaks dianggap tidak valid. Tanda `;` adalah penanda akhir statement. Contoh `println!("Hello, world!");`.
 
 ### ◉ Indentation
 
@@ -137,7 +137,7 @@ Selamat! Anda telah menjadi programmer Rust!
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/hello_rust">

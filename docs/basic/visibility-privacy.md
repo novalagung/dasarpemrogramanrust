@@ -8,7 +8,7 @@ Kita sebenarnya sudah mempelajari banyak hal yang berhubungan dengan visibility 
 
 Chapter ini merupakan pembahasan tambahan untuk ke-4 keyword tersebut, dan fokusnya lebih ke visibility & privacy di Rust secara general.
 
-O iya, perihal *visbility* dan *privacy* itu sendiri, kedua istilah tersebut disini kita maknai sama, yang artinya kurang lebih adalah tentang manajemen akses item di Rust.
+O iya, perihal *visbility* dan *privacy* itu sendiri, kedua istilah tersebut di sini kita maknai sama, yang artinya kurang lebih adalah tentang manajemen akses item di Rust.
 
 ## A.28.1. Pembahasan module system
 
@@ -27,7 +27,7 @@ Di Rust, *by default*, hampir semua item adalah private. Apa efeknya ketika item
 1. Jika suatu item adalah private, maka item tersebut hanya bisa diakses dari *current module scope* dan dari *submodules* milik *current module*.
 2. Jika suatu item adalah publik, maka dia bisa diakses dari module lain di luar *current module scope*, dengan catatan parent module scope item tersebut harus publik.
 
-> Kita sepakati disini, pada istilah **current module** kata *module* disitu bisa saja tertuju untuk module atau juga submodule
+> Kita sepakati di sini, pada istilah **current module** kata *module* disitu bisa saja tertuju untuk module atau juga submodule
 
 Dua point di atas sangat penting untuk dipahami, karena digunakan sebagai landasan pertimbangan dalam penyusunan hirarki module. Sebagai contoh, kita bisa membuat program yang hanya meng-expose API tertentu (yang memang diperlukan untuk diakses oleh publik), tanpa perlu ikut meng-expose detail implementasinya.
 
@@ -39,11 +39,11 @@ messaging::service_layer::some_black_magic
 
 Segmen pertama yaitu `messaging` pasti adalah publik, karena di-import ke *crate root*. Lalu bagaimana dengan segmen `service_layer` dan juga `some_black_magic`?
 
-Jika item `some_black_magic` disitu adalah publik, maka idealnya pengaksesan menggunakan path tersebut memungkinkan. Tapi kembali ke point ke-2 aturan yang sudah dibahas diatas, yaitu meskipun `some_black_magic` adalah publik, jika parent-nya (yang pada konteks ini adalah `service_layer`) adalah private, maka pengaksesan menggunakan path tersebut menghasilkan error.
+Jika item `some_black_magic` disitu adalah publik, maka idealnya pengaksesan menggunakan path tersebut memungkinkan. Tapi kembali ke point ke-2 aturan yang sudah dibahas di atas, yaitu meskipun `some_black_magic` adalah publik, jika parent-nya (yang pada konteks ini adalah `service_layer`) adalah private, maka pengaksesan menggunakan path tersebut menghasilkan error.
 
 Intinya, **sebuah item bisa diakses jika item tersebut adalah publik, dan parent item tersebut juga publik. Sedangkan default visibility untuk hampir semua item adalah private.**
 
-Ok, sekarang mari lanjut ke praktek menggunakan contoh dengan pembahasan yang lebih mendetail. Silakan perhatikan dan praktekan kode berikut:
+Ok, sekarang mari lanjut ke praktik menggunakan contoh dengan pembahasan yang lebih mendetail. Silakan perhatikan dan praktikkan kode berikut:
 
 ```bash title="package source code structure"
 my_package
@@ -112,7 +112,7 @@ fn main() {
 
 Pada contoh, fungsi `messaging::say_hello` didesain sebagai media untuk mengakses fungsi `some_black_magic`. Di situasi *real world* pastinya sangat jarang terjadi sebuah fungsi isinya hanya satu baris pemanggilan fungsi lainnya. Jika memang ada situasi seperti itu, (kontekstual) lebih baik hapus saja fungsi yang jadi media pemanggilan dan langsung saja panggil fungsi didalamnya sesuai kebutuhan.
 
-Pada praktek selanjutnya ini kita misalkan bahwa fungsi `say_hello` isinya memang cuma 1 baris, dan yang paling penting adalah isi fungsi `some_black_magic` perlu untuk bisa diakses dari `main`. Untuk kasus seperti ini ada 3 alternatif solusi:
+Pada praktik selanjutnya ini kita misalkan bahwa fungsi `say_hello` isinya memang cuma 1 baris, dan yang paling penting adalah isi fungsi `some_black_magic` perlu untuk bisa diakses dari `main`. Untuk kasus seperti ini ada 3 alternatif solusi:
 
 1. Tidak perlu mengubah apapun, gunakan saja kode yang sudah ditulis di atas. Kode tersebut sudah bisa mengakomodir pemanggilan `some_black_magic` via `say_hello`.
 2. Atau, hapus saja fungsi `say_hello`, lalu ubah visibility module `service_layer` menjadi publik, dengan demikian kita bisa mengakses `some_black_magic` dari `main` menggunakan path `messaging::service_layer::some_black_magic`.
@@ -194,7 +194,7 @@ Keyword `pub` digunakan untuk mengubah visibility item menjadi publik. Keyword i
 
 ### ◉ Keyword `pub`
 
-Penulis rasa untuk penerapan keyword `pub` ini sudah sangat jelas, kita beberapa kali mempraktekannya.
+Penulis rasa untuk penerapan keyword `pub` ini sudah sangat jelas, kita beberapa kali mempraktikkannya.
 
 Dengan keyword `pub`, sebuah item visibility-nya menjadi publik.
 
@@ -324,7 +324,7 @@ fn main() {
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/visibility_privacy">

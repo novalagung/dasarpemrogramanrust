@@ -10,7 +10,7 @@ Selain keyword `while`, ada juga keyword `loop` yang fungsi dasarnya adalah sama
 
 Notasi penulisan dan cara penggunaan `loop` ada sedikit beda dibanding `while`. Keyword `loop` tidak membutuhkan argument. Blok kode loop akan terus dieksekusi selama program tidak di-stop.
 
-Silakan coba praktekan kode berikut. Angka `i` akan ditampilkan setiap perulangan kemudian di-increment nilainya. Angka akan muncul terus sampai aplikasi di-stop.
+Silakan coba praktikkan kode berikut. Angka `i` akan ditampilkan setiap perulangan kemudian di-increment nilainya. Angka akan muncul terus sampai aplikasi di-stop.
 
 ```rust
 fn main() {
@@ -27,7 +27,7 @@ fn main() {
 
 ## A.11.2. Keyword `break`
 
-`loop` menghasilkan perulangan tanpa henti, lalu bagaimana cara stop-nya? Disinilah keyword `break` berperan. `break` digunakan untuk menghentikan paksa eksekusi blok kode perulangan. Biasanya keyword ini digunakan dalam kondisi tertentu (sesuai kebutuhan), misalnya `perulangan harus berhenti ketika nilai i di atas max`.
+`loop` menghasilkan perulangan tanpa henti, lalu bagaimana cara stop-nya? Di sinilah keyword `break` berperan. `break` digunakan untuk menghentikan paksa eksekusi blok kode perulangan. Biasanya keyword ini digunakan dalam kondisi tertentu (sesuai kebutuhan), misalnya `perulangan harus berhenti ketika nilai i di atas max`.
 
 Mari kita ubah kode di atas dengan menambahkan kondisi untuk menghentikan perulangan jika `i` nilainya lebih dari `5`.
 
@@ -130,7 +130,7 @@ loop {
 }
 ```
 
-Mari kita pelajari dan praktekan kode berikut ini. Dibawah ini adalah sebuah program sederhana menampilkan angka yang hasilnya bisa dilihat digambar dibawahnya. Perulangan di level 2 akan dihentikan secara paksa ketika `j > i`. Sedangkan perulangan level pertama atau terluar (dengan label `'mainLoop`) akan dihentikan paksa dari perulangan level 2 jika kondisi `i > max`.
+Mari kita pelajari dan praktikkan kode berikut ini. Dibawah ini adalah sebuah program sederhana menampilkan angka yang hasilnya bisa dilihat digambar dibawahnya. Perulangan di level 2 akan dihentikan secara paksa ketika `j > i`. Sedangkan perulangan level pertama atau terluar (dengan label `'mainLoop`) akan dihentikan paksa dari perulangan level 2 jika kondisi `i > max`.
 
 ```rust
 let mut i = 0;
@@ -177,7 +177,7 @@ let result = loop {
 println!("result: {result}");
 ```
 
-Pada kode di atas, variabel `result` dideklarasikan dengan predefined value adalah blok kode `loop`. Disini artinya variabel `result` isinya bukan blok kode perulangan `loop`, melainkan isinya adalah apapun yang dituliskan setelah keyword `break`. Unik ya?
+Pada kode di atas, variabel `result` dideklarasikan dengan predefined value adalah blok kode `loop`. Di sini artinya variabel `result` isinya bukan blok kode perulangan `loop`, melainkan isinya adalah apapun yang dituliskan setelah keyword `break`. Unik ya?
 
 Variabel `counter` yang nilai awalnya 0, di-increment dalam perulangan. Ketika nilai `counter` adalah `10`, nilai `counter * 2` dijadikan sebagai return value. Dengan ini maka variabel `result` nilainya adalah `20`.
 
@@ -187,7 +187,7 @@ Variabel `counter` yang nilai awalnya 0, di-increment dalam perulangan. Ketika n
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/perulangan_loop_break_continue_label">

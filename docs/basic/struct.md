@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-Jalankan program diatas, lihat hasilnya.
+Jalankan program di atas, lihat hasilnya.
 
 ![Struct](img/struct-1.png)
 
@@ -353,7 +353,7 @@ Teknik pembuatan struct ini berguna ketika ada case dimana ada kebutuhan untuk m
 
 Lalu jika ingin melihat nilai property struct bagaimana solusinya? Bisa dengan menampilkan nilai property satu per satu, tapi pastinya butuh effort.
 
-Cara yang lebih elegan adalah dengan menggunakan atribute `#[derive(Debug)]`. Penerapannya cukup dengan menuliskan atribut tersebut tepat diatas deklarasi struct. Contoh:
+Cara yang lebih elegan adalah dengan menggunakan atribute `#[derive(Debug)]`. Penerapannya cukup dengan menuliskan atribut tersebut tepat di atas deklarasi struct. Contoh:
 
 ```rust
 #[derive(Debug)]
@@ -400,7 +400,7 @@ println!("{:?} {:?}", some_data.0, some_data.1);
 
 ## A.23.8. Struct property visibility
 
-Sekarang mari kita coba praktekan satu program lagi, namun kali ini sedikit berbeda, struct kita definisikan sebagai module item.
+Sekarang mari kita coba praktikkan satu program lagi, namun kali ini sedikit berbeda, struct kita definisikan sebagai module item.
 
 Silakan siapkan program dengan struktur seperti berikut:
 
@@ -466,7 +466,7 @@ Bisa dilihat keyword `pub` ditambahkan pada deklarasi property struct. yang sebe
 
 ## A.23.9. Tuple struct property visibility
 
-Lalu bagaimana dengan tuple struct? apakah property-nya juga harus didefinisikan publik agar bisa diakses dari tempat lain? Jawabannya ada di praktek berikut:
+Lalu bagaimana dengan tuple struct? apakah property-nya juga harus didefinisikan publik agar bisa diakses dari tempat lain? Jawabannya ada di praktik berikut:
 
 ```bash title="package source code structure"
 my_package
@@ -522,7 +522,7 @@ Pembahasan mengenai generic pada struct ada pada chapter [Generics](/basic/gener
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/struct">

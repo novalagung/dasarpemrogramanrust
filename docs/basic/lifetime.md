@@ -33,7 +33,7 @@ fn main() {
 }
 ```
 
-Kode di atas kalau di jalankan hasilnya error, karena `x` di-dealokasi ketika block expression selesai dieksekusi, meskipun data tersebut dipinjamkan pada `r` yang scope-nya berada diatasnya.
+Kode di atas kalau di jalankan hasilnya error, karena `x` di-dealokasi ketika block expression selesai dieksekusi, meskipun data tersebut dipinjamkan pada `r` yang scope-nya berada di atasnya.
 
 Kalau diilustrasikan, lifetime variabel `r` dan `x` kurang lebih seperti ini:
 
@@ -62,7 +62,7 @@ Default lifetime bisa di-override menggunakan lifetime yang kita definisikan sen
 
 Lifetime menjadi salah satu hal yang wajib diperhatikan ketika bermain dengan references. Operasi seperti melempar reference ke luar scope, atau memasukan reference ke block scope baru berpotensi memunculkan error yang berhubungan dengan lifetime.
 
-Setelah ini kita akan praktek penerapan pembuatan lifetime, namun sebelum itu mari pelajari dulu pembahasan pada section berikut agar tau kenapa dan kapan kita harus menerapkan lifetime yang kita buat sendiri.
+Setelah ini kita akan praktik penerapan pembuatan lifetime, namun sebelum itu mari pelajari dulu pembahasan pada section berikut agar tau kenapa dan kapan kita harus menerapkan lifetime yang kita buat sendiri.
 
 ```rust
 fn main() {
@@ -190,7 +190,7 @@ Lifetime dituliskan dengan notasi `'nama_lifetime`. Dengan notasi tersebut, kita
 
 > Lifetime dan block label memiliki bentuk literal yang sama, keduanya diawali tanda kutip `'`. Yang membedakan hanya pada tempat dimana syntax tersebut ditulis.
 
-Kegunaan dari lifetime annotation adalah untuk menginformasikan compiler agar reference tidak langsung didealokasikan setelah eksekusi block selesai. Agar lebih jelas mari kita langsung terapkan saja pada fungsi `get_number` yang sudah ditulis. Silakan tambahkan lifetime dengan nama bebas. Disini penulis gunakan `'my_lifetime`.nnnn
+Kegunaan dari lifetime annotation adalah untuk menginformasikan compiler agar reference tidak langsung didealokasikan setelah eksekusi block selesai. Agar lebih jelas mari kita langsung terapkan saja pada fungsi `get_number` yang sudah ditulis. Silakan tambahkan lifetime dengan nama bebas. Di sini penulis gunakan `'my_lifetime`.nnnn
 
 ```rust
 fn get_number() -> &'my_lifetime i32 {
@@ -218,7 +218,7 @@ Tanpa adanya lifetime pada return value, maka data return value akan langsung di
 
 ## A.42.4. Lifetime pada parameter
 
-Pada praktek ini kita akan bahas penerapan lifetime pada parameter.
+Pada praktik ini kita akan bahas penerapan lifetime pada parameter.
 
 Silakan perhatikan kode berikut:
 
@@ -515,7 +515,7 @@ Jalankan program, hasilnya sesuai harapan, tidak ada error.
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/lifetime">

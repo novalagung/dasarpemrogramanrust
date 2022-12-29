@@ -4,7 +4,7 @@ title: A.16. Tipe Data → Vector
 sidebar_label: A.16. Vector
 ---
 
-Pada chapter ini kita akan belajar tetang tipe data *Vector*. Vector adalah tipe data seperti array tapi dinamis. Dinamis disini artinya bisa bertambah dan berkurang kapanpun sesuai kebutuhan.
+Pada chapter ini kita akan belajar tetang tipe data *Vector*. Vector adalah tipe data seperti array tapi dinamis. Dinamis di sini artinya bisa bertambah dan berkurang kapanpun sesuai kebutuhan.
 
 Vector sangat mirip seperti array, yang karakteristiknya adalah tipe data elemen wajib sama, punya informasi size, elemen-nya bisa diakses atau diubah. Salah satu perbedaan vector dibanding array adalah jumlah elemen pada vector bisa bertambah lebih dari kapasitas yang sudah ditentukan.
 
@@ -23,7 +23,7 @@ Vector bisa bertambah jumlah isinya selama size dibawah kapasitas yang sudah dia
 > - Lebih jelasnya mengenai generic dibahas pada chapter [Generics](/basic/generics)
 > - Lebih jelasnya mengenai heap dibahas pada chapter [Basic Memory Management](/basic/basic-memory-management)
 
-Langsung saja kita praktekan.
+Langsung saja kita praktikkan.
 
 ### ◉ Deklarasi vektor, size, dan capacity
 
@@ -202,7 +202,7 @@ let mut vector_4 = vec![1, 2, 3];
 let mut vector_5: Vec<i64> = vec![1, 2, 3];
 ```
 
-Vector `vector_4` didefinisikan dengan cara yang sudah kita terapkan sebelumnya, yaitu menggunakan macro `vec`. Vector `vector_5` juga didefinisikan dengan cara yang sama, hanya saja pada vector ini tipe datanya ditentukan secara eksplisit yaitu `Vec<164>`.
+Vector `vector_4` didefinisikan dengan cara yang sudah kita terapkan sebelumnya, yaitu menggunakan macro `vec`. Vector `vector_5` juga didefinisikan dengan cara yang sama, hanya saja pada vector ini tipe datanya ditentukan secara eksplisit yaitu `Vec<i64>`.
 
 `Vec<i64>` Artinya adalah vector dengan tipe data elemen adalah `i64`. Dengan notasi penulisan `Vec<T>` bisa ditentukan tipe data elemen yang diinginkan.
 
@@ -350,7 +350,7 @@ Cara membuat vector `VecDeque<T>` bisa menggunakan `VecDeque::from` dengan param
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/vector">
