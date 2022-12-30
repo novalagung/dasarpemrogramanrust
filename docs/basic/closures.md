@@ -318,7 +318,7 @@ println!("{message} (from main)");
 
 ### ◉ Praktik ke-1
 
-Pengaplikasian closure sebagai parameter fungsi banyak di lakukan di Rust, hal ini bisa dilakukan dengan memanfaatkan generic parameter. Silakan perhatikan kode berikut untuk contoh penerapannya.
+Pengaplikasian closure sebagai parameter fungsi banyak dilakukan di Rust, hal ini bisa dilakukan dengan memanfaatkan generic parameter. Silakan perhatikan kode berikut untuk contoh penerapannya.
 
 ```rust
 fn run_x_times<F>(x: i32, my_closure: F)

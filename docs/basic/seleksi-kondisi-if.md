@@ -121,7 +121,7 @@ let result_d = if number_d == 2 {
 println!("result_d adalah {result_d}");
 ```
 
-Penulisannya cukup unik. Blok kode seleksi kondisi di tuliskan sebagai value dari statement `let result_d`. Dan isi blok kode nantinya akan menjadi value untuk variabel `result_d`, tergantung kondisi mana yang match.
+Penulisannya cukup unik. Blok kode seleksi kondisi dituliskan sebagai value dari statement `let result_d`. Dan isi blok kode nantinya akan menjadi value untuk variabel `result_d`, tergantung kondisi mana yang match.
 
 Pada contoh di atas, karena `number_d` nilainya 3, maka `result_d` bernilai false. Blok kode `else` adalah yang dieksekusi.
 
