@@ -64,7 +64,7 @@ Referensi: https://rust-lang.github.io/api-guidelines/naming.html
 
 File `Cargo.toml` menampung beberapa informasi penting milik package, diantaranya adalah nama package, versi package dan juga versi rust, serta *dependencies* atau *3rd-party* yang digunakan dalam package (dalam konteks Rust adalah *crate*).
 
-Command yang sebelumnya di run menghasilkan file `Cargo.toml` berikut:
+Command yang sebelumnya di-run menghasilkan file `Cargo.toml` berikut:
 
 ```toml title="Cargo.toml"
 [package]
@@ -169,7 +169,7 @@ O iya, penggunaan fungsi `gen_range` mewajibkan kita untuk import path `rand::Rn
 
 ### ◉ Fungsi `main`
 
-Dalam blok kode `main`, isinya sebuah perulangan sederhana yang menampilkan angka random hasil eksekusi fungsi `generate_random_number` disetiap iterasinya.
+Dalam blok kode `main`, isinya sebuah perulangan sederhana yang menampilkan angka random hasil eksekusi fungsi `generate_random_number` di setiap iterasinya.
 
 ```rust
 for i in 0..5 {

@@ -54,7 +54,7 @@ Seperti yang sudah dibahas bahwa path adalah notasi penulisan alamat untuk item.
 - constant items *(dibahas pada chapter [Konstanta](/basic/konstanta))*
 - static items *(dibahas pada chapter [Static Items](/basic/static))*
 - trait definitions *(dibahas pada chapter [Traits](/basic/traits))*
-- implementations ((dibahas pada chapter [Function](/basic/function), [Associated Function](/basic/associated-function), dan [Method](/basic/method)))
+- implementations *(dibahas pada chapter [Function](/basic/function), [Associated Function](/basic/associated-function), dan [Method](/basic/method))*
 - extern blocks
 
 ## A.18.4. Penerapan paths dalam penggaksesan item
@@ -109,7 +109,7 @@ Bisa dilihat tanda `::` digunakan pada statement tersebut. Path tersebut jika di
 
 > Terkesan banyak sekali penjelasan dalam 1 baris kode, tapi tidak perlu dihafal, lama-kelamaan akan terbiasa.
 
-Salah satu yang menarik dari create *Rust Standard Library* adalah, beberapa segmen otomatis di-import atau dipakai. Jadi tidak perlu menuliskan path secara full.
+Salah satu yang menarik dari crate *Rust Standard Library* adalah, beberapa segmen otomatis di-import atau dipakai. Jadi tidak perlu menuliskan path secara full.
 
 Pada contoh yang sudah dibuat, statement pembuatan data `String` bisa diubah dari ...
 
@@ -125,7 +125,7 @@ let mut message = String::new();
 
 ### ◉ `std::io::stdin()`
 
-Berbeda dengan `String`, path `std::io::stdin` tidak otomatis ter-import, jadi harus dituliskan secara full meskipun sama-sama dibawah crate *Rust Standard Library*
+Berbeda dengan `String`, path `std::io::stdin` tidak otomatis ter-import, jadi harus dituliskan secara full meskipun sama-sama dibawah crate *Rust Standard Library*.
 
 Path `std::io` berisi module untuk keperluan I/O atau input output. Salah satu item yang ada dalam module ini adalah `stdin`, yang merupakan sebuah fungsi berguna untuk pembuatan objek handler untuk keperluan yang berhubungan dengan console (*stdin*). Objek tersebut ditampung oleh variabel `stdin_reader`.
 

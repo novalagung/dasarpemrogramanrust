@@ -249,7 +249,7 @@ Pada contoh di atas, method `as_str` milik tipe data `String` digunakan untuk me
 
 ## A.17.5. *Conditional return value*
 
-Kapan harus menggunakan keyword `return` dalam penentuan nilai balik dan kapan tidak? Jawabannya mungkin adalah preferensi, tapi diluar itu ada juga case dimana keyword `return` harus digunakan, yaitu pada fungsi yang memiliki nilai balik terkondisi. Contoh:
+Kapan harus menggunakan keyword `return` dalam penentuan nilai balik dan kapan tidak? Jawabannya mungkin adalah preferensi, tapi di luar itu ada juga case dimana keyword `return` harus digunakan, yaitu pada fungsi yang memiliki nilai balik terkondisi. Contoh:
 
 ```rust
 fn get_score_message(score: f32) -> &'static str {

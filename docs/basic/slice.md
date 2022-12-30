@@ -270,7 +270,7 @@ Catatan ringkas perihal slice:
 - Slice memiliki notasi `&[T]`
   - `&` disitu artinya adalah operasi borrowing/peminjaman
   - `T` adalah tipe data tiap elemen
-- Slice bisa terpentuk dari hasil meminjam data array, vector, atau tipe data kolektif lainnya
+- Slice bisa terbentuk dari hasil meminjam data array, vector, atau tipe data kolektif lainnya
 - Data slice adalah selalu data pinjaman
 - Slice memiliki lebar/size
 - Slicing adalah cara pengaksesan slice menggunakan *range syntax*

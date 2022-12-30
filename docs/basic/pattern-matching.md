@@ -92,7 +92,7 @@ match value {
 }
 ```
 
-Variabel `value` nilainya adalah `Some(5)`. Variabel tersebut dimasukan ke block `match` dengan 4 buah kondisi pengecekan:
+Variabel `value` nilainya adalah `Some(5)`. Variabel tersebut dimasukkan ke block `match` dengan 4 buah kondisi pengecekan:
 
 - Jika `value` nilainya `Some(1)`, tampilkan pesan `one`
 - Jika `value` nilainya `Some(2)`, tampilkan pesan `two`
@@ -269,7 +269,7 @@ if let Some(1 | 2) = value {
 
 Operasi *destructuring* (menampung item suatu tipe) bisa dilakukan menggunakan pattern matching.
 
-Pada kode di bawah ini, variabel `p` yang bertipe struct `Point { x: i32, y: i32 }` dimasukan pada block pattern matching. Item dari struct tersebut di-*destructure* ke variabel `x` dan `y` masing-masing klausul pattern matching item-nya ditampung ke variabel `x` dan `y`.
+Pada kode di bawah ini, variabel `p` yang bertipe struct `Point { x: i32, y: i32 }` dimasukkan pada block pattern matching. Item dari struct tersebut di-*destructure* ke variabel `x` dan `y` masing-masing klausul pattern matching item-nya ditampung ke variabel `x` dan `y`.
 
 ```rust
 struct Point {
