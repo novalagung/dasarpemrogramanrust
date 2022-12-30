@@ -86,7 +86,7 @@ println!("message number {}: {}", message_number, message2);
 
 Error? kok bisa?
 
-Perlu diketahui, bahwa *by default* semua variabel adalah *immutable*. Immutable itu artinya gak bisa di ubah nilai/value-nya. Jadi mirip seperti konstanta.
+Perlu diketahui, bahwa *by default* semua variabel adalah *immutable*. Immutable itu artinya gak bisa diubah nilai/value-nya. Jadi mirip seperti konstanta.
 
 > Variabel immutable mirip seperti konstanta, tapi sebenarnya berbeda. Akan kita bahas lebih detail di beberapa chapter berbeda perihal perbedaannya.
 
