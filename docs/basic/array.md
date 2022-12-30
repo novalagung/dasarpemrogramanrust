@@ -92,7 +92,7 @@ Array hanya bisa diakses elemennya sesuai size saat deklarasi. Sebagai contoh, v
 
 ### ◉ Mengubah isi elemen array
 
-Array bisa diubah isi elemen-nya jika variabel tersebut adalah `mutable`. Pada contoh yang sudah dibuat, variabel `numbers` dideklarasikan mutable dengan tipe data elemen adalah numerik. Dengan ini kita bisa merubah value elemen array dengan value baru bertipe data sama.
+Array bisa diubah isi elemen-nya jika variabel tersebut adalah `mutable`. Pada contoh yang sudah dibuat, variabel `numbers` dideklarasikan mutable dengan tipe data elemen adalah numerik. Dengan ini kita bisa mengubah value elemen array dengan value baru bertipe data sama.
 
 Bisa dilihat pada contoh yang sudah dipraktikkan, elemen indeks ke-1 diubah nilainya menjadi `16`, dan elemen indeks ke-3 value-nya menjadi `8`
 
