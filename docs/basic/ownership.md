@@ -36,7 +36,7 @@ Sebelum kita masuk ke pembahasan yang lebih detail mengenai ownership, mari pela
 
 Variable scope maksudnya adalah di block scope mana suatu variabel dideklarasikan, dan dalam block scope tersebut variabel menjadi valid (bisa digunakan). Di luar scope-nya variabel menjadi tidak valid, tidak bisa digunakan.
 
-Agar lebih jelas, silakan perhatikan kode berikut, tidak perlu dipraktekan.
+Agar lebih jelas, silakan perhatikan kode berikut, tidak perlu dipraktikkan.
 
 ```rust
 fn do_something() {
@@ -126,7 +126,7 @@ Ok, sampai sini cukup jelas. Tapi kenapa bisa error? Error muncul karena variabe
 
 Intinya, variabel yang mengadopsi *move semantics*, setiap kali ada operasi assignment maka owner akan berpindah ke variabel baru.
 
-Jika perlu, silakan coba praktekan dengan tipe data non-primitif lainnya, seperti struct atau lainnya. Dengan pseudocode yang sama seperti contoh di atas, hasilnya adalah sama, yaitu error.
+Jika perlu, silakan coba praktikkan dengan tipe data non-primitif lainnya, seperti struct atau lainnya. Dengan pseudocode yang sama seperti contoh di atas, hasilnya adalah sama, yaitu error.
 
 ```rust
 #[derive(Debug)]
@@ -179,7 +179,7 @@ Fungsi `main` dideklarasikan, isinya adalah pemanggilan fungsi `do_something`.
 
 Di dalam fungsi `do_something`, variabel `k` dideklarasikan. Statement deklarasi tersebut adalah kapan proses alokasi memory berlangsung untuk data variabel `k`.
 
-Kemudian ada block expression, dan didalamnya terjadi lagi proses alokasi memory untuk data variabel `m` dengan nilai adalah string `hello world`, dan variabel `n` berisi string `from rust`.
+Kemudian ada block expression, dan di dalamnya terjadi lagi proses alokasi memory untuk data variabel `m` dengan nilai adalah string `hello world`, dan variabel `n` berisi string `from rust`.
 
 Masih di dalam block expression, terjadi assignment operation, data variabel `n` berpindah ke variabel `k`. Lalu bagaimana nasib data string `hello` yang sebelumnya dimiliki oleh `n`? Yang terjadi adalah data tersebut tidak memiliki reference, dan nantinya di akhir fungsi akan di-dealokasi. Proses dealokasi terjadi setelah fungsi `do_something` selesai dieksekusi karena variable scope data tersebut adalah di block kode fungsi `do_something`.
 
@@ -372,7 +372,7 @@ Lebih jelasnya mengenai macro dibahas pada chapter [Macro](/wip/macro).
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/ownership">

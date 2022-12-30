@@ -4,7 +4,7 @@ title: A.33. Pointer & References
 sidebar_label: A.33. Pointer & References
 ---
 
-Chapter ini membahas tentang apa itu pointer, references, dan dereferences. Pembelajaran dimulai tentang konsep dan praktek dasar tentang ketiga topik tersebut, kemudian diikuti dengan pembahasan tentang karakteristik pointer & reference.
+Chapter ini membahas tentang apa itu pointer, references, dan dereferences. Pembelajaran dimulai tentang konsep dan praktik dasar tentang ketiga topik tersebut, kemudian diikuti dengan pembahasan tentang karakteristik pointer & reference.
 
 > Penulis tekankan bahwa **pada chapter ini, konsep reference yang dibahas adalah dalam konteks programming secara general.** Tidak dari sudut pandang ownership.
 
@@ -181,7 +181,7 @@ Contoh penerapannya bisa kita lihat pada chapter [Pointer & References](/basic/p
 
 ### ◉ Contoh ke-2
 
-Agar makin familiar dengan cara penerapan pointer & reference, silakan lanjut dengan praktek program berikut:
+Agar makin familiar dengan cara penerapan pointer & reference, silakan lanjut dengan praktik program berikut:
 
 ```bash title="package source code structure"
 my_package
@@ -239,7 +239,7 @@ Untuk sekarang penulis anjurkan untuk lanjut ke chapter berikutnya secara urut.
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/pointer_references">

@@ -86,7 +86,7 @@ println!("message number {}: {}", message_number, message2);
 
 Error? kok bisa?
 
-Perlu diketahui, bahwa *by default* semua variabel adalah *immutable*. Immutable itu artinya gak bisa di ubah nilai/value-nya. Jadi mirip seperti konstanta.
+Perlu diketahui, bahwa *by default* semua variabel adalah *immutable*. Immutable itu artinya gak bisa diubah nilai/value-nya. Jadi mirip seperti konstanta.
 
 > Variabel immutable mirip seperti konstanta, tapi sebenarnya berbeda. Akan kita bahas lebih detail di beberapa chapter berbeda perihal perbedaannya.
 
@@ -166,7 +166,7 @@ Metode deklarasi yang selama ini sudah kita terapkan adalah *type inference*.
 
 ### ◉ Metode *Manifest Typing*
 
-Metode ini mewajibkan programmer untuk menuliskan secara jelas/eksplisit tipe data variabel. Contoh seperti ditandai dengan menu tidak menuliskan tipe data secara jelas/eksplisit. Contoh seperti pada praktek sebelumnya, yaitu pendefinisian `message3`.
+Metode ini mewajibkan programmer untuk menuliskan secara jelas/eksplisit tipe data variabel. Contoh seperti ditandai dengan menu tidak menuliskan tipe data secara jelas/eksplisit. Contoh seperti pada praktik sebelumnya, yaitu pendefinisian `message3`.
 
 ```rust
 let message3: i8 = 24;
@@ -255,7 +255,7 @@ Lebih jelasnya akan kita bahas pada chapter terpisah, yaitu [Shadowing](/basic/s
 
 - Variabel `_`
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/variabel">

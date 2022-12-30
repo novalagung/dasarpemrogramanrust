@@ -106,7 +106,7 @@ Variabel `numbers` dan `n1` sama-sama mengarah ke reference yang sama. Itulah ke
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/slice_memory_management">

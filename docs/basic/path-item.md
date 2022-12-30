@@ -54,7 +54,7 @@ Seperti yang sudah dibahas bahwa path adalah notasi penulisan alamat untuk item.
 - constant items *(dibahas pada chapter [Konstanta](/basic/konstanta))*
 - static items *(dibahas pada chapter [Static Items](/basic/static))*
 - trait definitions *(dibahas pada chapter [Traits](/basic/traits))*
-- implementations ((dibahas pada chapter [Function](/basic/function), [Associated Function](/basic/associated-function), dan [Method](/basic/method)))
+- implementations *(dibahas pada chapter [Function](/basic/function), [Associated Function](/basic/associated-function), dan [Method](/basic/method))*
 - extern blocks
 
 ## A.18.4. Penerapan paths dalam penggaksesan item
@@ -109,7 +109,7 @@ Bisa dilihat tanda `::` digunakan pada statement tersebut. Path tersebut jika di
 
 > Terkesan banyak sekali penjelasan dalam 1 baris kode, tapi tidak perlu dihafal, lama-kelamaan akan terbiasa.
 
-Salah satu yang menarik dari create *Rust Standard Library* adalah, beberapa segmen otomatis di-import atau dipakai. Jadi tidak perlu menuliskan path secara full.
+Salah satu yang menarik dari crate *Rust Standard Library* adalah, beberapa segmen otomatis di-import atau dipakai. Jadi tidak perlu menuliskan path secara full.
 
 Pada contoh yang sudah dibuat, statement pembuatan data `String` bisa diubah dari ...
 
@@ -125,7 +125,7 @@ let mut message = String::new();
 
 ### ◉ `std::io::stdin()`
 
-Berbeda dengan `String`, path `std::io::stdin` tidak otomatis ter-import, jadi harus dituliskan secara full meskipun sama-sama dibawah crate *Rust Standard Library*
+Berbeda dengan `String`, path `std::io::stdin` tidak otomatis ter-import, jadi harus dituliskan secara full meskipun sama-sama dibawah crate *Rust Standard Library*.
 
 Path `std::io` berisi module untuk keperluan I/O atau input output. Salah satu item yang ada dalam module ini adalah `stdin`, yang merupakan sebuah fungsi berguna untuk pembuatan objek handler untuk keperluan yang berhubungan dengan console (*stdin*). Objek tersebut ditampung oleh variabel `stdin_reader`.
 
@@ -145,7 +145,7 @@ Eksekusi dari statement `stdin_reader.read_line(&mut message)` adalah blocking, 
 
 ### ◉ Pengecekan error `stdin_reader`
 
-Blok statement `if` pada contoh diatas bertugas melakukan pengecekan error. Jika ada error, maka `reader_res.is_err()` bernilai `true`, dan pesan error-nya dimunculkan.
+Blok statement `if` pada contoh di atas bertugas melakukan pengecekan error. Jika ada error, maka `reader_res.is_err()` bernilai `true`, dan pesan error-nya dimunculkan.
 
 ```rust
 if reader_res.is_err() {
@@ -166,7 +166,7 @@ Oke, Penulis rasa sudah cukup jelas perihal bagaimana cara menggunakan path untu
 
 Ada alternatif cara lain untuk memperpendek penulisan dan pengaksesan path, yaitu dengan menggunakan keyword `use`.
 
-> Penggunaan `use` juga sempat dipraktekan pada chapter sebelumnya, yaitu [Perulangan → while](/basic/perulangan-while).
+> Penggunaan `use` juga sempat dipraktikkan pada chapter sebelumnya, yaitu [Perulangan → while](/basic/perulangan-while).
 
 Cara penerapannya bisa dilihat pada kode berikut:
 
@@ -186,7 +186,7 @@ let stdin_reader = stdin();
 
 Dengan menggunakan `use` kita bisa memperpendek pengaksesan sebuah path.
 
-O iya keyword ini bisa digunakan dimana saja, artinya tidak harus di luar fungsi `main`. Bisa saja di dalam fungsi, atau didalam blok kode seleksi kondisi atau lainnya.
+O iya keyword ini bisa digunakan dimana saja, artinya tidak harus di luar fungsi `main`. Bisa saja di dalam fungsi, atau di dalam blok kode seleksi kondisi atau lainnya.
 
 ## A.18.6. Pembahasan lanjutan
 
@@ -198,7 +198,7 @@ Jawabannya akan ada di beberapa chapter berikutnya. Untuk sekarang khusus pada b
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/path_item">

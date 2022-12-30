@@ -23,7 +23,7 @@ enum NamaEnum {
 
 `NamaEnum` di atas adalah tipe data custom yang didefinisikan bertipe enum. Sedangkan `NilaiEnum1`, `Nilai2`, dan `NilaiEnumKe3` adalah yang disebut dengan enum value. Dengan itu maka ketiga enum values tersebut tipe datanya adalah sama, yaitu `NamaEnum`.
 
-Mari kita lanjut praktek. Berikut ini adalah definisi konstanta yang menggunakan tipe data string untuk menampung nilai konstan-nya. Lalu dibawahnya ada lagi definisi nilai konstan tetapi menggunakan enum sebagai tipe data yang digunakan.
+Mari kita lanjut praktik. Berikut ini adalah definisi konstanta yang menggunakan tipe data string untuk menampung nilai konstan-nya. Lalu dibawahnya ada lagi definisi nilai konstan tetapi menggunakan enum sebagai tipe data yang digunakan.
 
 ```rust
 // definisi konstanta
@@ -106,7 +106,7 @@ Lalu bagaimana cara pengaplikasian seleksi kondisi pada tipe enum? Caranya adala
 
 `match` adalah salah satu keyword untuk operasi seleksi kondisi di Rust. Penerapan keyword ini cukup luas, namun pada chapter ini hanya akan dibahas penerapannya yang relevan dengan topik enum.
 
-Mari kita pelajarinya sembari praktek. Silakan buat package baru, lalu definisikan tipe enum `Food` berikut beserta 4 enum value-nya.
+Mari kita pelajarinya sembari praktik. Silakan buat package baru, lalu definisikan tipe enum `Food` berikut beserta 4 enum value-nya.
 
 ```rust
 enum Food {
@@ -400,7 +400,7 @@ Pembahasan yang lebih mendetail tentang keyword `match` dan *pattern matching* a
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/enum">

@@ -10,12 +10,12 @@ Chapter ini membahas tentang *associated function*. Kita akan belajar apa itu as
 
 *Associated item* adalah item yang memiliki asosiasi/hubungan dengan struct atau trait. Item di sini bisa dalam banyak hal, bisa berupa fungsi atau lainnya.
 
-Fungsi yang terhubung dengan suatu struct atau trait disebut dengan *associated function*. Fungsi jenis ini ekuivalen seperti fungsi biasa, perbedaannya adalah pada deklarasinya yang harus berada didalam blok kode `impl`, dan pemanggilannya harus menggunakan notasi path `NamaStruct::nama_fungsi`.
+Fungsi yang terhubung dengan suatu struct atau trait disebut dengan *associated function*. Fungsi jenis ini ekuivalen seperti fungsi biasa, perbedaannya adalah pada deklarasinya yang harus berada di dalam blok kode `impl`, dan pemanggilannya harus menggunakan notasi path `NamaStruct::nama_fungsi`.
 
 > - Lebih jelasnya mengenai trait dibahas pada chapter [Traits](/basic/traits)
 > - Lebih jelasnya mengenai macam-macam item dibahas pada chapter [Path & Item](/basic/path-item#a183-rust-items)
 
-Ok, mari kita lanjut ke bagian praktek. Silakan tulis kode berikut terlebih dahulu.
+Ok, mari kita lanjut ke bagian praktik. Silakan tulis kode berikut terlebih dahulu.
 
 ```rust
 #[derive(Debug)]
@@ -69,7 +69,7 @@ impl LegoSet {
 }
 ```
 
-Notasi penulisan keyword `impl` bisa dilihat pada contoh diatas, cukup tulis saja keyword tersebut diikuti nama struct yang diinginkan, kemudian diikuti dengan blok kode berisi definisi fungsi.
+Notasi penulisan keyword `impl` bisa dilihat pada contoh di atas, cukup tulis saja keyword tersebut diikuti nama struct yang diinginkan, kemudian diikuti dengan blok kode berisi definisi fungsi.
 
 Fungsi dalam blok kode `impl` adalah yang disebut dengan *associated function*. Pada contoh di atas, fungsi `new` memiliki asosiasi dengan struct `LegoSet`.
 
@@ -172,7 +172,7 @@ Tipe data `Self` (perhatikan huruf `S`-nya adalah kapital) merupakan representas
 
 > Tipe data `Self` hanya bisa digunakan dalam blok kode `impl`
 
-Sebagai contoh, pada kode yang sudah dipraktekan, keyword `impl` diterapkan dalam pembuatan *associated items* untuk struct `LegoSet`. Dalam blok kode tersebut, tipe data `LegoSet` bisa diganti dengan `Self`.
+Sebagai contoh, pada kode yang sudah dipraktikkan, keyword `impl` diterapkan dalam pembuatan *associated items* untuk struct `LegoSet`. Dalam blok kode tersebut, tipe data `LegoSet` bisa diganti dengan `Self`.
 
 Silakan lihat contoh dibawah ini, ada 4 buah cara deklarasi fungsi `new` yang kesemuanya adalah ekuivalen.
 
@@ -212,7 +212,7 @@ impl LegoSet {
 
 Struct adalah salah satu dari beberapa item yang ada di Rust. Struct bisa saja berada dalam sebuah module, baik inline maupun *normal* module.
 
-Sekarang, kode yang sudah dipraktekan di atas akan kita refactor. Struct `LegoSet` beserta associated items-nya dipindah ke module file bernama `lego`, dengan itu maka pemanggilan struct tersebut harus menggunakan path `lego::LegoSet`.
+Sekarang, kode yang sudah dipraktikkan di atas akan kita refactor. Struct `LegoSet` beserta associated items-nya dipindah ke module file bernama `lego`, dengan itu maka pemanggilan struct tersebut harus menggunakan path `lego::LegoSet`.
 
 Kurang lebih struktur package mendi seperti ini:
 
@@ -319,7 +319,7 @@ Hmm, ada yang aneh, karena suatu alasan statement `model::Color` dianggap error.
 
 ![Associated function](img/associated-function-5.png)
 
-Error ini sebenarnya mirip dengan error praktek sebelumnya, ketika mencoba membuat object baru dari struct sedangkan property struct tersebut adalah private.
+Error ini sebenarnya mirip dengan error praktik sebelumnya, ketika mencoba membuat object baru dari struct sedangkan property struct tersebut adalah private.
 
 Pada kasus struct, solusinya cukup dengan tambahkan keyword `pub` atau siapkan *associated function* untuk pembuatan object. Pada tuple struct, solusinya juga mirip, ada dua opsi yang bisa dipilih.
 
@@ -362,7 +362,7 @@ Pada kasus struct, solusinya cukup dengan tambahkan keyword `pub` atau siapkan *
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/associated_function">

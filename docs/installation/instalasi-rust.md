@@ -71,7 +71,7 @@ rustup update
 rustup --version
 ```
 
-Terutuntuk Rust yang di-install menggunakan installer, cara update dilakukan dengan download dan run installer versi terbaru yang bisa didownload dari link berikut:
+Teruntuk Rust yang di-install menggunakan installer, cara update dilakukan dengan download dan run installer versi terbaru yang bisa didownload dari link berikut:
 
 > [https://forge.rust-lang.org/infra/other-installation-methods.html#standalone-installers](https://forge.rust-lang.org/infra/other-installation-methods.html#standalone-installers)
 

@@ -105,7 +105,7 @@ self::my_mod::run_the_app("2nd call");
 
 ## A.22.4. Keyword `self` pada module scope
 
-Lanjut ke praktek berikutnya. Masih tentang keyword `self`, kita akan gunakan keyword ini untuk mengakses item dalam module.
+Lanjut ke praktik berikutnya. Masih tentang keyword `self`, kita akan gunakan keyword ini untuk mengakses item dalam module.
 
 Silakan tulis kode berikut kemudian jalankan.
 
@@ -134,7 +134,7 @@ fn main() {
 
 Pada contoh bisa dilihat ada dua buah fungsi dideklarasikan dengan nama yang sama persis, yang satu berada di *crate root*, satunya lagi merupakan item milik `my_mod`.
 
-Didalam `my_mod::run_the_app` ada 2 kali pemanggilan fungsi `my_func`, satunya menggunakan keyword `self` dan satunya tidak. Fungsi `my_func` manakah yang dipanggil? Hasilnya bisa dilihat pada gambar dibawah ini.
+Di dalam `my_mod::run_the_app` ada 2 kali pemanggilan fungsi `my_func`, satunya menggunakan keyword `self` dan satunya tidak. Fungsi `my_func` manakah yang dipanggil? Hasilnya bisa dilihat pada gambar dibawah ini.
 
 ![Module item access self](img/module-scope-item-access-2.png)
 
@@ -148,13 +148,13 @@ Lalu bagaimana cara memanggil `my_func` yang berada di *crate root*, dengan pema
 
 Keyword ini digunakan untuk mengakses apapun yang ada di *crate root*.
 
-Pada contoh diatas, fungsi `my_func` yang berada di *crate root* bisa dipanggil dari fungsi `main` dengan statement `my_func()` atau `self::my_func()`. Untuk bagian ini penulis rasa sudah cukup jelas.
+Pada contoh di atas, fungsi `my_func` yang berada di *crate root* bisa dipanggil dari fungsi `main` dengan statement `my_func()` atau `self::my_func()`. Untuk bagian ini penulis rasa sudah cukup jelas.
 
 Beda cerita kalau fungsi tersebut dipanggil dari dalam module item `run_the_app`. Kedua statement `my_func()` dan `self::my_func()` mengarah ke `my_mod::my_func`, bukan ke fungsi `my_func` di *crate root*. Hal ini karena **current module scope** dalam statement `run_the_app` adalah module `my_mod`, maka pemanggilan `my_func` tanpa `self` atau dengannya mengarah ke fungsi yang sama yaitu `my_mod::my_func`.
 
 Pada *section* ini kita akan belajar tentang keyword baru, yaitu `crate`. Keyword tersebut digunakan untuk mengakses apapun yang berada di *crate root*. Kita bisa memanfaatkannya untuk mengakses `my_func` yang berada di *crate root* dengan pengaksesan dari dalam module item.
 
-Silakan ubah kode diatas menjadi seperti berikut. Perubahannya ada pada statement dalam fungsi `run_the_app`.
+Silakan ubah kode di atas menjadi seperti berikut. Perubahannya ada pada statement dalam fungsi `run_the_app`.
 
 ```rust
 fn my_func() {
@@ -185,7 +185,7 @@ Jalankan program, hasilnya berbeda dengan eksekusi program sebelumnya. Statement
 
 ## A.22.6. Keyword `super`
 
-Selain `self` dan `crate` ada juga keyword `super`, yang gunanya adalah untuk mengakses *parent* module scope atau 1 scope diatas *current* module scope. Agar lebih jelas silakan pelajari kode berikut:
+Selain `self` dan `crate` ada juga keyword `super`, yang gunanya adalah untuk mengakses *parent* module scope atau 1 scope di atas *current* module scope. Agar lebih jelas silakan pelajari kode berikut:
 
 ```rust
 fn my_func() {
@@ -232,7 +232,7 @@ Dalam fungsi `run_the_app`, ketiga fungsi dengan nama tersebut dipanggil.
 
 ![Module item access super](img/module-scope-item-access-4.png)
 
-Semoga cukup jelas ya. Silakan ulangi terus praktek diatas jika perlu, agar makin paham.
+Semoga cukup jelas ya. Silakan ulangi terus praktik di atas jika perlu, agar makin paham.
 
 O iya, keyword `super` ini bisa digunakan banyak kali sesuai kebutuhan. Setiap kali keyword ditulis sebagai segment path, maka artinya 1 level parent module scope.
 
@@ -243,7 +243,7 @@ crate::my_func();
 super::super::my_func();
 ```
 
-## A.22.7. Praktek lanjutan
+## A.22.7. Praktik lanjutan
 
 Agar pemahaman makin mantab, silakan pelajari program berikut.
 
@@ -340,7 +340,7 @@ fn main() {
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/module_scope_item_access">

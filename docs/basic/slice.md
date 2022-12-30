@@ -35,7 +35,7 @@ let sliced_value3 = &data[start_index..end_index]
 
 > Slice juga bisa dibuat dari tipe data vector. Lebih jelasnya dibahas pada chapter [Vector](/basic/vector).
 
-Silakan perhatikan contoh berikut dan praktekan:
+Silakan perhatikan contoh berikut dan praktikkan:
 
 ```rust
 let numbers = [12, 16, 8, 3];
@@ -270,7 +270,7 @@ Catatan ringkas perihal slice:
 - Slice memiliki notasi `&[T]`
   - `&` disitu artinya adalah operasi borrowing/peminjaman
   - `T` adalah tipe data tiap elemen
-- Slice bisa terpentuk dari hasil meminjam data array, vector, atau tipe data kolektif lainnya
+- Slice bisa terbentuk dari hasil meminjam data array, vector, atau tipe data kolektif lainnya
 - Data slice adalah selalu data pinjaman
 - Slice memiliki lebar/size
 - Slicing adalah cara pengaksesan slice menggunakan *range syntax*
@@ -280,7 +280,7 @@ Catatan ringkas perihal slice:
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/slice">

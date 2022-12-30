@@ -47,7 +47,7 @@ println!("height_in_u64: {height_in_u64}");
 
 ![Type Alias Casting](img/type-alias-casting-1.png)
 
-Contoh lainnya bisa dilihat pada kode berikut, variabel `p` dibuat menggunakan struct `Point`, kemudian di-cast ke tipe `Coordinate` sebagai data mutable lalu di ubah nilai itemnya, dan terakhir di-cast sekali lagi ke tipe `Point`.
+Contoh lainnya bisa dilihat pada kode berikut, variabel `p` dibuat menggunakan struct `Point`, kemudian di-cast ke tipe `Coordinate` sebagai data mutable lalu diubah nilai itemnya, dan terakhir di-cast sekali lagi ke tipe `Point`.
 
 ```rust
 let p = Point{ x: 0, y: 10 };
@@ -140,7 +140,7 @@ Dari data tersebut bisa kita chain lagi dengan method `unwrap` dan `as_second` u
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/type_alias_casting">

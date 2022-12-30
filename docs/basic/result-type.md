@@ -66,7 +66,7 @@ Dalam penerapannya, ketika ada data bertipe `Result` artinya data tersebut berpo
 
 Umumnya penggunaan tipe `Result` selalu diikuti dengan pattern matching menggunakan keyword `match`. Selain itu keyword `if` sebenarnya juga bisa diterapkan pada pattern matching tipe data ini, namun kurang dianjurkan.
 
-Mari kita praktekan. Ubah isi fungsi `main` dengan kode berikut:
+Mari kita praktikkan. Ubah isi fungsi `main` dengan kode berikut:
 
 ```rust
 let result = divider(10.0, 5.0);
@@ -101,7 +101,7 @@ match result {
 
 ### ◉ Tips pattern matching
 
-Silakan perhatikan kode yang sudah kita praktekan berikut ini:
+Silakan perhatikan kode yang sudah kita praktikkan berikut ini:
 
 ```rust
 let result = divider(10.0, 5.0);
@@ -247,7 +247,7 @@ Tipe ini dipakai salah satunya untuk manajemen error. Lebih jelasnya mengenai to
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/result_type">

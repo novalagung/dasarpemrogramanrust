@@ -56,9 +56,9 @@ Output program di atas saat di-run:
 
 Dalam penerapannya, ketika ada data bertipe `Option` artinya data tersebut berpotensi untuk berisi nilai `None` atau `Some<T>`, pasti antara 2 nilai tersebut.
 
-Umumnya penggunaan tipe `Option` selalu diikuti dengan seleksi kondisi. Keyword `if` bisa digunakan dalam seleksi kondisi, namun dalam prakteknya lebih baik menggunakan keyword `match` karena memberikan kemudahan dalam pengaksesan nilai `T` milik `Some` (dimana `T` adalah data yang kita cari dibungkus dalam enum value `Some`).
+Umumnya penggunaan tipe `Option` selalu diikuti dengan seleksi kondisi. Keyword `if` bisa digunakan dalam seleksi kondisi, namun dalam Praktiknya lebih baik menggunakan keyword `match` karena memberikan kemudahan dalam pengaksesan nilai `T` milik `Some` (dimana `T` adalah data yang kita cari dibungkus dalam enum value `Some`).
 
-Mari kita praktekan. Ubah isi fungsi `main` dengan kode berikut:
+Mari kita praktikkan. Ubah isi fungsi `main` dengan kode berikut:
 
 ```rust
 let result1 = divider(10, 5);
@@ -97,7 +97,7 @@ match result1 {
 
 ### ◉ Tips pattern matching
 
-Silakan perhatikan kode yang sudah kita praktekan berikut ini:
+Silakan perhatikan kode yang sudah kita praktikkan berikut ini:
 
 ```rust
 let result = divider(10, 5);
@@ -228,7 +228,7 @@ Closure harus dalam notasi `FnOnce() -> T` dimana `T` pada konteks ini adalah `i
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/option_type">

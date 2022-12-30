@@ -32,11 +32,11 @@ while i < max {
 
 ![keyword while](img/perulangan-while-1.png)
 
-Variabel `i` pada contoh di atas menjadi penentu kapan perulangan berhenti. Didalam blok kode `while` (yang dimana akan dieksekusi setiap kondisi menghasilkan nilai `true`), nilai variabel `i` di-increment, membuat variabel `i` nilainya selalu bertambah 1 setiap kali perulangan. Perulangan akan berhenti ketika nilai `i` sudah tidak dibawah `i` lagi.
+Variabel `i` pada contoh di atas menjadi penentu kapan perulangan berhenti. Di dalam blok kode `while` (yang dimana akan dieksekusi setiap kondisi menghasilkan nilai `true`), nilai variabel `i` di-increment, membuat variabel `i` nilainya selalu bertambah 1 setiap kali perulangan. Perulangan akan berhenti ketika nilai `i` sudah tidak dibawah `i` lagi.
 
 ## A.10.2. Nested `while`
 
-Penerapan nested while (atau `while` didalam `while`) cukup mudah, tulis saja statement `while` didalam `while` sesuai kebutuhan. Contoh bisa dilihat pada kode berikut, yaitu penerapan teknik nested while untuk print karakter `*` membuat bentuk segitiga.
+Penerapan nested while (atau `while` di dalam `while`) cukup mudah, tulis saja statement `while` di dalam `while` sesuai kebutuhan. Contoh bisa dilihat pada kode berikut, yaitu penerapan teknik nested while untuk print karakter `*` membuat bentuk segitiga.
 
 ```rust
 let mut i = 0;
@@ -128,7 +128,7 @@ Jika ingin jeda durasi yang lebih lama, ubah saja angka `1` pada `Duration::from
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/perulangan_while">

@@ -28,7 +28,7 @@ if number_a < 5 {
 
 let result_a = number_a >= 5;
 if result_a {
-    println!("result_a adalah diatas atau sama dengan 5");
+    println!("result_a adalah di atas atau sama dengan 5");
 }
 ```
 
@@ -49,7 +49,7 @@ if number_b == 2 {
 } else if number_b < 2 {
     println!("number_b adalah dibawah 2");
 } else {
-    println!("number_b adalah diatas 2");
+    println!("number_b adalah di atas 2");
 }
 ```
 
@@ -61,7 +61,7 @@ Silakan bermain dengan nilai variabel `number_b` untuk coba-coba.
 
 ## A.9.3. Nested `if`
 
-Sebuah blok kode `if` bisa saja berada didalam sebuah `if`, dan seperti ini umum terjadi di bahasa pemrograman. Di Rust penerapan nested `if` sama seperti pada bahasa lainnya, yaitu dengan langsung tuliskan saja blok kode `if` ke dalam blok kode `if`. Contoh:
+Sebuah blok kode `if` bisa saja berada di dalam sebuah `if`, dan seperti ini umum terjadi di bahasa pemrograman. Di Rust penerapan nested `if` sama seperti pada bahasa lainnya, yaitu dengan langsung tuliskan saja blok kode `if` ke dalam blok kode `if`. Contoh:
 
 ```rust
 let number_c = 10;
@@ -121,7 +121,7 @@ let result_d = if number_d == 2 {
 println!("result_d adalah {result_d}");
 ```
 
-Penulisannya cukup unik. Blok kode seleksi kondisi di tuliskan sebagai value dari statement `let result_d`. Dan isi blok kode nantinya akan menjadi value untuk variabel `result_d`, tergantung kondisi mana yang match.
+Penulisannya cukup unik. Blok kode seleksi kondisi dituliskan sebagai value dari statement `let result_d`. Dan isi blok kode nantinya akan menjadi value untuk variabel `result_d`, tergantung kondisi mana yang match.
 
 Pada contoh di atas, karena `number_d` nilainya 3, maka `result_d` bernilai false. Blok kode `else` adalah yang dieksekusi.
 
@@ -155,7 +155,7 @@ let result_e: &str = if number_e == 2 {
 } else if number_e < 2 {
     "angka adalah dibawah 2"
 } else {
-    "angka adalah diatas 2"
+    "angka adalah di atas 2"
 };
 println!("angka adalah {result_e}");
 ```
@@ -183,7 +183,7 @@ Keyword `if let` berbeda dengan kombinasi `let` dan  `if`. Kita akan bahas topik
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/seleksi_kondisi_if">

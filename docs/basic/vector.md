@@ -23,7 +23,7 @@ Vector bisa bertambah jumlah isinya selama size dibawah kapasitas yang sudah dia
 > - Lebih jelasnya mengenai generic dibahas pada chapter [Generics](/basic/generics)
 > - Lebih jelasnya mengenai heap dibahas pada chapter [Basic Memory Management](/basic/basic-memory-management)
 
-Langsung saja kita praktekan.
+Langsung saja kita praktikkan.
 
 ### ◉ Deklarasi vektor, size, dan capacity
 
@@ -51,7 +51,7 @@ Perihal method `len` dan `capacity`:
 - Method `len` digunakan untuk mencari tahu size atau jumlah elemen yang ada pada sebuah vector
 - Method `capacity` digunakan untuk mencari tahu kapasitas atau jumlah maksimum elemen yang ada pada sebuah vector
 
-> O iya, kode program di atas akan menghasilkan warning saat di run. Hal ini dikarenakan variabel `data_one` yang didefinisikan mutable belum diubah nilainya. Hiraukan saja, karena selanjutnya kita akan manipulasi data variabel tersebut.
+> O iya, kode program di atas akan menghasilkan warning saat di-run. Hal ini dikarenakan variabel `data_one` yang didefinisikan mutable belum diubah nilainya. Hiraukan saja, karena selanjutnya kita akan manipulasi data variabel tersebut.
 
 ### ◉ Method `pop` → menghapus elemen terakhir
 
@@ -164,9 +164,9 @@ println!("length: {}, capacity: {}", result_one.len(),  result_one.capacity());
 
 ![Vector](img/vector-8.png)
 
-Pada contoh di atas `result_one` adalah vector mutable dengan isi 3 elemen. Kemudian dikelarasikan `data_two` yang isinya juga vector 3 elemen. Vector `data_two` dimasukan kedalam vector `result_one` dengan menggunakan method `append`, dengan ini maka isi `result_one` adalah gabungan dari `result_one` yang lama dan `data_two`.
+Pada contoh di atas `result_one` adalah vector mutable dengan isi 3 elemen. Kemudian dikelarasikan `data_two` yang isinya juga vector 3 elemen. Vector `data_two` dimasukkan kedalam vector `result_one` dengan menggunakan method `append`, dengan ini maka isi `result_one` adalah gabungan dari `result_one` yang lama dan `data_two`.
 
-Proses append vector mengharuskan parameter method `append` diisi dengan *mutable reference* dari vector yang ingin dimasukan. Cara untuk mengambil *mutable reference* adalah dengan menggunakan keyword `&mut`.
+Proses append vector mengharuskan parameter method `append` diisi dengan *mutable reference* dari vector yang ingin dimasukkan. Cara untuk mengambil *mutable reference* adalah dengan menggunakan keyword `&mut`.
 
 Ok, selanjutnya tambahkan lagi isi `result_one` dengan vector lain.
 
@@ -350,7 +350,7 @@ Cara membuat vector `VecDeque<T>` bisa menggunakan `VecDeque::from` dengan param
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/vector">

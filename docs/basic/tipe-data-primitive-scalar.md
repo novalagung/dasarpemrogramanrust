@@ -27,7 +27,7 @@ println!("{} | {} | {}", numerik1, numerik2, numerik3);
 
 Dengan menggunakan teknik deklarasi *type inference*, maka default angka numerik tipe datanya adalah `i32`.
 
-Range value pada tipe data itu cukup penting untuk diperhatikan, jika ada sebuah variabel yang tipe datanya pasti dan diisi dengan nilai diluar kapasitas yang bisa ditampung, maka akan muncul error. Contoh, tipe data `i8`, jika diisi nilai `128` maka error.
+Range value pada tipe data itu cukup penting untuk diperhatikan, jika ada sebuah variabel yang tipe datanya pasti dan diisi dengan nilai di luar kapasitas yang bisa ditampung, maka akan muncul error. Contoh, tipe data `i8`, jika diisi nilai `128` maka error.
 
 ![data type error](img/tipe-data-primitive-scalar-1.png)
 
@@ -141,7 +141,7 @@ Selain beberapa tipe data yang sudah dibahas di atas, ada juga jenis tipe data p
 
 ## Catatan chapter 📑
 
-### ◉ Source code praktek
+### ◉ Source code praktik
 
 <pre>
     <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/tipe_data_primitive_scalar">
