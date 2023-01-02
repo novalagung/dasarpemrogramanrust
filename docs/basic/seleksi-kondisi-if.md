@@ -109,7 +109,7 @@ println!("result_d adalah {result_d}");
 
 Blok seleksi kondisi pada contoh di atas menjadi penentu nilai variabel `result_d`. Dengan kebutuhan tersebut, kita bisa juga memanfaatkan `let if` untuk mendapatkan hasil yang ekuivalen.
 
-Kode di atas jika dirubah ke bentuk `let if` hasilnya menjadi seperti ini:
+Kode di atas jika diubah ke bentuk `let if` hasilnya menjadi seperti ini:
 
 ```rust
 let number_d = 3;

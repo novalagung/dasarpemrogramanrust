@@ -247,7 +247,7 @@ println!("(after)  scores2 : {:?}", scores2);
 
 Variabel `scores` dipinjam menggunakan `&mut` ke variabel baru bernama `slice_f`. Kemudian `slice_f` dipinjam juga sebagai mutable slice pada perulangan `for in`.
 
-Setelah di-increment nilainya menggunakan `*score += 1` bisa dilihat hasil akhirnya juga merubah nilai variabel `scores2` yang merupakan *owner* atau pemilik data sebenarnya.
+Setelah di-increment nilainya menggunakan `*score += 1` bisa dilihat hasil akhirnya juga mengubah nilai variabel `scores2` yang merupakan *owner* atau pemilik data sebenarnya.
 
 ![slice](img/slice-6.png)
 
