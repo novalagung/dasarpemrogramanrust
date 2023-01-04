@@ -86,7 +86,7 @@ Notasi penulisan pemanggilan fungsi adalah cukup dengan menuliskan nama fungsiny
 namaFungsi();
 ```
 
-Jika ada argument parameter yang perlu disisipkan saat pemanggilan fungsi, dituliskan diantara kurung `()`. Contoh pemanggilan `sebuahFungsi` dengan argument berupa string `"sebuah argument"`.
+Jika ada argument parameter yang perlu disisipkan saat pemanggilan fungsi, dituliskan di antara kurung `()`. Contoh pemanggilan `sebuahFungsi` dengan argument berupa string `"sebuah argument"`.
 
 ```bash
 sebuahFungsi("sebuah argument");

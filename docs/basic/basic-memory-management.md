@@ -12,7 +12,7 @@ Di bahasa pemrograman high-level biasanya topik tersebut jarang disentuh, tetapi
 
 ## A.32.1. Memory management
 
-Semua bahasa pemrograman memiliki caranya sendiri dalam melakukan pengelolaan memory atau memory management. Ada beberapa macam metode manajemen memori yang diterapkan pada bahasa pemrograman, diantaranya adalah berikut:
+Semua bahasa pemrograman memiliki caranya sendiri dalam melakukan pengelolaan memory atau memory management. Ada beberapa macam metode manajemen memori yang diterapkan pada bahasa pemrograman, di antaranya adalah berikut:
 
 ### ◉ Garbage collection (GC)
 
@@ -20,7 +20,7 @@ GC adalah metode manajemen memori otomatis pada bahasa pemrograman. GC memiliki 
 
 Proses dealokasi pada GC terjadi di belakang layar secara asynchronous.
 
-Beberapa bahasa pemrograman yang menerapkan GC diantara adalah Java, C#, Go, Lisp, dan banyak bahasa lainnya.
+Beberapa bahasa pemrograman yang menerapkan GC di antara adalah Java, C#, Go, Lisp, dan banyak bahasa lainnya.
 
 ### ◉ Automatic reference counting (ARC)
 

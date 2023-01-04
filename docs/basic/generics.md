@@ -30,7 +30,7 @@ fn main() {
 }
 ```
 
-Fungsi `do_something` dipanggil dengan disisipi argument `24` dan `false`. Parameter ke-2 fungsi tersebut tipe data-nya jelas `bool` karena pada argument-nya nilai `false` digunakan, oleh karena itu tipe data `bool` disisipkan pada parameter generics saat pemanggilan fungsi; dengan notasi penulisan adalah `::<tipe_data>`, posisi penulisannya diantara nama fungsi dan tanda kurung pemanggilan fungsi `(`.
+Fungsi `do_something` dipanggil dengan disisipi argument `24` dan `false`. Parameter ke-2 fungsi tersebut tipe data-nya jelas `bool` karena pada argument-nya nilai `false` digunakan, oleh karena itu tipe data `bool` disisipkan pada parameter generics saat pemanggilan fungsi; dengan notasi penulisan adalah `::<tipe_data>`, posisi penulisannya di antara nama fungsi dan tanda kurung pemanggilan fungsi `(`.
 
 Apa yang terjadi jika nilai `T` diisi dengan tipe data argument `arg2` berbeda? program error.
 
@@ -222,7 +222,7 @@ where
 
 ## A.37.5. Generics struct
 
-Selain diterapkan di fungsi, generics bisa juga diterapkan di struct. Cara penulisannya, tambahkan notasi parameter generic diantara nama struct dan block struct.
+Selain diterapkan di fungsi, generics bisa juga diterapkan di struct. Cara penulisannya, tambahkan notasi parameter generic di antara nama struct dan block struct.
 
 ```rust
 struct Point<T, U> {

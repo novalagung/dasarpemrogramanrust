@@ -352,7 +352,7 @@ struct Book<'abc> {
 }
 ```
 
-Contoh jika ada beberapa field yang diantaranya memiliki lifetime berbeda (artinya ada lebih dari 1 lifetime):
+Contoh jika ada beberapa field yang di antaranya memiliki lifetime berbeda (artinya ada lebih dari 1 lifetime):
 
 ```rust
 struct Book<'abc, 'def> {
