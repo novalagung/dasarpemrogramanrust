@@ -164,7 +164,7 @@ println!("length: {}, capacity: {}", result_one.len(),  result_one.capacity());
 
 ![Vector](img/vector-8.png)
 
-Pada contoh di atas `result_one` adalah vector mutable dengan isi 3 elemen. Kemudian dikelarasikan `data_two` yang isinya juga vector 3 elemen. Vector `data_two` dimasukkan kedalam vector `result_one` dengan menggunakan method `append`, dengan ini maka isi `result_one` adalah gabungan dari `result_one` yang lama dan `data_two`.
+Pada contoh di atas `result_one` adalah vector mutable dengan isi 3 elemen. Kemudian dideklarasikanrasikan `data_two` yang isinya juga vector 3 elemen. Vector `data_two` dimasukkan kedalam vector `result_one` dengan menggunakan method `append`, dengan ini maka isi `result_one` adalah gabungan dari `result_one` yang lama dan `data_two`.
 
 Proses append vector mengharuskan parameter method `append` diisi dengan *mutable reference* dari vector yang ingin dimasukkan. Cara untuk mengambil *mutable reference* adalah dengan menggunakan keyword `&mut`.
 
