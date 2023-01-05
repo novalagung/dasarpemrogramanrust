@@ -135,7 +135,7 @@ Perihal apa itu tipe data pointer dan apa kegunaan prefix `&` akan dibahas pada 
 
 ## A.5.7. Tipe data primitive compound
 
-Selain beberapa tipe data yang sudah dibahas di atas, ada juga jenis tipe data primitif jenis lainnya, yaitu primitive compound yang diantaranya adalah [Array](/basic/array), [Slice](/basic/slice), [Tuple](/basic/tuple), dan string. Tipe-tipe tersebut dibahas pada chapter terpisah.
+Selain beberapa tipe data yang sudah dibahas di atas, ada juga jenis tipe data primitif jenis lainnya, yaitu primitive compound yang di antaranya adalah [Array](/basic/array), [Slice](/basic/slice), [Tuple](/basic/tuple), dan string. Tipe-tipe tersebut dibahas pada chapter terpisah.
 
 ---
 

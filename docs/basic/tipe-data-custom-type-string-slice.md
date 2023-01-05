@@ -15,7 +15,7 @@ Chapter ini akan lebih fokus ke fitur yang tersedia pada tipe `String`.
 
 ## A.45.1. Pembuatan string slice
 
-Ada banyak cara yang bisa digunakan dalam membuat data `String`, diantaranya:
+Ada banyak cara yang bisa digunakan dalam membuat data `String`, di antaranya:
 
 ### ◉ Method `to_string` milik `&str`
 

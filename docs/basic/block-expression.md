@@ -16,7 +16,7 @@ Block expression berbeda jika dibandingkan block kode `if` (yang berarti dia ada
 >
 > Untuk block expression, penulis akan gunakan istilah **block expression** atau cukup **block** saja.
 
-Cara penerapan block cukup dengan menuliskan kode program diapit diantara tanda `{` dan `}`. Contoh penerapannya:
+Cara penerapan block cukup dengan menuliskan kode program diapit di antara tanda `{` dan `}`. Contoh penerapannya:
 
 ```rust
 fn main() {
