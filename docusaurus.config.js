@@ -56,6 +56,8 @@ const config = {
     ],
   ],
 
+  plugins: ['@cmfcmf/docusaurus-search-local'],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -114,15 +116,6 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         additionalLanguages: ['bash', 'rust', 'toml'],
-      },
-      algolia: {
-        appId: 'DD3TAVK705',
-        apiKey: '6c174b58b088b4bed49357cdb9108a1b',
-        indexName: 'CONTENT',
-        contextualSearch: true,
-        // externalUrlRegex: 'dasarpemrogramanrust\\.novalagung\\.com',
-        searchParameters: {},
-        searchPagePath: 'search', // `false` to disable
       },
     }),
 };
