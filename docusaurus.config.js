@@ -57,10 +57,12 @@ const config = {
   ],
 
   plugins: [
-    require.resolve("@cmfcmf/docusaurus-search-local"),
-    {
-      indexBlog: false,
-    }
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        indexBlog: false,
+      }
+    ]
   ],
 
   themeConfig:
