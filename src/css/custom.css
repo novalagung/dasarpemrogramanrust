@@ -58,3 +58,19 @@ blockquote {
 .navbar__brand {
   margin-right: 1.5rem;
 }
+
+.aa-DetachedSearchButton {
+  width: 100px !important;
+  border-color: #d5d8da !important;
+  background-color: white;
+  height: 33px;
+}
+.aa-DetachedSearchButton .aa-DetachedSearchButtonIcon {
+  color: #d5d8da;
+}
+.aa-DetachedSearchButton .aa-DetachedSearchButtonIcon .aa-DetachedSearchButtonPlaceholder {
+  display: block;
+}
+.aa-DetachedSearchButton .aa-DetachedSearchButtonIcon .aa-DetachedSearchButtonPlaceholder::after {
+  content: "Search ...";
+}
