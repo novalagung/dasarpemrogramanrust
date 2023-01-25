@@ -50,6 +50,7 @@ https://dasarpemrogramanrust.novalagung.com/basic/string-slice-vs-string-literal
 https://dasarpemrogramanrust.novalagung.com/basic/tipe-data-custom-type-string-slice
 https://dasarpemrogramanrust.novalagung.com/basic/closures
 https://dasarpemrogramanrust.novalagung.com/basic/trait-function
+https://dasarpemrogramanrust.novalagung.com/basic/trait-iterator
 https://dasarpemrogramanrust.novalagung.com/wip
 https://dasarpemrogramanrust.novalagung.com/wip/async
 https://dasarpemrogramanrust.novalagung.com/wip/attributes
@@ -61,6 +62,7 @@ https://dasarpemrogramanrust.novalagung.com/wip/cara-membaca-error
 https://dasarpemrogramanrust.novalagung.com/wip/constant-evaluation
 https://dasarpemrogramanrust.novalagung.com/wip/copy-clone-move-drop
 https://dasarpemrogramanrust.novalagung.com/wip/dyn-trait
+https://dasarpemrogramanrust.novalagung.com/wip/enum-ordering
 https://dasarpemrogramanrust.novalagung.com/wip/error-handling-panic
 https://dasarpemrogramanrust.novalagung.com/wip/extern
 https://dasarpemrogramanrust.novalagung.com/wip/formatted-print
@@ -79,5 +81,4 @@ https://dasarpemrogramanrust.novalagung.com/wip/testing
 https://dasarpemrogramanrust.novalagung.com/wip/time
 https://dasarpemrogramanrust.novalagung.com/wip/trait-conversion-from-into
 https://dasarpemrogramanrust.novalagung.com/wip/trait-copy
-https://dasarpemrogramanrust.novalagung.com/wip/trait-iterator
 https://dasarpemrogramanrust.novalagung.com/wip/whitespace-token
