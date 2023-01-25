@@ -1,0 +1,34 @@
+name: 'continous integration'
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - edited
+    branches:
+      - master
+
+jobs:
+  test:
+    name: 'test'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        check-latest: true
+    - run: npm install
+    - name: generate assets
+      run: |
+        npm run build
+        rm -rf build/index.html
+        cp build/intro.html build/index.html
+        sed -i 's#https://dasarpemrogramanrust.novalagung.com/intro#https://dasarpemrogramanrust.novalagung.com/#g' build/index.html
+    - name: publish webbook
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        publish_branch: gh-pages

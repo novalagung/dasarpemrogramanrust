@@ -310,7 +310,7 @@ println!("{:?}", result);
 // [1, 2, 3, 4]
 ```
 
-> Lebih detailnya mengenai clone vs copy akan dibahas pada chapter [Copy, Clone, Move, Drop](/wip/clone-copy-move-drop)
+> Lebih detailnya mengenai clone vs copy akan dibahas pada chapter [Copy, Clone, Move, Drop](/wip/copy-clone-move-drop)
 
 ### ◉ Method `cmp`
 

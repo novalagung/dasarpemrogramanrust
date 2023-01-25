@@ -1,4 +1,4 @@
-name: 'generate pdf'
+name: 'continous deployment'
 
 on:
   push:
