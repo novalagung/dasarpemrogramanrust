@@ -278,7 +278,7 @@ Variabel `names` yang notabene bertipe data `[&str; 4]` perlu dikonversi ke tipe
 Setelah mendapatkan objek bertipe `Enumerate`, keyword `for in` digunakan untuk menampung tiap elemen array dalam bentuk *tuple* `(i, name)`. Variabel `i` disitu berisi counter iterasi, dan `name` adalah value-nya.
 
 > - Lebih jelasnya mengenai traits dibahas pada chapter [Traits](/basic/traits)
-> - Lebih jelasnya mengenai `Enumerate` dibahas pada chapter [Trait → Iterator](/wip/trait-iterator)
+> - Lebih jelasnya mengenai `Enumerate` dibahas pada chapter [Trait → Iterator](/basic/trait-iterator)
 > - Lebih jelasnya mengenai tuple dibahas pada chapter [Tuple](/basic/tuple)
 
 ## A.13.8. Append elemen ke array

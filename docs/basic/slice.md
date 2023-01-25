@@ -224,7 +224,7 @@ for score in &scores1[..] {
 > Sangat dianjurkan menggunakan `rust-analyzer` jika menggunakan VSCode, agar lebih mudah melihat tipe data variabel dan informasi penting lainnya yang berguna dalam proses coding atau development.
 >
 > - Lebih jelasnya mengenai traits dibahas pada chapter [Traits](/basic/traits)
-> - Lebih jelasnya mengenai trait `Iterator` dibahas pada chapter [Trait → Iterator](/wip/trait-iterator)
+> - Lebih jelasnya mengenai trait `Iterator` dibahas pada chapter [Trait → Iterator](/basic/trait-iterator)
 
 ## A.14.6. Perulangan `for in` pada mutable slice
 
