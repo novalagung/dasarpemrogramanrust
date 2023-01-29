@@ -22,7 +22,7 @@ Rust mengkategorikan crate menjadi 2 jenis, *binary crate* dan *library crate*
 
 ### ◉ Binary crate
 
-Binary crate adalah program yang dikompilasi ke bentuk *executable*, untuk kemudian dijalankan, seperti program-program yang sudah kita buat menggunakan `rago create` dan run menggunakan `cargo run` itu adalah contoh dari binary crate.
+Binary crate adalah program yang dikompilasi ke bentuk *executable*, untuk kemudian dijalankan, seperti program-program yang sudah kita buat menggunakan `cargo create` dan run menggunakan `cargo run` itu adalah contoh dari binary crate.
 
 Binary crate berada dalam sebuah package yang dibuat menggunakan command `cargo create <nama_package>` atau `cargo create --bin <nama_package>`, kedua command ini menjalankan perintah yang sama.
 

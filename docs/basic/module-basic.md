@@ -224,7 +224,7 @@ let data_bool = "true".parse::<bool>().unwrap();
 let data_float = "3.14".parse::<f64>().unwrap();
 ```
 
-`bcrypt::hash` menghasilkan data bertipe *generic result type* atau `Result<T, E>`. Tipe ini memiliki method bernama `unwrap` yang berguna untuk mengambil nilai.
+Method `parse` menghasilkan data bertipe *generic result type* atau `Result<T, E>`. Tipe ini memiliki method bernama `unwrap` yang berguna untuk mengambil nilai.
 
 > - Lebih jelasnya mengenai casting dibahas pada chapter [Type Alias & Casting](/basic/type-alias-casting) dan [Trait → Conversion (From & Into)](/wip/trait-conversion-from-into)
 > - Lebih jelasnya mengenai generic dibahas pada chapter [Generics](/basic/generics)
@@ -335,7 +335,7 @@ my_number::conversion_utility::string_to_number(message);
 
 ```rust
 use my_number::conversion_utility::string_to_number;
-conversion_utility(message);
+string_to_number(message);
 ```
 
 > Lebih jelasnya mengenai keyword `use` dibahas pada chapter [Module System → Use](/basic/use)

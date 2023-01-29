@@ -76,15 +76,15 @@ Fungsi bisa didefinisikan dengan disertai parameter, dengan itu bisa menyisipkan
 Parameter dituliskan di statement pendefinisian fungsi dengan notasi seperti berikut:
 
 ```rust
-fn func_name(param_a: int32) {
+fn func_name(param_a: i32) {
     // ...
 }
 
-fn func_name(param_a: int32, param_b: bool) {
+fn func_name(param_a: i32, param_b: bool) {
     // ...
 }
 
-fn func_name(param_a: int32, param_b: bool, param_c: &str) {
+fn func_name(param_a: i32, param_b: bool, param_c: &str) {
     // ...
 }
 
