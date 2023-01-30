@@ -192,7 +192,7 @@ println!("var2: {0}", var2); // hasilnya => var2: hello
 
 Pendefinisian banyak variabel dalam 1 statement dilakukan dengan menuliskan semua variabelnya dengan separator tanda `,` dan diapit tanda kurung `()`.
 
-Sebagai contoh di atas 2 variabel didefinisikan, yaitu `var1` dan `var2`, dan keduanya memilik value yang berbeda tipe-datanya.
+Sebagai contoh di atas 2 variabel didefinisikan, yaitu `var1` dan `var2`, dan keduanya memiliki value yang berbeda tipe-datanya.
 
 Bisa juga saat definisi variabel sekaligus ditentukan tipe data variabel, notasi penulisan bisa dilihat pada contoh kode berikut:
 
