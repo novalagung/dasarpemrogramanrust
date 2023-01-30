@@ -74,3 +74,7 @@ blockquote {
 .aa-DetachedSearchButton .aa-DetachedSearchButtonIcon .aa-DetachedSearchButtonPlaceholder::after {
   content: "Search ...";
 }
+
+.menu.thin-scrollbar {
+  padding-bottom: 25px;
+}
