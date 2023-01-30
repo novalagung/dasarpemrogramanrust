@@ -21,5 +21,6 @@ Berikut merupakan hall of fame kontributor yang sudah berbaik hati menyisihkan w
 1. [Khisby Al Ghofari](https://github.com/khisby)
 1. [Lori](https://github.com/chud-lori)
 1. [M. Zakiyuddin Munziri](https://github.com/zakiego)
+1. [Opa Kholis Majid](https://github.com/opakholis)
 1. [Theis Andatu](https://github.com/antheiz)
 1. ... anda :-)
