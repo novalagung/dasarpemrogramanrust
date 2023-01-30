@@ -6,7 +6,7 @@ sidebar_label: A.5. Tipe Data → Primitive Scalar
 
 Tipe data di Rust dikategorikan menjadi beberapa group, salah satunya adalah group tipe data primitif scalar atau biasa disebut **scalar types**. Pada chapter ini kita akan mempelajarinya.
 
-Tipe data scalar sendiri merupakan tipe data primitif yang isinya hanya 1 nilai. Rust memilik 4 tipe scalar, yaitu integers, floating-point, boolean, dan character.
+Tipe data scalar sendiri merupakan tipe data primitif yang isinya hanya 1 nilai. Rust memiliki 4 tipe scalar, yaitu integers, floating-point, boolean, dan character.
 
 ## A.5.1. Signed integers
 

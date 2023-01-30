@@ -112,7 +112,7 @@ fn main() {
 
 Pada contoh, fungsi `messaging::say_hello` didesain sebagai media untuk mengakses fungsi `some_black_magic`. Di situasi *real world* pastinya sangat jarang terjadi sebuah fungsi isinya hanya satu baris pemanggilan fungsi lainnya. Jika memang ada situasi seperti itu, (kontekstual) lebih baik hapus saja fungsi yang jadi media pemanggilan dan langsung saja panggil fungsi di dalamnya sesuai kebutuhan.
 
-Pada praktik selanjutnya ini kita misalkan bahwa fungsi `say_hello` isinya memang cuma 1 baris, dan yang paling penting adalah isi fungsi `some_black_magic` perlu untuk bisa diakses dari `main`. Untuk kasus seperti ini ada 3 alternatif solusi:
+Pada praktik selanjutnya ini kita misalkan bahwa fungsi `say_hello` isinya memang hanya 1 baris, dan yang paling penting adalah isi fungsi `some_black_magic` perlu untuk bisa diakses dari `main`. Untuk kasus seperti ini ada 3 alternatif solusi:
 
 1. Tidak perlu mengubah apapun, gunakan saja kode yang sudah ditulis di atas. Kode tersebut sudah bisa mengakomodir pemanggilan `some_black_magic` via `say_hello`.
 2. Atau, hapus saja fungsi `say_hello`, lalu ubah visibility module `service_layer` menjadi publik, dengan demikian kita bisa mengakses `some_black_magic` dari `main` menggunakan path `messaging::service_layer::some_black_magic`.

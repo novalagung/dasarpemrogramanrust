@@ -82,7 +82,7 @@ Ok, selanjutnya mari kita test aturan tersebut.
 
 ### ◉ Contoh ke-1
 
-Pada contoh berikut kita simulasikan 1 data memilik banyak immutable reference. Jika mengacu ke aturan di atas, maka hal seperti ini adalah boleh dan tidak menghasilkan error.
+Pada contoh berikut kita simulasikan 1 data memiliki banyak immutable reference. Jika mengacu ke aturan di atas, maka hal seperti ini adalah boleh dan tidak menghasilkan error.
 
 ```rust
 let msg_5 = String::from("hello rust");
@@ -98,7 +98,7 @@ println!("{:?} {:?} {:?}", msg_6, msg_7, msg_8);
 
 ### ◉ Contoh ke-2
 
-Pada contoh ke-2 ini, kita coba simulasikan 1 data memilik 1 mutable reference. Harusnya tidak muncul error karena diperbolehkan di aturan yang tertulis.
+Pada contoh ke-2 ini, kita coba simulasikan 1 data memiliki 1 mutable reference. Harusnya tidak muncul error karena diperbolehkan di aturan yang tertulis.
 
 ```rust
 let mut msg_9 = String::from("hello rust");
