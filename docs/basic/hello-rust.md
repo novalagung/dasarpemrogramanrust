@@ -55,7 +55,7 @@ Command `cargo run` akan sering kita pakai dalam proses development.
 
 ## A.1.3. Penjelasan blok kode `main.rs`
 
-Berikut adalah isi (default) dari file `main.rs`, dan kita akan bahas setiap barisnya (cuma 3 baris).
+Berikut adalah isi (default) dari file `main.rs`, dan kita akan bahas setiap barisnya (hanya 3 baris).
 
 ```rust title="src/main.rs"
 fn main() {
