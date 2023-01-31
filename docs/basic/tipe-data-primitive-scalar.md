@@ -46,6 +46,18 @@ Berikut merupakan list tipe data signed integers yang ada di Rust. Tidak perlu d
 
 > Lebih jelasnya tentang tipe data **pointer** dibahas pada chapter terpisah, [Pointer & References](/basic/pointer-references)
 
+Kita juga bisa mengetahui nilai mininal dan maximal tipe data signed integers dengan cara `tipedata::MIN` atau `tipedata::MAX`.
+
+Contoh:
+
+```rust
+let min_i8 = i8::MIN;
+let max_i8 = i8::MAX;
+
+println!("{} | {}", min_i8, max_i8);
+// output ==> -128 | 127
+```
+
 ## A.5.2. Unsigned integers
 
 Perbedaan antara signed dan unsigned adalah pada range value yang ditampung, size-nya sama, hanya angka minimal dan maksimalnya berbeda.
@@ -76,6 +88,18 @@ println!("{} | {} | {}", numerik4, numerik5, numerik6);
 // output ==> 28 | 16 | 42
 ```
 
+Kita juga bisa mengetahui nilai mininal dan maximal tipe data unsigned integers dengan cara `tipedata::MIN` atau `tipedata::MAX`.
+
+Contoh:
+
+```rust
+let min_u8 = u8::MIN;
+let max_u8 = u8::MAX;
+
+println!("{} | {}", min_u8, max_u8);
+// output ==> 0 | 255
+```
+
 Catatan saja, variabel yang dideklarasikan dengan predefined value adalah numerik, by default tipe datanya adalah `i32` (signed).
 
 ## A.5.3. Floating point
@@ -95,6 +119,20 @@ O iya, jumlah digit di belakang koma bisa diatur saat diprint menggunakan `print
 > Dalam penerapan definisi variabel sekaligus nilai, jika nilai dituliskan dalam desimal seperti contohnya `24`, maka tipe data variabel penampung adalah numerik.
 >
 > Jika dituliskan dalam notasi floating point, contohnya `3.14`, maka tipe data variabel penampung adalah float.
+
+Kita juga bisa mengetahui nilai mininal dan maximal tipe data floating point dengan cara `tipedata::MIN` atau `tipedata::MAX`.
+
+Contoh:
+
+```rust
+let min_f32 = f32::MIN;
+let max_f32 = f32::MAX;
+
+println!("min_f32={} | max_f32={}", min_f32, max_f32);
+// output ==> min_f32=-340282350000000000000000000000000000000 | max_f32=340282350000000000000000000000000000000
+```
+
+Catatan saja, variabel yang dideklarasikan dengan predefined value adalah floating point, by default tipe datanya adalah `f64`.
 
 ## A.5.4. Bool
 
@@ -135,7 +173,7 @@ Perihal apa itu tipe data pointer dan apa kegunaan prefix `&` akan dibahas pada 
 
 ## A.5.7. Tipe data primitive compound
 
-Selain beberapa tipe data yang sudah dibahas di atas, ada juga jenis tipe data primitif jenis lainnya, yaitu primitive compound yang di antaranya adalah [Array](/basic/array), [Slice](/basic/slice), [Tuple](/basic/tuple), dan string. Tipe-tipe tersebut dibahas pada chapter terpisah.
+Selain beberapa tipe data yang sudah dibahas di atas, ada juga jenis tipe data primitif jenis lainnya, yaitu primitive compound yang di antaranya adalah [Array](/basic/array), [Slice](/basic/slice), [Tuple](/basic/tuple), dan [String](/basic/tipe-data-custom-type-string-slice). Tipe-tipe tersebut dibahas pada chapter terpisah.
 
 ---
 
