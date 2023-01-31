@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ??
-title: A.??. Glossary / Kata Kunci
-sidebar_label: A.??. Glossary / Kata Kunci (WIP)
+title: Glossary / Kata Kunci
+sidebar_label: Glossary / Kata Kunci (WIP)
 ---
 
 > Work in progress

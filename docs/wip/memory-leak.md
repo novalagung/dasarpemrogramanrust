@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ??
-title: A.??. Memory Leak
-sidebar_label: A.??. Memory Leak (WIP)
+title: Memory Leak
+sidebar_label: Memory Leak (WIP)
 ---
 
 > Work in progress

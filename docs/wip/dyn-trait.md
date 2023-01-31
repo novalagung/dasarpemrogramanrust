@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ??
-title: A.??. dyn Trait
-sidebar_label: A.??. dyn Trait (WIP)
+title: dyn Trait
+sidebar_label: dyn Trait (WIP)
 ---
 
 > Work in progress

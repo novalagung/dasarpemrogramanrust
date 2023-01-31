@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ??
-title: A.??. Bytes
-sidebar_label: A.??. Bytes (WIP)
+title: Bytes
+sidebar_label: Bytes (WIP)
 ---
 
 > Work in progress

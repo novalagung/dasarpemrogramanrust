@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ?
-title: A.??. Supertrait
-sidebar_label: A.??. Supertrait (WIP)
+title: Supertrait
+sidebar_label: Supertrait (WIP)
 ---
 
 > Work in progress
