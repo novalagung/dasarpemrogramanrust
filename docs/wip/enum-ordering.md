@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ??
-title: A.??. Enum Ordering
-sidebar_label: A.??. Enum Ordering (WIP)
+title: Enum Ordering
+sidebar_label: Enum Ordering (WIP)
 ---
 
 > Work in progress

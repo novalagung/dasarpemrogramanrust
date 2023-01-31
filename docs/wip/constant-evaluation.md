@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ?
-title: A.??. Constant Evaluation
-sidebar_label: A.??. Constant Evaluation (WIP)
+title: Constant Evaluation
+sidebar_label: Constant Evaluation (WIP)
 ---
 
 > Work in progress

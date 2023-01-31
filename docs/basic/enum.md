@@ -100,7 +100,7 @@ if value3 == Superhero::Superman {
 
 > Error tersebut muncul karena tipe data enum `Superhero` tidak memiliki trait `PartialEq`. Lebih jelasnya mengenai trait dibahas pada chapter [Traits](/basic/traits).
 
-Lalu bagaimana cara pengaplikasian seleksi kondisi pada tipe enum? Caranya adalah menggunakan keyword `match`.
+Lalu bagaimana cara pengaplikasian seleksi kondisi pada tipe enum? Ada beberapa cara, namun yang paling praktis adalah keyword `match`.
 
 ## A.26.4. Keyword `match`
 

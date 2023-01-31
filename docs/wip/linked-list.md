@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ??
-title: A.??. Linked List
-sidebar_label: A.??. Linked List (WIP)
+title: Linked List
+sidebar_label: Linked List (WIP)
 ---
 
 > Work in progress

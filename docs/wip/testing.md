@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ?
-title: A.??. Testing
-sidebar_label: A.??. Testing (WIP)
+title: Testing
+sidebar_label: Testing (WIP)
 ---
 
 > Work in progress

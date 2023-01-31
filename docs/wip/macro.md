@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ??
-title: A.??. Macro
-sidebar_label: A.??. Macro (WIP)
+title: Macro
+sidebar_label: Macro (WIP)
 ---
 
 > Work in progress

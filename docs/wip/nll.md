@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ??
-title: A.??. NLL
-sidebar_label: A.??. Non-Lexical Lifetimes / NLL (WIP)
+title: NLL
+sidebar_label: Non-Lexical Lifetimes / NLL (WIP)
 ---
 
 > Work in progress

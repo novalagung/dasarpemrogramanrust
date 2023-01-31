@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ??
-title: A.??. Box
-sidebar_label: A.??. Box (WIP)
+title: Box
+sidebar_label: Box (WIP)
 ---
 
 > Work in progress

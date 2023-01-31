@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ?
-title: A.??. Time
-sidebar_label: A.??. Time (WIP)
+title: Time
+sidebar_label: Time (WIP)
 ---
 
 > Work in progress

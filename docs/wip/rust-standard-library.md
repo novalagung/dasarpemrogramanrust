@@ -1,7 +1,7 @@
 ---
 # sidebar_position: ??
-title: A.??. Rust Standard Library
-sidebar_label: A.??. Rust Standard Library (WIP)
+title: Rust Standard Library
+sidebar_label: Rust Standard Library (WIP)
 ---
 
 > Work in progress
