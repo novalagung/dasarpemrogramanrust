@@ -56,15 +56,6 @@ const config = {
     ],
   ],
 
-  plugins: [
-    [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
-      {
-        indexBlog: false,
-      }
-    ]
-  ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -123,6 +114,13 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         additionalLanguages: ['bash', 'rust', 'toml'],
+      },
+      algolia: {
+        appId: '65RXJ98QVA',
+        apiKey: 'be8c782c081c9e5a001dbbaa6ffdd859',
+        indexName: 'dasarpemrogramanrust-novalagung',
+        contextualSearch: true,
+        searchPagePath: 'false', // `false`, 'search'
       },
     }),
 };
