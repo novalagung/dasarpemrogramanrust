@@ -120,7 +120,7 @@ const config = {
         apiKey: 'be8c782c081c9e5a001dbbaa6ffdd859',
         indexName: 'dasarpemrogramanrust-novalagung',
         contextualSearch: true,
-        searchPagePath: 'false', // `false`, 'search'
+        searchPagePath: 'search', // `false`, 'search'
       },
     }),
 };
