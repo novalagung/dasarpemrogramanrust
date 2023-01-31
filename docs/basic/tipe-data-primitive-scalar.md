@@ -132,7 +132,7 @@ println!("min_f32={} | max_f32={}", min_f32, max_f32);
 // output ==> min_f32=-340282350000000000000000000000000000000 | max_f32=340282350000000000000000000000000000000
 ```
 
-Catatan saja, variabel yang dideklarasikan dengan predefined value adalah floating point, by default tipe datanya adalah `f64`.
+Catatan saja, variabel yang dideklarasikan dengan predefined value numerik yang ada titiknya (`3.10`) adalah floating point, by default tipe datanya adalah `f64`.
 
 ## A.5.4. Bool
 
