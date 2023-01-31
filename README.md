@@ -1,1 +1,1 @@
-docs/intro.md
+docs/index.md
