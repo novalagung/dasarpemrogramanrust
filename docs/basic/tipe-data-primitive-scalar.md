@@ -46,7 +46,7 @@ Berikut merupakan list tipe data signed integers yang ada di Rust. Tidak perlu d
 
 > Lebih jelasnya tentang tipe data **pointer** dibahas pada chapter terpisah, [Pointer & References](/basic/pointer-references)
 
-Kita juga bisa mengetahui nilai mininal dan maximal tipe data signed integers dengan cara `tipedata::MIN` atau `tipedata::MAX`.
+Bisa gunakan `tipedata::MIN` dan `tipedata::MAX` untuk mengetahui nilai minimal dan juga maksimal tipe data signed integers.
 
 Contoh:
 
@@ -57,6 +57,8 @@ let max_i8 = i8::MAX;
 println!("{} | {}", min_i8, max_i8);
 // output ==> -128 | 127
 ```
+
+> Notasi `i8::MIN` dan `i8::MAX` memiliki tanda `::` yang di Rust merupakan path separator. Untuk sekarang penulis anjurkan tidak terlalu pusing memahami apa itu path separator, karena nantinya akan ada pembahasan yang cukup detail khusus untuk mengupas topik tersebut.
 
 ## A.5.2. Unsigned integers
 
@@ -88,7 +90,7 @@ println!("{} | {} | {}", numerik4, numerik5, numerik6);
 // output ==> 28 | 16 | 42
 ```
 
-Kita juga bisa mengetahui nilai mininal dan maximal tipe data unsigned integers dengan cara `tipedata::MIN` atau `tipedata::MAX`.
+Bisa gunakan `tipedata::MIN` dan `tipedata::MAX` untuk mengetahui nilai minimal dan juga maksimal tipe data unsigned integers.
 
 Contoh:
 
@@ -120,7 +122,7 @@ O iya, jumlah digit di belakang koma bisa diatur saat diprint menggunakan `print
 >
 > Jika dituliskan dalam notasi floating point, contohnya `3.14`, maka tipe data variabel penampung adalah float.
 
-Kita juga bisa mengetahui nilai mininal dan maximal tipe data floating point dengan cara `tipedata::MIN` atau `tipedata::MAX`.
+Bisa gunakan `tipedata::MIN` dan `tipedata::MAX` untuk mengetahui nilai minimal dan juga maksimal tipe data floating point.
 
 Contoh:
 
@@ -173,7 +175,7 @@ Perihal apa itu tipe data pointer dan apa kegunaan prefix `&` akan dibahas pada 
 
 ## A.5.7. Tipe data primitive compound
 
-Selain beberapa tipe data yang sudah dibahas di atas, ada juga jenis tipe data primitif jenis lainnya, yaitu primitive compound yang di antaranya adalah [Array](/basic/array), [Slice](/basic/slice), [Tuple](/basic/tuple), dan [String](/basic/tipe-data-custom-type-string-slice). Tipe-tipe tersebut dibahas pada chapter terpisah.
+Selain beberapa tipe data yang sudah dibahas di atas, ada juga jenis tipe data primitif jenis lainnya, yaitu primitive compound yang di antaranya adalah [Array](/basic/array) dan [Tuple](/basic/tuple). Lebih detailnya mengenai tipe tersebut dibahas pada chapter terpisah.
 
 ---
 
