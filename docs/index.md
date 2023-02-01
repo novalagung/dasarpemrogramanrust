@@ -26,7 +26,7 @@ Source code contoh program bisa diunduh di [github.com/novalagung/dasarpemrogram
 
 ## Kontribusi
 
-Ebook ini merupakan project open source, teruntuk siapapun yang ingin berkontribusi silakan langsung saja cek [github.com/novalagung/dasarpemrogramanrust](https://github.com/novalagung/dasarpemrogramanrust). Cek juga [halaman kontributor](/CONTRIBUTING) untuk melihat list kontributor.
+Ebook ini merupakan project open source, teruntuk siapapun yang ingin berkontribusi silakan langsung saja cek [github.com/novalagung/dasarpemrogramanrust](https://github.com/novalagung/dasarpemrogramanrust). Cek juga [halaman kontributor](https://dasarpemrogramanrust.novalagung.com/CONTRIBUTING) untuk melihat list kontributor.
 
 ## Lisensi dan Status FOSSA
 
