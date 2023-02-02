@@ -53,7 +53,7 @@ if number_b == 2 {
 }
 ```
 
-Pada contoh di atas, `number_b` yang nilainya `2` match dengan statement seleksi kondisi `number_b == 2`, maka statement dalam blok kode tersebut dieksekusi, text `number_b adalah 2` muncul.
+Pada contoh di atas, `number_b` yang nilainya `3`, match dengan statement seleksi kondisi `else`, dengan ini maka statement dalam blok kode tersebut dieksekusi, text `number_b adalah di atas 2` muncul.
 
 ![seleksi kondisi](img/seleksi-kondisi-if-2.png)
 
