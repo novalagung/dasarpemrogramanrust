@@ -40,7 +40,9 @@ fn main() {
 
 Sebuah struct bernama `LegoSet` didefinisikan memiliki 4 buah property. Di blok kode fungsi `main`, dibuat sebuah variabel bernama `rough_terrain_crane` yang merupakan object/instance dari struct `LegoSet`, kemudian object tersebut di-print.
 
-> Object struct bisa di-print menggunakan macro `println` karena pada definisi struct ditambahkan atribut `#[derive(Debug)]`
+> Object struct bisa di-print menggunakan macro `println` karena pada definisi struct ditambahkan attribute `#[derive(Debug)]`.
+>
+> Lebih detailnya mengenai attribute dibahas pada chapter [Attributes](/basic/attributes).
 
 Selanjutnya kita siapkan dua buah fungsi yang berasosiasi dengan struct `LegoSet`.
 

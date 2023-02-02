@@ -353,7 +353,7 @@ Teknik pembuatan struct ini berguna ketika ada case dimana ada kebutuhan untuk m
 
 Lalu jika ingin melihat nilai property struct bagaimana solusinya? Bisa dengan menampilkan nilai property satu per satu, tapi pastinya butuh effort.
 
-Cara yang lebih elegan adalah dengan menggunakan atribute `#[derive(Debug)]`. Penerapannya cukup dengan menuliskan atribut tersebut tepat di atas deklarasi struct. Contoh:
+Cara yang lebih elegan adalah dengan menggunakan attribute `#[derive(Debug)]`. Penerapannya cukup dengan menuliskan atribut tersebut tepat di atas deklarasi struct. Contoh:
 
 ```rust
 #[derive(Debug)]
@@ -370,7 +370,8 @@ println!("data_struct_one: {:#?}", console_one);
 
 ![Struct](img/struct-5.png)
 
-> - Lebih jelasnya mengenai traits dibahas pada chapter [Traits](/basic/traits)
+> - Lebih detailnya mengenai traits dibahas pada chapter [Traits](/basic/traits)
+> - Lebih detailnya mengenai attribute dibahas pada chapter [Attributes](/basic/attributes)
 
 ## A.23.7. Tuple struct
 
