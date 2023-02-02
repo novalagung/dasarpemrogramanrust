@@ -49,7 +49,7 @@ Attribute `derive` digunakan untuk mempermudah implementasi suatu trait ke tipe 
 
 Kita telah mempelajari cara implementasi trait pada chapter [Traits](/basic/traits) yaitu menggunakan keyword `impl` dan `for`, kemudian diikuti dengan method serta implementasinya.
 
-Dengan memanfaatkan atribute `derive` kita tidak perlu menggunakan cara tersebut. Cukup tulis saja atribute `derive` beserta trait yang ingin diimplementasikan.
+Dengan memanfaatkan attribute `derive` kita tidak perlu menggunakan cara tersebut. Cukup tulis saja attribute `derive` beserta trait yang ingin diimplementasikan.
 
 Agar lebih jelas, silakan pelajari contoh berikut terlebih dahulu:
 
@@ -99,7 +99,7 @@ impl PartialEq for Superhero {
 }
 ```
 
-Cara lain untuk mengatasi error di atas, selain menggunakan teknik implementasi trait secara eksplisit, adalah dengan menggunakan atribute `derive` disertai trait `PartialEq`. Kurang lebih penulisan cara ini bisa dilihat di bawah ini. Cukup hapus block kode `impl` lalu tambahkan attribute pada deklarasi enum `Superhero`.
+Cara lain untuk mengatasi error di atas, selain menggunakan teknik implementasi trait secara eksplisit, adalah dengan menggunakan attribute `derive` disertai trait `PartialEq`. Kurang lebih penulisan cara ini bisa dilihat di bawah ini. Cukup hapus block kode `impl` lalu tambahkan attribute pada deklarasi enum `Superhero`.
 
 ```rust
 #[derive(PartialEq)]

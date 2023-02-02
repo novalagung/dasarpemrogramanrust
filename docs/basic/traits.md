@@ -480,7 +480,7 @@ Salah satu konsekuensi dalam penerapan trait sebagai return type adalah: tipe da
 
 Tipe data aslinya tetap bisa diakses, tapi butuh tambahan effort. Lebih jelasnya dibahas pada chapter [Trait → Conversion (From & Into)](/wip/trait-conversion-from-into).
 
-## A.36.8. Atribute `derive`
+## A.36.8. Attribute `derive`
 
 Ada cara lain untuk mengimplementasikan suatu trait ke dalam tipe data selain dengan menuliskan implementasinya secara eksplist, caranya menggunakan attribute `derive`.
 
