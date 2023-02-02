@@ -52,9 +52,9 @@ println!("perulangan selesai");
 
 ## A.11.3. Nested `loop`
 
-Cara menerapkan nested loop (atau `loop` di dalam `loop`), tulis saja statement `while` di dalam `while` sesuai kebutuhan.
+Cara menerapkan nested loop (atau `loop` di dalam `loop`), tulis saja statement `loop` di dalam `loop` sesuai kebutuhan.
 
-Pada kode berikut, teknik nested while diterapkan untuk membuat bentuk segitiga menggunakan karakter `*`.
+Pada kode berikut, teknik nested loop diterapkan untuk membuat bentuk segitiga menggunakan karakter `*`.
 
 ```rust
 let mut i = 0;
