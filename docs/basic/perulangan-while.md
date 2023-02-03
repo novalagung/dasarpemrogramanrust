@@ -123,6 +123,7 @@ Jika ingin jeda durasi yang lebih lama, ubah saja angka `1` pada `Duration::from
 > - Lebih jelasnya perihal path dibahas pada chapter [Module System → Pach & Item](/basic/path-item)
 > - Lebih jelasnya perihal keyword `use` dibahas pada chapter [Module System → Use](/basic/use)
 > - Lebih jelasnya perihal fungsi dibahas pada chapter [Function](/basic/function)
+> - Lebih jelasnya perihal struct dibahas pada chapter [Struct](/basic/struct)
 
 ---
 
