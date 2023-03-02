@@ -387,8 +387,8 @@ Berikut adalah tabel formatting syntax untuk tipe data datetime.
 ### ◉ Source code praktik
 
 <pre>
-    <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/time_crono">
-        github.com/novalagung/dasarpemrogramanrust-example/../time_crono
+    <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/datetime">
+        github.com/novalagung/dasarpemrogramanrust-example/../datetime
     </a>
 </pre>
 
@@ -397,16 +397,11 @@ Berikut adalah tabel formatting syntax untuk tipe data datetime.
 - [Tipe Data → Result](/basic/result-type)
 - [Generic](/basic/generics)
 
-### ◉ Work in progress
-
-- Desugar iterator
-
 ### ◉ Referensi
 
-- https://doc.rust-lang.org/std/iter/index.html
-- https://doc.rust-lang.org/std/iter/trait.Iterator.html
-- https://becomebetterprogrammer.com/rust-iter-vs-iter_mut-vs-into_iter/
-- https://blog.thoughtram.io/iterators-in-rust/
-- https://blog.logrocket.com/rust-iterators-closures-deep-dive/
+- https://doc.rust-lang.org/std/time/index.html
+- https://docs.rs/time/latest/time/
+- https://github.com/rust-lang/rust-wiki-backup/blob/master/Lib-datetime.md
+- https://docs.rs/chrono/latest/chrono/
 
 ---
