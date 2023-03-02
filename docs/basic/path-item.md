@@ -182,11 +182,50 @@ let stdin_reader = io::stdin();
 
 use std::io::stdin;
 let stdin_reader = stdin();
+
+// ... atau ...
+
+use std::io::{stdin};
+let stdin_reader = stdin();
 ```
 
 Dengan menggunakan `use` kita bisa memperpendek pengaksesan sebuah path.
 
 O iya keyword ini bisa digunakan dimana saja, artinya tidak harus di luar fungsi `main`. Bisa saja di dalam fungsi, atau di dalam blok kode seleksi kondisi atau lainnya.
+
+### ◉ Import beberapa items yang parent path-nya yang sama
+
+Pada contoh di atas, path yang diimport adalah sebuah item `std::io::stdin`. Dimisalkan ada path lain (sebagai contoh `std::io::stderr`) yang juga ikut diimport, maka penulisannya kurang lebih seperti berikut:
+
+```rust
+use std::io::stdin;
+use std::io::stderr;
+
+// ... atau ...
+
+use std::io::{stdin, stderr};
+```
+
+### ◉ Import semua items dalam suatu path
+
+Suatu path bisa saja memiliki cukup banyak item/child dibawahnya. Sebagai contoh, path `std::io` merupakan parent path dari `stdin` dan `stderr`. Selain dua items tersebut, ada juga item lainnya.
+
+Ada shortcut yang membuat penulisan import path lebih praktis, tidak perlu menuliskan satu-per-satu, caranya adalah menggunakan `*`. Sebagai contoh:
+
+```rust
+use std::io::*;
+
+// ... adalah ekuivalen dengan ...
+
+use std::io::{stdin, stderr, stdout, <path lainnya>};
+
+// ... atau ...
+
+use std::io::stdin;
+use std::io::stderr;
+use std::io::stdout;
+use std::io::<path lainnya>;
+```
 
 ## A.18.6. Pembahasan lanjutan
 

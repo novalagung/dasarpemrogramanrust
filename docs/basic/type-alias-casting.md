@@ -133,7 +133,7 @@ Pengaksesan `SystemTime::now()` mengembalikan data waktu sekarang, dan jika di c
 
 Dari data tersebut bisa kita chain lagi dengan method `unwrap` dan `as_second` untuk mengambil datanya dalam bentuk `u64`.
 
-> - Lebih jelasnya mengenai module `std::time` dibahas pada chapter [Time](/wip/time)
+> - Lebih jelasnya mengenai module `std::time` dibahas pada chapter [DateTime](/basic/datetime)
 > - Lebih jelasnya mengenai tipe data `Result` dibahas pada chapter [Tipe Data → Result](/basic/result-type)
 
 ---
