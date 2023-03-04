@@ -42,7 +42,9 @@ jobs:
     - name: install pdftk
       run: sudo apt install pdftk
     - name: join cover and pdf
-      run: pdftk "etc/cover ebook.pdf" pdf/dasarpemrogramanrust.novalagung.com.pdf cat output pdf/dasarpemrogramanrust.pdf
+      run: |
+        pdftk "etc/cover ebook.pdf" pdf/dasarpemrogramanrust.novalagung.com.pdf cat output pdf/dasarpemrogramanrust.pdf
+        rm -f pdf/dasarpemrogramanrust.novalagung.*
     - name: publish ebook
       uses: peaceiris/actions-gh-pages@v3
       with:
