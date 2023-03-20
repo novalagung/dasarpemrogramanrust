@@ -247,7 +247,7 @@ println!("date (in milisecond timestamp):  {}", date_in_local_tz.timestamp_milli
 println!("date (in microsecond timestamp): {}", date_in_local_tz.timestamp_micros());
 ```
 
-Sedangkan cara untuk mengkonversi data timestamp ke bentuk `DateTime` bisa dilakukan via `NaiveDateTime` ataupun
+Sedangkan cara untuk mengkonversi data timestamp ke bentuk `DateTime` bisa dilakukan via `NaiveDateTime` ataupun `DateTime::from`.
 
 ```rust
 // via NaiveDateTime
