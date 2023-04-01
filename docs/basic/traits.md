@@ -480,7 +480,112 @@ Salah satu konsekuensi dalam penerapan trait sebagai return type adalah: tipe da
 
 Tipe data aslinya tetap bisa diakses, tapi butuh tambahan effort. Lebih jelasnya dibahas pada chapter [Trait → Conversion (From & Into)](/wip/trait-conversion-from-into).
 
-## A.36.8. Attribute `derive`
+## A.36.8. *Associated types* pada trait
+
+Associated types adalah tipe data yang didefinisikan didalam suatu trait. Associated types tidak tidak memiliki tipe data konkret saat didefinisikan, namun ketika trait di-implementasikan maka tipe tersebut harus ditentukan tipe data konkritnya.
+
+Lebih jelas silakan perhatikan kode berikut:
+
+```rust
+trait Shape {
+    type Area;
+
+    fn area(&self) -> Self::Area;
+}
+```
+
+Pada definisi trait `Shape` di atas, yang disebut dengan associated types adalah tipe `Area` yang definisinya berada dalam block trait. Tipe didefinisikan tanpa assignment operator, jadi tidak ada tipe data konkretnya.
+
+Associated types ini sering digunakan pada Rust programming. Contoh implementasinya bisa dilihat pada contoh di bawah ini:
+
+```bash title="package source code structure"
+my_package
+│─── Cargo.toml
+└─── src
+     │─── shape.rs
+     │─── circle.rs
+     │─── square.rs
+     └─── main.rs
+```
+
+- Disiapkan suatu trait bernama `shape::Shape`.
+  - Trait ini memiliki satu associated types bernama `Area`.
+  - Dan memiliki sebuah definisi method header `area` yang gunanya untuk menghitung luas bangun datar (*shape*).
+- Disiapkan struct `circle::Circle` yang mengadopsi trait `shape::Shape`.
+- Disiapkan struct `square::Square` yang mengadopsi trait `shape::Shape`.
+
+```rust title="src/shape.rs"
+pub trait Shape {
+    type Area;
+
+    fn area(&self) -> Self::Area;
+}
+```
+
+Trait `Shape` di atas spesifikasinya mirip seperti pada contoh sebelumnya, hanya saja kali ini trait-nya di set public agar bisa diakses dari `main.rs` nantinya.
+
+Trait `Shape` kemudian di-implementasikan ke struct `Circle` dan `Square`, kode-nya bisa dilihat berikut:
+
+```rust title="src/circle.rs"
+pub struct Circle {
+    pub radius: f64,
+}
+
+impl crate::shape::Shape for Circle {
+    type Area = f64;
+
+    fn area(&self) -> Self::Area {
+        std::f64::consts::PI * self.radius * self.radius
+    }
+}
+```
+
+```rust title="src/square.rs"
+pub struct Square {
+    pub side: i64,
+}
+
+impl crate::shape::Shape for Square {
+    type Area = i64;
+
+    fn area(&self) -> Self::Area {
+        self.side * self.side
+    }
+}
+```
+
+Bisa dilihat pada kedua implementasi di atas, associated type `Area` diisi dengan tipe concrete, yaitu:
+
+- Tipe data `f64` sebagai tipe concrete `circle:Circle:Area`
+- Tipe data `i64` sebagai tipe concrete `square:Square:Area`
+
+> Contoh di atas adalah cara pengaplikasian associated types.
+
+Lalu pada `main.rs`, tipe data struct `circle::Circle` dan `square::Square` digunakan untuk membuat variabel baru, yang kemudian dari variabel tersebut, method `.area()` milik diakses.
+
+```rust title="src/main.rs"
+mod shape;
+mod circle;
+mod square;
+
+use crate::shape::Shape;
+
+fn main() {
+    let obj1 = circle::Circle{ radius: 10.0 };
+    println!("area of circle: {:.2}", obj1.area());
+
+    let obj2 = square::Square{ side: 10 };
+    println!("area of square: {:}", obj2.area());
+}
+```
+
+Silakan jalankan program dan lihat hasilnya.
+
+![Trait](img/traits-6.png)
+
+O iya, pada `main.rs`, module item `shape::Shape` perlu di-import meskipun kita tidak menggunakan `trait` tersebut secara langsung. Jika tidak di-import, maka method `.area()` milik `Circle` dan `Square` tidak bisa diakses.
+
+## A.36.9. Attribute `derive`
 
 Ada cara lain untuk mengimplementasikan suatu trait ke dalam tipe data selain dengan menuliskan implementasinya secara eksplist, caranya menggunakan attribute `derive`.
 
@@ -500,7 +605,6 @@ Lebih detailnya dibahas pada chapter [Attributes](/basic/attributes).
 
 ### ◉ Work in progress
 
-- Pembahasan tentang trait associated types
 - Pembahasan tentang trait bounds untuk implementasi method kondisional
 - Pembahasan tentang trait overloading
 
