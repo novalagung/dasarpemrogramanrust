@@ -40,7 +40,7 @@ println!("length: {}, capacity: {}", data_one.len(),  data_one.capacity());
 
 Pada contoh di atas variabel `data_one` adalah sebuah vector yang isinya 3 elemen, yaitu literal string `batman`, `superman`, dan `lobo`. Vector `data_one` dideklarasikan menggunakan macro `vec` kemudiaan diikuti notasi penulisan yang mirip seperti array.
 
-> Lebih jelasnya mengenai macro dibahas pada chapter [Macro](/wip/macro)
+> Lebih jelasnya mengenai macro dibahas pada chapter [Macro](#/wip/macro)
 
 Pembuatan vector menggunakan teknik ini hasilnya adalah data vector yang `size` dan `capacity` nya adalah sesuai dengan *predefined value*, yang pada konteks ini adalah 3.
 

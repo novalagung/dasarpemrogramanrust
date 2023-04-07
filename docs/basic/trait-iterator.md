@@ -310,7 +310,7 @@ println!("{:?}", result);
 // [1, 2, 3, 4]
 ```
 
-> Lebih detailnya mengenai clone vs copy akan dibahas pada chapter [Copy, Clone, Move, Drop](/wip/copy-clone-move-drop)
+> Lebih detailnya mengenai clone vs copy akan dibahas pada chapter [Copy, Clone, Move, Drop](#/wip/copy-clone-move-drop)
 
 ### ◉ Method `cmp`
 
@@ -326,7 +326,7 @@ println!("{:?}", result.is_eq());
 
 Enum `Ordering` memiliki beberapa method, salah satunya adalah `is_eq` yang mengembalikan nilai `true` jika dua buah data slice tersebut adalah sama.
 
-> Lebih detailnya mengenai `Ordering` akan dibahas pada chapter [Enum Ordering](/wip/enum-ordering)
+> Lebih detailnya mengenai `Ordering` akan dibahas pada chapter [Enum Ordering](#/wip/enum-ordering)
 
 ### ◉ Method `count`
 

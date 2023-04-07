@@ -301,7 +301,7 @@ let str2 = String::from("ngelak");
 println!("{:?}", &str2);
 ```
 
-Lebih jelasnya mengenai macro dibahas pada chapter [Macro](/wip/macro).
+Lebih jelasnya mengenai macro dibahas pada chapter [Macro](#/wip/macro).
 
 ---
 

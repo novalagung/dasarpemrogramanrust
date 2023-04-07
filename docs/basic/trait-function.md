@@ -81,7 +81,7 @@ Jika dipaksa deklarasi menggunakan `Fn`, hasilnya pasti error.
 
 `FnMut` merupakan supertrait dari `Fn`, artinya closure dengan trait `Fn` juga bisa digunakan sebagai argument pemanggilan fungsi dimana parameter fungsi tersebut bertipe `FnMut`.
 
-> Lebih jelasnya mengenai supertrait dibahas pada chpater [Supertrait](/wip/supertrait)
+> Lebih jelasnya mengenai supertrait dibahas pada chpater [Supertrait](#/wip/supertrait)
 
 ## A.47.3. Trait `FnOnce`
 
@@ -108,7 +108,7 @@ Jika closure dengan tipe `FnOnce` dipaksa diakses dua kali, pasti muncul error. 
 
 ![Closure](img/trait-function-2.png)
 
-> Lebih jelasnya mengenai supertrait dibahas pada chpater [Supertrait](/wip/supertrait)
+> Lebih jelasnya mengenai supertrait dibahas pada chpater [Supertrait](#/wip/supertrait)
 
 ## A.47.4. Relasi antara trait function dengan function
 

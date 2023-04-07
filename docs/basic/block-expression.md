@@ -154,11 +154,11 @@ fn main() {
 
 ## A.30.5. Async block
 
-Pembahasan mengenai asynchronous block ada pada chapter [Async](/wip/async).
+Pembahasan mengenai asynchronous block ada pada chapter [Async](#/wip/async).
 
 ## A.30.6. *Unsafe* block
 
-Pembahasan mengenai unsafe block expression ada pada chapter [Safe & Unsafe](/wip/safe-unsafe).
+Pembahasan mengenai unsafe block expression ada pada chapter [Safe & Unsafe](#/wip/safe-unsafe).
 
 ## A.30.7 Manfaat penerapan block
 

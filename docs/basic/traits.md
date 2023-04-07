@@ -478,7 +478,7 @@ where
 
 Salah satu konsekuensi dalam penerapan trait sebagai return type adalah: tipe data milik nilai yang dikembalikan terdeteksi sebagai tipe trait. Contohnya variabel `circle_one` di atas, tipe data-nya bukan `Circle`, melainkan `impl Area`.
 
-Tipe data aslinya tetap bisa diakses, tapi butuh tambahan effort. Lebih jelasnya dibahas pada chapter [Trait → Conversion (From & Into)](/wip/trait-conversion-from-into).
+Tipe data aslinya tetap bisa diakses, tapi butuh tambahan effort. Lebih jelasnya dibahas pada chapter [Trait → Conversion (From & Into)](#/wip/trait-conversion-from-into).
 
 ## A.36.8. *Associated types* pada trait
 

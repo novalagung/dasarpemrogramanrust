@@ -22,7 +22,7 @@ Dalam sebuah path, yang disebut dengan item adalah segment terakhir. Contohnya p
 
 Jika di-breakdown, berikut adalah penjelasan dari setiap kombinasi segmen path pada contoh `std::time::Duration`.
 
-- Path `std` → adalah path untuk **crate** bernama [**Rust Standard Library**](https://doc.rust-lang.org/std/), isinya adalah sangat banyak item untuk keperluan umum di Rust programming. Lebih jelasnya akan dibahas pada chapter [Rust standard library](/wip/rust-standard-library).
+- Path `std` → adalah path untuk **crate** bernama [**Rust Standard Library**](https://doc.rust-lang.org/std/), isinya adalah sangat banyak item untuk keperluan umum di Rust programming. Lebih jelasnya akan dibahas pada chapter [Rust standard library](#/wip/rust-standard-library).
 - Path `std::time` → adalah path untuk **module** bernama [`time`](https://doc.rust-lang.org/std/time/index.html), isinya banyak item yang berhubungan dengan operasi waktu/time.
 - Path `std::time::Duration` → adalah path untuk **struct** bernama [`Duration`](https://doc.rust-lang.org/std/time/index.html), yang merupakan representasi dari unit waktu.
 

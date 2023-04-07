@@ -422,11 +422,11 @@ Jialankan program, harusnya tidak ada error.
 
 ## A.49.7. Attribute *testing*
 
-Lebih detailnya mengenai attribute testing dibahas pada chapter [Testing](/wip/testing).
+Lebih detailnya mengenai attribute testing dibahas pada chapter [Testing](#/wip/testing).
 
 ## A.49.8. Attribute *macros*
 
-Lebih detailnya mengenai attribute macros dibahas pada chapter [Macro](/wip/macro).
+Lebih detailnya mengenai attribute macros dibahas pada chapter [Macro](#/wip/macro).
 
 ## A.49.9 Attribute lainnya
 

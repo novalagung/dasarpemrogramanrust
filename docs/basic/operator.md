@@ -185,8 +185,8 @@ Sebenarnya ada banyak lagi jenis operator di Rust programming, seperti type cast
 ### ◉ Chapter relevan lainnya
 
 - [Pointer & References](/basic/pointer-references)
-- [Macro](/wip/macro)
-- [Whitespace Token](/wip/whitespace-token)
+- [Macro](#/wip/macro)
+- [Whitespace Token](#/wip/whitespace-token)
 
 ### ◉ Referensi
 

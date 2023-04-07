@@ -204,13 +204,13 @@ let numbers = vec![12, 24, 7];
 
 Heap, selain digunakan sebagai penyimpanan data dinamis, kita juga bisa manfaatkan sebagai penyimpanan data jenis lainnya (secara eksplisit) menggunakan tipe data `Box`.
 
-Pembahasan Lebih jelasnya mengenai heap allocation ada pada chapter [String Custom Type vs `&str`](/basic/string-slice-vs-string-literal) dan juga [Box](/wip/box). Namun untuk sekarang, penulis anjurkan untuk lanjut ke pembahasan berikutnya terlebih dahulu.
+Pembahasan Lebih jelasnya mengenai heap allocation ada pada chapter [String Custom Type vs `&str`](/basic/string-slice-vs-string-literal) dan juga [Box](#/wip/box). Namun untuk sekarang, penulis anjurkan untuk lanjut ke pembahasan berikutnya terlebih dahulu.
 
 ## A.32.5. Error memory management
 
 Rust sangat disiplin dalam hal penulisan source code, terutama untuk kode-kode yang berhubungan dengan memory management. Hal ini dilakukan oleh Rust untuk meminimalisir munculnya error seperti memory leak dan sejenisnya.
 
-Namun meski demikian, potensi error memory tetap ada, dan kita akan bahas itu nantinya setelah masuk chapter [Safe & Unsafe](/wip/safe-unsafe).
+Namun meski demikian, potensi error memory tetap ada, dan kita akan bahas itu nantinya setelah masuk chapter [Safe & Unsafe](#/wip/safe-unsafe).
 
 Nantinya akan dibahas juga tentang beberapa error saat compile time yang error tersebut berhubungan dengan memory management, yaitu pada chapter [Ownership](/basic/ownership) dan [Borrowing](/basic/borrowing). Untuk sekarang, mari lanjut ke chapter berikutnya terlebih dahulu.
 

@@ -366,7 +366,7 @@ Akan tetapi ketika digunakan pada pemanggilan fungsi terlebih dahulu, jika digun
 
 Ini adalah keistimewaan dari macro `println` dan beberapa macro untuk keperluan printing lainnya.
 
-Lebih jelasnya mengenai macro dibahas pada chapter [Macro](/wip/macro).
+Lebih jelasnya mengenai macro dibahas pada chapter [Macro](#/wip/macro).
 
 ---
 

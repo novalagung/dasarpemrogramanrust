@@ -156,7 +156,7 @@ match value {
 > - Pada statement biasa, fungsinya adalah untuk **bitwise OR**.
 > - Pada pattern matching, fungsinya untuk **OR**, kegunaannya sama seperti `||` pada statement biasa.
 >
-> Lebih jelasnya mengenai bitwise operator dibahas pada chapter [Bitwise Operation](/wip/bitwise-operation)
+> Lebih jelasnya mengenai bitwise operator dibahas pada chapter [Bitwise Operation](#/wip/bitwise-operation)
 
 ### ◉ Match guard
 

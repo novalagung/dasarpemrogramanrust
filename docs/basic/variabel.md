@@ -266,8 +266,8 @@ Lebih jelasnya akan kita bahas pada chapter terpisah, yaitu [Shadowing](/basic/s
 ### ◉ Chapter relevan lainnya
 
 - [Shadowing](/basic/shadowing)
-- [Macro](/wip/macro)
-- [Formatted Print](/wip/formatted-print)
+- [Macro](#/wip/macro)
+- [Formatted Print](#/wip/formatted-print)
 
 ### ◉ Referensi
 

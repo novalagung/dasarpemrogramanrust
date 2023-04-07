@@ -16,7 +16,7 @@ Pointer artinya adalah alamat memori. Variabel pointer artinya adalah variabel y
 
 Di Rust, variabel pointer ditandai dengan adanya karakter `&` pada tipe data. Sebagai contoh `&i32` artinya adalah tipe data pointer `i32`. Contoh lain adalah `&bool` yang merupakan tipe data pointer `bool`.
 
-> Ada dua jenis tipe pointer di Rust programming, yaitu smart pointer dan raw pointer. Pada chapter ini kita tidak membahasnya karena termasuk topik yang cukup advance. Pembahasan akan ada pada chapter terpisah [Smart Pointer vs Raw Pointer](/wip/smart-pointer-raw-pointer).
+> Ada dua jenis tipe pointer di Rust programming, yaitu smart pointer dan raw pointer. Pada chapter ini kita tidak membahasnya karena termasuk topik yang cukup advance. Pembahasan akan ada pada chapter terpisah [Smart Pointer vs Raw Pointer](#/wip/smart-pointer-raw-pointer).
 
 ## A.33.2. Reference (operator `&`)
 

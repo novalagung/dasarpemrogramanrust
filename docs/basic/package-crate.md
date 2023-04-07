@@ -40,7 +40,7 @@ Sebagai contoh item `Duration` (yang sudah dipraktikkan pada chapter [Perulangan
 
 Kita bisa membuat library crate kemudian di-publish ke [crates.io](https://crates.io/) agar bisa digunakan banyak orang. Command `cargo new --lib <nama_package>` digunakan untuk membuat library crate.
 
-> Lebih jelasnya mengenai library crate dibahas terpisah pada chapter [Library Crate](/wip/library-crate)
+> Lebih jelasnya mengenai library crate dibahas terpisah pada chapter [Library Crate](#/wip/library-crate)
 
 ## A.19.2. Rust Package
 

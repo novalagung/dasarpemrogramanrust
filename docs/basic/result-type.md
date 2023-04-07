@@ -241,7 +241,7 @@ Closure harus dalam notasi `FnOnce(E) -> T` dimana `T` pada konteks ini adalah `
 
 Tipe data `Result<T, E>` banyak digunakan pada fungsi milik Rust standard library, dan kita selaku programmer pastinya juga akan menggunakannya dalam *real life* project.
 
-Tipe ini dipakai salah satunya untuk manajemen error. Lebih jelasnya mengenai topik tersebut dibahas pada chapter [Error Handling & Panic](/wip/error-handling-panic)
+Tipe ini dipakai salah satunya untuk manajemen error. Lebih jelasnya mengenai topik tersebut dibahas pada chapter [Error Handling & Panic](#/wip/error-handling-panic)
 
 ---
 

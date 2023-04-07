@@ -309,9 +309,9 @@ Ada beberapa topik lainnya yang relevan dengan function, yaitu:
 
 Selain itu nantinya juga ada pembahasan mengenai topik yang cukup advance yang berhubungan dengan fungsi, yaitu:
 
-- **Unsafe function**, pembahasannya ada di chapter [Safe & Unsafe](/wip/safe-unsafe)
-- **Async function**, pembahasannya ada di chapter [Async](/wip/async)
-- **Constant function**, pembahasannya ada di chapter [Constant Evaluation](/wip/constant-evaluation)
+- **Unsafe function**, pembahasannya ada di chapter [Safe & Unsafe](#/wip/safe-unsafe)
+- **Async function**, pembahasannya ada di chapter [Async](#/wip/async)
+- **Constant function**, pembahasannya ada di chapter [Constant Evaluation](#/wip/constant-evaluation)
 - **Trait → Function**, pembahasannya ada di chapter [Trait → Function](/basic/trait-function)
 
 Untuk sekarang silakan lanjut ke pembahasan chapter berikutnya terlebih dahulu, jangan langsung loncat ke chapter di atas.

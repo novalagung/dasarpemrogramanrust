@@ -47,7 +47,7 @@ Cukup mudah bukan?
 
 > Konstanta static bisa saja didefinisikan mutable, tetapi dengan konsekuensi item tersebut akan menjadi *unsafe*.
 >
-> Lebih jelasnya mengenai topik ini akan dibahas nantinya pada chapter terpisah, yaitu [Safe & Unsafe](/wip/safe-unsafe).
+> Lebih jelasnya mengenai topik ini akan dibahas nantinya pada chapter terpisah, yaitu [Safe & Unsafe](#/wip/safe-unsafe).
 
 Ok, sekarang kita coba terapkan keyword static pada tipe lainnya, contohnya `String`.
 
@@ -55,7 +55,7 @@ Ok, sekarang kita coba terapkan keyword static pada tipe lainnya, contohnya `Str
 
 Hmm, malah error.
 
-Perlu diketahui bahwa keyword `static` bisa digunakan pada semua tipe data primitif. Selain itu bisa juga diterapkan dalam *constants function* (yang nantinya dibahas pada chapter [Constant Evaluation](/wip/constant-evaluation)), [Tuple Struct](/basic/struct#a247-tuple-struct), dan juga variant [Tuple](/basic/tuple) lainnya, tetapi tidak bisa digunakan untuk custom type seperti `String`.
+Perlu diketahui bahwa keyword `static` bisa digunakan pada semua tipe data primitif. Selain itu bisa juga diterapkan dalam *constants function* (yang nantinya dibahas pada chapter [Constant Evaluation](#/wip/constant-evaluation)), [Tuple Struct](/basic/struct#a247-tuple-struct), dan juga variant [Tuple](/basic/tuple) lainnya, tetapi tidak bisa digunakan untuk custom type seperti `String`.
 
 Lalu bagaimana jika ada kebutuhan membuat konstanta bertipe string? Solusinya dengan menggunakan tipe data `&'static str` yang sebentar lagi akan kita bahas.
 

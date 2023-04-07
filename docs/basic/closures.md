@@ -381,7 +381,7 @@ Di dalam fungsi tersebut, data slice di-loop, kemudian tiap elemen-nya digunakan
 
 Jika nilai balik pemanggilan closure adalah `true` maka `i` dikembalikan dalam bentuk `i32` (ada proses casting). Dan jika tidak diketemukan, maka indeks `-1` dikembalikan.
 
-> Keyword `as` digunakan untuk casting tipe data. Lebih jelasnya dibahas pada chapter [Type Alias & Casting](/basic/type-alias-casting) dan [Trait → Conversion (From & Into)](/wip/trait-conversion-from-into)
+> Keyword `as` digunakan untuk casting tipe data. Lebih jelasnya dibahas pada chapter [Type Alias & Casting](/basic/type-alias-casting) dan [Trait → Conversion (From & Into)](#/wip/trait-conversion-from-into)
 
 Jalankan program tersebut.
 

@@ -226,7 +226,7 @@ let data_float = "3.14".parse::<f64>().unwrap();
 
 Method `parse` menghasilkan data bertipe *generic result type* atau `Result<T, E>`. Tipe ini memiliki method bernama `unwrap` yang berguna untuk mengambil nilai.
 
-> - Lebih jelasnya mengenai casting dibahas pada chapter [Type Alias & Casting](/basic/type-alias-casting) dan [Trait → Conversion (From & Into)](/wip/trait-conversion-from-into)
+> - Lebih jelasnya mengenai casting dibahas pada chapter [Type Alias & Casting](/basic/type-alias-casting) dan [Trait → Conversion (From & Into)](#/wip/trait-conversion-from-into)
 > - Lebih jelasnya mengenai generic dibahas pada chapter [Generics](/basic/generics)
 > - Lebih jelasnya mengenai result type dibahas pada chapter [Tipe Data → Result](/basic/result-type)
 

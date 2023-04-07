@@ -6,7 +6,7 @@ sidebar_label: A.27. Type Alias & Casting
 
 Chapter ini membahas tentang type alias dan juga casting (explicit conversion) pada tipe data primitif scalar.
 
-> Pembahasan mengenai conversion pada tipe data non-primitif scalar (seperti struct dan enum) dibahas pada chapter [Trait → Conversion (From & Into)](/wip/trait-conversion-from-into)
+> Pembahasan mengenai conversion pada tipe data non-primitif scalar (seperti struct dan enum) dibahas pada chapter [Trait → Conversion (From & Into)](#/wip/trait-conversion-from-into)
 
 ## A.27.1. Type Alias
 
