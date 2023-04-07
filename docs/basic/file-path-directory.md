@@ -120,7 +120,7 @@ match fs::create_dir("./files") {
 
 ### ◉ Pembuatan folder (`fs::create_dir`)
 
-Fungsi `fs::create_dir` digunakan untuk membuat folder. Contoh penerapannya sudah dibahas di sesi [A.52.3. Module std::fs (file system)](/file-path-directory#a523-module-stdfs-file-system) di atas.
+Fungsi `fs::create_dir` digunakan untuk membuat folder. Contoh penerapannya sudah dibahas di sesi [A.52.3. Module std::fs (file system)](/basic/file-path-directory#a523-module-stdfs-file-system) di atas.
 
 ### ◉ Menulis konten file (`fs::write`)
 
