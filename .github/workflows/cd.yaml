@@ -38,7 +38,7 @@ jobs:
         cd prince-14.2-linux-generic-x86_64
         yes "" | sudo ./install.sh
     - name: build pdf
-      run: npx docusaurus-prince-pdf -u https://dasarpemrogramanrust.novalagung.com/
+      run: npx docusaurus-prince-pdf -u https://dasarpemrogramanrust.novalagung.com/index.html
     - name: install pdftk
       run: sudo apt install pdftk
     - name: join cover and pdf
