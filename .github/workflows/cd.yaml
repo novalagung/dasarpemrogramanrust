@@ -38,12 +38,12 @@ jobs:
         cd prince-14.2-linux-generic-x86_64
         yes "" | sudo ./install.sh
     - name: build pdf
-      run: npx docusaurus-prince-pdf -u https://dasarpemrogramanrust.novalagung.com/index.html
+      run: npx docusaurus-prince-pdf -u https://dasarpemrogramanrust.novalagung.com --include-index
     - name: install pdftk
       run: sudo apt install pdftk
     - name: join cover and pdf
       run: |
-        pdftk "etc/cover ebook.pdf" pdf/dasarpemrogramanrust.novalagung.com-index.html.pdf cat output pdf/dasarpemrogramanrust.pdf
+        pdftk "etc/cover ebook.pdf" pdf/dasarpemrogramanrust.novalagung.com.pdf cat output pdf/dasarpemrogramanrust.pdf
         rm -f pdf/dasarpemrogramanrust.novalagung.*
     - name: publish ebook
       uses: peaceiris/actions-gh-pages@v3
