@@ -166,7 +166,7 @@ Metode deklarasi yang selama ini sudah kita terapkan adalah *type inference*.
 
 ### ◉ Metode *Manifest Typing*
 
-Metode ini mewajibkan programmer untuk menuliskan secara jelas/eksplisit tipe data variabel. Contoh seperti ditandai dengan menuliskan tipe data secara jelas/eksplisit pada praktik sebelumnya, yaitu pendefinisian `message3`.
+Metode ini mewajibkan programmer untuk menuliskan secara jelas/eksplisit tipe data variabel. Contoh penerapannya bisa dilihat di praktik sebelumnya, pada definisi variabel `message3`.
 
 ```rust
 let message3: i8 = 24;
