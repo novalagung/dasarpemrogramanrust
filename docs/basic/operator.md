@@ -115,7 +115,7 @@ println!("{res_one} {res_two}");
 // output => true true
 ```
 
-Untuk menggunakan operator negasi pada tipe data numerik, caranya dengan langsung menambahkan prefix `-` pada angka atau variabel. Contohnya `-12` atau `value_left`.
+Untuk menggunakan operator negasi pada tipe data numerik, caranya dengan langsung menambahkan prefix `-` pada angka atau variabel. Contohnya `-12` atau `-value_left`.
 
 Penggunaan operator logika `!` juga sama, tinggal tambahkan saja sebagai prefix dari data `bool` atau statement yang menghasilkan data `bool`, contohnya `!(value_left == value_right)`.
 
