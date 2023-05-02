@@ -12,7 +12,7 @@ E-book Dasar Pemrograman Rust ini dibuat dengan harapan bisa menjadi alternatif 
 
 Versi e-book: **v1.0.0-alpha1.20230407**, dan versi [Rust 1.65.0](https://blog.rust-lang.org/2022/11/03/Rust-1.65.0.html).
 
-> E-book ini aktif dalam pengembangan, kami akan tambah terus konten-kontennya. Silakan cek di [Github repo](https://github.com/novalagung/dasarpemrogramanrust-example) kami mengenai progress development e-book.
+> E-book ini aktif dalam pengembangan, kami akan tambah terus konten-kontennya. Silakan cek di [Github repo](https://github.com/novalagung/dasarpemrogramanrust) kami mengenai progress development e-book.
 
 ## Download Ebook File (pdf)
 
