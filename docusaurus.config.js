@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Dasar Pemrograman Rust',
-  tagline: 'Belajar Rust Mulai Dari 0',
+  tagline: 'Belajar Rust Mulai Dari 0, Gratis!',
   url: 'https://dasarpemrogramanrust.novalagung.com',
   baseUrl: '/',
   trailingSlash: false,
@@ -61,7 +61,7 @@ const config = {
     ({
       metadata: [
         {
-          name: 'keywords', content: 'rust, belajar rust, pemrograman rust, cargo, concurrent programming, noval agung',
+          name: 'keywords', content: 'rust, belajar rust, tutorial rust, belajar tutorial rust gratis, pemrograman rust, cargo, concurrent programming, noval agung',
         },
         {
           name: 'author', content: 'Noval Agung Prayogo',
@@ -98,8 +98,8 @@ const config = {
             label: '▶️ Udemy courses',
             items: [
               {
-                label: 'Udemy Course: Praktis Belajar Docker dan Kubernetes (FREE April 2023) ',
-                href: 'https://www.udemy.com/course/praktis-belajar-docker-dan-kubernetes-untuk-pemula/?couponCode=FREE-202304',
+                label: 'Udemy Course: Praktis Belajar Docker dan Kubernetes (FREE May 2023) ',
+                href: 'https://www.udemy.com/course/praktis-belajar-docker-dan-kubernetes-untuk-pemula/?couponCode=FREE-202305',
               },
             ]
           }
