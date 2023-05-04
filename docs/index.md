@@ -1,12 +1,12 @@
 ---
 sidebar_position: 1
-title: Belajar Rust
+title: Belajar Rust (Gratis!)
 sidebar_label: Dasar Pemrograman Rust
 ---
 
 Rust adalah sebuah bahasa pemrograman *general purpose* yang fokus pada *performance*, *type safety*, dan *concurrency*. Bahasa ini diciptakan sebagai alternatif bahasa pemrograman yang berfokus pada hal-hal yang cukup *low-level* tapi tetap men-support fitur yang sifatnya *high-level*.
 
-E-book Dasar Pemrograman Rust ini dibuat dengan harapan bisa menjadi alternatif referensi belajar Rust, disajikan dengan penyampaian yang cocok untuk pembaca di level *beginner*. Buku ini ada bukan untuk menggantikan *the book*, melainkan sebagai komplemen.
+E-book Dasar Pemrograman Rust ini dibuat dengan harapan bisa menjadi alternatif referensi belajar Rust, disajikan dengan penyampaian yang cocok untuk pembaca di level *beginner*, dan gratis. Buku ini ada bukan untuk menggantikan *the book*, melainkan sebagai komplemen.
 
 [Dokumentasi *official* Rust](https://www.rust-lang.org/learn) sangat lengkap, dan aktif di-update oleh komunitas. Jika pembaca sudah memiliki banyak pengalaman dalam programming, sudah paham mengenai system programming seperti C atau C++, maka penulis sangat anjurkan untuk langsung menggunakan [*the book*](https://www.rust-lang.org/learn) sebagai referensi belajar.
 
