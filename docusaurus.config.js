@@ -192,7 +192,7 @@ const config = {
           // datePublished: '2021-07-01',
         },
         breadcrumbLabelMap: {}
-      },      
+      },
     }),
 };
 
