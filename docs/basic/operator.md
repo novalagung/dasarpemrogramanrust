@@ -4,8 +4,6 @@ title: A.8. Operator
 sidebar_label: A.8. Operator
 ---
 
-> This chapter is still under development
-
 Chapter ini membahas mengenai operator pada pemrograman rust.
 
 ## A.8.1. Operator aritmatika

@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: A.1. Program Pertama → Hello Rust
 sidebar_label: A.1. Program Pertama → Hello Rust
-description: Belajar membuat program hello world di Rust. Seperti pada umumnya bahasa pemrograman, belajar membuat program pasti diawali dengan aplikasi Hello World, dan pada chapter ini kita akan melakukannya. Kita akan buat program bernama Hello Rust menggunakan pemrograman Rust.
+description: Belajar membuat program hello world di Rust, dimulai dengan pembuatan program Hello World sederhana.
 keywords: [rust, belajar rust, hello world, hello rust]
 ---
 
