@@ -71,7 +71,10 @@ const config = {
           name: 'author', content: 'Noval Agung Prayogo',
         },
         {
-          name: 'og:image', content: 'https://dasarpemrogramanrust.novalagung.com/img/cover_media_share.png?v=1',
+          property: 'og:image', content: 'https://dasarpemrogramanrust.novalagung.com/img/cover_media_share.png?v=1',
+        },
+        {
+          property: 'og:type', content: 'article',
         }
       ],
       image: 'https://dasarpemrogramanrust.novalagung.com/img/cover_media_share.png?v=1',
@@ -130,8 +133,8 @@ const config = {
         excludedRoutes: [ ],  
         verbose: true,
         featuredImageDimensions: {
-          width: 1200,
-          height: 627,
+          width: 600,
+          height: 320,
         },
         authors: {
           'Noval Agung Prayogo': {
