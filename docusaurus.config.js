@@ -56,6 +56,10 @@ const config = {
     ],
   ],
 
+  plugins: [
+    '@stackql/docusaurus-plugin-structured-data',
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -122,6 +126,70 @@ const config = {
         contextualSearch: true,
         searchPagePath: 'search', // `false`, 'search'
       },
+      structuredData: {
+        excludedRoutes: [ ],  
+        verbose: true,
+        featuredImageDimensions: {
+          width: 1200,
+          height: 627,
+        },
+        authors: {
+          'Noval Agung Prayogo': {
+            authorId: '1',
+            url: 'https://www.linkedin.com/in/novalagung',
+            imageUrl: 'https://i.stack.imgur.com/99yxf.jpg',
+            sameAs: [
+              'https://stackoverflow.com/users/1467988/novalagung',
+              'https://www.udemy.com/user/noval-agung-prayogo',
+              'https://apps.apple.com/id/developer/noval-agung-prayogo/id1163677873?l=id',
+              'https://novalagung.medium.com',
+              'https://adplist.org/mentors/noval-agung-prayogo',
+              'https://novalagung.com',
+              'https://linktr.ee/novalagung',
+              'https://www.instagram.com/novalagung',
+              'https://www.facebook.com/novalagungprayogo',
+              'https://www.codementor.io/@novalagung'
+            ],
+          },
+        },  
+        organization: {
+          sameAs: [
+            'https://web.facebook.com/adamstudio.page',
+            'https://www.instagram.com/adamstudio.ig',
+            'https://github.com/adamstudiogh'
+          ],
+          contactPoint: {
+            '@type': 'ContactPoint',
+            email: 'hello@novalagung.com',
+          },
+          logo: {
+            '@type': 'ImageObject',
+            inLanguage: 'id',
+            '@id': 'adamstudio',
+            url: 'https://avatars.githubusercontent.com/u/65223287',
+            contentUrl: 'https://avatars.githubusercontent.com/u/65223287',
+            width: 1440,
+            height: 900,
+            caption: 'Adam Studio',
+          },
+          // address: {
+          //   '@type': 'PostalAddress',
+          //   addressCountry: 'AU', // https://en.wikipedia.org/wiki/ISO_3166-1
+          //   postalCode: '3001',
+          //   streetAddress: 'Level 24, 570 Bourke Street, Melbourne, Victoria',
+          // },
+          // duns: '750469226',
+          // taxID: 'ABN 65 656 147 054',
+        },
+        website: {
+          inLanguage: 'id',
+        },
+        webpage: {
+          inLanguage: 'id',
+          // datePublished: '2021-07-01',
+        },
+        breadcrumbLabelMap: {}
+      },      
     }),
 };
 

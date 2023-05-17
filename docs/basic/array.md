@@ -2,6 +2,8 @@
 sidebar_position: 13
 title: A.13. Tipe Data → Array
 sidebar_label: A.13. Array
+description: Belajar array pada rust. Contoh penerapan array, iterasi array, dan operasi lainnya pada array
+keywords: [rust, belajar rust, array rust, slice rust]
 ---
 
 Pada chapter awal kita sudah mempelajari tipe data primitif jenis scalas. Selain *scalar types* ada juga tipe data primitif lainnya yaitu **compound types**. Compound types sendiri adalah jenis tipe data kolektif yang isinya banyak data. Kesemua data tersebut memiliki tipe data yang sama dan di-group menjadi satu.
