@@ -27,9 +27,13 @@ jobs:
         publish_branch: gh-pages
 
   generate_ebook:
+    needs: generate_webbook
     name: 'generate ebook'
     runs-on: ubuntu-latest
     steps:
+    - name: sleep for 30 seconds
+      run: sleep 30s
+      shell: bash
     - uses: actions/checkout@v3
     - name: install prince
       run: |
