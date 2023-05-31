@@ -424,7 +424,7 @@ fn main() {
     let ps5 = models::game::GamingConsole{
         name: String::from("PS 5")
     };
-    println!("{:#?}", red);
+    println!("{:#?}", ps5);
 }
 ```
 
