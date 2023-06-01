@@ -193,3 +193,7 @@ Sebenarnya ada banyak lagi jenis operator di Rust programming, seperti type cast
 - https://doc.rust-lang.org/rust-by-example/hello/print.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

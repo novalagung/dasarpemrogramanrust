@@ -118,3 +118,7 @@ Yang penting untuk diperhatikan bukan siapa owner-nya, tapi bagaimana kita memas
 - https://stackoverflow.com/questions/49684657/what-is-the-difference-between-str-and-static-str-in-a-static-or-const
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

@@ -564,3 +564,7 @@ println!("after: {data_vec:?}");
 - https://blog.logrocket.com/rust-iterators-closures-deep-dive/
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

@@ -270,3 +270,7 @@ Pembahasan mengenai generic pada method ada pada chapter [Generics](/basic/gener
 - https://doc.rust-lang.org/rust-by-example/fn/methods.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

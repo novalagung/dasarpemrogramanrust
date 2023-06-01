@@ -148,3 +148,7 @@ Jika ingin jeda durasi yang lebih lama, ubah saja angka `1` pada `Duration::from
 - https://doc.rust-lang.org/reference/paths.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

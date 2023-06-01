@@ -396,3 +396,7 @@ let kendaraan3 = Kendaraan::<&str>::Gledekan("Artco");
 - https://doc.rust-lang.org/std/cmp/trait.PartialOrd.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

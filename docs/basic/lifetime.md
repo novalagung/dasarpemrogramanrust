@@ -533,3 +533,7 @@ Jalankan program, hasilnya sesuai harapan, tidak ada error.
 - https://educative.io/answers/what-are-generic-lifetime-parameters-in-a-rust-function
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

@@ -204,3 +204,7 @@ Selain beberapa tipe data yang sudah dibahas di atas, ada juga jenis tipe data p
 - https://en.wikipedia.org/wiki/Integer_(computer_science)
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

@@ -152,3 +152,7 @@ Selamat! Anda telah menjadi programmer Rust!
 - https://doc.rust-lang.org/rust-by-example/hello/print.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

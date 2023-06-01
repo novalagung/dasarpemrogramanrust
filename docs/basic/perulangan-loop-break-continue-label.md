@@ -207,3 +207,7 @@ Variabel `counter` yang nilai awalnya `0`, di-increment dalam perulangan. Ketika
 - https://doc.rust-lang.org/reference/expressions/loop-expr.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

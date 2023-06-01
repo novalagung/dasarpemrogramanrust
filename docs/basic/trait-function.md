@@ -179,3 +179,7 @@ Dari contoh di atas terbukti bahwa fungsi `double` dan juga `pow_number` memenuh
 - https://doc.rust-lang.org/std/ops/trait.FnOnce.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

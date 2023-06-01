@@ -386,3 +386,7 @@ Pada kasus struct, solusinya cukup dengan tambahkan keyword `pub` atau siapkan *
 - https://doc.rust-lang.org/rust-by-example/fn/methods.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

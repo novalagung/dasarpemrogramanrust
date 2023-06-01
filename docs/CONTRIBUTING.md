@@ -26,3 +26,5 @@ Berikut merupakan hall of fame kontributor yang sudah berbaik hati menyisihkan w
 1. [Shandy Siswandi](https://github.com/shandysiswandi)
 1. [Theis Andatu](https://github.com/antheiz)
 1. ... anda :-)
+
+---

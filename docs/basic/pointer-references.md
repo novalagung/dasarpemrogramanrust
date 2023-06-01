@@ -256,3 +256,7 @@ Untuk sekarang penulis anjurkan untuk lanjut ke chapter berikutnya secara urut.
 - https://os.phil-opp.com/heap-allocation/
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />
