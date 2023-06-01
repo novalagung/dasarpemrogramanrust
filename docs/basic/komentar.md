@@ -54,3 +54,7 @@ Bisa dilihat, komentar tidak menghasilkan efek apa-apa pada program yang dibuat.
 - https://doc.rust-lang.org/reference/comments.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

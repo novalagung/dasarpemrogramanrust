@@ -37,3 +37,9 @@ Ebook Dasar Pemrograman Rust gratis untuk disebarluaskan secara bebas, baik untu
 ## Author & Maintainer
 
 Ebook ini dibuat oleh Noval Agung Prayogo. Untuk pertanyaan, kritik, dan saran, silakan drop email ke hello@novalagung.com.
+
+---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

@@ -246,3 +246,7 @@ Nantinya akan dibahas juga tentang beberapa error saat compile time yang error t
 - https://stackoverflow.com/questions/24158114
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

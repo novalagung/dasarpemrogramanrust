@@ -248,3 +248,7 @@ Closure harus dalam notasi `FnOnce() -> T` dimana `T` pada konteks ini adalah `i
 - https://doc.rust-lang.org/std/option/index.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

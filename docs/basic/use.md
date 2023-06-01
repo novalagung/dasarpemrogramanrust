@@ -164,3 +164,7 @@ fn main() {
 - https://doc.rust-lang.org/reference/items/use-declarations.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

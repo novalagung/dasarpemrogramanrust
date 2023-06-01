@@ -155,3 +155,7 @@ Dalam case normal, sangat dianjurkan untuk menggunakan `&str`, kecuali memang ya
 - https://stackoverflow.com/questions/30154541/how-do-i-concatenate-strings
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

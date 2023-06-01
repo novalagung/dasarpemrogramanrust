@@ -323,3 +323,7 @@ Beberapa referensi terkait chapter ini:
 - https://stackoverflow.com/questions/57225055/in-rust-can-you-own-a-string-literal
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

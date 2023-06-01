@@ -369,3 +369,7 @@ Cara membuat vector `VecDeque<T>` bisa menggunakan `VecDeque::from` dengan param
 - https://stackoverflow.com/questions/43036279/what-does-it-mean-to-pass-in-a-vector-into-a-for-loop-versus-a-reference-to-a
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

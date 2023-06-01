@@ -412,3 +412,7 @@ println!("last number: {last}");
 - https://doc.rust-lang.org/rust-by-example/flow_control/match.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

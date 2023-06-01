@@ -429,3 +429,7 @@ Pembahasan topik module dilanjutkan pada beberapa chapter lain. Pada chapter [Mo
 - https://stackoverflow.com/questions/69275034/what-is-the-difference-between-use-and-pub-use
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

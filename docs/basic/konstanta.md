@@ -76,3 +76,7 @@ Sesuai anjuran di [halaman dokumentasi Rust](https://rust-lang.github.io/api-gui
 - https://mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/const-and-static.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

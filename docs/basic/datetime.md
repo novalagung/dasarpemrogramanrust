@@ -405,3 +405,7 @@ Berikut adalah tabel formatting syntax untuk tipe data datetime.
 - https://docs.rs/chrono/latest/chrono/
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

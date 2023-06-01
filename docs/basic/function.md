@@ -342,3 +342,7 @@ Untuk sekarang silakan lanjut ke pembahasan chapter berikutnya terlebih dahulu, 
 - https://rust-lang.github.io/api-guidelines/naming.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

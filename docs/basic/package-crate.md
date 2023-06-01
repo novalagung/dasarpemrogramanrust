@@ -204,3 +204,7 @@ Masih dalam topik *module system*, penulis anjurkan untuk lanjut ke chapter beri
 - https://github.com/rust-lang/cargo/issues/3381
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

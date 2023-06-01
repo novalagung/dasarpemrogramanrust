@@ -95,3 +95,7 @@ Di Rust ada banyak cara membuat object iterator. Mengenai topik satu ini kita ak
 - https://doc.rust-lang.org/rust-by-example/flow_control/for.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

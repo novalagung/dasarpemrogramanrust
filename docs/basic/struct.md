@@ -424,7 +424,7 @@ fn main() {
     let ps5 = models::game::GamingConsole{
         name: String::from("PS 5")
     };
-    println!("{:#?}", red);
+    println!("{:#?}", ps5);
 }
 ```
 
@@ -539,3 +539,7 @@ Pembahasan mengenai generic pada struct ada pada chapter [Generics](/basic/gener
 - https://doc.rust-lang.org/rust-by-example/custom_types/structs.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

@@ -387,3 +387,7 @@ Lebih jelasnya mengenai macro dibahas pada chapter [Macro](#/wip/macro).
 - https://doc.rust-lang.org/nomicon/ownership.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

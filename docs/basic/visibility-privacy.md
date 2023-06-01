@@ -338,3 +338,7 @@ fn main() {
 - https://aloso.github.io/2021/03/28/module-system.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

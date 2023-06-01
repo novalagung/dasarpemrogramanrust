@@ -230,3 +230,7 @@ Tipe data variabel `paths` di atas adalah `ReadDir` yang merupakan tipe data ite
 - https://doc.rust-lang.org/rust-by-example/std_misc/fs.html
 
 ---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />
