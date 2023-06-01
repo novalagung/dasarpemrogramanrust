@@ -105,8 +105,8 @@ const config = {
             label: '▶️ Udemy courses',
             items: [
               {
-                label: 'Udemy Course: Praktis Belajar Docker dan Kubernetes (FREE May 2023) ',
-                href: 'https://www.udemy.com/course/praktis-belajar-docker-dan-kubernetes-untuk-pemula/?couponCode=FREE-202305',
+                label: 'Udemy Course: Praktis Belajar Docker dan Kubernetes (FREE Juni 2023) ',
+                href: 'https://www.udemy.com/course/praktis-belajar-docker-dan-kubernetes-untuk-pemula/?couponCode=FREE-202306',
               },
             ]
           }
