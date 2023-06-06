@@ -129,6 +129,22 @@ Sukses! Sekarang dependency `rand` sudah bisa digunakan dalam package yang sudah
 
 Jadi kurang lebih seperti itu cara menambahkan dependency di Rust. Seiring berjalannya proses pembelajaran penulis yakin pembaca akan terbiasa dengan flow dan juga command di atas.
 
+### ◉ Command `cargo add`
+
+Selain cara di atas, ada cara yang lebih ringkas untuk menambahkan package, yaitu menggunakan command `cargo add <nama_crate>`. Command ini secara otomatis menambahkan package yang diinginkan ke file `Cargo.toml` kemudian mengunduhnya.
+
+- Menambahkan package `rand` versi terbaru
+
+    ```rust
+    cargo add rand
+    ```
+
+- Menambahkan package `rand` versi `0.8.5`
+
+    ```rust
+    cargo add rand@0.8.5
+    ```
+
 ## A.19.3. Praktik membuat program menampilkan angka random
 
 Ok, sekarang kita lanjutkan praktik pembuatan program sederhana untuk menampilkan angka random.
