@@ -131,7 +131,7 @@ Jadi kurang lebih seperti itu cara menambahkan dependency di Rust. Seiring berja
 
 ### ◉ Command `cargo add`
 
-Selain cara di atas, ada cara yang lebih ringkas untuk menambahkan package, yaitu menggunakan command `cargo add <nama_crate>`. Command ini secara otomatis menambahkan package yang diinginkan ke file `Cargo.toml` kemudian mengunduhnya.
+Selain cara di atas, ada cara lain yang lebih ringkas untuk penambahan package, yaitu menggunakan command `cargo add <nama_crate>`. Command ini secara otomatis menambahkan package yang diinginkan ke file `Cargo.toml` kemudian mengunduhnya.
 
 - Menambahkan package `rand` versi terbaru
 
