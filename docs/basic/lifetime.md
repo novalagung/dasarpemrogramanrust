@@ -509,7 +509,7 @@ fn main() {
 
 Jalankan program, hasilnya sesuai harapan, tidak ada error.
 
-![Lifetime](img/lifetime-9.png)
+![Lifetime](img/lifetime-9-fix.png)
 
 ---
 
