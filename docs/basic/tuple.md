@@ -8,13 +8,13 @@ Pada chapter ini kita akan membahas tentang tipe data kolektif bernama Tuple.
 
 ## A.15.1. Tipe data tuple
 
-Tuple tipe data yang isinya koleksi dari banyak data atau value, yang bisa jadi tiap value tersebut tipe datanya berbeda satu sama lain. Tuple biasa digunakan untuk menampung data yang *heterogeneous* atau campuran.
+Tuple merupakan tipe data yang isinya koleksi dari banyak data atau value, yang bisa jadi tiap value tersebut tipe datanya berbeda satu sama lain. Tuple biasa digunakan untuk menampung data yang *heterogeneous* atau campuran.
 
 > Tipe ini tidak diciptakan sebagai pengganti array.
 >
 > Cukup mudah untuk mengidentifikasi kapan harus menggunakan tuple, contohnya: jika ada kebutuhan data harus bisa di-iterate, atau data memiliki pattern yg pasti seperti size-nya fixed, atau tipe datanya *homogeneous* atau sejenis, ... maka baiknya gunakan tipe data array atau slice.
 
-Tuple dibuat dengan notasi penulisan diapit tanpda `(` dan `)`. Contoh deklarasi tuple:
+Tuple dibuat dengan notasi penulisan diapit tanda `(` dan `)`. Contoh deklarasi tuple:
 
 ```rust
 let tuple_a = ("jason", 27, ["racing", "working out"], true);
@@ -108,7 +108,7 @@ println!("hobbies : {:?}", tuple_c.2);
 
 ### ◉ Unpacking tuple
 
-Unpacking tuple adalah kebalikan dari packing tuple. Data tuple di-distribusikan ke banyak variabel dalam 1 baris deklarasi.
+Unpacking tuple adalah kebalikan dari packing tuple. Data tuple didistribusikan ke banyak variabel dalam 1 baris deklarasi.
 
 ```rust
 let tuple_d = ("stephanie", 28, ["software engineering"], false);
