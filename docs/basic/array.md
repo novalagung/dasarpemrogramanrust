@@ -340,9 +340,3 @@ Variabel `data_arr` pada contoh di atas bertipe data`[[&str; 2] 3]`, yang artiny
 - https://doc.rust-lang.org/std/iter/trait.Iterator.html
 - https://doc.rust-lang.org/rust-by-example/trait/iter.html
 - https://doc.rust-lang.org/rust-by-example/flow_control/for.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

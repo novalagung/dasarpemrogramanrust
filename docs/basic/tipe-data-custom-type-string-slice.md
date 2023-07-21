@@ -204,9 +204,3 @@ println!("{str}"); // iPhone 12 Pro
 ### ◉ Referensi
 
 - https://doc.rust-lang.org/std/string/struct.String.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

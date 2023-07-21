@@ -244,9 +244,3 @@ Nantinya akan dibahas juga tentang beberapa error saat compile time yang error t
 - https://imam.digmi.id/post/belajar-rust-memahami-stack-dan-heap/
 - https://javatpoint.com/rust-ownership
 - https://stackoverflow.com/questions/24158114
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

@@ -340,9 +340,3 @@ Untuk sekarang silakan lanjut ke pembahasan chapter berikutnya terlebih dahulu, 
 - https://doc.rust-lang.org/std/keyword.static.html
 - https://doc.rust-lang.org/rust-by-example/fn.html
 - https://rust-lang.github.io/api-guidelines/naming.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

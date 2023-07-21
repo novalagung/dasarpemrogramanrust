@@ -419,9 +419,3 @@ Pembahasan yang lebih mendetail tentang keyword `match` dan *pattern matching* a
 - https://doc.rust-lang.org/reference/items/enumerations.html
 - https://doc.rust-lang.org/book/ch06-02-match.html
 - https://doc.rust-lang.org/std/keyword.enum.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

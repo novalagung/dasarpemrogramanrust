@@ -20,5 +20,3 @@ Rust memiliki beberapa kelebihan dibanding bahasa system-programming lainnya, ya
 - Dukungan komunitas yang bagus. Banyak library open source yang tersedia
 
 Pada buku ini (terutama semua serial chapter A) kita akan belajar tentang dasar pemrograman Rust, mulai dari 0.
-
----

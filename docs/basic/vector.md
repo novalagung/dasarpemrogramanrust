@@ -367,9 +367,3 @@ Cara membuat vector `VecDeque<T>` bisa menggunakan `VecDeque::from` dengan param
 - https://stackoverflow.com/questions/36672845/in-rust-is-a-vector-an-iterator
 - https://stackoverflow.com/questions/28800121/what-do-i-have-to-do-to-solve-a-use-of-moved-value-error
 - https://stackoverflow.com/questions/43036279/what-does-it-mean-to-pass-in-a-vector-into-a-for-loop-versus-a-reference-to-a
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

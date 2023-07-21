@@ -197,9 +197,3 @@ Keyword `if let` berbeda dengan kombinasi `let` dan  `if`. Kita akan bahas topik
 - https://doc.rust-lang.org/std/keyword.if.html
 - https://doc.rust-lang.org/std/keyword.else.html
 - https://doc.rust-lang.org/rust-by-example/flow_control/if_else.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

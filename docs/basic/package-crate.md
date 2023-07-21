@@ -218,9 +218,3 @@ Masih dalam topik *module system*, penulis anjurkan untuk lanjut ke chapter beri
 - https://rust-lang.github.io/api-guidelines/naming.html
 - https://aloso.github.io/2021/03/28/module-system.html
 - https://github.com/rust-lang/cargo/issues/3381
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

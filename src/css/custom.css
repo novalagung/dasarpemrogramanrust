@@ -33,8 +33,8 @@
 }
 
 /* custom css */
-.theme-doc-markdown.markdown hr {
-  background-color: var(--ifm-color-emphasis-300);
+.theme-doc-markdown.markdown hr, .theme-doc-markdown.markdown + hr {
+  background-color: #eeeeee;
   margin-top: 40px;
   margin-bottom: 40px;
 }

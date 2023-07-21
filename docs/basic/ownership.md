@@ -385,9 +385,3 @@ Lebih jelasnya mengenai macro dibahas pada chapter [Macro](#/wip/macro).
 - https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
 - https://doc.rust-lang.org/std/marker/trait.Copy.html
 - https://doc.rust-lang.org/nomicon/ownership.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

@@ -146,9 +146,3 @@ Jika ingin jeda durasi yang lebih lama, ubah saja angka `1` pada `Duration::from
 - https://doc.rust-lang.org/stable/std/time/struct.Duration.html
 - https://doc.rust-lang.org/reference/expressions/while-expr.html
 - https://doc.rust-lang.org/reference/paths.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

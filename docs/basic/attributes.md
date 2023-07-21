@@ -457,9 +457,3 @@ Rust memiliki cukup banyak attribute yang list-nya bisa dilihat pada link ini ht
 - https://doc.rust-lang.org/reference/items/implementations.html
 - https://doc.rust-lang.org/rustc/lints/index.html
 - https://doc.rust-lang.org/reference/attributes/diagnostics.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

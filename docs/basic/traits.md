@@ -615,9 +615,3 @@ Lebih detailnya dibahas pada chapter [Attributes](/basic/attributes).
 - https://doc.rust-lang.org/std/fmt/trait.Debug.html
 - https://doc.rust-lang.org/std/fmt/trait.Display.html
 - https://doc.rust-lang.org/std/string/struct.String.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

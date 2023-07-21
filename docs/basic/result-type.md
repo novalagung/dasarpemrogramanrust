@@ -269,9 +269,3 @@ Tipe ini dipakai salah satunya untuk manajemen error. Lebih jelasnya mengenai to
 
 - https://doc.rust-lang.org/book/ch18-03-pattern-syntax.html
 - https://doc.rust-lang.org/std/result/index.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

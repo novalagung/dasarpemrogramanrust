@@ -427,9 +427,3 @@ Pembahasan topik module dilanjutkan pada beberapa chapter lain. Pada chapter [Mo
 - https://doc.rust-lang.org/rust-by-example/mod.html
 - https://aloso.github.io/2021/03/28/module-system.html
 - https://stackoverflow.com/questions/69275034/what-is-the-difference-between-use-and-pub-use
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

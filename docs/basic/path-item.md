@@ -252,9 +252,3 @@ Jawabannya akan ada di beberapa chapter berikutnya. Untuk sekarang khusus pada b
 - https://doc.rust-lang.org/reference/items.html
 - https://doc.rust-lang.org/std/keyword.use.html
 - https://doc.rust-lang.org/edition-guide/rust-2018/path-changes.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

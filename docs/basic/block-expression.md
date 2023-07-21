@@ -186,9 +186,3 @@ Rust menerapkan konsep memory management bernama **ownership**. Setiap kali Rust
 ### ◉ Referensi
 
 - https://doc.rust-lang.org/reference/expressions/block-expr.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

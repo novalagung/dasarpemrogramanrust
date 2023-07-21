@@ -531,9 +531,3 @@ Jalankan program, hasilnya sesuai harapan, tidak ada error.
 - https://anooppoommen.medium.com/lifetimes-in-rust-7f2331be998b
 - https://blog.logrocket.com/understanding-lifetimes-in-rust/
 - https://educative.io/answers/what-are-generic-lifetime-parameters-in-a-rust-function
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

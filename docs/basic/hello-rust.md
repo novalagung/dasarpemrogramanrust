@@ -150,9 +150,3 @@ Selamat! Anda telah menjadi programmer Rust!
 - https://doc.rust-lang.org/book/ch01-03-hello-cargo.html
 - https://doc.rust-lang.org/std/macro.println.html
 - https://doc.rust-lang.org/rust-by-example/hello/print.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

@@ -127,9 +127,3 @@ Variabel `numbers` dan `n1` sama-sama mengarah ke reference yang sama. Itulah ke
 
 - https://doc.rust-lang.org/book/ch04-03-slices.html
 - https://users.rust-lang.org/t/why-rust-slice-has-not-ownership/27356
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

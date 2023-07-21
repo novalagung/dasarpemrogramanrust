@@ -254,9 +254,3 @@ Untuk sekarang penulis anjurkan untuk lanjut ke chapter berikutnya secara urut.
 - https://en.wikipedia.org/wiki/Reference_(computer_science)
 - https://progressivecoder.com/understanding-rust-ownership-and-borrowing-with-examples/
 - https://os.phil-opp.com/heap-allocation/
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

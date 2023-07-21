@@ -357,9 +357,3 @@ fn main() {
 - https://doc.rust-lang.org/rust-by-example/mod.html
 - https://doc.rust-lang.org/rust-by-example/meta/doc.html
 - https://aloso.github.io/2021/03/28/module-system.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

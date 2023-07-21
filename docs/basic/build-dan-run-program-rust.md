@@ -85,9 +85,3 @@ Pada ebook ini kita akan menggunakan `cargo` untuk manajemen dan juga eksekusi k
 ### ◉ Referensi
 
 - https://doc.rust-lang.org/book/ch01-03-hello-cargo.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

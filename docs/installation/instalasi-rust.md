@@ -84,5 +84,3 @@ Teruntuk Rust yang di-install menggunakan installer, cara update dilakukan denga
 - https://www.rust-lang.org/tools/install
 - https://forge.rust-lang.org/infra/other-installation-methods.html
 - https://doc.rust-lang.org/book/ch01-01-installation.html
-
----

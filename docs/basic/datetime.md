@@ -403,9 +403,3 @@ Berikut adalah tabel formatting syntax untuk tipe data datetime.
 - https://docs.rs/time/latest/time/
 - https://github.com/rust-lang/rust-wiki-backup/blob/master/Lib-datetime.md
 - https://docs.rs/chrono/latest/chrono/
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

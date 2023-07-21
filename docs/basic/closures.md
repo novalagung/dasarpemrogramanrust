@@ -429,9 +429,3 @@ Bisa dilihat program berjalan sesuai harapan.
 
 - https://doc.rust-lang.org/book/ch13-01-closures.html
 - https://doc.rust-lang.org/beta/rust-by-example/fn/closures.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

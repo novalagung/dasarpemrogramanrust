@@ -384,9 +384,3 @@ Pada kasus struct, solusinya cukup dengan tambahkan keyword `pub` atau siapkan *
 - https://doc.rust-lang.org/std/keyword.impl.html
 - https://doc.rust-lang.org/std/keyword.SelfTy.html
 - https://doc.rust-lang.org/rust-by-example/fn/methods.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

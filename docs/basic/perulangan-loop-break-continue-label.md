@@ -205,9 +205,3 @@ Variabel `counter` yang nilai awalnya `0`, di-increment dalam perulangan. Ketika
 - https://doc.rust-lang.org/rust-by-example/flow_control/loop/nested.html
 - https://doc.rust-lang.org/rust-by-example/flow_control/loop/return.html
 - https://doc.rust-lang.org/reference/expressions/loop-expr.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

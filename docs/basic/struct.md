@@ -537,9 +537,3 @@ Pembahasan mengenai generic pada struct ada pada chapter [Generics](/basic/gener
 - https://doc.rust-lang.org/book/ch05-01-defining-structs.html
 - https://doc.rust-lang.org/std/keyword.struct.html
 - https://doc.rust-lang.org/rust-by-example/custom_types/structs.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

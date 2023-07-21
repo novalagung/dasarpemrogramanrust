@@ -32,5 +32,3 @@ Pada pembuatan ebook ini penulis menggunakan editor VS Code dengan plugin [rust-
 ### ◉ Referensi
 
 - https://www.rust-lang.org/tools
-
----

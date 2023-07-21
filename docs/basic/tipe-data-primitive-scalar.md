@@ -202,9 +202,3 @@ Selain beberapa tipe data yang sudah dibahas di atas, ada juga jenis tipe data p
 - https://doc.rust-lang.org/rust-by-example/primitives.html
 - https://doc.rust-lang.org/std/fmt/index.html#syntax
 - https://en.wikipedia.org/wiki/Integer_(computer_science)
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

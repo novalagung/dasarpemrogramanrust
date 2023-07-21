@@ -268,9 +268,3 @@ Pembahasan mengenai generic pada method ada pada chapter [Generics](/basic/gener
 - https://doc.rust-lang.org/std/keyword.SelfTy.html
 - https://doc.rust-lang.org/std/keyword.self.html
 - https://doc.rust-lang.org/rust-by-example/fn/methods.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

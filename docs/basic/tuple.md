@@ -153,9 +153,3 @@ Pembahasan mengenai tuple structs dibahas pada chapter [Struct](/basic/struct#a2
 
 - https://doc.rust-lang.org/std/primitive.tuple.html
 - https://doc.rust-lang.org/rust-by-example/primitives/tuples.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

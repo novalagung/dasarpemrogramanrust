@@ -134,9 +134,3 @@ Penulis anjurkan untuk mempelajari chapter-chapter berikutnya secara urut terleb
 - https://doc.rust-lang.org/reference/tokens.html#raw-string-literals
 - https://doc.rust-lang.org/std/str/index.html
 - https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/strings.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

@@ -277,9 +277,3 @@ Lebih jelasnya akan kita bahas pada chapter terpisah, yaitu [Shadowing](/basic/s
 - https://doc.rust-lang.org/reference/variables.html
 - https://rust-lang.github.io/api-guidelines/naming.html
 - https://stackoverflow.com/questions/38045700/how-do-i-declare-multiple-mutable-variables-at-the-same-time
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

@@ -336,9 +336,3 @@ fn main() {
 
 - https://doc.rust-lang.org/reference/visibility-and-privacy.html
 - https://aloso.github.io/2021/03/28/module-system.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

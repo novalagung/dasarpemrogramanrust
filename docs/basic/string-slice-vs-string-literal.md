@@ -153,9 +153,3 @@ Dalam case normal, sangat dianjurkan untuk menggunakan `&str`, kecuali memang ya
 - https://www.quora.com/Why-does-Rust-have-two-different-string-types-static-str-and-String
 - https://stackoverflow.com/questions/24158114/what-are-the-differences-between-rusts-string-and-str
 - https://stackoverflow.com/questions/30154541/how-do-i-concatenate-strings
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

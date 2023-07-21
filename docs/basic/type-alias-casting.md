@@ -152,9 +152,3 @@ Dari data tersebut bisa kita chain lagi dengan method `unwrap` dan `as_second` u
 
 - https://doc.rust-lang.org/rust-by-example/types/alias.html
 - https://doc.rust-lang.org/rust-by-example/types/cast.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

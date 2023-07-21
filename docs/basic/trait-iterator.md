@@ -562,9 +562,3 @@ println!("after: {data_vec:?}");
 - https://becomebetterprogrammer.com/rust-iter-vs-iter_mut-vs-into_iter/
 - https://blog.thoughtram.io/iterators-in-rust/
 - https://blog.logrocket.com/rust-iterators-closures-deep-dive/
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

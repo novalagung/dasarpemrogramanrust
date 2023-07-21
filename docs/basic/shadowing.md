@@ -112,9 +112,3 @@ Setelah eksekusi block selesai, nilai `number` pada scope tidak berubah, yaitu `
 ### ◉ Referensi
 
 - https://doc.rust-lang.org/rust-by-example/variable_bindings/scope.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

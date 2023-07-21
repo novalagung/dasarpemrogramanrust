@@ -296,9 +296,3 @@ Catatan ringkas perihal slice:
 - https://doc.rust-lang.org/reference/types/slice.html
 - https://doc.rust-lang.org/nomicon/references.html
 - https://doc.rust-lang.org/rust-by-example/primitives/array.html
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

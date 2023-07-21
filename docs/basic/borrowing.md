@@ -321,9 +321,3 @@ Beberapa referensi terkait chapter ini:
 
 - https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html
 - https://stackoverflow.com/questions/57225055/in-rust-can-you-own-a-string-literal
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />
