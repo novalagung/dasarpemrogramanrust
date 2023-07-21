@@ -19,7 +19,7 @@ export default function ContentWrapper(props) {
     <>
       <Content {...props} />
       <hr />
-      <SubStack />
+      {location.pathname === '/' && <SubStack />}
     </>
   );
 }
