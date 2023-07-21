@@ -88,15 +88,19 @@ const config = {
         items: [
           {
             position: 'left',
-            label: '📖 Ebook lainnya',
+            label: '📖 Web-book/E-book',
             items: [
               {
                 label: 'Ebook: Dasar Pemrograman Golang ',
                 href: 'https://dasarpemrogramangolang.novalagung.com',
               },
               {
-                label: 'Ebook: Learn Devops ',
-                href: 'https://learndevops.novalagung.com',
+                label: 'Ebook: Dasar Pemrograman Python ',
+                href: 'https://dasarpemrogramanpython.novalagung.com',
+              },
+              {
+                label: 'How To ',
+                href: 'https://howto.novalagung.com',
               },
             ]
           },
