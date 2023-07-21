@@ -1,5 +1,6 @@
 import React from 'react';
 import Content from '@theme-original/DocItem/Content';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const SubStack = () => {
   return <>
@@ -19,7 +20,9 @@ export default function ContentWrapper(props) {
     <>
       <Content {...props} />
       <hr />
-      {location.pathname === '/' && <SubStack />}
+      <BrowserOnly>
+        {() => window?.location?.pathname === '/' && <SubStack />}
+      </BrowserOnly>
     </>
   );
 }
