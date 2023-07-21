@@ -33,6 +33,10 @@
 }
 
 /* custom css */
+.markdown h1:first-child {
+  font-weight: normal;
+}
+
 .theme-doc-markdown.markdown hr, .theme-doc-markdown.markdown + hr {
   background-color: #eeeeee;
   margin-top: 40px;
