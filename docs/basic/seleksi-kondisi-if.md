@@ -109,7 +109,7 @@ println!("result_d adalah {result_d}");
 
 Blok seleksi kondisi pada contoh di atas menjadi penentu nilai variabel `result_d`. Dengan kebutuhan tersebut, kita bisa juga memanfaatkan `let if` untuk mendapatkan hasil yang ekuivalen.
 
-> Pada kode di atas, deklarasi variabel `result_d` dan pengisian nilainya adalah dipisah statement-nya. Penulisan seperti ini diperbolehkan pada variable immutable (tanpa perlu membuatnya mutable) selama operasi assignment hanya dilakukan sekali saja setelah deklarasi.
+> Pada kode di atas, deklarasi variabel `result_d` dan pengisian nilainya adalah ditulis dalam statement terpisah. Cara ini diperbolehkan pada variable immutable (tanpa perlu membuatnya mutable) selama operasi assignment hanya dilakukan sekali saja setelah deklarasi.
 >
 > Lebih detailnya dibahas pada chapter [Variabel section A.4.5](/basic/variabel#a45-deklarasi-variabel-tanpa-predefined-value).
 
