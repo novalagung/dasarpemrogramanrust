@@ -92,6 +92,12 @@ Perlu diketahui, bahwa *by default* semua variabel adalah *immutable*. Immutable
 
 Lalu bagaimana cara agar nilai variabel bisa diubah? Caranya dengan menambahkan keyword `mut` (yang merupakan kependekan dari *mutable*) saat pendefinisian variabel tersebut.
 
+> Catatan tambahan:
+>
+> - Operasi assignment pada variabel immutable hanya boleh dilakukan sekali. Dan pada kode di atas telah dicontohkan caranya bagaimana. Variabel dideklarasikan sekaligus diisi nilainya.
+>
+> - Perlu diketahui bahwa sebenarnya diperbolehkan untuk memecah statement deklarasi variable dan assignment nilai sebagai 2 statement terpisah. Lebih jelasnya dibahas setelah ini pada section [section A.4.5](/basic/variabel#a45-deklarasi-variabel-tanpa-predefined-value).
+
 ## A.4.3. Keyword `mut`
 
 Ok, mari kita coba, ubah statement deklarasi variabel `message_number`, tambahkan keyword `mut`. Lalu jalankan ulang program.
@@ -178,7 +184,24 @@ Notasi penulisan tipe data adalah `namavariabel: tipedata`. Contoh seperti di at
 
 ## A.4.5. Deklarasi variabel tanpa *predefined value*
 
-Sesuai dengan penjelasan di [dokumentasi spesifikasi Rust](https://doc.rust-lang.org/error-index.html#E0381), **tidak diperbolehkan mendeklarasikan variabel tanpa predefined value**. Jika dipaksa akan muncul error pada baris kode yang menggunakan variabel tersebut.
+Sesuai dengan penjelasan di [dokumentasi spesifikasi Rust](https://doc.rust-lang.org/error-index.html#E0381), variable yang tidak ada value-nya akan memunculkan error saat program di-run.
+
+Meski demikian, diperbolehkan untuk memisahkan variable statement untuk deklarasi variable dan pengisian value. Sebagai contoh, statement `message_number` pada kode berikut ...
+
+```rust
+let message_number = 1;
+println!("message number {}", message_number);
+```
+
+... boleh dituliskan dalam 2 statement terpisah seperti ini:
+
+```rust
+let message_number: i32;
+message_number = 1;
+println!("message number {}", message_number);
+```
+
+Intinya, operasi assignment hanya diperbolehkan 1x saja pada variabel *immutable*, baik itu saat deklarasi variable atau setelahnya.
 
 ## A.4.6. Deklarasi banyak variabel dalam satu statement
 
