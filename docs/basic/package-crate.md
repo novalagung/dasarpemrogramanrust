@@ -56,7 +56,7 @@ cargo new belajar_package_crate
 
 ### ◉ *Naming convention* package
 
-Khusus untuk penamaan package dan juga crate, tidak ada rekomendasi dari dokumentasi official Rust. Pada ebook ini penulis menggunakan *snake case* sebagai naming convention dalam pembuatan pcakage.
+Khusus untuk penamaan package dan juga crate, tidak ada rekomendasi dari dokumentasi official Rust. Pada ebook ini penulis menggunakan *snake case* sebagai naming convention dalam pembuatan package.
 
 Referensi: https://rust-lang.github.io/api-guidelines/naming.html
 
