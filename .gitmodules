@@ -1,3 +1,6 @@
 [submodule "examples"]
 	path = examples
-	url = git@github.com:novalagung/dasarpemrogramanrust-example.git
+	url = https://github.com/novalagung/dasarpemrogramanrust-example.git
+[submodule "src"]
+	path = src
+	url = https://github.com/novalagung/my-docusaurus-global-src.git
