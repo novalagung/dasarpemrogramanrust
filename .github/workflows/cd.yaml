@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+      with:
+        submodules: recursive
     - uses: actions/setup-node@v3
       with:
         node-version: 16
@@ -35,6 +37,8 @@ jobs:
       run: sleep 30s
       shell: bash
     - uses: actions/checkout@v3
+      with:
+        submodules: recursive
     - name: install prince
       run: |
         curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O

@@ -8,9 +8,16 @@ Ebook Dasar Pemrograman Rust adalah project open source. Siapapun bebas untuk be
 
 Bagi teman-teman yang berminat untuk berkontribusi, silakan fork [github.com/novalagung/dasarpemrogramanrust](https://github.com/novalagung/dasarpemrogramanrust), kemudian langsung saja cek/buat issue kemudian submit relevan pull request untuk issue tersebut 😊.
 
-## Original Author
+## Checkout project
 
-E-book ini di-inisialisasi oleh Noval Agung Prayogo.
+```
+git clone https://github.com/novalagung/dasarpemrogramanrust.git
+git submodule update --init --recursive --remote
+```
+
+## Maintainer
+
+E-book ini di-inisialisasi dan di-maintain oleh Noval Agung Prayogo.
 
 ## Contributors
 
