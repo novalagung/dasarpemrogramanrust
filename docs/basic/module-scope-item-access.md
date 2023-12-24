@@ -1,7 +1,7 @@
 ---
 sidebar_position: 22
-title: A.22. Module System → Scope & Akses Item
-sidebar_label: A.22. Module System → Scope & Akses Item
+title: A.22. Module System ➜ Scope & Akses Item
+sidebar_label: A.22. Module System ➜ Scope & Akses Item
 ---
 
 Pembahasan chapter ini masih dalam lingkup module system, yaitu tentang scope dan pengakesan module item.
@@ -254,7 +254,7 @@ fn my_func() {
 
 mod module_a {
 
-    // path item → `module_a::my_func`.
+    // path item ➜ `module_a::my_func`.
     pub fn my_func() {
         println!("call `module_a::my_func()`");
     }
@@ -262,19 +262,19 @@ mod module_a {
 
 mod module_b {
 
-    // path item → `module_b::submodule_b_one`.
+    // path item ➜ `module_b::submodule_b_one`.
     mod submodule_b_one {
 
-        // path item → `module_b::submodule_b_one::my_func`.
+        // path item ➜ `module_b::submodule_b_one::my_func`.
         pub fn my_func() {
             println!("call `module_b::submodule_b_one::my_func()`");
         }
     }
 
-    // path item → `module_b::submodule_b_two`.
+    // path item ➜ `module_b::submodule_b_two`.
     mod submodule_b_two {
 
-        // path item → `module_b::submodule_b_two::my_func`.
+        // path item ➜ `module_b::submodule_b_two::my_func`.
         pub fn my_func() {
             println!("call `module_b::submodule_b_two::my_func()`");
 
@@ -293,13 +293,13 @@ mod module_b {
         }
     }
     
-    // path item → `module_b::my_func`.
+    // path item ➜ `module_b::my_func`.
     // fungsi ini tidak publik, jadi hanya bisa diakses dalam scope module `module_b` saja.
     fn my_func() {
         println!("call `module_b::my_func()`");
     }
     
-    // path item → `module_b::run_all_funcs`.
+    // path item ➜ `module_b::run_all_funcs`.
     pub fn run_all_funcs() {
 
         // semua fungsi yang didefinisikan akan di call dalam blok kode ini.

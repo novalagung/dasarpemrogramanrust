@@ -110,7 +110,7 @@ match value {
 }
 ```
 
-> Lebih jelasnya mengenai `Some` dan `None` dibahas pada chapter [Tipe Data → Option](/basic/option-type)
+> Lebih jelasnya mengenai `Some` dan `None` dibahas pada chapter [Tipe Data ➜ Option](/basic/option-type)
 
 ### ◉ Pattern `|` dan `..`
 
@@ -396,11 +396,11 @@ println!("last number: {last}");
 
 ### ◉ Chapter relevan lainnya
 
-- [Seleksi Kondisi → if, else if, else](/basic/seleksi-kondisi-if)
-- [Tipe Data → Tuple](/basic/tuple)
+- [Seleksi Kondisi ➜ if, else if, else](/basic/seleksi-kondisi-if)
+- [Tipe Data ➜ Tuple](/basic/tuple)
 - [Struct](/basic/struct)
 - [Enum](/basic/enum)
-- [Tipe Data → Option](/basic/option-type)
+- [Tipe Data ➜ Option](/basic/option-type)
 
 ### ◉ Work in progress
 

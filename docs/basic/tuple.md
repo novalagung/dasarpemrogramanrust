@@ -1,6 +1,6 @@
 ---
 sidebar_position: 15
-title: A.15. Tipe Data → Tuple
+title: A.15. Tipe Data ➜ Tuple
 sidebar_label: A.15. Tuple
 ---
 

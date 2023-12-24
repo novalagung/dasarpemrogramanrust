@@ -1,7 +1,7 @@
 ---
 sidebar_position: 11
-title: A.11. Perulangan → loop, break, continue, label
-sidebar_label: A.11. Perulangan → loop, break, continue, label
+title: A.11. Perulangan ➜ loop, break, continue, label
+sidebar_label: A.11. Perulangan ➜ loop, break, continue, label
 ---
 
 Selain keyword `while`, ada juga keyword `loop` yang fungsi dasarnya adalah sama, yaitu untuk perulangan.

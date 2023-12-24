@@ -1,7 +1,7 @@
 ---
 sidebar_position: 9
-title: A.9. Seleksi Kondisi →  if, else if, else
-sidebar_label: A.9. Seleksi Kondisi →  if, else if, else
+title: A.9. Seleksi Kondisi ➜  if, else if, else
+sidebar_label: A.9. Seleksi Kondisi ➜  if, else if, else
 ---
 
 Pada chapter ini kita akan bahas tentang penerapan `if` untuk kontrol alur program.

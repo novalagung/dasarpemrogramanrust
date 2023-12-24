@@ -1,7 +1,7 @@
 ---
 sidebar_position: 18
-title: A.18. Module System → Path & Item
-sidebar_label: A.18. Module System → Path & Item
+title: A.18. Module System ➜ Path & Item
+sidebar_label: A.18. Module System ➜ Path & Item
 ---
 
 Chapter ini membahas tentang konsep *path* dan *item* dalam Rust programming.
@@ -22,30 +22,30 @@ Dalam sebuah path, yang disebut dengan item adalah segment terakhir. Contohnya p
 
 Jika di-breakdown, berikut adalah penjelasan dari setiap kombinasi segmen path pada contoh `std::time::Duration`.
 
-- Path `std` → adalah path untuk **crate** bernama [**Rust Standard Library**](https://doc.rust-lang.org/std/), isinya adalah sangat banyak item untuk keperluan umum di Rust programming. Lebih jelasnya akan dibahas pada chapter [Rust standard library](#/wip/rust-standard-library).
-- Path `std::time` → adalah path untuk **module** bernama [`time`](https://doc.rust-lang.org/std/time/index.html), isinya banyak item yang berhubungan dengan operasi waktu/time.
-- Path `std::time::Duration` → adalah path untuk **struct** bernama [`Duration`](https://doc.rust-lang.org/std/time/index.html), yang merupakan representasi dari unit waktu.
+- Path `std` ➜ adalah path untuk **crate** bernama [**Rust Standard Library**](https://doc.rust-lang.org/std/), isinya adalah sangat banyak item untuk keperluan umum di Rust programming. Lebih jelasnya akan dibahas pada chapter [Rust standard library](#/wip/rust-standard-library).
+- Path `std::time` ➜ adalah path untuk **module** bernama [`time`](https://doc.rust-lang.org/std/time/index.html), isinya banyak item yang berhubungan dengan operasi waktu/time.
+- Path `std::time::Duration` ➜ adalah path untuk **struct** bernama [`Duration`](https://doc.rust-lang.org/std/time/index.html), yang merupakan representasi dari unit waktu.
 
-> - Lebih jelasnya mengenai crate dibahas pada chapter [Module System → Package & Crate](/basic/package-crate)
-> - Lebih jelasnya mengenai module dibahas pada chapter [Module System → Module](/basic/module-basic)
+> - Lebih jelasnya mengenai crate dibahas pada chapter [Module System ➜ Package & Crate](/basic/package-crate)
+> - Lebih jelasnya mengenai module dibahas pada chapter [Module System ➜ Module](/basic/module-basic)
 > - Lebih jelasnya mengenai struct dibahas pada chapter [Struct](/basic/struct)
 
 ## A.18.2. Absolute & relative paths
 
 Rust mengenal dua jenis path:
 
-- Absolute path → adalah path yang penulisannya lengkap dari root path, contohnya seperti `std::time::Duration`.
-- Relative path → adalah path yang penulisannya relatif terhadap current path, contohnya seperti `self::my_func`, `super::my_mod::my_consntan`.
+- Absolute path ➜ adalah path yang penulisannya lengkap dari root path, contohnya seperti `std::time::Duration`.
+- Relative path ➜ adalah path yang penulisannya relatif terhadap current path, contohnya seperti `self::my_func`, `super::my_mod::my_consntan`.
 
-> Lebih jelasnya mengenai relative path dibahas pada chapter [Module System → Scope & Akses Item](/basic/module-scope-item-access).
+> Lebih jelasnya mengenai relative path dibahas pada chapter [Module System ➜ Scope & Akses Item](/basic/module-scope-item-access).
 
 ## A.18.3. Rust *Items*
 
 Seperti yang sudah dibahas bahwa path adalah notasi penulisan alamat untuk item. Lalu apa saja yang disebut dengan item? Di Rust ada banyak hal, yang kurang lebih list-nya bisa dilihat berikut:
 
-- modules *(dibahas pada chapter [Module System → Module](/basic/module-basic))*
+- modules *(dibahas pada chapter [Module System ➜ Module](/basic/module-basic))*
 - extern crate declarations
-- use declarations *(dibahas pada chapter [Module System → Use](/basic/use))*
+- use declarations *(dibahas pada chapter [Module System ➜ Use](/basic/use))*
 - function definitions *(dibahas pada chapter [Function](/basic/function), [Associated Function](/basic/associated-function), dan [Method](/basic/method))*
 - type definitions *(dibahas pada chapter-chapter tentang tipe data)*
 - struct definitions *(dibahas pada chapter [Struct](/basic/struct))*
@@ -166,7 +166,7 @@ Oke, Penulis rasa sudah cukup jelas perihal bagaimana cara menggunakan path untu
 
 Ada alternatif cara lain untuk memperpendek penulisan dan pengaksesan path, yaitu dengan menggunakan keyword `use`.
 
-> Penggunaan `use` juga sempat dipraktikkan pada chapter sebelumnya, yaitu [Perulangan → while](/basic/perulangan-while).
+> Penggunaan `use` juga sempat dipraktikkan pada chapter sebelumnya, yaitu [Perulangan ➜ while](/basic/perulangan-while).
 
 Cara penerapannya bisa dilihat pada kode berikut:
 

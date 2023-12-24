@@ -1,7 +1,7 @@
 ---
 sidebar_position: 29
-title: A.29. Module System → Use, Import, Re-export
-sidebar_label: A.29. Module System → Use, Import, Re-export
+title: A.29. Module System ➜ Use, Import, Re-export
+sidebar_label: A.29. Module System ➜ Use, Import, Re-export
 ---
 
 Keyword `use` digunakan untuk dua hal, yaitu *import* path dan *re-export* path. Sebenarnya kita telah mempelajari kedua penerapan tersebut pada beberapa chapter sebelumnya. Pada chapter ini kita akan ulang lagi pembahasan agar lebih jelas.
@@ -30,7 +30,7 @@ fn main() {
 
 > Di contoh, pengaksesan current directory di-chain dengan method `unwrap` karena nilai balik fungsi `current_dir` adalah bertipe `std::io::Result`.
 >
-> Lebih jelasnya mengenai tipe tersebut dibahas pada chapter terpisah, [Tipe Data → Result](/basic/result-type)
+> Lebih jelasnya mengenai tipe tersebut dibahas pada chapter terpisah, [Tipe Data ➜ Result](/basic/result-type)
 
 ### ◉ Import items dari module yang sama
 
@@ -71,8 +71,8 @@ Fungsi `std::env::args` digunakan untuk mengambil argument eksekusi program baik
 
 Statement `args().nth(i)` mengembalikan nilai argument pada index ke-`i` dalam tipe `Option`, dan nilai tersebut bisa saja tidak ada (direpresentasikan dengan keyword `None`). Oleh karena itu penting untuk dicek terlebih dahulu menggunakan keyword `if`. Jika memang nilainya adalah selain `None`, gunakan `unwrap` untuk mengambil nilainya dalam tipe data `String`.
 
-> - Lebih jelasnya mengenai Iterator akan dibahas pada chapter terpisah, [Trait → Iterator](/basic/trait-iterator).
-> - Lebih jelasnya mengenai tipe `Option` akan dibahas pada chapter terpisah, [Tipe Data → Option](/basic/option-type).
+> - Lebih jelasnya mengenai Iterator akan dibahas pada chapter terpisah, [Trait ➜ Iterator](/basic/trait-iterator).
+> - Lebih jelasnya mengenai tipe `Option` akan dibahas pada chapter terpisah, [Tipe Data ➜ Option](/basic/option-type).
 
 Silakan coba jalankan menggunakan dua command, yang pertama `cargo run`, kemudian `cargo run tulis argumen di sini dengan pembatas spasi`.
 
@@ -80,7 +80,7 @@ Bisa dilihat pada gambar berikut, jika ada argument disisipkan dalam eksekusi pr
 
 ![Rust use](img/use-2.png)
 
-> Lebih jelasnya mengenai Iterator dibahas pada chapter terpisah, [Trait → Iterator](/basic/trait-iterator)
+> Lebih jelasnya mengenai Iterator dibahas pada chapter terpisah, [Trait ➜ Iterator](/basic/trait-iterator)
 
 ## A.29.2. Keyword `use` untuk re-export path
 

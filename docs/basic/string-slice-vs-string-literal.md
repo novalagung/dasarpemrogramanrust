@@ -45,7 +45,7 @@ Pada contoh di atas, data bytes dipersiapkan dalam bentuk `Vec<u8>`. Data terseb
 
 ![String slcie vs string literal](img/string-slice-vs-string-literal-1.png)
 
-> Kita akan bahas tipe data `Result` pada chapter terpisah, [Tipe Data → Result](/basic/result-type)
+> Kita akan bahas tipe data `Result` pada chapter terpisah, [Tipe Data ➜ Result](/basic/result-type)
 
 ## A.44.2. String literal (`&str`)
 
@@ -142,9 +142,9 @@ Dalam case normal, sangat dianjurkan untuk menggunakan `&str`, kecuali memang ya
 
 ### ◉ Chapter relevan lainnya
 
-- [Tipe Data → String Literal (&str)](/basic/tipe-data-string-literal)
+- [Tipe Data ➜ String Literal (&str)](/basic/tipe-data-string-literal)
 - [Slice Memory Management](/basic/slice-memory-management)
-- [Tipe Data → String Custom Type](/basic/tipe-data-custom-type-string-slice)
+- [Tipe Data ➜ String Custom Type](/basic/tipe-data-custom-type-string-slice)
 
 ### ◉ Referensi
 

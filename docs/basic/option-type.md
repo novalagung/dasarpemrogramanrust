@@ -1,7 +1,7 @@
 ---
 sidebar_position: 38
-title: A.38. Tipe Data → Option
-sidebar_label: A.38. Tipe Data → Option
+title: A.38. Tipe Data ➜ Option
+sidebar_label: A.38. Tipe Data ➜ Option
 ---
 
 `Option` adalah salah satu tipe data penting pada Rust programming, digunakan untuk menampung data yang isinya bisa berpotensi kosong (`None`). Chapter ini membahas tentang tipe data tersebut.

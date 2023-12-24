@@ -1,7 +1,7 @@
 ---
 sidebar_position: 12
-title: A.12. Perulangan → for in
-sidebar_label: A.12. Perulangan → for in
+title: A.12. Perulangan ➜ for in
+sidebar_label: A.12. Perulangan ➜ for in
 ---
 
 `for in` adalah salah satu keyword untuk operasi perulangan yang ada di Rust selain `loop` dan `while`. Pada chapter ini kita akan mempelajarinya.
@@ -11,7 +11,7 @@ sidebar_label: A.12. Perulangan → for in
 `for in` adalah keyword perulangan yang paling sering dipakai untuk meng-iterasi data yang tipe data-nya mengimplementasikan trait `Iterator`. Ada banyak jenis tipe data dengan trait ini, salah satunya adalah tipe data **range** yang akan kita bahas pada chapter ini.
 
 > - Lebih jelasnya mengenai traits dibahas pada chapter [Traits](/basic/traits)
-> - Lebih jelasnya mengenai trait `Iterator` dibahas pada chapter [Trait → Iterator](/basic/trait-iterator)
+> - Lebih jelasnya mengenai trait `Iterator` dibahas pada chapter [Trait ➜ Iterator](/basic/trait-iterator)
 
 Tipe data range dibuat dengan notasi penulisan `a..b`. Mari lanjut dengan praktik agar lebih jelas. Silakan coba kode sederhana berikut lalu jalankan.
 

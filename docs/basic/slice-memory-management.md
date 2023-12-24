@@ -120,7 +120,7 @@ Variabel `numbers` dan `n1` sama-sama mengarah ke reference yang sama. Itulah ke
 - [Slice (Basic)](/basic/slice)
 - [Vector](/basic/vector)
 - [Basic Memory Management](/basic/basic-memory-management)
-- [Tipe Data → String Custom Type](/basic/tipe-data-custom-type-string-slice)
+- [Tipe Data ➜ String Custom Type](/basic/tipe-data-custom-type-string-slice)
 - [String Literal (&str) vs. String Custom Type](/basic/string-slice-vs-string-literal)
 
 ### ◉ Referensi

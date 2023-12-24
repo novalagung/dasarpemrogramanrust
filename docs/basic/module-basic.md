@@ -1,7 +1,7 @@
 ---
 sidebar_position: 20
-title: A.20. Module System → Module
-sidebar_label: A.20. Module System → Module
+title: A.20. Module System ➜ Module
+sidebar_label: A.20. Module System ➜ Module
 ---
 
 Module adalah salah satu chapter yang cukup penting dalam pemrograman Rust. Pada bagian ini kita akan mempelajari dasarnya.
@@ -70,7 +70,7 @@ Keyword `pub` digunakan untuk menjadikan suatu item menjadi **public**, agar bis
 
 Fungsi `read_entry` ini berada dalam module `my_io`. Jika tidak ada keyword `pub` disitu, maka fungsi `read_entry` hanya bisa diakses dari dalam `my_io` saja, tidak bisa diakses dari luar module contohnya seperti dari `main.rs`. Dengan menjadikan `read_entry` sebagai fungsi yang public, maka fungsi tersebut bisa diakses dari `main.rs`.
 
-> Lebih jelasnya mengenai keyword `pub` dibahas pada chapter [Module System → Visibility & Privacy](/basic/visibility-privacy)
+> Lebih jelasnya mengenai keyword `pub` dibahas pada chapter [Module System ➜ Visibility & Privacy](/basic/visibility-privacy)
 
 Isi module sudah siap, selanjutnya lanjut ke pendefinisian modul. Umumnya pada bahasa pemrograman, definisi module adalah ada dalam file dimana isi module berada, namun tidak untuk Rust.
 
@@ -125,7 +125,7 @@ Module item adalah apapun yang didefinisikan di dalam sebuah module. Pada contoh
 
 Selain fungsi, module item bisa dalam bentuk lainnya, contohnya: konstanta, submodule, struct, dan lainnya.
 
-> Lebih jelasnya tentang macam-macam item dibahas pada chapter [Module System → Path & Item](/basic/path-item)
+> Lebih jelasnya tentang macam-macam item dibahas pada chapter [Module System ➜ Path & Item](/basic/path-item)
 
 ## A.20.3. Praktik #2 - `nama_module/mod.rs`
 
@@ -226,9 +226,9 @@ let data_float = "3.14".parse::<f64>().unwrap();
 
 Method `parse` menghasilkan data bertipe *generic result type* atau `Result<T, E>`. Tipe ini memiliki method bernama `unwrap` yang berguna untuk mengambil nilai.
 
-> - Lebih jelasnya mengenai casting dibahas pada chapter [Type Alias & Casting](/basic/type-alias-casting) dan [Trait → Conversion (From & Into)](#/wip/trait-conversion-from-into)
+> - Lebih jelasnya mengenai casting dibahas pada chapter [Type Alias & Casting](/basic/type-alias-casting) dan [Trait ➜ Conversion (From & Into)](#/wip/trait-conversion-from-into)
 > - Lebih jelasnya mengenai generic dibahas pada chapter [Generics](/basic/generics)
-> - Lebih jelasnya mengenai result type dibahas pada chapter [Tipe Data → Result](/basic/result-type)
+> - Lebih jelasnya mengenai result type dibahas pada chapter [Tipe Data ➜ Result](/basic/result-type)
 
 ## A.20.4. Submodules
 
@@ -338,7 +338,7 @@ use my_number::conversion_utility::string_to_number;
 string_to_number(message);
 ```
 
-> Lebih jelasnya mengenai keyword `use` dibahas pada chapter [Module System → Use](/basic/use)
+> Lebih jelasnya mengenai keyword `use` dibahas pada chapter [Module System ➜ Use](/basic/use)
 
 ## A.20.6. Module `path` attribute
 
@@ -405,7 +405,7 @@ Hingga pembahasan pada praktik module `path` attribute, kita telah belajar pener
 
 ## A.20.7. Pembahasan lanjutan
 
-Pembahasan topik module dilanjutkan pada beberapa chapter lain. Pada chapter [Module System → Inline Module](/basic/module-inline) kita akan bahas secara mendetail mengenai apa itu inline module dan perbedaannya dibanding normal module. Lalu nantinya di cahpter [Module System → Visibility & Privacy](/basic/visibility-privacy) akan dibahas secara lengkap mengenai keyword `pub` dan kontrol privasi lainnya di pemrograman Rust.
+Pembahasan topik module dilanjutkan pada beberapa chapter lain. Pada chapter [Module System ➜ Inline Module](/basic/module-inline) kita akan bahas secara mendetail mengenai apa itu inline module dan perbedaannya dibanding normal module. Lalu nantinya di cahpter [Module System ➜ Visibility & Privacy](/basic/visibility-privacy) akan dibahas secara lengkap mengenai keyword `pub` dan kontrol privasi lainnya di pemrograman Rust.
 
 ---
 

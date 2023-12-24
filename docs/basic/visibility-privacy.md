@@ -1,7 +1,7 @@
 ---
 sidebar_position: 28
-title: A.28. Module System → Visibility & Privacy
-sidebar_label: A.28. Module System → Visibility & Privacy
+title: A.28. Module System ➜ Visibility & Privacy
+sidebar_label: A.28. Module System ➜ Visibility & Privacy
 ---
 
 Kita sebenarnya sudah mempelajari banyak hal yang berhubungan dengan visibility & privacy pada beberapa chapter sebelumnya. Jika pembaca mempelajari ebook ini secara urut, maka pastinya sudah familiar dengan keyword `pub`, `self`, `crate`, dan `super`.
@@ -14,11 +14,11 @@ O iya, perihal *visbility* dan *privacy* itu sendiri, kedua istilah tersebut di 
 
 Pastikan sudah mempelajari 5 buah chapter tentang module system yang sebelumnya sudah dibahas. Kesemua chapter tersebut sangat berhubungan dengan pembahasan chapter ini.
 
-- [A.18. Module System → Path & Item](/basic/path-item)
-- [A.19. Module System → Package & Crate](/basic/package-crate)
-- [A.20. Module System → Module](/basic/module-basic)
-- [A.21. Module System → Inline Module](/basic/module-inline)
-- [A.22. Module System → Scope & Akses Item](/basic/module-scope-item-access)
+- [A.18. Module System ➜ Path & Item](/basic/path-item)
+- [A.19. Module System ➜ Package & Crate](/basic/package-crate)
+- [A.20. Module System ➜ Module](/basic/module-basic)
+- [A.21. Module System ➜ Inline Module](/basic/module-inline)
+- [A.22. Module System ➜ Scope & Akses Item](/basic/module-scope-item-access)
 
 ## A.28.2. Default visibility
 
@@ -186,7 +186,7 @@ fn main() {
 }
 ```
 
-> Lebih jelasnya mengenai keyword `use` dibahas pada chapter [Module System → Use](/basic/use)
+> Lebih jelasnya mengenai keyword `use` dibahas pada chapter [Module System ➜ Use](/basic/use)
 
 ## A.28.4. Public visibility scope
 
