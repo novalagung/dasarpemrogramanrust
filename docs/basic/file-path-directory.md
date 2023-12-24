@@ -113,7 +113,7 @@ match fs::create_dir("./files") {
 }
 ```
 
-> - Lebih detailnya mengenai tipe data `Result` dibahas pada chapter [Tipe Data → Result](/basic/result-type).
+> - Lebih detailnya mengenai tipe data `Result` dibahas pada chapter [Tipe Data ➜ Result](/basic/result-type).
 > - Lebih detailnya mengenai pattern matching dibahas pada chapter [Pattern Matching](/basic/pattern-matching).
 
 ## A.52.4. Manajemen file system
@@ -220,7 +220,7 @@ Tipe data variabel `paths` di atas adalah `ReadDir` yang merupakan tipe data ite
 
 ### ◉ Chapter relevan lainnya
 
-- [Tipe Data → Result](/basic/result-type)
+- [Tipe Data ➜ Result](/basic/result-type)
 - [Pattern Matching](/basic/pattern-matching)
 
 ### ◉ Referensi

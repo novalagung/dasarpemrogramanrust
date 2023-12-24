@@ -362,7 +362,7 @@ Pada contoh di atas, tempat dimana enum dideklarasikan dan digunakan adalah masi
 
 ## A.49.6. Attribute *modules*
 
-Aturan manajemen di Rust cukup ketat, dan sudah dibahas secara mendetal pada chapter [Module System → Module](/basic/module-basic), yang intinya adalah ada dua cara pembuatan module:
+Aturan manajemen di Rust cukup ketat, dan sudah dibahas secara mendetal pada chapter [Module System ➜ Module](/basic/module-basic), yang intinya adalah ada dua cara pembuatan module:
 
 - Cara ke-1: dengan mendefinisikan module pada file bernama `nama_module.rs`
 - Cara ke-2: dengan mendefinisikan module pada file bernama `nama_module/mod.rs`
@@ -446,7 +446,7 @@ Rust memiliki cukup banyak attribute yang list-nya bisa dilihat pada link ini ht
 
 ### ◉ Chapter relevan lainnya
 
-- [Module System → Module](/basic/module-basic)
+- [Module System ➜ Module](/basic/module-basic)
 - [Enum](/basic/enum)
 - [Pattern Matching](/basic/pattern-matching)
 - [Traits](/basic/traits)

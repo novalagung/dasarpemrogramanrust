@@ -1,7 +1,7 @@
 ---
 sidebar_position: 45
-title: A.45. Tipe Data → String Custom Type
-sidebar_label: A.45. Tipe Data → String Custom Type
+title: A.45. Tipe Data ➜ String Custom Type
+sidebar_label: A.45. Tipe Data ➜ String Custom Type
 ---
 
 Pembahasan kali ini lingkupnya masih dalam topik custom type `String`.
@@ -53,7 +53,7 @@ let str4 = String::from_utf8(vec![78, 55, 51]).unwrap();
 println!("{str4}"); // N73
 ```
 
-> Lebih jelasnya mengenai tipe `Result` dibahas pada chapter [Tipe Data → Result](/basic/result-type)
+> Lebih jelasnya mengenai tipe `Result` dibahas pada chapter [Tipe Data ➜ Result](/basic/result-type)
 
 ## A.45.2. String mutability
 
@@ -195,7 +195,7 @@ println!("{str}"); // iPhone 12 Pro
 
 ### ◉ Chapter relevan lainnya
 
-- [Tipe Data → String Literal (&str)](/basic/tipe-data-string-literal)
+- [Tipe Data ➜ String Literal (&str)](/basic/tipe-data-string-literal)
 - [Static Item](/basic/static)
 - [Lifetime](/basic/lifetime)
 - [Slice Memory Management](/basic/slice-memory-management)

@@ -8,7 +8,7 @@ Pada bab ini kita belajar tentang apa itu slice, apa perbedaan slice dan array, 
 
 > Pada chapter ini kita akan bahas slice secara garis besar saja, tanpa menyinggung masalah memory management.
 >
-> Pembahasan lebih dalam perihal slice ada pada chapter terpisah ([Memory Management → Slice](/basic/slice-memory-management)), setelah kita mempelajari dasar-dasar memory management nantinya.
+> Pembahasan lebih dalam perihal slice ada pada chapter terpisah ([Memory Management ➜ Slice](/basic/slice-memory-management)), setelah kita mempelajari dasar-dasar memory management nantinya.
 
 ## A.14.1. Tipe data slice
 
@@ -224,7 +224,7 @@ for score in &scores1[..] {
 > Sangat dianjurkan menggunakan `rust-analyzer` jika menggunakan VSCode, agar lebih mudah melihat tipe data variabel dan informasi penting lainnya yang berguna dalam proses coding atau development.
 >
 > - Lebih jelasnya mengenai traits dibahas pada chapter [Traits](/basic/traits)
-> - Lebih jelasnya mengenai trait `Iterator` dibahas pada chapter [Trait → Iterator](/basic/trait-iterator)
+> - Lebih jelasnya mengenai trait `Iterator` dibahas pada chapter [Trait ➜ Iterator](/basic/trait-iterator)
 
 ## A.14.6. Perulangan `for in` pada mutable slice
 
@@ -261,7 +261,7 @@ Perlu diketahui, jika kebutuhannya adalah untuk menampung jenis data yang size-n
 
 ## A.14.8. Memory management pada slice
 
-Nantinya setelah selesai dengan pembahasan dasar memory management di Rust, kita akan bahas lagi topik slice tapi dari sudut pandang memory management pada chapter [Memory Management → Slice](/basic/slice-memory-management).
+Nantinya setelah selesai dengan pembahasan dasar memory management di Rust, kita akan bahas lagi topik slice tapi dari sudut pandang memory management pada chapter [Memory Management ➜ Slice](/basic/slice-memory-management).
 
 ## A.14.9. Summary
 

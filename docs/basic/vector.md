@@ -1,6 +1,6 @@
 ---
 sidebar_position: 16
-title: A.16. Tipe Data → Vector
+title: A.16. Tipe Data ➜ Vector
 sidebar_label: A.16. Vector
 ---
 
@@ -53,7 +53,7 @@ Perihal method `len` dan `capacity`:
 
 > O iya, kode program di atas akan menghasilkan warning saat di-run. Hal ini dikarenakan variabel `data_one` yang didefinisikan mutable belum diubah nilainya. Hiraukan saja, karena selanjutnya kita akan manipulasi data variabel tersebut.
 
-### ◉ Method `pop` → menghapus elemen terakhir
+### ◉ Method `pop` ➜ menghapus elemen terakhir
 
 Oke, selanjutnya mari kita oprek variabel `data_one` yang sudah ditulis.
 
@@ -70,7 +70,7 @@ println!("length: {}, capacity: {}", data_one.len(),  data_one.capacity());
 
 Bisa dilihat pada contoh di atas, setelah menggunakan method `pop`, isi `data_one` menjadi 2 elemen saja. Elemen terakhir (yaitu string `lobo`) dihapus. Efeknya, atribut size menjadi 2, tapi kapasitas tetap 3.
 
-### ◉ Method `remove` → menghapus elemen index ke `I`
+### ◉ Method `remove` ➜ menghapus elemen index ke `I`
 
 Method `remove` adalah salah satu method lainnya yang ada pada tipe data `Vec<T>`. Kegunaan dari method `remove` adalah untuk menghapus elemen pada indeks tertentu.
 
@@ -85,7 +85,7 @@ println!("length: {}, capacity: {}", data_one.len(),  data_one.capacity());
 
 Dicontohkan di atas elemen indeks ke-`1` dihapus dengan cara memanggil method `remove` lalu menyisipkan indeks elemen sebagai parameter pemanggilan method. Hasilnya elemen `superman` dihapus dari vector.
 
-### ◉ Method `push` → menambahkan elemen baru
+### ◉ Method `push` ➜ menambahkan elemen baru
 
 Sekarang isi dari vector `data_one` tinggal 1 elemen, mari kita tambahkan 3 elemen baru dengan memanfaatkan method `push`.
 
@@ -125,7 +125,7 @@ println!("length: {}, capacity: {}", data_one.len(),  data_one.capacity());
 
 ![Vector](img/vector-5.png)
 
-### ◉ Method `is_empty` → mengecek apakah vector kosong
+### ◉ Method `is_empty` ➜ mengecek apakah vector kosong
 
 Method `is_empty` digunakan untuk mengidentifikasi apakah sebuah vector isinya kosong atau tidak.
 
@@ -136,7 +136,7 @@ println!("result: {:?}", is_vector_empty);
 
 ![Vector](img/vector-6.png)
 
-### ◉ Method `clear` → mengosongkan isi vector
+### ◉ Method `clear` ➜ mengosongkan isi vector
 
 Method `clear` digunakan untuk mengosongkan sebuah vektor.
 
@@ -148,7 +148,7 @@ println!("length: {}, capacity: {}", data_one.len(),  data_one.capacity());
 
 ![Vector](img/vector-7.png)
 
-### ◉ Method `append` → concatenation/penggabungan vector
+### ◉ Method `append` ➜ concatenation/penggabungan vector
 
 Method `append` digunakan untuk menggabungkan dua buah vector. Penggunaannya cukup mudah, panggil saja method nya lalu sisipkan *mutable reference* dari vector satunya.
 
@@ -181,7 +181,7 @@ println!("length: {}, capacity: {}", result_one.len(),  result_one.capacity());
 
 Proses penggabungan vector pada contoh ke-dua di atas sedikit berbeda. Method `append` parameternya adalah langsung *mutable reference* dari literal vector. Ini merupakan salah satu cara yang bisa digunakan dalam penggabungan vector.
 
-### ◉ Method `sort` → untuk mengurutkan vector
+### ◉ Method `sort` ➜ untuk mengurutkan vector
 
 Method `sort` digunakan untuk mengurutkan elemen vector.
 

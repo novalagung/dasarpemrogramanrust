@@ -94,7 +94,7 @@ fn main() {
 
 Fungsi `main` hanya berisi 1 buah data, yaitu variabel `x` dengan nilai `24`. Ketika fungsi tersebut dipanggil, maka data variabel `x` disimpan di stack (karena di Rust by default semua data disimpan di stack). Nilai `x` adalah numerik bertipe `i32`, maka compiler akan mengalokasikan 32 bits di stack memory untuk menyimpan nilai `24`.
 
-Pada catatan karakteristik stack di atas, telah disinggung bahwa alokasi data di stack bersifat lokal terhadap pemanggilan fungsi, artinya apa? → Semua data dalam suatu blok fungsi akan disimpan dalam sebuah group yang disebut dengan *stack frame*.
+Pada catatan karakteristik stack di atas, telah disinggung bahwa alokasi data di stack bersifat lokal terhadap pemanggilan fungsi, artinya apa? ➜ Semua data dalam suatu blok fungsi akan disimpan dalam sebuah group yang disebut dengan *stack frame*.
 
 Pada contoh di atas, ketika fungsi `main` dipanggil, sebuah stack frame terbuat, dan data variabel `x` disimpan dalam stack frame tersebut.
 

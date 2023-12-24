@@ -191,7 +191,7 @@ Keyword `match` ini sebenarnya tidak hanya digunakan untuk seleksi kondisi saja.
 
 > Lebih jelasnya mengenai *pattern matching* dibahas pada chapter [Pattern Matching](/basic/pattern-matching)
 
-## A.26.5. Enum value → *tuple struct*-like
+## A.26.5. Enum value ➜ *tuple struct*-like
 
 Enum value di struct bisa juga didesain seperti *tuple struct*. Sebagai contoh, enum `Food` di atas akan kita tambahi dengan satu enum value baru berbentuk *tuple struct*.
 
@@ -246,7 +246,7 @@ Coba jalankan untuk melihat hasilnya:
 
 O iya, jumlah property value enum berbentuk *tuple struct* ini tidak terbatas ya. Pada contoh di atas, `Food::MakananLainnya` hanya memiliki 1 property. Lebih dari satu juga bisa.
 
-## A.26.6. Enum value → *struct*-like
+## A.26.6. Enum value ➜ *struct*-like
 
 Enum value bisa juga didesain memiliki property seperti *struct*.
 

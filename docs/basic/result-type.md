@@ -1,7 +1,7 @@
 ---
 sidebar_position: 39
-title: A.39. Tipe Data → Result
-sidebar_label: A.39. Tipe Data → Result
+title: A.39. Tipe Data ➜ Result
+sidebar_label: A.39. Tipe Data ➜ Result
 ---
 
 Chapter ini membahas tentang tipe data `Result`. Tipe data ini digunakan untuk menampung nilai hasil suatu proses yang isinya adalah bisa sukses (`Ok`) atau error (`Err`).

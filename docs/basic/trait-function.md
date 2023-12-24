@@ -1,7 +1,7 @@
 ---
 sidebar_position: 47
-title: A.47. Trait → Function (Fn, FnMut, FnOnce)
-sidebar_label: A.47. Trait → Function (Fn, FnMut, FnOnce)
+title: A.47. Trait ➜ Function (Fn, FnMut, FnOnce)
+sidebar_label: A.47. Trait ➜ Function (Fn, FnMut, FnOnce)
 ---
 
 Chapter ini merupakan topik lanjutan dari chapter sebelumnya, di sini kita akan bahas beberapa jenis trait yang digunakan di closure.

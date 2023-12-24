@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
-title: A.5. Tipe Data → Primitive Scalar
-sidebar_label: A.5. Tipe Data → Primitive Scalar
+title: A.5. Tipe Data ➜ Primitive Scalar
+sidebar_label: A.5. Tipe Data ➜ Primitive Scalar
 ---
 
 Tipe data di Rust dikategorikan menjadi beberapa group, salah satunya adalah group tipe data primitif scalar atau biasa disebut **scalar types**. Pada chapter ini kita akan mempelajarinya.
@@ -191,11 +191,11 @@ Selain beberapa tipe data yang sudah dibahas di atas, ada juga jenis tipe data p
 
 ### ◉ Chapter relevan lainnya
 
-- [Tipe Data → String Literal (&str)](/basic/tipe-data-string-literal)
+- [Tipe Data ➜ String Literal (&str)](/basic/tipe-data-string-literal)
 - [Array](/basic/array)
 - [Slice (Basic)](/basic/slice)
 - [Tuple](/basic/tuple)
-- [Tipe Data → String Custom Type](/basic/tipe-data-custom-type-string-slice)
+- [Tipe Data ➜ String Custom Type](/basic/tipe-data-custom-type-string-slice)
 
 ### ◉ Referensi
 

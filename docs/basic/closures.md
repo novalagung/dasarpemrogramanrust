@@ -6,7 +6,7 @@ sidebar_label: A.46. Closures
 
 Chapter ini membahas tentang closures. Closures sendiri merupakan block fungsi anonimus (anonymous function) yang memiliki kelebihan bisa mengakses item-tem yang posisinya berada di luar block closure tersebut tetapi masih dalam current block scope.
 
-Topik closures sangat erat hubungannya dengan [Trait → Function](/basic/trait-function), namun pada chapter ini pembahasan hanya difokuskan pada bagian penerapan closures saja. Penulis anjurkan untuk lanjut ke chapter berikutnya setelah selesai dengan chapter ini.
+Topik closures sangat erat hubungannya dengan [Trait ➜ Function](/basic/trait-function), namun pada chapter ini pembahasan hanya difokuskan pada bagian penerapan closures saja. Penulis anjurkan untuk lanjut ke chapter berikutnya setelah selesai dengan chapter ini.
 
 ## A.46.1. Konsep Closures
 
@@ -381,7 +381,7 @@ Di dalam fungsi tersebut, data slice di-loop, kemudian tiap elemen-nya digunakan
 
 Jika nilai balik pemanggilan closure adalah `true` maka `i` dikembalikan dalam bentuk `i32` (ada proses casting). Dan jika tidak diketemukan, maka indeks `-1` dikembalikan.
 
-> Keyword `as` digunakan untuk casting tipe data. Lebih jelasnya dibahas pada chapter [Type Alias & Casting](/basic/type-alias-casting) dan [Trait → Conversion (From & Into)](#/wip/trait-conversion-from-into)
+> Keyword `as` digunakan untuk casting tipe data. Lebih jelasnya dibahas pada chapter [Type Alias & Casting](/basic/type-alias-casting) dan [Trait ➜ Conversion (From & Into)](#/wip/trait-conversion-from-into)
 
 Jalankan program tersebut.
 
@@ -404,7 +404,7 @@ println!("index: {index}");
 
 Bisa dilihat program berjalan sesuai harapan.
 
-> Keyword `Fn` merupakan salah satu trait function yang ada di Rust. Lebih jelasnya perihal keyword tersebut dibahas pada chapter selanjutnya, yaitu [Trait → Function](/basic/trait-function)
+> Keyword `Fn` merupakan salah satu trait function yang ada di Rust. Lebih jelasnya perihal keyword tersebut dibahas pada chapter selanjutnya, yaitu [Trait ➜ Function](/basic/trait-function)
 
 ---
 
@@ -423,7 +423,7 @@ Bisa dilihat program berjalan sesuai harapan.
 - [Function](/basic/function)
 - [Generics](/basic/generics)
 - [Borrowing](/basic/borrowing)
-- [Trait → Function (Fn, FnMut, FnOnce)](/basic/trait-function)
+- [Trait ➜ Function (Fn, FnMut, FnOnce)](/basic/trait-function)
 
 ### ◉ Referensi
 

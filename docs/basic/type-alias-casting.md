@@ -6,7 +6,7 @@ sidebar_label: A.27. Type Alias & Casting
 
 Chapter ini membahas tentang type alias dan juga casting (explicit conversion) pada tipe data primitif scalar.
 
-> Pembahasan mengenai conversion pada tipe data non-primitif scalar (seperti struct dan enum) dibahas pada chapter [Trait → Conversion (From & Into)](#/wip/trait-conversion-from-into)
+> Pembahasan mengenai conversion pada tipe data non-primitif scalar (seperti struct dan enum) dibahas pada chapter [Trait ➜ Conversion (From & Into)](#/wip/trait-conversion-from-into)
 
 ## A.27.1. Type Alias
 
@@ -134,7 +134,7 @@ Pengaksesan `SystemTime::now()` mengembalikan data waktu sekarang, dan jika di c
 Dari data tersebut bisa kita chain lagi dengan method `unwrap` dan `as_second` untuk mengambil datanya dalam bentuk `u64`.
 
 > - Lebih jelasnya mengenai module `std::time` dibahas pada chapter [DateTime](/basic/datetime)
-> - Lebih jelasnya mengenai tipe data `Result` dibahas pada chapter [Tipe Data → Result](/basic/result-type)
+> - Lebih jelasnya mengenai tipe data `Result` dibahas pada chapter [Tipe Data ➜ Result](/basic/result-type)
 
 ---
 

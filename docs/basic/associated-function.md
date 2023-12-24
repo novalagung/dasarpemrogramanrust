@@ -358,7 +358,7 @@ Pada kasus struct, solusinya cukup dengan tambahkan keyword `pub` atau siapkan *
     }
     ```
 
-> Lebih jelasnya mengenai visibility property dibahas pada chapter [Module System → Visibility & Privacy](/basic/visibility-privacy)
+> Lebih jelasnya mengenai visibility property dibahas pada chapter [Module System ➜ Visibility & Privacy](/basic/visibility-privacy)
 
 ---
 
@@ -376,7 +376,7 @@ Pada kasus struct, solusinya cukup dengan tambahkan keyword `pub` atau siapkan *
 
 - [Function](/basic/function)
 - [Method](/basic/method)
-- [Module System → Visibility & Privacy](/basic/visibility-privacy)
+- [Module System ➜ Visibility & Privacy](/basic/visibility-privacy)
 
 ### ◉ Referensi
 

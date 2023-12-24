@@ -1,6 +1,6 @@
 ---
 sidebar_position: 13
-title: A.13. Tipe Data → Array
+title: A.13. Tipe Data ➜ Array
 sidebar_label: A.13. Array
 description: Belajar array pada rust. Contoh penerapan array, iterasi array, dan operasi lainnya pada array
 keywords: [rust, belajar rust, array rust, slice rust]
@@ -280,7 +280,7 @@ Variabel `names` yang notabene bertipe data `[&str; 4]` perlu dikonversi ke tipe
 Setelah mendapatkan objek bertipe `Enumerate`, keyword `for in` digunakan untuk menampung tiap elemen array dalam bentuk *tuple* `(i, name)`. Variabel `i` disitu berisi counter iterasi, dan `name` adalah value-nya.
 
 > - Lebih jelasnya mengenai traits dibahas pada chapter [Traits](/basic/traits)
-> - Lebih jelasnya mengenai `Enumerate` dibahas pada chapter [Trait → Iterator](/basic/trait-iterator)
+> - Lebih jelasnya mengenai `Enumerate` dibahas pada chapter [Trait ➜ Iterator](/basic/trait-iterator)
 > - Lebih jelasnya mengenai tuple dibahas pada chapter [Tuple](/basic/tuple)
 
 ## A.13.8. Append elemen ke array
@@ -328,7 +328,7 @@ Variabel `data_arr` pada contoh di atas bertipe data`[[&str; 2] 3]`, yang artiny
 ### ◉ Chapter relevan lainnya
 
 - [Slice (Basic)](/basic/slice)
-- [Tipe Data → Vector](/basic/vector)
+- [Tipe Data ➜ Vector](/basic/vector)
 - [Slice Memory Management](/basic/slice-memory-management)
 
 ### ◉ Referensi

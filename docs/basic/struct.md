@@ -110,7 +110,7 @@ let user_one = User{
 
 ### ◉ Fungsi `String::from()`
 
-Pada chapter [Module System → Path & Item](/basic/path-item#-stdstringstringnew) kita telah sedikit mengenal fungsi `String::new()` yang kegunaannya adalah untuk membuat data string kosong bertipe data `String`.
+Pada chapter [Module System ➜ Path & Item](/basic/path-item#-stdstringstringnew) kita telah sedikit mengenal fungsi `String::new()` yang kegunaannya adalah untuk membuat data string kosong bertipe data `String`.
 
 Selain fungsi tersebut, ada juga fungsi `String::from()` yang kegunaannya juga untuk pembuatan data string bertipe `String`, tapi dengan isi ditentukan lewat argumen pemanggilan fungsi.
 
@@ -463,7 +463,7 @@ pub struct GamingConsole {
 
 Bisa dilihat keyword `pub` ditambahkan pada deklarasi property struct. yang sebelumnya `name: String` sekarang ada keyword `pub` didepannya.
 
-> Lebih jelasnya mengenai visibility property dibahas pada chapter [Module System → Visibility & Privacy](/basic/visibility-privacy)
+> Lebih jelasnya mengenai visibility property dibahas pada chapter [Module System ➜ Visibility & Privacy](/basic/visibility-privacy)
 
 ## A.23.9. Tuple struct property visibility
 
@@ -513,7 +513,7 @@ pub struct Color(pub i32, pub i32, pub i32);
 
 Jalankan program untuk melihat hasilnya, error tidak muncul.
 
-> Lebih jelasnya mengenai visibility property dibahas pada chapter [Module System → Visibility & Privacy](/basic/visibility-privacy)
+> Lebih jelasnya mengenai visibility property dibahas pada chapter [Module System ➜ Visibility & Privacy](/basic/visibility-privacy)
 
 ## A.23.10. Generic pada struct
 

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-title: A.1. Program Pertama → Hello Rust
-sidebar_label: A.1. Program Pertama → Hello Rust
+title: A.1. Program Pertama ➜ Hello Rust
+sidebar_label: A.1. Program Pertama ➜ Hello Rust
 description: Belajar membuat program hello world di Rust, dimulai dengan pembuatan program Hello World sederhana.
 keywords: [rust, belajar rust, hello world, hello rust]
 ---
@@ -31,7 +31,7 @@ Command di atas menghasilkan sebuah folder baru bernama `hello_rust` dengan isi 
 
 File `src/main.rs` adalah file penting dalam pemrograman Rust. File `main.rs` merupakan file pertama yang dipanggil saat proses build program Rust (yang kemudian di-run). Source code program harus berada dalam folder `src`.
 
-> Pembahasan detail mengenai file `Cargo.toml` nantinya ada pada chapter [Module System → Package & Crate](/basic/package-crate). Untuk sekarang penulis anjurkan untuk mengikuti pembelajaran tiap chapter secara urut.
+> Pembahasan detail mengenai file `Cargo.toml` nantinya ada pada chapter [Module System ➜ Package & Crate](/basic/package-crate). Untuk sekarang penulis anjurkan untuk mengikuti pembelajaran tiap chapter secara urut.
 
 ## A.1.2. Run project `Hello Rust`
 

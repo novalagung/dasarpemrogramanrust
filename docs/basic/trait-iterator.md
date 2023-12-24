@@ -1,7 +1,7 @@
 ---
 sidebar_position: 48
-title: A.48. Trait → Iterator
-sidebar_label: A.48. Trait → Iterator
+title: A.48. Trait ➜ Iterator
+sidebar_label: A.48. Trait ➜ Iterator
 ---
 
 Iterator adalah salah satu trait dan tipe data custom penting pada Rust programming, gunanya untuk iterasi data. Di chapter ini kita akan mempelajarinya beserta beberapa module item lainnya yang masih relevan dengan topik Iterator.

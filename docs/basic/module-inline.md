@@ -1,7 +1,7 @@
 ---
 sidebar_position: 21
-title: A.21. Module System → Inline Module
-sidebar_label: A.21. Module System → Inline Module
+title: A.21. Module System ➜ Inline Module
+sidebar_label: A.21. Module System ➜ Inline Module
 ---
 
 Pada chapter sebelumnya kita telah belajar cara manajemen module. Pembahasan tersebut dilanjut pada chapter ini, yaitu tentang inline module.
@@ -82,7 +82,7 @@ Ketiga fungsi tersebut kemudian diterapkan pada program kecil yang logic-nya dit
 >
 > Sedangkan module `utilities` sendiri tidak wajib di-expose menggunakan keyword `pub`, karena definisi module-nya berada dalam satu file yang sama dengan fungsi `main`, yaitu file `main.rs`.
 >
-> Lebih jelasnya mengenai keyword `pub` dibahas pada chapter [Module System → Visibility & Privacy](/basic/visibility-privacy)
+> Lebih jelasnya mengenai keyword `pub` dibahas pada chapter [Module System ➜ Visibility & Privacy](/basic/visibility-privacy)
 
 Sebelum lanjut proses koding, silakan tambahkan dulu beberapa dependencies berikut pada `Cargo.toml`, kemudian jalankan `cargo build` di-download.
 
@@ -158,7 +158,7 @@ Pengecekan apakah data terenkripsi adalah sama dengan data asli dilakukan menggu
 
 Kedua fungsi `bcrypt::hash` dan `bcrypt::verify` menghasilkan data bertipe *generic result type* atau `Result<T, E>`. Tipe ini memiliki method bernama `unwrap` yang berguna untuk pengambilan result atau nilai.
 
-> Lebih jelasnya tentang result type dibahas pada chapter [Tipe Data → Result](/basic/result-type)
+> Lebih jelasnya tentang result type dibahas pada chapter [Tipe Data ➜ Result](/basic/result-type)
 
 Oke, sekarang fungsi utility sudah siap, mari implementasikan semua fungsi tersebut pada `main`.
 
@@ -195,7 +195,7 @@ Module item dalam inline module masih sama seperti pada module normal, yaitu ada
 - Item `utilities::password::hash` yang merupakan sebuah fungsi.
 - Item `utilities::password::is_valid` yang merupakan sebuah fungsi.
 
-> Lebih jelasnya tentang macam-macam item dibahas pada chapter [Module System → Path & Item](/basic/path-item)
+> Lebih jelasnya tentang macam-macam item dibahas pada chapter [Module System ➜ Path & Item](/basic/path-item)
 
 ## A.21.4. Inline module file `nama_module.rs` atau `nama_module/mod.rs`
 

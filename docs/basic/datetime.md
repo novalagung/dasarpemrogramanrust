@@ -109,7 +109,7 @@ O iya, perlu diketahui bahwa tidak semua string bisa di-parse ke bentuk `DateTim
 
 Penerapan method `parse::<DateTime<Utc>>()` sebenarnya mengembalikan tipe data `Result<DateTime<Utc>, ParseError>`, itulah kenapa pada contoh perlu di chain lagi dengan method `unwrap`.
 
-> Lebih detailnya mengenai tipe data `Result` dibahas pada chapter [Tipe Data → Result](/basic/result-type)
+> Lebih detailnya mengenai tipe data `Result` dibahas pada chapter [Tipe Data ➜ Result](/basic/result-type)
 
 ### ◉ Cara lainnya
 
@@ -394,7 +394,7 @@ Berikut adalah tabel formatting syntax untuk tipe data datetime.
 
 ### ◉ Chapter relevan lainnya
 
-- [Tipe Data → Result](/basic/result-type)
+- [Tipe Data ➜ Result](/basic/result-type)
 - [Generic](/basic/generics)
 
 ### ◉ Referensi

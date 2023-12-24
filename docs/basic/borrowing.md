@@ -255,7 +255,7 @@ println!("{:?}", fact.contains("lich king")); // output => true
 println!("{:?}", fact.contains("Lich King")); // output => false
 ```
 
-> Lebih jelasnya mengenai tipe data string dan method yang tersedia pada tipe tersebut akan dibahas terpisah pada chapter [Tipe Data → String Custom Type vs &str](/basic/string-slice-vs-string-literal).
+> Lebih jelasnya mengenai tipe data string dan method yang tersedia pada tipe tersebut akan dibahas terpisah pada chapter [Tipe Data ➜ String Custom Type vs &str](/basic/string-slice-vs-string-literal).
 
 ## A.35.7. Owner dan borrower data literal
 

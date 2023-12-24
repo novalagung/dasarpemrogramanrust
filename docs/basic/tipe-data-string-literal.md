@@ -1,7 +1,7 @@
 ---
 sidebar_position: 6
-title: A.6. Tipe Data → String Literal (&str)
-sidebar_label: A.6. Tipe Data → String Literal (&str)
+title: A.6. Tipe Data ➜ String Literal (&str)
+sidebar_label: A.6. Tipe Data ➜ String Literal (&str)
 ---
 
 String adalah tipe data penting dalam pemrograman manapun. Biasanya tiap bahasa punya cara berbeda dalam meng-handle tipe ini. Di bahasa Rust, ada dua jenis tipe data string:
@@ -127,7 +127,7 @@ Penulis anjurkan untuk mempelajari chapter-chapter berikutnya secara urut terleb
 
 - [Pointer & References](/basic/pointer-references)
 - [String Literal (&str) vs. String Custom Type](/basic/string-slice-vs-string-literal)
-- [Tipe Data → String Custom Type](/basic/tipe-data-custom-type-string-slice)
+- [Tipe Data ➜ String Custom Type](/basic/tipe-data-custom-type-string-slice)
 
 ### ◉ Referensi
 
