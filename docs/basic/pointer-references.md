@@ -36,7 +36,7 @@ println!("pointer: {:p}", pointer_number);
 
 Pada contoh di atas, sebuah variabel dideklarasikan bernama `number` dengan tipe data adalah numerik dan value `24`. Variabel tersebut jika di-print akan muncul nilainya, yaitu `24`.
 
-Ada satu lagi variabel yang dideklarasikan yaitu `pointer_number`, yang nilainya adalah *reference* dari variabel `number`. Cara pengambilan reference yabng dilihat pada contoh, yaitu dengan menambahkan operator `&` pada variabel yang ingin dimabil pointernya.
+Ada satu lagi variabel yang dideklarasikan yaitu `pointer_number`, yang nilainya adalah *reference* dari variabel `number`. Cara pengambilan reference yang dilihat pada contoh, yaitu dengan menambahkan operator `&` pada variabel yang ingin dimabil pointernya.
 
 ```rust
 // variabel pointer_number nilainya adalah reference variabel number.
