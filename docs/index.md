@@ -10,7 +10,7 @@ E-book Dasar Pemrograman Rust ini dibuat dengan harapan bisa menjadi alternatif 
 
 [Dokumentasi *official* Rust](https://www.rust-lang.org/learn) sangat lengkap, dan aktif di-update oleh komunitas. Jika pembaca sudah memiliki banyak pengalaman dalam programming, sudah paham mengenai system programming seperti C atau C++, maka penulis sangat anjurkan untuk langsung menggunakan [*the book*](https://www.rust-lang.org/learn) sebagai referensi belajar.
 
-Versi e-book: **v1.0.20231224**, dan versi [Rust 1.65.0](https://blog.rust-lang.org/2022/11/03/Rust-1.65.0.html).
+Versi e-book: **v1.0.20240330**, dan versi [**Rust 1.77.1**](https://blog.rust-lang.org/2024/03/28/Rust-1.77.1.html).
 
 > E-book ini aktif dalam pengembangan, kami akan tambah terus konten-kontennya. Silakan cek di [Github repo](https://github.com/novalagung/dasarpemrogramanrust) kami mengenai progress development e-book.
 
