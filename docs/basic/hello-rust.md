@@ -68,12 +68,12 @@ fn main() {
 Pembuatan fungsi di Rust menggunakan keyword `fn` dengan notasi penulisan sebagai berikut, contoh:
 
 ```bash
-fn namaFungsi() {
+fn nama_fungsi() {
 
 }
 ```
 
-`namaFungsi` di atas adalah nama fungsi. Pada program yang sudah kita buat, fungsi bernama `main`. Penulisan nama fungsi diikuti dengan `()` kemudian kurung kurawal `{ }`.
+`nama_fungsi` di atas adalah nama fungsi. Pada program yang sudah kita buat, fungsi bernama `main`. Penulisan nama fungsi diikuti dengan `()` kemudian kurung kurawal `{ }`.
 
 - Sintaks `()` nantinya bisa diisi dengan definisi parameter. Pada contoh ini tidak ada parameter yang ditulis.
 - Sintaks `{}` dituliskan dalam baris berbeda, isinya adalah kode program.
@@ -83,7 +83,7 @@ fn namaFungsi() {
 Notasi penulisan pemanggilan fungsi adalah cukup dengan menuliskan nama fungsinya kemudian diikuti dengan `()`, seperti berikut:
 
 ```bash
-namaFungsi();
+nama_fungsi();
 ```
 
 Jika ada argument parameter yang perlu disisipkan saat pemanggilan fungsi, dituliskan di antara kurung `()`. Contoh pemanggilan `sebuahFungsi` dengan argument berupa string `"sebuah argument"`.
