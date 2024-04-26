@@ -87,7 +87,7 @@ loop {
 
 `continue` digunakan untuk melanjutkan paksa sebuah perulangan, kebalikan dari `break` yang fungsinya menghentikan paksa sebuah perulangan.
 
-Source code berikut murapakan contoh penerapan `continue`. Variabel `i` berperan sebagai counter perulangan. Jika nilai `i` adalah ganjil, maka perulangan dipaksa lanjut ke iterasi berikutnya. Dengan ini maka macro `println` hanya akan menampilkan nilai genap. Dan program akan berhenti jika `i` nilainya lebih dari `max`.
+Source code berikut merupakan contoh penerapan `continue`. Variabel `i` berperan sebagai counter perulangan. Jika nilai `i` adalah ganjil, maka perulangan dipaksa lanjut ke iterasi berikutnya. Dengan ini maka macro `println` hanya akan menampilkan nilai genap. Dan program akan berhenti jika `i` nilainya lebih dari `max`.
 
 ```rust
 let mut i = 0;
@@ -112,7 +112,7 @@ loop {
 
 ## A.11.5. Label perulangan
 
-Statement perulangan menggunakan `loop` bisa ditandai dengan label. Manfaat dari penggunaan label adalah bisa mengeksekusi `break` atau `continue` ke perulangan di luar blok kode perulangan dimana statement itu berada. Umumnya label perulangan dipergunakan pada nested loop, dimana ada kebutuhan untuk menghentikan/melanjutkan paksa perulangan terluar.
+Statement perulangan menggunakan `loop` bisa ditandai dengan label. Manfaat dari penggunaan label adalah bisa mengeksekusi `break` atau `continue` ke perulangan di luar blok kode perulangan di mana statement itu berada. Umumnya label perulangan dipergunakan pada nested loop untuk keperluan menghentikan/melanjutkan paksa perulangan terluar.
 
 Berikut adalah notasi penulisan loop dengan dan tanpa label. Nama label diawali dengan tanda petik `'`.
 
@@ -130,7 +130,7 @@ loop {
 }
 ```
 
-Mari kita pelajari dan praktikkan kode berikut ini. Dibawah ini adalah sebuah program sederhana menampilkan angka yang hasilnya bisa dilihat digambar dibawahnya. Perulangan di level 2 akan dihentikan secara paksa ketika `j > i`. Sedangkan perulangan level pertama atau terluar (dengan label `'mainLoop`) akan dihentikan paksa dari perulangan level 2 jika kondisi `i > max`.
+Mari kita pelajari dan praktikkan kode berikut ini. Di bawah ini adalah sebuah program sederhana menampilkan angka yang hasilnya bisa dilihat pada gambar di bawahnya. Perulangan di level 2 akan dihentikan secara paksa ketika `j > i`. Sedangkan perulangan level pertama atau terluar (dengan label `'mainLoop`) akan dihentikan paksa dari perulangan level 2 jika kondisi `i > max`.
 
 ```rust
 let mut i = 0;

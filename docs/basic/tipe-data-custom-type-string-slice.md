@@ -101,7 +101,7 @@ println!("{str6}");
 // my phone is Pixel 6
 ```
 
-Parameter pertama perlu diisi dengan indeks dimana string akan disisipkan.
+Parameter pertama menentukan posisi indeks string yang disisipkan.
 
 - String `Pixel 6` pada indeks 0 disisipi string `my phone`, hasilnya `my phonePixel 6`
 - String `my phonePixel 6` pada indeks 8 disisipi string ` is `, hasilnya `my phone is Pixel 6`

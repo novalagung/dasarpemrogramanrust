@@ -16,7 +16,7 @@ Tipe data `Option` adalah enum dengan isi 2 buah enum value:
 > - `None` bisa disamakan dengan nilai `null` atau `nil` pada bahasa pemrograman lain.
 > - `T` merupakan parameter generic. Lebih jelasnya mengenai generic dibahas pada chapter [Generics](/basic/generics).
 
-Tipe data `Option` memiliki notasi penulisan `Option<T>` dimana `T` adalah tipe data sebenarnya yang dibungkus oleh enum value `Some`.
+Tipe data `Option` memiliki notasi penulisan `Option<T>` yang mana `T` adalah tipe data sebenarnya yang dibungkus oleh enum value `Some`.
 
 Berikut adalah contoh cara penerapan `Option`.
 
@@ -56,7 +56,7 @@ Output program di atas saat di-run:
 
 Dalam penerapannya, ketika ada data bertipe `Option` artinya data tersebut berpotensi untuk berisi nilai `None` atau `Some<T>`, pasti antara 2 nilai tersebut.
 
-Umumnya penggunaan tipe `Option` selalu diikuti dengan seleksi kondisi. Keyword `if` bisa digunakan dalam seleksi kondisi, namun dalam Praktiknya lebih baik menggunakan keyword `match` karena memberikan kemudahan dalam pengaksesan nilai `T` milik `Some` (dimana `T` adalah data yang kita cari dibungkus dalam enum value `Some`).
+Umumnya penggunaan tipe `Option` selalu diikuti dengan seleksi kondisi. Keyword `if` bisa digunakan dalam seleksi kondisi, namun dalam Praktiknya lebih baik menggunakan keyword `match` karena memberikan kemudahan dalam pengaksesan nilai `T` milik `Some` (yang mana `T` adalah data yang kita cari dibungkus dalam enum value `Some`).
 
 Mari kita praktikkan. Ubah isi fungsi `main` dengan kode berikut:
 
@@ -218,7 +218,7 @@ println!("result: {}", number);
 // result: 0
 ```
 
-Closure harus dalam notasi `FnOnce() -> T` dimana `T` pada konteks ini adalah `i32`.
+Closure harus dalam notasi `FnOnce() -> T` yang mana `T` pada konteks ini adalah `i32`.
 
 > Closure `|| 0` adalah kependekan dari `|| -> i32 { 0 }`.
 >

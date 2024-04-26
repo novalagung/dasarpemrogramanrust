@@ -41,7 +41,7 @@ let str2 = String::from_utf8(bytes).unwrap();
 println!("str2: {}", str2);
 ```
 
-Pada contoh di atas, data bytes dipersiapkan dalam bentuk `Vec<u8>`. Data tersebut kemudian digunakan untuk membuat string menggunakan fungsi `String::from_utf8()`. Nilai balik fungsi tersebut adalah `Result<String, FromUtf8Error>`. Pemanggilan method `unwrap` disitu agar data `String`-nya di-return.
+Pada contoh di atas, data bytes dipersiapkan dalam bentuk `Vec<u8>`. Data tersebut kemudian digunakan untuk membuat string menggunakan fungsi `String::from_utf8()`. Nilai balik fungsi tersebut adalah `Result<String, FromUtf8Error>`. Pemanggilan method `unwrap` di situ agar data `String`-nya di-return.
 
 ![String slcie vs string literal](img/string-slice-vs-string-literal-1.png)
 

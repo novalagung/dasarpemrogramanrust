@@ -15,7 +15,7 @@ Attribute dikategorikan menjadi 2:
 - Outer attributes
 - Inner attributes
 
-Keduanya memiliki kegunaan yang sama, pembedanya adalah posisi dimana attribute harus dituliskan.
+Keduanya memiliki kegunaan yang sama, pembedanya adalah posisi di mana attribute harus dituliskan.
 
 Outer attribute dituliskan tepat sebelum target (crate, module, module item, atau lainnya) dengan notasi penulisan seperti berikut:
 
@@ -35,7 +35,7 @@ struct LegoSet {
 }
 ```
 
-Sedikit berbeda dengan inner attribute, penulisannya berada didalam target (crate, module, module item, atau lainnya). Notasi penulisannya:
+Sedikit berbeda dengan inner attribute, penulisannya berada di dalam target (crate, module, module item, atau lainnya). Notasi penulisannya:
 
 - `#![attribute = "value"]`
 - `#![attribute(key = "value")]`
@@ -75,7 +75,7 @@ fn main() {
 
 ![Attribute](img/attribute-1.png)
 
-Kode di atas menghasilkan error karena enum `Superhero` tidak mengadopsi trait `PartialEq` yang dimana trait ini diperlukan dalam seleksi kondisi menggunakan keyword `if` dan operator `==`.
+Kode di atas menghasilkan error karena enum `Superhero` tidak mengadopsi trait `PartialEq` yang mana trait ini diperlukan dalam seleksi kondisi menggunakan keyword `if` dan operator `==`.
 
 Cara mengatasi error tersebut adalah dengan mengimplementasikan trait `PartialEq` secara eksplisit. Sekarang coba tambahkan kode berikut pada deklarasi enum `Superhero`, maka error akan hilang.
 
@@ -206,11 +206,11 @@ fn main() {
 }
 ```
 
-Ada beberapa key yang tersedia pada attribute `cfg`, diantaranya:
+Ada beberapa key yang tersedia pada attribute `cfg`, di antaranya:
 
 ### ◉ Configuration `target_os`
 
-Digunakan untuk menandai bahwa item atau statement dibawah definisi attribute ini dikhususkan untuk sistem operasi tertentu.
+Digunakan untuk menandai bahwa item atau statement di bawah definisi attribute ini dikhususkan untuk sistem operasi tertentu.
 
 ```rust
 #[cfg(target_os = "value")]
@@ -230,7 +230,7 @@ Opsi value yang tersedia:
 
 ### ◉ Configuration `target_arch`
 
-Digunakan untuk menandai bahwa item atau statement dibawah definisi attribute ini dikhususkan untuk arsitektur CPU tertentu.
+Digunakan untuk menandai bahwa item atau statement di bawah definisi attribute ini dikhususkan untuk arsitektur CPU tertentu.
 
 ```rust
 #[cfg(target_arch = "value")]
@@ -301,10 +301,10 @@ Ada beberapa attribute *key* yang bisa digunakan untuk override *lint* warning:
 
 - `#[deny(lint_rule)]` atau `#[forbid(lint_rule)]` untuk melarang suatu *lint rule* yang *default*-nya adalah diperbolehkan.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/deny-by-default.html.
 
-Selain 3 attribute di atas, ada juga beberapa attribute lainnya untuk keperluan *diagnostic*, diantaranya:
+Selain 3 attribute di atas, ada juga beberapa attribute lainnya untuk keperluan *diagnostic*, di antaranya:
 
-- `#[deprecated]` digunakan untuk menandai bahwa kode dibawahnya adalah *deprecated*.
-- `#[must_use]` digunakan untuk mendandai bahwa kode dibawahnya harus digunakan, jika tidak maka akan muncul error.
+- `#[deprecated]` digunakan untuk menandai bahwa kode di bawahnya adalah *deprecated*.
+- `#[must_use]` digunakan untuk mendandai bahwa kode di bawahnya harus digunakan, jika tidak maka akan muncul error.
 
 ## A.49.5. Attribute *type system*
 
@@ -356,7 +356,7 @@ fn main() {
 
 Sayangnya dalam penggunaan attribute `non_exhaustive` ini, efeknya **hanya bisa dirasakan jika digunakan pada enum atau struct yang berbeda crate**.
 
-Pada contoh di atas, tempat dimana enum dideklarasikan dan digunakan adalah masih dalam satu crate yang sama, jadi kode tetap menghasilkan error.
+Pada contoh di atas, tempat di mana enum dideklarasikan dan digunakan adalah masih dalam satu crate yang sama, jadi kode tetap menghasilkan error.
 
 > Attribute `non_exhaustive` ini jika digunakan pada struct efeknya saat deklarasi variabel boleh tidak menuliskan value property.
 

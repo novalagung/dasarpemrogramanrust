@@ -239,7 +239,7 @@ Jalankan program untuk melihat hasilnya.
 
 Pada kode di atas, `path` yang digunakan bukan `utilities/random.rs` melainkan `random.rs`, hail ini dikarenakan `path` attribute dipanggil **di dalam module `utilities`**, menjadikan current path pada blok kode tersebut menjadi `utilities/`.
 
-Silakan coba ubah isi `path` attribute menjadi `utilities/random.rs`, hasilnya adalah error. Rust akan menggunakan gabungan dari current path (`utilities/`) dan path pada `path` attribute (`utilities/random.rs`) dalam lookup, jadinya yang di-lookup adalah `utilities/utilities/random.rs`, dan hasilnya error karena tidak ada file disana.
+Silakan coba ubah isi `path` attribute menjadi `utilities/random.rs`, hasilnya adalah error. Rust akan menggunakan gabungan dari current path (`utilities/`) dan path pada `path` attribute (`utilities/random.rs`) dalam lookup, jadinya yang di-lookup adalah `utilities/utilities/random.rs`, dan hasilnya error karena tidak ada file di sana.
 
 ![Rust Inline Module](img/module-inline-4.png)
 

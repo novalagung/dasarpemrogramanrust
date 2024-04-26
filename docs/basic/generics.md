@@ -8,7 +8,7 @@ Chapter ini membahas tentang generics.
 
 Generics sendiri merupakan salah satu fitur yang ada pada beberapa bahasa pemrograman (termasuk Rust), yang digunakan untuk menambahkan fleksibilitas dalam pemanfaatan tipe data pada suatu block kode. Dengan adanya generics, kita bisa menentukan tipe data yang digunakan pada parameter maupun return value sbuah block fungsi, method dan lainnya.
 
-Generics dinotasikan dengan `<T>`. Kita sempat sedikit memanfaatkan generic pada chapter [Vector](/basic/vector) dimana dalam pendefinisian tipe data harus dituliskan juga tipe data item (via generics parameter), contoh `Vec<i32>`, `Vec<&str>`, dll. Kita juga sempat sedikit belajar tentang topik generic pada chapter [Traits](/basic/traits).
+Generics dinotasikan dengan `<T>`. Kita sempat sedikit memanfaatkan generic pada chapter [Vector](/basic/vector) di mana dalam pendefinisian tipe data harus dituliskan juga tipe data item (via generics parameter), contoh `Vec<i32>`, `Vec<&str>`, dll. Kita juga sempat sedikit belajar tentang topik generic pada chapter [Traits](/basic/traits).
 
 ## A.37.1. Generics basic
 
@@ -20,7 +20,7 @@ fn do_something<T>(arg1: i32, arg2: T) {
 }
 ```
 
-Pada contoh di atas, fungsi `do_something` didefinisikan dengan 2 buah parameter argument dan 1 buah parameter generics. Parameter argument pertama, yaitu `arg1` bertipe `i32`, kemudian diikuti parameter ke-2 bertipe `T` dimana `T` adalah parameter generic fungsi.
+Pada contoh di atas, fungsi `do_something` didefinisikan dengan 2 buah parameter argument dan 1 buah parameter generics. Parameter argument pertama, yaitu `arg1` bertipe `i32`, kemudian diikuti parameter ke-2 bertipe `T` yang mana `T` adalah parameter generic fungsi.
 
 Dalam pemanggilan fungsi tersebut, `T` generics dan tipe data argument `arg2` harus sama. Contoh:
 
@@ -81,7 +81,7 @@ Repot kan? Tapi tenang, tidak usah khawatir, ada soluasi agar tipe `T` bisa dima
 
 ### ◉ Contoh ke-1
 
-Contoh pengaplikasiannya bisa dilihat pada kode berikut. Ada sebuah fungsi bernama `print_x_times` yang tugasnya adalah menampilkan data `T` sejumlah `x` kali, dimana `T` adalah parameter generics.
+Contoh pengaplikasiannya bisa dilihat pada kode berikut. Ada sebuah fungsi bernama `print_x_times` yang tugasnya adalah menampilkan data `T` sejumlah `x` kali, yang mana `T` adalah parameter generics.
 
 ```rust
 fn main() {
@@ -291,7 +291,7 @@ impl<T, U> Point<T, U> {
 }
 ```
 
-Bisa dilihat pada kode di atas, ada method `get_x` untuk mengambil nilai `x`. Nilai baliknya bertipe `T` dimana tipe tersebut juga dipakai sebagai tipe data `x`.
+Bisa dilihat pada kode di atas, ada method `get_x` untuk mengambil nilai `x`. Nilai baliknya bertipe `T` yang tipe tersebut juga dipakai sebagai tipe data `x`.
 
 Kemudian coba gunakan struct `Point` untuk membuat satu atau dua variabel, lalu akses method-nya.
 
