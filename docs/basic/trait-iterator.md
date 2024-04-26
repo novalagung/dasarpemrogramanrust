@@ -256,7 +256,7 @@ println!("{:?}", result2);
 // [1, 2, 3, 4]
 ```
 
-Contoh lainnya bisa dilihat pada *section* [A.48.2. Pemanfaatan tipe data `Iterator`](/basic/trait-iterator#a482-pemanfaatan-tipe-data-iterator) di mana dilakukan mapping data slice numerik ke bentuk yang sama tapi nilai setiap element adalah kuadrat, dan juga ke bentuk lain dengan tipe data berbeda.
+Contoh lainnya bisa dilihat pada *section* [A.48.2. Pemanfaatan tipe data `Iterator`](/basic/trait-iterator#a482-pemanfaatan-tipe-data-iterator), di situ terdapat operasi mapping data slice numerik ke bentuk yang sama tapi nilai setiap element adalah kuadrat, dan ke bentuk lain dengan tipe data berbeda.
 
 ### ◉ Method `rev`
 

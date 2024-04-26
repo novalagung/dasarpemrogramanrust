@@ -112,7 +112,7 @@ loop {
 
 ## A.11.5. Label perulangan
 
-Statement perulangan menggunakan `loop` bisa ditandai dengan label. Manfaat dari penggunaan label adalah bisa mengeksekusi `break` atau `continue` ke perulangan di luar blok kode perulangan di mana statement itu berada. Umumnya label perulangan dipergunakan pada nested loop, di mana ada kebutuhan untuk menghentikan/melanjutkan paksa perulangan terluar.
+Statement perulangan menggunakan `loop` bisa ditandai dengan label. Manfaat dari penggunaan label adalah bisa mengeksekusi `break` atau `continue` ke perulangan di luar blok kode perulangan di mana statement itu berada. Umumnya label perulangan dipergunakan pada nested loop untuk keperluan menghentikan/melanjutkan paksa perulangan terluar.
 
 Berikut adalah notasi penulisan loop dengan dan tanpa label. Nama label diawali dengan tanda petik `'`.
 

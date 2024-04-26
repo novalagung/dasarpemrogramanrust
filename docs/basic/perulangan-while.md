@@ -32,7 +32,7 @@ while i < max {
 
 ![keyword while](img/perulangan-while-1.png)
 
-Variabel `i` pada contoh di atas menjadi penentu kapan perulangan berhenti. Di dalam blok kode `while` (yang di mana akan dieksekusi setiap kondisi menghasilkan nilai `true`), nilai variabel `i` di-increment, membuat variabel `i` nilainya selalu bertambah 1 setiap kali perulangan. Perulangan akan berhenti ketika nilai `i` sudah tidak di bawah `max` lagi.
+Variabel `i` pada contoh di atas menjadi penentu kapan perulangan berhenti. Di dalam blok kode `while` (yang mana akan dieksekusi setiap kondisi menghasilkan nilai `true`), nilai variabel `i` di-increment, membuat variabel `i` nilainya selalu bertambah 1 setiap kali perulangan. Perulangan akan berhenti ketika nilai `i` sudah tidak di bawah `max` lagi.
 
 ## A.10.2. Nested `while`
 

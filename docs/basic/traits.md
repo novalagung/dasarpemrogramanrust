@@ -121,7 +121,7 @@ Block kode definisi struct `Circle` cukup straightforward, isinya hanya 1 proper
 
 ### ◉ Block kode `impl X for Y`
 
-Notasi penulisan implementasi trait adalah `impl X for Y`, di mana `X` adalah trait yang ingin diimplementasikan dan `Y` adalah tipe data tujuan implementasi.
+Notasi penulisan implementasi trait adalah `impl X for Y`, yang mana `X` adalah trait yang ingin diimplementasikan dan `Y` adalah tipe data tujuan implementasi.
 
 Pada contoh di atas, trait `Debug` diimplementasikan ke custom type struct `Circle`. Maka statement-nya adalah:
 

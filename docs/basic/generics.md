@@ -20,7 +20,7 @@ fn do_something<T>(arg1: i32, arg2: T) {
 }
 ```
 
-Pada contoh di atas, fungsi `do_something` didefinisikan dengan 2 buah parameter argument dan 1 buah parameter generics. Parameter argument pertama, yaitu `arg1` bertipe `i32`, kemudian diikuti parameter ke-2 bertipe `T` di mana `T` adalah parameter generic fungsi.
+Pada contoh di atas, fungsi `do_something` didefinisikan dengan 2 buah parameter argument dan 1 buah parameter generics. Parameter argument pertama, yaitu `arg1` bertipe `i32`, kemudian diikuti parameter ke-2 bertipe `T` yang mana `T` adalah parameter generic fungsi.
 
 Dalam pemanggilan fungsi tersebut, `T` generics dan tipe data argument `arg2` harus sama. Contoh:
 
@@ -81,7 +81,7 @@ Repot kan? Tapi tenang, tidak usah khawatir, ada soluasi agar tipe `T` bisa dima
 
 ### ◉ Contoh ke-1
 
-Contoh pengaplikasiannya bisa dilihat pada kode berikut. Ada sebuah fungsi bernama `print_x_times` yang tugasnya adalah menampilkan data `T` sejumlah `x` kali, di mana `T` adalah parameter generics.
+Contoh pengaplikasiannya bisa dilihat pada kode berikut. Ada sebuah fungsi bernama `print_x_times` yang tugasnya adalah menampilkan data `T` sejumlah `x` kali, yang mana `T` adalah parameter generics.
 
 ```rust
 fn main() {
@@ -291,7 +291,7 @@ impl<T, U> Point<T, U> {
 }
 ```
 
-Bisa dilihat pada kode di atas, ada method `get_x` untuk mengambil nilai `x`. Nilai baliknya bertipe `T` di mana tipe tersebut juga dipakai sebagai tipe data `x`.
+Bisa dilihat pada kode di atas, ada method `get_x` untuk mengambil nilai `x`. Nilai baliknya bertipe `T` yang tipe tersebut juga dipakai sebagai tipe data `x`.
 
 Kemudian coba gunakan struct `Point` untuk membuat satu atau dua variabel, lalu akses method-nya.
 

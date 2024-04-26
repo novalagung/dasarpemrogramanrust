@@ -49,7 +49,7 @@ Selanjutnya mari kita bahas dengan detail contoh di atas.
 
 Variabel `numbers` dideklarasikan sebagai array *mutable* dengan metode deklarasi type inference, yang tipe datanya didapat langsung dari nilai.
 
-Value dari `numbers` adalah `[24, 12, 32, 7]`, yang di mana artinya sebuah array dengan size 4, bertipe numerik, dengan isi `24`, `12`, `32`, `7`.
+Value dari `numbers` adalah `[24, 12, 32, 7]`, yang mana artinya sebuah array dengan size 4, bertipe numerik, dengan isi `24`, `12`, `32`, `7`.
 
 Sintaks `[24, 12, 32, 7]` adalah salah satu cara menulis literal array. Tulis saja data yang diinginkan dengan separator `,` dan diapit tanda kurung siku `[ ]`.
 

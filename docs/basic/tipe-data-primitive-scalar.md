@@ -12,7 +12,7 @@ Tipe data scalar sendiri merupakan tipe data primitif yang isinya hanya 1 nilai.
 
 Signed integer merupakan tipe data numerik/integer yang bisa menampung nilai positif dan juga negatif. Ada beberapa tipe data singed integer tersedia di Rust yang dibedakan sesuai size-nya.
 
-Tipe data ini keyword-nya ditandai dengan huruf awalan `i`, contohnya `i8`, yang di mana tipe ini adalah tipe data numerik integer dengan range value yang bisa ditampung adalah mulai dari angka **−128** (didapat dari −(2<sup>7</sup>) hingga **127** (didapat dari 2<sup>7</sup>-1).
+Tipe data ini keyword-nya ditandai dengan huruf awalan `i`, contohnya `i8`, yang mana tipe ini adalah tipe data numerik integer dengan range value yang bisa ditampung adalah mulai dari angka **−128** (didapat dari −(2<sup>7</sup>) hingga **127** (didapat dari 2<sup>7</sup>-1).
 
 Contoh:
 
@@ -31,7 +31,7 @@ Range value pada tipe data itu cukup penting untuk diperhatikan, jika ada sebuah
 
 ![data type error](img/tipe-data-primitive-scalar-1.png)
 
-Umumnya, tipe data `i32` cukup untuk kebutuhan menampung nilai, tapi ada banyak case di mana kita perlu tipe dengan size yang lebih besar seperti `i64`.
+Umumnya, tipe data `i32` cukup digunakan untuk kebutuhan menampung nilai, namun sebenarnya ada banyak case lainnya di mana kita perlu tipe dengan size yang lebih besar seperti `i64`.
 
 Berikut merupakan list tipe data signed integers yang ada di Rust. Tidak perlu dihafal.
 

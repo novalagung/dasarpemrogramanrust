@@ -75,7 +75,7 @@ fn main() {
 
 ![Attribute](img/attribute-1.png)
 
-Kode di atas menghasilkan error karena enum `Superhero` tidak mengadopsi trait `PartialEq` yang di mana trait ini diperlukan dalam seleksi kondisi menggunakan keyword `if` dan operator `==`.
+Kode di atas menghasilkan error karena enum `Superhero` tidak mengadopsi trait `PartialEq` yang mana trait ini diperlukan dalam seleksi kondisi menggunakan keyword `if` dan operator `==`.
 
 Cara mengatasi error tersebut adalah dengan mengimplementasikan trait `PartialEq` secara eksplisit. Sekarang coba tambahkan kode berikut pada deklarasi enum `Superhero`, maka error akan hilang.
 

@@ -22,7 +22,7 @@ Lalu apa itu slice? menurut laman dokumentasi Rust, slice adalah:
 >
 > Slices are a view into a block of memory represented as a pointer and a size.
 
-Slice adalah representasi *block of memory* berbentuk pointer dan memiliki size yang dinamis (tidak fixed seperti array). Notasi tipe data slice adalah `&[T]` di mana `T` adalah tipe data element.
+Slice adalah representasi *block of memory* berbentuk pointer dan memiliki size yang dinamis (tidak fixed seperti array). Notasi tipe data slice adalah `&[T]` yang mana `T` adalah tipe data element.
 
 Slice bisa dibuat dari data array (atau dari tipe kolektif data lainnya) dengan menggunakan kombinasi operator `&` dan *range syntax* `..` dengan notasi penulisan seperti berikut:
 

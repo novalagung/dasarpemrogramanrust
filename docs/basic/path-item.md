@@ -129,7 +129,7 @@ Berbeda dengan `String`, path `std::io::stdin` tidak otomatis ter-import, jadi h
 
 Path `std::io` berisi module untuk keperluan I/O atau input output. Salah satu item yang ada dalam module ini adalah `stdin`, yang merupakan sebuah fungsi berguna untuk pembuatan objek handler untuk keperluan yang berhubungan dengan console (*stdin*). Objek tersebut ditampung oleh variabel `stdin_reader`.
 
-> Secara terminologi, *stdin* (yang merupakan kependekan dari *standard input*) adalah sebuah input stream di mana data dikirim dan dibaca oleh program.
+> Secara terminologi, *stdin* (merupakan kependekan dari *standard input*) adalah sebuah input stream yang nilainya dibaca oleh program sebagai inputan.
 
 Variabel `stdin_reader` ini kemudian kita gunakan untuk berinteraksi dengan input stream, untuk menangkap inputan user.
 
