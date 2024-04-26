@@ -16,7 +16,7 @@ Crate bisa berisi banyak *module*. Sebuah module definisinya bisa berada di bany
 - `Mod_ABC` adalah module yang didefinisikan dalam crate `XYZ`, source code-nya berada di file bernama `modul_a.rs`.
 - `Mod_DEF` adalah module yang didefinisikan dalam crate `XYZ`, source code-nya berada di beberapa file `module_b_one.rs` dan `module_b_two.rs`.
 
-Dari contoh di atas, crate `XYZ` adalah 1 unit kompilasi, yang dimana di dalam crate tersebut ada dua modules yaitu `Mod_ABC` dan `Mod_DEF`
+Dari contoh di atas, crate `XYZ` adalah 1 unit kompilasi, yang di mana di dalam crate tersebut ada dua modules yaitu `Mod_ABC` dan `Mod_DEF`
 
 Rust mengkategorikan crate menjadi 2 jenis, *binary crate* dan *library crate*
 

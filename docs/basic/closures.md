@@ -50,7 +50,7 @@ Perbedaan minor lainnya ada pada notasi penulisan parameter. Pada fungsi tanda `
 
 ### ◉ formatted print `{:.n}`
 
-Notasi penulisan formatted print `{:.n}` digunakan untuk mem-format bilangan desimal dimana `n` adalah jumlah digit setelah tanda `.`.
+Notasi penulisan formatted print `{:.n}` digunakan untuk mem-format bilangan desimal di mana `n` adalah jumlah digit setelah tanda `.`.
 
 Sebagai contoh, variabel `pi` berikut memiliki 0 digit angka dibelakang koma. Untuk menampilkan hanya 4 angka terdepan, bisa gunakan `{:.4}`. Perlu diketahui bahwa angka dibelakang koma yang muncul otomatis dibulatkan.
 

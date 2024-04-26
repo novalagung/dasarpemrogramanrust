@@ -6,7 +6,7 @@ description: Belajar array pada rust. Contoh penerapan array, iterasi array, dan
 keywords: [rust, belajar rust, array rust, slice rust]
 ---
 
-Pada chapter awal kita sudah mempelajari tipe data primitif jenis scalas. Selain *scalar types* ada juga tipe data primitif lainnya yaitu **compound types**. Compound types sendiri adalah jenis tipe data kolektif yang isinya banyak data. Kesemua data tersebut memiliki tipe data yang sama dan di-group menjadi satu.
+Pada chapter awal kita sudah mempelajari tipe data primitif jenis scalar. Selain *scalar types* ada juga tipe data primitif lainnya yaitu **compound types**. Compound types sendiri adalah jenis tipe data kolektif yang isinya banyak data. Kesemua data tersebut memiliki tipe data yang sama dan di-group menjadi satu.
 
 Array adalah salah satu tipe data compound yang tersedia di Rust, dan pada chapter ini kita akan mempelajarinya.
 
@@ -49,7 +49,7 @@ Selanjutnya mari kita bahas dengan detail contoh di atas.
 
 Variabel `numbers` dideklarasikan sebagai array *mutable* dengan metode deklarasi type inference, yang tipe datanya didapat langsung dari nilai.
 
-Value dari `numbers` adalah `[24, 12, 32, 7]`, yang dimana artinya sebuah array dengan size 4, bertipe numerik, dengan isi `24`, `12`, `32`, `7`.
+Value dari `numbers` adalah `[24, 12, 32, 7]`, yang di mana artinya sebuah array dengan size 4, bertipe numerik, dengan isi `24`, `12`, `32`, `7`.
 
 Sintaks `[24, 12, 32, 7]` adalah salah satu cara menulis literal array. Tulis saja data yang diinginkan dengan separator `,` dan diapit tanda kurung siku `[ ]`.
 
@@ -138,7 +138,7 @@ Jika kawan-kawan menggunakan ekstensi VSCode `rust-analyzer`, akan terlihat info
 
 ## A.13.3. Macam-macam deklarasi array
 
-Array lebih mudah dideklarasikan dengan metode *type inference*. Namun tak menutup kemungkinan ada kebutuhan dimana array harus dideklarasikan dengan menuliskan tipe datanya secara eksplisit. Berikut adalah macam-macam cara mendeklarasikan array.
+Array lebih mudah dideklarasikan dengan metode *type inference*. Namun tak menutup kemungkinan ada kebutuhan di mana array harus dideklarasikan dengan menuliskan tipe datanya secara eksplisit. Berikut adalah macam-macam cara mendeklarasikan array.
 
 ### ◉ Deklarasi array dengan metode *type inference*
 
@@ -257,7 +257,7 @@ loop {
 }
 ```
 
-Iterasi array menggunakan `while` dan `loop` umumnya kurang praktis jika dibandingkan dengan `for in`. Tapi pastinya ada case dimana `while` dan/atau `loop` akan dibutuhkan.
+Iterasi array menggunakan `while` dan `loop` umumnya kurang praktis jika dibandingkan dengan `for in`. Tapi pastinya ada case di mana `while` dan/atau `loop` akan dibutuhkan.
 
 ## A.13.7. Iterasi array menggunakan `for in` dan *tuple*
 
@@ -277,7 +277,7 @@ for (i, name) in names.iter().enumerate() {
 
 Variabel `names` yang notabene bertipe data `[&str; 4]` perlu dikonversi ke tipe `Iterator` terlebih dahulu caranya lewat pemanggilan method `.iter()`. Kemudian dari tipe tersebut perlu dikonversi lagi ke tipe `Enumerate` dengan cara memanggil method `.enumerate()`.
 
-Setelah mendapatkan objek bertipe `Enumerate`, keyword `for in` digunakan untuk menampung tiap elemen array dalam bentuk *tuple* `(i, name)`. Variabel `i` disitu berisi counter iterasi, dan `name` adalah value-nya.
+Setelah mendapatkan objek bertipe `Enumerate`, keyword `for in` digunakan untuk menampung tiap elemen array dalam bentuk *tuple* `(i, name)`. Variabel `i` di situ berisi counter iterasi, dan `name` adalah value-nya.
 
 > - Lebih jelasnya mengenai traits dibahas pada chapter [Traits](/basic/traits)
 > - Lebih jelasnya mengenai `Enumerate` dibahas pada chapter [Trait ➜ Iterator](/basic/trait-iterator)
@@ -311,7 +311,7 @@ for sub_arr in data_arr {
 // spinach, jalapeno,
 ```
 
-Variabel `data_arr` pada contoh di atas bertipe data`[[&str; 2] 3]`, yang artinya adalah sebuah array dengan size 3, dengan isi elemen adalah juga array dengan size 2. Selalu ingat bahwa size array adalah fixed.
+Variabel `data_arr` pada contoh di atas bertipe data`[[&str; 2]; 3]`, yang artinya adalah sebuah array dengan size 3, dengan isi elemen adalah juga array dengan size 2. Selalu ingat bahwa size array adalah fixed.
 
 ---
 

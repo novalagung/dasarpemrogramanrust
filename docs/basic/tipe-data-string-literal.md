@@ -91,7 +91,7 @@ let var5 = r#"
 println!("{}", var5);
 ```
 
-Kode di atas hasilnya adalah ekuivalen dengan kode dibawah ini, yang dimana string didefinisikan dengan meng-escape karakter `"` menggunakan `\`.
+Kode di atas hasilnya adalah ekuivalen dengan kode di bawah ini, yang di mana string didefinisikan dengan meng-escape karakter `"` menggunakan `\`.
 
 ```rust
 let var6 = "

@@ -27,7 +27,7 @@ Di Rust, *by default*, hampir semua item adalah private. Apa efeknya ketika item
 1. Jika suatu item adalah private, maka item tersebut hanya bisa diakses dari *current module scope* dan dari *submodules* milik *current module*.
 2. Jika suatu item adalah publik, maka dia bisa diakses dari module lain di luar *current module scope*, dengan catatan parent module scope item tersebut harus publik.
 
-> Kita sepakati di sini, pada istilah **current module** kata *module* disitu bisa saja tertuju untuk module atau juga submodule
+> Kita sepakati di sini, pada istilah **current module** kata *module* di situ bisa saja tertuju untuk module atau juga submodule
 
 Dua point di atas sangat penting untuk dipahami, karena digunakan sebagai landasan pertimbangan dalam penyusunan hirarki module. Sebagai contoh, kita bisa membuat program yang hanya meng-expose API tertentu (yang memang diperlukan untuk diakses oleh publik), tanpa perlu ikut meng-expose detail implementasinya.
 
@@ -39,7 +39,7 @@ messaging::service_layer::some_black_magic
 
 Segmen pertama yaitu `messaging` pasti adalah publik, karena di-import ke *crate root*. Lalu bagaimana dengan segmen `service_layer` dan juga `some_black_magic`?
 
-Jika item `some_black_magic` disitu adalah publik, maka idealnya pengaksesan menggunakan path tersebut memungkinkan. Tapi kembali ke point ke-2 aturan yang sudah dibahas di atas, yaitu meskipun `some_black_magic` adalah publik, jika parent-nya (yang pada konteks ini adalah `service_layer`) adalah private, maka pengaksesan menggunakan path tersebut menghasilkan error.
+Jika item `some_black_magic` di situ adalah publik, maka idealnya pengaksesan menggunakan path tersebut memungkinkan. Tapi kembali ke point ke-2 aturan yang sudah dibahas di atas, yaitu meskipun `some_black_magic` adalah publik, jika parent-nya (yang pada konteks ini adalah `service_layer`) adalah private, maka pengaksesan menggunakan path tersebut menghasilkan error.
 
 Intinya, **sebuah item bisa diakses jika item tersebut adalah publik, dan parent item tersebut juga publik. Sedangkan default visibility untuk hampir semua item adalah private.**
 
@@ -80,13 +80,13 @@ fn main() {
 
   - Konstanta ini merupakan module item milik `messaging`.
   - Konstanta ini **bisa diakses** dari *current module scope* (`messaging`).
-  - Konstanta ini **bisa diakses** dari submodule milik *current module*, yaitu submodule dari `messaging`. Contohnya bisa dilihat pada fungsi `messaging::service_layer::some_black_magic` yang disitu ada statement pemanggilan `SOME_MESSAGE`.
+  - Konstanta ini **bisa diakses** dari submodule milik *current module*, yaitu submodule dari `messaging`. Contohnya bisa dilihat pada fungsi `messaging::service_layer::some_black_magic` yang di situ ada statement pemanggilan `SOME_MESSAGE`.
   - Konstanta ini **tidak bisa diakses** dari luar *current module scope* (`messaging`).
 
 - Submodule `messaging::service_layer` adalah **private**. Penjelasan:
 
   - Submodule ini merupakan module item milik `messaging`.
-  - Submodule ini **bisa diakses** dari *current module scope* (`messaging`). Contohnya bisa dilihat pada fungsi `messaging::say_hello` yang disitu ada statement pemanggilan `service_layer`.
+  - Submodule ini **bisa diakses** dari *current module scope* (`messaging`). Contohnya bisa dilihat pada fungsi `messaging::say_hello` yang di situ ada statement pemanggilan `service_layer`.
   - Submodule ini **bisa diakses** dari submodule milik *current module*, yaitu submodule dari `messaging`.
   - Submodule ini **tidak bisa diakses** dari luar *current module scope* (`messaging`).
 
@@ -94,7 +94,7 @@ fn main() {
 
   - Fungsi ini merupakan module item milik `messaging::service_layer`.
   - Fungsi ini **bisa diakses** dari *current module scope* (`messaging::service_layer`).
-  - Fungsi ini **bisa diakses** dari submodule milik *current module*, yaitu submodule dari `messaging::service_layer`. Contohnya bisa dilihat pada fungsi `messaging::say_hello` yang disitu ada statement pemanggilan fungsi `some_black_magic`.
+  - Fungsi ini **bisa diakses** dari submodule milik *current module*, yaitu submodule dari `messaging::service_layer`. Contohnya bisa dilihat pada fungsi `messaging::say_hello` yang di situ ada statement pemanggilan fungsi `some_black_magic`.
   - Fungsi ini **bisa diakses** dari luar *current module scope* (`messaging::service_layer`).
   - Namun meskipun demikian, bisa tidaknya fungsi ini diakses dari luar *current module scope* (`messaging::service_layer`) juga tergantung dengan visibility dari current module itu sendiri, yaitu `messaging::service_layer`.
   - Karena module `messaging::service_layer` adalah private, meskipun fungsi `some_black_magic` di dalamnya adalah publik, pengaksesan fungsi tersebut dari luar module scope `messaging::service_layer` tidak dimungkinkan.
@@ -106,7 +106,7 @@ fn main() {
   - Fungsi ini merupakan module item milik `messaging`.
   - Fungsi ini **bisa diakses** dari *current module scope* (`messaging`).
   - Fungsi ini **bisa diakses** dari submodule milik *current module*, yaitu submodule dari `messaging`.
-  - Fungsi ini **bisa diakses** dari luar *current module scope* (`messaging`). Contohnya bisa dilihat pada crate root fungsi `main`, disitu ada pemanggilan statement `say_hello`.
+  - Fungsi ini **bisa diakses** dari luar *current module scope* (`messaging`). Contohnya bisa dilihat pada crate root fungsi `main`, di situ ada pemanggilan statement `say_hello`.
 
 ## A.28.3. Re-export item
 
@@ -120,7 +120,7 @@ Pada praktik selanjutnya ini kita misalkan bahwa fungsi `say_hello` isinya meman
 
 Re-export item adalah sebuah cara untuk mem-*bypass* pengaksesan item yang secara hirarki memang tidak bisa diakses dari luar module (bisa jadi karena visibility item ataupun parent module nya adalah private). Dengan teknik ini, maka item pasti bisa diakses dari luar module.
 
-Item yang di-re-export akan menjadi item milik *current module* dimana statement re-export tersebut ditulis.
+Item yang di-re-export akan menjadi item milik *current module* di mana statement re-export tersebut ditulis.
 
 Cara re-export item adalah menggunakan keyword `pub use` kemudian diikuti dengan path yang ingin di-export dan juga nama export item dengan notasi penulisan berikut:
 
@@ -200,7 +200,7 @@ Dengan keyword `pub`, sebuah item visibility-nya menjadi publik.
 
 ### ◉ Keyword `pub(in path)`
 
-Keyword ini menjadikan visibility item hanya di dalam `path` yang ditulis di `pub(in path)`, dengan ketentuan `path` tersebut merupakan parent dari module item dimana keyword digunakan.
+Keyword ini menjadikan visibility item hanya di dalam `path` yang ditulis di `pub(in path)`, dengan ketentuan `path` tersebut merupakan parent dari module item di mana keyword digunakan.
 
 Contohnya bisa dilihat pada kode berikut. Fungsi `say_hello` didefinisikan publik dengan scope path ditentukan secara eksplisit adalah `crate::outer_mod`. Dengan demikian fungsi `say_hello` hanya bisa diakses dari dalam `outer_mod`.
 

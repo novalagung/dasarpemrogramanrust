@@ -32,7 +32,7 @@ Dalam bahasa yang menerapkan ARC, programmer dianjurkan untuk perhatian dan bija
 
 ### ◉ Manual memory management
 
-Manual memory management berarti programmer dibebani secara penuh dalam hal manajemen memori, mengharuskan programmer untuk super hati-hati dalam pengalokasian memory, kapan waktunya, dimana alokasinya (apakah *heap* atau *stack*), dan kapan harus melakukan operasi dealokasi memory.
+Manual memory management berarti programmer dibebani secara penuh dalam hal manajemen memori, mengharuskan programmer untuk super hati-hati dalam pengalokasian memory, kapan waktunya, di mana alokasinya (apakah *heap* atau *stack*), dan kapan harus melakukan operasi dealokasi memory.
 
 Metode manajemen memori ini dipakai dalam system programming contohnya bahasa C dan C++.
 
@@ -68,7 +68,7 @@ Hasilnya adalah angka biner berikut:
 
 ## A.32.3. Stack memory
 
-Masih dalam topik manajemen memori, ada dua hal lagi yang sangat penting untuk diketahui, yaitu *stack* dan *heap*. Keduanya adalah bagian dari memory, tempat dimana alokasi dilakukan.
+Masih dalam topik manajemen memori, ada dua hal lagi yang sangat penting untuk diketahui, yaitu *stack* dan *heap*. Keduanya adalah bagian dari memory, tempat di mana alokasi dilakukan.
 
 Data disimpan dalam stack memory dalam bentuk stack. Karakteristik dari stack:
 

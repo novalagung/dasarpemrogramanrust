@@ -237,7 +237,7 @@ Pada kode di atas, mutable borrow terjadi di banyak tempat, yaitu di block fungs
 
 ### ◉ Method `contains` milik `String`
 
-Pada contoh di atas kita menerapkan method baru bernama `contains`. Method ini tersedia untuk tipe data `String`, gunanya adalah untuk mengecek apakah string memiliki substring `x`, dimana `x` adalah argumen pemanggilan method. Method ini mengembalikan nilai `bool`.
+Pada contoh di atas kita menerapkan method baru bernama `contains`. Method ini tersedia untuk tipe data `String`, gunanya adalah untuk mengecek apakah string memiliki substring `x`, di mana `x` adalah argumen pemanggilan method. Method ini mengembalikan nilai `bool`.
 
 Contoh penerapan method `contains`:
 

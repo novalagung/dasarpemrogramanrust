@@ -121,7 +121,7 @@ Block kode definisi struct `Circle` cukup straightforward, isinya hanya 1 proper
 
 ### ◉ Block kode `impl X for Y`
 
-Notasi penulisan implementasi trait adalah `impl X for Y`, dimana `X` adalah trait yang ingin diimplementasikan dan `Y` adalah tipe data tujuan implementasi.
+Notasi penulisan implementasi trait adalah `impl X for Y`, di mana `X` adalah trait yang ingin diimplementasikan dan `Y` adalah tipe data tujuan implementasi.
 
 Pada contoh di atas, trait `Debug` diimplementasikan ke custom type struct `Circle`. Maka statement-nya adalah:
 
@@ -157,7 +157,7 @@ impl std::fmt::Debug for Circle {
 }
 ```
 
-> Tips untuk pengguna visual studio code dengan rust-analyzer extension ter-install, setelah selesai menulis block kode `impl`, cukup jalankan `ctrl+space` atau `cmd+space` untuk men-trigger autocomplete suggestion. Kemudian klik opsi method yang ada disitu, maka kode implementasi method langsung muncul dengan sendirinya.
+> Tips untuk pengguna visual studio code dengan rust-analyzer extension ter-install, setelah selesai menulis block kode `impl`, cukup jalankan `ctrl+space` atau `cmd+space` untuk men-trigger autocomplete suggestion. Kemudian klik opsi method yang ada di situ, maka kode implementasi method langsung muncul dengan sendirinya.
 
 ### ◉ Macro `write`
 
@@ -482,7 +482,7 @@ Tipe data aslinya tetap bisa diakses, tapi butuh tambahan effort. Lebih jelasnya
 
 ## A.36.8. *Associated types* pada trait
 
-Associated types adalah tipe data yang didefinisikan didalam suatu trait. Associated types tidak tidak memiliki tipe data konkret saat didefinisikan, namun ketika trait di-implementasikan maka tipe tersebut harus ditentukan tipe data konkritnya.
+Associated types adalah tipe data yang didefinisikan di dalam suatu trait. Associated types tidak tidak memiliki tipe data konkret saat didefinisikan, namun ketika trait di-implementasikan maka tipe tersebut harus ditentukan tipe data konkritnya.
 
 Lebih jelas silakan perhatikan kode berikut:
 

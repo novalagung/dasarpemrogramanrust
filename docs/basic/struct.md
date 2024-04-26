@@ -48,7 +48,7 @@ Struct adalah *hanya definisi structure*-nya saja, struct tidak menampung nilai 
 
 > Notasi `Vec<String>` merupakan salah satu contoh penerapan generics. Topik ini nantinya dibahas lebih detail pada chapter [Generics](/basic/generics).
 
-Struct merupakan tipe data data custom, yang berarti tipe data tersebut bisa digunakan dalam pembuatan variabel. Sebagai contoh dibawah ini, sebuah variabel bernama `user_one` didefinisikan dengan tipe adalah struct `User` yang telah dibuat.
+Struct merupakan tipe data data custom, yang berarti tipe data tersebut bisa digunakan dalam pembuatan variabel. Sebagai contoh di bawah ini, sebuah variabel bernama `user_one` didefinisikan dengan tipe adalah struct `User` yang telah dibuat.
 
 ```rust
 struct User {
@@ -277,7 +277,7 @@ let car_five = Car{
 
 Cukup tulis nama variabelnya saja tanpa value.
 
-Teknik *shorthand* ini bisa juga digunakan dalam fungsi. Contoh dibawah ini ada fungsi bernama `new_car` yang memiliki nama parameter adalah sama persis dengan nama property struct `Car`.
+Teknik *shorthand* ini bisa juga digunakan dalam fungsi. Contoh di bawah ini ada fungsi bernama `new_car` yang memiliki nama parameter adalah sama persis dengan nama property struct `Car`.
 
 ```rust
 fn new_car(brand: String, model: String) -> Car {
@@ -311,7 +311,7 @@ let point_one = Point { x: 3.14, y: 8.0 };
 
 ### ◉ *Destructuring assignment*
 
-Teknik penulisan ini bisa dipakai dalam case dimana nilai property struct perlu ditampung ke variabel baru. Contoh:
+Teknik penulisan ini bisa dipakai dalam case di mana nilai property struct perlu ditampung ke variabel baru. Contoh:
 
 ```rust
 let point_one = Point { x: 3.14, y: 8.0 };
@@ -343,7 +343,7 @@ struct StructOne;
 let data_one = StructOne;
 ```
 
-Teknik pembuatan struct ini berguna ketika ada case dimana ada kebutuhan untuk mengimplementasikan sebuah trait ke suatu tipe data. Lebih jelasnya akan dibahas pada chapter [Traits](/basic/traits).
+Teknik pembuatan struct ini berguna ketika ada case di mana ada kebutuhan untuk mengimplementasikan sebuah trait ke suatu tipe data. Lebih jelasnya akan dibahas pada chapter [Traits](/basic/traits).
 
 ## A.23.6. Debugging value struct menggunakan `#[derive(Debug)]`
 

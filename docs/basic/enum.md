@@ -23,7 +23,7 @@ enum NamaEnum {
 
 `NamaEnum` di atas adalah tipe data custom yang didefinisikan bertipe enum. Sedangkan `NilaiEnum1`, `Nilai2`, dan `NilaiEnumKe3` adalah yang disebut dengan enum value. Dengan itu maka ketiga enum values tersebut tipe datanya adalah sama, yaitu `NamaEnum`.
 
-Mari kita lanjut praktik. Berikut ini adalah definisi konstanta yang menggunakan tipe data string untuk menampung nilai konstan-nya. Lalu dibawahnya ada lagi definisi nilai konstan tetapi menggunakan enum sebagai tipe data yang digunakan.
+Mari kita lanjut praktik. Berikut ini adalah definisi konstanta yang menggunakan tipe data string untuk menampung nilai konstan-nya. Lalu di bawahnya ada lagi definisi nilai konstan tetapi menggunakan enum sebagai tipe data yang digunakan.
 
 ```rust
 // definisi konstanta
@@ -238,7 +238,7 @@ fn main() {
 }
 ```
 
-Bisa dilihat ada keunikan dalam penulisan seleksi kondisi `Food::MakananLainnya` dalam blok kode `match`. Disitu ada parameter bernama `m` yang parameter tersebut akan berisi data property jika memang *match* dengan `makanan_favorit`.
+Bisa dilihat ada keunikan dalam penulisan seleksi kondisi `Food::MakananLainnya` dalam blok kode `match`. Di situ ada parameter bernama `m` yang parameter tersebut akan berisi data property jika memang *match* dengan `makanan_favorit`.
 
 Coba jalankan untuk melihat hasilnya:
 

@@ -23,11 +23,11 @@ for i in 0..5 {
 
 ![perulangan for in](img/perulangan-for-in-1.png)
 
-Keyword `for in` jika digunakan pada notasi iterator `a..b` maka akan menghasilkan sebuah perulangan dari angka `a` hingga angka dibawah `b`.
+Keyword `for in` jika digunakan pada notasi iterator `a..b` maka akan menghasilkan sebuah perulangan dari angka `a` hingga angka di bawah `b`.
 
-Pada contoh di atas, `0..5` artinya adalah objek iterator yang dimulai dari angka `0` hingga dibawah `5` (yaitu `4`). Object iterator tersebut kemudian diiterasi, dan ditiap perulangan di-print menggunakan `println!("{i}")`. Dengan ini, nilai `i` muncul di layar console dimulai angka `0` hingga `4`.
+Pada contoh di atas, `0..5` artinya adalah objek iterator yang dimulai dari angka `0` hingga di bawah `5` (yaitu `4`). Object iterator tersebut kemudian diiterasi, dan ditiap perulangan di-print menggunakan `println!("{i}")`. Dengan ini, nilai `i` muncul di layar console dimulai angka `0` hingga `4`.
 
-Jika ingin melakukan perulangan dari `a` ke `b` (bukan dari `a` ke angka dibawah `b`) gunakan notasi iterator `a..=b`. Contoh:
+Jika ingin melakukan perulangan dari `a` ke `b` (bukan dari `a` ke angka di bawah `b`) gunakan notasi iterator `a..=b`. Contoh:
 
 ```rust
 for i in 0..=5 {

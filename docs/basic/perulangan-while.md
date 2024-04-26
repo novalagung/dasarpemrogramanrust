@@ -18,7 +18,7 @@ while kondisi {
 }
 ```
 
-Contoh berikut adalah penerapan `while` untuk operasi perulangan yang isinya menampilkan angka `i` dengan kondisi `i` dibawah `max`.
+Contoh berikut adalah penerapan `while` untuk operasi perulangan yang isinya menampilkan angka `i` dengan kondisi `i` di bawah `max`.
 
 ```rust
 let mut i = 0;
@@ -32,7 +32,7 @@ while i < max {
 
 ![keyword while](img/perulangan-while-1.png)
 
-Variabel `i` pada contoh di atas menjadi penentu kapan perulangan berhenti. Di dalam blok kode `while` (yang dimana akan dieksekusi setiap kondisi menghasilkan nilai `true`), nilai variabel `i` di-increment, membuat variabel `i` nilainya selalu bertambah 1 setiap kali perulangan. Perulangan akan berhenti ketika nilai `i` sudah tidak dibawah `max` lagi.
+Variabel `i` pada contoh di atas menjadi penentu kapan perulangan berhenti. Di dalam blok kode `while` (yang di mana akan dieksekusi setiap kondisi menghasilkan nilai `true`), nilai variabel `i` di-increment, membuat variabel `i` nilainya selalu bertambah 1 setiap kali perulangan. Perulangan akan berhenti ketika nilai `i` sudah tidak di bawah `max` lagi.
 
 ## A.10.2. Nested `while`
 

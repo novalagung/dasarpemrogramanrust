@@ -17,7 +17,7 @@ Tipe data `Result` adalah enum dengan isi 2 buah enum value:
 
 > - `T` dan `E` merupakan parameter generic. Lebih jelasnya mengenai generic dibahas pada chapter [Generics](/basic/generics).
 
-Tipe data `Result` memiliki notasi penulisan `Result<T, E>` dimana `T` digunakan pada enum value `Ok<T>` dan `E` digunakan enum value `Err<E>`.
+Tipe data `Result` memiliki notasi penulisan `Result<T, E>` di mana `T` digunakan pada enum value `Ok<T>` dan `E` digunakan enum value `Err<E>`.
 
 Cara penerapan tipe data ini bisa dilihat pada kode berikut:
 
@@ -233,7 +233,7 @@ println!("result: {}", number);
 // result: 0
 ```
 
-Closure harus dalam notasi `FnOnce(E) -> T` dimana `T` pada konteks ini adalah `f64`.
+Closure harus dalam notasi `FnOnce(E) -> T` di mana `T` pada konteks ini adalah `f64`.
 
 > Lebih jelasnya mengenai closure dibahas pada chapter [Closures](/basic/closures).
 

@@ -6,7 +6,7 @@ sidebar_label: Pengenalan Rust Programming
 
 Rust adalah sebuah bahasa pemrograman general purpose yang fokus pada performance, type safety, dan concurrency. Bahasa ini diciptakan sebagai alternatif bahasa pemrograman yang berfokus pada hal-hal yang cukup low-level tapi tetap men-support fitur yang sifatnya high-level.
 
-Rust dikembangkan oleh [Graydon Hoare](https://twitter.com/graydon_pub) sewaktu ia masih bekerja di Mozilla pada tahun 2009, kemudian di-maintain dibawah naungan Rust Foundation hingga sekarang.
+Rust dikembangkan oleh [Graydon Hoare](https://twitter.com/graydon_pub) sewaktu ia masih bekerja di Mozilla pada tahun 2009, kemudian di-maintain di bawah naungan Rust Foundation hingga sekarang.
 
 Rust memiliki beberapa kelebihan dibanding bahasa system-programming lainnya, yang di antaranya adalah:
 

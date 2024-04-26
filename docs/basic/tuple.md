@@ -23,7 +23,7 @@ println!("tuple_a: {:?}", tuple_a);
 
 Variabel `tuple_a` di atas bertipe data tuple, dengan tipe data spesifik per-elemennya bervariasi, ada string, numerik, array `[&str; 2]`, dan boolean.
 
-Untuk menampilkan nilai per-elemen, gunakan notasi `.N` dimana `N` merupakan indeks elemen. Contohnya seperti berikut:
+Untuk menampilkan nilai per-elemen, gunakan notasi `.N` di mana `N` merupakan indeks elemen. Contohnya seperti berikut:
 
 ```rust
 println!("index 0: {:?}", tuple_a.0);
@@ -90,7 +90,7 @@ tuple_b.3 = true;
 
 ### ◉ Packing tuple
 
-Adalah cara pembuatan tuple yang dimana nilai elemenya bersumber dari variabel lain.
+Adalah cara pembuatan tuple yang di mana nilai elemenya bersumber dari variabel lain.
 
 ```rust
 let name = "grayson";
