@@ -23,7 +23,7 @@ Pada notasi di atas, `operasiLogika` bisa diisi dengan variabel yang bertipe `bo
 ```rust
 let number_a = 3;
 if number_a < 5 {
-    println!("number_a adalah dibawah 5");
+    println!("number_a adalah di bawah 5");
 }
 
 let result_a = number_a >= 5;
@@ -34,7 +34,7 @@ if result_a {
 
 ![seleksi kondisi](img/seleksi-kondisi-if-1.png)
 
-Pada kode di atas ada dua buah blok kode `if`. Yang pertama mengecek hasil ekspresi logika `apakah variabel number_a dibawah 5?`. Jika hasilnya benar atau `true` maka blok kode setelahnya yang diapit tanda kurung kurawal akan dieksekusi, hasilnya menampilkan tulisan `angka adalah dibawah 5`.
+Pada kode di atas ada dua buah blok kode `if`. Yang pertama mengecek hasil ekspresi logika `apakah variabel number_a di bawah 5?`. Jika hasilnya benar atau `true` maka blok kode setelahnya yang diapit tanda kurung kurawal akan dieksekusi, hasilnya menampilkan tulisan `angka adalah di bawah 5`.
 
 Blok kode `if` kedua adalah mengecek nilai `bool` variabel `result_a`. Variabel `result_a` sendiri isinya berasal dari ekspresi logika `apakah variabel number_a lebih besar atau sama dengan 5?`. Jika hasilnya `true` maka blok kode setelahnya (yang diapit tanda kurung kurawal) dieksekusi. Namun, pada contoh di atas, hasilnya adalah `false`, karena variabel `number_a` nilainya adalah tidak lebih besar atau sama dengan 5, dengan demikian blok kode tidak dieksekusi.
 
@@ -47,7 +47,7 @@ let number_b = 3;
 if number_b == 2 {
     println!("number_b adalah 2");
 } else if number_b < 2 {
-    println!("number_b adalah dibawah 2");
+    println!("number_b adalah di bawah 2");
 } else {
     println!("number_b adalah di atas 2");
 }
@@ -148,7 +148,7 @@ println!("result_d adalah {result_d}");
 
 ## A.9.5. Kombinasi Keyword `let` dan `if`, Dengan Tipe Data Eksplisit
 
-Ada situasi dimana dalam pemanfaatan `let if` kita perlu men-specify secara eksplisit tipe data variabel penampung. Caranya sama seperti statement deklarasi variabel beserta tipe data, langsung tulis saja tipe data yang diinginkan setelah nama variabel dan sebelum operator `=`.
+Ada situasi di mana dalam pemanfaatan `let if` kita perlu men-specify secara eksplisit tipe data variabel penampung. Caranya sama seperti statement deklarasi variabel beserta tipe data, langsung tulis saja tipe data yang diinginkan setelah nama variabel dan sebelum operator `=`.
 
 Pada contoh berikut, variabel `result_e` saya definisikan tipenya adalah `string literal &str`.
 
@@ -157,7 +157,7 @@ let number_e = 3;
 let result_e: &str = if number_e == 2 {
     "angka adalah 2"
 } else if number_e < 2 {
-    "angka adalah dibawah 2"
+    "angka adalah di bawah 2"
 } else {
     "angka adalah di atas 2"
 };

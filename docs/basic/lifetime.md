@@ -188,7 +188,7 @@ Lifetime dituliskan dengan notasi `'nama_lifetime`. Dengan notasi tersebut, kita
 &'a mut i32 // => tipe data mutable reference i32 dengan lifetime 'a
 ```
 
-> Lifetime dan block label memiliki bentuk literal yang sama, keduanya diawali tanda kutip `'`. Yang membedakan hanya pada tempat dimana syntax tersebut ditulis.
+> Lifetime dan block label memiliki bentuk literal yang sama, keduanya diawali tanda kutip `'`. Yang membedakan hanya pada tempat di mana syntax tersebut ditulis.
 
 Kegunaan dari lifetime annotation adalah untuk menginformasikan compiler agar reference tidak langsung didealokasikan setelah eksekusi block selesai. Agar lebih jelas mari kita langsung terapkan saja pada fungsi `get_number` yang sudah ditulis. Silakan tambahkan lifetime dengan nama bebas. Di sini penulis gunakan `'my_lifetime`.nnnn
 
@@ -449,7 +449,7 @@ Run program, hasilnya sukses.
 
 ## A.42.8. Generic parameter + trait bounds + lifetime
 
-Lalu bagaimana jika ada fungsi yang disitu ada penerapan trait bounds, ada juga generic parameter, dan lifetime annotation. Cara penulisannya seperti apa? Silakan lihat contoh berikut:
+Lalu bagaimana jika ada fungsi yang di situ ada penerapan trait bounds, ada juga generic parameter, dan lifetime annotation. Cara penulisannya seperti apa? Silakan lihat contoh berikut:
 
 ```rust
 fn find_greater_number<'a, T>(
@@ -471,7 +471,7 @@ Fungsi `find_greater_number` di atas digunakan untuk mencari angka terbesar dari
 
 Tipe `T` diasosiasikan dengan trait `std::cmp::PartialOrd` agar variabel dengan tipe tersebut bisa digunakan dalam seleksi kondisi `if` yang ada dalam block fungsi tersebut.
 
-Ok, sampai sini semoga cukup jelas. Lalu bagaimana dengan lifetime annotation-nya? Karena lifetime annotation definisinya berada pada tempat yang sama dengan definisi tipe generic, maka langsung saja tulis disitu tanpa memperhatikan urutan. Sebagai contoh, dua definisi block fungsi berikut adalah ekuivalen.
+Ok, sampai sini semoga cukup jelas. Lalu bagaimana dengan lifetime annotation-nya? Karena lifetime annotation definisinya berada pada tempat yang sama dengan definisi tipe generic, maka langsung saja tulis di situ tanpa memperhatikan urutan. Sebagai contoh, dua definisi block fungsi berikut adalah ekuivalen.
 
 ```rust
 fn say_hello_v1<'abc, T>()

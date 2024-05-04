@@ -125,11 +125,11 @@ let mut message = String::new();
 
 ### ◉ `std::io::stdin()`
 
-Berbeda dengan `String`, path `std::io::stdin` tidak otomatis ter-import, jadi harus dituliskan secara full meskipun sama-sama dibawah crate *Rust Standard Library*.
+Berbeda dengan `String`, path `std::io::stdin` tidak otomatis ter-import, jadi harus dituliskan secara full meskipun sama-sama di bawah crate *Rust Standard Library*.
 
 Path `std::io` berisi module untuk keperluan I/O atau input output. Salah satu item yang ada dalam module ini adalah `stdin`, yang merupakan sebuah fungsi berguna untuk pembuatan objek handler untuk keperluan yang berhubungan dengan console (*stdin*). Objek tersebut ditampung oleh variabel `stdin_reader`.
 
-> Secara terminologi, *stdin* (yang merupakan kependekan dari *standard input*) adalah sebuah input stream dimana data dikirim dan dibaca oleh program.
+> Secara terminologi, *stdin* (merupakan kependekan dari *standard input*) adalah sebuah input stream yang nilainya dibaca oleh program sebagai inputan.
 
 Variabel `stdin_reader` ini kemudian kita gunakan untuk berinteraksi dengan input stream, untuk menangkap inputan user.
 
@@ -191,7 +191,7 @@ let stdin_reader = stdin();
 
 Dengan menggunakan `use` kita bisa memperpendek pengaksesan sebuah path.
 
-O iya keyword ini bisa digunakan dimana saja, artinya tidak harus di luar fungsi `main`. Bisa saja di dalam fungsi, atau di dalam blok kode seleksi kondisi atau lainnya.
+O iya keyword ini bisa digunakan di mana saja, artinya tidak harus di luar fungsi `main`. Bisa saja di dalam fungsi, atau di dalam blok kode seleksi kondisi atau lainnya.
 
 ### ◉ Import beberapa items yang parent path-nya yang sama
 
@@ -208,7 +208,7 @@ use std::io::{stdin, stderr};
 
 ### ◉ Import semua items dalam suatu path
 
-Suatu path bisa saja memiliki cukup banyak item/child dibawahnya. Sebagai contoh, path `std::io` merupakan parent path dari `stdin` dan `stderr`. Selain dua items tersebut, ada juga item lainnya.
+Suatu path bisa saja memiliki cukup banyak item/child di bawahnya. Sebagai contoh, path `std::io` merupakan parent path dari `stdin` dan `stderr`. Selain dua items tersebut, ada juga item lainnya.
 
 Ada shortcut yang membuat penulisan import path lebih praktis, tidak perlu menuliskan satu-per-satu, caranya adalah menggunakan `*`. Sebagai contoh:
 

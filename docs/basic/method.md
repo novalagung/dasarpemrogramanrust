@@ -10,7 +10,7 @@ Pada chapter ini kita akan belajar tentang method beserta perbedaannya dengan *a
 
 Method adalah *associated item* yang hanya bisa diakses lewat instance/object, berbeda dengan *associated function* yang pengaksesan fungsinya via tipe data struct.
 
-Silakan lihat ilustrasi kode berikut, lalu pelajari penjelasan dibawahnya untuk mencari tau perbedaan *associated function* vs method.
+Silakan lihat ilustrasi kode berikut, lalu pelajari penjelasan di bawahnya untuk mencari tau perbedaan *associated function* vs method.
 
 ```rust
 struct Car {
@@ -28,7 +28,7 @@ let my_car: Car = Car::new();
 let info: String = my_car.info();
 ```
 
-- Fungsi `new` disitu adalah *associated function* milik struct `Car`. Dengannya object baru bernama `my_car` bertipe `Car` dibuat.
+- Fungsi `new` di situ adalah *associated function* milik struct `Car`. Dengannya object baru bernama `my_car` bertipe `Car` dibuat.
 - Object `my_car` adalah variabel bertipe `Car`. Via object tersebut method bernama `info` diakses.
 - Method `info` tidak bisa diakses via struct `Car`. Dan *associated function* `new` juga tidak bisa diakses dari instance/object `my_car`.
 
@@ -200,7 +200,7 @@ impl Car {
 
 ![Method](img/method-3.png)
 
-Hmm, tapi kenapa terdeteksi error? Penyebabnya error tersebut adalah karena **mutable reference** tidak digunakan dalam pengaksesan current object yang padahal ada operasi *mutable* atau perubahan nilai terhadap property disitu. Syntax `&self` artinya operasi peminjaman object `self` adalah *read only*.
+Hmm, tapi kenapa terdeteksi error? Penyebabnya error tersebut adalah karena **mutable reference** tidak digunakan dalam pengaksesan current object yang padahal ada operasi *mutable* atau perubahan nilai terhadap property di situ. Syntax `&self` artinya operasi peminjaman object `self` adalah *read only*.
 
 Cara mengambil mutable reference dari object `self` adalah dengan menggunakan `&mut self`. Cara tersebut kurang lebih sama seperti pengambilan mutable reference dari variabel biasa.
 

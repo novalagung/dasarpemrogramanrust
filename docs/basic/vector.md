@@ -14,11 +14,11 @@ Vector memiliki 3 buah atribut yg penting untuk diketahui:
 - lebar atau size
 - kapasitas (representasi dari seberapa banyak memori di-booking untuk data vector tersebut)
 
-Vector bisa bertambah jumlah isinya selama size dibawah kapasitas yang sudah dialokasikan. Jika suatu ketika vector isinya bertambah lebih banyak dari jumlah alokasi maksimal kapasitas, maka vector akan dialokasikan ulang dengan kapasitas yang lebih besar.
+Vector bisa bertambah jumlah isinya selama size di bawah kapasitas yang sudah dialokasikan. Jika suatu ketika vector isinya bertambah lebih banyak dari jumlah alokasi maksimal kapasitas, maka vector akan dialokasikan ulang dengan kapasitas yang lebih besar.
 
 ## A.16.1. Tipe data `Vec<T>`
 
-`Vec<T>` adalah tipe data yang merepresentasikan vector, dimana `T` adalah generics. Vector datanya dialokasikan di heap memory.
+`Vec<T>` adalah tipe data yang merepresentasikan vector, yang mana `T` adalah generics. Vector datanya dialokasikan di heap memory.
 
 > - Lebih jelasnya mengenai generic dibahas pada chapter [Generics](/basic/generics)
 > - Lebih jelasnya mengenai heap dibahas pada chapter [Basic Memory Management](/basic/basic-memory-management)
@@ -108,7 +108,7 @@ Bisa dilihat sekarang `data_one` isinya adalah 4 elemen dan atribut size-nya coc
 
 Perubahan kapasitas atau realokasi vector terjadi ketika sebuah vector isinya bertambah lebih banyak dari jumlah alokasi maksimal kapasitas.
 
-Lalu apa efeknya? secara high level bisa dibilang tidak ada, namun kalau dibahas lebih rinci, efeknya adalah di sisi alokasi space untuk menampung elemen. Terjadi proses realokasi dimana vector yang baru akan memiliki kapasitas lebih besar.
+Lalu apa efeknya? secara high level bisa dibilang tidak ada, namun kalau dibahas lebih rinci, efeknya adalah di sisi alokasi space untuk menampung elemen. Proses realokasi menghasilkan vector yang baru dengan kapasitas lebih besar.
 
 ### ◉ Mengubah value sebuah elemen menggunakan notasi `[i]`
 
@@ -338,7 +338,7 @@ println!("data: {:?}", vec_10);
 
 ![Vector](img/vector-12.png)
 
-Tipe data `VecDeque<T>` tidak otomatis di-import. Kita perlu mengimport path dimana tipe data itu berada menggunakan keyword `use`.
+Tipe data `VecDeque<T>` tidak otomatis di-import. Kita perlu mengimport path di mana tipe data tersebut berada menggunakan keyword `use`.
 
 ```rust
 use std::collections::VecDeque;

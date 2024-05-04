@@ -170,13 +170,13 @@ impl NamaStruct {
 
 ## A.24.3. Tipe data `Self`
 
-Tipe data `Self` (perhatikan huruf `S`-nya adalah kapital) merupakan representasi untuk tipe data struct atau trait dimana blok kode `impl` dideklarasikan.
+Tipe data `Self` (perhatikan huruf `S`-nya adalah kapital) merupakan representasi untuk tipe data struct atau trait di mana blok kode `impl` dideklarasikan.
 
 > Tipe data `Self` hanya bisa digunakan dalam blok kode `impl`
 
 Sebagai contoh, pada kode yang sudah dipraktikkan, keyword `impl` diterapkan dalam pembuatan *associated items* untuk struct `LegoSet`. Dalam blok kode tersebut, tipe data `LegoSet` bisa diganti dengan `Self`.
 
-Silakan lihat contoh dibawah ini, ada 4 buah cara deklarasi fungsi `new` yang kesemuanya adalah ekuivalen.
+Silakan lihat contoh di bawah ini, ada 4 buah cara deklarasi fungsi `new` yang kesemuanya adalah ekuivalen.
 
 ```rust
 impl LegoSet {

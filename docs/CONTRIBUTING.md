@@ -25,6 +25,7 @@ Berikut merupakan hall of fame kontributor yang sudah berbaik hati menyisihkan w
 
 1. [Acep Saepudin](https://github.com/acepsaepudin)
 1. [Afifurrohman](https://github.com/afifurrohman-id)
+1. [ardiantovn](https://github.com/ardiantovn)
 1. [Fal](https://github.com/d0tf)
 1. [Fredianto](https://github.com/nferdazel)
 1. [I Putu Saputrayana](https://github.com/iyansr)

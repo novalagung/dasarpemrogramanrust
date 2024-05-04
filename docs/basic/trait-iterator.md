@@ -10,7 +10,7 @@ Iterator adalah salah satu trait dan tipe data custom penting pada Rust programm
 
 `Iterator` adalah sebuah nama yang dipakai sebagai nama module item dalam **Rust Standard Library** maupun **Rust Core Library**, digunakan untuk iterasi data dan operasi lain yang berhubungan dengannya.
 
-Iterator sendiri merupakan istilah untuk object atau trait yang bisa diiterasi, baik menggunakan keyword `for in` ataupun menggunakan method iterator seperti `for_each` (yang juga akan kita bahas disini).
+Iterator sendiri merupakan istilah untuk object atau trait yang bisa diiterasi, baik menggunakan keyword `for in` ataupun menggunakan method iterator seperti `for_each` (yang juga akan kita bahas di sini).
 
 ### ◉ Trait `Iterator` & `IntoIterator`
 
@@ -256,7 +256,7 @@ println!("{:?}", result2);
 // [1, 2, 3, 4]
 ```
 
-Contoh lainnya bisa dilihat pada *section* [A.48.2. Pemanfaatan tipe data `Iterator`](/basic/trait-iterator#a482-pemanfaatan-tipe-data-iterator) dimana dilakukan mapping data slice numerik ke bentuk yang sama tapi nilai setiap element adalah kuadrat, dan juga ke bentuk lain dengan tipe data berbeda.
+Contoh lainnya bisa dilihat pada *section* [A.48.2. Pemanfaatan tipe data `Iterator`](/basic/trait-iterator#a482-pemanfaatan-tipe-data-iterator), di situ terdapat operasi mapping data slice numerik ke bentuk yang sama tapi nilai setiap element adalah kuadrat, dan ke bentuk lain dengan tipe data berbeda.
 
 ### ◉ Method `rev`
 

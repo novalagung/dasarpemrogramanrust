@@ -35,7 +35,7 @@ chrono = "0.4.23"
 
 ### ◉ Tipe `DateTime<Local>`
 
-`DateTime<Local>` (gabungan dari tipe data `chrono::datetime::DateTime` dan generic `chrono::offset::local::Local`) adalah representasi untuk tipe data datetime dengan **timezone offset sesuai dengan dimana program dijalankan**.
+`DateTime<Local>` (gabungan dari tipe data `chrono::datetime::DateTime` dan generic `chrono::offset::local::Local`) adalah representasi untuk tipe data datetime dengan **timezone offset sesuai dengan di mana program dijalankan**.
 
 Sebagai contoh, penulis berlokasi di Jawa Timur, maka ketika ada suatu data bertipe `DateTime<Local>` artinya timezone offset-nya adalah WIB (atau GMT+7).
 
@@ -83,7 +83,7 @@ Statement di atas menghasilkan data datetime dengan isi `2023-03-01 01:02:03 UTC
 
 ### ◉ Via `DateTime::<Utc>::from()`
 
-Cara ini pas digunakan pada situasi dimana kita perlu membuat object datetime dari sebuah [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
+Cara ini pas digunakan pada situasi di mana kita perlu membuat object datetime dari sebuah [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 ```rust
 let sample_date3_in_utc = DateTime::<Utc>::from(UNIX_EPOCH + Duration::from_secs(1524885322));
@@ -166,7 +166,7 @@ Rust memilik caranya sendiri dalam pengelolaan data datetime (yang menurut penul
 
 Tipe data ini sangat berguna dibeberapa case yang kebanyakan adalah perihal konversi data ke bentuk `DateTime`.
 
-Mari kita praktekan dengan contoh agar lebih jelas. Dimisalkan ada keperluan dimana data UNIX time perlu di konversi ke 2 bentuk `DateTime`, dengan timezone offset `Utc` dan `Local`. Pada kasus ini, cara ke-3 dari praktek sebelumnya bisa dilakukan untuk penyelesaian case ini.
+Mari kita praktekan dengan contoh agar lebih jelas. Dimisalkan ada keperluan di mana data UNIX time perlu di konversi ke 2 bentuk `DateTime`, dengan timezone offset `Utc` dan `Local`. Pada kasus ini, cara ke-3 dari praktek sebelumnya bisa dilakukan untuk penyelesaian case ini.
 
 ```rust
 let timestamp: u64 = 1524885322;

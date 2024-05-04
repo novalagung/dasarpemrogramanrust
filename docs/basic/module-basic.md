@@ -16,7 +16,7 @@ Di Rust, module memiliki hirarki (biasa disebut dengan *module tree*) yang *root
 
 Rust memiliki 2 jenis modul, yaitu *normal module* dan *inline module*. Pembahasan dimulai dengan normal module terlebih dahulu.
 
-Keyword `mod` digunakan untuk mendefinisikan/mendaftarkan sebuah module. Nama module menjadi path dimana isi module atau *module item* harus berada. Sebagai contoh:
+Keyword `mod` digunakan untuk mendefinisikan/mendaftarkan sebuah module. Nama module menjadi path di mana isi module atau *module item* harus berada. Sebagai contoh:
 
 - module yang didefinisikan dengan nama `my_number`, maka item-nya harus berada pada file `my_number.rs` atau `my_number/mod.rs`
 - module yang didefinisikan dengan nama `my_io`, maka item-nya harus berada pada file `my_io.rs` atau `my_io/mod.rs`
@@ -68,11 +68,11 @@ Ok, kita telah menyiapkan satu item milik module `my_io` yaitu sebuah fungsi ber
 
 Keyword `pub` digunakan untuk menjadikan suatu item menjadi **public**, agar bisa diakses dari luar module.
 
-Fungsi `read_entry` ini berada dalam module `my_io`. Jika tidak ada keyword `pub` disitu, maka fungsi `read_entry` hanya bisa diakses dari dalam `my_io` saja, tidak bisa diakses dari luar module contohnya seperti dari `main.rs`. Dengan menjadikan `read_entry` sebagai fungsi yang public, maka fungsi tersebut bisa diakses dari `main.rs`.
+Fungsi `read_entry` ini berada dalam module `my_io`. Jika tidak ada keyword `pub` di situ, maka fungsi `read_entry` hanya bisa diakses dari dalam `my_io` saja, tidak bisa diakses dari luar module contohnya seperti dari `main.rs`. Dengan menjadikan `read_entry` sebagai fungsi yang public, maka fungsi tersebut bisa diakses dari `main.rs`.
 
 > Lebih jelasnya mengenai keyword `pub` dibahas pada chapter [Module System ➜ Visibility & Privacy](/basic/visibility-privacy)
 
-Isi module sudah siap, selanjutnya lanjut ke pendefinisian modul. Umumnya pada bahasa pemrograman, definisi module adalah ada dalam file dimana isi module berada, namun tidak untuk Rust.
+Isi module sudah siap, selanjutnya lanjut ke pendefinisian modul. Umumnya pada bahasa pemrograman, definisi module adalah ada dalam file di mana isi module berada, namun tidak untuk Rust.
 
 Di Rust, definisi sebuah module (sekali lagi bukan item/isinya ya, tapi definisi dari module itu sendiri) dituliskan pada file terpisah, yaitu di file entrypoint crate, yaitu `main.rs` atau `lib.rs`.
 
@@ -234,7 +234,7 @@ Method `parse` menghasilkan data bertipe *generic result type* atau `Result<T, E
 
 Sampai bagian ini kita telah belajar tentang module beserta 2 macam cara penerapannya.
 
-Sebuah module bisa saja memiliki module dibawahnya (biasa disebut submodule), dan hal ini adalah konsep yang umum dalam bahasa pemrograman. Di Rust, aturan dalam pembuatan submodule masih sama seperti module, perbedaannya adalah tempat dimana submodule didefinisikan. Jika pada root module definisi ada pada file `main.rs` atau `lib.rs`, maka pada submodule definisi ada pada file dimana *parent module* berada.
+Sebuah module bisa saja memiliki module di bawahnya (biasa disebut submodule), dan hal ini adalah konsep yang umum dalam bahasa pemrograman. Di Rust, aturan dalam pembuatan submodule masih sama seperti module, perbedaannya adalah tempat di mana submodule didefinisikan. Jika pada root module definisi ada pada file `main.rs` atau `lib.rs`, maka pada submodule definisi ada pada file di mana *parent module* berada.
 
 Sebagai contoh jika pada program sebelumnya kita tambahkan module `my_number` yang sudah dibuat, jika ada submodule dengan nama `conversion_utility`, maka definisi module berada di `my_number/mod.rs` dan itemnya di `my_number/conversion_utility/mod.rs`.
 
