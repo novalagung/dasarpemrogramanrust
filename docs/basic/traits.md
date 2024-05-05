@@ -32,7 +32,13 @@ Perihal point pertama, intinya kita bisa menciptakan trait sesuai kebutuhan. Ter
 Ok, biar lebih jelas, mari lanjut pembelajaran menggunakan contoh. Kita mulai dengan pembahasan tentang cara implementasi trait. Contoh yang digunakan adalah implementasi salah satu trait milik Rust standard library, yaitu trait `std::fmt::Debug`.
 
 ## A.36.2. Implementasi trait
+Dalam mengimplementasikan trait di Rust, kita tidak bisa mengimplementasikan trait external ke type external.
+Contohnya kita tidak bisa mengimplementasikan `Display` trait ke type `Vec<T>`
 
+Tapi kita bisa mengimplementasikan trait local ke type external, demikian juga sebaliknya kita bisa implement trait external ke type local.
+> CATATAN: Aturan ini di sebut [orphan rule dan coherence](https://github.com/Ixrec/rust-orphan-rules)
+
+Ok, biar lebih jelas mari kita coba implementasikan sebuah external trait ke type local.
 Kita pilih trait `std::fmt::Debug` milik Rust standard library untuk belajar cara implementasi trait pada tipe data.
 
 Kegunaan dari trait ini adalah: jika di-implement ke tipe data tertentu maka data dengan tipe tersebut bisa di-print via macro `println` atau macro printing lainnya, dengan menggunakan formatted print `{:?}`.
@@ -208,7 +214,52 @@ impl std::fmt::Display for Circle {
 > - Link dokumentasi trait `Debug` https://doc.rust-lang.org/std/fmt/trait.Debug.html
 > - Link dokumentasi trait `Display` https://doc.rust-lang.org/std/fmt/trait.Display.html
 
-## A.36.3. Membuat custom trait
+## A.36.3. Wrapper Pattern
+Sebelumnya kita telah mengetahui bahwa trait external tidak bisa di implementasikan ke type external.
+Namun bagaimana jika kita tetap ingin menggunakannya?
+Disinilah kita bisa memakai `Wrapper pattern`, kita bisa membungkus type external tersebut dengan type local kita.
+
+Ok, mari mulai praktikkan skenario di atas. Pertama siapkan project dengan struktur berikut:
+
+```bash title="package source code structure"
+my_package
+│─── Cargo.toml
+└─── src
+     └─── main.rs
+```
+
+Pertama tambahkan kode berikut di file `main.rs`
+
+```rust
+struct Wrapper(Vec<String>);
+```
+
+Disini kita mendefinisikan tuple struct dengan nama `Wrapper` dan mempunyai field `Vec<String>` yang dimana itu adalah type external
+
+selanjutnya kita akan coba untuk mengimplementasikan trait `Display` untuk type `Wrapper`
+```rust
+use std::fmt::{write, Display};
+
+impl Display for Wrapper {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write(f, format_args!("{:?}", self.0))
+    }
+}
+```
+
+Terakhir coba gunakan type `Wrapper` di main function dan coba gunakan `println!` macro untuk menampilkan outputnya di terminal.
+```rust
+fn main() {
+    let v = Wrapper(vec![String::from("a"), String::from("b")]);
+    println!("{}", v)
+}
+```
+Sekarang kita tidak perlu `{:?}` formatter lagi.
+
+Output:
+> ["a", "b"]
+
+## A.36.4. Membuat custom trait
 
 Pada section di atas kita telah membahas bagaimana cara implementasi traits ke tipe data. Pada bagian ini kita akan belajar tentang cara membuat definisi trait (membuat custom trait).
 
@@ -334,7 +385,37 @@ Keyword `as` digunakan untuk casting tipe data. Keyword ini bisa diterapkan pada
 3.14 as i32; // ===> 3.14 dikonversi ke tipe i32, hasinya 3 karena ada pembulatan
 ```
 
-## A.36.4. Trait sebagai tipe parameter
+Sebelumnya kita sudah implementasikan trait external ke type local, sekarang kita akan coba sebaliknya, yaitu trait local ke external type.
+
+Pada kode sebelumnya tambahkan kode berikut:
+```rust
+//...
+trait Message {
+    fn log(&self);
+}
+
+impl Message for String {
+    fn log(&self) {
+        println!("{}", self);
+    }
+}
+
+```
+Di sini kita mengimplementasikan method `log` untuk type `String`.
+
+Lalu sekarang coba panggil di main function:
+```
+fn main() {
+    //...
+    let s = String::from("hello");
+    s.log();
+}
+```
+
+Output:
+> hello
+
+## A.36.5. Trait sebagai tipe parameter
 
 Trait bisa digunakan sebagai tipe data parameter sebuah fungsi, contoh notasi penulisannya bisa dilihat pada kode berikut:
 
@@ -371,7 +452,7 @@ fn calculate_and_print_result(name: String, item: &(impl Area + Circumference)) 
 
 Tambahkan tanda `()` sebelum `impl NamaTrait`, lalu ganti `NamaTrait` dengan traits apa saja yang diinginkan dengan separator tanda `+`.
 
-## A.36.5. Trait bound syntax
+## A.36.6. Trait bound syntax
 
 Penerapan trait sebagai parameter fungsi juga bisa dituliskan dalam notasi yang memanfaatkan generic. Teknik penulisan ini disebut dengan *trait bound syntax*.
 
@@ -407,7 +488,7 @@ Pada contoh di atas fungsi `some_function` memiliki 2 generics param, yaitu `T` 
 
 > Lebih jelasnya mengenai generics dibahas pada chapter [Generics](/basic/generics)
 
-## A.36.6. Trait `where` clause
+## A.36.7. Trait `where` clause
 
 Ada lagi alternatif penulisan trait bound syntax, yaitu menggunakan keyword `where`. Contoh pengaplikasiannya bisa dilihat pada kode berikut. Semua definisi fungsi di bawah ini adalah ekuivalen.
 
@@ -437,7 +518,7 @@ where
 
 > Lebih jelasnya mengenai generics dibahas pada chapter [Generics](/basic/generics)
 
-## A.36.7. Trait sebagai return type
+## A.36.8. Trait sebagai return type
 
 Trait bisa juga digunakan sebagai tipe data return value. Caranya gunakan notasi penulisan `impl NamaTrait` sebagai tipe data.
 
@@ -480,7 +561,7 @@ Salah satu konsekuensi dalam penerapan trait sebagai return type adalah: tipe da
 
 Tipe data aslinya tetap bisa diakses, tapi butuh tambahan effort. Lebih jelasnya dibahas pada chapter [Trait ➜ Conversion (From & Into)](#/wip/trait-conversion-from-into).
 
-## A.36.8. *Associated types* pada trait
+## A.36.9. *Associated types* pada trait
 
 Associated types adalah tipe data yang didefinisikan di dalam suatu trait. Associated types tidak tidak memiliki tipe data konkret saat didefinisikan, namun ketika trait di-implementasikan maka tipe tersebut harus ditentukan tipe data konkritnya.
 
@@ -585,7 +666,7 @@ Silakan jalankan program dan lihat hasilnya.
 
 O iya, pada `main.rs`, module item `shape::Shape` perlu di-import meskipun kita tidak menggunakan `trait` tersebut secara langsung. Jika tidak di-import, maka method `.area()` milik `Circle` dan `Square` tidak bisa diakses.
 
-## A.36.9. Attribute `derive`
+## A.36.10. Attribute `derive`
 
 Ada cara lain untuk mengimplementasikan suatu trait ke dalam tipe data selain dengan menuliskan implementasinya secara eksplist, caranya menggunakan attribute `derive`.
 
