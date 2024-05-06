@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Belajar Rust (Gratis!)
+title: Tutorial Belajar Rust (Gratis!)
 sidebar_label: Dasar Pemrograman Rust
 ---
 
