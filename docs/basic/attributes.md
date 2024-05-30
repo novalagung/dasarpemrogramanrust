@@ -163,7 +163,7 @@ Bisa dilihat, hasilnya program tereksekusi tanpa error. Enum `Superhero` kini me
 
 ## A.49.3. Attribute `cfg` / *configuration*
 
-Attribute `cfg` digunakan untuk menentukan beberapa konfigurasi yang berhubungan dengan arsitekture hardware/prosesor.
+Attribute `cfg` digunakan untuk menentukan beberapa konfigurasi seperti conditional compilation atau target arsitekture hardware/prosesor.
 
 Salah satu contoh penerapannya bisa dilihat pada kode berikut. Ada 2 buah module yang namanya sama persis, perbedaannya adalah satu didefinisikan khusus untuk platform `linux`, dan satunya lagi untuk platform `windows`. Hal seperti ini bisa dilakukan menggunakan attribute `cfg` dengan key `target_os`.
 
@@ -204,6 +204,49 @@ fn main() {
         util::say_something();
     }
 }
+```
+
+Selain itu, kita juga bisa menggunakannya untuk conditional compilation based on profile.
+
+Mungkin di bahasa pemrograman lain kita biasa mengunakan `if` condition dan `ENV` environment variable untuk menjalankan code tertentu saat app berjalan di environment production atau local.
+
+Di rust, kita bisa menggunakan sekenario ini pada compile time!.
+
+Pada kode sebelumnya coba tambahkan kode berikut pada main function:
+```rust
+fn main() {
+    // ....    
+    if cfg!(debug_assertions) {
+        println!("Debugging....")
+    } else {
+        println!("Release....")    
+    }
+    
+    #[cfg(debug_assertions)]
+    {
+        println!("Simulate Load env file...");
+    }
+    
+    
+    #[cfg(not(debug_assertions))]
+    {
+        println!("🦀")
+    }
+    
+}
+```
+Jika Kode di atas di jalankan dengan `cargo run` maka akan menghasilkan output: 
+```
+Debugging....
+Simulate Load env file...
+```
+
+By default cargo run menggunakan profile `debug` maka output tersebut lah yang akan muncul.
+
+Sebaliknya jika kita menggunakan command `cargo run --release` maka cargo akan menggunakan profile `release`.
+```
+Release....
+🦀
 ```
 
 Ada beberapa key yang tersedia pada attribute `cfg`, di antaranya:
@@ -248,7 +291,7 @@ Opsi value yang tersedia:
 
 ### ◉ Other configuration
 
-Ada beberapa key konfigurasi lainnya yang tersedia. Lebih detailnya silakan lihat di https://doc.rust-lang.org/reference/conditional-compilation.html#set-configuration-options.
+Ada beberapa key konfigurasi lainnya yang tersedia. Lebih detailnya silakan lihat di https://doc.rust-lang.org/reference/conditional-compilation.html
 
 ## A.49.4. Attribute *linting* & *diagnostic*
 
@@ -291,6 +334,32 @@ Pada kode di atas, attribute name `allow` digunakan pada 3 tempat:
 
 Dengan penambahan 3 attribute di atas program akan tereksekusi tanpa warning.
 
+Selain itu ada juga attribute `forbid`.
+
+Pada kode sebelumnya silahkan tambahkan kode berikut di bagian paling atas:
+```rust
+#![forbid(unsafe_code)]
+//...
+```
+
+Lalu di main function nya tambahkan juga kode berikut:
+```rust
+fn main() {
+    //...
+
+    #[allow(unsafe_code)]
+    unsafe{};
+}
+```
+pada kode di atas, attribute `forbid` di gunakan pada 2 tempat:
+- `#![forbid(unsafe_code)]` inner attribute, digunakan untuk semua crate tidak boleh menggunakan unsafe block (unsafe block akan dibahas di chapter: [Safe & Unsafe](#/wip/safe-unsafe)).
+- `#[allow(unsafe_code)]` outer attribute, disini kita mencoba untuk meng**ignore** aturan `forbid`.
+
+dengan `forbid` kita bisa membuat kode yang melanggar aturan lint tersebut menjadi error dan tidak bisa di `allow` atau dengan kata lain `forbid` tidak bisa di **ignore**.
+
+Maka kode di atas akan menghasilkan error.
+
+
 ![Attribute](img/attribute-5.png)
 
 Ada beberapa attribute *key* yang bisa digunakan untuk override *lint* warning:
@@ -299,7 +368,11 @@ Ada beberapa attribute *key* yang bisa digunakan untuk override *lint* warning:
 
 - `#[warn(lint_rule)]` untuk memunculkan warning untuk suatu *lint rule* yang *default*-nya tidak memunculkan warning.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/warn-by-default.html.
 
-- `#[deny(lint_rule)]` atau `#[forbid(lint_rule)]` untuk melarang suatu *lint rule* yang *default*-nya adalah diperbolehkan.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/deny-by-default.html.
+- `#[deny(lint_rule)]` untuk melarang suatu *lint rule* yang *default*-nya adalah diperbolehkan.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/deny-by-default.html.
+
+- `#[forbid(lint_rule)]` untuk melarang suatu *lint rule* yang *default*-nya adalah diperbolehkan **dan tidak bisa di `allow` lagi**.
+> PERINGATAN! Tidak di rekomendasikan untuk menggunakan `forbid` dengan lint rule selain dari `unsafe_code`, karena akan menyebabkan masalah backward compatibility di beberapa library yang menggunakan macro misalnya.
+> [Referensi](https://github.com/tokio-rs/tokio/issues/6448#issuecomment-2029480131).
 
 Selain 3 attribute di atas, ada juga beberapa attribute lainnya untuk keperluan *diagnostic*, di antaranya:
 
