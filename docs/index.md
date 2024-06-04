@@ -6,7 +6,7 @@ sidebar_label: Dasar Pemrograman Rust
 
 Rust adalah sebuah bahasa pemrograman *general purpose* yang fokus pada *performance*, *type safety*, dan *concurrency*. Bahasa ini diciptakan sebagai alternatif bahasa pemrograman yang berfokus pada hal-hal yang cukup *low-level* tapi tetap men-support fitur yang sifatnya *high-level*.
 
-Website/ebook Dasar Pemrograman Rust ini dibuat dengan harapan bisa menjadi alternatif referensi belajar Rust, disajikan dengan penyampaian yang cocok untuk pembaca di level *beginner*, dan gratis. Buku ini ada bukan untuk menggantikan *the book*, melainkan sebagai komplemen.
+Website/ebook tutorial Dasar Pemrograman Rust ini dibuat dengan harapan bisa menjadi alternatif referensi belajar Rust, disajikan dengan penyampaian yang cocok untuk pembaca di level *beginner*, dan gratis. Buku ini ada bukan untuk menggantikan *the book*, melainkan sebagai komplemen.
 
 [Dokumentasi *official* Rust](https://www.rust-lang.org/learn) sangat lengkap, dan aktif di-update oleh komunitas. Jika pembaca sudah memiliki banyak pengalaman dalam programming, sudah paham mengenai system programming seperti C atau C++, maka penulis sangat anjurkan untuk langsung menggunakan [*the book*](https://www.rust-lang.org/learn) sebagai referensi belajar.
 
@@ -30,7 +30,7 @@ Website/ebook ini merupakan project open source, teruntuk siapapun yang ingin be
 
 ## Lisensi dan Status FOSSA
 
-Website/ebook Dasar Pemrograman Rust gratis untuk disebarluaskan secara bebas, baik untuk komersil maupun tidak, dengan catatan harus disertakan credit sumber aslinya (yaitu Dasar Pemrograman Rust atau novalagung) dan tidak mengubah lisensi aslinya (yaitu CC BY-SA 4.0). Lebih jelasnya silakan cek halaman [lisensi dan distribusi konten](/LICENSE).
+Website/ebook tutorial Dasar Pemrograman Rust gratis untuk disebarluaskan secara bebas, baik untuk komersil maupun tidak, dengan catatan harus disertakan credit sumber aslinya (yaitu Dasar Pemrograman Rust atau novalagung) dan tidak mengubah lisensi aslinya (yaitu CC BY-SA 4.0). Lebih jelasnya silakan cek halaman [lisensi dan distribusi konten](/LICENSE).
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fnovalagung%2Fdasarpemrogramanrust.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fnovalagung%2Fdasarpemrogramanrust?ref=badge_large)
 
