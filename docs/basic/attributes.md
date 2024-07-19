@@ -167,7 +167,7 @@ Bisa dilihat, hasilnya program tereksekusi tanpa error. Enum `Superhero` kini me
 
 ## A.49.3. Attribute `cfg` / *configuration*
 
-Attribute `cfg` digunakan untuk operasi-opearsi yang berhubungan dengan target arsitekture hardware/prosesor, misalnya seperti conditional compilation ketika OS adalah linux, dan lainnya.
+Attribute `cfg` digunakan untuk operasi-operasi yang berhubungan dengan target arsitekture hardware/prosesor, misalnya seperti conditional compilation ketika OS adalah linux, dan lainnya.
 
 Salah satu contoh penerapannya bisa dilihat pada kode berikut. Ada 2 buah module yang namanya sama persis, perbedaannya adalah satu didefinisikan khusus untuk platform `linux`, dan satunya lagi untuk platform `windows`. Hal seperti ini bisa dilakukan menggunakan attribute `cfg` dengan key `target_os`.
 
