@@ -22,6 +22,8 @@ Outer attribute dituliskan tepat sebelum target (crate, module, module item, ata
 - `#[attribute = "value"]`
 - `#[attribute(key = "value")]`
 - `#[attribute(value)]`
+- `#[attribute(not(key = "value"))]` untuk operasi **NOT**
+- `#[attribute(not(value))]` untuk operasi **NOT**
 
 Contoh penerapan:
 
@@ -40,6 +42,8 @@ Sedikit berbeda dengan inner attribute, penulisannya berada di dalam target (cra
 - `#![attribute = "value"]`
 - `#![attribute(key = "value")]`
 - `#![attribute(value)]`
+- `#![attribute(not(key = "value"))]` untuk operasi **NOT**
+- `#![attribute(not(value))]` untuk operasi **NOT**
 
 Rust mengenal beberapa jenis attributes, dan kita akan membahasnya satu per satu.
 
@@ -163,7 +167,7 @@ Bisa dilihat, hasilnya program tereksekusi tanpa error. Enum `Superhero` kini me
 
 ## A.49.3. Attribute `cfg` / *configuration*
 
-Attribute `cfg` digunakan untuk menentukan beberapa konfigurasi yang berhubungan dengan arsitekture hardware/prosesor.
+Attribute `cfg` digunakan untuk operasi-operasi yang berhubungan dengan target arsitekture hardware/prosesor, misalnya seperti conditional compilation ketika OS adalah linux, dan lainnya.
 
 Salah satu contoh penerapannya bisa dilihat pada kode berikut. Ada 2 buah module yang namanya sama persis, perbedaannya adalah satu didefinisikan khusus untuk platform `linux`, dan satunya lagi untuk platform `windows`. Hal seperti ini bisa dilakukan menggunakan attribute `cfg` dengan key `target_os`.
 
@@ -246,9 +250,83 @@ Opsi value yang tersedia:
 - `arm`
 - `aarch64`
 
+### ◉ Macro `cfg!()` dan conditional compilation
+
+Attribute `cfg` juga tersedia versi macro-nya, yaitu `cfg!()`. Macro ini kegunaannya sama seperti attribute `cfg`, perbedaannya macro `cfg!()` mengembalikan nilai boolean, yang darinya bisa dikombinasikan dengan seleksi kondisi untuk keperluan conditional compilation. Contoh penggunaan macro `cfg!()`:
+
+```rust
+fn main() {
+    #[cfg(target_os = "linux")]
+    {
+        println!("hello linux. from attribute cfg")
+    }
+
+    #[cfg(target_os = "windows")]
+    {
+        println!("hello windows. from attribute cfg")
+    }
+
+    if cfg!(target_os = "linux") {
+        println!("hello linux. from macro cfg!()");
+    } else if cfg!(target_os = "windows") {
+        println!("hello windows. from macro cfg!()");
+    }
+}
+```
+
+Penjelasan:
+
+- Kode block `#[cfg(target_os = "linux")]` hanya dieksekusi ketika program dijalankan di Linux.
+- Kode block `#[cfg(target_os = "windows")]` hanya dieksekusi ketika program dijalankan di Windows.
+- Seleksi kondisi `cfg!(target_os = ...)` merupakan alternatif penulisan 2 kode sebelumnya yang digabung menjadi 1 rantai seleksi kondisi.
+    - Kondisi `cfg!(target_os = "linux")` terpenuhi ketika program dijalankan di Linux
+    - Kondisi `cfg!(target_os = "windows")` terpenuhi ketika program dijalankan di Windows
+
+Output program ketika dijalankan di komputer penulis yang menggunakan Windows:
+
+![Attribute](img/attribute-4.png)
+
+> Lebih detailnya mengenai macro akan dibahas di chapter terpisah.
+
+### ◉ Configuration `debug_assertions`
+
+By default, Rust menggunakan profil kompilasi **debug** saat eksekusi command `cargo run`. Di kode program, penanda apakah profil kompilasi debug digunakan atau tidak bisa dilihat dari nilai konfigurasi `#[cfg(debug_assertions)]` via attribute, dan `cfg!(debug_assertions)` via macro.
+
+Nilai `cfg!(debug_assertions)` selalu bernilai `true` kecuali command yang digunakan saat eksekusi program adalah `cargo run --release`. Flag `--release` saat eksekusi program membuat nilai `debug_assertions` menjadi `false`.
+
+Contoh penerapan:
+
+```rust
+fn main() {
+    #[cfg(debug_assertions)]
+    {
+        println!("debug mode. from attribute cfg")
+    }
+
+    #[cfg(not(debug_assertions))]
+    {
+        println!("release mode. from attribute cfg")
+    }
+
+    if cfg!(debug_assertions) {
+        println!("debug mode. from macro cfg!()");
+    } else  {
+        println!("release mode. from macro cfg!()");
+    }
+}
+```
+
+Output eksekusi program menggunakan command `cargo run` vs `cargo run --release`.
+
+![Attribute](img/attribute-5.png)
+
+Pada profil release, kode program dikompilasi sekaligus dioptimisasi. Penggunaan profil ini dianjurkan untuk distribusi production binary. 
+
+> Di beberapa bahasa pemrograman lain deteksi profile dilakukan mengunakan kombinasi keyword `if` dan nilai environment variable (`ENV`). Dari situ bisa dilihat apakah environment yang digunakan adalah production, staging, atau local.
+
 ### ◉ Other configuration
 
-Ada beberapa key konfigurasi lainnya yang tersedia. Lebih detailnya silakan lihat di https://doc.rust-lang.org/reference/conditional-compilation.html#set-configuration-options.
+Ada beberapa key konfigurasi lainnya yang tersedia. Lebih detailnya silakan lihat di https://doc.rust-lang.org/reference/conditional-compilation.html
 
 ## A.49.4. Attribute *linting* & *diagnostic*
 
@@ -256,7 +334,7 @@ Ada beberapa attribute name yang bisa digunakan untuk meng-override *default lin
 
 Contoh kasus yang berhubungan dengan *linting* bisa dilihat pada kode berikut.
 
-![Attribute](img/attribute-4.png)
+![Attribute](img/attribute-6.png)
 
 Kode di atas tidak menghasilkan error. Kode akan dieksekusi tanpa error. Namun ada 3 buah warning yang muncul karena beberapa baris kode tidak digunakan atau sia-sia.
 
@@ -275,6 +353,17 @@ fn say_something() {
     println!("how are you")
 }
 
+pub mod m1 {
+    #[allow(missing_docs)]
+    pub fn undocumented_one() -> i32 { 1 }
+
+    #[warn(missing_docs)]
+    pub fn undocumented_too() -> i32 { 2 }
+
+    // #[deny(missing_docs)]
+    // pub fn undocumented_end() -> i32 { 3 }
+}
+
 fn main() {
     #[allow(unused_variables)]
     let name = "noval agung";
@@ -283,15 +372,18 @@ fn main() {
 }
 ```
 
-Pada kode di atas, attribute name `allow` digunakan pada 3 tempat:
+Pada kode di atas, ada beberapa attribute yang digunakan:
 
 - `#[allow(unused_imports)]` digunakan untuk antisipasi error yang muncul ketika module item di-import namun tidak digunakan.
 - `#[allow(dead_code)]` digunakan untuk membolehkan kode yang tidak digunakan.
 - `#[allow(unused_variables)]` digunakan untuk membolehkan variabel yang didefinisikan tapi tidak dimanfaatkan.
+- `#[allow(missing_docs)]` membolehkan kode di bawahnya untuk tidak memiliki komentar/dokumentasi.
+- `#[warn(missing_docs)]` memunculkan warning jika kode di bawahnya tidak memiliki komentar/dokumentasi.
+- `#[deny(missing_docs)]` memunculkan error jika kode di bawahnya tidak memiliki komentar/dokumentasi. Kode ini sengaja di-remark agar eksekusi program tidak menghasilkan error.
 
 Dengan penambahan 3 attribute di atas program akan tereksekusi tanpa warning.
 
-![Attribute](img/attribute-5.png)
+![Attribute](img/attribute-7.png)
 
 Ada beberapa attribute *key* yang bisa digunakan untuk override *lint* warning:
 
@@ -299,7 +391,25 @@ Ada beberapa attribute *key* yang bisa digunakan untuk override *lint* warning:
 
 - `#[warn(lint_rule)]` untuk memunculkan warning untuk suatu *lint rule* yang *default*-nya tidak memunculkan warning.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/warn-by-default.html.
 
-- `#[deny(lint_rule)]` atau `#[forbid(lint_rule)]` untuk melarang suatu *lint rule* yang *default*-nya adalah diperbolehkan.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/deny-by-default.html.
+- `#[deny(lint_rule)]` untuk melarang suatu *lint rule* yang *default*-nya adalah diperbolehkan.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/deny-by-default.html.
+
+- `#[forbid(lint_rule)]` untuk melarang suatu *lint rule* yang *default*-nya adalah diperbolehkan **dengan catatan kode beserta isi yang dituju lint tersebut tidak bisa diubah menjadi *lint rule*-nya menjadi `allow` lagi**. Penjelasan detailnya ada di https://doc.rust-lang.org/reference/attributes/diagnostics.html
+
+    Contoh penerapan:
+
+    ```rust
+    #[forbid(missing_docs)]
+    pub mod m3 {
+        #[allow(missing_docs)]
+        pub fn undocumented_too() -> i32 { 2 }
+    }
+    ```
+
+    Attribute `#[forbid(missing_docs)]` pada module `m3` menjadikan seluruh isi block module tersebut harus memiliki dokumentasi, mirip seperti penggunaan `#[deny(missing_docs)]`.
+    
+    Penggunaan `allow` di dalam block tersebut membuat eksekusi program menghasilkan error, karena meskipun attribute tersebut ditujukan untuk fungsi `undocumented_too()` pada parent block (yaitu module `m3`) sudah ditentukan aturannya menggunakan `forbid`.
+
+
 
 Selain 3 attribute di atas, ada juga beberapa attribute lainnya untuk keperluan *diagnostic*, di antaranya:
 
@@ -312,7 +422,7 @@ Ada sebuah attribute bernama `non_exhaustive` gunanya untuk mem-*bypass* error y
 
 Salah satu contoh error yang dimaksud bisa dilihat pada kode berikut. Error ini muncul karena enum `Superhero::Superhero` tidak ter-cover dalam pattern matching.
 
-![Attribute](img/attribute-6.png)
+![Attribute](img/attribute-8.png)
 
 Solusi untuk mengatasi error di atas bisa dengan cukup menambahkan case kondisi yang belum ter-cover:
 
@@ -418,7 +528,7 @@ Pada kode di atas bisa dilihat, module `util1` dan `util2` patuh mengikuti atura
 
 Jialankan program, harusnya tidak ada error.
 
-![Attribute](img/attribute-7.png)
+![Attribute](img/attribute-9.png)
 
 ## A.49.7. Attribute *testing*
 
