@@ -416,33 +416,6 @@ Selain 3 attribute di atas, ada juga beberapa attribute lainnya untuk keperluan 
 - `#[deprecated]` digunakan untuk menandai bahwa kode di bawahnya adalah *deprecated*.
 - `#[must_use]` digunakan untuk mendandai bahwa kode di bawahnya harus digunakan, jika tidak maka akan muncul error.
 
-Selain itu ada juga attribute `forbid`.
-
-Pada kode sebelumnya silahkan tambahkan kode berikut di bagian paling atas:
-```rust
-#![forbid(unsafe_code)]
-//...
-```
-
-Lalu di main function nya tambahkan juga kode berikut:
-```rust
-fn main() {
-    //...
-
-    #[allow(unsafe_code)]
-    unsafe{};
-}
-```
-pada kode di atas, attribute `forbid` di gunakan pada 2 tempat:
-- `#![forbid(unsafe_code)]` inner attribute, digunakan untuk semua crate tidak boleh menggunakan unsafe block (unsafe block akan dibahas di chapter: [Safe & Unsafe](#/wip/safe-unsafe)).
-- `#[allow(unsafe_code)]` outer attribute, disini kita mencoba untuk meng**ignore** aturan `forbid`.
-
-dengan `forbid` kita bisa membuat kode yang melanggar aturan lint tersebut menjadi error dan tidak bisa di `allow` atau dengan kata lain `forbid` tidak bisa di **ignore**.
-
-Maka kode di atas akan menghasilkan error.
-
-
-
 ## A.49.5. Attribute *type system*
 
 Ada sebuah attribute bernama `non_exhaustive` gunanya untuk mem-*bypass* error yang muncul karena ada pattern matching yang tidak meng-cover semua kondisi, atau untuk mengantisipasi error yang muncul saat deklarasi variabel bertipe struct tapi value property-nya tidak diisi.
