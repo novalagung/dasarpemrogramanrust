@@ -286,6 +286,8 @@ Output program ketika dijalankan di komputer penulis yang menggunakan Windows:
 
 ![Attribute](img/attribute-4.png)
 
+> Lebih detailnya mengenai macro akan dibahas di chapter terpisah.
+
 ### ◉ Configuration `debug_assertions`
 
 By default, Rust menggunakan profil kompilasi **debug** saat eksekusi command `cargo run`. Di kode program, penanda apakah profil kompilasi debug digunakan atau tidak bisa dilihat dari nilai konfigurasi `#[cfg(debug_assertions)]` via attribute, dan `cfg!(debug_assertions)` via macro.
@@ -351,6 +353,17 @@ fn say_something() {
     println!("how are you")
 }
 
+pub mod m1 {
+    #[allow(missing_docs)]
+    pub fn undocumented_one() -> i32 { 1 }
+
+    #[warn(missing_docs)]
+    pub fn undocumented_too() -> i32 { 2 }
+
+    // #[deny(missing_docs)]
+    // pub fn undocumented_end() -> i32 { 3 }
+}
+
 fn main() {
     #[allow(unused_variables)]
     let name = "noval agung";
@@ -359,13 +372,49 @@ fn main() {
 }
 ```
 
-Pada kode di atas, attribute name `allow` digunakan pada 3 tempat:
+Pada kode di atas, ada beberapa attribute yang digunakan:
 
 - `#[allow(unused_imports)]` digunakan untuk antisipasi error yang muncul ketika module item di-import namun tidak digunakan.
 - `#[allow(dead_code)]` digunakan untuk membolehkan kode yang tidak digunakan.
 - `#[allow(unused_variables)]` digunakan untuk membolehkan variabel yang didefinisikan tapi tidak dimanfaatkan.
+- `#[allow(missing_docs)]` membolehkan kode di bawahnya untuk tidak memiliki komentar/dokumentasi.
+- `#[warn(missing_docs)]` memunculkan warning jika kode di bawahnya tidak memiliki komentar/dokumentasi.
+- `#[deny(missing_docs)]` memunculkan error jika kode di bawahnya tidak memiliki komentar/dokumentasi. Kode ini sengaja di-remark agar eksekusi program tidak menghasilkan error.
 
 Dengan penambahan 3 attribute di atas program akan tereksekusi tanpa warning.
+
+![Attribute](img/attribute-7.png)
+
+Ada beberapa attribute *key* yang bisa digunakan untuk override *lint* warning:
+
+- `#[allow(lint_rule)]` untuk membolehkan suatu *lint rule*.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/allowed-by-default.html.
+
+- `#[warn(lint_rule)]` untuk memunculkan warning untuk suatu *lint rule* yang *default*-nya tidak memunculkan warning.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/warn-by-default.html.
+
+- `#[deny(lint_rule)]` untuk melarang suatu *lint rule* yang *default*-nya adalah diperbolehkan.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/deny-by-default.html.
+
+- `#[forbid(lint_rule)]` untuk melarang suatu *lint rule* yang *default*-nya adalah diperbolehkan **dengan catatan kode beserta isi yang dituju lint tersebut tidak bisa diubah menjadi *lint rule*-nya menjadi `allow` lagi**. Penjelasan detailnya ada di https://doc.rust-lang.org/reference/attributes/diagnostics.html
+
+    Contoh penerapan:
+
+    ```rust
+    #[forbid(missing_docs)]
+    pub mod m3 {
+        #[allow(missing_docs)]
+        pub fn undocumented_too() -> i32 { 2 }
+    }
+    ```
+
+    Attribute `#[forbid(missing_docs)]` pada module `m3` menjadikan seluruh isi block module tersebut harus memiliki dokumentasi, mirip seperti penggunaan `#[deny(missing_docs)]`.
+    
+    Penggunaan `allow` di dalam block tersebut membuat eksekusi program menghasilkan error, karena meskipun attribute tersebut ditujukan untuk fungsi `undocumented_too()` pada parent block (yaitu module `m3`) sudah ditentukan aturannya menggunakan `forbid`.
+
+
+
+Selain 3 attribute di atas, ada juga beberapa attribute lainnya untuk keperluan *diagnostic*, di antaranya:
+
+- `#[deprecated]` digunakan untuk menandai bahwa kode di bawahnya adalah *deprecated*.
+- `#[must_use]` digunakan untuk mendandai bahwa kode di bawahnya harus digunakan, jika tidak maka akan muncul error.
 
 Selain itu ada juga attribute `forbid`.
 
@@ -393,24 +442,6 @@ dengan `forbid` kita bisa membuat kode yang melanggar aturan lint tersebut menja
 Maka kode di atas akan menghasilkan error.
 
 
-![Attribute](img/attribute-7.png)
-
-Ada beberapa attribute *key* yang bisa digunakan untuk override *lint* warning:
-
-- `#[allow(lint_rule)]` untuk membolehkan suatu *lint rule*.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/allowed-by-default.html.
-
-- `#[warn(lint_rule)]` untuk memunculkan warning untuk suatu *lint rule* yang *default*-nya tidak memunculkan warning.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/warn-by-default.html.
-
-- `#[deny(lint_rule)]` untuk melarang suatu *lint rule* yang *default*-nya adalah diperbolehkan.<br />List `lint_rule` bisa dilihat di https://doc.rust-lang.org/rustc/lints/listing/deny-by-default.html.
-
-- `#[forbid(lint_rule)]` untuk melarang suatu *lint rule* yang *default*-nya adalah diperbolehkan **dan tidak bisa di `allow` lagi**.
-> PERINGATAN! Tidak di rekomendasikan untuk menggunakan `forbid` dengan lint rule selain dari `unsafe_code`, karena akan menyebabkan masalah backward compatibility di beberapa library yang menggunakan macro misalnya.
-> [Referensi](https://github.com/tokio-rs/tokio/issues/6448#issuecomment-2029480131).
-
-Selain 3 attribute di atas, ada juga beberapa attribute lainnya untuk keperluan *diagnostic*, di antaranya:
-
-- `#[deprecated]` digunakan untuk menandai bahwa kode di bawahnya adalah *deprecated*.
-- `#[must_use]` digunakan untuk mendandai bahwa kode di bawahnya harus digunakan, jika tidak maka akan muncul error.
 
 ## A.49.5. Attribute *type system*
 
