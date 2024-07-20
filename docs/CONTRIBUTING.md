@@ -29,6 +29,7 @@ Berikut merupakan hall of fame kontributor yang sudah berbaik hati menyisihkan w
 1. [Fal](https://github.com/d0tf)
 1. [Fredianto](https://github.com/nferdazel)
 1. [I Putu Saputrayana](https://github.com/iyansr)
+1. [Indra Sah Noeldy](https://github.com/indra87g)
 1. [Khisby Al Ghofari](https://github.com/khisby)
 1. [Lori](https://github.com/chud-lori)
 1. [M. Zakiyuddin Munziri](https://github.com/zakiego)
