@@ -451,6 +451,7 @@ Lebih detailnya dibahas pada chapter [Attributes](/basic/attributes).
 
 - Pembahasan tentang trait bounds untuk implementasi method kondisional
 - Pembahasan tentang trait overloading
+- orphan rules
 
 ### ◉ Referensi
 
