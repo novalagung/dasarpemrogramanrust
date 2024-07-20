@@ -6,6 +6,8 @@ sidebar_label: A.37. Traits ➜ Advanced
 
 Chapter ini merupakan kelanjutan dari chapter sebelumnya. Di sini kita fokus ke pembuatan local trait, macam-macam implementasi traits, traits bound syntax, associated types, dan topik yang masih relevan dengan traits lainnya.
 
+Pembahasan lanjutan mengenai traits ini cukup panjang. Makin mendekati akhir pembahasan, makin berat topik yang dibahas. Penulis anjurkan jika diperlukan, silakan mengulang-ulang chapter ini, atau bisa lanjut ke chapter berikutnya dan nanti kembali lagi ke sini ketika sudah siap.
+
 ## A.37.1. Membuat custom trait (local trait)
 
 Pada bagian ini kita akan belajar tentang cara membuat definisi trait di local crate dalam project yang sedang dikerjakan.

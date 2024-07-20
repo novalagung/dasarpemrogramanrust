@@ -6,8 +6,6 @@ sidebar_label: A.36. Traits
 
 Trait jika diartikan dalam Bahasa Indonesia artinya adalah sifat. Chapter ini akan membahas tentang apa itu trait, apa kegunaannya, dan bagaimana cara penerapannya di Rust programming.
 
-Pembahasan chapter ini cukup panjang. Makin mendekati akhir pembahasan, makin berat yang dibahas. Penulis anjurkan jika nantinya setelah section [A.36.4. Trait sebagai tipe parameter](/basic/traits#a424-trait-sebagai-tipe-parameter) dirasa cukup susah untuk dipahami, silakan lanjut ke chapter berikutnya dulu, dan nanti bisa kembali ke pembahasan chapter ini lagi.
-
 ## A.36.1. Konsep traits
 
 Di Rust kita bisa mendefinisikan trait/sifat, isinya adalah definisi header method yang bisa di-share ke banyak tipe data.
