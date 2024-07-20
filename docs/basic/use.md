@@ -8,7 +8,7 @@ Keyword `use` digunakan untuk dua hal, yaitu *import* path dan *re-export* path.
 
 ## A.29.1. Keyword `use` untuk import path
 
-Untuk bisa menggunakan sebuah item dari crate lain, entah itu dari rust standard library crate maupun 3rd-party, caranya cukup dengan menuliskan path item. Contohnya bisa dilihat dibawah ini, fungsi `current_dir` digunakan untuk mengambil path dari current directory. Fungsi tersebut merupakan item dari module `std::env`, maka untuk mengaksesnya kita harus menuliskan path secara lengkap.
+Untuk bisa menggunakan sebuah item dari crate lain, entah itu dari rust standard library crate maupun 3rd-party, caranya cukup dengan menuliskan path item. Contohnya bisa dilihat di bawah ini, fungsi `current_dir` digunakan untuk mengambil path dari current directory. Fungsi tersebut merupakan item dari module `std::env`, maka untuk mengaksesnya kita harus menuliskan path secara lengkap.
 
 ```rust
 let package_path = std::env::current_dir().unwrap();
@@ -86,7 +86,7 @@ Bisa dilihat pada gambar berikut, jika ada argument disisipkan dalam eksekusi pr
 
 Re-export item adalah sebuah cara untuk mem-*bypass* pengaksesan item yang secara hirarki memang tidak bisa diakses dari luar module (bisa jadi karena visibility item ataupun parent module nya adalah private). Dengan teknik ini, maka item pasti bisa diakses dari luar module.
 
-Item yang di-re-export akan menjadi item milik *current module* dimana statement re-export tersebut ditulis.
+Item yang di-re-export akan menjadi item milik *current module* di mana statement re-export tersebut ditulis.
 
 Keyword `pub use` digunakan untuk operasi re-export. Notasi penulisannya bisa dilihat di bawah ini:
 

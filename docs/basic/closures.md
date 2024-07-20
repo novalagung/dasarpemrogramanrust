@@ -1,14 +1,14 @@
 ---
-sidebar_position: 46
-title: A.46. Closures
-sidebar_label: A.46. Closures
+sidebar_position: 47
+title: A.47. Closures
+sidebar_label: A.47. Closures
 ---
 
 Chapter ini membahas tentang closures. Closures sendiri merupakan block fungsi anonimus (anonymous function) yang memiliki kelebihan bisa mengakses item-tem yang posisinya berada di luar block closure tersebut tetapi masih dalam current block scope.
 
 Topik closures sangat erat hubungannya dengan [Trait ➜ Function](/basic/trait-function), namun pada chapter ini pembahasan hanya difokuskan pada bagian penerapan closures saja. Penulis anjurkan untuk lanjut ke chapter berikutnya setelah selesai dengan chapter ini.
 
-## A.46.1. Konsep Closures
+## A.47.1. Konsep Closures
 
 Cara penerapan closure sangat mirip seperti fungsi, perbedaannya ada pada notasi penulisan-nya. Agar lebih jelas silakan perhatikan program sederhana di bawah ini.
 
@@ -50,7 +50,7 @@ Perbedaan minor lainnya ada pada notasi penulisan parameter. Pada fungsi tanda `
 
 ### ◉ formatted print `{:.n}`
 
-Notasi penulisan formatted print `{:.n}` digunakan untuk mem-format bilangan desimal dimana `n` adalah jumlah digit setelah tanda `.`.
+Notasi penulisan formatted print `{:.n}` digunakan untuk mem-format bilangan desimal di mana `n` adalah jumlah digit setelah tanda `.`.
 
 Sebagai contoh, variabel `pi` berikut memiliki 0 digit angka dibelakang koma. Untuk menampilkan hanya 4 angka terdepan, bisa gunakan `{:.4}`. Perlu diketahui bahwa angka dibelakang koma yang muncul otomatis dibulatkan.
 
@@ -61,7 +61,7 @@ println!("{:.4}", pi); // 3.1416
 println!("{pi:.4}");   // 3.1416
 ```
 
-## A.46.2. Notasi penulisan closure
+## A.47.2. Notasi penulisan closure
 
 Closure `calculate_circle_volume_v2` pada contoh di atas adalah salah satu contoh penulisan closure. Sebuah closure bisa memiliki parameter, bisa juga tidak, dan aturan tersebut juga berlaku pada return value.
 
@@ -119,7 +119,7 @@ let get_pi = || 3.14;
 println!("{:?}", get_pi());
 ```
 
-## A.46.3. Mutable closure
+## A.47.3. Mutable closure
 
 Tidak ada yang spesial mengenai cara mengakses item yang berada di luar block closure. Caranya cukup dengan panggil saja item seperti biasanya.
 
@@ -164,7 +164,7 @@ let mut increase_by = |x: i32| {
 
 Keyword `mut` wajib ditambahkan ke variabel penampung closure ketika di dalamnya terdapat operasi perubahan data terhadap variabel yang posisinya di-luar closure. Contohnya bisa dilihat di atas, variabel `num` nilainya di-mutate atau diubah dari dalam closure, karena inilah variabel `increase_by` harus didefinisikan mutable.
 
-## A.46.4. Borrowing pada closure
+## A.47.4. Borrowing pada closure
 
 **Semua variabel di luar block closure ketika digunakan di dalam closure maka terjadi operasi borrowing pada variabel tersebut**. Variabel di luar block closure dipinjam agar bisa digunakan di dalam closure.
 
@@ -218,7 +218,7 @@ Pada contoh di atas, closure `increase_by` ditambahi parameter baru. Sekarang ad
 
 > Pengaksesan variabel yang berada di luar scope closure tanpa via parameter berarti adalah borrowing, maka dalam penerapannya wajib untuk memperhatikan aturan yang berlaku pada ownership dan borrowing.
 
-## A.46.5. Keyword `move`
+## A.47.5. Keyword `move`
 
 Telah dijelaskan di atas bahwa variabel di luar closure, jika diakses dari dalam closure maka terjadi borrowing. Ada cara agar variabel tersebut ownership-nya berpindah ke dalam closure (*move semantics*), yaitu menggunakan keyword `move`.
 
@@ -243,7 +243,7 @@ Lalu bagaimana dengan nasib variabel `num` yang berada di luar closure setelah o
 
 Bisa dilihat dari gambar di atas, statement `print` dari dalam block closure hasilnya adalah benar, yaitu `5 + 10 = 15`. Dan variabel `num` di luar block closure tidak berubah nilainya.
 
-## A.46.6. Closure sebagai return type
+## A.47.6. Closure sebagai return type
 
 ### ◉ Praktik ke-1
 
@@ -314,7 +314,7 @@ println!("{message} (from main)");
 
 ![Closure](img/closures-5.png)
 
-## A.46.7. Closure sebagai parameter fungsi
+## A.47.7. Closure sebagai parameter fungsi
 
 ### ◉ Praktik ke-1
 

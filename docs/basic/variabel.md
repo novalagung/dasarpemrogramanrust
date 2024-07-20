@@ -19,7 +19,7 @@ fn main() {
 }
 ```
 
-Ok, sekarang coba jalankan, dan lanjut ke pembahasan dibawah.
+Ok, sekarang coba jalankan, dan lanjut ke pembahasan di bawah.
 
 ### ◉ Aturan penamaan variabel (naming convention)
 
@@ -138,7 +138,7 @@ println!("message number {1}: {0}", message3, message_number);
 
 ![formatted print macro `println`](img/variabel-6.png)
 
-Jika dilihat ada yg berbeda pada cara deklarasi variabel `message3` dan juga pada statement `println` untuk `message3` yang disitu digunakan `{1}` dan `{0}`, tidak seperti sebelumnya yg menggunakan `{}`. Kita akan bahas yg ke-2 terlebih dahulu.
+Jika dilihat ada yg berbeda pada cara deklarasi variabel `message3` dan juga pada statement `println` untuk `message3` yang di situ digunakan `{1}` dan `{0}`, tidak seperti sebelumnya yg menggunakan `{}`. Kita akan bahas yg ke-2 terlebih dahulu.
 
 - Jika menggunakan `{}`, maka string akan di-replace sesuai urutan argument pada pemanggilan `println`.
 - Jika menggunakan `{0}`, maka string akan di-replace dengan data pada argument ke `1` pemanggilan fungsi `println`, yang pada contoh di atas adalah `message3`.
@@ -153,7 +153,7 @@ println!("message number {0}: {1}", message_number, message3);
 println!("message number {1}: {0}", message3, message_number);
 ```
 
-Sekarang perihal perbedaan cara deklarasi `message3` akan kita bahas dibawah ini.
+Sekarang perihal perbedaan cara deklarasi `message3` akan kita bahas di bawah ini.
 
 ## A.4.4. *Type Inference* vs *Manifest Typing*
 

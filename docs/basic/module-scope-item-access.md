@@ -8,9 +8,9 @@ Pembahasan chapter ini masih dalam lingkup module system, yaitu tentang scope da
 
 ## A.22.1. Scope
 
-Scope bisa diartikan dengan: representasi dimana kode berada. Apapun yang ditulis dalam blok kode (ditandai dengan diapit tanda kurung kurawal `{ }`) berarti dalam satu scope yang sama.
+Scope bisa diartikan dengan: representasi di mana kode berada. Apapun yang ditulis dalam blok kode (ditandai dengan diapit tanda kurung kurawal `{ }`) berarti dalam satu scope yang sama.
 
-Agar lebih jelas, lihat kode berikut kemudian pelajari penjelasan dibawahnya:
+Agar lebih jelas, lihat kode berikut kemudian pelajari penjelasan di bawahnya:
 
 ```rust
 const PI: f64 = 3.14;
@@ -134,7 +134,7 @@ fn main() {
 
 Pada contoh bisa dilihat ada dua buah fungsi dideklarasikan dengan nama yang sama persis, yang satu berada di *crate root*, satunya lagi merupakan item milik `my_mod`.
 
-Di dalam `my_mod::run_the_app` ada 2 kali pemanggilan fungsi `my_func`, satunya menggunakan keyword `self` dan satunya tidak. Fungsi `my_func` manakah yang dipanggil? Hasilnya bisa dilihat pada gambar dibawah ini.
+Di dalam `my_mod::run_the_app` ada 2 kali pemanggilan fungsi `my_func`, satunya menggunakan keyword `self` dan satunya tidak. Fungsi `my_func` manakah yang dipanggil? Hasilnya bisa dilihat pada gambar di bawah ini.
 
 ![Module item access self](img/module-scope-item-access-2.png)
 

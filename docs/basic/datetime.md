@@ -1,14 +1,14 @@
 ---
-sidebar_position: 50
-title: A.50. Date Time
-sidebar_label: A.50. Date Time
+sidebar_position: 51
+title: A.51. Date Time
+sidebar_label: A.51. Date Time
 ---
 
 Pada chapter ini kita akan mempelajari tentang tipe data datetime yang ada di Rust programming.
 
 Rust menyediakan cukup banyak API untuk keperluan pengolahan datetime, tersedia dalam Standard Library crate. Namun pada chapter ini kita tidak akan menggunakannya, karena yang akan dipakai adalah [`chrono` crate](https://crates.io/crates/chrono) (dianjurkan untuk menggunakan crate ini karena fiturnya lebih banyak).
 
-## A.50.1. Persiapan
+## A.51.1. Persiapan
 
 Sebelum memulai pembelajaran, siapkan satu project baru, kemudian tambahkan care `crono` dalam `Cargo.toml`.
 
@@ -22,7 +22,7 @@ edition = "2021"
 chrono = "0.4.23"
 ```
 
-## A.50.2. Tipe data `DateTime`
+## A.51.2. Tipe data `DateTime`
 
 `crono` menyediakan cukup banyak tipe data untuk merepresentasikan informasi tanggal dan waktu, tetapi yang paling penting untuk diketahui dan dipahami ada dua, yaitu:
 
@@ -35,7 +35,7 @@ chrono = "0.4.23"
 
 ### ◉ Tipe `DateTime<Local>`
 
-`DateTime<Local>` (gabungan dari tipe data `chrono::datetime::DateTime` dan generic `chrono::offset::local::Local`) adalah representasi untuk tipe data datetime dengan **timezone offset sesuai dengan dimana program dijalankan**.
+`DateTime<Local>` (gabungan dari tipe data `chrono::datetime::DateTime` dan generic `chrono::offset::local::Local`) adalah representasi untuk tipe data datetime dengan **timezone offset sesuai dengan di mana program dijalankan**.
 
 Sebagai contoh, penulis berlokasi di Jawa Timur, maka ketika ada suatu data bertipe `DateTime<Local>` artinya timezone offset-nya adalah WIB (atau GMT+7).
 
@@ -43,7 +43,7 @@ Sebagai contoh, penulis berlokasi di Jawa Timur, maka ketika ada suatu data bert
 
 Tipe `chrono::naive::datetime::NaiveDateTime` merupakan tipe data datetime yang tidak menyimpan informasi timezone. Nanti akan kita bahas apa kegunaan dari tipe ini.
 
-## A.50.3. Pembuatan objek `DateTime`
+## A.51.3. Pembuatan objek `DateTime`
 
 ### ◉ Via `Utc::now()`
 
@@ -83,7 +83,7 @@ Statement di atas menghasilkan data datetime dengan isi `2023-03-01 01:02:03 UTC
 
 ### ◉ Via `DateTime::<Utc>::from()`
 
-Cara ini pas digunakan pada situasi dimana kita perlu membuat object datetime dari sebuah [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
+Cara ini pas digunakan pada situasi di mana kita perlu membuat object datetime dari sebuah [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 ```rust
 let sample_date3_in_utc = DateTime::<Utc>::from(UNIX_EPOCH + Duration::from_secs(1524885322));
@@ -115,7 +115,7 @@ Penerapan method `parse::<DateTime<Utc>>()` sebenarnya mengembalikan tipe data `
 
 Ada beberapa cara lain yang bisa digunakan untuk pembuatan object datetime, dan kita akan bahas juga sebentar lagi.
 
-## A.50.4. `Utc` vs `Local`
+## A.51.4. `Utc` vs `Local`
 
 Kesemua cara yang sudah dipelajari di atas juga bisa diterapkan dalam pembuatan object date time dengan timezone offset `Local`. Penerapannya kurang lebih sama, cukup ganti `Utc` menjadi `Local`.
 
@@ -160,13 +160,13 @@ sample date 1 (in local_tz):   2023-03-02 16:53:44.562389600 +07:00
 
 Kedua datetime tersebut terpaku **7 jam** persis. Data `2023-03-02 09:53:44` UTC (atau GMT+0), jika dikonversi ke waktu lokal penulis (WIB atau GMT+7) maka akan menjadi `2023-03-02 16:53:44`. Selisihnya sesuai dengan timezone offset, yaitu 7 jam.
 
-## A.50.5. Tipe `NaiveDateTime`
+## A.51.5. Tipe `NaiveDateTime`
 
 Rust memilik caranya sendiri dalam pengelolaan data datetime (yang menurut penulis cukup unik). Ada satu tipe data bernama `NaiveDateTime`, yang kegunaannya adalah untuk menampung tipe data datetime **tanpa spesifik timezone offset**.
 
 Tipe data ini sangat berguna dibeberapa case yang kebanyakan adalah perihal konversi data ke bentuk `DateTime`.
 
-Mari kita praktekan dengan contoh agar lebih jelas. Dimisalkan ada keperluan dimana data UNIX time perlu di konversi ke 2 bentuk `DateTime`, dengan timezone offset `Utc` dan `Local`. Pada kasus ini, cara ke-3 dari praktek sebelumnya bisa dilakukan untuk penyelesaian case ini.
+Mari kita praktekan dengan contoh agar lebih jelas. Dimisalkan ada keperluan di mana data UNIX time perlu di konversi ke 2 bentuk `DateTime`, dengan timezone offset `Utc` dan `Local`. Pada kasus ini, cara ke-3 dari praktek sebelumnya bisa dilakukan untuk penyelesaian case ini.
 
 ```rust
 let timestamp: u64 = 1524885322;
@@ -199,7 +199,7 @@ Bisa dilihat pada output di atas, bahwa hasil data datetime berbeda untuk timezo
 
 > Jangan sampai bingung, 2 data datetime di atas tidak sama dan tidak ekuivalen meskipun informasi jam menit detiknya sama persis. Hal ini dikarenakan timezone offset-nya berbeda.
 
-## A.50.6. Konversi datetime UTC ke local timezone, dan sebaliknya
+## A.51.6. Konversi datetime UTC ke local timezone, dan sebaliknya
 
 Dalam bekerja dengan tipe data datetime, selalu memperhatikan timezone adalah hal yang sangat penting. Bisa saja dua buah datetime memiliki informasi tanggal dan waktu sama persis, tapi jika timezone-nya berbeda maka keduanya adalah berbeda!
 
@@ -231,7 +231,7 @@ Ketiga data datetime di atas adalah ekuivalen:
 
 Data `2023-03-02 10 UTC` jika ditambah 7 jam offset, maka menjadi `2023-03-02 17 GMT+7`.
 
-## A.50.7. UNIX time
+## A.51.7. UNIX time
 
 Cara konversi data `DateTime` ke bentuk UNIX time bisa dilakukan lewat 3 cara:
 
@@ -264,7 +264,7 @@ Output program di atas:
 
 ![DateTime](img/datetime-5.png)
 
-## A.50.8. Date formatting & parsing
+## A.51.8. Date formatting & parsing
 
 Konversi datetime ke string (atau biasa disebut dengan date formatting) dilakukan menggunakan method `format` yang dalam penerapannya membutuhkan argument *datetime formatting syntax*.
 
@@ -294,7 +294,7 @@ println!("date2 (in string): {}", str_from_date2);
 // date2 (in string): 2023-03-01 13:04:00 +0000
 ```
 
-## A.50.9. DateTime formatting syntax
+## A.51.9. DateTime formatting syntax
 
 Berikut adalah tabel formatting syntax untuk tipe data datetime.
 

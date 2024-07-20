@@ -1,18 +1,18 @@
 ---
-sidebar_position: 43
-title: A.43. Slice Memory Management
-sidebar_label: A.43. Slice Memory Management
+sidebar_position: 44
+title: A.44. Slice Memory Management
+sidebar_label: A.44. Slice Memory Management
 ---
 
 Kita telah mempelajari tipe data [Array](/basic/array) dan [Vector](/basic/vector), serta sudah beberapa kali menggunakan tipe data string slice (`String`). 3 tipe data itu memiliki kemiripan, yaitu kesemuanya termasuk dalam kategori tipe data slice.
 
-> Ciri khas dari tipe data yang termasuk dalam kategori slice adalah jika diakses reference-nya menghasilkan data bertipe `&[T]` dimana `T` adalah tipe data elemen.
+> Ciri khas dari tipe data yang termasuk dalam kategori slice adalah jika diakses reference-nya menghasilkan data bertipe `&[T]` yang mana `T` adalah tipe data elemen.
 
 Pada chapter ini, kita akan bahas lebih dalam lagi tentang apa itu slice terutama bagian memory management-nya.
 
 > Perbedaan chapter ini dengan chapter ini dengan chapter [Slice (Basic)](/basic/slice) adalah di sini fokusnya lebih banyak di memory management.
 
-## A.43.1. Konsep slice
+## A.44.1. Konsep slice
 
 Slice adalah representasi *block of memory* berbentuk pointer dan memiliki size yang dinamis, dengan isi adalah koleksi element data. Slice merupakan reference atau data pinjaman (borrow).
 
@@ -45,13 +45,13 @@ println!("slice2  : {} {:?}", slice2.len(), slice2);
 
 Terlihat kemiripan-nya, slice bisa terbentuk dari ketiga jenis data di atas.
 
-Penulis ingatkan lagi, bahwa slice adalah tipe data reference yang berarti isi adalah data pinjaman (borrow). Tipe data slice selalu `&[T]` dimana `T` adalah tipe data element.
+Penulis ingatkan lagi, bahwa slice adalah tipe data reference yang berarti isi adalah data pinjaman (borrow). Tipe data slice selalu `&[T]` yang mana `T` adalah tipe data element.
 
 Karena slice adalah data borrow, maka operasi standar borrowing termasuk mutable borrowing bisa dilakukan di slice.
 
-## A.43.2. Memory management pada slice
+## A.44.2. Memory management pada slice
 
-Sekarang lanjut ke pembahasan tentang bagaimana data bertipe slice di manage di-memory. Sebagai bahan belajar, kita perlu memilih satu dari 3 tipe data slice yang ada. Bebas sebenarnya mau pilih yang mana. Penulis memilih `String` untuk memulai pembahasan.
+Sekarang lanjut ke pembahasan tentang bagaimana data bertipe slice di-manage di memory. Sebagai bahan belajar, kita perlu memilih satu dari 3 tipe data slice yang ada. Bebas sebenarnya mau pilih yang mana. Penulis memilih `String` untuk memulai pembahasan.
 
 Silakan perhatikan statement sederhana berikut:
 
@@ -77,7 +77,7 @@ Sekarang di stack memory ada 3 buah metadata informasi disimpan, yaitu `data_str
 
 Tiga variabel di atas kesemuanya mengakses reference yang sama, yang membedakan adalah elemen-nya saja. Owner (yaitu `data_str`) bisa mengakses seluruh data, selain itu juga tau informasi kapasitas data. Sedangkan borrower hanya bisa mengakses data yang dia pinjam sesuai dengan operasi slicing-nya. Borrower tidak mengetahui kapasitas data, namun ia tau size dari elemen yang ia pinjam.
 
-## A.43.2. Mutable slice
+## A.44.2. Mutable slice
 
 Bagaimana dengan *mutability* pada slice, apa yang terjadi di belakang layar ketika elemen slice nilainya diubah?
 

@@ -36,7 +36,7 @@ println!("pointer: {:p}", pointer_number);
 
 Pada contoh di atas, sebuah variabel dideklarasikan bernama `number` dengan tipe data adalah numerik dan value `24`. Variabel tersebut jika di-print akan muncul nilainya, yaitu `24`.
 
-Ada satu lagi variabel yang dideklarasikan yaitu `pointer_number`, yang nilainya adalah *reference* dari variabel `number`. Cara pengambilan reference yang dilihat pada contoh, yaitu dengan menambahkan operator `&` pada variabel yang ingin dimabil pointernya.
+Ada satu lagi variabel yang dideklarasikan yaitu `pointer_number`, yang nilainya adalah *reference* dari variabel `number`. Cara pengambilan reference yang dilihat pada contoh, yaitu dengan menambahkan operator `&` pada variabel yang ingin diambil pointernya.
 
 ```rust
 // variabel pointer_number nilainya adalah reference variabel number.
@@ -102,7 +102,7 @@ Ok, lalu kenapa muncul error? Di gambar terlihat ada garis merah dan popup pesan
 
 Penyebab erronya bukan dari statement tersebut, tetapi pada baris statement pengambilan reference variabel `number`. Statement `&number` artinya adalah mengambil reference dari variabel `number`. Di atas sempat kita bahas bahwa *by default* sebuah reference tidak bisa diubah nilainya (*immutable*), dan ini adalah penyebab error yang dialami.
 
-> Silakan perhatikan pesan di popup error message agar mudah untuk tau dimana sumber masalahnya.
+> Silakan perhatikan pesan di popup error message agar mudah untuk tau di mana sumber masalahnya.
 
 Perubahan isi nilai variabel `number` tidak menghasilkan error, hal ini karena number adalah variabel `number` adalah mutable. Sedangkan operasi perubahan nilai variabel `*pointer_number` pada contoh di atas, dianggap sebagai error karena variabel `pointer_number` reference-nya adalah bukan mutable (meskipun reference diperoleh dari variabel `number` yang notabene mutable).
 
@@ -175,7 +175,7 @@ Ok, lanjut. Per sekarang, reference variabel `number_one` dan `number_two` adala
 
 ### ◉ Contoh ke-1
 
-Contoh penerapannya bisa kita lihat pada chapter [Pointer & References](/basic/pointer-references#a315-karakteristik-pointer--reference) chapter ini, disitu bisa dilihat ada variabel mutable `number` dan `pointer_number` yang reference-nya adalah sama dengan variabel `number`. Ketika underlying value `pointer_number` diubah (dari `24` ke `12`), isi data variabel `number` juga berubah.
+Contoh penerapannya bisa kita lihat pada chapter [Pointer & References](/basic/pointer-references#a315-karakteristik-pointer--reference) ini, di situ bisa dilihat ada variabel mutable `number` dan `pointer_number` yang reference-nya adalah sama dengan variabel `number`. Ketika underlying value `pointer_number` diubah (dari `24` ke `12`), isi data variabel `number` juga berubah.
 
 ![Pointer & reference](img/pointer-references-4.png)
 

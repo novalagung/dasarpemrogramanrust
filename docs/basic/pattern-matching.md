@@ -1,14 +1,14 @@
 ---
-sidebar_position: 40
-title: A.40. Pattern Matching
-sidebar_label: A.40. Pattern Matching
+sidebar_position: 41
+title: A.41. Pattern Matching
+sidebar_label: A.41. Pattern Matching
 ---
 
 Chapter ini membahas tentang pattern matching, sebuah teknik yang lebih *advance* dibanding seleksi kondisi biasa.
 
 Dalam pattern matching, pengecekan dilakukan dengan melihat kecocokan suatu pola/pattern.
 
-## A.40.1. Keyword `match`
+## A.41.1. Keyword `match`
 
 Keyword `match` digunakan untuk pattern matching. Contoh penerapan versi sederhananya bisa dilihat berikut:
 
@@ -71,7 +71,7 @@ let time_but_in_javanese = match time {
 println!("{time_but_in_javanese}");
 ```
 
-## A.40.2. Pattern matching
+## A.41.2. Pattern matching
 
 Contoh di atas bisa dikategorikan sebagai seleksi kondisi biasa meskipun menggunakan keyword `match`. Setelah ini kita akan pelajari macam-macam pattern/pola yang di-support dalam pattern matching di Rust.
 
@@ -263,7 +263,7 @@ if let Some(1 | 2) = value {
 }
 ```
 
-## A.40.3. Destructuring assignment
+## A.41.3. Destructuring assignment
 
 ### ◉ Struct destructuring
 

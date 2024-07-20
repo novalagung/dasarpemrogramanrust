@@ -1,12 +1,12 @@
 ---
-sidebar_position: 51
-title: A.51. File, Path, Directory
-sidebar_label: A.51. File, Path, Directory
+sidebar_position: 52
+title: A.52. File, Path, Directory
+sidebar_label: A.52. File, Path, Directory
 ---
 
 Pada chapter ini kita akan belajar tentang beberapa API milik Rust yang disediakan untuk manajemen path dan file system.
 
-## A.51.1. File path (`std::path::Path`)
+## A.52.1. File path (`std::path::Path`)
 
 `"/home/novalagung/Desktop/my text.txt"` adalah salah satu contoh file path. Di Rust, file path bisa direpresentasikan sebagai string (seperti yang sudah dicontohkan), atau menggunakan tipe data `Path`.
 
@@ -92,7 +92,7 @@ if Path::new(path).is_relative() {
 
 ## A.52.3. Module `std::fs` (file system)
 
-`std::fs` merupakan module yang disediakan Rust untuk pengolahan file system. Didalamnya berisinya banyak sekali fungsi untuk keperluan seperti pembuatan file, modifikasi konten file, dan lainnya.
+`std::fs` merupakan module yang disediakan Rust untuk pengolahan file system. Di dalamnya berisinya banyak sekali fungsi untuk keperluan seperti pembuatan file, modifikasi konten file, dan lainnya.
 
 Sebagai contoh, untuk membuat suatu directory bisa menggunakan `fs::create_dir`. Isi argument pemanggilan fungsi dengan path dalam bentuk string (atau `std::path::Path` juga boleh).
 
@@ -142,7 +142,7 @@ match res {
 
 Fungsi `fs::write` melakukan penulisan konten pada variabel `content` ke path `path`. Mode penulisannya adalah *overwrite* (bukan *append*), yang artinya konten lama pada filepath akan di-*replace* total dengan konten baru.
 
-Jika file tidak ada pada `path` tujuan, maka otomatis dibuatkan file baru. Namun jika folder/directory dimana file akan dibuat/ditulis tidak ada, maka muncul error.
+Jika file tidak ada pada `path` tujuan, maka otomatis dibuatkan file baru. Namun jika folder/directory di mana file akan dibuat/ditulis tidak ada, maka muncul error.
 
 ### ◉ Menghapus file (`fs::remove_file`)
 

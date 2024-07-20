@@ -1,16 +1,16 @@
 ---
-sidebar_position: 37
-title: A.37. Generics
-sidebar_label: A.37. Generics
+sidebar_position: 38
+title: A.38. Generics
+sidebar_label: A.38. Generics
 ---
 
 Chapter ini membahas tentang generics.
 
 Generics sendiri merupakan salah satu fitur yang ada pada beberapa bahasa pemrograman (termasuk Rust), yang digunakan untuk menambahkan fleksibilitas dalam pemanfaatan tipe data pada suatu block kode. Dengan adanya generics, kita bisa menentukan tipe data yang digunakan pada parameter maupun return value sbuah block fungsi, method dan lainnya.
 
-Generics dinotasikan dengan `<T>`. Kita sempat sedikit memanfaatkan generic pada chapter [Vector](/basic/vector) dimana dalam pendefinisian tipe data harus dituliskan juga tipe data item (via generics parameter), contoh `Vec<i32>`, `Vec<&str>`, dll. Kita juga sempat sedikit belajar tentang topik generic pada chapter [Traits](/basic/traits).
+Generics dinotasikan dengan `<T>`. Kita sempat sedikit memanfaatkan generic pada chapter [Vector](/basic/vector) di mana dalam pendefinisian tipe data harus dituliskan juga tipe data item (via generics parameter), contoh `Vec<i32>`, `Vec<&str>`, dll. Kita juga sempat sedikit belajar tentang topik generic pada chapter [Traits](/basic/traits).
 
-## A.37.1. Generics basic
+## A.38.1. Generics basic
 
 Mari mulai pembahasan dengan sebauh contoh definisi fungsi yang memiliki generics.
 
@@ -20,7 +20,7 @@ fn do_something<T>(arg1: i32, arg2: T) {
 }
 ```
 
-Pada contoh di atas, fungsi `do_something` didefinisikan dengan 2 buah parameter argument dan 1 buah parameter generics. Parameter argument pertama, yaitu `arg1` bertipe `i32`, kemudian diikuti parameter ke-2 bertipe `T` dimana `T` adalah parameter generic fungsi.
+Pada contoh di atas, fungsi `do_something` didefinisikan dengan 2 buah parameter argument dan 1 buah parameter generics. Parameter argument pertama, yaitu `arg1` bertipe `i32`, kemudian diikuti parameter ke-2 bertipe `T` yang mana `T` adalah parameter generic fungsi.
 
 Dalam pemanggilan fungsi tersebut, `T` generics dan tipe data argument `arg2` harus sama. Contoh:
 
@@ -61,7 +61,7 @@ fn do_something_v2<R, T>(arg1: R, arg2: T) {
 
 Tipe `R` digunakan sebagai tipe parameter `arg1` dan tipe `T` pada parameter `arg2`.
 
-## A.37.2. Mengasosiasikan traits ke parameter generic
+## A.38.2. Mengasosiasikan traits ke parameter generic
 
 Fungsi `do_something` yang telah dipraktikkan, susah untuk diisi dengan apapun. Memang parameter `arg1` tipe-nya adalah `i32`, dan harusnya mudah untuk bermain-main dengan parameter tersebut. Yang agak repot adalah parameter ke-2, yaitu `arg2` yang bertipe `T`.
 
@@ -81,7 +81,7 @@ Repot kan? Tapi tenang, tidak usah khawatir, ada soluasi agar tipe `T` bisa dima
 
 ### ◉ Contoh ke-1
 
-Contoh pengaplikasiannya bisa dilihat pada kode berikut. Ada sebuah fungsi bernama `print_x_times` yang tugasnya adalah menampilkan data `T` sejumlah `x` kali, dimana `T` adalah parameter generics.
+Contoh pengaplikasiannya bisa dilihat pada kode berikut. Ada sebuah fungsi bernama `print_x_times` yang tugasnya adalah menampilkan data `T` sejumlah `x` kali, yang mana `T` adalah parameter generics.
 
 ```rust
 fn main() {
@@ -165,7 +165,7 @@ fn do_something_v3<T: MyTrait>(arg1: T) {
 }
 ```
 
-## A.37.3. Multi traits pada parameter generic
+## A.38.3. Multi traits pada parameter generic
 
 Bagaimana jika `T` perlu untuk diasosiasikan dengan banyak traits (lebih dari satu), apakah bisa? Bisa. Cara penulisannya kurang lebih seperti berikut:
 
@@ -186,7 +186,7 @@ Setelah nilai maksimum diketemukan, nilainya di-print ke stdout menggunakan macr
 
 Bisa dilihat cara penulisan asosiasi multi trait ke parameter generic seperti apa. Cukup tulis saja dengan separator tanda `+`.
 
-## A.37.4. Keyword `where`
+## A.38.4. Keyword `where`
 
 Selain notasi penulisan yang sudah dipelajari di atas ada lagi alternatif lainnya, yaitu menggunakan keyword `where`. Kurang lebih seperti berikut penerapannya.
 
@@ -220,7 +220,7 @@ where
 }
 ```
 
-## A.37.5. Generics struct
+## A.38.5. Generics struct
 
 Selain diterapkan di fungsi, generics bisa juga diterapkan di struct. Cara penulisannya, tambahkan notasi parameter generic di antara nama struct dan block struct.
 
@@ -242,7 +242,7 @@ Pada contoh di atas, struct `Point` memiliki 2 parameter generic. Kemudian struc
 - Variabel `num_one`, bertipe `Point<i32, f64>`. Tipe data property `x` dan `y` adalah `i32` sedangkan tipe data property `z` adalah `f64`.
 - Variabel `num_two`, bertipe `Point<f64, i32>`. Tipe data property `x` dan `y` adalah `f64` sedangkan tipe data property `z` adalah `i32`.
 
-## A.37.6. Generics method
+## A.38.6. Generics method
 
 Generic bisa diterapkan pada method. Notasi penulisannya kurang lebih sama seperti pada penulisan method, hanya saja pada syntax `impl` perlu diikuti block parameter generics. Perbandingannya kurang lebih seperti berikut:
 
@@ -291,7 +291,7 @@ impl<T, U> Point<T, U> {
 }
 ```
 
-Bisa dilihat pada kode di atas, ada method `get_x` untuk mengambil nilai `x`. Nilai baliknya bertipe `T` dimana tipe tersebut juga dipakai sebagai tipe data `x`.
+Bisa dilihat pada kode di atas, ada method `get_x` untuk mengambil nilai `x`. Nilai baliknya bertipe `T` yang tipe tersebut juga dipakai sebagai tipe data `x`.
 
 Kemudian coba gunakan struct `Point` untuk membuat satu atau dua variabel, lalu akses method-nya.
 
@@ -311,7 +311,7 @@ Hasilnya ketika di-run:
 
 ![Generics](img/generics-4.png)
 
-## A.37.7. Method khusus untuk spesifik tipe parameter generic tertentu
+## A.38.7. Method khusus untuk spesifik tipe parameter generic tertentu
 
 Pada contoh di atas, struct `Point<T, U>` bisa digunakan dalam banyak kombinasi tipe data, misalnya: `Point<i32, f64>`, `Point<i8, i32>`, `Point<f32, u64>`, dan lainya.
 
@@ -358,7 +358,7 @@ impl Point<i8, i64> {
 // ...
 ```
 
-## A.37.8. Generics enum
+## A.38.8. Generics enum
 
 Generic juga bisa diterapkan pada tipe enum. Caranya tulis saja deklarasi parameter generic setelah nama enum, lalu gunakan parameter generic-nya sesuai kebutuhan.
 
