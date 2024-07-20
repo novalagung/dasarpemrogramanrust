@@ -1,14 +1,14 @@
 ---
-sidebar_position: 41
-title: A.41. Static Item
-sidebar_label: A.41. Static Item
+sidebar_position: 42
+title: A.42. Static Item
+sidebar_label: A.42. Static Item
 ---
 
 Pada chapter ini kita akan bahas tentang apa itu static item, dan perbedaanya dibanding konstanta.
 
 Namun sebelum masuk ke inti pembahasan, mari kita sedikit belajar tentang apa itu *lifetime* dalam Rust programming.
 
-## A.41.1. Sekilas tentang *lifetime*
+## A.42.1. Sekilas tentang *lifetime*
 
 Di Rust ada yang disebut dengan **lifetime**. Lifetime merupakan sebuah identifier yang digunakan compiler untuk memantau berapa lama reference valid.
 
@@ -18,7 +18,7 @@ Untuk sekarang, silakan dipahami bahwa sebuah syntax yang diawali dengan tanda `
 
 > Pembahasan detail mengenai lifetime dibahas pada chapter selanjutnya, yaitu [Lifetime](/basic/lifetime).
 
-## A.41.2. Static item
+## A.42.2. Static item
 
 Ok, sekarang kembali ke topik utama, yaitu static. Static adalah item yang mirip dengan [Konstanta](/basic/konstanta), tapi memiliki perbedaan yaitu alamat memory yang dialokasikan untuk menampung data static item adalah fix/jelas. Semua reference terhadap static item mengarah ke alamat memory yang sama.
 
@@ -29,7 +29,7 @@ Ada dua cara membuat static item:
 - Menggunakan keyword `static` pada pendefinisian konstanta
 - Menggunakan lifetime `'static` pada tipe data string literal (`&str`)
 
-## A.41.3. Keyword `static`
+## A.42.3. Keyword `static`
 
 Ok, kita terapkan cara pertama, penerapan keyword `static` untuk pembuatan konstanta.
 
@@ -59,7 +59,7 @@ Perlu diketahui bahwa keyword `static` bisa digunakan pada semua tipe data primi
 
 Lalu bagaimana jika ada kebutuhan membuat konstanta bertipe string? Solusinya dengan menggunakan tipe data `&'static str` yang sebentar lagi akan kita bahas.
 
-## A.41.4. Lifetime `'static`
+## A.42.4. Lifetime `'static`
 
 Lifetime `'static` digunakan untuk deklarasi reference sebagai static item. Data yang memiliki lifetime ini tidak akan pernah di-dealokasi kecuali eksekusi program selesai.
 
@@ -85,7 +85,7 @@ const VERSION: &str = "v1.2.3";
 const VERSION: &'static str = "v1.2.3";
 ```
 
-## A.41.5. Static item data literal
+## A.42.5. Static item data literal
 
 Pada chapter [Borrowing](/basic/borrowing#a347-owner-dan-borrower-data-literal) sempat kita bahas sedikit tentang siapa owner dan borrower data literal.
 

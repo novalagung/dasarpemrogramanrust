@@ -1,7 +1,7 @@
 ---
-sidebar_position: 44
-title: A.44. String Literal (&str) vs. String Custom Type
-sidebar_label: A.44. String Literal (&str) vs. String Custom Type
+sidebar_position: 45
+title: A.45. String Literal (&str) vs. String Custom Type
+sidebar_label: A.45. String Literal (&str) vs. String Custom Type
 ---
 
 Pada chapter sebelumnya kita telah membahas tentang bagaimana data slice di-manage di memory. Ada beberapa tipe data yang masuk dalam kategori slice, yang salah satunya adalah string slice atau `String`.
@@ -12,7 +12,7 @@ Pembahasan mengenai topik ini sengaja dilakukan tidak di awal-awal ebook, karena
 
 > Silakan pelajari kembali pembahasan detail tentang tipe slice pada chapter sebelumnya jika diperlukan. Chapter [Slice Memory Management](/basic/slice-memory-management)
 
-## A.44.1. String slice (`String`)
+## A.45.1. String slice (`String`)
 
 String slice atau custom type `String` merupakan tipe data bawaan Rust, dibuat via `struct`, kegunaannya untuk menampung data UTF-8 bytes yang dinamis (bisa berkembang isinya).
 
@@ -47,7 +47,7 @@ Pada contoh di atas, data bytes dipersiapkan dalam bentuk `Vec<u8>`. Data terseb
 
 > Kita akan bahas tipe data `Result` pada chapter terpisah, [Tipe Data ➜ Result](/basic/result-type)
 
-## A.44.2. String literal (`&str`)
+## A.45.2. String literal (`&str`)
 
 Tipe data string literal atau `&str` adalah tipe yang menampung data kolektif UTF-8 bytes (seperti `String`) tetapi **immutable** dan disimpannya tidak di heap dan tidak juga di stack, melainkan di static storage.
 
@@ -64,7 +64,7 @@ let str3 = "Helena Iren Michaelsen Epica";
 println!("str3: {str3}");
 ```
 
-## A.44.3. Konversi data string
+## A.45.3. Konversi data string
 
 ### ◉ Konversi `String` ke `&str`
 
@@ -118,7 +118,7 @@ Konversi pada tipe data ini sedikit berbeda dibandingkan konversi `String` ke `&
 
 Method `to_string` melakukan operasi copy, bukan borrow. Artinya setelah dipanggil akan ada 2 data yang reference-nya sudah berbeda.
 
-## A.44.4. String literal & string slice
+## A.45.4. String literal & string slice
 
 Tipe `String` memiliki hubungan dekat dengan `&str`. Data bertipe `String` reference-nya bisa diakses dalam bentuk `&String`, maupun dalam bentuk `&str` (menggunakan method `as_str` atau `as_mut_str`). Data text pada string tersebut bisa dimodifikasi, ditambahi, dan juga dikurangi.
 

@@ -414,8 +414,8 @@ Pembahasan topik module dilanjutkan pada beberapa chapter lain. Pada chapter [Mo
 ### ◉ Source code praktik
 
 <pre>
-    <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/module">
-        github.com/novalagung/dasarpemrogramanrust-example/../module
+    <a href="https://github.com/novalagung/dasarpemrogramanrust-example/tree/master/module_basic">
+        github.com/novalagung/dasarpemrogramanrust-example/../module_basic
     </a>
 </pre>
 

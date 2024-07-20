@@ -1,12 +1,12 @@
 ---
-sidebar_position: 51
-title: A.51. File, Path, Directory
-sidebar_label: A.51. File, Path, Directory
+sidebar_position: 52
+title: A.52. File, Path, Directory
+sidebar_label: A.52. File, Path, Directory
 ---
 
 Pada chapter ini kita akan belajar tentang beberapa API milik Rust yang disediakan untuk manajemen path dan file system.
 
-## A.51.1. File path (`std::path::Path`)
+## A.52.1. File path (`std::path::Path`)
 
 `"/home/novalagung/Desktop/my text.txt"` adalah salah satu contoh file path. Di Rust, file path bisa direpresentasikan sebagai string (seperti yang sudah dicontohkan), atau menggunakan tipe data `Path`.
 

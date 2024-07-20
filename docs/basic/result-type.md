@@ -1,14 +1,14 @@
 ---
-sidebar_position: 39
-title: A.39. Tipe Data ➜ Result
-sidebar_label: A.39. Tipe Data ➜ Result
+sidebar_position: 40
+title: A.40. Tipe Data ➜ Result
+sidebar_label: A.40. Tipe Data ➜ Result
 ---
 
 Chapter ini membahas tentang tipe data `Result`. Tipe data ini digunakan untuk menampung nilai hasil suatu proses yang isinya adalah bisa sukses (`Ok`) atau error (`Err`).
 
 Tipe data `Result` biasa digunakan untuk menampung hasil eksekusi proses dan error handling.
 
-## A.39.1. Konsep `Result`
+## A.40.1. Konsep `Result`
 
 Tipe data `Result` adalah enum dengan isi 2 buah enum value:
 
@@ -60,7 +60,7 @@ Output program di atas saat di-run:
 
 ![Result type](img/result-type-1.png)
 
-## A.39.2. Pattern matching pada tipe `Result`
+## A.40.2. Pattern matching pada tipe `Result`
 
 Dalam penerapannya, ketika ada data bertipe `Result` artinya data tersebut berpotensi untuk berisi nilai `Err<E>` atau `Ok<T>`, pasti antara 2 nilai tersebut.
 
@@ -140,7 +140,7 @@ Dengan penerapan pattern matching seperti di atas, maka variabel `result` akan s
 
 > Lebih jelasnya mengenai pattern matching dibahas pada chapter [Pattern Matching](/basic/pattern-matching)
 
-## A.39.3. Method tipe data `Result`
+## A.40.3. Method tipe data `Result`
 
 ### ◉ Method `is_ok` & `unwrap`
 
@@ -237,7 +237,7 @@ Closure harus dalam notasi `FnOnce(E) -> T` yang mana `T` pada konteks ini adala
 
 > Lebih jelasnya mengenai closure dibahas pada chapter [Closures](/basic/closures).
 
-## A.39.4. Error handling tipe `Result`
+## A.40.4. Error handling tipe `Result`
 
 Tipe data `Result<T, E>` banyak digunakan pada fungsi milik Rust standard library, dan kita selaku programmer pastinya juga akan menggunakannya dalam *real life* project.
 

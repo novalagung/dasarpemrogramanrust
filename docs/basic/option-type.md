@@ -1,12 +1,12 @@
 ---
-sidebar_position: 38
-title: A.38. Tipe Data ➜ Option
-sidebar_label: A.38. Tipe Data ➜ Option
+sidebar_position: 39
+title: A.39. Tipe Data ➜ Option
+sidebar_label: A.39. Tipe Data ➜ Option
 ---
 
 `Option` adalah salah satu tipe data penting pada Rust programming, digunakan untuk menampung data yang isinya bisa berpotensi kosong (`None`). Chapter ini membahas tentang tipe data tersebut.
 
-## A.38.1. Konsep `Option`
+## A.39.1. Konsep `Option`
 
 Tipe data `Option` adalah enum dengan isi 2 buah enum value:
 
@@ -52,7 +52,7 @@ Output program di atas saat di-run:
 
 ![Option type](img/option-type-1.png)
 
-## A.38.2. Pattern matching pada tipe `Option`
+## A.39.2. Pattern matching pada tipe `Option`
 
 Dalam penerapannya, ketika ada data bertipe `Option` artinya data tersebut berpotensi untuk berisi nilai `None` atau `Some<T>`, pasti antara 2 nilai tersebut.
 
@@ -136,7 +136,7 @@ Dengan penerapan pattern matching seperti di atas, maka variabel `result` akan s
 
 > Lebih jelasnya mengenai pattern matching dibahas pada chapter [Pattern Matching](/basic/pattern-matching)
 
-## A.38.3. Method tipe data `Option`
+## A.39.3. Method tipe data `Option`
 
 ### ◉ Method `unwrap`
 
