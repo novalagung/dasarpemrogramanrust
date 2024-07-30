@@ -1,14 +1,14 @@
 ---
-sidebar_position: 48
-title: A.48. Trait ➜ Function (Fn, FnMut, FnOnce)
-sidebar_label: A.48. Trait ➜ Function (Fn, FnMut, FnOnce)
+sidebar_position: 49
+title: A.49. Trait ➜ Function (Fn, FnMut, FnOnce)
+sidebar_label: A.49. Trait ➜ Function (Fn, FnMut, FnOnce)
 ---
 
 Chapter ini merupakan topik lanjutan dari chapter sebelumnya, di sini kita akan bahas beberapa jenis trait yang digunakan di closure.
 
 Rust memiliki 3 buah trait yang otomatis ter-implement pada closure, yaitu `Fn`, `FnMut`, dan `FnOnce`. Ketiga trait ini juga otomatis ter-implement pada fungsi yang didefinisikan menggunakan keyword `fn`.
 
-## A.48.1. Trait `Fn`
+## A.49.1. Trait `Fn`
 
 `Fn` sudah kita terapkan beberapa kali saat praktik pembuatan closure di chapter sebelumnya. Fn adalah trait ([std::ops::Fn](https://doc.rust-lang.org/std/ops/trait.Fn.html)), yang dipakai oleh Rust untuk menandai bahwa suatu closure bisa dipanggil berkali-kali dengan catatan di dalam closure tersebut tidak ada operasi mutable terhadap variabel yang scope-nya berada di luar block closure.
 
@@ -39,7 +39,7 @@ where
 }
 ```
 
-## A.48.2. Trait `FnMut`
+## A.49.2. Trait `FnMut`
 
 Trait `FnMut` ([std::ops::FnMut](https://doc.rust-lang.org/std/ops/trait.FnMut.html)) merupakan trait yang menjadikan suatu closure bisa diakses berkali-kali dan bisa me-mutate atau mengubah data suatu variabel yang berada di luar scope block closure. Trait ini juga otomatis ter-implement pada closure yang di dalamnya ada kode pengaksesan variabel yang berada di luar scope block closure.
 
@@ -83,7 +83,7 @@ Jika dipaksa deklarasi menggunakan `Fn`, hasilnya pasti error.
 
 > Lebih jelasnya mengenai supertrait dibahas pada chpater [Supertrait](#/wip/supertrait)
 
-## A.48.3. Trait `FnOnce`
+## A.49.3. Trait `FnOnce`
 
 Trait `FnOnce` ([std::ops::FnOnce](https://doc.rust-lang.org/std/ops/trait.FnOnce.html)) adalah trait yang menjadikan suatu closure hanya boleh di akses sekali saja, dan closure tersebut bisa berisi operasi mutable ataupun tidak.
 
@@ -110,7 +110,7 @@ Jika closure dengan tipe `FnOnce` dipaksa diakses dua kali, pasti muncul error. 
 
 > Lebih jelasnya mengenai supertrait dibahas pada chpater [Supertrait](#/wip/supertrait)
 
-## A.48.4. Relasi antara trait function dengan function
+## A.49.4. Relasi antara trait function dengan function
 
 Trait `Fn`, `FnMut`, dan juga `FnOnce` tidak hanya ter-implement pada closure, tapi juga ter-implement pada fungsi juga (secara otomatis).
 

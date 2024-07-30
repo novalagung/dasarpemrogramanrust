@@ -224,6 +224,10 @@ Closure harus dalam notasi `FnOnce() -> T` yang mana `T` pada konteks ini adalah
 >
 > Lebih jelasnya mengenai closure dibahas pada chapter [Closures](/basic/closures).
 
+## A.38.4. Operator `?` pada tipe `Option`
+
+Tipe data `Option` bisa digunakan pada operator `?`. Penjelasannya ada di chapter terpisah di [Operator ?](/basic/operator-tanda-tanya).
+
 ---
 
 ## Catatan chapter 📑
@@ -241,6 +245,7 @@ Closure harus dalam notasi `FnOnce() -> T` yang mana `T` pada konteks ini adalah
 - [Generics](/basic/generics)
 - [Pattern Matching](/basic/pattern-matching)
 - [Closures](/basic/closures)
+- [Operator ?](/basic/operator-tanda-tanya)
 
 ### ◉ Referensi
 
