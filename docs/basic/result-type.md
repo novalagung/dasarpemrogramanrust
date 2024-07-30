@@ -10,7 +10,7 @@ Rust menyediakan panic-level error, tapi penggunaannya untuk menandai operasi er
 
 Tipe `Result` ini adalah tipe yang paling umum dan direkomendasikan untuk digunakan dalam penanganan error.
 
-> Lebih detailnya mengenai penanganan error dibahas di chapter [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling)
+> Lebih detailnya mengenai penanganan error dibahas di chapter [Error ➜ Recoverable Error & Error Handling](#)
 
 ## A.40.1. Konsep `Result`
 
@@ -249,7 +249,7 @@ Tipe data `Result` bisa digunakan pada operator `?`. Penjelasannya ada di chapte
 
 Tipe data `Result<T, E>` banyak digunakan pada fungsi-fungsi yang disediakan Rust standard library, selain itu tipe tersebut juga akan sering kita gunakan dalam *real life* project.
 
-Tipe ini dimanfaatkan untuk error handling di Rust. Lebih jelasnya mengenai topik tersebut dibahas pada chapter [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling).
+Tipe ini dimanfaatkan untuk error handling di Rust. Lebih jelasnya mengenai topik tersebut dibahas pada chapter [Error ➜ Recoverable Error & Error Handling](#).
 
 ---
 
@@ -269,7 +269,7 @@ Tipe ini dimanfaatkan untuk error handling di Rust. Lebih jelasnya mengenai topi
 - [Pattern Matching](/basic/pattern-matching)
 - [Closures](/basic/closures)
 - [Operator ?](/basic/operator-tanda-tanya)
-- [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling)
+- [Error ➜ Recoverable Error & Error Handling](#)
 
 ### ◉ Referensi
 

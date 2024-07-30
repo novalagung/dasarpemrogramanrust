@@ -173,7 +173,7 @@ Ketika operasi menghasilkan error, eksekusi blok fungsi menjadi terhenti dan err
 
 > Inilah bagaimana penanganan error di Rust dilakukan.
 >
-> Lebih detailnya mengenai *error propagation* atau *error propagation* dibahas pada chapter [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling).
+> Lebih detailnya mengenai *error propagation* atau *error propagation* dibahas pada chapter [Error ➜ Recoverable Error & Error Handling](#).
 
 Coba sekarang ubah lagi kode yang sudah ditulis, kita coba cek error apa yang muncul saat pemanggilan fungsi `do_some_math()`. Ubah isi fungsi `main()` dengan menambahkan keyword `match` untuk mengecek nilai balik eksekusi fungsi `do_some_math()`. Kode setelah diubah:
 
@@ -229,7 +229,7 @@ Outputnya bisa dilihat di bawah ini. Pemanggilan fungsi `do_some_math()` memang 
 ### ◉ Chapter relevan lainnya
 
 - [Tipe Data ➜ Result](/basic/result-type)
-- [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling)
+- [Error ➜ Recoverable Error & Error Handling](#)
 
 ### ◉ Work in progress
 

@@ -154,7 +154,7 @@ Jika tidak di-flush, ada kemungkinan text `enter your name: ` muncul setelah use
 
 ### ◉ Chapter relevan lainnya
 
-- [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling)
+- [Error ➜ Recoverable Error & Error Handling](#)
 
 ### ◉ Referensi
 
