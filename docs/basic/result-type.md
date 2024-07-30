@@ -6,9 +6,11 @@ sidebar_label: A.40. Tipe Data ➜ Result
 
 Chapter ini membahas tentang tipe data `Result`, yaitu tipe data yang digunakan untuk menampung nilai yang isinya bisa berupa penanda operasi sukses (`Ok`) dan data, atau error (`Err`) beserta keterangan errornya.
 
-Rust tidak mengenal konsep *recoverable error* atau *exception*. Rust menyediakan panic-level error, tapi penggunaannya untuk menandai operasi error sangat tidak dianjurkan.
+Rust menyediakan panic-level error, tapi penggunaannya untuk menandai operasi error sangat tidak dianjurkan. Selain itu, Rust tidak mengenal konsep *exception*.
 
-Tipe `Result` ini adalah tipe yang paling umum dan direkomendasikan untuk digunakan dalam penanganan error. 
+Tipe `Result` ini adalah tipe yang paling umum dan direkomendasikan untuk digunakan dalam penanganan error.
+
+> Lebih detailnya mengenai penanganan error dibahas di chapter [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling)
 
 ## A.40.1. Konsep `Result`
 
