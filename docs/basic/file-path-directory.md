@@ -13,11 +13,19 @@ Pada chapter ini kita akan belajar tentang beberapa API milik Rust yang disediak
 Tipe data `Path` tersedia dalam module `std::path`. Cara penggunaannya cukup mudah, sebagai contoh, beberapa filepath berikut menghasilkan path yang sama:
 
 ```rust
+use std::path::Path;
+
 let filepath_1 = "/home/novalagung/Desktop/my text.txt";
 let filepath_2 = Path::new("/home/novalagung/Desktop/my text.txt");
 let filepath_3 = Path::new("/home/novalagung/Desktop").join("my text.txt");
 let filepath_4 = Path::new("/home/novalagung").join("Desktop").join("my text.txt");
 let filepath_5 = Path::new("/home").join("novalagung/Desktop/my text.txt");
+
+println!("{:?}", filepath_1);
+// output => "/home/novalagung/Desktop/my text.txt"
+
+println!("{:?}", filepath_2);
+// output => "/home/novalagung/Desktop/my text.txt"
 ```
 
 ## A.53.2. Method filepath
@@ -49,7 +57,7 @@ Hasil dari operasi di atas adalah path:
 Digunakan untuk mengecek apakah suatu filepath ada atau tidak.
 
 ```rust
-if Path::new(path).exists() {
+if Path::new(&path).exists() {
     // path exists
 }
 ```
@@ -59,7 +67,7 @@ if Path::new(path).exists() {
 Method `is_file()` digunakan untuk mengecek apakah suatu filepath berisi file.
 
 ```rust
-if Path::new(path).is_file() {
+if Path::new(&path).is_file() {
     // path is a file
 }
 ```
@@ -67,7 +75,7 @@ if Path::new(path).is_file() {
 Sedangkan method `is_dir()` digunakan untuk mengecek apakah suatu filepath adalah folder/directory.
 
 ```rust
-if Path::new(path).is_dir() {
+if Path::new(&path).is_dir() {
     // path contains directory
 }
 ```
@@ -77,7 +85,7 @@ if Path::new(path).is_dir() {
 Method `is_absolute()` digunakan untuk mengecek apakah suatu filepath adalah *absolute path*.
 
 ```rust
-if Path::new(path).is_absolute() {
+if Path::new(&path).is_absolute() {
     // path is an absolute path
 }
 ```
@@ -85,7 +93,7 @@ if Path::new(path).is_absolute() {
 Sedangkan method `is_relative()` digunakan untuk mengecek apakah suatu filepath adalah *relative path*.
 
 ```rust
-if Path::new(path).is_relative() {
+if Path::new(&path).is_relative() {
     // path is a relative path
 }
 ```
@@ -97,8 +105,14 @@ if Path::new(path).is_relative() {
 Sebagai contoh, untuk membuat suatu directory bisa menggunakan `fs::create_dir`. Isi argument pemanggilan fungsi dengan path dalam bentuk string (atau `std::path::Path` juga boleh).
 
 ```rust
-let path = "./files";
-let res = fs::create_dir(path);
+use std::fs;
+
+fn main() {
+    let path = "./files";
+    let res = fs::create_dir(&path);
+    println!("{:?}", res);
+    // output => Ok(())
+}
 ```
 
 Fungsi `fs::create_dir` mengembalikan value bertipe `Result<(), Error>`. Gunakan pattern matching `match` untuk mengecek hasil operasi apakah sukses atau tidak.
@@ -107,9 +121,10 @@ Fungsi `fs::create_dir` mengembalikan value bertipe `Result<(), Error>`. Gunakan
 match fs::create_dir("./files") {
     Err(err) => {
         println!("error on creating directory! {}", err);
-        return
     },
-    _ => {},
+    _ => {
+        println!("directory created");
+    },
 }
 ```
 
@@ -129,14 +144,15 @@ Fungsi `fs::write` digunakan untuk membuat folder. Contoh penerapan:
 ```rust
 let path = Path::new("./files").join("target.txt");
 let content = "hello rust!";
-let res = fs::write(path, content);
+let res = fs::write(&path, &content);
 
 match res {
     Err(err) => {
         println!("error on writing file {}! {}", path.to_str().unwrap_or_default(), err);
-        return
     },
-    _ => {},
+    _ => {
+        println!("file created");
+    },
 }
 ```
 
@@ -144,20 +160,63 @@ Fungsi `fs::write` melakukan penulisan konten pada variabel `content` ke path `p
 
 Jika file tidak ada pada `path` tujuan, maka otomatis dibuatkan file baru. Namun jika folder/directory di mana file akan dibuat/ditulis tidak ada, maka muncul error.
 
+### ◉ Membaca isi file ke bentuk string (`fs::read_to_string`)
+
+Fungsi `fs::read_to_string()` digunakan untuk membaca isi file dalam bentuk string. Contoh penerapannya:
+
+```rust
+let path = Path::new("./files").join("target.txt");
+let res = fs::read_to_string(&path);
+
+match res {
+    Err(err) => {
+        println!("error on reading file {}! {}", path.to_str().unwrap_or_default(), err);
+    },
+    Ok(content) => {
+        println!("file {:?} content is: {:?}", path, content);
+    },
+}
+```
+
+### ◉ Membaca isi file ke bentuk vector (`fs::read`)
+
+Fungsi `fs::read()` melakukan operasi baca file dan mengembalikan nilainya dalam bentuk vector `Vec<u8>`. Umumnya, fungsi ini dikombinasikan dengan fungsi `std::str::from_utf8()` agar konten file bisa dimunculkan dalam format encoding tertentu (misalnya UTF-8).
+
+```rust
+let path = Path::new("./files").join("target.txt");
+let res = fs::read(&path);
+
+if res.is_err() {
+    println!("error on reading file");
+    return;
+}
+
+let content = res.unwrap_or_default();
+match std::str::from_utf8(&content) {
+    Err(err) => {
+        println!("error on reading file! Invalid UTF-8 sequence. {}", err);
+    },
+    Ok(content) => {
+        println!("file {:?} content is: {:?}", path, content);
+    },
+};
+```
+
 ### ◉ Menghapus file (`fs::remove_file`)
 
 Fungsi `fs::remove_file` digunakan untuk menghapus file pada suatu path. Contoh penerapan:
 
 ```rust
 let path = Path::new("./files").join("target.txt");
-let res = fs::remove_file(path);
+let res = fs::remove_file(&path);
 
 match res {
     Err(err) => {
         println!("error on deleting file {}! {}", path.to_str().unwrap_or_default(), err);
-        return
     },
-    _ => {},
+    _ => {
+        println!("file deleted");
+    },
 }
 ```
 
@@ -167,14 +226,15 @@ Fungsi `fs::remove_dir` digunakan untuk menghapus folder/directory. Contoh pener
 
 ```rust
 let path = Path::new("./files");
-let res = fs::remove_dir(path);
+let res = fs::remove_dir(&path);
 
 match res {
     Err(err) => {
         println!("error on deleting directory {}! {}", path.to_str().unwrap_or_default(), err);
-        return
     },
-    _ => {},
+    _ => {
+        println!("directory deleted");
+    },
 }
 ```
 
@@ -184,10 +244,10 @@ Fungsi `fs::read_dir` digunakan untuk menampilkan list items suatu folder (baik 
 
 ```rust
 let path = Path::new("D:\\Labs\\Adam Studio\\Ebook\\dasarpemrogramanrust\\file_path_directory_1");
-let paths = fs::read_dir(path).unwrap();
+let paths = fs::read_dir(&path).unwrap();
 
 for path in paths {
-    let item = path.unwrap();
+    let item = &path.unwrap();
     println!("file name: {:?}, file path: {:?}", item.file_name(), item.path().display())
 }
 ```
