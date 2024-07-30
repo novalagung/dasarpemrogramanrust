@@ -1,7 +1,7 @@
 ---
-sidebar_position: 43
-title: A.43. Lifetime
-sidebar_label: A.43. Lifetime
+sidebar_position: 44
+title: A.44. Lifetime
+sidebar_label: A.44. Lifetime
 ---
 
 Pada chapter ini kita akan belajar tentang lifetime. Lifetime adalah yang digunakan oleh Rust compiler untuk memonitor umur dari references agar tetap dianggap valid.
@@ -12,7 +12,7 @@ Ketika berurusan dengan data primitif maupun non-primitif tak perlu khawatir per
 
 > Topik lifetime adalah salah satu yang paling membingungkan di Rust. Wajar jika membutuhkan waktu lebih lama untuk menguasainya. *Take your time*, pelajari pelan-pelan dan ulangi berkali-kali jika perlu.
 
-## A.43.1. Konsep Lifetime
+## A.44.1. Konsep Lifetime
 
 Lifetime adalah yang digunakan oleh Rust compiler untuk memonitor umur dari references agar tetap valid. Lifetime menempel di variabel, lebih tepatnya di reference variabel.
 
@@ -58,7 +58,7 @@ Setiap data memiliki default lifetime.
 
 Default lifetime bisa di-override menggunakan lifetime yang kita definisikan sendiri.
 
-## A.43.2. Relasi antara lifetime dengan owner dan borrower
+## A.44.2. Relasi antara lifetime dengan owner dan borrower
 
 Lifetime menjadi salah satu hal yang wajib diperhatikan ketika bermain dengan references. Operasi seperti melempar reference ke luar scope, atau memasukan reference ke block scope baru berpotensi memunculkan error yang berhubungan dengan lifetime.
 
@@ -178,7 +178,7 @@ Namun perlu diingat, bahwa data efek dari lifetime `'static` adalah data tidak a
 
 Solusi yang lebih pas adalah dengan membuat lifetime sendiri dengan cara menerapkan **lifetime annotation** (tidak menggunakan lifetime `'static`).
 
-## A.43.3. Lifetime annotation dan penerapannya pada return value
+## A.44.3. Lifetime annotation dan penerapannya pada return value
 
 Lifetime dituliskan dengan notasi `'nama_lifetime`. Dengan notasi tersebut, kita bisa menciptakan lifetime baru misalnya `'a`, `'b`, `'ini_lifetime`, dst.
 
@@ -216,7 +216,7 @@ Fungsi `get_number` sekarang tidak menghasilkan error, karena reference yang dik
 
 Tanpa adanya lifetime pada return value, maka data return value akan langsung di-dealokasi setelah block fungsi selesai dieksekusi. Tapi karena hal ini *by default* sudah di-handle Rust, maka kita tidak perlu memikirkannya.
 
-## A.43.4. Lifetime pada parameter
+## A.44.4. Lifetime pada parameter
 
 Pada praktik ini kita akan bahas penerapan lifetime pada parameter.
 
@@ -296,7 +296,7 @@ fn do_something_v7<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-## A.43.5. Lifetime elision
+## A.44.5. Lifetime elision
 
 Sampai section ini kita telah mempelajari kurang lebih 4 point berikut:
 
@@ -315,7 +315,7 @@ Meskipun demikian, tak usah terlalu khawatir, karena pengecekan lifetime referen
 
 Jika kawan-kawan menggunakan `rust-analyzer` extension di VSCode, tak perlu meng-compiler program untuk memunculkan error-nya, karena langsung muncul saat penulisan kode program.
 
-## A.43.6. Lifetime pada struct
+## A.44.6. Lifetime pada struct
 
 Tak hanya pada parameter fungsi dan return value fungsi, lifetime juga bisa diterapkan pada (property) struct.
 
@@ -370,7 +370,7 @@ fn main() {
 }
 ```
 
-## A.43.7. Lifetime pada method
+## A.44.7. Lifetime pada method
 
 Ada 2 hal yang perlu diketahui dalam penerapan lifetime pada method. Yang pertama, lifetime annotication harus ditulis pada block `impl` meskipun pada block method tidak digunakan secara langsung.
 
@@ -447,7 +447,7 @@ Run program, hasilnya sukses.
 
 ![Lifetime](img/lifetime-9.png)
 
-## A.43.8. Generic parameter + trait bounds + lifetime
+## A.44.8. Generic parameter + trait bounds + lifetime
 
 Lalu bagaimana jika ada fungsi yang di situ ada penerapan trait bounds, ada juga generic parameter, dan lifetime annotation. Cara penulisannya seperti apa? Silakan lihat contoh berikut:
 

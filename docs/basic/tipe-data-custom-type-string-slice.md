@@ -1,7 +1,7 @@
 ---
-sidebar_position: 46
-title: A.46. Tipe Data ➜ String Custom Type
-sidebar_label: A.46. Tipe Data ➜ String Custom Type
+sidebar_position: 47
+title: A.47. Tipe Data ➜ String Custom Type
+sidebar_label: A.47. Tipe Data ➜ String Custom Type
 ---
 
 Pembahasan kali ini lingkupnya masih dalam topik custom type `String`.
@@ -13,7 +13,7 @@ Penulis rasa 2 chapter terakhir sudah cukup banyak menjelaskan perihal apa itu t
 
 Chapter ini akan lebih fokus ke fitur yang tersedia pada tipe `String`.
 
-## A.46.1. Pembuatan string slice
+## A.47.1. Pembuatan string slice
 
 Ada banyak cara yang bisa digunakan dalam membuat data `String`, di antaranya:
 
@@ -55,7 +55,7 @@ println!("{str4}"); // N73
 
 > Lebih jelasnya mengenai tipe `Result` dibahas pada chapter [Tipe Data ➜ Result](/basic/result-type)
 
-## A.46.2. String mutability
+## A.47.2. String mutability
 
 ### ◉ Keyword `mut`
 
@@ -151,7 +151,7 @@ str11.clear();
 println!("{str11}"); // ""
 ```
 
-## A.46.3. Operasi string lainnya
+## A.47.3. Operasi string lainnya
 
 ### ◉ Cek substring / method `contains`
 

@@ -1,14 +1,14 @@
 ---
-sidebar_position: 47
-title: A.47. Closures
-sidebar_label: A.47. Closures
+sidebar_position: 48
+title: A.48. Closures
+sidebar_label: A.48. Closures
 ---
 
 Chapter ini membahas tentang closures. Closures sendiri merupakan block fungsi anonimus (anonymous function) yang memiliki kelebihan bisa mengakses item-tem yang posisinya berada di luar block closure tersebut tetapi masih dalam current block scope.
 
 Topik closures sangat erat hubungannya dengan [Trait ➜ Function](/basic/trait-function), namun pada chapter ini pembahasan hanya difokuskan pada bagian penerapan closures saja. Penulis anjurkan untuk lanjut ke chapter berikutnya setelah selesai dengan chapter ini.
 
-## A.47.1. Konsep Closures
+## A.48.1. Konsep Closures
 
 Cara penerapan closure sangat mirip seperti fungsi, perbedaannya ada pada notasi penulisan-nya. Agar lebih jelas silakan perhatikan program sederhana di bawah ini.
 
@@ -61,7 +61,7 @@ println!("{:.4}", pi); // 3.1416
 println!("{pi:.4}");   // 3.1416
 ```
 
-## A.47.2. Notasi penulisan closure
+## A.48.2. Notasi penulisan closure
 
 Closure `calculate_circle_volume_v2` pada contoh di atas adalah salah satu contoh penulisan closure. Sebuah closure bisa memiliki parameter, bisa juga tidak, dan aturan tersebut juga berlaku pada return value.
 
@@ -119,7 +119,7 @@ let get_pi = || 3.14;
 println!("{:?}", get_pi());
 ```
 
-## A.47.3. Mutable closure
+## A.48.3. Mutable closure
 
 Tidak ada yang spesial mengenai cara mengakses item yang berada di luar block closure. Caranya cukup dengan panggil saja item seperti biasanya.
 
@@ -164,7 +164,7 @@ let mut increase_by = |x: i32| {
 
 Keyword `mut` wajib ditambahkan ke variabel penampung closure ketika di dalamnya terdapat operasi perubahan data terhadap variabel yang posisinya di-luar closure. Contohnya bisa dilihat di atas, variabel `num` nilainya di-mutate atau diubah dari dalam closure, karena inilah variabel `increase_by` harus didefinisikan mutable.
 
-## A.47.4. Borrowing pada closure
+## A.48.4. Borrowing pada closure
 
 **Semua variabel di luar block closure ketika digunakan di dalam closure maka terjadi operasi borrowing pada variabel tersebut**. Variabel di luar block closure dipinjam agar bisa digunakan di dalam closure.
 
@@ -218,7 +218,7 @@ Pada contoh di atas, closure `increase_by` ditambahi parameter baru. Sekarang ad
 
 > Pengaksesan variabel yang berada di luar scope closure tanpa via parameter berarti adalah borrowing, maka dalam penerapannya wajib untuk memperhatikan aturan yang berlaku pada ownership dan borrowing.
 
-## A.47.5. Keyword `move`
+## A.48.5. Keyword `move`
 
 Telah dijelaskan di atas bahwa variabel di luar closure, jika diakses dari dalam closure maka terjadi borrowing. Ada cara agar variabel tersebut ownership-nya berpindah ke dalam closure (*move semantics*), yaitu menggunakan keyword `move`.
 
@@ -243,7 +243,7 @@ Lalu bagaimana dengan nasib variabel `num` yang berada di luar closure setelah o
 
 Bisa dilihat dari gambar di atas, statement `print` dari dalam block closure hasilnya adalah benar, yaitu `5 + 10 = 15`. Dan variabel `num` di luar block closure tidak berubah nilainya.
 
-## A.47.6. Closure sebagai return type
+## A.48.6. Closure sebagai return type
 
 ### ◉ Praktik ke-1
 
@@ -314,7 +314,7 @@ println!("{message} (from main)");
 
 ![Closure](img/closures-5.png)
 
-## A.47.7. Closure sebagai parameter fungsi
+## A.48.7. Closure sebagai parameter fungsi
 
 ### ◉ Praktik ke-1
 

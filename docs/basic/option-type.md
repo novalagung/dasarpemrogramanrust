@@ -224,65 +224,9 @@ Closure harus dalam notasi `FnOnce() -> T` yang mana `T` pada konteks ini adalah
 >
 > Lebih jelasnya mengenai closure dibahas pada chapter [Closures](/basic/closures).
 
-## A.39.4. Operator `?`
+## A.38.4. Operator `?` pada tipe `Option`
 
-Operator `?` digunakan untuk operasi deteksi error sama seperti fungsi keyword `match`. Operator ini bisa digunakan pada tipe `Option` maupun [Result](/basic/result-type). Penerapan operator `?` membuat penulisan kode jauh menjadi ringkas.
-
-Pada kode berikut kita akan buat 2 blok kode baru dengan isi sama yaitu operasi pembagian bilangan random terhadap angka `x`. Nantinya fungsi `divider()` yang telah dibuat dimanfaatkan untuk handle operasi pembagian. Silakan praktekan dan pelajari perbedaannya.
-
-```rust
-use rand::Rng;
-
-fn main() {
-    do_compute_random_number_by_x(2);
-    println!();
-
-    do_compute_random_number_by_x(0);
-    println!();
-
-    do_compute_random_number_by_x(10);
-}
-
-fn divider(a: i32, b: i32) -> Option<f64> {
-    if b == 0 {
-        return None;
-    }
-
-    let result = (a as f64) / (b as f64);
-    return Some(result);
-}
-
-fn do_compute_random_number_by_x(x: i32) {
-    let n = rand::thread_rng().gen_range(0..100);
-    println!("calculating {} / {}", n, x);
-
-    let result = match divider(n, x) {
-        None => {
-            println!("  → WARNING: cannot divide {} by {}", n, x);
-            0.0
-        },
-        Some(x) => x as f64,
-    };
-
-    println!("  → result: {}", result);
-}
-```
-
-Pada kode di atas fungsi `do_compute_random_number_by_x()` melakukan operasi bagi nilai random `n` terhadap nilai `x`. Operasi pembagian dilakukan menggunakan fungsi `divider()`, dan hasilnya dimasukan ke blok `match`.
-
-Sekarang rubah kode fungsi `do_compute_random_number_by_x()` menjadi seperti ini:
-
-```rust
-fn do_compute_random_number_by_x(x: i32) {
-    let n = rand::thread_rng().gen_range(0..100);
-    let result = divider(n, x)?;
-    print!("{}", result);
-}
-```
-
-Kode tersebut merupakan alternatif penulisan kode fungsi `do_compute_random_number_by_x()` yang didalamnya menerapkan penggunaan operator `?`.
-
-Statement `let result = match divider(n, x) { ... };` beserta isi blok-nya diubah menjadi `let result = divider(n, x)?;`. Perhatikan tanda `?` dibelakang pemanggilan fungsi `divider()`.
+Tipe data `Option` bisa digunakan pada operator `?`. Penjelasannya ada di chapter terpisah di [Operator ?](/basic/operator-tanda-tanya).
 
 ---
 
@@ -301,6 +245,7 @@ Statement `let result = match divider(n, x) { ... };` beserta isi blok-nya diuba
 - [Generics](/basic/generics)
 - [Pattern Matching](/basic/pattern-matching)
 - [Closures](/basic/closures)
+- [Operator ?](/basic/operator-tanda-tanya)
 
 ### ◉ Referensi
 

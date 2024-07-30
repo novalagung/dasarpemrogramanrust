@@ -1,12 +1,12 @@
 ---
-sidebar_position: 52
-title: A.52. File, Path, Directory
-sidebar_label: A.52. File, Path, Directory
+sidebar_position: 53
+title: A.53. File, Path, Directory
+sidebar_label: A.53. File, Path, Directory
 ---
 
 Pada chapter ini kita akan belajar tentang beberapa API milik Rust yang disediakan untuk manajemen path dan file system.
 
-## A.52.1. File path (`std::path::Path`)
+## A.53.1. File path (`std::path::Path`)
 
 `"/home/novalagung/Desktop/my text.txt"` adalah salah satu contoh file path. Di Rust, file path bisa direpresentasikan sebagai string (seperti yang sudah dicontohkan), atau menggunakan tipe data `Path`.
 
@@ -20,7 +20,7 @@ let filepath_4 = Path::new("/home/novalagung").join("Desktop").join("my text.txt
 let filepath_5 = Path::new("/home").join("novalagung/Desktop/my text.txt");
 ```
 
-## A.52.2. Method filepath
+## A.53.2. Method filepath
 
 ### ◉ Associated function `Path::new()`
 
@@ -90,7 +90,7 @@ if Path::new(path).is_relative() {
 }
 ```
 
-## A.52.3. Module `std::fs` (file system)
+## A.53.3. Module `std::fs` (file system)
 
 `std::fs` merupakan module yang disediakan Rust untuk pengolahan file system. Di dalamnya berisinya banyak sekali fungsi untuk keperluan seperti pembuatan file, modifikasi konten file, dan lainnya.
 
@@ -116,11 +116,11 @@ match fs::create_dir("./files") {
 > - Lebih detailnya mengenai tipe data `Result` dibahas pada chapter [Tipe Data ➜ Result](/basic/result-type).
 > - Lebih detailnya mengenai pattern matching dibahas pada chapter [Pattern Matching](/basic/pattern-matching).
 
-## A.52.4. Manajemen file system
+## A.53.4. Manajemen file system
 
 ### ◉ Pembuatan folder (`fs::create_dir`)
 
-Fungsi `fs::create_dir` digunakan untuk membuat folder. Contoh penerapannya sudah dibahas di sesi [A.52.3. Module std::fs (file system)](/basic/file-path-directory#a523-module-stdfs-file-system) di atas.
+Fungsi `fs::create_dir` digunakan untuk membuat folder. Contoh penerapannya sudah dibahas di sesi [A.53.3. Module std::fs (file system)](/basic/file-path-directory#a523-module-stdfs-file-system) di atas.
 
 ### ◉ Menulis konten file (`fs::write`)
 

@@ -1,12 +1,12 @@
 ---
-sidebar_position: 50
-title: A.50. Attributes
-sidebar_label: A.50. Attributes
+sidebar_position: 51
+title: A.51. Attributes
+sidebar_label: A.51. Attributes
 ---
 
 Kita telah beberapa kali menggunakan attributes pada chapter-chapter sebelumnya, contohnya seperti `#[derive(Debug)]`. Pada chapter ini kita akan bahas tentang apa sebenarnya attributes, macam-macam jenisnya, beserta kegunaannya.
 
-## A.50.1. Konsep attributes
+## A.51.1. Konsep attributes
 
 Attributes adalah metadata yang didefinisikan untuk suatu crate, module, atau module item. Kegunaan dari attributes berbeda satu sama lain, tergantung attribute apa yang dipakai (kita akan bahas satu per satu).
 
@@ -47,7 +47,7 @@ Sedikit berbeda dengan inner attribute, penulisannya berada di dalam target (cra
 
 Rust mengenal beberapa jenis attributes, dan kita akan membahasnya satu per satu.
 
-## A.50.2. Attribute `derive`
+## A.51.2. Attribute `derive`
 
 Attribute `derive` digunakan untuk mempermudah implementasi suatu trait ke tipe data.
 
@@ -165,7 +165,7 @@ Bisa dilihat, hasilnya program tereksekusi tanpa error. Enum `Superhero` kini me
 - Trait `Debug` via attribute `derive`
 - Trait `Display` via implementasi eksplisit
 
-## A.50.3. Attribute `cfg` / *configuration*
+## A.51.3. Attribute `cfg` / *configuration*
 
 Attribute `cfg` digunakan untuk operasi-operasi yang berhubungan dengan target arsitekture hardware/prosesor, misalnya seperti conditional compilation ketika OS adalah linux, dan lainnya.
 
@@ -328,7 +328,7 @@ Pada profil release, kode program dikompilasi sekaligus dioptimisasi. Penggunaan
 
 Ada beberapa key konfigurasi lainnya yang tersedia. Lebih detailnya silakan lihat di https://doc.rust-lang.org/reference/conditional-compilation.html
 
-## A.50.4. Attribute *linting* & *diagnostic*
+## A.51.4. Attribute *linting* & *diagnostic*
 
 Ada beberapa attribute name yang bisa digunakan untuk meng-override *default linting* milik Rust ataupun menandai indikator *diagnostic* lainnya, seperti warning yang muncul karena ada kode yang tidak digunakan, dll; Warning sejenis ini bisa di-override menggunakan attribute.
 
@@ -416,7 +416,7 @@ Selain 3 attribute di atas, ada juga beberapa attribute lainnya untuk keperluan 
 - `#[deprecated]` digunakan untuk menandai bahwa kode di bawahnya adalah *deprecated*.
 - `#[must_use]` digunakan untuk mendandai bahwa kode di bawahnya harus digunakan, jika tidak maka akan muncul error.
 
-## A.50.5. Attribute *type system*
+## A.51.5. Attribute *type system*
 
 Ada sebuah attribute bernama `non_exhaustive` gunanya untuk mem-*bypass* error yang muncul karena ada pattern matching yang tidak meng-cover semua kondisi, atau untuk mengantisipasi error yang muncul saat deklarasi variabel bertipe struct tapi value property-nya tidak diisi.
 
@@ -470,7 +470,7 @@ Pada contoh di atas, tempat di mana enum dideklarasikan dan digunakan adalah mas
 
 > Attribute `non_exhaustive` ini jika digunakan pada struct efeknya saat deklarasi variabel boleh tidak menuliskan value property.
 
-## A.50.6. Attribute *modules*
+## A.51.6. Attribute *modules*
 
 Aturan manajemen di Rust cukup ketat, dan sudah dibahas secara mendetal pada chapter [Module System ➜ Module](/basic/module-basic), yang intinya adalah ada dua cara pembuatan module:
 
@@ -530,15 +530,15 @@ Jialankan program, harusnya tidak ada error.
 
 ![Attribute](img/attribute-9.png)
 
-## A.50.7. Attribute *testing*
+## A.51.7. Attribute *testing*
 
 Lebih detailnya mengenai attribute testing dibahas pada chapter [Testing](#/wip/testing).
 
-## A.50.8. Attribute *macros*
+## A.51.8. Attribute *macros*
 
 Lebih detailnya mengenai attribute macros dibahas pada chapter [Macro](#/wip/macro).
 
-## A.50.9 Attribute lainnya
+## A.51.9 Attribute lainnya
 
 Rust memiliki cukup banyak attribute yang list-nya bisa dilihat pada link ini https://doc.rust-lang.org/reference/attributes.html.
 

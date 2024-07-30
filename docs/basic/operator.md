@@ -165,8 +165,9 @@ Rust mendukung operator bitwise standar yang ada di bahasa pemrograman.
 
 Sebenarnya ada banyak lagi jenis operator di Rust programming, seperti type cast operator, reference/borrow operator, dll. Nantinya kita akan bahas operator tersebut satu per satu secara terpisah di chapter berbeda.
 
-> - Type cast operator dibahas pada chapter [Type Alias & Casting](/basic/type-alias-casting)
-> - Reference/borrow operator dibahas pada chapter [Pointer & References](/basic/pointer-references)
+- Type cast operator dibahas pada chapter [Type Alias & Casting](/basic/type-alias-casting)
+- Reference/borrow operator dibahas pada chapter [Pointer & References](/basic/pointer-references)
+- Operator `?` dibahas pada chapter [Operator ?](/basic/operator-tanda-tanya)
 
 ---
 
@@ -185,6 +186,7 @@ Sebenarnya ada banyak lagi jenis operator di Rust programming, seperti type cast
 - [Pointer & References](/basic/pointer-references)
 - [Macro](#/wip/macro)
 - [Whitespace Token](#/wip/whitespace-token)
+- [Operator ?](/basic/operator-tanda-tanya)
 
 ### ◉ Referensi
 
