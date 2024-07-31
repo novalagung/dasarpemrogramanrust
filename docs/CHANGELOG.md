@@ -8,8 +8,8 @@ sidebar_label: Version Changelogs & Updates
 
 #### ◉ Chapter baru
 
-- [Operator ?](/basic/unrecoverable-panic-error)
-- [Error ➜ Unrecoverable Error / Panic](/basic/operator-tanda-tanya)
+- [Operator ?](/basic/operator-tanda-tanya)
+- [Error ➜ Unrecoverable Error / Panic](/basic/unrecoverable-panic-error)
 - [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling)
 
 #### ◉ Chapter update
@@ -39,3 +39,4 @@ sidebar_label: Version Changelogs & Updates
 
 - Peningkatan keyword untuk keperluan SEO
 - Perubahan isi konten halaman utama
+- Perbaikan typo
