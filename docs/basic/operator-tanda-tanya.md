@@ -141,6 +141,8 @@ fn do_some_math() -> Result<f64, &'static str> {
 Fungsi `do_some_math()` dimodifikasi dengan ditambahi nilai balik bertipe `Result<f64, &'static str>`. Karena sebenarnya kita tidak memerlukan fungsi `do_some_math()` untuk menghasilkan nilai balik, maka penulis hardcode saja nilai baliknya dengan nilai apapun yang penting valid, misalnya `Ok(0.0)`.
 
 > Silakan gunakan nilai lainnya seperti `Ok(r1)`, `Ok(r2)` atau lainnya, bebas karena nilai ini ditulis di kode hanya agar syarat penerapan operator `?` terpenuhi.
+>
+> Boleh juga menggunakan notasi tipe lainnya seperti `Result<(), &'static str>` dimana dengan tipe tersebut untuk nilai balik bisa menggunakan `Ok(())`
 
 Perbandingan terbaru fungsi sebelum dan setelah dimodifikasi bisa dilihat di bawah ini.
 
@@ -173,7 +175,7 @@ Ketika operasi menghasilkan error, eksekusi blok fungsi menjadi terhenti dan err
 
 > Inilah bagaimana penanganan error di Rust dilakukan.
 >
-> Lebih detailnya mengenai *error propagation* atau *error propagation* dibahas pada chapter [Error ➜ Recoverable Error & Error Handling](#).
+> Lebih detailnya mengenai *error propagation* atau *error propagation* dibahas pada chapter [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling).
 
 Coba sekarang ubah lagi kode yang sudah ditulis, kita coba cek error apa yang muncul saat pemanggilan fungsi `do_some_math()`. Ubah isi fungsi `main()` dengan menambahkan keyword `match` untuk mengecek nilai balik eksekusi fungsi `do_some_math()`. Kode setelah diubah:
 
@@ -229,7 +231,7 @@ Outputnya bisa dilihat di bawah ini. Pemanggilan fungsi `do_some_math()` memang 
 ### ◉ Chapter relevan lainnya
 
 - [Tipe Data ➜ Result](/basic/result-type)
-- [Error ➜ Recoverable Error & Error Handling](#)
+- [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling)
 
 ### ◉ Work in progress
 

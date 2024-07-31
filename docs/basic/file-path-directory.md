@@ -6,6 +6,8 @@ sidebar_label: A.53. File, Path, Directory
 
 Pada chapter ini kita akan belajar tentang beberapa API milik Rust yang disediakan untuk manajemen path dan file system.
 
+> Penulis anjurkan untuk mengikuti pembelajaran chapter per chapter secara berurutan. Nantinya pada chapter [Recoverable Error & Error Handling](/basic/recoverable-error-handling) kita akan banyak menerapkan API yang dipelajari di chapter ini.
+
 ## A.53.1. File path (`std::path::Path`)
 
 `"/home/novalagung/Desktop/my text.txt"` adalah salah satu contoh file path. Di Rust, file path bisa direpresentasikan sebagai string (seperti yang sudah dicontohkan), atau menggunakan tipe data `Path`.
@@ -27,6 +29,8 @@ println!("{:?}", filepath_1);
 println!("{:?}", filepath_2);
 // output => "/home/novalagung/Desktop/my text.txt"
 ```
+
+> Ketika path di-print, yang muncul adalah sesuai dengan string yang ditulis. Dengan pengecualian jika method `.join()` digunakan disitu, maka separator file yang digunakan relatif terhadap OS. Jika Windows maka `\`, dan `/` untuk non-Windows.
 
 ## A.53.2. Method filepath
 
