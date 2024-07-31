@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 title: Contribution & Tech Stack
 sidebar_label: Contribution & Tech Stack
 ---
