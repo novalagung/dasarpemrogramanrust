@@ -93,6 +93,8 @@ Telah kita pelajari bahwa panic muncul karena *flaw* atau cacat program, disebab
 
 Cara penggunaannya cukup dengan memanggil macro tersebut diikuti dengan argument berisi string keterangan panic errornya.
 
+> Bisa dibilang macro `panic!()` adalah media untuk membuat *recoverable error* menjadi *unrecoverable error*.
+
 Pada contoh berikut, program sederhana dibuat untuk menangkap inputan nama user untuk kemudian di-print. Jika user tidak menginputkan apapun, maka panic sengaja dimunculkan via pemanggilan macro `panic!()`.
 
 ```rust
@@ -140,6 +142,16 @@ Jika tidak di-flush, ada kemungkinan text `enter your name: ` muncul setelah use
 
 > Untuk menggunakan stdout flush, path `std::io::Write` harus di-import terlebih dahulu.
 
+## A.54.3. Kapan harus menggunakan panic error?
+
+Tidak semua jenis recoverable error harus berakhir dengan panic, ini penting untuk selalu diingat. Adakalanya error perlu di-recover secara gentle, ada kalanya error harus diumumkan via panic agar program terhenti. Contohnya:
+
+- Error ketika ada inputan yang tidak valid, maka cukup direspon dengan pesan error saja.
+- Error karena ada operasi pembagian terhadap angka `0`, maka tidak perlu menggunakan panic.
+- Error karena file konfigurasi yang tidak ditemukan saat eksekusi program, ideal menggunakan panic.
+
+Tergantung tingkat *severity* atau keseriusan error, silakan tentukan prosedur penanganannya seperti apa sesuai kebutuhan, juga jangan lupa pertimbangkan implikasinya.
+
 ---
 
 ## Catatan chapter 📑
@@ -154,7 +166,7 @@ Jika tidak di-flush, ada kemungkinan text `enter your name: ` muncul setelah use
 
 ### ◉ Chapter relevan lainnya
 
-- [Error ➜ Recoverable Error & Error Handling](#)
+- [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling)
 
 ### ◉ Referensi
 

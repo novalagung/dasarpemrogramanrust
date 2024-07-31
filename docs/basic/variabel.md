@@ -270,6 +270,20 @@ println!("x: {}", x); // hasilnya => x: 6
 
 Lebih jelasnya akan kita bahas pada chapter terpisah, yaitu [Shadowing](/basic/shadowing).
 
+## A.4.9. Variabel `_`
+
+Di Rust, jika ada variabel yang dideklarasikan tapi tidak digunakan, maka muncul warning saat ekesekusi program.
+
+Pada praktiknya, tidak semua variabel memang perlu untuk digunakan. Pada kasus tertentu suatu variabel harus tetap dideklarasikan untuk menampung suatu nilai meski tidak digunakan. Misalnya pada case dimana ada pemanggilan fungsi yang nilai baliknya tidak digunakan.
+
+Untuk case seperti yang dijelaskan di atas, gunakan variabel `_`. Variabel ini berguna untuk menampung nilai yang tidak digunakan, untuk menghindari warning. Contoh:
+
+```rust
+fn main() {
+    let _ = run_something();
+}
+```
+
 ---
 
 ## Catatan chapter 📑
