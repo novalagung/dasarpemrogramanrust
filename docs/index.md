@@ -10,7 +10,7 @@ Website/ebook tutorial Dasar Pemrograman Rust ini dibuat dengan harapan bisa men
 
 [Dokumentasi *official* Rust](https://www.rust-lang.org/learn) sangat lengkap, dan aktif di-update oleh komunitas. Jika pembaca sudah memiliki banyak pengalaman dalam programming, sudah paham mengenai system programming seperti C atau C++, maka penulis sangat anjurkan untuk langsung menggunakan [*the book*](https://www.rust-lang.org/learn) sebagai referensi belajar.
 
-> Versi website/ebook: **v1.0.20240731**, dan versi [Rust 1.79.0](https://blog.rust-lang.org/2024/06/13/Rust-1.79.0.html).
+> Versi website/ebook: **v1.0.20240830**, dan versi [Rust 1.79.0](https://blog.rust-lang.org/2024/06/13/Rust-1.79.0.html).
 
 ## Update Konten & Versi Terbaru
 
@@ -22,7 +22,7 @@ Setiap perubahan pada website/ebook bisa dilihat di halaman berikut:
 
 Versi ebook bisa di-download dalam bentuk file di link berikut:
 
-> PDF/Ebook file: [Dasar Pemrograman Rust.pdf](https://github.com/novalagung/dasarpemrogramanrust/raw/ebooks/dasarpemrogramanrust.pdf?v=v1.0.20240731)
+> PDF/Ebook file: [Dasar Pemrograman Rust.pdf](https://github.com/novalagung/dasarpemrogramanrust/raw/ebooks/dasarpemrogramanrust.pdf?v=v1.0.20240830)
 
 ## Source Code
 
