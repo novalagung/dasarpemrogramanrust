@@ -4,6 +4,12 @@ title: Version Changelogs & Updates
 sidebar_label: Version Changelogs & Updates
 ---
 
+## 📝 Release v1.0.20240830 (2024-08-30)
+
+#### ◉ General update
+
+- Optimasi pagespeed
+
 ## 📝 Release v1.0.20240731 (2024-07-31)
 
 #### ◉ Chapter baru
