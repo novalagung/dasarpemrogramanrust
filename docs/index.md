@@ -43,7 +43,7 @@ Website/ebook ini merupakan project open source, teruntuk siapapun yang ingin be
 
 Website/ebook tutorial Dasar Pemrograman Rust gratis untuk disebarluaskan secara bebas, baik untuk komersil maupun tidak, dengan catatan harus disertakan credit sumber aslinya (yaitu Dasar Pemrograman Rust atau novalagung) dan tidak mengubah lisensi aslinya (yaitu CC BY-SA 4.0). Lebih jelasnya silakan cek halaman berikut:
 
-> [lisensi dan distribusi konten](/LICENSE)
+> [Lisensi dan Distribusi Konten](/LICENSE)
 
 FOSSA Status:
 
