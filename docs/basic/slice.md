@@ -62,7 +62,7 @@ Bisa dilihat pada statement print `slice_a[0]` dan `slice_a[1]`, nilai elemennya
 
 > Data yang tipenya `&[T]` biasa disebut sebagai [*shared slice*](https://doc.rust-lang.org/reference/types/slice.html) atau cukup *slice*. Contohnya seperti `slice_a` dengan tipe data `&[i32]`.
 
-Slice `slice_a` bukan merupakan pemilik sebenarnya data `[12, 16, 8]`, slice tersebut hanya meminjam datanya dari `numbers` yang notabene dalah owner data `[12, 16, 8]`.
+Slice `slice_a` bukan merupakan pemilik sebenarnya data `[12, 16, 8]`, slice tersebut hanya meminjam datanya dari `numbers` yang notabene adalah owner data `[12, 16, 8]`.
 
 Meminjam di sini artinya variabel baru `slice_a` memiliki data yang sama, dan alamat memori (atau pointer) data tersebut juga sama yaitu mengarah ke owner sebenarnya, yang pada contoh ini adalah `numbers`.
 
