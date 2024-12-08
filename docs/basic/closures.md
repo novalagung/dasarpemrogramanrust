@@ -89,7 +89,7 @@ let do_something_v4 = || {
 };
 ```
 
-Jika tipe return value tidak dideklarasikan secara eksplist, maka Rust menganggap tipe return value adalah sesuai dengan tipe data pada statement terakhir.
+Jika tipe return value tidak dideklarasikan secara eksplisit, maka Rust menganggap tipe return value adalah sesuai dengan tipe data pada statement terakhir.
 
 Untuk closure yang isinya hanya 1 baris statement, boleh tidak dituliskan block kurung kurawal-nya (`{}`).
 

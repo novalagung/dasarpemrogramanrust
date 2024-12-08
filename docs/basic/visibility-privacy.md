@@ -8,7 +8,7 @@ Kita sebenarnya sudah mempelajari banyak hal yang berhubungan dengan visibility 
 
 Chapter ini merupakan pembahasan tambahan untuk ke-4 keyword tersebut, dan fokusnya lebih ke visibility & privacy di Rust secara general.
 
-O iya, perihal *visbility* dan *privacy* itu sendiri, kedua istilah tersebut di sini kita maknai sama, yang artinya kurang lebih adalah tentang manajemen akses item di Rust.
+O iya, perihal *visibility* dan *privacy* itu sendiri, kedua istilah tersebut di sini kita maknai sama, yang artinya kurang lebih adalah tentang manajemen akses item di Rust.
 
 ## A.28.1. Pembahasan module system
 

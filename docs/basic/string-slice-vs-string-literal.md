@@ -55,7 +55,7 @@ String literal hanya bisa direpresentasikan dalam bentuk reference `&str` (point
 
 Tipe `&str` termasuk kategori tipe data yang **unowned** atau reference tanpa owner (atau boleh juga diartikan sebagai tipe data yang owner-nya adalah program).
 
-Rust menjamin data string literal selalu valid. Kita juga bisa menentukan lifetime-nya secara eksplist jike diperlukan, contohnya pada tipe `&'static str`.
+Rust menjamin data string literal selalu valid. Kita juga bisa menentukan lifetime-nya secara eksplisit jike diperlukan, contohnya pada tipe `&'static str`.
 
 Cara termudah membuat `&str` adalah menggunakan string literal.
 

@@ -431,7 +431,7 @@ O iya, pada `main.rs`, module item `shape::Shape` perlu di-import meskipun kita 
 
 ## A.37.8. Attribute `derive`
 
-Ada cara lain untuk mengimplementasikan suatu trait ke dalam tipe data selain dengan menuliskan implementasinya secara eksplist, caranya menggunakan attribute `derive`.
+Ada cara lain untuk mengimplementasikan suatu trait ke dalam tipe data selain dengan menuliskan implementasinya secara eksplisit, caranya menggunakan attribute `derive`.
 
 Lebih detailnya dibahas pada chapter [Attributes](/basic/attributes).
 
