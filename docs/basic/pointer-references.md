@@ -158,7 +158,7 @@ Variabel `number_one` adalah data numerik bertipe `i32`, eksekusi statement ters
 
 Kemudian ada lagi statement `number_two`. Meskipun nilainya didapat dari variabel `number_one`, yang terjadi di balik layar adalah Rust akan mengalokasikan lagi alamat memory selebar 32-bit untuk menampung data `number_two` yang didapat dari hasil operasi **copy** dari variabel `number_one`.
 
-> Semua variabel primitif di Rust mengadopsi *copy semantics*, yang artinya jika variabel tersebut digunakan dalam statement assignment, maka nilai akan di-duplikasi untuk kemudian ditampung pada variabel baru.
+> Semua variabel primitif di Rust mengadopsi *copy semantics*, yang artinya jika variabel tersebut digunakan dalam statement assignment, maka nilai akan diduplikasi untuk kemudian ditampung pada variabel baru.
 >
 > Lebih jelasnya mengenai *copy semantics* dibahas pada chapter [Ownership](/basic/ownership#a334-copy-semantics-vs-move-semantics).
 

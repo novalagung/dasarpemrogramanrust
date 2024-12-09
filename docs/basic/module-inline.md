@@ -41,7 +41,7 @@ Aturan definisi submodule dan item pada inline module masih sama seperti pada *n
 
 ## A.21.2. Praktik inline module
 
-Mari lanjut proses pembalajaran dengan praktik. Kita akan buat program sederhana yang di dalamnya ada proses generate random string, yang kemudian di-hash.
+Mari lanjut proses pembelajaran dengan praktik. Kita akan buat program sederhana yang di dalamnya ada proses generate random string, yang kemudian di-hash.
 
 Silakan buat package baru menggunakan `cargo new`. Penulis di sini memilih nama `inline_module_1` sebagai nama package. Setelah itu, siapkan fungsi main dan juga module bernama `utilities` dengan penulisan kode menerapkan inline module. O iya, tulis keduanya (`module utilities` dan fungsi `main`) dalam satu file yang sama yaitu `main.rs`.
 

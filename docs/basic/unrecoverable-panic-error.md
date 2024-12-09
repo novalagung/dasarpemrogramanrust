@@ -136,7 +136,7 @@ Program dieksekusi 2 kali:
 
 ### ◉ Statement `io::stdout().flush()`
 
-Dibanding dengan beberapa chapter sebelumnya yang juga ada praktek menangkap inputan user, kode program yang ditulis kali ini disisipi statement baru yaitu `io::stdout().flush()`. Kode tersebut berguna untuk mem-*flush* output STDOUT yang muncul, karena default output STDOUT adalah di-*buffer* oleh Rust.
+Dibanding dengan beberapa chapter sebelumnya yang juga ada praktik menangkap inputan user, kode program yang ditulis kali ini disisipi statement baru yaitu `io::stdout().flush()`. Kode tersebut berguna untuk mem-*flush* output STDOUT yang muncul, karena default output STDOUT adalah di-*buffer* oleh Rust.
 
 Jika tidak di-flush, ada kemungkinan text `enter your name: ` muncul setelah user mengisi inputan lalu menekan tombol *enter*.
 

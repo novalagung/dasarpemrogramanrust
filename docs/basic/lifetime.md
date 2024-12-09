@@ -162,9 +162,9 @@ Ok, tapi entah kenapa ketika dilihat masih muncul error.
 
 ![Lifetime](img/lifetime-3.png)
 
-Error tersebut muncul karena meskipun owner data `&13` adalah program, ketika eksekusi fungsi `get_number` selesai, data borrow tersebut langsung di-dealokasi, dan tidak ada variabel lain di-luar scope yang menampung reference data tersebut.
+Error tersebut muncul karena meskipun owner data `&13` adalah program, ketika eksekusi fungsi `get_number` selesai, data borrow tersebut langsung di-dealokasi, dan tidak ada variabel lain di luar scope yang menampung reference data tersebut.
 
-Agar tidak terjadi proses dealokasi, harus ada variabel yang menampung reference tersebut di-luar scope, tapi cara ini tidak bisa dilakukan karena data-nya saja baru dideklarasikan dalam block fungsi, tidak mungkin tiba-tiba ada yang menampung di-luar scope.
+Agar tidak terjadi proses dealokasi, harus ada variabel yang menampung reference tersebut di luar scope, tapi cara ini tidak bisa dilakukan karena data-nya saja baru dideklarasikan dalam block fungsi, tidak mungkin tiba-tiba ada yang menampung di luar scope.
 
 Solusi dari masalah ini adalah menggunakan lifetime `'static` (yang detailnya sudah dibahas pada chapter sebelumnya). Dengan ini maka data reference `&13` hidup lebih lama dari umur yang sebenarnya sudah ditakdirkan untuk data data tersebut.
 
@@ -302,7 +302,7 @@ Sampai section ini kita telah mempelajari kurang lebih 4 point berikut:
 
 1. Setiap data, lebih tepatnya setiap reference memiliki lifetime.
 2. Lifetime digunakan oleh Rust dalam penentuan kapan reference tersebut di-dealokasi.
-3. Pada beberapa case, lifetime perlu di-urus secara eksplisit (contohnya seperti pada fungsi `do_something_vx` di atas).
+3. Pada beberapa case, lifetime perlu diurus secara eksplisit (contohnya seperti pada fungsi `do_something_vx` di atas).
 4. Pengecekan lifetime terjadi saat kompilasi.
 
 Rust memiliki sesuatu yang disebut dengan **lifetime elision**, isinya adalah aturan yang digunakan oleh Rust dalam menganalisa reference untuk menentukan lifetime *default*-nya.

@@ -158,7 +158,7 @@ if reader_res.is_err() {
 
 Jika program berlajan sesuai harapan, tanpa error, pada baris terakhir data dalam `message` ditampilkan ke layar.
 
-> Tipe data `String` ini tidak perlu di-konversi ke bentuk literal string `&str` untuk ditampilkan menggunakan `println`. Langsung saja sisipkan variabel `String` ke macro tersebut dan `println` akan tau harus menampilkan apa.
+> Tipe data `String` ini tidak perlu dikonversi ke bentuk literal string `&str` untuk ditampilkan menggunakan `println`. Langsung saja sisipkan variabel `String` ke macro tersebut dan `println` akan tau harus menampilkan apa.
 
 Oke, Penulis rasa sudah cukup jelas perihal bagaimana cara menggunakan path untuk mengakses item. Cukup tulis saja path-nya. Jika path-nya panjang? ya ditulis semua.
 

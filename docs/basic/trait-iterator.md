@@ -151,7 +151,7 @@ println!("{numbers:?}");
 
 Program di atas melakukan beberapa hal:
 
-1. Data `data_vec` yang merupakan koleksi string di-konversi menjadi object `Iterator` menggunakan method `iter`.
+1. Data `data_vec` yang merupakan koleksi string dikonversi menjadi object `Iterator` menggunakan method `iter`.
 
 1. Kemudian method `map` diakses. Setiap elemen `data_vec` di-iterasi, kemudian dikonversi dari `String` ke `i32`, lalu dijadikan *replacement* data elemen tersebut. Jika proses konversi gagal, maka angka `0` digunakan sebagai data element tersebut.
     - Sampai sini, data yang sebelumnya `["1", "2", "3", "4", "a"]` sekarang menjadi `[1, 2, 3, 4, 0]`.

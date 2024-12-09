@@ -81,7 +81,7 @@ Blok `package` berisi berisi 3 buah field:
 
 - `name` isinya adalah nama package, sesuai dengan argument command `cargo new <nama_package>`.
 - `version` default-nya selalu `0.1.0`, namun kita bisa ubah nilainya seiring berjalannya proses pengembangan aplikasi.
-- `edition` di sini me-refer ke edisi rust yang dipakai. Di ebook ini, rust versi **1.65.0** digunakan, dan edisi untuk versi tersebut adalah `2021`.
+- `edition` di sini me-refer ke edisi Rust yang dipakai. Di ebook ini, Rust versi **1.65.0** digunakan, dan edisi untuk versi tersebut adalah `2021`.
 
 Blok `dependencies` default-nya berisi kosong. Jika kita menambahkan external dependencies atau crates, maka detailnya tercatat pada blok `dependencies` ini.
 

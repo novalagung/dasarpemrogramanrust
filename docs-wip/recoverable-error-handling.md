@@ -21,7 +21,7 @@ Operator `?` digunakan untuk meng-*unwrap* data `Option` untuk mengambil nilai `
 
 > Operator `?` bisa digunakan pada tipe `Option` maupun [Result](/basic/result-type).
 
-Pada kode berikut kita akan kode sederhana untuk operasi pembagian bilangan random terhadap angka `x`. Silakan praktekan dan pelajari.
+Pada kode berikut kita akan kode sederhana untuk operasi pembagian bilangan random terhadap angka `x`. Silakan praktikkan dan pelajari.
 
 ```rust
 use rand::Rng;
@@ -67,7 +67,7 @@ Output program:
 
 Di dalam fungsi `do_compute_random_number_by_x()` terdapat operasi *error handling* menggunakan keyword `match`. Nilai hasil operasi `divider(n, x)` dicek, jika berisi `None` maka pesan *warning* dimunculkan dan nilai `0` dikembalikan. Sebaliknya, maka nilai hasil operasi pembagian dijadikan nilai balik.
 
-Sekarang rubah kode fungsi `do_compute_random_number_by_x()` menjadi seperti ini:
+Sekarang ubah kode fungsi `do_compute_random_number_by_x()` menjadi seperti ini:
 
 ```rust
 fn do_compute_random_number_by_x(x: i32) {
