@@ -324,7 +324,7 @@ Tipe data aslinya tetap bisa diakses, tapi butuh tambahan effort. Lebih jelasnya
 
 ## A.37.7. *Associated types* pada trait
 
-Associated types adalah tipe data yang didefinisikan di dalam suatu trait. Associated types tidak tidak memiliki tipe data konkret saat didefinisikan, namun ketika trait di-implementasikan maka tipe tersebut harus ditentukan tipe data konkretnya.
+Associated types adalah tipe data yang didefinisikan di dalam suatu trait. Associated types tidak tidak memiliki tipe data konkret saat didefinisikan, namun ketika trait diimplementasikan maka tipe tersebut harus ditentukan tipe data konkretnya.
 
 Lebih jelas silakan perhatikan kode berikut:
 
@@ -368,7 +368,7 @@ pub trait Shape {
 
 Trait `Shape` di atas spesifikasinya mirip seperti pada contoh sebelumnya, hanya saja kali ini trait-nya di set public agar bisa diakses dari `main.rs` nantinya.
 
-Trait `Shape` kemudian di-implementasikan ke struct `Circle` dan `Square`, kode-nya bisa dilihat berikut:
+Trait `Shape` kemudian diimplementasikan ke struct `Circle` dan `Square`, kode-nya bisa dilihat berikut:
 
 ```rust title="src/circle.rs"
 pub struct Circle {

@@ -75,7 +75,7 @@ Slice adalah data borrow, artinya jika ada beberapa variabel baru dibuat hasil d
 
 Sekarang di stack memory ada 3 buah metadata informasi disimpan, yaitu `data_str` (yang merupakan owner sebenarnya data), dan `slice1` & `slice2`. Sedangkan untuk data-nya sendiri tetap berada di heap memory tanpa ada perubahan.
 
-Tiga variabel di atas kesemuanya mengakses reference yang sama, yang membedakan adalah elemen-nya saja. Owner (yaitu `data_str`) bisa mengakses seluruh data, selain itu juga tau informasi kapasitas data. Sedangkan borrower hanya bisa mengakses data yang dia pinjam sesuai dengan operasi slicing-nya. Borrower tidak mengetahui kapasitas data, namun ia tau size dari elemen yang ia pinjam.
+Tiga variabel di atas kesemuanya mengakses reference yang sama, yang membedakan adalah elemennya saja. Owner (yaitu `data_str`) bisa mengakses seluruh data, selain itu juga tau informasi kapasitas data. Sedangkan borrower hanya bisa mengakses data yang dia pinjam sesuai dengan operasi slicing-nya. Borrower tidak mengetahui kapasitas data, namun ia tau size dari elemen yang ia pinjam.
 
 ## A.45.2. Mutable slice
 

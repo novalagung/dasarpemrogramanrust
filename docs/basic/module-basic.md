@@ -26,7 +26,7 @@ Pendefinisian nama module sendiri berada pada file entrypoint *crate* yaitu `mai
 - Nama module ditulis di `main.rs` (atau `lib.rs` untuk library crate)
 - Item atau isi module ditulis dalam file `nama_module.rs` atau `nama_module/mod.rs`
 
-> Sebenarnya ada beberapa hal lainnya lagi yang masih relevan yang perlu dibahas di-awal, yaitu perihal sub-module. Akan tetapi agar tidak makin bingung, mari kita lanjut ke praktik terlebih dahulu.
+> Sebenarnya ada beberapa hal lainnya lagi yang masih relevan yang perlu dibahas di awal, yaitu perihal sub-module. Akan tetapi agar tidak makin bingung, mari kita lanjut ke praktik terlebih dahulu.
 
 ## A.20.2. Praktik #1 - `nama_module.rs`
 
@@ -129,7 +129,7 @@ Selain fungsi, module item bisa dalam bentuk lainnya, contohnya: konstanta, subm
 
 ## A.20.3. Praktik #2 - `nama_module/mod.rs`
 
-Bagian ini merupakan kelanjutan dari praktik sebelumnya. Program sederhana yang sudah di-buat ditambahi beberapa hal. Data inputan user dikonversi ke bentuk angka untuk kemudian dicek apakah angka tersebut bilangan ganjil atau genap.
+Bagian ini merupakan kelanjutan dari praktik sebelumnya. Program sederhana yang sudah dibuat ditambahi beberapa hal. Data inputan user dikonversi ke bentuk angka untuk kemudian dicek apakah angka tersebut bilangan ganjil atau genap.
 
 Fungsi untuk konversi string ke bentuk numerik dan juga untuk pengecekan bilangan ganjil genap, adalah dua buah item milik module bernama `my_number` yang akan kita definisikan sebentar lagi.
 

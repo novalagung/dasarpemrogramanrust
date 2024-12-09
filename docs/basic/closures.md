@@ -162,7 +162,7 @@ let mut increase_by = |x: i32| {
 };
 ```
 
-Keyword `mut` wajib ditambahkan ke variabel penampung closure ketika di dalamnya terdapat operasi perubahan data terhadap variabel yang posisinya di-luar closure. Contohnya bisa dilihat di atas, variabel `num` nilainya di-mutate atau diubah dari dalam closure, karena inilah variabel `increase_by` harus didefinisikan mutable.
+Keyword `mut` wajib ditambahkan ke variabel penampung closure ketika di dalamnya terdapat operasi perubahan data terhadap variabel yang posisinya di luar closure. Contohnya bisa dilihat di atas, variabel `num` nilainya di-mutate atau diubah dari dalam closure, karena inilah variabel `increase_by` harus didefinisikan mutable.
 
 ## A.48.4. Borrowing pada closure
 
@@ -377,7 +377,7 @@ Fungsi `find_index` memiliki 2 parameter generic, yaitu:
 - `T` yang digunakan sebagai tipe data element slice `data`.
 - `F` yang digunakan sebagai tipe data closure `cond_fn` dengan skema `Fn(&T) -> bool`, yang jika diilustrasikan dalam bentuk closure adalah `|param1: &T| -> bool { }`.
 
-Di dalam fungsi tersebut, data slice di-loop, kemudian tiap elemen-nya digunakan sebagai parameter pemanggilan closure `cond_fn`.
+Di dalam fungsi tersebut, data slice di-loop, kemudian tiap elemennya digunakan sebagai parameter pemanggilan closure `cond_fn`.
 
 Jika nilai balik pemanggilan closure adalah `true` maka `i` dikembalikan dalam bentuk `i32` (ada proses casting). Dan jika tidak diketemukan, maka indeks `-1` dikembalikan.
 
