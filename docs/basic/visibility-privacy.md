@@ -29,7 +29,7 @@ Di Rust, *by default*, hampir semua item adalah private. Apa efeknya ketika item
 
 > Kita sepakati di sini, pada istilah **current module** kata *module* di situ bisa saja tertuju untuk module atau juga submodule
 
-Dua point di atas sangat penting untuk dipahami, karena digunakan sebagai landasan pertimbangan dalam penyusunan hirarki module. Sebagai contoh, kita bisa membuat program yang hanya meng-expose API tertentu (yang memang diperlukan untuk diakses oleh publik), tanpa perlu ikut meng-expose detail implementasinya.
+Dua point di atas sangat penting untuk dipahami, karena digunakan sebagai landasan pertimbangan dalam penyusunan hierarki module. Sebagai contoh, kita bisa membuat program yang hanya meng-expose API tertentu (yang memang diperlukan untuk diakses oleh publik), tanpa perlu ikut meng-expose detail implementasinya.
 
 Ok, sekarang silakan perhatikan path sederhana di bawah ini. Diasumsikan ada sebuah fungsi yang path aksesnya adalah berikut:
 
@@ -118,7 +118,7 @@ Pada praktik selanjutnya ini kita misalkan bahwa fungsi `say_hello` isinya meman
 2. Atau, hapus saja fungsi `say_hello`, lalu ubah visibility module `service_layer` menjadi publik, dengan demikian kita bisa mengakses `some_black_magic` dari `main` menggunakan path `messaging::service_layer::some_black_magic`.
 3. Atau, gunakan teknik **re-export item**.
 
-Re-export item adalah sebuah cara untuk mem-*bypass* pengaksesan item yang secara hirarki memang tidak bisa diakses dari luar module (bisa jadi karena visibility item ataupun parent module nya adalah private). Dengan teknik ini, maka item pasti bisa diakses dari luar module.
+Re-export item adalah sebuah cara untuk mem-*bypass* pengaksesan item yang secara hierarki memang tidak bisa diakses dari luar module (bisa jadi karena visibility item ataupun parent module nya adalah private). Dengan teknik ini, maka item pasti bisa diakses dari luar module.
 
 Item yang di-re-export akan menjadi item milik *current module* di mana statement re-export tersebut ditulis.
 

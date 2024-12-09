@@ -10,7 +10,7 @@ Module adalah salah satu chapter yang cukup penting dalam pemrograman Rust. Pada
 
 Setiap bahasa pemrograman memiliki caranya sendiri dalam hal pengelolahan struktur files dan folder dalam project. Project yang isinya ada sangat banyak hal diatur sedemikian rupa menjadi beberapa bagian dan/atau sub-bagian sesuai dengan fungsinya masing-masing.
 
-Di Rust, module memiliki hirarki (biasa disebut dengan *module tree*) yang *root*/akarnya adalah file entrypoint crate, yaitu `main.rs` untuk *binary crate* dan `lib.rs` untuk *library crate*. Kedua file ini biasa disebut dengan *crate root file*.
+Di Rust, module memiliki hierarki (biasa disebut dengan *module tree*) yang *root*/akarnya adalah file entrypoint crate, yaitu `main.rs` untuk *binary crate* dan `lib.rs` untuk *library crate*. Kedua file ini biasa disebut dengan *crate root file*.
 
 > Di sini pembahasan akan fokus pada penerapan module dalam *binary crate*. Kita belum masuk ke pembahasan tentang *library crate*.
 
