@@ -49,7 +49,7 @@ Tipe `chrono::naive::datetime::NaiveDateTime` merupakan tipe data datetime yang 
 
 Ada banyak cara untuk membuat date time, dan kita akan bahas satu-per-satu.
 
-Cara yang pertama, mari kita pelajari sambil praktek. Isi file program `main.rs` dengan kode berikut, lalu jalankan.
+Cara yang pertama, mari kita pelajari sambil praktik. Isi file program `main.rs` dengan kode berikut, lalu jalankan.
 
 ```rust
 use chrono::prelude::*;
@@ -166,7 +166,7 @@ Rust memilik caranya sendiri dalam pengelolaan data datetime (yang menurut penul
 
 Tipe data ini sangat berguna dibeberapa case yang kebanyakan adalah perihal konversi data ke bentuk `DateTime`.
 
-Mari kita praktekan dengan contoh agar lebih jelas. Dimisalkan ada keperluan di mana data UNIX time perlu di konversi ke 2 bentuk `DateTime`, dengan timezone offset `Utc` dan `Local`. Pada kasus ini, cara ke-3 dari praktek sebelumnya bisa dilakukan untuk penyelesaian case ini.
+Mari kita praktikkan dengan contoh agar lebih jelas. Dimisalkan ada keperluan di mana data UNIX time perlu di konversi ke 2 bentuk `DateTime`, dengan timezone offset `Utc` dan `Local`. Pada kasus ini, cara ke-3 dari praktik sebelumnya bisa dilakukan untuk penyelesaian case ini.
 
 ```rust
 let timestamp: u64 = 1524885322;

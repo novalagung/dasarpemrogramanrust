@@ -16,9 +16,9 @@ const PI: f32 = 22.0/7.0;
 println!("{} {}", LABEL, PI);
 ```
 
-Bisa dilihat di kode di atas, konstanta `LABEL` merupakan string dengan nilai `"nilai pi adalah:"`, sedang `PI` memiliki nilai bertipe float hasil dari operasi `22./7.0`.
+Bisa dilihat di kode di atas, konstanta `LABEL` merupakan string dengan nilai `"nilai pi adalah:"`, sedang `PI` memiliki nilai bertipe float hasil dari operasi `22.0/7.0`.
 
-Dalam pendefinisian konstanta, tipe data harus dituliskan secara eksplist. Deklarasi seperti `const DATA = "x"` akan menghasilkan error saat proses kompilasi. Dan aturan ini berlaku untuk semua tipe data yang dipergunakan untuk pendefinisian konstanta.
+Dalam pendefinisian konstanta, tipe data harus dituliskan secara eksplisit. Deklarasi seperti `const DATA = "x"` akan menghasilkan error saat proses kompilasi. Dan aturan ini berlaku untuk semua tipe data yang dipergunakan untuk pendefinisian konstanta.
 
 Nilai sebuah konstanta juga bisa dari variabel atau konstanta lain, atau hasil sebuah operasi seperti operasi aritmatika `22.0/7.0`.
 

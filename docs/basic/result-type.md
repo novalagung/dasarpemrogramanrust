@@ -253,7 +253,7 @@ Tipe ini dimanfaatkan untuk error handling di Rust. Lebih jelasnya mengenai topi
 
 ## A.40.6. Tipe `Result<(), E>`
 
-Di atas kita telah mempelajari dan mempraktekan fungsi `divider()` yang fungsi tersebut mengembalikan 2 informasi, yaitu:
+Di atas kita telah mempelajari dan mempraktikkan fungsi `divider()` yang fungsi tersebut mengembalikan 2 informasi, yaitu:
 
 - `T` berisi nilai hasil pembagian
 - `E` berisi error saat operasi pembagian

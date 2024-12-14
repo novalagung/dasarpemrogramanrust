@@ -19,11 +19,11 @@ Ada dua bagian penting dalam trait yang harus diketahui:
 1. Deklarasi trait
 2. Implementasi trait ke tipe data
 
-Perihal point pertama, intinya kita bisa menciptakan trait sesuai kebutuhan. Terlepas dari itu, Rust juga menyediakan cukup banyak traits yang di-implement ke banyak tipe data yang ada di Rust standard library. Beberapa di antaranya:
+Perihal point pertama, intinya kita bisa menciptakan trait sesuai kebutuhan. Terlepas dari itu, Rust juga menyediakan cukup banyak traits yang diimplement ke banyak tipe data yang ada di Rust standard library. Beberapa di antaranya:
 
 - Trait `std::fmt::Debug`, digunakan agar data bisa di-print menggunakan formatted print `{:?}`.
 - Trait `std::iter::Enumerate`, digunakan agar data bisa di-iterasi menggunakan keyword `for`.
-- Trait `std::ops::Add`, di-implementasikan agar data bisa digunakan pada operasi aritmatik penambahan `+`.
+- Trait `std::ops::Add`, diimplementasikan agar data bisa digunakan pada operasi aritmatik penambahan `+`.
 
 Ok, biar lebih jelas, mari lanjut pembelajaran menggunakan contoh. Kita mulai dengan pembahasan tentang cara implementasi trait. Contoh yang digunakan adalah implementasi salah satu trait milik Rust standard library, yaitu trait `std::fmt::Debug`.
 
@@ -47,7 +47,7 @@ Chapter ini fokusnya adalah pembahasan tentang dasar implementasi **external tra
 
 Kita pilih trait `std::fmt::Debug` milik Rust standard library untuk belajar cara implementasi trait pada tipe data.
 
-Kegunaan dari trait ini adalah: jika di-implement ke tipe data tertentu maka data dengan tipe tersebut bisa di-print via macro `println` atau macro printing lainnya, dengan menggunakan formatted print `{:?}`.
+Kegunaan dari trait ini adalah: jika diimplement ke tipe data tertentu maka data dengan tipe tersebut bisa di-print via macro `println` atau macro printing lainnya, dengan menggunakan formatted print `{:?}`.
 
 Trait `Debug` ini diimplementasikan ke pada banyak tipe data yang di Rust standard library, baik itu tipe primitif maupun non-primitif. Contohnya bisa dilihat pada kode berikut:
 
@@ -195,7 +195,7 @@ Coba tambahkan statement `println`, tetapi kali ini gunakan formatted print `{}`
 
 ![Trait](img/traits-4.png)
 
-Hasilnya error, karena trait `std::fmt::Debug` hanya berguna untuk formatted print `{:?}`. Agar data bertipe `Circle` bisa di-print menggunakan formatted print `{}` maka trait `std::fmt::Display` harus di-implementasikan juga.
+Hasilnya error, karena trait `std::fmt::Debug` hanya berguna untuk formatted print `{:?}`. Agar data bertipe `Circle` bisa di-print menggunakan formatted print `{}` maka trait `std::fmt::Display` harus diimplementasikan juga.
 
 Ubah kode dengan menambahkan implementasi trait `Display`. Hasilnya kurang lebih seperti ini:
 

@@ -160,7 +160,7 @@ calculate_and_print_result("square".to_string(), &square_one);
 
 Bagaimana jika, parameter fungsi `item` di atas tipenya bisa lebih dari 1 trait, misalnya trait `Area` dan `Circumference`, apakah bisa? Jawabannya bisa.
 
-Mari praktekan. Lakukan modifikasi berikut pada beberapa kode yang telah di tulis.
+Mari praktikkan. Lakukan modifikasi berikut pada beberapa kode yang telah di tulis.
 
 - File `src/calculation_spec.rs`
 
@@ -324,7 +324,7 @@ Tipe data aslinya tetap bisa diakses, tapi butuh tambahan effort. Lebih jelasnya
 
 ## A.37.7. *Associated types* pada trait
 
-Associated types adalah tipe data yang didefinisikan di dalam suatu trait. Associated types tidak tidak memiliki tipe data konkret saat didefinisikan, namun ketika trait di-implementasikan maka tipe tersebut harus ditentukan tipe data konkritnya.
+Associated types adalah tipe data yang didefinisikan di dalam suatu trait. Associated types tidak tidak memiliki tipe data konkret saat didefinisikan, namun ketika trait diimplementasikan maka tipe tersebut harus ditentukan tipe data konkretnya.
 
 Lebih jelas silakan perhatikan kode berikut:
 
@@ -340,7 +340,7 @@ Pada definisi trait `Shape` di atas, yang disebut dengan associated types adalah
 
 Associated types ini sering digunakan pada Rust programming.
 
-Lanjut skenario praktek berikutnya. Silakan siapkan package/project baru dengan struktur seperti ini:
+Lanjut skenario praktik berikutnya. Silakan siapkan package/project baru dengan struktur seperti ini:
 
 ```bash title="package source code structure"
 my_package
@@ -368,7 +368,7 @@ pub trait Shape {
 
 Trait `Shape` di atas spesifikasinya mirip seperti pada contoh sebelumnya, hanya saja kali ini trait-nya di set public agar bisa diakses dari `main.rs` nantinya.
 
-Trait `Shape` kemudian di-implementasikan ke struct `Circle` dan `Square`, kode-nya bisa dilihat berikut:
+Trait `Shape` kemudian diimplementasikan ke struct `Circle` dan `Square`, kode-nya bisa dilihat berikut:
 
 ```rust title="src/circle.rs"
 pub struct Circle {
@@ -431,7 +431,7 @@ O iya, pada `main.rs`, module item `shape::Shape` perlu di-import meskipun kita 
 
 ## A.37.8. Attribute `derive`
 
-Ada cara lain untuk mengimplementasikan suatu trait ke dalam tipe data selain dengan menuliskan implementasinya secara eksplist, caranya menggunakan attribute `derive`.
+Ada cara lain untuk mengimplementasikan suatu trait ke dalam tipe data selain dengan menuliskan implementasinya secara eksplisit, caranya menggunakan attribute `derive`.
 
 Lebih detailnya dibahas pada chapter [Attributes](/basic/attributes).
 

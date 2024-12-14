@@ -322,7 +322,7 @@ fn say_hello(param: String) {
 
 Ok, dengan ini masalah untuk me-reuse data yang bisa berpindah ownernya dianggap beres. Memang beres, tapi apakah cara ini baik kalau dilihat dari sudut pandang memory management?
 
-Konsekuensi dari cloning data adalah terjadi proses alokasi lagi di memory. Data akan di-duplikasi dan dialokasikan ke alamat memory baru, jadinya kurang efisien. Ditambah lagi, jika kita mengacu ke penjelasan pada chapter [Memory Management ➜ Heap Memory](/basic/basic-memory-management#a324-heap-memory), data `String` isinya disimpan di heap memory yang pengaksesannya lebih lambat dibanding pengaksesan data stack. Dari sini bisa disimpulkan bahwa cloning bukan solusi yang paling baik (kecuali terpaksa).
+Konsekuensi dari cloning data adalah terjadi proses alokasi lagi di memory. Data akan diduplikasi dan dialokasikan ke alamat memory baru, jadinya kurang efisien. Ditambah lagi, jika kita mengacu ke penjelasan pada chapter [Memory Management ➜ Heap Memory](/basic/basic-memory-management#a324-heap-memory), data `String` isinya disimpan di heap memory yang pengaksesannya lebih lambat dibanding pengaksesan data stack. Dari sini bisa disimpulkan bahwa cloning bukan solusi yang paling baik (kecuali terpaksa).
 
 **Solusi yang lebih baik adalah dengan melakukan operasi pinjam data dari owner aslinya tanpa perlu melakukan operasi perpindahan owner**, yang pada Rust programming disebut dengan **borrowing**.
 

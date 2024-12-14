@@ -15,7 +15,7 @@ Penggunaannya terhadap tipe data `Result<T, E>` cukup umum untuk keperluan penan
 - Jika nilai object adalah bertipe `T`, maka yang dikembalikan adalah nilai `T`
 - Jika nilai object adalah bertipe `E`, maka yang dikembalikan adalah nilai `E` atau error.
 
-Agar lebih mudah memahami kegunaan dari operator ini, pembelajaran lebih baik dimulai dengan praktik kode yang didalamnya ada penerapan tipe data `Result` (atau `Option`). Di contoh berikut, tipe data `Result` kita pilih untuk praktek.
+Agar lebih mudah memahami kegunaan dari operator ini, pembelajaran lebih baik dimulai dengan praktik kode yang didalamnya ada penerapan tipe data `Result` (atau `Option`). Di contoh berikut, tipe data `Result` kita pilih untuk praktik.
 
 Silakan tulis kode berikut, pelajari, kemudian jalankan.
 

@@ -6,7 +6,7 @@ sidebar_label: A.55. Error ➜ Recoverable Error & Error Handling
 
 Chapter ini merupakan kelanjutan dari chapter sebelumnya tentang pembahasan topic error. Kali ini fokus kita lebih ke **recoverable error** dan penanganannya (*error handling* / *error propagation*).
 
-Best practice penanganan error di Rust adalah dengan mengkombinasikan keyword `match` dengan tipe data `Result<T, E>`. Untuk penerapannya sendiri sebenarnya sudah cukup sering dipraktikan di chapter-chapter sebelumnya.
+Best practice penanganan error di Rust adalah dengan mengkombinasikan keyword `match` dengan tipe data `Result<T, E>`. Untuk penerapannya sendiri sebenarnya sudah cukup sering dipraktikkan di chapter-chapter sebelumnya.
 
 Pada chapter ini pembelajaran dilakukan dengan lebih banyak menulis kode (*coding*), dengan ini penulis harapkan pembaca bisa terbiasa dan nyaman dengan gaya penanganan error di Rust.
 

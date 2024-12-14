@@ -479,7 +479,7 @@ Aturan manajemen di Rust cukup ketat, dan sudah dibahas secara mendetal pada cha
 
 Rust memiliki sebuah attribute bernama `path` yang berguna untuk meng-override 2 aturan di atas secara paksa. Dengan memanfaatkan attribute ini kita bisa menulis module dengan nama sesuka hati.
 
-Mari kita praktekan agar lebih jelas. Silakan buat package baru dengan struktur seperti berikut:
+Mari kita praktikkan agar lebih jelas. Silakan buat package baru dengan struktur seperti berikut:
 
 ```bash title="package source code structure"
 my_package
