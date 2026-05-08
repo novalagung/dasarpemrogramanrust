@@ -4,6 +4,25 @@ title: Version Changelogs & Updates
 sidebar_label: Version Changelogs & Updates
 ---
 
+## 📝 Release v1.0.20260508 (2026-05-08)
+
+#### ◉ Chapter update
+
+- [Operator](/basic/operator)
+    - Bersihkan `\t` dari contoh utama boolean, tambah komentar output (fixes #99)
+- [Operator ?](/basic/operator-tanda-tanya)
+    - Perbaikan narasi misleading tentang early return
+- [Slice (Basic)](/basic/slice)
+    - Perbaiki output contoh dari "A" ke "a"
+- [Slice Memory Management](/basic/slice-memory-management)
+    - Perbaiki narasi `String` yang salah disebut sebagai tipe slice
+- [File, Path, Directory](/basic/file-path-directory)
+    - Perbaiki komentar method `fs::write`
+- [Pointer & References](/basic/pointer-references)
+    - Perbaiki self-referencing link
+- [Ownership](/basic/ownership)
+    - Perbaiki nama variabel
+
 ## 📝 Release v1.0.20240830 (2024-08-30)
 
 #### ◉ General update
