@@ -175,7 +175,7 @@ Ok, lanjut. Per sekarang, reference variabel `number_one` dan `number_two` adala
 
 ### ◉ Contoh ke-1
 
-Contoh penerapannya bisa kita lihat pada chapter [Pointer & References](/basic/pointer-references#a315-karakteristik-pointer--reference) ini, di situ bisa dilihat ada variabel mutable `number` dan `pointer_number` yang reference-nya adalah sama dengan variabel `number`. Ketika underlying value `pointer_number` diubah (dari `24` ke `12`), isi data variabel `number` juga berubah.
+Contoh penerapannya bisa kita lihat pada chapter [Pointer & References](/basic/pointer-references#a334-mutable-references-operator-mut), di situ bisa dilihat ada variabel mutable `number` dan `pointer_number` yang reference-nya adalah sama dengan variabel `number`. Ketika underlying value `pointer_number` diubah (dari `24` ke `12`), isi data variabel `number` juga berubah.
 
 ![Pointer & reference](img/pointer-references-4.png)
 

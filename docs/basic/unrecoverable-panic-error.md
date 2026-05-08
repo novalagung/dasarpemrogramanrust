@@ -64,7 +64,7 @@ Error masih muncul, tapi pesan error-nya berbeda.
 - Error muncul ketika baris kode `println!("data index 6: {}", data[6]);` dieksekusi.
 - Kode sebelum baris tersebut masih sempat dieksekusi.
     - Silakan lihat gambar pertama, output `data index 1: 11` sempat muncul sebelum error.
-- Tipe data vector tidak tidak mampu mengetahui kapasitas datanya saat kompilasi, inilah kenapa error bisa lolos kompilasi.
+- Tipe data vector tidak mampu mengetahui kapasitas datanya saat kompilasi, inilah kenapa error bisa lolos kompilasi.
 
 </td>
 </tr>

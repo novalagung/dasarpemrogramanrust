@@ -10,7 +10,7 @@ Rust menyediakan cukup banyak API untuk keperluan pengolahan datetime, tersedia 
 
 ## A.52.1. Persiapan
 
-Sebelum memulai pembelajaran, siapkan satu project baru, kemudian tambahkan care `crono` dalam `Cargo.toml`.
+Sebelum memulai pembelajaran, siapkan satu project baru, kemudian tambahkan crate `chrono` dalam `Cargo.toml`.
 
 ```toml
 [package]

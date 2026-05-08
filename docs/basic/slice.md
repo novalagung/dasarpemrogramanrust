@@ -164,7 +164,7 @@ let data = ["a", "b", "c", "d"];
     ```rust
     let sliced_data = &data[..];
     println!("{:?}", sliced_data);
-    // output => ["A", "b", "c", "d"]
+    // output => ["a", "b", "c", "d"]
     ```
 
 > Perihal apa itu borrowing dan kegunaan dari operator `&` yang ditulis di awal variabel dibahas lebih detail pada chapter [Pointer & References](/basic/pointer-references).

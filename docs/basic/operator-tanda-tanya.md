@@ -104,14 +104,12 @@ Sekilas perbandingan fungsi sebelum dan setelah dimodifikasi bisa dilihat pada d
 
 Implementasi operator `?` dilakukan dengan cukup menuliskannya setelah memanggil fungsi yang memiliki tipe nilai balik `Result<T, E>` (atau `Option<T>`) yang pada contoh ini adalah fungsi `divider()`. Operator tersebut meng-unwrap nilai balik fungsi `divider()` yang bertipe `Result<f64, &'static str>` dengan ketentuan:
 
-- Jila nilai balik `Result<f64, &'static str>` berisi nilai `Ok(f64)`, maka nilai `f64` dikembalikan.
+- Jika nilai balik `Result<f64, &'static str>` berisi nilai `Ok(f64)`, maka nilai `f64` dikembalikan.
 
     - Statement `let r1 = divider(10.0, 5.0)?;`, variabel `r1` berisi nilai bertipe `f64`.
     - Statement `let r3 = divider(10.0, 2.0)?;`, variabel `r3` berisi nilai bertipe `f64`.
 
-- Jila nilai balik `Result<f64, &'static str>` berisi nilai `Err(&'static str)`, maka nilai `&'static str` dikembalikan.
-
-    - Statement `let r2 = divider(10.0, 0.0)?;`, variabel `r2` berisi nilai bertipe `&'static str`.
+- Jika nilai balik `Result<f64, &'static str>` berisi nilai `Err(&'static str)`, maka statement `let r2 = divider(10.0, 0.0)?;` menghasilkan `Err`, yang menyebabkan fungsi segera berhenti (early return) dan error dikembalikan sebagai nilai balik fungsi. Variabel `r2` tidak pernah terisi.
 
 Sampai sini semoga cukup jelas.
 
