@@ -285,7 +285,7 @@ Setelah mendapatkan objek bertipe `Enumerate`, keyword `for in` digunakan untuk 
 
 ## A.13.8. Append elemen ke array
 
-Operasi menambahkan sebuah elemen ke array yang hasilnya melebihi kapasitas ... adalah tidak bisa. Karena array memiliki size fixed, tidak dinamis. Solusinya adalah menggunakan tipe data Vector. Nantinya array perlu dikonversi ke bentu Vector terlebih dahulu kemudian di-append, lebih jelasnya kita bahas pada chapter [Vector](/basic/vector).
+Operasi menambahkan sebuah elemen ke array yang hasilnya melebihi kapasitas ... adalah tidak bisa. Karena array memiliki size fixed, tidak dinamis. Solusinya adalah menggunakan tipe data Vector. Nantinya array perlu dikonversi ke bentuk Vector terlebih dahulu kemudian di-append, lebih jelasnya kita bahas pada chapter [Vector](/basic/vector).
 
 ## A.13.9. Nested array
 

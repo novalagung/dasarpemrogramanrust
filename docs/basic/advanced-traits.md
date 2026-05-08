@@ -324,7 +324,7 @@ Tipe data aslinya tetap bisa diakses, tapi butuh tambahan effort. Lebih jelasnya
 
 ## A.37.7. *Associated types* pada trait
 
-Associated types adalah tipe data yang didefinisikan di dalam suatu trait. Associated types tidak tidak memiliki tipe data konkret saat didefinisikan, namun ketika trait diimplementasikan maka tipe tersebut harus ditentukan tipe data konkretnya.
+Associated types adalah tipe data yang didefinisikan di dalam suatu trait. Associated types tidak memiliki tipe data konkret saat didefinisikan, namun ketika trait diimplementasikan maka tipe tersebut harus ditentukan tipe data konkretnya.
 
 Lebih jelas silakan perhatikan kode berikut:
 

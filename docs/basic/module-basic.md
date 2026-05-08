@@ -316,7 +316,7 @@ Hingga pembahasan pada praktik submodule, kita telah belajar penerapan module de
 - Penggunaan normal module dalam binary crate
 - Pembuatan module dengan nama `my_io`, dengan isi/item ditulis pada file `my_io.rs`
 - Pembuatan module dengan nama `my_number`, dengan isi/item ditulis pada file `my_number/mod.rs`
-- Pembuatan submodule dengan nama `my_number/conversion_utility`, dengan isi/item ditulis pada file `my_number/conversion.rs` yang di-import menggunakan `path` attribute.
+- Pembuatan submodule dengan nama `my_number/conversion_utility`, dengan isi/item ditulis pada file `my_number/conversion_utility.rs`.
 - Penggunaan keyword `pub` pada fungsi agar bisa diakses dari luar module
 - Penggunaan keyword `pub` pada submodule agar bisa diakses dari luar parent module
 - Pengaksesan item milik module, yaitu: `my_io::read_entry`, `my_number::conversion_utility::string_to_number`, dan `my_number::is_odd_number`
@@ -398,7 +398,7 @@ Hingga pembahasan pada praktik module `path` attribute, kita telah belajar pener
 - Penggunaan normal module dalam binary crate
 - Pembuatan module dengan nama `my_io`, dengan isi/item ditulis pada file `my_io.rs`
 - Pembuatan module dengan nama `my_number`, dengan isi/item ditulis pada file `my_number/mod.rs`
-- Pembuatan submodule dengan nama `my_number/conversion_utility`, dengan isi/item ditulis pada file `my_number/conversion_utility/mod.rs`
+- Pembuatan submodule dengan nama `my_number/conversion_utility`, dengan isi/item ditulis pada file `my_number/conversion.rs` yang di-import menggunakan `path` attribute.
 - Penggunaan keyword `pub` pada fungsi agar bisa diakses dari luar module
 - Penggunaan keyword `pub` pada submodule agar bisa diakses dari luar parent module
 - Pengaksesan item milik module, yaitu: `my_io::read_entry`, `my_number::conversion_utility::string_to_number`, dan `my_number::is_odd_number`

@@ -120,7 +120,7 @@ Pada contoh di atas, fungsi `sleep` dipanggil dalam blok kode perulangan agar ad
 
 Jika ingin jeda durasi yang lebih lama, ubah saja angka `1` pada `Duration::from_secs(1)`. Contoh: `Duration::from_secs(5)` berarti jeda 5 detik.
 
-> - Lebih jelasnya perihal path dibahas pada chapter [Module System ➜ Pach & Item](/basic/path-item)
+> - Lebih jelasnya perihal path dibahas pada chapter [Module System ➜ Path & Item](/basic/path-item)
 > - Lebih jelasnya perihal keyword `use` dibahas pada chapter [Module System ➜ Use](/basic/use)
 > - Lebih jelasnya perihal fungsi dibahas pada chapter [Function](/basic/function)
 > - Lebih jelasnya perihal struct dibahas pada chapter [Struct](/basic/struct)
