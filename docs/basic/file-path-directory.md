@@ -143,7 +143,7 @@ Fungsi `fs::create_dir` digunakan untuk membuat folder. Contoh penerapannya suda
 
 ### ◉ Menulis konten file (`fs::write`)
 
-Fungsi `fs::write` digunakan untuk membuat folder. Contoh penerapan:
+Fungsi `fs::write` digunakan untuk menulis konten ke file. Contoh penerapan:
 
 ```rust
 let path = Path::new("./files").join("target.txt");

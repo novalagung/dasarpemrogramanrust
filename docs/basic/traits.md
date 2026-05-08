@@ -69,12 +69,12 @@ Bagaimana dengan custom type yang kita buat sendiri? Misalnya struct.
 
 ```rust
 fn main() {
-    let circle_one = Circle{raidus: 6};
+    let circle_one = Circle{radius: 6};
     println!("{:?}", circle_one);
 }
 
 struct Circle {
-    raidus: i32,
+    radius: i32,
 }
 ```
 
@@ -106,17 +106,17 @@ Di bawah ini adalah contoh cara implementasi trait.
 
 ```rust
 struct Circle {
-    raidus: i32,
+    radius: i32,
 }
 
 impl std::fmt::Debug for Circle {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "Circle radius: {}", self.raidus)
+        write!(f, "Circle radius: {}", self.radius)
     }
 }
 
 fn main() {
-    let circle_one = Circle{raidus: 6};
+    let circle_one = Circle{radius: 6};
     println!("{:?}", circle_one);
 }
 ```
@@ -164,7 +164,7 @@ Di contoh, format `Circle radius: {}` digunakan. Dengan ini nantinya saat printi
 ```rust
 impl std::fmt::Debug for Circle {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "Circle radius: {}", self.raidus)
+        write!(f, "Circle radius: {}", self.radius)
     }
 }
 ```
@@ -182,7 +182,7 @@ Notasi penulisan macro `write`:
 write!(variabel_tujuan, data_yang_ingin_di_print, arg1, arg2, ...);
 
 // contoh penerapan
-write!(f, "Circle radius: {}", self.raidus);
+write!(f, "Circle radius: {}", self.radius);
 ```
 
 ### ◉ Print data menggunakan formatted print `{:?}`
@@ -201,18 +201,18 @@ Ubah kode dengan menambahkan implementasi trait `Display`. Hasilnya kurang lebih
 
 ```rust
 struct Circle {
-    raidus: i32,
+    radius: i32,
 }
 
 impl std::fmt::Debug for Circle {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "Circle radius: {}", self.raidus)
+        write!(f, "Circle radius: {}", self.radius)
     }
 }
 
 impl std::fmt::Display for Circle {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "Circle radius: {}", self.raidus)
+        write!(f, "Circle radius: {}", self.radius)
     }
 }
 ```

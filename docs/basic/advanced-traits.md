@@ -66,7 +66,7 @@ impl crate::calculation_spec::Area for Square {
 }
 ```
 
-Bisa dilihat pada kode di atas, deklarasi struct beserta property memiliki visibility publik. Idealnya, saat sturct tersebut digunakan di fungsi `main` nantinya tidak akan ada error terkait visibility akses.
+Bisa dilihat pada kode di atas, deklarasi struct beserta property memiliki visibility publik. Idealnya, saat struct tersebut digunakan di fungsi `main` nantinya tidak akan ada error terkait visibility akses.
 
 Selanjutnya, pada file `main.rs` siapkan kode yang isinya registrasi module `calculate_spec` dan `two_dimensional`, juga definisi fungsi `main` dengan isi statement pembuatan 2 variabel object untuk masing-masing tipe data struct `Circle` dan `Square`.
 

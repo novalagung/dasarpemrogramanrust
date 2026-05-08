@@ -405,7 +405,7 @@ Hingga pembahasan pada praktik module `path` attribute, kita telah belajar pener
 
 ## A.20.7. Pembahasan lanjutan
 
-Pembahasan topik module dilanjutkan pada beberapa chapter lain. Pada chapter [Module System ➜ Inline Module](/basic/module-inline) kita akan bahas secara mendetail mengenai apa itu inline module dan perbedaannya dibanding normal module. Lalu nantinya di cahpter [Module System ➜ Visibility & Privacy](/basic/visibility-privacy) akan dibahas secara lengkap mengenai keyword `pub` dan kontrol privasi lainnya di pemrograman Rust.
+Pembahasan topik module dilanjutkan pada beberapa chapter lain. Pada chapter [Module System ➜ Inline Module](/basic/module-inline) kita akan bahas secara mendetail mengenai apa itu inline module dan perbedaannya dibanding normal module. Lalu nantinya di chapter [Module System ➜ Visibility & Privacy](/basic/visibility-privacy) akan dibahas secara lengkap mengenai keyword `pub` dan kontrol privasi lainnya di pemrograman Rust.
 
 ---
 

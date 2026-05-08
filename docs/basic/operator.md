@@ -93,7 +93,7 @@ println!("res_one: {res_one}");
 
 let res_two = number_a != number_b;
 println!("res_two: {res_two}");
-// output => res_one: true
+// output => res_two: true
 ```
 
 ## A.8.3. Operator negasi
