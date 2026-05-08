@@ -46,33 +46,7 @@ sidebar_label: Version Changelogs & Updates
     - Perbaiki isi summary #3 dan #4 yang tertukar
 - [Variabel](/basic/variabel)
     - Penambahan contoh `24_i8`
-- [String Literal vs String](/basic/string-slice-vs-string-string)
-    - Perbaiki source code example yang tidak sesuai dengan doc
-- [Advanced Traits](/basic/advanced-traits)
-    - Perbaiki duplikasi kata "tidak"
-- [Type Alias & Casting](/basic/type-alias-casting)
-    - Perbaiki nama method `as_second` menjadi `as_secs`
-- [Tipe Data ➜ Option](/basic/option-type)
-    - Perbaiki nomor section `A.38.4` menjadi `A.39.4`
-- [Perulangan While](/basic/perulangan-while)
-    - Perbaiki typo "Pach" menjadi "Path" pada link
-- [Tipe Data ➜ Result](/basic/result-type)
-    - Perbaiki alt text gambar
-- [Function](/basic/function)
-    - Perbaiki contoh naming convention `get_report_Status` menjadi `get_report_status`
-- [Array](/basic/array)
-    - Perbaiki typo "bentu" menjadi "bentuk"
-- [Vector](/basic/vector)
-    - Perbaiki typo "bebebrapa" menjadi "beberapa"
-- [Traits ➜ Function](/basic/trait-function)
-    - Perbaiki typo "blcok" menjadi "block" dan "chpater" menjadi "chapter"
-- [Attributes](/basic/attributes)
-    - Perbaiki typo "Jialankan" menjadi "Jalankan"
-- [Module System ➜ Basic](/basic/module-basic)
-    - Perbaiki isi summary #3 dan #4 yang tertukar
-- [Variabel](/basic/variabel)
-    - Penambahan contoh `24_i8`
-- [String Literal vs String](/basic/string-slice-vs-string-string)
+- [String Literal vs String](/basic/string-slice-vs-string-literal)
     - Perbaiki source code example yang tidak sesuai dengan doc
 
 ## 📝 Release v1.0.20240830 (2024-08-30)
