@@ -59,4 +59,4 @@ Tools yang digunakan:
 
 Desain arsitektur:
 
-![Dasar pemrograman python](https://raw.githubusercontent.com/novalagung/dasarpemrogramanrust/master/etc/base%20architecture.jpg)
+![Dasar Pemrograman Rust](https://raw.githubusercontent.com/novalagung/dasarpemrogramanrust/master/etc/base%20architecture.jpg)

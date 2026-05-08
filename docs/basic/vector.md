@@ -313,7 +313,7 @@ Semua operasi slice bisa diterapkan di vector.
 
 Tipe data `VecDeque<T>` adalah sama seperti `Vec<T>` plus mendukung operasi menambah dan mengurangi elemen dari dua sisi secara efisien.
 
-Pada tipe data `Vec<T>`, ada method `pop` yang fungsinya menghapus data elemen terakhir dan method `push` untuk menambah elemen baru dari kanan. Tipe data `VecDeque` memiliki bebebrapa method tambahan, yaitu:
+Pada tipe data `Vec<T>`, ada method `pop` yang fungsinya menghapus data elemen terakhir dan method `push` untuk menambah elemen baru dari kanan. Tipe data `VecDeque` memiliki beberapa method tambahan, yaitu:
 
 - method `pop_front` untuk hapus data elemen pertama atau paling kiri (indeks ke-0)
 - method `push_front` untuk menambah data dari kiri (indeks ke-0)

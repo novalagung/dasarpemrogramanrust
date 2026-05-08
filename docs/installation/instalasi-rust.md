@@ -30,7 +30,7 @@ cargo --version
 
 ### ◉ Windows
 
-Silakan download file `rustup-init.exe` di [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install). Jalankan installar, lalu run command berikut untuk mengecek hasil instalasi.
+Silakan download file `rustup-init.exe` di [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install). Jalankan installer, lalu run command berikut untuk mengecek hasil instalasi.
 
 ```bash
 rustup --version

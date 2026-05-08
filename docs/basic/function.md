@@ -67,7 +67,7 @@ fn greet() {
 
 ## A.17.2. *Naming convention* fungsi
 
-Sesuai anjuran di [halaman dokumentasi Rust](https://rust-lang.github.io/api-guidelines/naming.html), aturan penulisan nama fungsi di Rust adalah menggunakan **snake case**. Nama fungsi dituliskan dalam huruf kecil dengan separator tanda garis bawah atau underscore (`_`). Contohnya seperti: `main`, `greet_message`, `get_report_Status`, dll.
+Sesuai anjuran di [halaman dokumentasi Rust](https://rust-lang.github.io/api-guidelines/naming.html), aturan penulisan nama fungsi di Rust adalah menggunakan **snake case**. Nama fungsi dituliskan dalam huruf kecil dengan separator tanda garis bawah atau underscore (`_`). Contohnya seperti: `main`, `greet_message`, `get_report_status`, dll.
 
 ## A.17.3. Parameter fungsi dan argumen fungsi
 

@@ -526,7 +526,7 @@ fn main() {
 
 Pada kode di atas bisa dilihat, module `util1` dan `util2` patuh mengikuti aturan deklarasi module system. Berbeda dengan `util3` yang sebenarnya dideklarasikan dengan nama `util3_mymodule` (karena filename-nya adalah `util3_mymodule.rs`). Nama module satu ini diubah menjadi `util3` lalu dengan memanfaatkan attribute `path` kita arahkan isi module `util3` adalah berada di `util3_mymodule.rs`.
 
-Jialankan program, harusnya tidak ada error.
+Jalankan program, harusnya tidak ada error.
 
 ![Attribute](img/attribute-9.png)
 
