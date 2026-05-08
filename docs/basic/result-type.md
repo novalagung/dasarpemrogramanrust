@@ -80,7 +80,7 @@ match result {
 }
 ```
 
-![Option type](img/result-type-2.png)
+![Result type](img/result-type-2.png)
 
 Bisa dilihat pada kode di atas mudahnya pengambilan nilai `m` dari `Err(m)` dan juga `r` dari `Ok(r)`. Penerapan `match` untuk seleksi kondisi biasa disebut dengan **pattern matching** dan teknik ini sangat fleksibel dan advance.
 

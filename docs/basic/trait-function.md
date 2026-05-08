@@ -43,7 +43,7 @@ where
 
 Trait `FnMut` ([std::ops::FnMut](https://doc.rust-lang.org/std/ops/trait.FnMut.html)) merupakan trait yang menjadikan suatu closure bisa diakses berkali-kali dan bisa me-mutate atau mengubah data suatu variabel yang berada di luar scope block closure. Trait ini juga otomatis ter-implement pada closure yang di dalamnya ada kode pengaksesan variabel yang berada di luar scope block closure.
 
-Contoh penerapannya silakan lihat closure `square_x` berikut. Closure tersebut di-dalamnya mengubah nilai `x` yang dideklarasikan di luar blcok closure, oleh karenanya trait `FnMut` otomatis ter-implement.
+Contoh penerapannya silakan lihat closure `square_x` berikut. Closure tersebut di-dalamnya mengubah nilai `x` yang dideklarasikan di luar block closure, oleh karenanya trait `FnMut` otomatis ter-implement.
 
 ```rust
 let mut x = 5;
@@ -81,7 +81,7 @@ Jika dipaksa deklarasi menggunakan `Fn`, hasilnya pasti error.
 
 `FnMut` merupakan supertrait dari `Fn`, artinya closure dengan trait `Fn` juga bisa digunakan sebagai argument pemanggilan fungsi di mana parameter fungsi tersebut bertipe `FnMut`.
 
-> Lebih jelasnya mengenai supertrait dibahas pada chpater [Supertrait](#/wip/supertrait)
+> Lebih jelasnya mengenai supertrait dibahas pada chapter [Supertrait](#/wip/supertrait)
 
 ## A.49.3. Trait `FnOnce`
 
@@ -108,7 +108,7 @@ Jika closure dengan tipe `FnOnce` dipaksa diakses dua kali, pasti muncul error. 
 
 ![Closure](img/trait-function-2.png)
 
-> Lebih jelasnya mengenai supertrait dibahas pada chpater [Supertrait](#/wip/supertrait)
+> Lebih jelasnya mengenai supertrait dibahas pada chapter [Supertrait](#/wip/supertrait)
 
 ## A.49.4. Relasi antara trait function dengan function
 
