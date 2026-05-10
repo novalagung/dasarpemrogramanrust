@@ -24,10 +24,10 @@ let filepath_4 = Path::new("/home/novalagung").join("Desktop").join("my text.txt
 let filepath_5 = Path::new("/home").join("novalagung/Desktop/my text.txt");
 
 println!("{:?}", filepath_1);
-// output => "/home/novalagung/Desktop/my text.txt"
+// output ➜ "/home/novalagung/Desktop/my text.txt"
 
 println!("{:?}", filepath_2);
-// output => "/home/novalagung/Desktop/my text.txt"
+// output ➜ "/home/novalagung/Desktop/my text.txt"
 ```
 
 > Ketika path di-print, yang muncul adalah sesuai dengan string yang ditulis. Dengan pengecualian jika method `.join()` digunakan disitu, maka separator file yang digunakan relatif terhadap OS. Jika Windows maka `\`, dan `/` untuk non-Windows.
@@ -115,7 +115,7 @@ fn main() {
     let path = "./files";
     let res = fs::create_dir(&path);
     println!("{:?}", res);
-    // output => Ok(())
+    // output ➜ Ok(())
 }
 ```
 
@@ -265,6 +265,8 @@ Output program bisa dilihat pada gambar berikut:
 ![File, Path, Directory](img/file-path-directory-2.png)
 
 Tipe data variabel `paths` di atas adalah `ReadDir` yang merupakan tipe data iterator. Jika digunakan pada keyword `for`, maka variabel element perulangan `path` akan bertipe data `Result<DirEntry, Error>`. Dari tipe ini kita bisa mengakses file name maupun file path.
+
+> **Note:** Semua contoh di atas menggunakan `match` untuk menangani error. Alternatif yang lebih ringkas adalah menggunakan operator `?` (error propagation). Pembahasan lengkap tentang operator `?` ada di chapter [Operator ?](/basic/operator-tanda-tanya).
 
 ---
 

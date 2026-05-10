@@ -18,24 +18,24 @@ Ciri khas variable shadowing adalah deklarasi selalu menggunakan keyword `let`. 
 fn main() {
     let some_data = "Hello";
     println!("{}", some_data);
-    // output => Hello
+    // output ➜ Hello
 
     let some_data = 12;
     println!("{}", some_data);
-    // output => 12
+    // output ➜ 12
 
     let some_data = "Rust!";
     println!("{}", some_data);
-    // output => Rust!
+    // output ➜ Rust!
 
     let mut some_data = false;
     some_data = true;
     println!("{}", some_data);
-    // output => true
+    // output ➜ true
 
     let some_data = 3.14;
     println!("{}", some_data);
-    // output => 3.14
+    // output ➜ 3.14
 }
 ```
 

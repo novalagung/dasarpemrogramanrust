@@ -37,7 +37,7 @@ fn main() {
     // ...
 
     println!("{}", NUMBER);
-    // output ==> 18
+    // output ➜ 18
 }
 ```
 

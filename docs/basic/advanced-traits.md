@@ -119,8 +119,8 @@ O iya, ada beberapa hal baru pada penerapan kode di atas, berikut adalah pembaha
 Method `pow` adalah item milik tipe data numerik (`i8`, `i16`, `i32`, ...) yang fungsinya untuk operasi pangkat.
 
 ```rust
-3.pow(2); // ===> 3 pangkat 2
-8.pow(5); // ===> 8 pangkat 5
+3.pow(2); // ➜ 3 pangkat 2
+8.pow(5); // ➜ 8 pangkat 5
 ```
 
 ### ◉ Keyword `as` untuk casting tipe data
@@ -128,8 +128,8 @@ Method `pow` adalah item milik tipe data numerik (`i8`, `i16`, `i32`, ...) yang 
 Keyword `as` digunakan untuk casting tipe data. Keyword ini bisa diterapkan pada beberapa jenis tipe data, salah satunya adalah semua tipe data numerik.
 
 ```rust
-1024 as f32; // ===> 1024 dikonversi ke tipe f32, hasinya adalah 1024.0
-3.14 as i32; // ===> 3.14 dikonversi ke tipe i32, hasinya 3 karena bagian desimal dipotong
+1024 as f32; // ➜ 1024 dikonversi ke tipe f32, hasinya adalah 1024.0
+3.14 as i32; // ➜ 3.14 dikonversi ke tipe i32, hasinya 3 karena bagian desimal dipotong
 ```
 
 ## A.37.2. Trait sebagai tipe parameter

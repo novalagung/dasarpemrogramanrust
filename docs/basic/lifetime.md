@@ -203,9 +203,9 @@ Ketika kita menulis `&'a str`, artinya: "ini adalah reference ke string yang mas
 Lifetime dituliskan dengan notasi `'nama_lifetime`. Dengan notasi tersebut, kita bisa menciptakan lifetime baru misalnya `'a`, `'b`, `'ini_lifetime`, dst.
 
 ```rust
-&i32        // => tipe data reference i32
-&'a i32     // => tipe data reference i32 dengan lifetime 'a
-&'a mut i32 // => tipe data mutable reference i32 dengan lifetime 'a
+&i32        // ➜ tipe data reference i32
+&'a i32     // ➜ tipe data reference i32 dengan lifetime 'a
+&'a mut i32 // ➜ tipe data mutable reference i32 dengan lifetime 'a
 ```
 
 > Lifetime dan block label memiliki bentuk literal yang sama, keduanya diawali tanda kutip `'`. Yang membedakan hanya pada tempat di mana syntax tersebut ditulis.

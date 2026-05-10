@@ -306,6 +306,80 @@ impl std::fmt::Display for Circle {
 
 > Lebih detail tentang trait bound, wrapper pattern, dan aturan implementasi trait untuk type lokal maupun external ada di chapter [Traits ➜ Advanced](/basic/advanced-traits).
 
+## A.36.3. Default implementation pada trait method
+
+Trait di Rust memungkinkan kita untuk menyediakan **default implementation** pada method. Artinya, method tersebut sudah memiliki body/isi langsung di dalam definisi trait, sehingga tipe data yang meng-implement trait tidak wajib menuliskan implementasi method tersebut — bisa pakai yang default, atau bisa juga di-override dengan implementasi sendiri.
+
+### ◉ Contoh trait dengan default method
+
+```rust
+trait Speak {
+    fn greet(&self) {
+        println!("Hello from default implementation!");
+    }
+    
+    fn introduce(&self); // tanpa default, wajib diimplementasikan
+}
+```
+
+Pada trait `Speak` di atas:
+- Method `greet()` memiliki default implementation. Tipe data yang meng-implement trait ini **tidak wajib** menuliskan implementasi `greet()` — bisa langsung pakai yang default.
+- Method `introduce()` **tidak memiliki** default implementation, sehingga wajib diimplementasikan oleh tipe data yang meng-implement trait.
+
+### ◉ Implementasi trait dengan default method
+
+```rust
+struct Person {
+    name: String,
+}
+
+impl Speak for Person {
+    // greet() tidak diimplementasikan → pakai default
+    fn introduce(&self) {
+        println!("My name is {}", self.name);
+    }
+}
+
+fn main() {
+    let p = Person { name: String::from("Alice") };
+    p.greet();      // output ➜ Hello from default implementation!
+    p.introduce();  // output ➜ My name is Alice
+}
+```
+
+Pada contoh di atas, `Person` hanya mengimplementasikan `introduce()`. Method `greet()` tidak ditulis di `impl`, sehingga otomatis menggunakan default implementation dari trait.
+
+### ◉ Override default implementation
+
+Jika kita ingin perilaku `greet()` yang berbeda untuk `Person`, kita bisa **override** default implementation-nya:
+
+```rust
+impl Speak for Person {
+    fn greet(&self) {
+        println!("Hi, I'm {}!", self.name);
+    }
+    
+    fn introduce(&self) {
+        println!("My name is {}", self.name);
+    }
+}
+
+fn main() {
+    let p = Person { name: String::from("Alice") };
+    p.greet();      // output ➜ Hi, I'm Alice!
+    p.introduce();  // output ➜ My name is Alice
+}
+```
+
+Perhatikan bahwa setelah di-override, method `greet()` sekarang menggunakan implementasi custom, bukan default lagi.
+
+### ◉ Kapan menggunakan default implementation?
+
+Default implementation berguna ketika:
+- Sebagian besar tipe data memiliki perilaku yang sama untuk method tertentu.
+- Kita ingin memberikan "fallback" behavior yang bisa di-override jika diperlukan.
+- Kita menambahkan method baru ke trait yang sudah ada tanpa mem-break existing implementations (ini disebut *non-breaking change*).
+
 ---
 
 ## Catatan chapter 📑

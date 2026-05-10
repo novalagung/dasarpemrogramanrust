@@ -124,7 +124,7 @@ let data = ["a", "b", "c", "d"];
     ```rust
     let sliced_data = &data[1..3];
     println!("{:?}", sliced_data);
-    // output => ["b", "c"]
+    // output ➜ ["b", "c"]
     ```
 
 - Notasi `&data[start_index..=end_index]` untuk slicing data dari `start_index` hingga `end_index`
@@ -132,7 +132,7 @@ let data = ["a", "b", "c", "d"];
     ```rust
     let sliced_data = &data[1..=3];
     println!("{:?}", sliced_data);
-    // output => ["b", "c", "d"]
+    // output ➜ ["b", "c", "d"]
     ```
 
 - Notasi `&data[..end_index]` untuk slicing data dari 0 hingga sebelum `end_index`
@@ -140,7 +140,7 @@ let data = ["a", "b", "c", "d"];
     ```rust
     let sliced_data = &data[..3];
     println!("{:?}", sliced_data);
-    // output => ["a", "b", "c"]
+    // output ➜ ["a", "b", "c"]
     ```
 
 - Notasi `&data[..=end_index]` untuk slicing data dari 0 hingga `end_index`
@@ -148,7 +148,7 @@ let data = ["a", "b", "c", "d"];
     ```rust
     let sliced_data = &data[..=2];
     println!("{:?}", sliced_data);
-    // output => ["a", "b", "c"]
+    // output ➜ ["a", "b", "c"]
     ```
 
 - Notasi `&data[start_index..]` untuk slicing data dari `start_index` hingga indeks terakhir
@@ -156,7 +156,7 @@ let data = ["a", "b", "c", "d"];
     ```rust
     let sliced_data = &data[1..];
     println!("{:?}", sliced_data);
-    // output => ["b", "c", "d"]
+    // output ➜ ["b", "c", "d"]
     ```
 
 - Notasi `&data[..]` untuk slicing semua elemen yang ada
@@ -164,7 +164,7 @@ let data = ["a", "b", "c", "d"];
     ```rust
     let sliced_data = &data[..];
     println!("{:?}", sliced_data);
-    // output => ["a", "b", "c", "d"]
+    // output ➜ ["a", "b", "c", "d"]
     ```
 
 > Perihal apa itu borrowing dan kegunaan dari operator `&` yang ditulis di awal variabel dibahas lebih detail pada chapter [Pointer & References](/basic/pointer-references).

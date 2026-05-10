@@ -140,6 +140,8 @@ println!("g: {:?}, h: {:?}", g, h);
 
 ![Ownership](img/ownership-3.png)
 
+Kode di atas menghasilkan error pada statement `println`. Variabel `g` sudah tidak valid karena ownership-nya telah berpindah ke `h` saat statement `let h = g;` dieksekusi. Ingat, pada *move semantics*, owner lama menjadi invalid setelah perpindahan.
+
 ### ◉ Tipe data yang mengadopsi Copy vs Move semantics
 
 Mungkin muncul pertanyaan: bagaimana cara kita tahu tipe data mana yang mengadopsi *copy semantics* dan mana yang *move semantics*? Secara sederhana, pengelompokannya bisa dilihat dari di mana data tersebut disimpan di memory.

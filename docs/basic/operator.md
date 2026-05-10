@@ -23,23 +23,23 @@ let (num1, num2) = (12, 4);
 
 let value_addition = num1 + num2;
 println!("{} + {} = {}", num1, num2, value_addition);
-// output => 12 + 4 = 16
+// output ➜ 12 + 4 = 16
 
 let value_sub = num1 - num2;
 println!("{} - {} = {}", num1, num2, value_sub);
-// output => 12 - 4 = 8
+// output ➜ 12 - 4 = 8
 
 let value_mut = num1 * num2;
 println!("{} * {} = {}", num1, num2, value_mut);
-// output => 12 * 4 = 48
+// output ➜ 12 * 4 = 48
 
 let value_div = num1 / num2;
 println!("{} / {} = {}", num1, num2, value_div);
-// output => 12 / 4 = 3
+// output ➜ 12 / 4 = 3
 
 let value_mod = num1 % num2;
 println!("{} % {} = {}", num1, num2, value_mod);
-// output => 12 % 4 = 0
+// output ➜ 12 % 4 = 0
 ```
 
 ## A.8.2. Operator perbandingan
@@ -89,11 +89,11 @@ Salah satu teknik *formatted print* macro `println` adalah dengan menerapkan *na
 ```rust
 let res_one = number_a == number_b;
 println!("res_one: {res_one}");
-// output => res_one: false
+// output ➜ res_one: false
 
 let res_two = number_a != number_b;
 println!("res_two: {res_two}");
-// output => res_two: true
+// output ➜ res_two: true
 ```
 
 ## A.8.3. Operator negasi
@@ -110,7 +110,7 @@ let (value_left, value_right) = (12, -12);
 let res_one = -value_left == value_right;
 let res_two = !(value_left == value_right);
 println!("{res_one} {res_two}");
-// output => true true
+// output ➜ true true
 ```
 
 Untuk menggunakan operator negasi pada tipe data numerik, caranya dengan langsung menambahkan prefix `-` pada angka atau variabel. Contohnya `-12` atau `-value_left`.
@@ -131,8 +131,8 @@ Berikut merupakan list operator untuk operasi logika `bool` beserta contoh pener
 let (bool_left, bool_right) = (false, true);
 println!("AND result: {}", bool_left && bool_right);
 println!("OR result: {}", bool_left || bool_right);
-// output ==> AND result: false
-// output ==> OR result: true
+// output ➜ AND result: false
+// output ➜ OR result: true
 ```
 
 ### ◉ *Whitespace character* tab `\t`

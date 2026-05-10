@@ -38,8 +38,8 @@ Cara meminjam data di Rust sangat mudah, yaitu:
     let msg_3 = String::from("hello rust");
     let msg_4 = &msg_3; // <----- borrow operation
 
-    println!("{:?}", msg_4); // output => hello rust
-    println!("{:?}", msg_3); // output => hello rust
+    println!("{:?}", msg_4); // output ➜ hello rust
+    println!("{:?}", msg_3); // output ➜ hello rust
     ```
 
 - Untuk borrowing dengan level akses mutable, gunakan operator reference `&mut`
@@ -50,8 +50,8 @@ Cara meminjam data di Rust sangat mudah, yaitu:
 
     *msg_4 = String::from("hello rust");
 
-    println!("{:?}", msg_4); // output => hello rust
-    println!("{:?}", msg_3); // output => hello rust
+    println!("{:?}", msg_4); // output ➜ hello rust
+    println!("{:?}", msg_3); // output ➜ hello rust
     ```
 
 Di Rust, semua statement reference (baik mutable ataupun immutable) adalah operasi *borrowing*. Yang terjadi pada statement reference adalah data milik owner dipinjam dalam bentuk pointer. Pointer itu sendiri merupakan alamat memory yang mengarah ke data sebenarnya (milik owner).
@@ -92,7 +92,7 @@ let msg_6 = &msg_5;
 let msg_7 = &msg_5;
 let msg_8 = &msg_5;
 
-println!("{:?} {:?} {:?}", msg_6, msg_7, msg_8);
+println!("{:?} {:?} {:?}", msg_6, msg_7, msg_8); // output ➜ "hello rust" "hello rust" "hello rust"
 ```
 
 ![Borrowing](img/borrowing-1.png)
@@ -106,7 +106,7 @@ let mut msg_9 = String::from("hello rust");
 
 let msg_10 = &mut msg_9;
 
-println!("{:?}", msg_10);
+println!("{:?}", msg_10); // output ➜ "hello rust"
 ```
 
 ![Borrowing](img/borrowing-2.png)
@@ -271,16 +271,16 @@ Contoh penerapan method `contains`:
 
 ```rust
 let fact = String::from("There must always be a lich king");
-println!("{:?}", fact.contains("lich king")); // output => true
-println!("{:?}", fact.contains("bolvar"));    // output => false
+println!("{:?}", fact.contains("lich king")); // output ➜ true
+println!("{:?}", fact.contains("bolvar"));    // output ➜ false
 ```
 
 O iya, pengecekan string-nya adalah case sensitive ya.
 
 ```rust
 let fact = String::from("There must always be a lich king");
-println!("{:?}", fact.contains("lich king")); // output => true
-println!("{:?}", fact.contains("Lich King")); // output => false
+println!("{:?}", fact.contains("lich king")); // output ➜ true
+println!("{:?}", fact.contains("Lich King")); // output ➜ false
 ```
 
 > Lebih jelasnya mengenai tipe data string dan method yang tersedia pada tipe tersebut akan dibahas terpisah pada chapter [Tipe Data ➜ String Custom Type vs &str](/basic/string-slice-vs-string-literal).

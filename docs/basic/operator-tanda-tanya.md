@@ -68,6 +68,16 @@ Output program:
 
 Sampai sini penulis rasa cukup jelas. Selanjutnya kode tersebut akan di-refactor, beberapa statement disederhanakan menggunakan operator `?`.
 
+### ◉ Syarat penggunaan operator `?`
+
+Sebelum masuk ke bagian coding, ada beberapa hal penting yang perlu diketahui tentang operator `?`:
+
+- Operator ini **hanya bisa digunakan di dalam fungsi yang mengembalikan `Result<T, E>` atau `Option<T>`**. Jika digunakan di fungsi yang return `()` (void), compiler akan error.
+- Operator `?` melakukan **early return**: jika nilai adalah `Err(e)` atau `None`, fungsi langsung berhenti dan mengembalikan error tersebut.
+- Untuk fungsi `main()`, signature-nya perlu diubah menjadi `Result<(), ErrorType>` agar bisa menggunakan `?`. Detail penerapannya di `main()` akan dibahas di section terpisah setelah contoh refactor.
+
+Dengan pemahaman ini, mari kita terapkan langsung pada kode yang sudah ditulis.
+
 ### ◉ Refactor ke-1
 
 Ubah fungsi `do_some_math()` menjadi seperti ini:
@@ -213,6 +223,30 @@ Outputnya bisa dilihat di bawah ini. Pemanggilan fungsi `do_some_math()` memang 
 ![Operator ? / tanda tanya / question mark](img/operator-tanda-tanya-6.png)
 
 > Pada kode di atas terdapat penerapan statement `Ok(_) => {},`, pembahasan mengenai statement tersebut dibahas di chapter selanjutnya, yaitu [Pattern Matching](/basic/pattern-matching)
+
+### ◉ Menggunakan `?` di fungsi `main()`
+
+Seringkali kita ingin menggunakan operator `?` langsung di fungsi `main()` tanpa perlu membungkusnya dalam fungsi lain. Caranya adalah dengan mengubah return type `main()` menjadi `Result`.
+
+```rust
+use std::fs;
+use std::io;
+
+fn main() -> Result<(), io::Error> {
+    let content = fs::read_to_string("data.txt")?;
+    println!("File content: {}", content);
+    Ok(())
+}
+```
+
+Penjelasan:
+- Fungsi `fs::read_to_string` mengembalikan `Result<String, io::Error>`.
+- Return type `main()` diubah menjadi `Result<(), io::Error>` agar sesuai dengan error yang mungkin dihasilkan oleh `?`.
+- `Ok(())` di akhir fungsi adalah return value yang menandakan sukses. `()` adalah *unit type* (ekivalen dengan void di bahasa lain).
+
+Dengan pattern ini, kita bisa menggunakan `?` langsung di `main()` tanpa perlu fungsi wrapper.
+
+> **Note:** Contoh di atas menggunakan `io::Error` sebagai tipe error yang spesifik. Di praktik nyata, seringkali kita berurusan dengan berbagai jenis error sekaligus. Untuk case seperti itu, tipe `Box<dyn std::error::Error>` bisa digunakan agar `main()` bisa menerima berbagai jenis error. Topik `Box` dan `dyn` akan dibahas pada chapter terpisah, jadi untuk sekarang cukup gunakan tipe error yang spesifik sesuai fungsi yang dipakai.
 
 ---
 

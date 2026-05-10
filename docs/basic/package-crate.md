@@ -42,7 +42,37 @@ Kita bisa membuat library crate kemudian di-publish ke [crates.io](https://crate
 
 > Lebih jelasnya mengenai library crate dibahas terpisah pada chapter [Library Crate](#/wip/library-crate)
 
-## A.19.2. Rust Package
+### ◉ Perbedaan crate vs package
+
+Sebelum masuk ke pembahasan package, mari kita lihat perbedaan antara crate dan package agar tidak tertukar. Istilah *crate* dan *package* sering digunakan secara bergantian, padahal di kamus Rust sebenarnya keduanya memiliki arti yang berbeda:
+
+| Aspek | Crate | Package |
+|-------|-------|---------|
+| Definisi | Unit kompilasi (satu kali proses `rustc`) | Unit distribusi (di-manage oleh Cargo) |
+| Isi | Kumpulan module | Satu atau lebih crate + `Cargo.toml` |
+| File entry | `main.rs` (binary) atau `lib.rs` (library) | `Cargo.toml` |
+
+> Namun meskipun demikian jangan terlalu bingung jika sebagian menggunakan 2 terminologi tersebut untuk hal yang sama
+
+Package memiliki struktur yang umumnya seperti ini:
+
+```
+nama_package/
+├── Cargo.toml          ← definisi package
+├── src/
+│   ├── lib.rs          ← library crate (opsional, max 1)
+│   └── main.rs         ← binary crate (opsional, bisa banyak)
+└── tests/              ← integration tests
+```
+
+Aturan package:
+
+- Satu package bisa memiliki **maksimal 1 library crate** (`src/lib.rs`).
+- Satu package bisa memiliki **banyak binary crate** (`src/main.rs`, `src/bin/other.rs`, dll).
+- Jika package memiliki `src/main.rs`, maka binary crate-nya bernama sesuai nama package.
+- Library crate (jika ada) akan di-compile bersama binary crate saat `cargo build` dijalankan.
+
+## A.19.2. Rust package
 
 Istilah package dalam Rust programming masih sama dengan package dalam pemrograman lain. Package adalah sebuah set yang berisi banyak *functionality*. Satu buah package bisa berisi satu atau banyak crates.
 

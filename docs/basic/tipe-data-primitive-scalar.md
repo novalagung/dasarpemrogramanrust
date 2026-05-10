@@ -22,7 +22,7 @@ let numerik2: i8 = 2;
 let numerik3: i64 = 12;
 
 println!("{} | {} | {}", numerik1, numerik2, numerik3);
-// output ==> 24 | 2 | 12
+// output ➜ 24 | 2 | 12
 ```
 
 Dengan menggunakan teknik deklarasi *type inference*, maka default angka numerik tipe datanya adalah `i32`.
@@ -55,7 +55,7 @@ let min_i8 = i8::MIN;
 let max_i8 = i8::MAX;
 
 println!("{} | {}", min_i8, max_i8);
-// output ==> -128 | 127
+// output ➜ -128 | 127
 ```
 
 > Notasi `i8::MIN` dan `i8::MAX` memiliki tanda `::` yang di Rust merupakan path separator. Untuk sekarang penulis anjurkan tidak terlalu pusing memahami apa itu path separator, karena nantinya akan ada pembahasan yang cukup detail khusus untuk mengupas topik tersebut.
@@ -87,7 +87,7 @@ let numerik5: u8 = 16;
 let numerik6: u64 = 42;
 
 println!("{} | {} | {}", numerik4, numerik5, numerik6);
-// output ==> 28 | 16 | 42
+// output ➜ 28 | 16 | 42
 ```
 
 Bisa gunakan `tipedata::MIN` dan `tipedata::MAX` untuk mengetahui nilai minimal dan juga maksimal tipe data unsigned integers.
@@ -99,7 +99,7 @@ let min_u8 = u8::MIN;
 let max_u8 = u8::MAX;
 
 println!("{} | {}", min_u8, max_u8);
-// output ==> 0 | 255
+// output ➜ 0 | 255
 ```
 
 Catatan saja, variabel yang dideklarasikan dengan predefined value adalah numerik, by default tipe datanya adalah `i32` (signed).
@@ -113,7 +113,7 @@ let fp1: f32 = 3.14;
 let fp2: f64 = 3.1415926535;
 
 println!("{} | {:.5}", fp1, fp2);
-// output ==> 3.14 | 3.14159
+// output ➜ 3.14 | 3.14159
 ```
 
 O iya, jumlah digit di belakang koma bisa diatur saat diprint menggunakan `println`. Caranya dengan menggunakan notasi `{:.n}`. Sebagai contoh `{:.5}` maka akan menampilkan hanya 5 digit dibelakang koma.
@@ -131,7 +131,7 @@ let min_f32 = f32::MIN;
 let max_f32 = f32::MAX;
 
 println!("min_f32={} | max_f32={}", min_f32, max_f32);
-// output ==> min_f32=-340282350000000000000000000000000000000 | max_f32=340282350000000000000000000000000000000
+// output ➜ min_f32=-340282350000000000000000000000000000000 | max_f32=340282350000000000000000000000000000000
 ```
 
 > Angka di atas adalah representasi desimal dari `f32::MIN` dan `f32::MAX`. Nilai aslinya kira-kira `-3.40282347e+38` dan `3.40282347e+38`, namun saat di-print menggunakan `{}` hasilnya terpotong.
@@ -147,7 +147,7 @@ let b1 = true;
 let b2 = false;
 
 println!("{} | {}", b1, b2);
-// output ==> true | false
+// output ➜ true | false
 ```
 
 ## A.5.5. Char
@@ -160,7 +160,7 @@ let c2 = '-';
 let c3 = '2';
 
 println!("{} | {} | {}", c1, c2, c3);
-// output ==> n | - | 2
+// output ➜ n | - | 2
 ```
 
 ## A.5.6. Pointer scalar
@@ -170,7 +170,7 @@ Deklarasi tipe data pointer cukup mudah, yaitu dengan menuliskan deklarasinya se
 ```rust
 let ptr1: &i32 = &24;
 println!("{}", ptr1);
-// output ==> 24
+// output ➜ 24
 ```
 
 Perihal apa itu tipe data pointer dan apa kegunaan prefix `&` akan dibahas pada chapter terpisah, yaitu [Pointer & References](/basic/pointer-references).
