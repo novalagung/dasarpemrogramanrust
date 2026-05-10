@@ -189,11 +189,11 @@ Bayangkan lifetime seperti **kartu akses gedung** yang memiliki masa berlaku:
 - Jika pemilik keluar dari gedung (out of scope), kartu akses yang Anda pinjam otomatis tidak berlaku lagi.
 - Lifetime annotation (`'a`, `'b`, dll) adalah cara kita memberi **label** pada kartu akses tersebut, agar compiler tahu kartu mana yang masih berlaku dan mana yang sudah kadaluarsa.
 
-Notasi `'a` bukan syntax spesial — itu hanyalah **nama label** yang kita berikan. Kita bisa pakai `'b`, `'my_lifetime`, `'scope_x`, atau nama apapun. Yang penting, label yang sama berarti "masa berlaku yang sama".
+Notasi `'a` bukan syntax spesial, melainkan hanyalah **nama label** yang kita berikan. Kita bisa pakai `'b`, `'my_lifetime`, `'scope_x`, atau nama apapun. Yang penting, label yang sama berarti "masa berlaku yang sama".
 
 ```
-'a  → seperti label "Kartu A" — berlaku selama scope A
-'b  → seperti label "Kartu B" — berlaku selama scope B
+'a  → seperti label "Kartu A" yang berlaku selama scope A
+'b  → seperti label "Kartu B" yang berlaku selama scope B
 ```
 
 Ketika kita menulis `&'a str`, artinya: "ini adalah reference ke string yang masa berlakunya mengikuti label `'a`".

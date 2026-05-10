@@ -308,7 +308,7 @@ impl std::fmt::Display for Circle {
 
 ## A.36.3. Default implementation pada trait method
 
-Trait di Rust memungkinkan kita untuk menyediakan **default implementation** pada method. Artinya, method tersebut sudah memiliki body/isi langsung di dalam definisi trait, sehingga tipe data yang meng-implement trait tidak wajib menuliskan implementasi method tersebut — bisa pakai yang default, atau bisa juga di-override dengan implementasi sendiri.
+Trait di Rust memungkinkan kita menyediakan **default implementation** pada method. Artinya, method tersebut sudah memiliki body langsung di dalam definisi trait, sehingga tipe data yang meng-implement trait tidak wajib menuliskan implementasi method tersebut. Tipe data tersebut bisa memakai implementasi default atau menggantinya dengan implementasi sendiri.
 
 ### ◉ Contoh trait dengan default method
 
@@ -323,7 +323,7 @@ trait Speak {
 ```
 
 Pada trait `Speak` di atas:
-- Method `greet()` memiliki default implementation. Tipe data yang meng-implement trait ini **tidak wajib** menuliskan implementasi `greet()` — bisa langsung pakai yang default.
+- Method `greet()` memiliki default implementation. Tipe data yang meng-implement trait ini **tidak wajib** menuliskan implementasi `greet()`, karena bisa langsung menggunakan implementasi default yang sudah tersedia.
 - Method `introduce()` **tidak memiliki** default implementation, sehingga wajib diimplementasikan oleh tipe data yang meng-implement trait.
 
 ### ◉ Implementasi trait dengan default method

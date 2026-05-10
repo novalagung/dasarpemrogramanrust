@@ -138,7 +138,7 @@ error[E0499]: cannot borrow `msg_9` as mutable more than once at a time
 Compiler secara eksplisit memberitahu di mana letak masalahnya:
 
 - Baris `first mutable borrow occurs here` menunjukkan mutable reference pertama dibuat.
-- Baris `second mutable borrow occurs here` menunjukkan mutable reference kedua dibuat — inilah yang menyebabkan error.
+- Baris `second mutable borrow occurs here` menunjukkan mutable reference kedua dibuat, bagian inilah yang menyebabkan error.
 
 Solusinya adalah memastikan hanya ada satu mutable reference dalam satu waktu, atau memisahkan scope-nya (akan dibahas di section berikutnya).
 

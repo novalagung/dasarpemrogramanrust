@@ -146,7 +146,7 @@ Kode di atas menghasilkan error pada statement `println`. Variabel `g` sudah tid
 
 Mungkin muncul pertanyaan: bagaimana cara kita tahu tipe data mana yang mengadopsi *copy semantics* dan mana yang *move semantics*? Secara sederhana, pengelompokannya bisa dilihat dari di mana data tersebut disimpan di memory.
 
-**Copy semantics** — data disimpan di stack, ukurannya diketahui saat kompilasi, dan bersifat kecil/fixed:
+**Copy semantics**: data disimpan di stack, ukurannya diketahui saat kompilasi, dan bersifat kecil/fixed:
 - Semua tipe numerik: `i8`, `i16`, `i32`, `i64`, `i128`, `u8`, `u16`, `u32`, `u64`, `u128`, `f32`, `f64`
 - Boolean: `bool`
 - Character: `char`
@@ -154,7 +154,7 @@ Mungkin muncul pertanyaan: bagaimana cara kita tahu tipe data mana yang mengadop
 
 Ketika terjadi assignment pada tipe-tipe di atas, data secara otomatis di-copy. Owner lama tetap valid dan bisa digunakan lagi.
 
-**Move semantics** — data dikelola di heap, ukurannya bisa berubah atau tidak diketahui saat kompilasi:
+**Move semantics**: data dikelola di heap, ukurannya bisa berubah atau tidak diketahui saat kompilasi:
 - `String`
 - `Vec<T>`
 - Custom type (struct, enum) yang tidak meng-derive `Clone` dan `Copy`
