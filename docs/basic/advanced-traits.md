@@ -68,7 +68,7 @@ impl crate::calculation_spec::Area for Square {
 
 Bisa dilihat pada kode di atas, deklarasi struct beserta property memiliki visibility publik. Idealnya, saat struct tersebut digunakan di fungsi `main` nantinya tidak akan ada error terkait visibility akses.
 
-Selanjutnya, pada file `main.rs` siapkan kode yang isinya registrasi module `calculate_spec` dan `two_dimensional`, juga definisi fungsi `main` dengan isi statement pembuatan 2 variabel object untuk masing-masing tipe data struct `Circle` dan `Square`.
+Selanjutnya, pada file `main.rs` siapkan kode yang isinya registrasi module `calculation_spec` dan `two_dimensional`, juga definisi fungsi `main` dengan isi statement pembuatan 2 variabel object untuk masing-masing tipe data struct `Circle` dan `Square`.
 
 ```rust title="src/main.rs"
 mod calculation_spec;
@@ -129,7 +129,7 @@ Keyword `as` digunakan untuk casting tipe data. Keyword ini bisa diterapkan pada
 
 ```rust
 1024 as f32; // ===> 1024 dikonversi ke tipe f32, hasinya adalah 1024.0
-3.14 as i32; // ===> 3.14 dikonversi ke tipe i32, hasinya 3 karena ada pembulatan
+3.14 as i32; // ===> 3.14 dikonversi ke tipe i32, hasinya 3 karena bagian desimal dipotong
 ```
 
 ## A.37.2. Trait sebagai tipe parameter

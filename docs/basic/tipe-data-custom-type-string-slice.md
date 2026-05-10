@@ -13,7 +13,7 @@ Penulis rasa 2 chapter terakhir sudah cukup banyak menjelaskan perihal apa itu t
 
 Chapter ini akan lebih fokus ke fitur yang tersedia pada tipe `String`.
 
-## A.47.1. Pembuatan string slice
+## A.47.1. Pembuatan `String`
 
 Ada banyak cara yang bisa digunakan dalam membuat data `String`, di antaranya:
 

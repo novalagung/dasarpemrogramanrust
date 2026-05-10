@@ -49,13 +49,15 @@ Rust mengenal beberapa jenis attributes, dan kita akan membahasnya satu per satu
 
 ## A.51.2. Attribute `derive`
 
-Attribute `derive` digunakan untuk mempermudah implementasi suatu trait ke tipe data.
+Attribute `derive` digunakan untuk mempermudah implementasi trait tertentu ke tipe data.
 
 Kita telah mempelajari cara implementasi trait pada chapter [Traits](/basic/traits) yaitu menggunakan keyword `impl` dan `for`, kemudian diikuti dengan method serta implementasinya.
 
-Dengan memanfaatkan attribute `derive` kita tidak perlu menggunakan cara tersebut. Cukup tulis saja attribute `derive` beserta trait yang ingin diimplementasikan.
+Dengan memanfaatkan attribute `derive` kita tidak perlu menggunakan cara tersebut untuk trait yang memang didukung. Cukup tulis saja attribute `derive` beserta trait yang ingin diimplementasikan.
 
-Agar lebih jelas, silakan pelajari contoh berikut terlebih dahulu:
+Agar lebih jelas, silakan pelajari contoh berikut terlebih dahulu.
+
+> Contoh berikut sengaja dibuat error untuk menunjukkan efeknya ketika `PartialEq` belum di-derive
 
 ```rust
 const SuperheroSuperman: &str = "superman";
@@ -135,7 +137,7 @@ fn main() {
 
 Cara *resolve* error di atas adalah dengan mengimplementasikan trait `Display` dan `Debug` secara eksplisit. Atau, bisa juga menggunakan attribute `derive` yang pastinya lebih praktis.
 
-Kabar buruknya, hanya trait `Debug` yang menyediakan fitur implementasi trait menggunakan attribute `derive`. Untuk trait `Display` kita perlu melakukan implementasi secara eksplisit.
+Kabar baiknya, beberapa trait bisa di-derive. Pada contoh ini `Debug` bisa di-derive, sedangkan `Display` tetap perlu implementasi secara eksplisit.
 
 > Untuk tau mana trait yang bisa di-*derive* atau tidak, cukup lihat saja *highlight* error yang muncul saat penulisan kode atau kompilasi.
 
@@ -169,7 +171,7 @@ Bisa dilihat, hasilnya program tereksekusi tanpa error. Enum `Superhero` kini me
 
 Attribute `cfg` digunakan untuk operasi-operasi yang berhubungan dengan target arsitekture hardware/prosesor, misalnya seperti conditional compilation ketika OS adalah linux, dan lainnya.
 
-Salah satu contoh penerapannya bisa dilihat pada kode berikut. Ada 2 buah module yang namanya sama persis, perbedaannya adalah satu didefinisikan khusus untuk platform `linux`, dan satunya lagi untuk platform `windows`. Hal seperti ini bisa dilakukan menggunakan attribute `cfg` dengan key `target_os`.
+Salah satu contoh penerapannya bisa dilihat pada kode berikut. Ada 3 buah module yang namanya sama persis, perbedaannya adalah satu didefinisikan khusus untuk platform `linux`, satu untuk `windows`, dan satu lagi untuk `macos`. Hal seperti ini bisa dilakukan menggunakan attribute `cfg` dengan key `target_os`.
 
 ```rust
 #[cfg(target_os = "linux")]
@@ -191,11 +193,19 @@ mod util {
         println!("how are you")
     }
 }
+
+#[cfg(target_os = "macos")]
+mod util {
+
+    pub fn say_hello() {
+        println!("hello (from macos)")
+    }
+}
 ```
 
-Bisa dilihat cara penulisannya adalah `cfg()` kemudian diisi key `target_os` dengan value adalah `windows` atau `linux`.
+Bisa dilihat cara penulisannya adalah `cfg()` kemudian diisi key `target_os` dengan value adalah `windows`, `macos`, atau `linux`.
 
-Dengan kondisi kode seperti di atas, ketika berada di sistem operasi `linux`, item `util::say_hello` bisa diakses. Sedangkan pada sistem operasi `windows`, item `util::say_hello` dan `util::say_something` bisa diakses.
+Dengan kondisi kode seperti di atas, ketika berada di sistem operasi `linux`, item `util::say_hello` bisa diakses. Sedangkan pada sistem operasi `windows`, item `util::say_hello` dan `util::say_something` bisa diakses. Pada sistem operasi `macos`, item `util::say_hello` juga bisa diakses.
 
 Attribute `cfg(target_os)` juga bisa diterapkan pada block kode. Contohnya seperti pada kode berikut. Item `util::say_hello` dipanggil di fungsi `main`. Dan khusus untuk sistem operasi `windows`, block kode berisi pemanggilan `util::say_something` juga dipanggil.
 

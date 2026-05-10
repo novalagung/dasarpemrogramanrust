@@ -4,19 +4,19 @@ title: A.50. Trait ➜ Iterator
 sidebar_label: A.50. Trait ➜ Iterator
 ---
 
-Iterator adalah salah satu trait dan tipe data custom penting pada Rust programming, gunanya untuk iterasi data. Di chapter ini kita akan mempelajarinya beserta beberapa module item lainnya yang masih relevan dengan topik Iterator.
+Trait `Iterator` adalah salah satu trait penting pada Rust programming, gunanya untuk iterasi data. Di chapter ini kita akan mempelajarinya beserta beberapa module item lainnya yang masih relevan dengan topik iterator.
 
 ## A.50.1. `Iterator` & `IntoIterator`
 
-`Iterator` adalah sebuah nama yang dipakai sebagai nama module item dalam **Rust Standard Library** maupun **Rust Core Library**, digunakan untuk iterasi data dan operasi lain yang berhubungan dengannya.
+`Iterator` adalah trait bawaan Rust yang dipakai untuk operasi iterasi data dan operasi lain yang berhubungan dengannya.
 
-Iterator sendiri merupakan istilah untuk object atau trait yang bisa diiterasi, baik menggunakan keyword `for in` ataupun menggunakan method iterator seperti `for_each` (yang juga akan kita bahas di sini).
+Iterator sendiri adalah object hasil adaptor iterasi yang bisa dipakai dengan keyword `for in` ataupun method iterator seperti `for_each` (yang juga akan kita bahas di sini).
 
 ### ◉ Trait `Iterator` & `IntoIterator`
 
-Dalam perulangan menggunakan keyword `for in`, tipe data variabel yang digunakan harus memiliki trait `Iterator`. Jika tidak, pasti error muncul.
+Dalam perulangan menggunakan keyword `for in`, tipe data variabel yang digunakan harus bisa dikonversi lewat trait `IntoIterator`. Jika tidak, pasti error muncul.
 
-Tipe data slice di Rust by default mengadopsi trait bernama `IntoIterator`, yang trait ini digunakan untuk konversi data bertipe slice ke bentuk iterator.
+Tipe data slice dan array di Rust by default mengadopsi trait bernama `IntoIterator`, yang trait ini digunakan untuk konversi data tersebut ke bentuk iterator.
 
 Dalam praktiknya, tidak perlu mengakses method tertentu untuk mendapatkan object iterator suatu data. Cukup gunakan variabel tipe data slice pada keyword `for in`, maka proses konversi ke bentuk iterator akan dilakukan oleh Rust secara otomatis dibalik layar.
 
@@ -47,15 +47,15 @@ for e in data_slice_vec {
 }
 ```
 
-Dianjurkan untuk selalu menggunakan teknik [Borrowing](/basic/borrowing) dalam penggunaan keyword `for in` pada tipe data yang karakteristiknya adalah [Move Semantics](/basic/ownership#a344-copy-semantics-vs-move-semantics), hal ini karena dalam penerapan keyword tersebut, terjadi proses konversi tipe data dengan trait `IntoIterator` ke bentuk `Iterator`.
+Dianjurkan untuk selalu menggunakan teknik [Borrowing](/basic/borrowing) dalam penggunaan keyword `for in` pada tipe data yang karakteristiknya adalah [Move Semantics](/basic/ownership#a344-copy-semantics-vs-move-semantics), hal ini karena dalam penerapan keyword tersebut, terjadi proses konversi tipe data dengan trait `IntoIterator` ke bentuk iterator.
 
 Jika data yang digunakan bukan data borrow, maka pasti owner berpindah.
 
-### ◉ Struct `Iterator`
+### ◉ Object iterator
 
-Selain trait `Iterator`, ada juga tipe data struct bernama sama, yaitu `Iterator`. Perbedaan antara trait vs struct `Iterator` adalah tipe struct `Iterator` memiliki beberapa method untuk keperluan iterasi object. Jadi dengan memanfaatkan method-method tersebut, kita bisa melakukan iterasi data dan operasi sejenisnya tanpa menggunakan `for in`.
+Selain trait `Iterator`, ada juga object iterator hasil dari method seperti `iter`, `iter_mut`, `into_iter`, dan `chars`. Object ini memiliki beberapa method untuk keperluan iterasi object. Jadi dengan memanfaatkan method-method tersebut, kita bisa melakukan iterasi data dan operasi sejenisnya tanpa menggunakan `for in`.
 
-Semua tipe data slice bisa dikonversi ke tipe data `Iterator`, caranya dengan mengakses method `iter` (atau method `chars` khusus untuk tipe data `String`).
+Semua tipe data slice bisa dikonversi ke object iterator, caranya dengan mengakses method `iter` (atau method `chars` khusus untuk tipe data `String`).
 
 Dari object iterator tersebut, perulangan bisa dilakukan via keyword `for in`, atau dengan memanfaatkan method bernama `for_each`. Perbedaannya pada iterasi menggunakan `for_each`, block perulangan dituliskan dalam bentuk closure.
 
@@ -96,7 +96,7 @@ data_borrow_str.chars().for_each(|e| {
 println!();
 ```
 
-Bisa dilihat pada contoh di atas, data slice diambil objek Iterator-nya menggunakan method `iter` (atau `chars` khusus untuk tipe data `String`), kemudian di-iterasi menggunakan method `for_each`.
+Bisa dilihat pada contoh di atas, data slice diambil object iterator-nya menggunakan method `iter` (atau `chars` khusus untuk tipe data `String`), kemudian di-iterasi menggunakan method `for_each`.
 
 ![Trait iterator](img/trait-iterator-1.png)
 
@@ -123,9 +123,9 @@ println!("{doubles:?}");
 
 Penjelasan:
 
-1. Variabel `data_arr` yang bertipe data `[i32; 3]` dikonversi ke tipe data `Iterator` menggunakan method `iter`.
-1. Object `Iterator` kemudian di-iterasi menggunakan method `map` dan nilai baliknya dijadikan *replacement* data elemen tersebut.
-1. Object `Iterator` kemudian di-collect data-nya ke bentuk `Vec<i32>` menggunakan method `collect`.
+1. Variabel `data_arr` yang bertipe data `[i32; 3]` diubah menjadi object iterator menggunakan method `iter`.
+1. Object iterator kemudian di-iterasi menggunakan method `map` dan nilai baliknya dijadikan *replacement* data elemen tersebut.
+1. Object iterator kemudian di-collect data-nya ke bentuk `Vec<i32>` menggunakan method `collect`.
 
 ### ◉ Praktik ke-2
 
@@ -151,9 +151,9 @@ println!("{numbers:?}");
 
 Program di atas melakukan beberapa hal:
 
-1. Data `data_vec` yang merupakan koleksi string dikonversi menjadi object `Iterator` menggunakan method `iter`.
+1. Data `data_vec` yang merupakan koleksi string literal diubah menjadi object iterator menggunakan method `iter`.
 
-1. Kemudian method `map` diakses. Setiap elemen `data_vec` di-iterasi, kemudian dikonversi dari `String` ke `i32`, lalu dijadikan *replacement* data elemen tersebut. Jika proses konversi gagal, maka angka `0` digunakan sebagai data element tersebut.
+1. Kemudian method `map` diakses. Setiap elemen `data_vec` di-iterasi, kemudian dikonversi dari `&str` ke `i32`, lalu dijadikan *replacement* data elemen tersebut. Jika proses konversi gagal, maka angka `0` digunakan sebagai data element tersebut.
     - Sampai sini, data yang sebelumnya `["1", "2", "3", "4", "a"]` sekarang menjadi `[1, 2, 3, 4, 0]`.
 
 1. Selanjutnya, dilakukan proses filtering menggunakan method `filter` dengan kondisi `*e > 0 && *e % 2 == 0` yang kurang lebih artinya, jika nilai *dereference* `e` lebih besar dari `0` dan nilai tersebut adalah genap, maka filter bernilai `true`.
@@ -172,9 +172,9 @@ Hasilnya ketika di run:
 
 ### ◉ Method `iter`, `iter_mut`, `into_iter`
 
-Ketiga method ini berguna untuk konversi data slice ke bentuk `Iterator`, perbedannya:
+Ketiga method ini berguna untuk menghasilkan object iterator dari data slice atau collection, perbedannya:
 
-- Method `iter` mengembalikan data `Iterator` yang isinya adalah reference (`&T`) setiap element. Contoh penerapan:
+- Method `iter` mengembalikan iterator yang isinya adalah reference (`&T`) setiap element. Contoh penerapan:
 
     ```rust
     let data_vec = vec![1, 2, 3, 4];
@@ -188,7 +188,7 @@ Ketiga method ini berguna untuk konversi data slice ke bentuk `Iterator`, perbed
     }
     ```
 
-- Method `iter_mut` mengembalikan data `Iterator` yang isinya adalah mutable reference (`&mut T`) setiap element. Contoh penerapan:
+- Method `iter_mut` mengembalikan iterator yang isinya adalah mutable reference (`&mut T`) setiap element. Contoh penerapan:
 
     ```rust
     let mut data_vec = vec![1, 2, 3, 4];
@@ -204,7 +204,7 @@ Ketiga method ini berguna untuk konversi data slice ke bentuk `Iterator`, perbed
     println!("{:?}", data_vec);
     ```
 
-- Method `into_iter` mengkonversi data slice ke bentuk `Iterator` (*move semantics*).
+- Method `into_iter` mengkonversi data slice atau collection ke bentuk iterator (*move semantics*).
 
     ```rust
     let data_vec = vec![1, 2, 3, 4];

@@ -469,7 +469,7 @@ where
 
 Fungsi `find_greater_number` di atas digunakan untuk mencari angka terbesar dari dua inputan parameter (`x` dan `y`), dengan tipe data yang digunakan adalah generic `T`. Dari sini maka nantinya fungsi ini bisa digunakan pada data bertipe `i32`, `f64`, dan data numerik lainnya.
 
-Tipe `T` diasosiasikan dengan trait `std::cmp::PartialOrd` agar variabel dengan tipe tersebut bisa digunakan dalam seleksi kondisi `if` yang ada dalam block fungsi tersebut.
+Tipe `T` diasosiasikan dengan trait `std::cmp::PartialOrd` agar variabel dengan tipe tersebut bisa dipakai dalam operasi perbandingan `>` pada block fungsi tersebut.
 
 Ok, sampai sini semoga cukup jelas. Lalu bagaimana dengan lifetime annotation-nya? Karena lifetime annotation definisinya berada pada tempat yang sama dengan definisi tipe generic, maka langsung saja tulis di situ tanpa memperhatikan urutan. Sebagai contoh, dua definisi block fungsi berikut adalah ekuivalen.
 

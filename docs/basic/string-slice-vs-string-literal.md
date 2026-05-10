@@ -4,19 +4,19 @@ title: A.46. String Literal (&str) vs. String Custom Type
 sidebar_label: A.46. String Literal (&str) vs. String Custom Type
 ---
 
-Pada chapter sebelumnya kita telah membahas tentang bagaimana data slice di-manage di memory. Ada beberapa tipe data yang masuk dalam kategori slice, yang salah satunya adalah string slice atau `String`.
+Pada chapter sebelumnya kita telah membahas tentang bagaimana data slice di-manage di memory. Ada beberapa tipe data string yang perlu dibedakan, yang salah satunya adalah string custom type `String`.
 
-Di chapter ini kita akan bahas apa perbedaan antara tipe data string slice (`String`) dan string literal `&str`.
+Di chapter ini kita akan bahas apa perbedaan antara tipe data string custom type (`String`) dan string literal `&str`.
 
-Pembahasan mengenai topik ini sengaja dilakukan tidak di awal-awal ebook, karena ada banyak hal yang perlu dipahami sebelum mempelajarinya, contohnya seperti aspek management memory dan ownership. Dan karena topik tersebut sudah selesai dibahas, berarti ini adalah waktu yang tepat untuk membahas string slice.
+Pembahasan mengenai topik ini sengaja dilakukan tidak di awal-awal ebook, karena ada banyak hal yang perlu dipahami sebelum mempelajarinya, contohnya seperti aspek management memory dan ownership. Dan karena topik tersebut sudah selesai dibahas, berarti ini adalah waktu yang tepat untuk membahas perbedaan `String` dan `&str`.
 
 > Silakan pelajari kembali pembahasan detail tentang tipe slice pada chapter sebelumnya jika diperlukan. Chapter [Slice Memory Management](/basic/slice-memory-management)
 
-## A.46.1. String slice (`String`)
+## A.46.1. String custom type (`String`)
 
-String slice atau custom type `String` merupakan tipe data bawaan Rust, dibuat via `struct`, kegunaannya untuk menampung data UTF-8 bytes yang dinamis (bisa berkembang isinya).
+Custom type `String` merupakan tipe data bawaan Rust, dibuat via `struct`, kegunaannya untuk menampung data UTF-8 bytes yang dinamis dan owned.
 
-`String` masuk dalam kategori tipe data slice, isinya adalah data kolektif bertipe bytes, datanya disimpan di heap memory, dan metadata-nya di stack memory. Tipe data ini dikategorikan sebagai tipe data **owned**, yang artinya owner data bisa direpresentasikan oleh variabel. Sebagai contoh:
+`String` menyimpan data kolektif bertipe bytes, datanya disimpan di heap memory, dan metadata-nya di stack memory. Tipe data ini dikategorikan sebagai tipe data **owned**, yang artinya owner data bisa direpresentasikan oleh variabel. Sebagai contoh:
 
 ```rust
 let str1 = String::from("Lisa Blackpink");
@@ -49,7 +49,7 @@ Pada contoh di atas, data bytes dipersiapkan dalam bentuk `Vec<u8>`. Data terseb
 
 ## A.46.2. String literal (`&str`)
 
-Tipe data string literal atau `&str` adalah tipe yang menampung data kolektif UTF-8 bytes (seperti `String`) tetapi **immutable** dan disimpannya tidak di heap dan tidak juga di stack, melainkan di static storage.
+Tipe data string literal atau `&str` adalah tipe yang menampung data kolektif UTF-8 bytes seperti `String`, tetapi **immutable** dan umumnya merepresentasikan data string literal yang hidup selama program berjalan.
 
 String literal hanya bisa direpresentasikan dalam bentuk reference `&str` (pointer yang mengarah ke suatu bytes).
 
@@ -112,6 +112,7 @@ let str6: &str = "John Towner Williams";
 let str6_slice1: String = str6.to_string();
 println!("str6: {str6}");               // str6: John Towner Williams
 println!("str6_slice1: {str6_slice1}"); // str6_slice1: John Towner Williams
+println!("str6: {str6}");
 ```
 
 Konversi pada tipe data ini sedikit berbeda dibandingkan konversi `String` ke `&str`. Pada contoh di atas, yang terjadi adalah data `&str` di-copy sebagai data baru bertipe `String` yang kemudian ditampung variabel `str6_slice1` (yang juga berperan sebagai owner untuk data baru tersebut).
@@ -124,7 +125,7 @@ Tipe `String` memiliki hubungan dekat dengan `&str`. Data bertipe `String` refer
 
 Berbeda dengan data bertipe `&str` **(di paragraph ini dan setelahnya yang kita bahas adalah data yang dari awal tipe-nya sudah `&str`, bukan data hasil operasi pinjam dari `String`)**, data bertipe `&str` adalah fixed dan immutable. Konversi data `&str` ke `String` menghasilkan data baru dengan owner baru. Bisa dibilang sangat terbatas apa yang bisa kita lakukan pada tipe data `&str`.
 
-Meski demikian, tipe `&str` lebih cepat performa-nya dibanding `String` karena disimpan di static storage. Selain itu dijamin valid oleh Rust. Kekurangannya hanya pada ownership-nya. Tipe `&str` adalah **unowned**, operasi mutability tidak bisa dilakukan pada tipe ini.
+Meski demikian, tipe `&str` lebih ringan digunakan ketika kita hanya butuh referensi ke teks yang sudah ada. Kekurangannya hanya pada ownership-nya. Tipe `&str` adalah **unowned**, operasi mutability tidak bisa dilakukan pada tipe ini.
 
 Dalam case normal, sangat dianjurkan untuk menggunakan `&str`, kecuali memang yang dibutuhkan adalah **owned** string.
 

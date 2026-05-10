@@ -209,7 +209,7 @@ let mut slice_e = &mut numbers2[..=2];
 
 ## A.14.5. Perulangan `for in` pada slice
 
-Slice merupakan tipe data yang implement trait Iterator (seperti array), dan semua data yang memiliki trait tersebut bisa digunakan pada perulangan. Slice `&[T]` jika dipergunakan dalam `for in`, tipe data penampung iterasi perulangan adalah `&T`, bukan `T` yaa jadi jangan sampai keliru.
+Slice merupakan tipe data yang mengimplementasikan trait `IntoIterator` (seperti array), dan semua data yang memiliki trait tersebut bisa digunakan pada perulangan. Slice `&[T]` jika dipergunakan dalam `for in`, tipe data penampung iterasi perulangan adalah `&T`, bukan `T` yaa jadi jangan sampai keliru.
 
 ```rust
 let scores1 = [7, 8, 9];

@@ -109,7 +109,7 @@ Implementasi operator `?` dilakukan dengan cukup menuliskannya setelah memanggil
     - Statement `let r1 = divider(10.0, 5.0)?;`, variabel `r1` berisi nilai bertipe `f64`.
     - Statement `let r3 = divider(10.0, 2.0)?;`, variabel `r3` berisi nilai bertipe `f64`.
 
-- Jika nilai balik `Result<f64, &'static str>` berisi nilai `Err(&'static str)`, maka statement `let r2 = divider(10.0, 0.0)?;` menghasilkan `Err`, yang menyebabkan fungsi segera berhenti (early return) dan error dikembalikan sebagai nilai balik fungsi. Variabel `r2` tidak pernah terisi.
+- Jika nilai balik `Result<f64, &'static str>` berisi nilai `Err(&'static str)`, maka statement `let r2 = divider(10.0, 0.0)?;` menyebabkan fungsi segera berhenti (early return) dan error dikembalikan sebagai nilai balik fungsi. Variabel `r2` tidak pernah terisi.
 
 Sampai sini semoga cukup jelas.
 
@@ -117,7 +117,7 @@ Namun tunggu, kode baru yang telah ditulis sebenarnya tidak valid. Kode penulis 
 
 ### ◉ Refactor ke-2
 
-Rust mewajibkan penggunaan operator `?` pada statement untuk diterapkan di dalam fungsi yang mengembalikan nilai balik bertipe `Result<T, E>` (atau `Option<T>`) tergantung tipe apa yang digunakan pada kode-kode di dalam blok fungsi tersebut. Bahkan meskipun nilai tidak digunakan, aturan tersebut tetap harus dipatuhi. Syarat ini hukumnya wajib.
+Rust mewajibkan penggunaan operator `?` pada statement untuk diterapkan di dalam fungsi yang mengembalikan nilai balik bertipe `Result<T, E>` (atau `Option<T>`) tergantung tipe apa yang digunakan pada kode-kode di dalam blok fungsi tersebut. Bahkan meskipun nilai tidak digunakan, aturan ini tetap harus dipatuhi.
 
 Kembali ke contoh kode yang telah ditulis, kode tersebut harus dimodifikasi lagi menjadi seperti berikut:
 
@@ -163,7 +163,7 @@ Sekarang coba jalankan program, dan lihat outputnya.
 
 ![Operator ? / tanda tanya / question mark](img/operator-tanda-tanya-5.png)
 
-Output yang muncul hanya nilai variabel `r2`. Statement `let r2 = divider(10.0, 0.0)?;` dan seterusnya tidak menghasilkan output apapun, hal ini karena ketika proses unwrap nilai menggunakan operator `?` menghasilkan nilai `E`, fungsi langsung terhenti eksekusinya dan nilai `Err(E)` dikembalikan. Menandai akhir pemanggilan `do_some_math()` dengan informasi error pemanggilan statement `let r2 = divider(10.0, 0.0)?;` langsung dikembalikan.
+Output yang muncul hanya nilai variabel `r1`. Statement `let r2 = divider(10.0, 0.0)?;` dan seterusnya tidak menghasilkan output apapun, karena ketika proses unwrap nilai menggunakan operator `?` menghasilkan nilai `E`, fungsi langsung terhenti eksekusinya dan nilai `Err(E)` dikembalikan. Jadi `r2` tidak pernah sampai terbentuk.
 
 ### ◉ Refactor ke-3
 

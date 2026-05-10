@@ -22,9 +22,9 @@ Rust mengkategorikan crate menjadi 2 jenis, *binary crate* dan *library crate*
 
 ### ◉ Binary crate
 
-Binary crate adalah program yang dikompilasi ke bentuk *executable*, untuk kemudian dijalankan, seperti program-program yang sudah kita buat menggunakan `cargo create` dan run menggunakan `cargo run` itu adalah contoh dari binary crate.
+Binary crate adalah program yang dikompilasi ke bentuk *executable*, untuk kemudian dijalankan, seperti program-program yang sudah kita buat menggunakan `cargo new` dan run menggunakan `cargo run` itu adalah contoh dari binary crate.
 
-Binary crate berada dalam sebuah package yang dibuat menggunakan command `cargo create <nama_package>` atau `cargo create --bin <nama_package>`, kedua command ini menjalankan perintah yang sama.
+Binary crate berada dalam sebuah package yang dibuat menggunakan command `cargo new <nama_package>` atau `cargo new --bin <nama_package>`, kedua command ini menjalankan perintah yang sama.
 
 Ciri khas dari binary crate adalah memiliki fungsi `main`, sebuah fungsi yang merupakan *entrypoint* program.
 
@@ -121,11 +121,9 @@ Jalankan command `cargo build` untuk memaksa Cargo agar mendownload depdency yan
 
 Sukses! Sekarang dependency `rand` sudah bisa digunakan dalam package yang sudah dibuat.
 
-> Jika pembaca menemui error `failed to authenticate when downloading repository`, jalankan beberapa command berikut secara berurutan:
+> Jika pembaca menemui error saat download dependency, cek dulu koneksi internet, proxy, atau konfigurasi registry Cargo, lalu jalankan kembali `cargo build`.
 >
-> - `ssh-agent -s`
-> - `ssh-add`
-> - `cargo build`
+> Untuk dependency yang sumbernya dari git (terutama `git+ssh`), baru lakukan troubleshooting SSH.
 
 Jadi kurang lebih seperti itu cara menambahkan dependency di Rust. Seiring berjalannya proses pembelajaran penulis yakin pembaca akan terbiasa dengan flow dan juga command di atas.
 

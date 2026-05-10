@@ -8,7 +8,7 @@ sidebar_label: A.12. Perulangan ➜ for in
 
 ## A.12.1. Keyword `for in`
 
-`for in` adalah keyword perulangan yang paling sering dipakai untuk meng-iterasi data yang tipe data-nya mengimplementasikan trait `Iterator`. Ada banyak jenis tipe data dengan trait ini, salah satunya adalah tipe data **range** yang akan kita bahas pada chapter ini.
+`for in` adalah keyword perulangan yang paling sering dipakai untuk meng-iterasi data yang tipe data-nya bisa dikonversi lewat trait `IntoIterator`. Ada banyak jenis tipe data dengan trait ini, salah satunya adalah tipe data **range** yang akan kita bahas pada chapter ini.
 
 > - Lebih jelasnya mengenai traits dibahas pada chapter [Traits](/basic/traits)
 > - Lebih jelasnya mengenai trait `Iterator` dibahas pada chapter [Trait ➜ Iterator](/basic/trait-iterator)

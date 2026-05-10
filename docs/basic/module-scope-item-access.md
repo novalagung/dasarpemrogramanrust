@@ -94,7 +94,7 @@ Pada fungsi `main`, ada dua statement pemanggilan module item `my_mod::run_the_a
 
 Keyword `self` menginstruksi program bahwa item yang dipanggil adalah item yang module scope-nya sama.
 
-Pada contoh di atas, module `my_mod` berada dalam satu scope yang sama dengan fungsi `main`, yaitu di *crate root*. Karena itu, `my_mod` bisa diakses dengan menggunakan keyword `self`, atau lansung panggil saja nama module seperti biasanya, `my_mod()`.
+Pada contoh di atas, module `my_mod` berada dalam satu scope yang sama dengan fungsi `main`, yaitu di *crate root*. Karena itu, `my_mod` bisa diakses dengan menggunakan keyword `self`, atau langsung panggil saja nama module seperti biasanya, `my_mod::run_the_app()`.
 
 Bisa dibilang keyword `self` ini opsional dalam penggunaannya, boleh ikut dituliskan dan boleh juga tidak.
 

@@ -275,7 +275,7 @@ for (i, name) in names.iter().enumerate() {
 
 ![array enumerate](img/array-4.png)
 
-Variabel `names` yang notabene bertipe data `[&str; 4]` perlu dikonversi ke tipe `Iterator` terlebih dahulu caranya lewat pemanggilan method `.iter()`. Kemudian dari tipe tersebut perlu dikonversi lagi ke tipe `Enumerate` dengan cara memanggil method `.enumerate()`.
+Variabel `names` yang notabene bertipe data `[&str; 4]` perlu diubah menjadi iterator terlebih dahulu caranya lewat pemanggilan method `.iter()`. Kemudian hasil iterator tersebut diubah lagi dengan method `.enumerate()`.
 
 Setelah mendapatkan objek bertipe `Enumerate`, keyword `for in` digunakan untuk menampung tiap elemen array dalam bentuk *tuple* `(i, name)`. Variabel `i` di situ berisi counter iterasi, dan `name` adalah value-nya.
 

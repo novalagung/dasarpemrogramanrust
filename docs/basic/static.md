@@ -49,13 +49,13 @@ Cukup mudah bukan?
 >
 > Lebih jelasnya mengenai topik ini akan dibahas nantinya pada chapter terpisah, yaitu [Safe & Unsafe](#/wip/safe-unsafe).
 
-Ok, sekarang kita coba terapkan keyword static pada tipe lainnya, contohnya `String`.
+Ok, sekarang kita coba terapkan keyword `static` pada tipe data lain untuk melihat batasannya.
 
 ![Static string](img/static-1.png)
 
 Hmm, malah error.
 
-Perlu diketahui bahwa keyword `static` bisa digunakan pada semua tipe data primitif. Selain itu bisa juga diterapkan dalam *constants function* (yang nantinya dibahas pada chapter [Constant Evaluation](#/wip/constant-evaluation)), [Tuple Struct](/basic/struct#a247-tuple-struct), dan juga variant [Tuple](/basic/tuple) lainnya, tetapi tidak bisa digunakan untuk custom type seperti `String`.
+Perlu diketahui bahwa keyword `static` bisa digunakan pada banyak tipe data selama inisialisasinya valid untuk konteks statik. Selain itu juga bisa diterapkan dalam *constants function* (yang nantinya dibahas pada chapter [Constant Evaluation](#/wip/constant-evaluation)), [Tuple Struct](/basic/struct#a247-tuple-struct), dan juga variant [Tuple](/basic/tuple) lainnya.
 
 Lalu bagaimana jika ada kebutuhan membuat konstanta bertipe string? Solusinya dengan menggunakan tipe data `&'static str` yang sebentar lagi akan kita bahas.
 
@@ -73,7 +73,7 @@ Lifetime ini biasa dikombinasikan dengan tipe data pointer, contohnya seperti `&
 const VERSION: &'static str = "v1.2.3";
 ```
 
-Sebelumnya telah dijelaskan bahwa custom type `String` tidak bisa digunakan untuk menyimpan data string sebagai static item, dan cara di atas ini adalah solusinya.
+Sebelumnya telah dijelaskan bahwa custom type `String` bukan bentuk yang paling cocok untuk menyimpan teks sebagai static item, sehingga jika yang dibutuhkan adalah teks statis maka `&'static str` adalah bentuk yang paling umum dipakai.
 
 Penulisannya agak kurang friendly memang (`&'static str`), namun kabar baiknya semenjak Rust versi 1.17 rilis di tahun 2017, by default semua item yang dideklarasikan menggunakan keyword `static` ataupun `const` otomatis memiliki `'static lifetime`. Jadi sekarang cukup tulis saja:
 

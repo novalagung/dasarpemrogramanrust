@@ -20,7 +20,7 @@ Bisa dilihat di kode di atas, konstanta `LABEL` merupakan string dengan nilai `"
 
 Dalam pendefinisian konstanta, tipe data harus dituliskan secara eksplisit. Deklarasi seperti `const DATA = "x"` akan menghasilkan error saat proses kompilasi. Dan aturan ini berlaku untuk semua tipe data yang dipergunakan untuk pendefinisian konstanta.
 
-Nilai sebuah konstanta juga bisa dari variabel atau konstanta lain, atau hasil sebuah operasi seperti operasi aritmatika `22.0/7.0`.
+Nilai sebuah konstanta bisa dari konstanta lain atau dari ekspresi konstan, misalnya operasi aritmatika `22.0/7.0`.
 
 Di sini penulis tidak menggunakan `22/7` karena hasilnya akan bertipe integer. Di Rust operasi aritmatika harus dilakukan dengan tipe data yang sama, dan hasilnya akan memiliki tipe data sesuai operand. Lebih jelasnya akan kita bahas pada chapter selanjutnya.
 

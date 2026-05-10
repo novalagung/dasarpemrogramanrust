@@ -80,9 +80,9 @@ enum Superhero {
 
 ## A.26.3. Seleksi kondisi enum
 
-Tipe data enum biasa dipakai pada seleksi kondisi, namun caranya sedikit berbeda. Default-nya keyword `if` tidak bisa digunakan pada tipe data enum.
+Tipe data enum biasa dipakai pada seleksi kondisi, namun caranya sedikit berbeda. `if` tetap bisa dipakai, tetapi operator `==` baru valid jika tipe tersebut mengimplementasikan trait `PartialEq`.
 
-Pada contoh berikut, statement seleksi kondisi `value3` menghasilkan error:
+Contoh berikut sengaja dibuat menghasilkan error untuk menunjukkan bedanya kasus enum dan string literal. Baris pertama valid karena `&str` bisa dibandingkan dengan `==`, sedangkan baris kedua error karena enum `Superhero` belum punya `PartialEq`:
 
 ```rust
 // seleksi kondisi pada konstanta

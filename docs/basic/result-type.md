@@ -178,7 +178,7 @@ let result_borrow: Result<&f64, &MathError> = result.as_ref();
 
 ### ◉ Method `is_err` & `err`
 
-Method `err` mengembalikan data dalam tipe `Err<E>`. Pada pengaksesan method ini, pastikan untuk mengecek apakah `Result` berisi data error atau ok dengan via method `is_err`. Selain itu, wajib untuk menggunakan method `as_ref` sebelum method `err` agar ownership data `Result` tidak berpindah (*move semantics*).
+Method `err` mengembalikan data error dari `Result`. Pada pengaksesan method ini, pastikan untuk mengecek apakah `Result` berisi data error atau ok dengan via method `is_err`. Jika masih ingin memakai nilai `Result` aslinya setelah itu, gunakan `as_ref` terlebih dahulu agar ownership data `Result` tidak berpindah (*move semantics*).
 
 ```rust
 let result = divider(10.0, 0.0);
@@ -192,7 +192,7 @@ if result.is_err() {
 
 ### ◉ Method `ok`
 
-Aturan yang sama juga berlaku pada pengaksesan method `ok` yang mengembalikan data `Ok<T>`. Method `as_ref` harus diakses terlebih dahulu sebelum memanggil method `ok` agar tidak terjadi *move semantics*.
+Aturan yang sama juga berlaku pada pengaksesan method `ok` yang mengembalikan data sukses dari `Result`. `as_ref` dipakai jika kita ingin memanggil `ok()` tanpa memindahkan ownership dari nilai `Result` aslinya.
 
 ```rust
 let result = divider(10.0, 5.0);

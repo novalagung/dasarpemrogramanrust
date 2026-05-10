@@ -22,7 +22,7 @@ Ada dua bagian penting dalam trait yang harus diketahui:
 Perihal point pertama, intinya kita bisa menciptakan trait sesuai kebutuhan. Terlepas dari itu, Rust juga menyediakan cukup banyak traits yang diimplement ke banyak tipe data yang ada di Rust standard library. Beberapa di antaranya:
 
 - Trait `std::fmt::Debug`, digunakan agar data bisa di-print menggunakan formatted print `{:?}`.
-- Trait `std::iter::Enumerate`, digunakan agar data bisa di-iterasi menggunakan keyword `for`.
+- Trait `std::iter::Iterator`, digunakan untuk operasi iterasi data.
 - Trait `std::ops::Add`, diimplementasikan agar data bisa digunakan pada operasi aritmatik penambahan `+`.
 
 Ok, biar lebih jelas, mari lanjut pembelajaran menggunakan contoh. Kita mulai dengan pembahasan tentang cara implementasi trait. Contoh yang digunakan adalah implementasi salah satu trait milik Rust standard library, yaitu trait `std::fmt::Debug`.
@@ -39,7 +39,7 @@ Berdasarkan tempat dimana traits dibuat, ada 2 jenis traits:
 
 - **Local traits**.
 
-    Adalah traits yang kita ciptakan di crate yang berada di dalam package/project yang sedang kita kerjakan. 
+    Adalah traits yang kita ciptakan di crate yang berada di dalam package/project yang sedang kita kerjakan.
 
 Chapter ini fokusnya adalah pembahasan tentang dasar implementasi **external traits** dan cara kerjanya.
 

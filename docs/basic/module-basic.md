@@ -161,7 +161,7 @@ Ok, sekarang buat saja folder dan filenya, yaitu `my_number/mod.rs`. Lalu pada f
     // ...
 
     pub fn is_odd_number(number: i32) -> bool {
-        number % 2 == 1
+        number % 2 != 0
     }
     ```
 
@@ -212,7 +212,7 @@ Hingga praktik ke-2 ini, kita telah belajar penerapan module dengan mengaplikasi
 
 ### ◉ Konversi string ke numerik
 
-Rust mengenal beberapa jenis konversi antar tipe data. Teknik konversi yang kita praktikkan pada chapter ini menggunakan method `.parse()`, cara ini bisa dilakukan untuk konversi tipe data dari custom types ke primitive. Contohnya seperti di atas, dari `String` ke `i32`.
+Rust mengenal beberapa jenis konversi antar tipe data. Teknik konversi yang kita praktikkan pada chapter ini menggunakan method `.parse()`, cara ini umum dipakai untuk konversi dari data string (`String`/`&str`) ke tipe target yang mengimplement trait `FromStr`. Contohnya seperti di atas, dari `String` ke `i32`.
 
 Penggunaannya cukup mudah, akses saja method `.parse()` kemudian sisipkan tipe data sebagai parameter generic. Lalu chain dengan method `unwrap` (yang method tersebut merupakan item milik tipe data *generic result type* atau `Result<T, E>`).
 
@@ -285,7 +285,7 @@ Kemudian pada file `my_number/mod.rs`, tambahkan definisi submodule `conversion_
 pub mod conversion_utility;
 
 pub fn is_odd_number(number: i32) -> bool {
-    number % 2 == 1
+    number % 2 != 0
 }
 ```
 

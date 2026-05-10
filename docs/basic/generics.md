@@ -75,7 +75,7 @@ Parameter `arg2` hampir tidak bisa diapa-apakan.
 
 - Misal mau di-print, tidak bisa, karena tipe `T` tidak implement trait [`std::fmt::Debug`](https://doc.rust-lang.org/std/fmt/trait.Debug.html).
 - Misal diisi nilai numerik kemudian dijadikan operand operasi aritmatika, juga tidak bisa karena tipe `T` tidak implement trait [`std::ops::Add`](https://doc.rust-lang.org/std/ops/trait.Add.html), dan trait operasi bilangan lainnya.
-- Misal diisi dengan nilai `bool`, tidak bisa digunakan pada seleksi kondisi `if` karena tipe `T` tidak implement trait [`std::cmp::PartialOrd`](https://doc.rust-lang.org/std/cmp/trait.PartialOrd.html), dan trait operasi logika lainnya.
+- Misal diisi dengan nilai apa pun, tidak bisa digunakan langsung pada seleksi kondisi `if` karena `if` di Rust hanya menerima ekspresi bertipe `bool`.
 
 Repot kan? Tapi tenang, tidak usah khawatir, ada soluasi agar tipe `T` bisa dimanfaatkan, yaitu dengan mengasosiasikan trait ke tipe data generic (sesuai kebutuhan).
 

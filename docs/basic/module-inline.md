@@ -19,7 +19,7 @@ mod module_a {
 
     pub mod submodule_b {
 
-        pub const PI: u32 = 3.14;
+        pub const PI: f64 = 3.14;
 
         pub fn fungsi_dua() {
             // ...
@@ -43,7 +43,7 @@ Aturan definisi submodule dan item pada inline module masih sama seperti pada *n
 
 Mari lanjut proses pembelajaran dengan praktik. Kita akan buat program sederhana yang di dalamnya ada proses generate random string, yang kemudian di-hash.
 
-Silakan buat package baru menggunakan `cargo new`. Penulis di sini memilih nama `inline_module_1` sebagai nama package. Setelah itu, siapkan fungsi main dan juga module bernama `utilities` dengan penulisan kode menerapkan inline module. O iya, tulis keduanya (`module utilities` dan fungsi `main`) dalam satu file yang sama yaitu `main.rs`.
+Silakan buat package baru menggunakan `cargo new`. Penulis di sini memilih nama `module_inline_1` sebagai nama package. Setelah itu, siapkan fungsi main dan juga module bernama `utilities` dengan penulisan kode menerapkan inline module. O iya, tulis keduanya (`module utilities` dan fungsi `main`) dalam satu file yang sama yaitu `main.rs`.
 
 ```rust title="src/main.rs"
 mod utilities {
@@ -112,7 +112,7 @@ mod utilities {
             
             const CHARSET: &[u8] = "abcdefghijklmnopqrstuvwxyz".as_bytes();
             let mut arr = Vec::new();
-            for _ in 0..=length {
+            for _ in 0..length {
                 let n = rand::thread_rng().gen_range(0..(CHARSET.len()));
                 let char = CHARSET[n];
                 arr.push(char);
