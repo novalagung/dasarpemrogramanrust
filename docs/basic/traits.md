@@ -33,15 +33,99 @@ Berdasarkan tempat dimana traits dibuat, ada 2 jenis traits:
 
 - **External traits** (atau foreign traits).
 
-    Yaitu traits yang tempat dideklarasikannya berada di luar create kode yang ditulis. Misalnya, trait `std::fmt::Debug` dan `std::ops::Add`, keduanya merupakan external traits yang berada di crate `std` atau crate Rust Standard Library.
+    Yaitu traits yang tempat dideklarasikannya berada di luar crate kode yang ditulis. Misalnya, trait `std::fmt::Debug` dan `std::ops::Add`, keduanya merupakan external traits yang berada di crate `std` atau crate Rust Standard Library.
 
-    Pada case yang berhubungan dengan external traits, kita programmer umumnya hanya fokus ke implementasi saya, bagaimana cara memanfaatkan dan menggunakan external traits yang sudah ada ke dalam kode yang ditulis.
+    Pada kasus seperti ini, kita biasanya hanya fokus ke cara memakai external traits yang sudah ada.
 
 - **Local traits**.
 
     Adalah traits yang kita ciptakan di crate yang berada di dalam package/project yang sedang kita kerjakan.
 
-Chapter ini fokusnya adalah pembahasan tentang dasar implementasi **external traits** dan cara kerjanya.
+Chapter ini fokusnya adalah pembahasan tentang dasar implementasi **external traits** dan cara kerjanya. Setelah itu, kita juga akan lihat sedikit contoh `local trait` supaya bedanya lebih terasa.
+
+### ◉ Aturan penting dalam implementasi trait
+
+Di Rust ada aturan yang perlu diingat:
+
+- `external trait` boleh diimplementasikan ke `local type`
+- `local trait` boleh diimplementasikan ke tipe apa pun
+- `external trait` tidak boleh diimplementasikan ke `external type`
+
+Aturan ini biasanya disebut *orphan rule* atau *coherence rule*.
+
+Kalau dibahas dengan bahasa sederhana, Rust ingin mencegah dua crate berbeda saling berebut implementasi untuk trait dan type yang sama. Dengan begitu, perilaku program tetap jelas dan tidak ambigu.
+
+Kalau kita tetap ingin memakai `external trait` pada `external type`, solusinya adalah memakai *wrapper pattern*. Caranya, kita bungkus type external tersebut ke type local buatan kita sendiri, lalu implementasikan trait ke wrapper itu.
+
+Contoh sederhananya:
+
+```rust
+struct Wrapper(Vec<String>);
+
+impl std::fmt::Display for Wrapper {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "{:?}", self.0)
+    }
+}
+```
+
+Pada contoh di atas:
+
+- `Vec<String>` adalah `external type`
+- `Display` adalah `external trait`
+- `Wrapper` adalah `local type`
+
+Karena `Wrapper` adalah type lokal, kita bebas mengimplementasikan trait ke sana.
+
+Pemakaiannya di `main` bisa seperti ini:
+
+```rust
+fn main() {
+    let v = Wrapper(vec![String::from("a"), String::from("b")]);
+    println!("{}", v);
+}
+```
+
+Output:
+
+> ["a", "b"]
+
+### ◉ Contoh local trait
+
+Sekarang kita coba kebalikannya: membuat trait sendiri, lalu mengimplementasikannya ke type yang sudah ada.
+
+Misalnya kita punya trait sederhana bernama `Message`:
+
+```rust
+trait Message {
+    fn log(&self);
+}
+```
+
+Lalu kita implementasikan ke `String`:
+
+```rust
+impl Message for String {
+    fn log(&self) {
+        println!("{}", self);
+    }
+}
+```
+
+Karena `Message` adalah `local trait`, kita boleh mengimplementasikannya ke type `String` yang berasal dari standard library.
+
+Pemakaiannya di `main` akan terlihat seperti ini:
+
+```rust
+fn main() {
+    let s = String::from("hello");
+    s.log();
+}
+```
+
+Output:
+
+> hello
 
 ## A.36.2. Implementasi trait
 
@@ -82,7 +166,7 @@ struct Circle {
 
 Hasilnya error, karena struct `Circle` yang dibuat tidak implement trait `std::fmt::Debug`.
 
-Solusi agar tidak error adalah dengan mengimplementasikan trait `std::fmt::Debug` ke tipe `Circle`, dengan itu semua data bertipe `Circle` akan bisa di-print menggunakan formatted print `{:?}`.
+Solusi agar tidak error adalah dengan mengimplementasikan trait `std::fmt::Debug` ke tipe `Circle`, dengan begitu semua data bertipe `Circle` akan bisa di-print menggunakan formatted print `{:?}`.
 
 > Selain via implementasi trait, tipe data custom bisa di-print dengan cara menambahkan atribut `#[derive(Debug)]` pada definisi tipe data-nya. Namun kita tidak membahas itu pada chapter ini.
 
@@ -100,7 +184,7 @@ pub trait Debug {
 
 Trait `Debug` mempunyai satu spesifikasi method, bernama `fmt` yang detail strukturnya bisa dilihat di atas.
 
-Kita akan implement trait `Debug` ini ke tipe `Circle`, maka wajib hukumnya untuk menuliskan implementasi method sesuai dengan yang ada di trait `Debug`.
+Kita akan implement trait `Debug` ini ke tipe `Circle`, maka wajib untuk menuliskan implementasi method sesuai dengan yang ada di trait `Debug`.
 
 Di bawah ini adalah contoh cara implementasi trait.
 
@@ -157,7 +241,7 @@ impl std::fmt::Debug for Circle {
 }
 ```
 
-Kemudian tulis implementasi method `fmt` dalam block method. Tulis statement macro `write` untuk data string (yang ingin di-print) dengan tujuan adalah variabel `f`.
+Kemudian tulis implementasi method `fmt` dalam block method. Di sini kita memakai macro `write` untuk menulis data string yang ingin di-print ke variabel `f`.
 
 Di contoh, format `Circle radius: {}` digunakan. Dengan ini nantinya saat printing data, yang muncul adalah text `Circle radius: {}`.
 
@@ -169,7 +253,7 @@ impl std::fmt::Debug for Circle {
 }
 ```
 
-> Tips untuk pengguna visual studio code dengan rust-analyzer extension ter-install, setelah selesai menulis block kode `impl`, cukup jalankan `ctrl+space` atau `cmd+space` untuk men-trigger autocomplete suggestion. Kemudian klik opsi method yang ada di situ, maka kode implementasi method langsung muncul dengan sendirinya.
+> Tips untuk pengguna visual studio code dengan rust-analyzer extension ter-install: setelah selesai menulis block kode `impl`, cukup jalankan `ctrl+space` atau `cmd+space` untuk men-trigger autocomplete suggestion. Kemudian klik opsi method yang ada di situ, maka kode implementasi method langsung muncul dengan sendirinya.
 
 ### ◉ Macro `write`
 
@@ -195,7 +279,7 @@ Coba tambahkan statement `println`, tetapi kali ini gunakan formatted print `{}`
 
 ![Trait](img/traits-4.png)
 
-Hasilnya error, karena trait `std::fmt::Debug` hanya berguna untuk formatted print `{:?}`. Agar data bertipe `Circle` bisa di-print menggunakan formatted print `{}` maka trait `std::fmt::Display` harus diimplementasikan juga.
+Hasilnya error, karena trait `std::fmt::Debug` hanya berguna untuk formatted print `{:?}`. Kalau ingin `Circle` bisa di-print dengan `{}`, maka trait `std::fmt::Display` juga harus diimplementasikan.
 
 Ubah kode dengan menambahkan implementasi trait `Display`. Hasilnya kurang lebih seperti ini:
 
@@ -219,6 +303,8 @@ impl std::fmt::Display for Circle {
 
 > - Link dokumentasi trait `Debug` https://doc.rust-lang.org/std/fmt/trait.Debug.html
 > - Link dokumentasi trait `Display` https://doc.rust-lang.org/std/fmt/trait.Display.html
+
+> Lebih detail tentang trait bound, wrapper pattern, dan aturan implementasi trait untuk type lokal maupun external ada di chapter [Traits ➜ Advanced](/basic/advanced-traits).
 
 ---
 
