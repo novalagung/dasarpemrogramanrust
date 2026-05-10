@@ -178,7 +178,27 @@ Namun perlu diingat, bahwa data efek dari lifetime `'static` adalah data tidak a
 
 Solusi yang lebih pas adalah dengan membuat lifetime sendiri dengan cara menerapkan **lifetime annotation** (tidak menggunakan lifetime `'static`).
 
-## A.44.3. Lifetime annotation dan penerapannya pada return value
+## A.44.3. Analogi lifetime: "Masa Berlaku Kartu Akses"
+
+Sebelum masuk ke syntax, mari gunakan analogi agar lebih mudah dipahami.
+
+Bayangkan lifetime seperti **kartu akses gedung** yang memiliki masa berlaku:
+
+- Anda meminjam kartu akses (reference) dari seseorang (owner).
+- Kartu tersebut hanya berlaku selama pemilik aslinya masih berada di gedung.
+- Jika pemilik keluar dari gedung (out of scope), kartu akses yang Anda pinjam otomatis tidak berlaku lagi.
+- Lifetime annotation (`'a`, `'b`, dll) adalah cara kita memberi **label** pada kartu akses tersebut, agar compiler tahu kartu mana yang masih berlaku dan mana yang sudah kadaluarsa.
+
+Notasi `'a` bukan syntax spesial — itu hanyalah **nama label** yang kita berikan. Kita bisa pakai `'b`, `'my_lifetime`, `'scope_x`, atau nama apapun. Yang penting, label yang sama berarti "masa berlaku yang sama".
+
+```
+'a  → seperti label "Kartu A" — berlaku selama scope A
+'b  → seperti label "Kartu B" — berlaku selama scope B
+```
+
+Ketika kita menulis `&'a str`, artinya: "ini adalah reference ke string yang masa berlakunya mengikuti label `'a`".
+
+## A.44.4. Lifetime annotation dan penerapannya pada return value
 
 Lifetime dituliskan dengan notasi `'nama_lifetime`. Dengan notasi tersebut, kita bisa menciptakan lifetime baru misalnya `'a`, `'b`, `'ini_lifetime`, dst.
 
@@ -216,7 +236,7 @@ Fungsi `get_number` sekarang tidak menghasilkan error, karena reference yang dik
 
 Tanpa adanya lifetime pada return value, maka data return value akan langsung di-dealokasi setelah block fungsi selesai dieksekusi. Tapi karena hal ini *by default* sudah di-handle Rust, maka kita tidak perlu memikirkannya.
 
-## A.44.4. Lifetime pada parameter
+## A.44.5. Lifetime pada parameter
 
 Pada praktik ini kita akan bahas penerapan lifetime pada parameter.
 
@@ -296,7 +316,7 @@ fn do_something_v7<'a>(x: &'a str, y: &'a str) -> &'a str {
 }
 ```
 
-## A.44.5. Lifetime elision
+## A.44.6. Lifetime elision
 
 Sampai section ini kita telah mempelajari kurang lebih 4 point berikut:
 
@@ -315,7 +335,7 @@ Meskipun demikian, tak usah terlalu khawatir, karena pengecekan lifetime referen
 
 Jika kawan-kawan menggunakan `rust-analyzer` extension di VSCode, tak perlu meng-compiler program untuk memunculkan error-nya, karena langsung muncul saat penulisan kode program.
 
-## A.44.6. Lifetime pada struct
+## A.44.7. Lifetime pada struct
 
 Tak hanya pada parameter fungsi dan return value fungsi, lifetime juga bisa diterapkan pada (property) struct.
 
@@ -370,7 +390,7 @@ fn main() {
 }
 ```
 
-## A.44.7. Lifetime pada method
+## A.44.8. Lifetime pada method
 
 Ada 2 hal yang perlu diketahui dalam penerapan lifetime pada method. Yang pertama, lifetime annotication harus ditulis pada block `impl` meskipun pada block method tidak digunakan secara langsung.
 
@@ -447,7 +467,7 @@ Run program, hasilnya sukses.
 
 ![Lifetime](img/lifetime-9.png)
 
-## A.44.8. Generic parameter + trait bounds + lifetime
+## A.44.9. Generic parameter + trait bounds + lifetime
 
 Lalu bagaimana jika ada fungsi yang di situ ada penerapan trait bounds, ada juga generic parameter, dan lifetime annotation. Cara penulisannya seperti apa? Silakan lihat contoh berikut:
 

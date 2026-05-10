@@ -140,6 +140,28 @@ println!("g: {:?}, h: {:?}", g, h);
 
 ![Ownership](img/ownership-3.png)
 
+### ◉ Tipe data yang mengadopsi Copy vs Move semantics
+
+Mungkin muncul pertanyaan: bagaimana cara kita tahu tipe data mana yang mengadopsi *copy semantics* dan mana yang *move semantics*? Secara sederhana, pengelompokannya bisa dilihat dari di mana data tersebut disimpan di memory.
+
+**Copy semantics** — data disimpan di stack, ukurannya diketahui saat kompilasi, dan bersifat kecil/fixed:
+- Semua tipe numerik: `i8`, `i16`, `i32`, `i64`, `i128`, `u8`, `u16`, `u32`, `u64`, `u128`, `f32`, `f64`
+- Boolean: `bool`
+- Character: `char`
+- Tuple yang semua elemennya Copy (misal: `(i32, bool)`)
+
+Ketika terjadi assignment pada tipe-tipe di atas, data secara otomatis di-copy. Owner lama tetap valid dan bisa digunakan lagi.
+
+**Move semantics** — data dikelola di heap, ukurannya bisa berubah atau tidak diketahui saat kompilasi:
+- `String`
+- `Vec<T>`
+- Custom type (struct, enum) yang tidak meng-derive `Clone` dan `Copy`
+- Tipe lain yang mengelola data di heap
+
+Ketika terjadi assignment pada tipe-tipe di atas, owner berpindah. Owner lama menjadi invalid dan tidak bisa digunakan lagi.
+
+Perbedaan mendasarnya: tipe *copy semantics* ukurannya kecil dan fixed sehingga efisien untuk di-copy, sedangkan tipe *move semantics* mengelola data di heap yang ukurannya bisa dinamis, sehingga Rust memilih untuk memindah ownership-nya daripada men-copy (yang akan lebih mahal secara performa).
+
 > Copy semantics di Rust merupakan sifat yang dimiliki oleh trait `std::marker::Copy`.
 >
 > - Semua data primitif meng-implement trait `std::marker::Copy` yang berarti mengadopsi *copy semantics*.

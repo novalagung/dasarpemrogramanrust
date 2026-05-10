@@ -69,12 +69,13 @@ Rust compiler memiliki 1 bagian bernama **borrow checker**, tugasnya untuk melak
 
 ## A.35.3. Aturan borrowing
 
-Aturan borrowing atau reference sempat disinggung pada chapter [Pointer & References](/basic/pointer-references), yang kurang lebih adalah:
+Aturan borrowing atau reference sempat disinggung pada chapter [Pointer & References](/basic/pointer-references). Ada 3 aturan penting yang wajib dipatuhi:
 
-- Dalam waktu yang sama, hanya boleh ada satu mutable reference atau banyak immutable reference (keduanya tidak bisa bersamaan, harus salah satu).
+- Satu data boleh memiliki **banyak immutable reference** (`&data`) secara bersamaan.
+- Satu data hanya boleh memiliki **satu mutable reference** (`&mut data`) dalam satu waktu.
 - Reference harus selalu valid.
 
-Dua aturan tersebut wajib dipatuhi, jika tidak maka pasti muncul error.
+Jika aturan ini dilanggar, Rust compiler akan menampilkan error. Ini adalah mekanisme keamanan yang mencegah data race dan memory unsafety.
 
 Ok, selanjutnya mari kita test aturan tersebut.
 
@@ -123,7 +124,23 @@ println!("{:?} {:?}", msg_10, msg_11);
 
 ![Borrowing](img/borrowing-3.png)
 
-Hasilnya error. Hal seperti ini tidak diperbolehkan. Sebuah data tidak boleh memiliki lebih dari 1 mutable reference.
+Hasilnya error berikut muncul karena hal seperti ini tidak diperbolehkan, sebuah data tidak boleh memiliki lebih dari 1 mutable reference.
+
+```
+error[E0499]: cannot borrow `msg_9` as mutable more than once at a time
+   |
+   | let msg_10 = &mut msg_9;
+   |              ---------- first mutable borrow occurs here
+   | let msg_11 = &mut msg_9;
+   |              ^^^^^^^^^^ second mutable borrow occurs here
+```
+
+Compiler secara eksplisit memberitahu di mana letak masalahnya:
+
+- Baris `first mutable borrow occurs here` menunjukkan mutable reference pertama dibuat.
+- Baris `second mutable borrow occurs here` menunjukkan mutable reference kedua dibuat — inilah yang menyebabkan error.
+
+Solusinya adalah memastikan hanya ada satu mutable reference dalam satu waktu, atau memisahkan scope-nya (akan dibahas di section berikutnya).
 
 ### ◉ Contoh ke-3
 
@@ -140,7 +157,18 @@ println!("{:?} {:?}", msg_13, msg_14);
 
 ![Borrowing](img/borrowing-4.png)
 
-Hasilnya error, kenapa? karena memang tidak boleh.
+Hasilnya error berikut muncul, kenapa? karena memang tidak boleh.
+
+```
+error[E0502]: cannot borrow `msg_12` as mutable because it is also borrowed as immutable
+   |
+   | let msg_13 = &msg_12;
+   |              ------- immutable borrow occurs here
+   | let msg_14 = &mut msg_12;
+   |              ^^^^^^^^^^ mutable borrow occurs here
+```
+
+Compiler memberitahu bahwa `msg_12` sedang dipinjam secara immutable oleh `msg_13`, sehingga tidak bisa dipinjam secara mutable oleh `msg_14` secara bersamaan. Ini adalah aturan **"no mutable + immutable borrow bersamaan"** yang harus selalu dipatuhi.
 
 Jadi sampai sini cukup jelas ya. Sebuah data dalam waktu yang sama hanya diperbolehkan memiliki satu atau lebih immutable reference, atau hanya 1 mutable reference, dan keduanya tidak bisa bersamaan dalam satu waktu (harus pilih salah satu).
 

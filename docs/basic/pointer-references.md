@@ -134,12 +134,13 @@ Pada contoh ini kita menggunakan tipe data primitif, lalu bagaimana dengan tipe 
 
 ## A.33.5. Aturan Reference
 
-Ada dua aturan penting yang harus dipatuhi dalam penerapan reference baik mutable atau immutable reference.
+Ada tiga aturan penting yang harus dipatuhi dalam penerapan reference baik mutable atau immutable reference.
 
-- Dalam waktu yang sama, hanya boleh ada satu mutable reference atau banyak immutable reference (keduanya tidak bisa bersamaan, harus salah satu).
+- Satu data boleh memiliki banyak immutable reference secara bersamaan.
+- Satu data hanya boleh memiliki satu mutable reference dalam satu waktu.
 - Reference harus selalu valid.
 
-Mengenai penjelasan tentang dua aturan penting di atas akan bahas pada chapter [Borrowing](/basic/borrowing).
+Mengenai penjelasan tentang tiga aturan penting di atas akan dibahas pada chapter [Borrowing](/basic/borrowing).
 
 ## A.33.6. Karakteristik pointer & reference
 
