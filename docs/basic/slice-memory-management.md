@@ -6,7 +6,7 @@ sidebar_label: A.45. Slice Memory Management
 
 Kita telah mempelajari tipe data [Array](/basic/array) dan [Vector](/basic/vector), serta sudah beberapa kali menggunakan tipe data `String`. Ketiga tipe data tersebut bisa menghasilkan slice via operasi borrowing.
 
-> Ciri khas dari tipe data yang termasuk dalam kategori slice adalah jika diakses reference-nya menghasilkan data bertipe `&[T]` yang mana `T` adalah tipe data elemen.
+> Ciri khas dari tipe yang bisa menghasilkan slice adalah jika diakses reference-nya menghasilkan data bertipe `&[T]` yang mana `T` adalah tipe data elemen. Contohnya array, vector, dan `String`.
 
 Pada chapter ini, kita akan bahas lebih dalam lagi tentang apa itu slice terutama bagian memory management-nya.
 

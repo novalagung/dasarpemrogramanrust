@@ -19,7 +19,7 @@ fn main() {
 }
 ```
 
-Ok, sekarang coba jalankan, dan lanjut ke pembahasan di bawah.
+Ok, sekarang coba jalankan (contoh di atas sengaja akan memunculkan error, jangan khawatir karena akan dijelaskan setelah ini), dan lanjut ke pembahasan di bawah.
 
 ### ◉ Aturan penamaan variabel (naming convention)
 
@@ -287,10 +287,6 @@ fn main() {
 ---
 
 ## Catatan chapter 📑
-
-### ◉ Work in progress
-
-- Variabel `_`
 
 ### ◉ Source code praktik
 

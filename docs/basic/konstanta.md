@@ -11,18 +11,18 @@ Chapter ini membahas tentang konstanta di bahasa Rust.
 Berbeda dengan variabel yang dideklarasikan menggunakan keyword `let`, konstanta dibuat dengan keyword `const`. Contoh:
 
 ```rust
-const LABEL: &str = "nilai pi adalah:";
-const PI: f32 = 22.0/7.0;
-println!("{} {}", LABEL, PI);
+const LABEL: &str = "nilai hasil pembagian adalah:";
+const RESULT: f32 = 22.0 / 7.0;
+println!("{} {}", LABEL, RESULT);
 ```
 
-Bisa dilihat di kode di atas, konstanta `LABEL` merupakan string dengan nilai `"nilai pi adalah:"`, sedang `PI` memiliki nilai bertipe float hasil dari operasi `22.0/7.0`.
+Bisa dilihat di kode di atas, konstanta `LABEL` merupakan string dengan nilai `"nilai hasil pembagian adalah:"`, sedang `RESULT` memiliki nilai bertipe float hasil dari operasi `22.0 / 7.0`.
 
 Dalam pendefinisian konstanta, tipe data harus dituliskan secara eksplisit. Deklarasi seperti `const DATA = "x"` akan menghasilkan error saat proses kompilasi. Dan aturan ini berlaku untuk semua tipe data yang dipergunakan untuk pendefinisian konstanta.
 
-Nilai sebuah konstanta bisa dari konstanta lain atau dari ekspresi konstan, misalnya operasi aritmatika `22.0/7.0`.
+Nilai sebuah konstanta bisa dari konstanta lain atau dari ekspresi konstan, misalnya operasi aritmatika `22.0 / 7.0`.
 
-Di sini penulis tidak menggunakan `22/7` karena hasilnya akan bertipe integer. Di Rust operasi aritmatika harus dilakukan dengan tipe data yang sama, dan hasilnya akan memiliki tipe data sesuai operand. Lebih jelasnya akan kita bahas pada chapter selanjutnya.
+Di sini penulis tidak menggunakan `22 / 7` karena hasilnya akan bertipe integer. Di Rust operasi aritmatika harus dilakukan dengan tipe data yang sama, dan hasilnya akan memiliki tipe data sesuai operand. Lebih jelasnya akan kita bahas pada chapter selanjutnya.
 
 > Keyword `mut` tidak bisa diterapkan pada konstanta. Jika dipaksa akan menghasilkan error.
 

@@ -241,17 +241,17 @@ Dari sini cukup jelas kegunaan dari `if let`. Meskipun menggunakan operator `=` 
 Tambahan contoh, 2 block kode berikut adalah juga ekuivalen.
 
 ```rust
-let value = 6;
+let value = Some(6);
 match value {
-    1 | 2 => println!("one or two"),
-    3..=5 => println!("three through five"),
-    6     => println!("six"),
-    _     => println!("other number"),
+    Some(1 | 2) => println!("one or two"),
+    Some(3..=5) => println!("three through five"),
+    Some(6)     => println!("six"),
+    _           => println!("other number"),
 }
 
 // ... vs ...
 
-let value = Some(5);
+let value = Some(6);
 if let Some(1 | 2) = value {
     println!("one or two");
 } else if let Some(3..=5) = value {

@@ -47,9 +47,9 @@ Bisa dilihat pada gambar di atas pesan `Hello, world!` yang ada dalam file `main
 
 Command `cargo run` digunakan untuk menjalankan aplikasi saat proses development. Perlu diingat bahwa Rust merupakan bahasa pemrograman yang kategorinya `compiled language` yang artinya kode program akan dikompilasi terlebih dahulu untuk menghasilkan file binary, dan kemudian file binary itulah yang dijalankan.
 
-Command `cargo run` merupakan shorthand untuk memperpendek proses kompilasi dan eksekusi. Dalam command tersebut, kode program akan di-compile terlebih dahulu, dan hasilnya adalah file executable binary bernama `hello_rust.exe` (karena penulis menggunakan windows). File binary tersebut berada dalam project dalam path `hello_rust/target/debug/hello_rust.exe`. Setelah proses kompilasi, file binary tersebut dijalankan, dan hasilnya adalah pesan `Hello, world!` yang muncul di layar
+Command `cargo run` merupakan shorthand untuk memperpendek proses kompilasi dan eksekusi. Dalam command tersebut, kode program akan di-compile terlebih dahulu, dan hasilnya adalah file executable binary (misalnya `hello_rust` di Linux/Mac, atau `hello_rust.exe` di Windows). File binary tersebut berada dalam project dalam path `hello_rust/target/debug/`. Setelah proses kompilasi, file binary tersebut dijalankan, dan hasilnya adalah pesan `Hello, world!` yang muncul di layar
 
-> Untuk pengguna windows, file binary akan ber-ekstensi `.exe` seperti pada contoh yaitu `hello_rust.exe`. Sedangkan untuk non-windows, file tidak mempunyai ekstensi, `hello_rust`.
+> Untuk pengguna Windows, file binary akan ber-ekstensi `.exe` seperti pada contoh yaitu `hello_rust.exe`. Sedangkan untuk non-Windows, file tidak mempunyai ekstensi, `hello_rust`.
 
 Command `cargo run` akan sering kita pakai dalam proses development.
 

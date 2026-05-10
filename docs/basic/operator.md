@@ -129,17 +129,19 @@ Berikut merupakan list operator untuk operasi logika `bool` beserta contoh pener
 
 ```rust
 let (bool_left, bool_right) = (false, true);
-println!("AND result \t: {}", bool_left && bool_right);
-println!("OR result \t: {}", bool_left || bool_right);
+println!("AND result: {}", bool_left && bool_right);
+println!("OR result: {}", bool_left || bool_right);
+// output ==> AND result: false
+// output ==> OR result: true
 ```
 
 ### ◉ *Whitespace character* tab `\t`
 
-Rust mendukung karakter standar whitespace seperti `\t` yang kegunaannya adalah untuk horizontal tab. Contoh penerapannya seperti pada kode di atas, tulis saja `\t` dalam string literal, hasilnya bisa dilihat saat di-print.
+Rust mendukung karakter standar whitespace seperti `\t` yang kegunaannya adalah untuk horizontal tab. Contoh penerapannya, gunakan `\t` dalam string literal:
 
 ```rust
-println!("AND result \t: {}", bool_left && bool_right);
-println!("OR result \t: {}", bool_left || bool_right);
+println!("AND result\t: {}", bool_left && bool_right);
+println!("OR result\t: {}", bool_left || bool_right);
 ```
 
 ![operator boolean](img/operator-1.png)

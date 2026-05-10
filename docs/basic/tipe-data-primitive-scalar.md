@@ -134,6 +134,8 @@ println!("min_f32={} | max_f32={}", min_f32, max_f32);
 // output ==> min_f32=-340282350000000000000000000000000000000 | max_f32=340282350000000000000000000000000000000
 ```
 
+> Angka di atas adalah representasi desimal dari `f32::MIN` dan `f32::MAX`. Nilai aslinya kira-kira `-3.40282347e+38` dan `3.40282347e+38`, namun saat di-print menggunakan `{}` hasilnya terpotong.
+
 Catatan saja, variabel yang dideklarasikan dengan predefined value numerik yang ada titiknya (`3.10`) adalah floating point, by default tipe datanya adalah `f64`.
 
 ## A.5.4. Bool

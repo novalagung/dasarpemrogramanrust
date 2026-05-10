@@ -67,10 +67,10 @@ Setelah ini kita akan praktik penerapan pembuatan lifetime, namun sebelum itu ma
 ```rust
 fn main() {
     let message = String::from("darkspear is better than zandalari");
-    print_mesage(&message)
+    print_message(&message)
 }
 
-fn print_mesage(m: &String) {
+fn print_message(m: &String) {
     println!("the message: {m}")
 }
 ```

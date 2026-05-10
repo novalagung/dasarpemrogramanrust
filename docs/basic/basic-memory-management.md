@@ -62,7 +62,7 @@ Nilai variabel tersebut adalah `25`, yang jika dikonversi ke bentuk binary adala
 
 Hasilnya adalah angka biner berikut:
 
-```rust
+```text
 00000000000000000000000000011001
 ```
 

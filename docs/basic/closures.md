@@ -259,19 +259,13 @@ fn do_something() -> impl Fn() {
 }
 ```
 
-Tipe `impl Fn()` adalah ekuvalen dengan closure `|| { }`.
+Tipe `impl Fn()` adalah ekuvalen dengan closure `|| { }`. Contoh penerapannya pada `main`:
 
 ```rust
 fn main() {
     let my_closure = do_something();
     println!("hello (from main)");
     my_closure();
-}
-
-fn main() {
-    let my_closure = do_something_v2();
-    let message = my_closure(123, "hello rust".to_owned());
-    println!("{message} (from main)");
 }
 ```
 
@@ -283,7 +277,7 @@ Sedangkan fungsi `do_something` sendiri juga menampilkan pesan string lainnya, y
 
 ### ◉ Praktik ke-2
 
-Pada contoh di atas, closure yang dikembalikan fungsi memiliki skema sangat sederhana, tanpa parameter dan argument. Mari coba praktik dengan contoh yang lebih kompleks.
+Pada contoh sebelumnya, closure yang dikembalikan fungsi memiliki skema sangat sederhana, tanpa parameter dan argument. Mari coba praktik dengan contoh yang lebih kompleks.
 
 ```rust
 fn do_something_v2() -> impl Fn(i32, String) -> String {
@@ -304,12 +298,14 @@ Pada kode di atas fungsi `do_something_v2` mengembalikan closure dengan skema `F
 
 Di dalam closure tersebut, data parameter digabung menjadi sebuah pesan string yang kemudian dijadikan nilai balik.
 
-Sekarang jalankan fungsi `do_something_v2` di atas, kemudian lihat hasilnya.
+Berikut adalah contoh penerapan fungsi `do_something_v2` pada `main`:
 
 ```rust
-let my_closure = do_something_v2();
-let message = my_closure(123, "hello rust".to_owned());
-println!("{message} (from main)");
+fn main() {
+    let my_closure = do_something_v2();
+    let message = my_closure(123, "hello rust".to_owned());
+    println!("{message} (from main)");
+}
 ```
 
 ![Closure](img/closures-5.png)
