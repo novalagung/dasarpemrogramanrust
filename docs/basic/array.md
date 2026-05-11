@@ -145,11 +145,11 @@ Array lebih mudah dideklarasikan dengan metode *type inference*. Namun tak menut
 ```rust
 let angka_integer = [24, 12, 32, 7];
 println!("{angka_integer:?}");
-// output: [24, 12, 32, 7]
+// output ➜ [24, 12, 32, 7]
 
 let angka_float = [24.2, 12.5, 32.00002, 7.2];
 println!("{angka_float:?}");
-// output: [24.2, 12.5, 32.00002, 7.2]
+// output ➜ [24.2, 12.5, 32.00002, 7.2]
 ```
 
 ### ◉ Deklarasi array dengan metode *manifest typing* disertai *predefined value*
@@ -157,11 +157,11 @@ println!("{angka_float:?}");
 ```rust
 let data_boolean: [bool; 2] = [false, true];
 println!("{data_boolean:?}");
-// output: [false, true]
+// output ➜ [false, true]
 
 let angka_unsigned_integer: [u32; 3] = [24, 0, 12];
 println!("{angka_unsigned_integer:?}");
-// output: [24, 0, 12]
+// output ➜ [24, 0, 12]
 ```
 
 ### ◉ Deklarasi array dengan notasi penulisan `[T; N]`
@@ -171,7 +171,7 @@ Pada contoh berikut, `data_numerik1` dideklarasikan bertipe array dengan tipe da
 ```rust
 let data_numerik1: [i32; 10] = [0; 10];
 println!("{data_numerik1:?}");
-// output: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+// output ➜ [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ```
 
 Pada contoh ke-dua ini, `data_numerik2` dideklarasikan dengan *predefined value* adalah array yang size-nya `5` dan nilai default tiap elemen adalah angka `4`.
@@ -179,7 +179,7 @@ Pada contoh ke-dua ini, `data_numerik2` dideklarasikan dengan *predefined value*
 ```rust
 let data_numerik2 = [4; 5];
 println!("{data_numerik2:?}");
-// output: [4, 4, 4, 4, 4]
+// output ➜ [4, 4, 4, 4, 4]
 ```
 
 Tambahan penjelasan mengenai notasi penulisan `[T; N]`:

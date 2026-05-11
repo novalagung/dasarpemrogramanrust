@@ -209,8 +209,8 @@ Di Rust memungkinkan untuk mendefinisikan banyak variabel dalam 1 baris statemen
 
 ```rust
 let (var1, var2) = (24, "hello");
-println!("var1: {0}", var1); // hasilnya => var1: 24
-println!("var2: {0}", var2); // hasilnya => var2: hello
+println!("var1: {0}", var1); // output ➜ var1: 24
+println!("var2: {0}", var2); // output ➜ var2: hello
 ```
 
 Pendefinisian banyak variabel dalam 1 statement dilakukan dengan menuliskan semua variabelnya dengan separator tanda `,` dan diapit tanda kurung `()`.
@@ -221,19 +221,19 @@ Bisa juga saat definisi variabel sekaligus ditentukan tipe data variabel, notasi
 
 ```rust
 let (var3, var4): (i8, i8) = (32, 12);
-println!("var3: {0}", var3); // hasilnya => var3: 32
-println!("var4: {0}", var4); // hasilnya => var4: 12
+println!("var3: {0}", var3); // output ➜ var3: 32
+println!("var4: {0}", var4); // output ➜ var4: 12
 ```
 
 Dengan notasi ini bisa juga untuk definisi variabel *mutable*. Cukup tambahkan keyword `mut` pada variabel yang ingin bisa diubah nilainya.
 
 ```rust
 let (var5, mut var6, var7): (i8, i8, i8) = (64, 12, 4);
-println!("var5: {0}", var5); // hasilnya => var5: 64
-println!("var6: {0}", var6); // hasilnya => var6: 12
+println!("var5: {0}", var5); // output ➜ var5: 64
+println!("var6: {0}", var6); // output ➜ var6: 12
 var6 = 24;
-println!("var6: {0}", var6); // hasilnya => var6: 24
-println!("var7: {0}", var7); // hasilnya => var7: 4
+println!("var6: {0}", var6); // output ➜ var6: 24
+println!("var7: {0}", var7); // output ➜ var7: 4
 ```
 
 ## A.4.7. Deklarasi variabel dengan tipe data ditentukan dari value
@@ -242,7 +242,7 @@ Ini merupakan salah satu alternatif cara penulisan untuk men-specify tipe data v
 
 ```rust
 let data1 = 24i8;
-println!("data1: {0}", data1); // hasilnya => data1: 24
+println!("data1: {0}", data1); // output ➜ data1: 24
 ```
 
 Variabel `data` didefinisikan dengan predefined value adalah numerik `24` dengan tipe data `i8`, penulisan value nya menjadi `24i8`.
@@ -251,7 +251,7 @@ Boleh juga menggunakan separator `_` dalam penulisan value-nya sebagai pembatas 
 
 ```rust
 let data1 = 24_i8;
-println!("data1: {0}", data1); // hasilnya => data1: 24
+println!("data1: {0}", data1); // output ➜ data1: 24
 ```
 
 ## A.4.8. Variable *Shadowing*
@@ -262,10 +262,10 @@ Contoh shadowing bisa dilihat pada kode berikut:
 
 ```rust
 let x = 5;
-println!("x: {}", x); // hasilnya => x: 5
+println!("x: {}", x); // output ➜ x: 5
 
 let x = x + 1;
-println!("x: {}", x); // hasilnya => x: 6
+println!("x: {}", x); // output ➜ x: 6
 ```
 
 Lebih jelasnya akan kita bahas pada chapter terpisah, yaitu [Shadowing](/basic/shadowing).

@@ -82,13 +82,9 @@ Pemakaiannya di `main` bisa seperti ini:
 ```rust
 fn main() {
     let v = Wrapper(vec![String::from("a"), String::from("b")]);
-    println!("{}", v);
+    println!("{}", v); // output ➜ ["a", "b"]
 }
 ```
-
-Output:
-
-> ["a", "b"]
 
 ### ◉ Contoh local trait
 
@@ -119,13 +115,9 @@ Pemakaiannya di `main` akan terlihat seperti ini:
 ```rust
 fn main() {
     let s = String::from("hello");
-    s.log();
+    s.log(); // output ➜ hello
 }
 ```
-
-Output:
-
-> hello
 
 ## A.36.2. Implementasi trait
 

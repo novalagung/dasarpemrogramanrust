@@ -76,7 +76,7 @@ Pembuatan object datetime dengan isi informasi waktu spesifik bisa dilakukan men
 ```rust
 let sample_date2_in_utc = Utc.with_ymd_and_hms(2023, 3, 1, 1, 2, 3).unwrap();
 println!("sample date 2 (in utc): {sample_date2_in_utc}");
-// output: sample date 2 (in utc): 2023-03-01 01:02:03 UTC
+// output ➜ sample date 2 (in utc): 2023-03-01 01:02:03 UTC
 ```
 
 Statement di atas menghasilkan data datetime dengan isi `2023-03-01 01:02:03 UTC`.
@@ -88,7 +88,7 @@ Cara ini pas digunakan pada situasi di mana kita perlu membuat object datetime d
 ```rust
 let sample_date3_in_utc = DateTime::<Utc>::from(UNIX_EPOCH + Duration::from_secs(1524885322));
 println!("sample date 3 (in utc): {sample_date3_in_utc}");
-// output: sample date 3 (in utc): 2018-04-28 03:15:22 UTC
+// output ➜ sample date 3 (in utc): 2018-04-28 03:15:22 UTC
 ```
 
 Statement `DateTime::<Utc>::from()` di atas menghasilkan data datetime `2018-04-28 03:15:22 UTC`, karena nilai `1524885322` adalah representasi UNIX time untuk waktu tersebut.
@@ -100,7 +100,7 @@ Tipe data string bisa langsung dikonversi ke bentuk datetime menggunakan method 
 ```rust
 let sample_date4_in_utc = "2023-03-01 01:02:03 UTC".parse::<DateTime<Utc>>().unwrap();
 println!("sample date 4 (in utc): {sample_date4_in_utc}");
-// output: sample date 4 (in utc): 2023-03-01 01:02:03 UTC
+// output ➜ sample date 4 (in utc): 2023-03-01 01:02:03 UTC
 ```
 
 Statement parsing di atas menghasilkan data datetime `2023-03-01 01:02:03 UTC`, sesuai dengan isi data string.
@@ -186,7 +186,7 @@ let sample_date_in_local_tz = Local.from_local_datetime(&naive_date_time).unwrap
 println!("sample date 1 (in utc):      {sample_date_in_utc}");
 println!("sample date 2 (in local_tz): {sample_date_in_local_tz}");
 
-// output:
+// output ➜
 // sample date 1 (in utc):      2018-04-28 03:15:22 UTC
 // sample date 2 (in local_tz): 2018-04-28 03:15:22 +07:00
 ```
@@ -215,7 +215,7 @@ println!("date (in utc):   {date_in_utc}");
 let date2_in_local_tz = DateTime::<Local>::from(date_in_utc);
 println!("date (in local): {date2_in_local_tz}");
 
-// output:
+// output ➜
 // date (in local): 2023-03-02 17:33:37.750279900 +07:00
 // date (in utc):   2023-03-02 10:33:37.750279900 UTC
 // date (in local): 2023-03-02 17:33:37.750279900 +07:00

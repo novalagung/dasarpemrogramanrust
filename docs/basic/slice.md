@@ -100,15 +100,15 @@ Gunakan method `len` untuk mencari tau size dari slice.
 ```rust
 let numbers = [12, 16, 8, 3];
 println!("{}", numbers.len());
-// output: 4
+// output ➜ 4
 
 let slice_a = &numbers[0..3];
 println!("{}", slice_a.len());
-// output: 3
+// output ➜ 3
 
 let slice_b = &slice_a[1..=2];
 println!("{}", slice_b.len());
-// output: 2
+// output ➜ 2
 ```
 
 ## A.14.3. Slice *range syntax*
