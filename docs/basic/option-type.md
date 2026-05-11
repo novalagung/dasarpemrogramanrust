@@ -11,7 +11,7 @@ sidebar_label: A.39. Tipe Data ➜ Option
 Tipe data `Option` adalah enum dengan isi 2 buah enum value:
 
 - `Option::Some<T>` (atau `Some<T>`), digunakan untuk menandai bahwa data memiliki value/nilai.
-- `Option::None` (atau `None`), digunakan untuk menandai bawah data adalah tidak ada nilainya.
+- `Option::None` (atau `None`), digunakan untuk menandai bahwa data **tidak** ada nilainya.
 
 > - `None` bisa disamakan dengan nilai `null` atau `nil` pada bahasa pemrograman lain.
 > - `T` merupakan parameter generic. Lebih jelasnya mengenai generic dibahas pada chapter [Generics](/basic/generics).
@@ -93,7 +93,7 @@ match result1 {
 
 - Kondisi ke-1: jika nilai adalah `None`, maka munculkan pesan `cannot divide by 0`
 - Kondisi ke-2: jika nilai adalah `2`, maka munculkan pesan `the result is 2`
-- Kondisi ke-1: jika nilai adalah `Some` selain dari `None` dan `Some(2)`, maka munculkan pesan `result: {x}`
+- Kondisi ke-3: jika nilai adalah `Some` selain dari `None` dan `Some(2)`, maka munculkan pesan `result: {x}`
 
 ### ◉ Tips pattern matching
 

@@ -17,7 +17,7 @@ Tipe `Result` ini adalah tipe yang paling umum dan direkomendasikan untuk diguna
 Tipe data `Result` adalah enum dengan isi 2 buah enum value:
 
 - `Result::Ok<T>` (atau `Ok<T>`), digunakan untuk menandai bahwa data isinya adalah kabar baik (oke / mantab / jos / sukses).
-- `Result::Err<E>` (atau `Err<E>`), digunakan untuk menandai bawah data berisi kabar buruk (error).
+- `Result::Err<E>` (atau `Err<E>`), digunakan untuk menandai bahwa data berisi kabar buruk (error).
 
 > - `T` dan `E` merupakan parameter generic. Lebih jelasnya mengenai generic dibahas pada chapter [Generics](/basic/generics).
 
@@ -148,7 +148,7 @@ Dengan penerapan pattern matching seperti di atas, maka variabel `result` akan s
 
 ### ◉ Method `is_ok` & `unwrap`
 
-Isi dari enum value `Ok<T>` bisa diakses tanpa menggunakan keyword `match` dengan cara memanfaatkan method `unwrap` milik `Result<T, E>`. Sebelum mengakses method tersebut sangat dianjurkan untuk mengecek apakah data berisi `Ok<T> atau tidak`, karena jika data adalah `Err<E>` pengaksesan method `unwrap` menghasilkan error.
+Isi dari enum value `Ok<T>` bisa diakses tanpa menggunakan keyword `match` dengan cara memanfaatkan method `unwrap` milik `Result<T, E>`. Sebelum mengakses method tersebut, sangat dianjurkan untuk mengecek apakah data berisi `Ok<T>` atau tidak, karena jika data adalah `Err<E>` pengaksesan method `unwrap` menghasilkan error.
 
 Pengecekan nilai ok atau tidak bisa dilakukan menggunakan method `is_ok`.
 

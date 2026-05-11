@@ -10,7 +10,7 @@ Tipe data scalar sendiri merupakan tipe data primitif yang isinya hanya 1 nilai.
 
 ## A.5.1. Signed integers
 
-Signed integer merupakan tipe data numerik/integer yang bisa menampung nilai positif dan juga negatif. Ada beberapa tipe data singed integer tersedia di Rust yang dibedakan sesuai size-nya.
+Signed integer merupakan tipe data numerik/integer yang bisa menampung nilai positif dan juga negatif. Ada beberapa tipe data signed integer tersedia di Rust yang dibedakan sesuai size-nya.
 
 Tipe data ini keyword-nya ditandai dengan huruf awalan `i`, contohnya `i8`, yang mana tipe ini adalah tipe data numerik integer dengan range value yang bisa ditampung adalah mulai dari angka **−128** (didapat dari −(2<sup>7</sup>) hingga **127** (didapat dari 2<sup>7</sup>-1).
 
@@ -42,7 +42,7 @@ Berikut merupakan list tipe data signed integers yang ada di Rust. Tidak perlu d
 | `i32` | −(2<sup>31</sup>) hingga (2<sup>31</sup>)-1 |
 | `i64` | −(2<sup>63</sup>) hingga (2<sup>63</sup>)-1 |
 | `i128` | −(2<sup>127</sup>) hingga (2<sup>127</sup>)-1 |
-| `isize` | tipe pointer |
+| `isize` | integer yang ukurannya mengikuti pointer |
 
 > Lebih jelasnya tentang tipe data **pointer** dibahas pada chapter terpisah, [Pointer & References](/basic/pointer-references)
 
@@ -75,7 +75,7 @@ Berikut list tipe data unsigned integer pada Rust:
 | `u32` | 0 hingga (2<sup>32</sup>)-1 |
 | `u64` | 0 hingga (2<sup>64</sup>)-1 |
 | `u128` | 0 hingga (2<sup>128</sup>)-1 |
-| `usize` | tipe pointer |
+| `usize` | integer yang ukurannya mengikuti pointer |
 
 > Lebih jelasnya tentang tipe data **pointer** dibahas pada chapter terpisah, [Pointer & References](/basic/pointer-references)
 

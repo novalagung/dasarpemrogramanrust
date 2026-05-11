@@ -335,7 +335,7 @@ println!("y_one: {}", y_one);
 
 ## A.23.5. *Unit-like structs*
 
-*Unit-like structs* adalah struct yang didefinisikan tanpa property. Cara deklrasinya bisa dilihat pada contoh berikut:
+*Unit-like structs* adalah struct yang didefinisikan tanpa property. Cara deklarasinya bisa dilihat pada contoh berikut:
 
 ```rust
 struct StructOne;

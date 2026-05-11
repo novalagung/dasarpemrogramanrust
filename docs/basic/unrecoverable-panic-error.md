@@ -4,7 +4,7 @@ title: A.54. Error ➜ Unrecoverable Error / Panic
 sidebar_label: A.54. Error ➜ Unrecoverable Error / Panic
 ---
 
-Error handling atau penanganan error adalah salah satu aspek penting dalam pemrograman selalu umum. Rust mengenal 2 jenis error yaitu **unrecoverable error (panic error)** dan **recoverable error**. Pembahasan chapter ini fokus pada unrecoverable error atau panic error.
+Error handling atau penanganan error adalah salah satu aspek penting dalam pemrograman secara umum. Rust mengenal 2 jenis error yaitu **unrecoverable error (panic error)** dan **recoverable error**. Pembahasan chapter ini fokus pada unrecoverable error atau panic error.
 
 ## A.54.1. Unrecoverable error (RUNTIME error & COMPILE-TIME error)
 

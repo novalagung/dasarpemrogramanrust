@@ -22,7 +22,7 @@ Dalam sebuah path, yang disebut dengan item adalah segment terakhir. Contohnya p
 
 Jika di-breakdown, berikut adalah penjelasan dari setiap kombinasi segmen path pada contoh `std::time::Duration`.
 
-- Path `std` ➜ adalah path untuk **crate** bernama [**Rust Standard Library**](https://doc.rust-lang.org/std/), isinya adalah sangat banyak item untuk keperluan umum di Rust programming. Lebih jelasnya akan dibahas pada chapter [Rust standard library](#/wip/rust-standard-library).
+- Path `std` ➜ adalah path untuk **crate** bernama [**Rust Standard Library**](https://doc.rust-lang.org/std/), isinya banyak item untuk keperluan umum di Rust programming. Lebih jelasnya akan dibahas pada chapter [Rust standard library](#/wip/rust-standard-library).
 - Path `std::time` ➜ adalah path untuk **module** bernama [`time`](https://doc.rust-lang.org/std/time/index.html), isinya banyak item yang berhubungan dengan operasi waktu/time.
 - Path `std::time::Duration` ➜ adalah path untuk **struct** bernama [`Duration`](https://doc.rust-lang.org/std/time/index.html), yang merupakan representasi dari unit waktu.
 
@@ -35,7 +35,7 @@ Jika di-breakdown, berikut adalah penjelasan dari setiap kombinasi segmen path p
 Rust mengenal dua jenis path:
 
 - Absolute path ➜ adalah path yang penulisannya lengkap dari root path, contohnya seperti `std::time::Duration`.
-- Relative path ➜ adalah path yang penulisannya relatif terhadap current path, contohnya seperti `self::my_func`, `super::my_mod::my_consntan`.
+- Relative path ➜ adalah path yang penulisannya relatif terhadap current path, contohnya seperti `self::my_func`, `super::my_mod::my_constant`.
 
 > Lebih jelasnya mengenai relative path dibahas pada chapter [Module System ➜ Scope & Akses Item](/basic/module-scope-item-access).
 
@@ -57,7 +57,7 @@ Seperti yang sudah dibahas bahwa path adalah notasi penulisan alamat untuk item.
 - implementations *(dibahas pada chapter [Function](/basic/function), [Associated Function](/basic/associated-function), dan [Method](/basic/method))*
 - extern blocks
 
-## A.18.4. Penerapan paths dalam penggaksesan item
+## A.18.4. Penerapan paths dalam pengaksesan item
 
 Pada bagian ini, kita akan coba terapkan path untuk mengakses beberapa item.
 
@@ -156,7 +156,7 @@ if reader_res.is_err() {
 
 ### ◉ Menampilkan isi `message`
 
-Jika program berlajan sesuai harapan, tanpa error, pada baris terakhir data dalam `message` ditampilkan ke layar.
+Jika program berjalan sesuai harapan, tanpa error, pada baris terakhir data dalam `message` ditampilkan ke layar.
 
 > Tipe data `String` ini tidak perlu dikonversi ke bentuk literal string `&str` untuk ditampilkan menggunakan `println`. Langsung saja sisipkan variabel `String` ke macro tersebut dan `println` akan tau harus menampilkan apa.
 

@@ -217,7 +217,7 @@ Bisa dilihat di kode di atas, ada beberapa metode error handling yang diterapkan
 
 > Silakan mengintip kembali chapter [Operator ?](/basic/operator-tanda-tanya) jika diperlukan untuk mengingat kembali cara kerja operator `?`.
 
-Metode error handling menggunakan operator `?` sengaja diterapkan pada bagian flush stdout dan eksekusi command. Karena di dalam domain tersebut, ketika ada error maka error-nya pasti berhubungan dengan I/O dan permission di level sistim operasi (OS) yang dimana kita tidak bisa menangani error tersebut dari level program yang sedang dibuat. Oleh karena itu operator `?` digunakan. Dengannya, maka error-error tersebut akan membuat eksekusi program terhenti secara total dan error dimunculkan sebelum program terhenti karena oleh panic error.
+Metode error handling menggunakan operator `?` sengaja diterapkan pada bagian flush stdout dan eksekusi command. Karena di dalam domain tersebut, ketika ada error maka error-nya pasti berhubungan dengan I/O dan permission di level sistem operasi (OS) yang dimana kita tidak bisa menangani error tersebut dari level program yang sedang dibuat. Oleh karena itu operator `?` digunakan. Dengannya, maka error-error tersebut akan membuat eksekusi program terhenti secara total dan error dimunculkan sebelum program terhenti karena oleh panic error.
 
 ### ◉ Action `Command::PrintFiles`
 
