@@ -272,7 +272,7 @@ Lebih jelasnya akan kita bahas pada chapter terpisah, yaitu [Shadowing](/basic/s
 
 ## A.4.9. Variabel `_`
 
-Di Rust, jika ada variabel yang dideklarasikan tapi tidak digunakan, maka muncul warning saat ekesekusi program.
+Di Rust, jika ada variabel yang dideklarasikan tapi tidak digunakan, maka muncul warning saat eksekusi program.
 
 Pada praktiknya, tidak semua variabel memang perlu untuk digunakan. Pada kasus tertentu suatu variabel harus tetap dideklarasikan untuk menampung suatu nilai meski tidak digunakan. Misalnya pada case dimana ada pemanggilan fungsi yang nilai baliknya tidak digunakan.
 

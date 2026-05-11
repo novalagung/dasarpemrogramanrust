@@ -12,7 +12,7 @@ Generics dinotasikan dengan `<T>`. Kita sempat sedikit memanfaatkan generic pada
 
 ## A.38.1. Generics basic
 
-Mari mulai pembahasan dengan sebauh contoh definisi fungsi yang memiliki generics.
+Mari mulai pembahasan dengan sebuah contoh definisi fungsi yang memiliki generics.
 
 ```rust
 fn do_something<T>(arg1: i32, arg2: T) {

@@ -77,7 +77,7 @@ Sekarang di stack memory ada 3 buah metadata informasi disimpan, yaitu `data_str
 
 Tiga variabel di atas kesemuanya mengakses reference yang sama, yang membedakan adalah elemennya saja. Owner (yaitu `data_str`) bisa mengakses seluruh data, selain itu juga tau informasi kapasitas data. Sedangkan borrower hanya bisa mengakses data yang dia pinjam sesuai dengan operasi slicing-nya. Borrower tidak mengetahui kapasitas data, namun ia tau size dari elemen yang ia pinjam.
 
-## A.45.2. Mutable slice
+## A.45.3. Mutable slice
 
 Bagaimana dengan *mutability* pada slice, apa yang terjadi di belakang layar ketika elemen slice nilainya diubah?
 

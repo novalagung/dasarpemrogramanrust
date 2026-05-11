@@ -65,7 +65,7 @@ println!("{pi:.4}");   // 3.1416
 
 Closure `calculate_circle_volume_v2` pada contoh di atas adalah salah satu contoh penulisan closure. Sebuah closure bisa memiliki parameter, bisa juga tidak, dan aturan tersebut juga berlaku pada return value.
 
-Bebebrapa contoh lain penulisan closure bisa dilihat di bawah ini:
+Beberapa contoh lain penulisan closure bisa dilihat di bawah ini:
 
 ```rust
 // closure dengan 2 parameter tanpa return value
