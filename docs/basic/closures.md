@@ -4,7 +4,7 @@ title: A.48. Closures
 sidebar_label: A.48. Closures
 ---
 
-Chapter ini membahas tentang closures. Closures sendiri merupakan block fungsi anonimus (anonymous function) yang memiliki kelebihan bisa mengakses item-item yang posisinya berada di luar block closure tersebut tetapi masih dalam current block scope.
+Chapter ini membahas tentang closures. Closures sendiri merupakan block fungsi anonim (anonymous function) yang memiliki kelebihan bisa mengakses item-item yang posisinya berada di luar block closure tersebut tetapi masih dalam current block scope.
 
 Topik closures sangat erat hubungannya dengan [Trait ➜ Function](/basic/trait-function), namun pada chapter ini pembahasan hanya difokuskan pada bagian penerapan closures saja. Penulis anjurkan untuk lanjut ke chapter berikutnya setelah selesai dengan chapter ini.
 
@@ -57,8 +57,8 @@ Sebagai contoh, variabel `pi` berikut memiliki 0 digit angka dibelakang koma. Un
 ```rust
 let pi = 3.1415926535;
 
-println!("{:.4}", pi); // 3.1416
-println!("{pi:.4}");   // 3.1416
+println!("{:.4}", pi); // output ➜ 3.1416
+println!("{pi:.4}");   // output ➜ 3.1416
 ```
 
 ## A.48.2. Notasi penulisan closure
@@ -127,8 +127,8 @@ Tidak ada yang spesial mengenai cara mengakses item yang berada di luar block cl
 let num = 5;
 let display = || println!("{num}");
 
-println!("{num}");  // 5
-display();          // 5
+println!("{num}");  // output ➜ 5
+display();          // output ➜ 5
 ```
 
 Beda lagi jika data di luar block closure adalah diubah (di-mutate) nilainya dari dalam closure, jika seperti itu maka ada beberapa hal yang perlu diperhatikan.
@@ -143,7 +143,7 @@ let increase_by = |x: i32| {
 };
 
 increase_by(10);
-println!("{num}"); // 15
+println!("{num}"); // output ➜ 15
 ```
 
 ![Closure](img/closures-1.png)
@@ -177,7 +177,7 @@ let mut increase_by = |x: i32| num += x;
 num += 5;
 increase_by(10);
 
-println!("{num}"); // 20
+println!("{num}"); // output ➜ 20
 ```
 
 ![Closure](img/closures-2.png)
@@ -197,7 +197,7 @@ num += 5;
     increase_by(10);
 }
 
-println!("{num}"); // 20
+println!("{num}"); // output ➜ 20
 ```
 
 Solusi di atas efektif untuk menghilangkan error borrowing yang sebelumnya muncul, tapi setelah d-refactor kode menjadi tidak sesuai spesifikasi awal. Pada kode yang baru di atas, deklarasi closure `increase_by` terjadi di dalam block expression, artinya closure ini hanya akan bisa digunakan pada block kode tersebut saja, tidak bisa di-reuse di luar block.
@@ -211,7 +211,7 @@ let increase_by = |num: &mut i32, x: i32| *num += x;
 num += 5;
 increase_by(&mut num, 10);
 
-println!("{num}"); // 20
+println!("{num}"); // output ➜ 20
 ```
 
 Pada contoh di atas, closure `increase_by` ditambahi parameter baru. Sekarang ada 2 parameter, yaitu `num` yang tipe-nya adalah pointer `&mut i32` dan parameter `x`. Di dalam block closure, `num` di-dereference (menggunakan operator `*`) kemudian diubah nilainya. Setelah eksekusi statement selesai, data pinjaman tersebut langsung dikembalikan ke pemilik. Inilah kenapa kode di atas tidak menghasilkan error.
@@ -228,11 +228,11 @@ Contohnya bisa dilihat berikut ini:
 let mut num = 5;
 let mut increase_by = move |x: i32| {
     num += x;
-    println!("{num} (from closure)"); // 15
+    println!("{num} (from closure)"); // output ➜ 15
 };
 
 increase_by(10);
-println!("{num}"); // 5
+println!("{num}"); // output ➜ 5
 ```
 
 Closure `increase_by` di atas memiliki keyword `move` dalam pendefinisiannya. Dengan ini maka semua variabel di luar scope closure jika diakses dari dalam closure, maka variabel tersebut berpindah owner-nya (*move semantics*).
@@ -259,7 +259,7 @@ fn do_something() -> impl Fn() {
 }
 ```
 
-Tipe `impl Fn()` adalah ekuvalen dengan closure `|| { }`. Contoh penerapannya pada `main`:
+Tipe `impl Fn()` adalah ekuivalen dengan closure `|| { }`. Contoh penerapannya pada `main`:
 
 ```rust
 fn main() {

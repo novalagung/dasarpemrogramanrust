@@ -45,14 +45,16 @@ Kemudian ada beberapa variabel baru yang didefinisikan di dalam block, yaitu `y`
 Sebagai contoh, kode berikut menghasilkan error:
 
 ```rust
-let x = 24;
+fn main() {
+    let x = 24;
 
-{
-    let y = 12;
-    let z = x + y;
-};
+    {
+        let y = 12;
+        let z = x + y;
+    };
 
-println!("z: {}", z); // <------ error
+    println!("z: {}", z); // <------ error
+}
 ```
 
 O iya, dalam penulisannya, statement block harus diikuti tanda semicolon `;` sebagai penanda akhir statement, dengan beberapa pengecualian yang akan ikut dibahas pada section setelah ini.
@@ -164,7 +166,7 @@ Pembahasan mengenai unsafe block expression ada pada chapter [Safe & Unsafe](#/w
 
 Block biasa diterapkan untuk isolasi sebuah proses yang tidak perlu di-reuse. Jika proses adalah di-reuse, dianjurkan untuk menggunakan fungsi dalam penerapannya.
 
-Di bahasa pemrograman lain juga ada block yang penerapannya kurang lebih adalah sama. Namun perlu diketahui, di Rust block memiliki berbedaan yang bisa dibilang signifikan, yaitu dalam hal manajemen memory.
+Di bahasa pemrograman lain juga ada block yang penerapannya kurang lebih adalah sama. Namun perlu diketahui, di Rust block memiliki perbedaan yang bisa dibilang signifikan, yaitu dalam hal manajemen memory.
 
 Rust menerapkan konsep memory management bernama **ownership**. Setiap kali Rust selesai mengeksekusi block kode, baik itu fungsi, block expression, atau jenis block lainnya; akan dilakukan evaluasi pengecekan ownership yang ada dalam block tersebut. Untuk data yang owner-nya tidak berpindah ke luar scope, maka akan dilakukan proses dealokasi memory untuk data tersebut. Dengan approach ini penggunaan memory menjadi efisien.
 

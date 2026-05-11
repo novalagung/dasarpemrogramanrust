@@ -23,7 +23,7 @@ Method `to_string` milik `&str` mengkonversi string literal menjadi `String`.
 
 ```rust
 let str2 = "iPhone 8".to_string();
-println!("{str2}"); // iPhone 8
+println!("{str2}"); // output ➜ iPhone 8
 ```
 
 ### ◉ `String::from`
@@ -32,7 +32,7 @@ Associated function `String::from` digunakan untuk mengkonversi `&str` ke bentuk
 
 ```rust
 let str1 = String::from("Nokia 3310");
-println!("{str1}"); // Nokia 3310
+println!("{str1}"); // output ➜ Nokia 3310
 ```
 
 ### ◉ `String::new`
@@ -41,7 +41,7 @@ Associated function `String::new` menghasilkan data string kosong.
 
 ```rust
 let str3 = String::new();
-println!("{str3}"); // ""
+println!("{str3}"); // output ➜ ""
 ```
 
 ### ◉ `String::from_utf8`
@@ -50,7 +50,7 @@ Berguna untuk mengkonversi data bytes ke tipe `String`. Fungsi ini nilai balikny
 
 ```rust
 let str4 = String::from_utf8(vec![78, 55, 51]).unwrap();
-println!("{str4}"); // N73
+println!("{str4}"); // output ➜ N73
 ```
 
 > Lebih jelasnya mengenai tipe `Result` dibahas pada chapter [Tipe Data ➜ Result](/basic/result-type)
@@ -64,11 +64,11 @@ Keyword `mut` bisa digunakan untuk mengganti/replace data string dengan data bar
 ```rust
 let mut str5 = String::new();
 println!("{str5}");
-// ""
+// output ➜ ""
 
 str5 = String::from("Pixel 5");
 println!("{str5}");
-// Pixel 5
+// output ➜ Pixel 5
 ```
 
 ### ◉ Replace string / method `replace`
@@ -79,8 +79,8 @@ Method `replace` digunakan untuk mengganti suatu substring dengan string lain. M
 let str9 = String::from("my phone is Pixel 6");
 let str10 = str9.replace("Pixel 6", "Nokia 3310");
 
-println!("str9: {str9}");   // my phone is Pixel 6
-println!("str10: {str10}"); // my phone is Nokia 3310
+println!("str9: {str9}");   // output ➜ str9: my phone is Pixel 6
+println!("str10: {str10}"); // output ➜ str10: my phone is Nokia 3310
 ```
 
 ### ◉ Prepend string / method `insert_str`
@@ -90,15 +90,15 @@ Method `insert_str` digunakan untuk menyisipkan substring pada posisi tertentu.
 ```rust
 let mut str6 = String::from("Pixel 6");
 println!("{str6}");
-// Pixel 6
+// output ➜ Pixel 6
 
 str6.insert_str(0, "my phone");
 println!("{str6}");
-// my phonePixel 6
+// output ➜ my phonePixel 6
 
 str6.insert_str(8, " is ");
 println!("{str6}");
-// my phone is Pixel 6
+// output ➜ my phone is Pixel 6
 ```
 
 Parameter pertama menentukan posisi indeks string yang disisipkan.
@@ -148,7 +148,7 @@ Method `clear` digunakan untuk mengosongkan data string.
 ```rust
 let mut str11 = String::from("Nokia 3310");
 str11.clear();
-println!("{str11}"); // ""
+println!("{str11}"); // output ➜ // ""
 ```
 
 ## A.47.3. Operasi string lainnya
@@ -161,10 +161,10 @@ Method `contains` digunakan untuk mengecek apakah suatu substring yang dicari ad
 let str11 = String::from("Nokia 3310");
 
 let is_exists = str11.contains("3310");
-println!("{is_exists}"); // true
+println!("{is_exists}"); // output ➜ true
 
 let is_exists = str11.contains("3315");
-println!("{is_exists}"); // false
+println!("{is_exists}"); // output ➜ false
 ```
 
 ### ◉ Concat strings / slice `join`
@@ -178,7 +178,7 @@ let str14 = String::from("Pro");
 
 let str: String = [str12, str13, str14].join(" ");
 
-println!("{str}"); // iPhone 12 Pro
+println!("{str}"); // output ➜ iPhone 12 Pro
 ```
 
 ---

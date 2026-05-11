@@ -4,7 +4,7 @@ title: A.43. Static Item
 sidebar_label: A.43. Static Item
 ---
 
-Pada chapter ini kita akan bahas tentang apa itu static item, dan perbedaanya dibanding konstanta.
+Pada chapter ini kita akan bahas tentang apa itu static item, dan perbedaannya dibanding konstanta.
 
 Namun sebelum masuk ke inti pembahasan, mari kita sedikit belajar tentang apa itu *lifetime* dalam Rust programming.
 

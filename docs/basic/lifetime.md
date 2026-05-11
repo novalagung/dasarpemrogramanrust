@@ -77,7 +77,7 @@ fn print_message(m: &String) {
 
 Program di atas menampilkan pesan string via fungsi `print_message`. Data string didapat dari parameter pointer `m` milik fungsi tersebut.
 
-Pada fungsi `main`, ada string bernama `message`, niainya dipinjamkan sebagai argument pemanggilan fungsi `print_message`.
+Pada fungsi `main`, ada string bernama `message`, nilainya dipinjamkan sebagai argument pemanggilan fungsi `print_message`.
 
 Setelah eksekusi fungsi `print_message` selesai, yang terjadi di block kode fungsi tersebut adalah data `m` di-dealokasi. Hasil dari dealokasi sendiri adalah nilai sebenarnya dikembalikan ke owner (pemilik aslinya). Sampai sini harusnya cukup jelas.
 
@@ -105,7 +105,7 @@ Error tersebut muncul karena setelah eksekusi fungsi `get_message` selesai, semu
 
 Ok, jadi owner-nya sudah di-dealokasi, lalu bagaimana nasib dari peminjam data (variabel `m`)? Variabel tersebut menjadi bermasalah, karena owner data aslinya sudah tidak ada di memory, dan itulah kenapa muncul error.
 
-> Error ini disebut dengan **dangling reference**, muncul ketika data di-share ke variabel lain tapi owner-nya sudah tidak ada di-memory.
+> Error ini disebut dengan **dangling reference**, muncul ketika data di-share ke variabel lain tapi owner-nya sudah tidak ada di memory.
 >
 > Di pemrograman Rust, error jenis ini bisa di-identifikasi saat kompilasi.
 
@@ -166,7 +166,7 @@ Error tersebut muncul karena meskipun owner data `&13` adalah program, ketika ek
 
 Agar tidak terjadi proses dealokasi, harus ada variabel yang menampung reference tersebut di luar scope, tapi cara ini tidak bisa dilakukan karena data-nya saja baru dideklarasikan dalam block fungsi, tidak mungkin tiba-tiba ada yang menampung di luar scope.
 
-Solusi dari masalah ini adalah menggunakan lifetime `'static` (yang detailnya sudah dibahas pada chapter sebelumnya). Dengan ini maka data reference `&13` hidup lebih lama dari umur yang sebenarnya sudah ditakdirkan untuk data data tersebut.
+Solusi dari masalah ini adalah menggunakan lifetime `'static` (yang detailnya sudah dibahas pada chapter sebelumnya). Dengan ini maka data reference `&13` hidup lebih lama dari umur yang sebenarnya sudah ditakdirkan untuk data tersebut.
 
 ```rust
 fn get_number() -> &'static i32 {
@@ -174,7 +174,7 @@ fn get_number() -> &'static i32 {
 }
 ```
 
-Namun perlu diingat, bahwa data efek dari lifetime `'static` adalah data tidak akan pernah di-dealokasi. Data tersebut akan hidup selamanya di program hingga kecuali program dimatikan. Karena alasan itulah penggunaan `'static` pada contoh ini bisa disebut berlebihan.
+Namun perlu diingat, bahwa data efek dari lifetime `'static` adalah data tidak akan pernah di-dealokasi. Data tersebut akan hidup selamanya di program hingga program dimatikan. Karena alasan itulah penggunaan `'static` pada contoh ini bisa disebut berlebihan.
 
 Solusi yang lebih pas adalah dengan membuat lifetime sendiri dengan cara menerapkan **lifetime annotation** (tidak menggunakan lifetime `'static`).
 
@@ -210,7 +210,7 @@ Lifetime dituliskan dengan notasi `'nama_lifetime`. Dengan notasi tersebut, kita
 
 > Lifetime dan block label memiliki bentuk literal yang sama, keduanya diawali tanda kutip `'`. Yang membedakan hanya pada tempat di mana syntax tersebut ditulis.
 
-Kegunaan dari lifetime annotation adalah untuk menginformasikan compiler agar reference tidak langsung didealokasikan setelah eksekusi block selesai. Agar lebih jelas mari kita langsung terapkan saja pada fungsi `get_number` yang sudah ditulis. Silakan tambahkan lifetime dengan nama bebas. Di sini penulis gunakan `'my_lifetime`.
+Kegunaan dari lifetime annotation adalah untuk menginformasikan compiler agar reference tidak langsung di-dealokasi setelah eksekusi block selesai. Agar lebih jelas mari kita langsung terapkan saja pada fungsi `get_number` yang sudah ditulis. Silakan tambahkan lifetime dengan nama bebas. Di sini penulis gunakan `'my_lifetime`.
 
 ```rust
 fn get_number() -> &'my_lifetime i32 {
@@ -280,7 +280,7 @@ fn do_something_v4<'a, 'b, 'c>(x: &'a str, y: &'b str) -> &'c str {
 }
 ```
 
-Fungsi di atas memiliki 2 buah lifetime, yaitu:
+Fungsi di atas memiliki 3 buah lifetime, yaitu:
 
 - Lifetime `'a`, digunakan pada parameter `x`
 - Lifetime `'b`, digunakan pada parameter `y`

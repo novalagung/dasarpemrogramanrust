@@ -77,7 +77,7 @@ Parameter `arg2` hampir tidak bisa diapa-apakan.
 - Misal diisi nilai numerik kemudian dijadikan operand operasi aritmatika, juga tidak bisa karena tipe `T` tidak implement trait [`std::ops::Add`](https://doc.rust-lang.org/std/ops/trait.Add.html), dan trait operasi bilangan lainnya.
 - Misal diisi dengan nilai apa pun, tidak bisa digunakan langsung pada seleksi kondisi `if` karena `if` di Rust hanya menerima ekspresi bertipe `bool`.
 
-Repot kan? Tapi tenang, tidak usah khawatir, ada soluasi agar tipe `T` bisa dimanfaatkan, yaitu dengan mengasosiasikan trait ke tipe data generic (sesuai kebutuhan).
+Repot kan? Tapi tenang, tidak usah khawatir, ada solusi agar tipe `T` bisa dimanfaatkan, yaitu dengan mengasosiasikan trait ke tipe data generic (sesuai kebutuhan).
 
 ### ◉ Contoh ke-1
 
@@ -212,9 +212,9 @@ Silakan gunakan sesuai preferensi dan kesepakatan tim. Kalau penulis lebih suka 
 ```rust
 fn do_something<T, U, V>(arg1: T, arg2: U, arg3: V) 
 where
-    T: some::traits:TraitA,
-    U: some::traits:TraitB + some::traits:TraitC + some::traits:TraitD,
-    V: some::traits:TraitA + some::traits:TraitD,
+    T: some::traits::TraitA,
+    U: some::traits::TraitB + some::traits::TraitC + some::traits::TraitD,
+    V: some::traits::TraitA + some::traits::TraitD,
 {
     // do something
 }
@@ -299,11 +299,11 @@ Kemudian coba gunakan struct `Point` untuk membuat satu atau dua variabel, lalu 
 fn main() {
     let num_one: Point<i32, f64> = Point { x: 502, y: 120, z: 4.5 };
     println!("{} {} {}", num_one.get_x(), num_one.get_y(), num_one.get_z());
-    // 502 120 4.5
+    // output ➜ 502 120 4.5
 
     let num_two: Point<f64, i32> = Point { x: 1.2, y: 4.3, z: 534 };
     println!("{} {} {}", num_two.get_x(), num_two.get_y(), num_two.get_z());
-    // 1.2 4.3 534
+    // output ➜ 1.2 4.3 534
 }
 ```
 

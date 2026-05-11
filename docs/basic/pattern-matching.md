@@ -30,7 +30,7 @@ Pada contoh di atas, `time` dicek nilainya menggunakan keyword `match` dengan 4 
 - Jika value-nya `morning`, tampilkan pesan `isuk`
 - Jika value-nya `afternoon`, tampilkan pesan `awan`
 - Jika value-nya `evening`, tampilkan pesan `bengi`
-- Jika tidak ada yang cocok dari klausus di atas, maka tampilkan pesan `mbuh kapan`
+- Jika tidak ada yang cocok dari klausul di atas, maka tampilkan pesan `mbuh kapan`
 
 Contoh di atas adalah ekuivalen dengan seleksi kondisi `if` berikut:
 
@@ -97,7 +97,7 @@ Variabel `value` nilainya adalah `Some(5)`. Variabel tersebut dimasukkan ke bloc
 - Jika `value` nilainya `Some(1)`, tampilkan pesan `one`
 - Jika `value` nilainya `Some(2)`, tampilkan pesan `two`
 - Jika `value` nilainya `Some(x)`, tampilkan pesan `{x} greater than two`
-- Jika tidak ada yang cocok dari klausus di atas, maka tampilkan pesan `none`
+- Jika tidak ada yang cocok dari klausul di atas, maka tampilkan pesan `none`
 
 Tipe `Option` pasti berpotensi berisi `Some` atau `None`, tidak mungkin selainnya. Klausul terakhir di contoh di atas (`_ => println!("none")`) terpenuhi ketika nilai `value` adalah `None`. Pada konteks ini mengganti `_` dengan `None` menjadikan klausul pada pattern matching tetap lengkap.
 
@@ -135,7 +135,7 @@ match value {
 - Jika `value` nilainya `1` atau `2`, tampilkan pesan `one or two`
 - Jika `value` nilainya antara `3` hingga `5`, tampilkan pesan `three through five`
 - Jika `value` nilainya `6`, tampilkan pesan `six`
-- Jika tidak ada yang cocok dari klausus di atas, maka tampilkan pesan `other number`
+- Jika tidak ada yang cocok dari klausul di atas, maka tampilkan pesan `other number`
 
 Pattern di atas juga bisa diterapkan dalam variabel enum value, contohnya:
 
@@ -288,7 +288,7 @@ match p {
 
 - Jika `p.y` nilainya `0`, tampilkan pesan `x axis at {x}`
 - Jika `p.x` nilainya `0`, tampilkan pesan `y axis at {y}`
-- Jika tidak ada yang cocok dari klausus di atas, maka tampilkan pesan `axis: ({x}, {y})`
+- Jika tidak ada yang cocok dari klausul di atas, maka tampilkan pesan `axis: ({x}, {y})`
 
 Operasi destructuring hasilnya pasti sukses, karena alasan ini keyword `match` boleh tidak digunakan. Contohnya bisa dilihat pada kode berikut, variabel `p` di-*destructure* ke variabel baru yaitu `x` dan `y`.
 
@@ -368,7 +368,7 @@ println!("first number: {first}");
 println!("last number: {last}");
 ```
 
-Opeartor `..` hanya bisa digunakan pada statement destructuring di posisi tengah, awal, atau akhir (pilih salah satu). Contoh:
+Operator `..` hanya bisa digunakan pada statement destructuring di posisi tengah, awal, atau akhir (pilih salah satu). Contoh:
 
 ```rust
 let (first, .., last) = numbers;

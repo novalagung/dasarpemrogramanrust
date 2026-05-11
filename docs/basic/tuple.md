@@ -86,7 +86,7 @@ tuple_b.3 = true;
 
 ### ◉ Packing tuple
 
-Adalah cara pembuatan tuple yang mana nilai elemenya bersumber dari variabel lain.
+Adalah cara pembuatan tuple yang mana nilai elemennya bersumber dari variabel lain.
 
 ```rust
 let name = "grayson";
@@ -100,7 +100,7 @@ println!("age     : {:?}", tuple_c.1);
 println!("hobbies : {:?}", tuple_c.2);
 ```
 
-> Istilah packing tuple bukan resmi dari official Rust. Istilah ini penulis buat sendiri.
+> Istilah packing tuple bukan istilah resmi dari dokumentasi Rust. Istilah ini penulis buat sendiri.
 
 ### ◉ Unpacking tuple
 
@@ -129,7 +129,7 @@ let tuple_d = ();
 println!("{:?}", tuple_d);
 ```
 
-## A.15.5. Tuple Structs
+## A.15.5. Tuple Struct
 
 Pembahasan mengenai tuple structs dibahas pada chapter [Struct](/basic/struct#a237-tuple-struct).
 

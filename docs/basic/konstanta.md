@@ -49,7 +49,7 @@ Pertanyaan, bedanya apa dengan konstanta yang dibuat via keyword `const`? secara
 
 ## A.7.3. *Naming convention* konstanta
 
-Sesuai anjuran di [halaman dokumentasi Rust](https://rust-lang.github.io/api-guidelines/naming.html),[*Naming convention*](https://rust-lang.github.io/api-guidelines/naming.html), aturan penulisan konstanta adalah menggunakan **screaming snake case**. Nama konstanta dituliskan dalam huruf kapital dengan separator tanda garis bawah atau underscore (`_`). Contohnya seperti: `NUMBER`, `SOME_DATA`, `CONFIGURATION_ENV_NAME`, dll.
+Sesuai anjuran di [halaman dokumentasi Rust](https://rust-lang.github.io/api-guidelines/naming.html), [*Naming convention*](https://rust-lang.github.io/api-guidelines/naming.html), aturan penulisan konstanta adalah menggunakan **screaming snake case**. Nama konstanta dituliskan dalam huruf kapital dengan separator tanda garis bawah atau underscore (`_`). Contohnya seperti: `NUMBER`, `SOME_DATA`, `CONFIGURATION_ENV_NAME`, dll.
 
 ---
 

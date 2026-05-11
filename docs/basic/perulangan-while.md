@@ -6,7 +6,7 @@ sidebar_label: A.10. Perulangan ➜ while
 
 Di Rust ada beberapa cara untuk melakukan perulangan, salah satunya adalah dengan menggunakan keyword `while`, dan pada chapter ini kita akan mempelajarinya.
 
-Perulangan sendiri merupakan teknik untuk mengulang-ulang eksekusi blok kode dengan kondisi tertentu. Perulangan akan terus menerus dieksekusi ketika kondisi perulangan nilainya `true`, dan hanya akan berhenti kita nilainya `false`.
+Perulangan sendiri merupakan teknik untuk mengulang-ulang eksekusi blok kode dengan kondisi tertentu. Perulangan akan terus menerus dieksekusi ketika kondisi perulangan nilainya `true`, dan hanya akan berhenti ketika nilainya `false`.
 
 ## A.10.1. Keyword `while`
 
@@ -104,7 +104,7 @@ fn main() {
 
 Ada beberapa keyword baru dipergunakan pada source code di atas. Untuk sekarang coba jalankan terlebih dahulu program yang baru dibuat, kemudian stop. Text `nilai: {i}` akan muncul di console setiap satu detik, dan hanya akan berhenti ketika program di stop.
 
-Selanjutnya kita akan beberapa sintaks baru di atas.
+Selanjutnya kita akan bahas beberapa sintaks baru di atas.
 
 ### ◉ Keyword `use` dan module dalam Rust
 

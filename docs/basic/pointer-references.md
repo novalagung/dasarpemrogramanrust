@@ -51,7 +51,7 @@ Coba jalankan program kemudian lihat hasilnya. Value muncul sesuai dengan yang d
 
 ![pointer & reference](img/pointer-references-1.png)
 
-Seperti yang sudah dijelaskan di awal bahwa variabel pointer isinya adalah alamat memory. Penulisannya dalam notasi heksadesimal diawali dengan karakter `0x`. Contohnya adalah nilai `0xa3bbeff6dc` yang merupakan alamat memory, yang alamat tersebut adalah reference ke  pemilik data sebenarnya (yaitu variabel `number`).
+Seperti yang sudah dijelaskan di awal bahwa variabel pointer isinya adalah alamat memory. Penulisannya dalam notasi heksadesimal diawali dengan karakter `0x`. Contohnya adalah nilai `0xa3bbeff6dc` yang merupakan alamat memory, yang alamat tersebut adalah reference ke pemilik data sebenarnya (yaitu variabel `number`).
 
 > Di environment lokal masing-masing, alamat memory yang muncul sangat mungkin berbeda karena alokasi adalah random
 
@@ -100,9 +100,9 @@ Pada gambar di atas bisa dilihat, variabel `pointer_number` merupakan reference 
 
 Ok, lalu kenapa muncul error? Di gambar terlihat ada garis merah dan popup pesan error muncul, padahal tidak ada yang salah dengan statement-nya.
 
-Penyebab erronya bukan dari statement tersebut, tetapi pada baris statement pengambilan reference variabel `number`. Statement `&number` artinya adalah mengambil reference dari variabel `number`. Di atas sempat kita bahas bahwa *by default* sebuah reference tidak bisa diubah nilainya (*immutable*), dan ini adalah penyebab error yang dialami.
+Penyebab errornya bukan dari statement tersebut, tetapi pada baris statement pengambilan reference variabel `number`. Statement `&number` artinya adalah mengambil reference dari variabel `number`. Di atas sempat kita bahas bahwa *by default* sebuah reference tidak bisa diubah nilainya (*immutable*), dan ini adalah penyebab error yang dialami.
 
-> Silakan perhatikan pesan di popup error message agar mudah untuk tau di mana sumber masalahnya.
+> Silakan perhatikan pesan di popup error message agar mudah untuk tahu di mana sumber masalahnya.
 
 Perubahan isi nilai variabel `number` tidak menghasilkan error, hal ini karena number adalah variabel `number` adalah mutable. Sedangkan operasi perubahan nilai variabel `*pointer_number` pada contoh di atas, dianggap sebagai error karena variabel `pointer_number` reference-nya adalah bukan mutable (meskipun reference diperoleh dari variabel `number` yang notabene mutable).
 
@@ -220,7 +220,7 @@ fn generate_random_number() -> i32 {
 }
 ```
 
-Pada sederhana di atas, ada sebuah variable mutable bernama `number` yang dideklarasikan. Variabel tersebut kemudian diakses *mutable reference*-nya untuk dijadikan argumen statement pemanggilan fungsi `change_value`.
+Pada contoh sederhana di atas, ada sebuah variable mutable bernama `number` yang dideklarasikan. Variabel tersebut kemudian diakses *mutable reference*-nya untuk dijadikan argumen statement pemanggilan fungsi `change_value`.
 
 Di dalam fungsi `change_value`, disiapkan 1 buah angka random hasil pemanggilan fungsi `generate_random_number`, yang angka tersebut kemudian dijadikan sebagai nilai baru variable mutable reference yang mengarah ke `number`. Perubahan dalam fungsi `change_value` akan mempengaruhi data variabel `number`, karena reference-nya adalah sama.
 

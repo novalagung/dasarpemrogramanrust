@@ -14,7 +14,7 @@ Berikut merupakan list operator untuk operasi aritmatika beserta contoh penerapa
 |:-:|-|
 | `+` | penambahan |
 | `-` | pengurangan |
-| `*` | pengalian |
+| `*` | perkalian |
 | `/` | pembagian |
 | `%` | *modulus* atau sisa hasil bagi |
 

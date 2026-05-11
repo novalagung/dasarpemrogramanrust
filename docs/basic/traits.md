@@ -125,7 +125,7 @@ Kita pilih trait `std::fmt::Debug` milik Rust standard library untuk belajar car
 
 Kegunaan dari trait ini adalah: jika diimplement ke tipe data tertentu maka data dengan tipe tersebut bisa di-print via macro `println` atau macro printing lainnya, dengan menggunakan formatted print `{:?}`.
 
-Trait `Debug` ini diimplementasikan ke pada banyak tipe data yang di Rust standard library, baik itu tipe primitif maupun non-primitif. Contohnya bisa dilihat pada kode berikut:
+Trait `Debug` ini diimplementasikan pada banyak tipe data yang di Rust standard library, baik itu tipe primitif maupun non-primitif. Contohnya bisa dilihat pada kode berikut:
 
 ```rust
 let number = 12;

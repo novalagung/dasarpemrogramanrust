@@ -106,7 +106,7 @@ Catatan saja, variabel yang dideklarasikan dengan predefined value adalah numeri
 
 ## A.5.3. Floating point
 
-Floating point adalah tipe data yang mendukung nilai dibelakang koma, contohnya seperti `3.14`. Di Rust ada dua tipe data floating point, yaitu `f32` dan `f64`. Contoh penggunaan:
+Floating point adalah tipe data yang mendukung nilai di belakang koma, contohnya seperti `3.14`. Di Rust ada dua tipe data floating point, yaitu `f32` dan `f64`. Contoh penggunaan:
 
 ```rust
 let fp1: f32 = 3.14;
@@ -116,7 +116,7 @@ println!("{} | {:.5}", fp1, fp2);
 // output ➜ 3.14 | 3.14159
 ```
 
-O iya, jumlah digit di belakang koma bisa diatur saat diprint menggunakan `println`. Caranya dengan menggunakan notasi `{:.n}`. Sebagai contoh `{:.5}` maka akan menampilkan hanya 5 digit dibelakang koma.
+O iya, jumlah digit di belakang koma bisa diatur saat diprint menggunakan `println`. Caranya dengan menggunakan notasi `{:.n}`. Sebagai contoh `{:.5}` maka akan menampilkan hanya 5 digit di belakang koma.
 
 > Dalam penerapan definisi variabel sekaligus nilai, jika nilai dituliskan dalam desimal seperti contohnya `24`, maka tipe data variabel penampung adalah numerik.
 >

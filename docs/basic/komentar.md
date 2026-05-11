@@ -33,7 +33,7 @@ fn main() {
 }
 ```
 
-Lalu run program tersebut. O iya, untuk kawan-kawan yang menggunakan editor VSCode dengan ekstensi `rust-analyzer` ter-install. Ada shortcut untuk run program yaitu dengan klik tombol `▶ Run` di atas definisi fungsi `main`.
+Lalu run program tersebut. O iya, untuk kawan-kawan yang menggunakan editor VS Code dengan ekstensi `rust-analyzer` terpasang. Ada shortcut untuk run program yaitu dengan klik tombol `▶ Run` di atas definisi fungsi `main`.
 
 ![komentar rust](img/komentar-1.png)
 

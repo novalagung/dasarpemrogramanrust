@@ -91,7 +91,7 @@ fn func_name(param_a: i32, param_b: bool, param_c: &str) {
 // ...
 ```
 
-Kembali ke praktik, pada bagian ini kita akan buat sebuah fungsi bernama `greet_custom_message`. Fungsi ini tugasnya masih sama seperti seperti `greet` hanya saja pesan yang ditampilkan adalah sesuai dengan value parameter fungsi.
+Kembali ke praktik, pada bagian ini kita akan buat sebuah fungsi bernama `greet_custom_message`. Fungsi ini tugasnya masih sama seperti `greet` hanya saja pesan yang ditampilkan adalah sesuai dengan value parameter fungsi.
 
 ```rust
 fn greet_custom_message(name: &str, message: &str) {
@@ -199,7 +199,7 @@ Sekarang kita fokus ke kode yang sudah ditulis. Fungsi `calculate_box_volume2` k
 
 Kedua poin tersebut merupakan syarat untuk penerapan *return value* tanpa keyword `return`. Caranya kurang lebih adalah dengan menuliskan data nilai balik dengan tanpa keyword `return` dan di akhir statement tidak ditambahi tanda semicolon `;`.
 
-> Statement terakhir sebuah blok kode fungsi yang ditulis tanpa semicolon `;` disebut sebagai `tail` atau `body tail`.
+> Statement terakhir sebuah blok kode fungsi yang ditulis tanpa semicolon `;` disebut sebagai *tail expression*.
 
 ### ◉ Statemen sebagai *return value* tanpa keyword `return`
 

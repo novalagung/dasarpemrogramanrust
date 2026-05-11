@@ -148,7 +148,7 @@ Tidak semua jenis recoverable error harus berakhir dengan panic, ini penting unt
 
 - Error ketika ada inputan yang tidak valid, maka cukup direspon dengan pesan error saja.
 - Error karena ada operasi pembagian terhadap angka `0`, maka tidak perlu menggunakan panic.
-- Error karena file konfigurasi yang tidak ditemukan saat eksekusi program, ideal menggunakan panic.
+- Error karena data penting yang seharusnya selalu ada ternyata corrupt atau hilang (seperti file database internal rusak saat program berjalan) maka ideal untuk menggunakan panic.
 
 Tergantung tingkat *severity* atau keseriusan error, silakan tentukan prosedur penanganannya seperti apa sesuai kebutuhan, juga jangan lupa pertimbangkan implikasinya.
 

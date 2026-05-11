@@ -34,7 +34,7 @@ if result_a {
 
 ![seleksi kondisi](img/seleksi-kondisi-if-1.png)
 
-Pada kode di atas ada dua buah blok kode `if`. Yang pertama mengecek hasil ekspresi logika `apakah variabel number_a di bawah 5?`. Jika hasilnya benar atau `true` maka blok kode setelahnya yang diapit tanda kurung kurawal akan dieksekusi, hasilnya menampilkan tulisan `angka adalah di bawah 5`.
+Pada kode di atas ada dua buah blok kode `if`. Yang pertama mengecek hasil ekspresi logika `apakah variabel number_a di bawah 5?`. Jika hasilnya benar atau `true` maka blok kode setelahnya yang diapit tanda kurung kurawal akan dieksekusi, hasilnya menampilkan tulisan `number_a adalah di bawah 5`.
 
 Blok kode `if` kedua adalah mengecek nilai `bool` variabel `result_a`. Variabel `result_a` sendiri isinya berasal dari ekspresi logika `apakah variabel number_a lebih besar atau sama dengan 5?`. Jika hasilnya `true` maka blok kode setelahnya (yang diapit tanda kurung kurawal) dieksekusi. Namun, pada contoh di atas, hasilnya adalah `false`, karena variabel `number_a` nilainya adalah tidak lebih besar atau sama dengan 5, dengan demikian blok kode tidak dieksekusi.
 

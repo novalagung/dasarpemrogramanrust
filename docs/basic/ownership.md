@@ -326,7 +326,7 @@ Ada lagi solusi lainnya yang bisa digunakan, yaitu dengan memanfaatkan method `c
 
 ## A.34.7. Clone data
 
-Semua tipe data yang mengadopsi *move semantics* meng-implement trait `std::clone::Clone`. Trait ini memiliki method bernama `clone` yang gunanya adalah menduplikasi atau clonging data. Cukup panggil saja method tersebut, maka data akan ter-cloning.
+Semua tipe data yang mengadopsi *move semantics* meng-implement trait `std::clone::Clone`. Trait ini memiliki method bernama `clone` yang gunanya adalah menduplikasi atau cloning data. Cukup panggil saja method tersebut, maka data akan ter-cloning.
 
 > Lebih jelasnya mengenai traits dibahas pada chapter [Traits](/basic/traits).
 
@@ -354,7 +354,7 @@ Kita sebenarnya sudah menerapkannya beberapa kali pada chapter yang lalu, tapi k
 
 ## A.34.8. Ownership pada data literal
 
-Kita akan bahas topik ini pada chapter berikutnya, yaitu chapter [Borrowing](/basic/borrowing#a347-owner-dan-borrower-pada-literal).
+Kita akan bahas topik ini pada chapter berikutnya, yaitu chapter [Borrowing](/basic/borrowing#a357-owner-dan-borrower-data-literal).
 
 ## A.34.9. *Move semantics* pada macro `println`
 

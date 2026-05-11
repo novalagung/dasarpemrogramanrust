@@ -22,6 +22,8 @@ edition = "2021"
 chrono = "0.4.44"
 ```
 
+> Silakan gunakan versi terbaru crate `chrono` yang tersedia di [crates.io](https://crates.io/crates/chrono)
+
 ## A.52.2. Tipe data `DateTime`
 
 `chrono` menyediakan cukup banyak tipe data untuk merepresentasikan informasi tanggal dan waktu, tetapi yang paling penting untuk diketahui dan dipahami ada dua, yaitu:
@@ -186,7 +188,8 @@ let sample_date_in_local_tz = Local.from_local_datetime(&naive_date_time).unwrap
 println!("sample date 1 (in utc):      {sample_date_in_utc}");
 println!("sample date 2 (in local_tz): {sample_date_in_local_tz}");
 
-// output ➜
+// output ⬇️
+//
 // sample date 1 (in utc):      2018-04-28 03:15:22 UTC
 // sample date 2 (in local_tz): 2018-04-28 03:15:22 +07:00
 ```
@@ -215,7 +218,8 @@ println!("date (in utc):   {date_in_utc}");
 let date2_in_local_tz = DateTime::<Local>::from(date_in_utc);
 println!("date (in local): {date2_in_local_tz}");
 
-// output ➜
+// output ⬇️
+//
 // date (in local): 2023-03-02 17:33:37.750279900 +07:00
 // date (in utc):   2023-03-02 10:33:37.750279900 UTC
 // date (in local): 2023-03-02 17:33:37.750279900 +07:00
@@ -275,23 +279,23 @@ Contoh pengaplikasian keduanya bisa dilihat pada kode berikut:
 ```rust
 let date1: DateTime<Local> = Local::now();
 println!("date1 (in local):  {}", date1);
-// date1 (in local):  2023-03-02 18:13:39.954831600 +07:00
+// output ➜ date1 (in local):  2023-03-02 18:13:39.954831600 +07:00
 
 let str_from_date1 = date1.format("%Y-%m-%d %H:%M:%S %z").to_string();
 println!("date1 (in string): {}", str_from_date1);
-// date1 (in string): 2023-03-02 18:13:39 +0700
+// output ➜ date1 (in string): 2023-03-02 18:13:39 +0700
 
 let date1_from_str = Local.datetime_from_str(&str_from_date1, "%Y-%m-%d %H:%M:%S %z").unwrap();
 println!("date1 (in local):  {}", date1_from_str);
-// date1 (in local):  2023-03-02 18:13:39 +07:00
+// output ➜ date1 (in local):  2023-03-02 18:13:39 +07:00
 
 let date2_from_str = Utc.datetime_from_str("03/01/2023 13:04 +0000", "%m/%d/%Y %H:%M %z").unwrap();
 println!("date2 (in utc):    {}", date2_from_str);
-// date2 (in utc):    2023-03-01 13:04:00 UTC
+// output ➜ date2 (in utc):    2023-03-01 13:04:00 UTC
 
 let str_from_date2 = date2_from_str.format("%Y-%m-%d %H:%M:%S %z").to_string();
 println!("date2 (in string): {}", str_from_date2);
-// date2 (in string): 2023-03-01 13:04:00 +0000
+// output ➜ date2 (in string): 2023-03-01 13:04:00 +0000
 ```
 
 ## A.52.9. DateTime formatting syntax

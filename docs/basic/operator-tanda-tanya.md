@@ -183,7 +183,7 @@ Ketika operasi menghasilkan error, eksekusi blok fungsi menjadi terhenti dan err
 
 > Inilah bagaimana penanganan error di Rust dilakukan.
 >
-> Lebih detailnya mengenai *error propagation* atau *error propagation* dibahas pada chapter [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling).
+> Lebih detailnya mengenai *error propagation* dibahas pada chapter [Error ➜ Recoverable Error & Error Handling](/basic/recoverable-error-handling).
 
 Coba sekarang ubah lagi kode yang sudah ditulis, kita coba cek error apa yang muncul saat pemanggilan fungsi `do_some_math()`. Ubah isi fungsi `main()` dengan menambahkan keyword `match` untuk mengecek nilai balik eksekusi fungsi `do_some_math()`. Kode setelah diubah:
 
@@ -242,7 +242,7 @@ fn main() -> Result<(), io::Error> {
 Penjelasan:
 - Fungsi `fs::read_to_string` mengembalikan `Result<String, io::Error>`.
 - Return type `main()` diubah menjadi `Result<(), io::Error>` agar sesuai dengan error yang mungkin dihasilkan oleh `?`.
-- `Ok(())` di akhir fungsi adalah return value yang menandakan sukses. `()` adalah *unit type* (ekivalen dengan void di bahasa lain).
+- `Ok(())` di akhir fungsi adalah return value yang menandakan sukses. `()` adalah *unit type* (ekuivalen dengan void di bahasa lain).
 
 Dengan pattern ini, kita bisa menggunakan `?` langsung di `main()` tanpa perlu fungsi wrapper.
 

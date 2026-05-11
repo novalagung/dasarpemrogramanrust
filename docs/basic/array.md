@@ -306,12 +306,14 @@ for sub_arr in data_arr {
     println!();
 }
 
+// output ⬇️
+//
 // salad, fried rice,
 // apple, coconut,
 // spinach, jalapeno,
 ```
 
-Variabel `data_arr` pada contoh di atas bertipe data`[[&str; 2]; 3]`, yang artinya adalah sebuah array dengan size 3, dengan isi elemen adalah juga array dengan size 2. Selalu ingat bahwa size array adalah fixed.
+Variabel `data_arr` pada contoh di atas bertipe data `[[&str; 2]; 3]`, yang artinya adalah sebuah array dengan size 3, dengan isi elemen adalah juga array dengan size 2. Selalu ingat bahwa size array adalah fixed.
 
 ---
 

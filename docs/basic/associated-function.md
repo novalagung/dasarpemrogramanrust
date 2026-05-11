@@ -4,7 +4,7 @@ title: A.24. Associated Function
 sidebar_label: A.24. Associated Function
 ---
 
-Chapter ini membahas tentang *associated function*. Kita akan belajar apa itu associated function dan apa perbedannya dengan fungsi biasa.
+Chapter ini membahas tentang *associated function*. Kita akan belajar apa itu associated function dan apa perbedaannya dengan fungsi biasa.
 
 ## A.24.1. *Associated item* & *associated function*
 
@@ -216,7 +216,7 @@ Struct adalah salah satu dari beberapa item yang ada di Rust. Struct bisa saja b
 
 Sekarang, kode yang sudah dipraktikkan di atas akan kita refactor. Struct `LegoSet` beserta associated items-nya dipindah ke module file bernama `lego`, dengan itu maka pemanggilan struct tersebut harus menggunakan path `lego::LegoSet`.
 
-Kurang lebih struktur package mendi seperti ini:
+Kurang lebih struktur package menjadi seperti ini:
 
 ```bash title="package source code structure"
 my_package

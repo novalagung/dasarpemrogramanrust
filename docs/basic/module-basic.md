@@ -14,7 +14,7 @@ Di Rust, module memiliki hierarki (biasa disebut dengan *module tree*) yang *roo
 
 > Di sini pembahasan akan fokus pada penerapan module dalam *binary crate*. Kita belum masuk ke pembahasan tentang *library crate*.
 
-Rust memiliki 2 jenis modul, yaitu *normal module* dan *inline module*. Pembahasan dimulai dengan normal module terlebih dahulu.
+Rust memiliki 2 jenis module, yaitu *normal module* dan *inline module*. Pembahasan dimulai dengan normal module terlebih dahulu.
 
 Keyword `mod` digunakan untuk mendefinisikan/mendaftarkan sebuah module. Nama module menjadi path di mana isi module atau *module item* harus berada. Sebagai contoh:
 
@@ -316,7 +316,7 @@ Hingga pembahasan pada praktik submodule, kita telah belajar penerapan module de
 - Penggunaan normal module dalam binary crate
 - Pembuatan module dengan nama `my_io`, dengan isi/item ditulis pada file `my_io.rs`
 - Pembuatan module dengan nama `my_number`, dengan isi/item ditulis pada file `my_number/mod.rs`
-- Pembuatan submodule dengan nama `my_number/conversion_utility`, dengan isi/item ditulis pada file `my_number/conversion_utility.rs`.
+- Pembuatan submodule dengan nama `my_number/conversion_utility`, dengan isi/item ditulis pada file `my_number/conversion_utility/mod.rs`.
 - Penggunaan keyword `pub` pada fungsi agar bisa diakses dari luar module
 - Penggunaan keyword `pub` pada submodule agar bisa diakses dari luar parent module
 - Pengaksesan item milik module, yaitu: `my_io::read_entry`, `my_number::conversion_utility::string_to_number`, dan `my_number::is_odd_number`

@@ -43,7 +43,7 @@ enum Superhero {
 
 Di contoh bisa dilihat, `Superhero` adalah tipe data enum baru. Dari tipe data tersebut dibuat 4 buah enum values, yaitu `Superman`, `OmniMan`, `Homelander`, dan `Hyperion`.
 
-Pada pembuatan konstanta, tipe data beserta value-nya harus ditentukan di awal. Pada enum, yang perlu didefinisikan adalah tipe data enum-nya (sebagai contoh `Superhero`) kemudian diikut dengan enum value yang dituliskan tanpa pengisian nilai.
+Pada pembuatan konstanta, tipe data beserta value-nya harus ditentukan di awal. Pada enum, yang perlu didefinisikan adalah tipe data enum-nya (sebagai contoh `Superhero`) kemudian diikuti dengan enum value yang dituliskan tanpa pengisian nilai.
 
 - Definisi variabel dengan isi konstanta:
 
@@ -128,7 +128,7 @@ fn main() {
             println!("your food taste is quite ... unique");
         },
         Food::PizzaNanas => {
-            println!("it's morally wrong to have pineaple on top of pizza");
+            println!("it's morally wrong to have pineapple on top of pizza");
         },
         Food::EsKrimIkanMujaer => {
             println!("I don't know what to say");
@@ -168,7 +168,7 @@ Kembali ke contoh program, variabel `makanan_favorit` dicek nilainya menggunakan
 - Jika nilainya adalah `Food::PizzaNanas`, muncul pesan:
 
     ```rust
-    "it is morally wrong to have pineaple on top of pizza"
+    "it is morally wrong to have pineapple on top of pizza"
     ```
 
 - Jika nilainya adalah `Food::EsKrimIkanMujaer`, muncul pesan:
@@ -223,7 +223,7 @@ fn main() {
             println!("your food taste is quite ... unique");
         },
         Food::PizzaNanas => {
-            println!("it's morally wrong to have pineaple on top of pizza");
+            println!("it's morally wrong to have pineapple on top of pizza");
         },
         Food::EsKrimIkanMujaer => {
             println!("I don't know what to say. this should be illegal");
@@ -279,7 +279,7 @@ fn main() {
             println!("your food taste is quite ... unique");
         },
         Food::PizzaNanas => {
-            println!("it's morally wrong to have pineaple on top of pizza");
+            println!("it's morally wrong to have pineapple on top of pizza");
         },
         Food::EsKrimIkanMujaer => {
             println!("I don't know what to say. this should be illegal");
@@ -326,7 +326,7 @@ match makanan_favorit {
         println!("your food taste is quite ... unique");
     },
     Food::PizzaNanas => {
-        println!("it's morally wrong to have pineaple on top of pizza");
+        println!("it's morally wrong to have pineapple on top of pizza");
     },
     _ => {
         println!("never heard about that food");

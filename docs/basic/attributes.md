@@ -482,7 +482,7 @@ Pada contoh di atas, tempat di mana enum dideklarasikan dan digunakan adalah mas
 
 ## A.51.6. Attribute *modules*
 
-Aturan manajemen di Rust cukup ketat, dan sudah dibahas secara mendetal pada chapter [Module System ➜ Module](/basic/module-basic), yang intinya adalah ada dua cara pembuatan module:
+Aturan manajemen di Rust cukup ketat, dan sudah dibahas secara mendetail pada chapter [Module System ➜ Module](/basic/module-basic), yang intinya adalah ada dua cara pembuatan module:
 
 - Cara ke-1: dengan mendefinisikan module pada file bernama `nama_module.rs`
 - Cara ke-2: dengan mendefinisikan module pada file bernama `nama_module/mod.rs`
@@ -548,7 +548,7 @@ Lebih detailnya mengenai attribute testing dibahas pada chapter [Testing](#/wip/
 
 Lebih detailnya mengenai attribute macros dibahas pada chapter [Macro](#/wip/macro).
 
-## A.51.9 Attribute lainnya
+## A.51.9. Attribute lainnya
 
 Rust memiliki cukup banyak attribute yang list-nya bisa dilihat pada link ini https://doc.rust-lang.org/reference/attributes.html.
 

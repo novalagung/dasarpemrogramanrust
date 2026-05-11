@@ -4,7 +4,7 @@ title: A.55. Error ➜ Recoverable Error & Error Handling
 sidebar_label: A.55. Error ➜ Recoverable Error & Error Handling
 ---
 
-Chapter ini merupakan kelanjutan dari chapter sebelumnya tentang pembahasan topic error. Kali ini fokus kita lebih ke **recoverable error** dan penanganannya (*error handling* / *error propagation*).
+Chapter ini merupakan kelanjutan dari chapter sebelumnya tentang pembahasan topik error. Kali ini fokus kita lebih ke **recoverable error** dan penanganannya (*error handling* / *error propagation*).
 
 Best practice penanganan error di Rust adalah dengan mengkombinasikan keyword `match` dengan tipe data `Result<T, E>`. Untuk penerapannya sendiri sebenarnya sudah cukup sering dipraktikkan di chapter-chapter sebelumnya.
 
@@ -203,7 +203,7 @@ fn run_program() -> Result<(), String> {
 fn main() {
     // error handling using basic implementation of keyword match
     match run_program() {
-        Err(err) => panic!("ERRROR {:?}", err),
+        Err(err) => panic!("ERROR {:?}", err),
         Ok(_) => {}
     }
 }
@@ -461,7 +461,7 @@ Ok, bagian tulis menulis kode sudah selesai. Lanjut ke fase testing. Jalankan pr
 
     ![Recoverable Error & Error Handling](img/recoverable-error-handling-4.png)
 
-Hasilnya, mantab.
+Hasilnya, mantap.
 
 ---
 

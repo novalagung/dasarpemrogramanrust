@@ -4,7 +4,7 @@ title: A.19. Module System ➜ Package & Crate
 sidebar_label: A.19. Module System ➜ Package & Crate
 ---
 
-Chapter ini membahas mengenai konsep package dan path dalam Rust programming. Pembelajaran dimulai dari pembahasan mengenai konsep crate terlebih dahulu, kemudian masuk ke package.
+Chapter ini membahas mengenai konsep package dan crate dalam Rust programming. Pembelajaran dimulai dari pembahasan mengenai konsep crate terlebih dahulu, kemudian masuk ke package.
 
 ## A.19.1. Rust Crate
 

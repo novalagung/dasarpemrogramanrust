@@ -4,7 +4,7 @@ title: A.16. Tipe Data ➜ Vector
 sidebar_label: A.16. Vector
 ---
 
-Pada chapter ini kita akan belajar tetang tipe data *Vector*. Vector adalah tipe data seperti array tapi dinamis. Dinamis di sini artinya bisa bertambah dan berkurang kapanpun sesuai kebutuhan.
+Pada chapter ini kita akan belajar tentang tipe data *Vector*. Vector adalah tipe data seperti array tapi dinamis. Dinamis di sini artinya bisa bertambah dan berkurang kapanpun sesuai kebutuhan.
 
 Vector sangat mirip seperti array, yang karakteristiknya adalah tipe data elemen wajib sama, punya informasi size, elemennya bisa diakses atau diubah. Salah satu perbedaan vector dibanding array adalah jumlah elemen pada vector bisa bertambah lebih dari kapasitas yang sudah ditentukan.
 
@@ -164,7 +164,7 @@ println!("length: {}, capacity: {}", result_one.len(),  result_one.capacity());
 
 ![Vector](img/vector-8.png)
 
-Pada contoh di atas `result_one` adalah vector mutable dengan isi 3 elemen. Kemudian dideklarasikan `data_two` yang isinya juga vector 3 elemen. Vector `data_two` dimasukkan kedalam vector `result_one` dengan menggunakan method `append`, dengan ini maka isi `result_one` adalah gabungan dari `result_one` yang lama dan `data_two`.
+Pada contoh di atas `result_one` adalah vector mutable dengan isi 3 elemen. Kemudian dideklarasikan `data_two` yang isinya juga vector 3 elemen. Vector `data_two` dimasukkan ke dalam vector `result_one` dengan menggunakan method `append`, dengan ini maka isi `result_one` adalah gabungan dari `result_one` yang lama dan `data_two`.
 
 Proses append vector mengharuskan parameter method `append` diisi dengan *mutable reference* dari vector yang ingin dimasukkan. Cara untuk mengambil *mutable reference* adalah dengan menggunakan keyword `&mut`.
 
@@ -243,7 +243,7 @@ Keyword perulangan lainnya juga bisa digunakan.
 
 ## A.16.4. Ownership tipe data vector
 
-Salah satu atribut vector yang penting untuk diketahui adalah, pemilik data sebenarnya (atau owner). Agar lebih jelas, silakan coba terlebih dahulu kode berikut.
+Salah satu atribut vector yang penting untuk diketahui adalah, pemilik data sebenarnya (atau owner). Agar lebih jelas, silakan coba jalankan terlebih dahulu kode berikut.
 
 ```rust
 let vec_ten = vec![1, 2, 3];
@@ -317,7 +317,7 @@ Pada tipe data `Vec<T>`, ada method `pop` yang fungsinya menghapus data elemen t
 
 - method `pop_front` untuk hapus data elemen pertama atau paling kiri (indeks ke-0)
 - method `push_front` untuk menambah data dari kiri (indeks ke-0)
-- method `pop_back` untuk hapus data elemen pertama atau paling kanan (indeks terakhir)
+- method `pop_back` untuk hapus data elemen paling kanan (indeks terakhir)
 - method `push_back` untuk menambah data dari kanan (indeks terakhir)
 
 Contoh penerapan:

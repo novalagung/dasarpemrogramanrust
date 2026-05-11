@@ -307,7 +307,7 @@ let d = &false;
 let e = &String::from("rust");
 ```
 
-Ketiga variabel, semuanya adalah *borrower* atau peminjam data. Lalu siapa *owner*-nya? jawabannya adalah tidak ada, atau silakan juga simpulkan bawah data tersebut owner-nya adalah program.
+Ketiga variabel, semuanya adalah *borrower* atau peminjam data. Lalu siapa *owner*-nya? jawabannya adalah tidak ada, atau silakan juga simpulkan bahwa data tersebut owner-nya adalah program.
 
 Yang lebih penting untuk diurusi pada contoh di atas bukan siapa owner-nya, melainkan bagaimana caranya agar data pinjaman tersebut tidak di-dealokasi saat block kode selesai.
 

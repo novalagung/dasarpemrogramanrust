@@ -29,7 +29,6 @@ Slice bisa dibuat dari data array (atau dari tipe kolektif data lainnya) dengan 
 ```rust
 let sliced_value1 = &data[start_index..end_index]
 let sliced_value2 = &data[start_index..=end_index]
-let sliced_value3 = &data[start_index..end_index]
 ...
 ```
 
@@ -245,7 +244,7 @@ for score in &mut slice_f[..] {
 println!("(after)  scores2 : {:?}", scores2);
 ```
 
-Variabel `scores` dipinjam menggunakan `&mut` ke variabel baru bernama `slice_f`. Kemudian `slice_f` dipinjam juga sebagai mutable slice pada perulangan `for in`.
+Variabel `scores2` dipinjam menggunakan `&mut` ke variabel baru bernama `slice_f`. Kemudian `slice_f` dipinjam juga sebagai mutable slice pada perulangan `for in`.
 
 Setelah di-increment nilainya menggunakan `*score += 1` bisa dilihat hasil akhirnya juga mengubah nilai variabel `scores2` yang merupakan *owner* atau pemilik data sebenarnya.
 

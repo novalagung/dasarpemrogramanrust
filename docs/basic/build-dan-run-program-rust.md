@@ -44,7 +44,7 @@ cargo build --release
 
 ![Optimized build](img/build-dan-run-program-rust-2.png)
 
-Untuk release, file binary berada dalam path `target/release`. File binary nya adalah optimized, size nya lebih kecil. Mungkin untuk program `hello world` tidak akan signifikan bedanya, tapi untuk project real sangat dianjurkan untuk menggunakan optimized build.
+Untuk release, file binary berada dalam path `target/release`. File binary nya adalah optimized, size-nya lebih kecil. Mungkin untuk program `hello world` tidak akan signifikan bedanya, tapi untuk project real sangat dianjurkan untuk menggunakan optimized build.
 
 ## A.2.3. Command `rustc`
 

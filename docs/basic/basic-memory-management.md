@@ -20,15 +20,15 @@ GC adalah metode manajemen memori otomatis pada bahasa pemrograman. GC memiliki 
 
 Proses dealokasi pada GC terjadi di belakang layar secara asynchronous.
 
-Beberapa bahasa pemrograman yang menerapkan GC di antara adalah Java, C#, Go, Lisp, dan banyak bahasa lainnya.
+Beberapa bahasa pemrograman yang menerapkan GC di antaranya adalah Java, C#, Go, Lisp, dan banyak bahasa lainnya.
 
 ### ◉ Automatic reference counting (ARC)
 
-ARC adalah metode manajemen memori yang diterapkan pada bahasa Objective-C dan Swift. Cara ARC me-manage memory adalah dengan mencatat *reference* object dan segala aktifitas yang terjadi pada object tersebut.
+ARC adalah metode manajemen memori yang diterapkan pada bahasa Objective-C dan Swift. Cara ARC me-manage memory adalah dengan mencatat *reference* object dan segala aktivitas yang terjadi pada object tersebut.
 
 Di ARC, ada satuan yang disebut dengan *retain count* yang merupakan representasi jumlah banyaknya variabel atau object yang memegang suatu *reference*. Ketika *reference* sudah pindah ke luar scope atau dihapus isinya dan dilihat pada catatan rupanya tidak ada variabel yang memegang *reference* tersebut, maka dilakukan proses dealokasi memory.
 
-Dalam bahasa yang menerapkan ARC, programmer dianjurkan untuk perhatian dan bijak dalam pengalokasian variabel beserta nilainya. Mana data yang diperlukan untuk di-retain secara *strong* dan mana yang tidak, harus pas sesuai dengan kebutuhan. Jika tidak hati-hati maka program mempunyai resiko lebih tinggi untuk menemui error *deadlocks* ataupun *memory leaks* (yang juga akan dibahas pada chapter ini).
+Dalam bahasa yang menerapkan ARC, programmer dianjurkan untuk berhati-hati dan bijak dalam pengalokasian variabel beserta nilainya. Mana data yang diperlukan untuk di-retain secara *strong* dan mana yang tidak, harus pas sesuai dengan kebutuhan. Jika tidak hati-hati maka program mempunyai resiko lebih tinggi untuk menemui error *deadlock* ataupun *memory leaks* (yang juga akan dibahas pada chapter ini).
 
 ### ◉ Manual memory management
 
@@ -169,7 +169,7 @@ Ok, lanjut ke block fungsi `main` berikutnya, yaitu `let a = 4`. Saat dipanggil 
 | <span style={{color: '#2e8555'}}>**3**</span> | <span style={{color: '#2e8555'}}>**a**</span> | <span style={{color: '#2e8555'}}>**4**</span> | <span style={{color: '#2e8555'}}>**milik fungsi `main()`**</span> |
 | 0 | x | 24 | milik fungsi `main()` |
 
-Kemudian sampai di statement terakhir fungsi `main`. Ketika `let b = 14` dipanggil maka ada penambahan data baru pada stack frame pertama.
+Kemudian sampai di statement terakhir fungsi `main`. Ketika `let b = 18` dipanggil maka ada penambahan data baru pada stack frame pertama.
 
 | No. | Variabel | Nilai | *Stack frame* |
 |:-:|:-:|:-:|:-|

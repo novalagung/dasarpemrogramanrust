@@ -230,7 +230,7 @@ let data_vec: Vec<i32> = vec![1, 2, 3, 4];
 
 let result: Vec<&i32> = data_vec.iter().collect();
 println!("{:?}", result);
-// [1, 2, 3, 4]
+// output ➜ [1, 2, 3, 4]
 ```
 
 Method `iter` menghasilkan object `Iterator` yang menampung reference `&T` setiap element slice. Hal ini membuat penerapan method `collect` menghasilkan data bertipe `Vec<&i32>` (bukan `Vec<i32>`).
@@ -246,14 +246,14 @@ let data_vec: Vec<i32> = vec![1, 2, 3, 4];
 
 let result1: Vec<&i32> = data_vec.iter().collect();
 println!("{:?}", result1);
-// [1, 2, 3, 4]
+// output ➜ [1, 2, 3, 4]
 
 let result2: Vec<i32> = data_vec
     .iter()
     .map(|d: &i32| -> i32 { *d })
     .collect();
 println!("{:?}", result2);
-// [1, 2, 3, 4]
+// output ➜ [1, 2, 3, 4]
 ```
 
 Contoh lainnya bisa dilihat pada *section* [Trait ➜ Iterator ➜ Pemanfaatan tipe data `Iterator`](/basic/trait-iterator#a482-pemanfaatan-tipe-data-iterator), di situ terdapat operasi mapping data slice numerik ke bentuk yang sama tapi nilai setiap element adalah kuadrat, dan ke bentuk lain dengan tipe data berbeda.
@@ -265,27 +265,27 @@ Contoh lainnya bisa dilihat pada *section* [Trait ➜ Iterator ➜ Pemanfaatan t
 ```rust
 let data_vec = vec![1, 2, 3, 4];
 println!("{:?}", data_vec);
-// [1, 2, 3, 4]
+// output ➜ [1, 2, 3, 4]
 
 let result: Vec<&i32> = data_vec.iter().rev().collect();
 println!("{:?}", result);
-// [4, 3, 2, 1]
+// output ➜ [4, 3, 2, 1]
 ```
 
 ### ◉ Method `filter`
 
-Method `filter` digunakan untuk memfilter element data slice. Data kolektif diiterasi kemudian dicek menggunakan closure, jika nilai balik bertipe `true` maka elemen tersebut masuk dalam dalam hasil filter, selebihnya maka dianggap tidak memenuhi kondisi filter dan elemen di-*exclude*.
+Method `filter` digunakan untuk memfilter element data slice. Data kolektif diiterasi kemudian dicek menggunakan closure, jika nilai balik bertipe `true` maka elemen tersebut masuk dalam hasil filter, selebihnya maka dianggap tidak memenuhi kondisi filter dan elemen di-*exclude*.
 
 ```rust
 let data_vec = vec![1, 2, 3, 4];
 
 let odd: Vec<&i32> = data_vec.iter().filter(|d| *d % 2 != 0).collect();
 println!("odd numbers: {:?}", odd);
-// odd numbers: [1, 3]
+// output ➜ odd numbers: [1, 3]
 
 let even: Vec<&i32> = data_vec.iter().filter(|d| *d % 2 == 0).collect();
 println!("even numbers: {:?}", even);
-// odd numbers: [2, 4]
+// output ➜ even numbers: [2, 4]
 ```
 
 ### ◉ Method `cloned`
@@ -296,7 +296,7 @@ Digunakan untuk *cloning* data slice secara keseluruhan tanpa mengubah tipe data
 let data_vec = vec![1, 2, 3, 4];
 let result: Vec<i32> = data_vec.iter().cloned().collect();
 println!("{:?}", result);
-// [1, 2, 3, 4]
+// output ➜ [1, 2, 3, 4]
 ```
 
 ### ◉ Method `copied`
@@ -307,7 +307,7 @@ Secara *high-level* `copied` menghasilkan output yang sama dengan `cloned`. Namu
 let data_vec = vec![1, 2, 3, 4];
 let result: Vec<i32> = data_vec.iter().copied().collect();
 println!("{:?}", result);
-// [1, 2, 3, 4]
+// output ➜ [1, 2, 3, 4]
 ```
 
 > Lebih detailnya mengenai clone vs copy akan dibahas pada chapter [Copy, Clone, Move, Drop](#/wip/copy-clone-move-drop)
@@ -321,7 +321,7 @@ let data_vec1 = vec![1, 2, 3, 4];
 let data_vec2 = vec![1, 2, 3, 4];
 let result = data_vec1.iter().cmp(data_vec2.iter());
 println!("{:?}", result.is_eq());
-// true
+// output ➜ true
 ```
 
 Enum `Ordering` memiliki beberapa method, salah satunya adalah `is_eq` yang mengembalikan nilai `true` jika dua buah data slice tersebut adalah sama.
@@ -336,12 +336,12 @@ Digunakan untuk melihat size dari elemen Iterator.
 let data_vec = vec![1, 2, 3, 4];
 let length = data_vec.iter().count();
 println!("{:?}", length);
-// 4
+// output ➜ 4
 ```
 
 ### ◉ Method `eq`, `ne`, `gt`, `ge`, `lt`, `le`
 
-6 Method ini digunakan untuk komparasi dua buah slice. Penggunakan 6 method ini merupakan alternatif selain menggunakan method `cmp`.
+6 Method ini digunakan untuk komparasi dua buah slice. Penggunaan 6 method ini merupakan alternatif selain menggunakan method `cmp`.
 
 Sebagai contoh, penerapan method `eq` berikut untuk untuk mengecek apakah 2 buah data slice adalah sama (secara *Lexicographical*).
 
@@ -350,7 +350,7 @@ let data_vec1 = vec![1, 2, 3, 4];
 let data_vec2 = vec![1, 2, 3, 4];
 let result = data_vec1.iter().eq(data_vec2.iter());
 println!("{:?}", result);
-// true
+// output ➜ true
 ```
 
 Kode di atas adalah ekuivalen dengan kode berikut:
@@ -360,7 +360,7 @@ let data_vec1 = vec![1, 2, 3, 4];
 let data_vec2 = vec![1, 2, 3, 4];
 let result = data_vec1.iter().cmp(data_vec2.iter());
 println!("{:?}", result.is_eq());
-// true
+// output ➜ true
 ```
 
 Berikut merupakan kegunaan tiap-tiap method di atas:
@@ -385,7 +385,7 @@ let result = match data_vec.iter().find(|d: &&i32| **d == 4) {
     None => 0
 };
 println!("{:?}", result);
-// 4
+// output ➜ 4
 ```
 
 ### ◉ Method `last`
@@ -396,7 +396,7 @@ Digunakan untuk mengambil elemen terakhir data Iterator. Method `last` ini menge
 let data_vec = vec![1, 2, 3, 4];
 let result: &i32 = data_vec.iter().last().unwrap();
 println!("{:?}", result);
-// 4
+// output ➜ 4
 ```
 
 Satu hal yang unik perihal notasi closure method `find`, parameter closure adalah bertipe `&&T`. Dari tipe tersebut, untuk mengambil *underlying value* gunakan operator *dereference* dua kali. Contohnya pada kode di atas, `d` bertipe data `&&i32`, untuk mengambil nilai sebenarnya digunakan `**d`.
@@ -457,7 +457,7 @@ let result = data_vec.iter()
     .fold(0, |sum, i| sum + i);
 
 println!("sum: {:?}", result);
-// sum: 10
+// output ➜ sum: 6
 ```
 
 ![Trait iterator](img/trait-iterator-5.png)
@@ -470,7 +470,7 @@ Digunakan untuk mencari total/summary data slice numerik.
 let data_vec = vec![1.1, 2.2, 3.3, 4.5];
 let result: f64 = data_vec.iter().sum();
 println!("sum: {:?}", result);
-// sum: 11.1
+// output ➜ sum: 11.1
 ```
 
 ### ◉ Method `reduce`
@@ -511,11 +511,11 @@ let data_vec = vec![1, 2, 3, 4];
 
 let min = data_vec.iter().min().unwrap();
 println!("min: {min}");
-// min: 1
+// output ➜ min: 1
 
 let max = data_vec.iter().max().unwrap();
 println!("max: {max}");
-// max: 4
+// output ➜ max: 4
 ```
 
 ## A.50.4. Method lainnya
@@ -527,11 +527,11 @@ Method `sort` bukanlah property Iterator, melainkan milik tipe data vector. Kegu
 ```rust
 let mut data_vec = vec![2, 3, 1, 4];
 println!("before: {data_vec:?}");
-// before: [2, 3, 1, 4]
+// output ➜ before: [2, 3, 1, 4]
 
 data_vec.sort();
 println!("after: {data_vec:?}");
-// after: [1, 2, 3, 4]
+// output ➜ after: [1, 2, 3, 4]
 ```
 
 ---

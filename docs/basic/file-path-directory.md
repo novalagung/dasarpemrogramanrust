@@ -30,7 +30,7 @@ println!("{:?}", filepath_2);
 // output ➜ "/home/novalagung/Desktop/my text.txt"
 ```
 
-> Ketika path di-print, yang muncul adalah sesuai dengan string yang ditulis. Dengan pengecualian jika method `.join()` digunakan disitu, maka separator file yang digunakan relatif terhadap OS. Jika Windows maka `\`, dan `/` untuk non-Windows.
+> Ketika path di-print, yang muncul adalah sesuai dengan string yang ditulis. Dengan pengecualian jika method `.join()` digunakan di situ, maka separator file yang digunakan relatif terhadap OS. Jika Windows maka `\`, dan `/` untuk non-Windows.
 
 ## A.53.2. Method filepath
 
@@ -139,7 +139,7 @@ match fs::create_dir("./files") {
 
 ### ◉ Pembuatan folder (`fs::create_dir`)
 
-Fungsi `fs::create_dir` digunakan untuk membuat folder. Contoh penerapannya sudah dibahas di sesi [File, Path, Directory ➜ Module `std::fs` (file system)](/basic/file-path-directory#a523-module-stdfs-file-system) di atas.
+Fungsi `fs::create_dir` digunakan untuk membuat folder. Contoh penerapannya sudah dibahas di sesi [File, Path, Directory ➜ Module `std::fs` (file system)](/basic/file-path-directory#a523-module-fs-file-system) di atas.
 
 ### ◉ Menulis konten file (`fs::write`)
 
@@ -148,7 +148,7 @@ Fungsi `fs::write` digunakan untuk menulis konten ke file. Contoh penerapan:
 ```rust
 let path = Path::new("./files").join("target.txt");
 let content = "hello rust!";
-let res = fs::write(&path, &content);
+let res = fs::write(&path, content);
 
 match res {
     Err(err) => {

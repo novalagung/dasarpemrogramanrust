@@ -84,7 +84,7 @@ Ketiga fungsi tersebut kemudian diterapkan pada program kecil yang logic-nya dit
 >
 > Lebih jelasnya mengenai keyword `pub` dibahas pada chapter [Module System ➜ Visibility & Privacy](/basic/visibility-privacy)
 
-Sebelum lanjut proses koding, silakan tambahkan dulu beberapa dependencies berikut pada `Cargo.toml`, kemudian jalankan `cargo build` di-download.
+Sebelum lanjut proses koding, silakan tambahkan dulu beberapa dependencies berikut pada `Cargo.toml`, kemudian jalankan `cargo build` untuk mengunduhnya.
 
 ```rust title="Cargo.toml"
 [package]

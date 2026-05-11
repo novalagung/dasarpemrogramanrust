@@ -100,7 +100,7 @@ pub use self::sub_module::say_hello_message as say_hello;
 
 Contoh penerapan bisa dilihat pada kode berikut. Submodule `sub_module` milik module `messaging` adalah private module, yang di dalamnya ada item dengan visibility publik.
 
-Agar `say_hello_message` tidak bisa diakses dari *crate root* karena `sub_module` yang merupakan module scope item tersebut adalah private. Agar item tersebut bisa diakses dari publik, maka bisa dengan menggunakan teknik *re-export*.
+`say_hello_message` tidak bisa diakses dari *crate root* karena `sub_module` yang merupakan module scope tempat item tersebut berada, bersifat private. Agar item tersebut bisa diakses dari publik, maka bisa dengan menggunakan teknik *re-export*.
 
 ```rust title="src/messaging.rs"
 pub use self::sub_module::say_hello_message;
@@ -108,7 +108,7 @@ pub use self::sub_module::say_hello_message;
 mod sub_module {
 
     pub fn say_hello_message() {
-        println!("hello rust")
+        println!("hello rust");
     }
 }
 ```
@@ -133,7 +133,7 @@ pub use self::sub_module::say_hello_message as say_hello;
 mod sub_module {
 
     pub fn say_hello_message() {
-        println!("hello rust")
+        println!("hello rust");
     }
 }
 ```

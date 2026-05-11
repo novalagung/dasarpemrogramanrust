@@ -73,7 +73,7 @@ Perihal apa itu `array` akan dibahas pada chapter selanjutnya, yaitu [Array](/ba
 
 ## A.12.4. Perulangan `for in` pada tipe iterator lainnya
 
-Di Rust ada banyak cara membuat object iterator. Mengenai topik satu ini kita akan bahas seiring berjalannya proses pembelajaran. Akan berpotesi makin membingungkan jika dibahas terlalu detail pada chapter ini.
+Di Rust ada banyak cara membuat object iterator. Mengenai topik satu ini kita akan bahas seiring berjalannya proses pembelajaran. Akan berpotensi makin membingungkan jika dibahas terlalu detail pada chapter ini.
 
 ---
 

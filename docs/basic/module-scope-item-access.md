@@ -4,7 +4,7 @@ title: A.22. Module System ➜ Scope & Akses Item
 sidebar_label: A.22. Module System ➜ Scope & Akses Item
 ---
 
-Pembahasan chapter ini masih dalam lingkup module system, yaitu tentang scope dan pengakesan module item.
+Pembahasan chapter ini masih dalam lingkup module system, yaitu tentang scope dan pengaksesan module item.
 
 ## A.22.1. Scope
 
@@ -27,7 +27,7 @@ fn my_func() {
 }
 ```
 
-- Konstanta `PI`, fungsi `main`, dan juga fungsi `my_func` di definisikan satu level dan berada di scope terluar (yang pada ebook ini disebut sebagai *root*).
+- Konstanta `PI`, fungsi `main`, dan juga fungsi `my_func` didefinisikan satu level dan berada di scope terluar (yang pada ebook ini disebut sebagai *root*).
 - Statement pemanggilan fungsi `my_func()` berada dalam scope blok kode fungsi `main`.
 - Variabel `nama` dan `occupation` berada pada scope blok kode fungsi `my_func`.
 
@@ -245,7 +245,7 @@ super::super::my_func();
 
 ## A.22.7. Praktik lanjutan
 
-Agar pemahaman makin mantab, silakan pelajari program berikut.
+Agar pemahaman makin mantap, silakan pelajari program berikut.
 
 ```rust
 fn my_func() {

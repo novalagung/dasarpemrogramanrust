@@ -64,7 +64,7 @@ Hasilnya adalah sesuai dengan string yang sudah didefinisikan.
 
 ![rust string literal](img/tipe-data-string-literal-3.png)
 
-Perlu diketahui bahwa karakter spasi, baris baru, dan lainnya adalah **tidak dihiraukan**, jadi jika kawan-kawan menuliskan string multiline seperti ini ...
+Perlu diketahui bahwa karakter spasi, baris baru, dan lainnya adalah **tetap dipertahankan**, jadi jika kawan-kawan menuliskan string multiline seperti ini ...
 
 ```rust
 let var4 = "baris satu
@@ -131,6 +131,6 @@ Penulis anjurkan untuk mempelajari chapter-chapter berikutnya secara urut terleb
 
 ### ◉ Referensi
 
-- https://doc.rust-lang.org/reference/tokens.html#raw-string-literals
+- https://doc.rust-lang.org/reference/tokens.html
 - https://doc.rust-lang.org/std/str/index.html
 - https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/strings.html

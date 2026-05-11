@@ -164,8 +164,8 @@ Rust mendukung dua metode deklarasi variabel, yaitu *type inference* dan *manife
 Penulisan variabel dengan metode ini ditandai dengan tidak menuliskan tipe data secara jelas/eksplisit. Contoh:
 
 ```rust
-let var1 = "hello" // compiler akan secara cerdas mendeteksi var1 tipe data nya string
-let var2 = 12      // compiler akan secara cerdas mendeteksi var2 tipe data nya numerik
+let var1 = "hello"; // compiler akan secara cerdas mendeteksi var1 tipe datanya string
+let var2 = 12;      // compiler akan secara cerdas mendeteksi var2 tipe datanya numerik
 ```
 
 Metode deklarasi yang selama ini sudah kita terapkan adalah *type inference*.
@@ -245,7 +245,7 @@ let data1 = 24i8;
 println!("data1: {0}", data1); // output ➜ data1: 24
 ```
 
-Variabel `data` didefinisikan dengan predefined value adalah numerik `24` dengan tipe data `i8`, penulisan value nya menjadi `24i8`.
+Variabel `data1` didefinisikan dengan predefined value adalah numerik `24` dengan tipe data `i8`, penulisan value nya menjadi `24i8`.
 
 Boleh juga menggunakan separator `_` dalam penulisan value-nya sebagai pembatas antara nilai dan tipe data, contoh:
 

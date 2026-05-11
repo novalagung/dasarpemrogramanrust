@@ -142,7 +142,7 @@ fn calculate_and_print_result(name: String, item: &impl Area) {
 }
 ```
 
-Manfaat penerapan trait sebagai tipe data parameter fungsi adalah saat pemanggilan fungsi, parameter tersebut bisa diisi dengan argument data bertipe apapun dengan catatan tipe dari data tersebut mengimplementasikan trait yang sama dengan yang digunakan pada parameter.
+Manfaat penerapan trait sebagai tipe data parameter fungsi adalah saat pemanggilan fungsi, parameter tersebut bisa diisi dengan argument data bertipe apa pun dengan catatan tipe dari data tersebut mengimplementasikan trait yang sama dengan yang digunakan pada parameter.
 
 Contohnya seperti pada fungsi `calculate_and_print_result` di atas yang parameter ke-2 bertipe `&impl Area`, nantinya saat fungsi tersebut dipanggil, kita bisa sisipi parameter ke-2 dengan object `circle_one` ataupun `circle_two`.
 
@@ -211,7 +211,7 @@ Mari praktikkan. Lakukan modifikasi berikut pada beberapa kode yang telah di tul
     }
     ```
 
-Dengan perubahan kode yang telah dilakukan di atas, parameter `item` milik fungsi `calculate_and_print_result()` bisa diisi dengan nilai argument apapun asalkan memenuhi kriteria tipe yang ditentukan, yaitu: haruse meng-implement trait `Area` dan trait `Circumference`.
+Dengan perubahan kode yang telah dilakukan di atas, parameter `item` milik fungsi `calculate_and_print_result()` bisa diisi dengan nilai argument apa saja asalkan memenuhi kriteria tipe yang ditentukan, yaitu: harus meng-implement trait `Area` dan trait `Circumference`.
 
 Notasi penulisan tipe-datanya `&(impl Trait1 + Trait2 + Trait3 + ...)`.
 
@@ -278,7 +278,7 @@ Trait bisa juga digunakan sebagai tipe data return value. Caranya gunakan notasi
 Contohnya bisa dilihat pada kode berikut. Ada dua fungsi baru dideklarasikan:
 
 1. Fungsi `new_circle` dengan return type adalah `impl Area`, dan data yang dikembalikan adalah bertipe `two_dimensional::Circle`.
-1. Fungsi `new_square` dengan return type adalah `impl Area + Circumference`, dan data yang dikembalikan adalah bertipe `two_dimensional::Square`.
+2. Fungsi `new_square` dengan return type adalah `impl Area + Circumference`, dan data yang dikembalikan adalah bertipe `two_dimensional::Square`.
 
 ```rust
 fn main() {

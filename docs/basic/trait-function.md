@@ -67,7 +67,7 @@ fn do_something_with_number_v2<F>(n: i32, mut f: F)
 where
     F: FnMut(i32), // <----- FnMut digunakan
 {
-    // Statement `f(n)` berisi kode yang mengubah isi variavel `number` (mutable).
+    // Statement `f(n)` berisi kode yang mengubah isi variabel `number` (mutable).
     // `f(n)` bisa dipanggil berkali-kali
     f(n);
 }

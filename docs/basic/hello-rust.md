@@ -94,7 +94,7 @@ sebuahFungsi("sebuah argument");
 
 Ok, sampai sini penulis rasa cukup jelas. Sekarang kita fokus ke `println`, ada yang aneh dengan pemanggilan fungsi ini. Kenapa `println` tidak dituliskan dalam bentuk `println("Hello, world!")` melainkan `println!("Hello, world!")`?
 
-Sekadar informasi saja, berdasarkan versi Rust terbaru, tidak ada fungsi bernama `println`, yang ada adalah macro bernama `println`.
+Sekadar informasi saja, `println` bukanlah fungsi, melainkan sebuah *macro*. Macro di Rust selalu dipanggil dengan tanda `!`.
 
 ### ◉ Macro `println`
 

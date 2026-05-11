@@ -157,7 +157,7 @@ let result = divider(10.0, 5.0);
 if result.is_ok() {
     let number = result.unwrap();
     println!("result: {}", number);
-    // result: 2
+    // output ➜ result: 2
 }
 ```
 
@@ -186,7 +186,7 @@ if result.is_err() {
     let err = result.as_ref().err();
     let message = err.unwrap();
     println!("error: {:?}", message);
-    // error: DivisionByZero
+    // output ➜ error: DivisionByZero
 }
 ```
 
@@ -200,7 +200,7 @@ if result.is_ok() {
     let data = result.as_ref().ok();
     let number = data.unwrap();
     println!("result: {:?}", number);
-    // result: 2
+    // output ➜ result: 2
 }
 ```
 
@@ -212,7 +212,7 @@ Method `unwrap_or_default` milik `Result<T, E>` mengembalikan nilai `T` ketika d
 let result = divider(10.0, 0.0);
 let number = result.unwrap_or_default();
 println!("result: {}", number);
-// result: 0
+// output ➜ result: 0
 ```
 
 ### ◉ Method `unwrap_or`
@@ -223,7 +223,7 @@ Method `unwrap_or` milik `Result<T, E>` mengembalikan nilai `T` ketika data beri
 let result = divider(10.0, 0.0);
 let number = result.unwrap_or(0.0);
 println!("result: {}", number);
-// result: 0
+// output ➜ result: 0
 ```
 
 ### ◉ Method `unwrap_or_else`
@@ -234,7 +234,7 @@ Method ini mengembalikan nilai `T` ketika data berisi `Ok<T>`, namun jika data i
 let result = divider(10.0, 0.0);
 let number = result.unwrap_or_else(|_| 0.0);
 println!("result: {}", number);
-// result: 0
+// output ➜ result: 0
 ```
 
 Closure harus dalam notasi `FnOnce(E) -> T` yang mana `T` pada konteks ini adalah `f64`.
