@@ -34,11 +34,7 @@ println!("index 3: {:?}", tuple_a.3);
 
 ![tuple](img/tuple-1.png)
 
-Elemen ke-3 `tuple_a` bertipe array, yang tiap elemennya bisa menggunakan notasi pengaksesan indeks array/slice seperti biasa.
-
-- Tuple `tuple_a.2` nilainya `["racing", "working out"]`
-- Tuple `tuple_a.2[0]` nilainya `"racing"`
-- Tuple `tuple_a.2[1]` nilainya `"working out"`
+Elemen ketiga pada `tuple_a` adalah array `[&str; 2]`. Artinya, `tuple_a.2` berisi `["racing", "working out"]`, lalu masing-masing elemennya bisa dibaca dengan `tuple_a.2[0]` untuk `"racing"` dan `tuple_a.2[1]` untuk `"working out"`.
 
 ## A.15.2. Mutable tuple
 

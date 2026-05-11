@@ -61,13 +61,20 @@ println!("number_in_f64: {number_in_f64}");
 
 let new_number = 23.4 as f32;
 println!("new_number: {new_number}");
+
+let letter = 'A';
+println!("letter: {letter}");
+
+let letter_in_u32 = letter as u32;
+println!("letter_in_u32: {letter_in_u32}");
+
+let letter_in_u8 = letter as u8;
+println!("letter_in_u8: {letter_in_u8}");
 ```
 
 ![Type Alias Casting](img/type-alias-casting-3.png)
 
-Tipe data integer, unsigned integer, dan floating point bisa di-cast satu sama lain.
-
-> Selain itu, tipe `char` juga bisa di-cast ke tipe lainnya (selain tipe float)
+Tipe data integer, unsigned integer, dan floating point bisa di-cast satu sama lain. Selain itu, tipe `char` juga bisa di-cast ke tipe integer lain. Hasil casting `char` ke integer adalah kode Unicode dari karakter tersebut.
 
 ## A.27.4. Konsekuensi casting tipe numerik
 
@@ -138,7 +145,7 @@ Tipe `Coordinate` merupakan alias dari `Point`, jadi di sini **tidak ada casting
 >
 > Lebih jelasnya perihal topik ini dibahas pada chapter [Ownership](/basic/ownership).
 
-Kesimpulan dari pembahasan chapter ini: `type alias` hanya memberi nama lain untuk tipe yang sama, sedangkan `casting` adalah proses mengubah satu tipe numerik ke tipe numerik lain.
+Kesimpulan dari pembahasan chapter ini: `type alias` hanya memberi nama lain untuk tipe yang sama, sedangkan `casting` adalah proses mengubah satu tipe scalar ke tipe scalar lain yang kompatibel.
 
 ---
 
