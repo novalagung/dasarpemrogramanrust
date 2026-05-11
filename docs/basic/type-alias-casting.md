@@ -47,7 +47,7 @@ println!("height_in_u64: {height_in_u64}");
 
 ## A.27.3. Casting antar tipe scalar
 
-Casting antar tipe data numerik dilakukan menggunakan keyword `as`, seperti pada contoh berikut:
+Casting antar tipe data scalar dilakukan menggunakan keyword `as`, seperti pada contoh berikut:
 
 ```rust
 let number = 32;

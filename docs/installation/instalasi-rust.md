@@ -21,7 +21,7 @@ Cara instalasi `rustup` untuk tiap sistem operasi bisa dilihat di bawah ini:
 Jalankan command berikut untuk instal `rustup` dan mengecek hasil instalasi.
 
 ```bash
-curl https://sh.rustup.rs -sSf | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 rustup --version
 rustc --version

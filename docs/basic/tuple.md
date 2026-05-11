@@ -131,7 +131,7 @@ println!("{:?}", tuple_d);
 
 ## A.15.5. Tuple Structs
 
-Pembahasan mengenai tuple structs dibahas pada chapter [Struct](/basic/struct#a247-tuple-struct).
+Pembahasan mengenai tuple structs dibahas pada chapter [Struct](/basic/struct#a237-tuple-struct).
 
 ---
 

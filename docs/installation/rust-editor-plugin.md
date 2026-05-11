@@ -14,7 +14,6 @@ Ada beberapa editor yang di-support secara official oleh Rust via plugin.
 | :- | :- | :-: |
 | VS Code | `rust-analyzer` | [plugin link](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) |
 | Sublime Text | `rust-enhanced` | [plugin link](https://github.com/rust-lang/rust-enhanced) |
-| Atom | `atom-ide-rust` | [plugin link](https://github.com/rust-lang/atom-ide-rust) |
 | Intellij IDEA | `Rust plugin` | [plugin link](https://plugins.jetbrains.com/plugin/8182-rust) |
 | Eclipse | `Eclipse IDE for Rust Developers` | [plugin link](https://www.eclipse.org/downloads/packages/release/2019-09/r/eclipse-ide-rust-developers-includes-incubating-components) |
 | Vim | `rust.vim` | [plugin link](https://github.com/rust-lang/rust.vim) |

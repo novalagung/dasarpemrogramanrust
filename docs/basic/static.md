@@ -55,7 +55,7 @@ Ok, sekarang kita coba terapkan keyword `static` pada tipe data lain untuk melih
 
 Hmm, malah error.
 
-Perlu diketahui bahwa keyword `static` bisa digunakan pada banyak tipe data selama inisialisasinya valid untuk konteks statik. Selain itu juga bisa diterapkan dalam *constants function* (yang nantinya dibahas pada chapter [Constant Evaluation](#/wip/constant-evaluation)), [Tuple Struct](/basic/struct#a247-tuple-struct), dan juga variant [Tuple](/basic/tuple) lainnya.
+Perlu diketahui bahwa keyword `static` bisa digunakan pada banyak tipe data selama inisialisasinya valid untuk konteks statik. Selain itu juga bisa diterapkan dalam *constants function* (yang nantinya dibahas pada chapter [Constant Evaluation](#/wip/constant-evaluation)), [Tuple Struct](/basic/struct#a237-tuple-struct), dan juga variant [Tuple](/basic/tuple) lainnya.
 
 Lalu bagaimana jika ada kebutuhan membuat konstanta bertipe string? Solusinya dengan menggunakan tipe data `&'static str` yang sebentar lagi akan kita bahas.
 
