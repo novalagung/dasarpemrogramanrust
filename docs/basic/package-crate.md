@@ -107,11 +107,11 @@ edition = "2021"
 [dependencies]
 ```
 
-Blok `package` berisi berisi 3 buah field:
+Blok `package` berisi 3 buah field:
 
 - `name` isinya adalah nama package, sesuai dengan argument command `cargo new <nama_package>`.
 - `version` default-nya selalu `0.1.0`, namun kita bisa ubah nilainya seiring berjalannya proses pengembangan aplikasi.
-- `edition` di sini me-refer ke edisi Rust yang dipakai. Di ebook ini, Rust versi **1.65.0** digunakan, dan edisi untuk versi tersebut adalah `2021`.
+- `edition` di sini me-refer ke edisi Rust yang dipakai. Di ebook ini, Rust versi **1.79.0** digunakan, dan edisi untuk versi tersebut adalah `2021`.
 
 Blok `dependencies` default-nya berisi kosong. Jika kita menambahkan external dependencies atau crates, maka detailnya tercatat pada blok `dependencies` ini.
 
@@ -145,7 +145,7 @@ edition = "2021"
 rand = "0.8.5"
 ```
 
-Jalankan command `cargo build` untuk memaksa Cargo agar mendownload depdency yang sudah ditambahkan ke file `Cargo.toml`.
+Jalankan command `cargo build` untuk memaksa Cargo agar mendownload dependency yang sudah ditambahkan ke file `Cargo.toml`.
 
 ![cargo download dependency](img/package-crate-2.png)
 

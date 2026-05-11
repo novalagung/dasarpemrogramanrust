@@ -96,7 +96,7 @@ Lalu bagaimana cara agar nilai variabel bisa diubah? Caranya dengan menambahkan 
 >
 > - Operasi assignment pada variabel immutable hanya boleh dilakukan sekali. Dan pada kode di atas telah dicontohkan caranya bagaimana. Variabel dideklarasikan sekaligus diisi nilainya.
 >
-> - Perlu diketahui bahwa sebenarnya diperbolehkan untuk memecah statement deklarasi variable dan assignment nilai sebagai 2 statement terpisah. Lebih jelasnya dibahas setelah ini pada section [section A.4.5](/basic/variabel#a45-deklarasi-variabel-tanpa-predefined-value).
+> - Perlu diketahui bahwa sebenarnya diperbolehkan untuk memecah statement deklarasi variable dan assignment nilai sebagai 2 statement terpisah. Lebih jelasnya dibahas setelah ini pada section [Variabel ➜ Deklarasi variabel tanpa *predefined value*](/basic/variabel#a45-deklarasi-variabel-tanpa-predefined-value).
 
 ## A.4.3. Keyword `mut`
 

@@ -109,7 +109,7 @@ Ok, jadi owner-nya sudah di-dealokasi, lalu bagaimana nasib dari peminjam data (
 >
 > Di pemrograman Rust, error jenis ini bisa di-identifikasi saat kompilasi.
 
-Solusi pada error di atas, salah satunya adalah dengan tidak menggunakan tipe data pointer sebagai nilai balik. Gunakan saja tipe data `String`. Solusi ini aman, karena tipe data `String` owner-nya selalu berpindah saat ada operasi asignment, dengan ini maka manajemen memory menjadi efisien.
+Solusi pada error di atas, salah satunya adalah dengan tidak menggunakan tipe data pointer sebagai nilai balik. Gunakan saja tipe data `String`. Solusi ini aman, karena tipe data `String` owner-nya selalu berpindah saat ada operasi assignment, dengan ini maka manajemen memory menjadi efisien.
 
 ```rust
 // ganti kode berikut ...
@@ -288,7 +288,7 @@ Fungsi di atas memiliki 2 buah lifetime, yaitu:
 
 Karena yang dikembalikan ada data baru, yaitu string `hello`, maka kode di atas tidak error. Data tersebut lifetime-nya adalah `'c`, dan akan tetap valid setelah pemanggilan fungsi selesai.
 
-Beda situasi jika yang dikembalikan adalah data dari parameter, misalnya, `x`. Jika seperti ini, maka lifetime yang sama dengan lifetime parameter `x` harus digunakan, yaitu lifetime `'b`. Contoh:
+Beda situasi jika yang dikembalikan adalah data dari parameter, misalnya, `x`. Jika seperti ini, maka lifetime yang sama dengan lifetime parameter `x` harus digunakan, yaitu lifetime `'a`. Contoh:
 
 ```rust
 fn do_something_v5<'a, 'b, 'c>(x: &'a str, y: &'b str) -> &'b str {

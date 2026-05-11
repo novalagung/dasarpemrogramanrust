@@ -104,7 +104,7 @@ if Path::new(&path).is_relative() {
 
 ## A.53.3. Module `std::fs` (file system)
 
-`std::fs` merupakan module yang disediakan Rust untuk pengolahan file system. Di dalamnya berisinya banyak sekali fungsi untuk keperluan seperti pembuatan file, modifikasi konten file, dan lainnya.
+`std::fs` merupakan module yang disediakan Rust untuk pengolahan file system. Di dalamnya berisi banyak sekali fungsi untuk keperluan seperti pembuatan file, modifikasi konten file, dan lainnya.
 
 Sebagai contoh, untuk membuat suatu directory bisa menggunakan `fs::create_dir`. Isi argument pemanggilan fungsi dengan path dalam bentuk string (atau `std::path::Path` juga boleh).
 
@@ -139,7 +139,7 @@ match fs::create_dir("./files") {
 
 ### ◉ Pembuatan folder (`fs::create_dir`)
 
-Fungsi `fs::create_dir` digunakan untuk membuat folder. Contoh penerapannya sudah dibahas di sesi [A.53.3. Module std::fs (file system)](/basic/file-path-directory#a523-module-stdfs-file-system) di atas.
+Fungsi `fs::create_dir` digunakan untuk membuat folder. Contoh penerapannya sudah dibahas di sesi [File, Path, Directory ➜ Module `std::fs` (file system)](/basic/file-path-directory#a523-module-stdfs-file-system) di atas.
 
 ### ◉ Menulis konten file (`fs::write`)
 
@@ -244,7 +244,7 @@ match res {
 
 ### ◉ List items dalam folder
 
-Fungsi `fs::read_dir` digunakan untuk menampilkan list items suatu folder (baik subfolder ataupun file). Fungsi ini mengmbalikan nilai bertipe `Result<ReadDir, Error>`, untuk mengakses list items bisa menggunakan teknik pattern matching, atau boleh juga langsung di `unwrap()` (dengan resiko program bisa panic ketika ada error).
+Fungsi `fs::read_dir` digunakan untuk menampilkan list items suatu folder (baik subfolder ataupun file). Fungsi ini mengembalikan nilai bertipe `Result<ReadDir, Error>`, untuk mengakses list items bisa menggunakan teknik pattern matching, atau boleh juga langsung di `unwrap()` (dengan risiko program bisa panic ketika ada error).
 
 ```rust
 let path = Path::new("D:\\Labs\\Adam Studio\\Ebook\\dasarpemrogramanrust\\file_path_directory_1");

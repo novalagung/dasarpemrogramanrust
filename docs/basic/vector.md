@@ -38,7 +38,7 @@ println!("length: {}, capacity: {}", data_one.len(),  data_one.capacity());
 
 ![Vector](img/vector-1.png)
 
-Pada contoh di atas variabel `data_one` adalah sebuah vector yang isinya 3 elemen, yaitu literal string `batman`, `superman`, dan `lobo`. Vector `data_one` dideklarasikan menggunakan macro `vec` kemudiaan diikuti notasi penulisan yang mirip seperti array.
+Pada contoh di atas variabel `data_one` adalah sebuah vector yang isinya 3 elemen, yaitu literal string `batman`, `superman`, dan `lobo`. Vector `data_one` dideklarasikan menggunakan macro `vec` kemudian diikuti notasi penulisan yang mirip seperti array.
 
 > Lebih jelasnya mengenai macro dibahas pada chapter [Macro](#/wip/macro)
 

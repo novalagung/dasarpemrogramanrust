@@ -23,12 +23,14 @@ fn main() {
 Blok komentar dituliskan dengan cara diawali `/*` dan diakhiri `*/`. Silakan tambahkan kode berikut dalam blok fungsi `main`.
 
 ```rust
-/*
-    komentar ini
-    tidak akan
-    dieksekusi
-*/
-println!("world");
+fn main() {
+    /*
+        komentar ini
+        tidak akan
+        dieksekusi
+    */
+    println!("world");
+}
 ```
 
 Lalu run program tersebut. O iya, untuk kawan-kawan yang menggunakan editor VSCode dengan ekstensi `rust-analyzer` ter-install. Ada shortcut untuk run program yaitu dengan klik tombol `▶ Run` di atas definisi fungsi `main`.

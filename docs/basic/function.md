@@ -235,7 +235,7 @@ Bagian ini adalah penjelasan tambahan dari kode program yang baru saja dipraktik
 Macro `format` digunakan untuk *formatting* sebuah string. *Formatting* di sini maksudnya adalah pembuatan string dengan menggunakan teknik penyusunan isi string dalam format tertentu, mirip seperti yang dilakukan menggunakan macro `print` atau `println`, bedanya hanya pada macro `format` hasilnya bukan sebuah output ke console output, melainkan sebagai nilai balik.
 
 ```rust
-// 2 bari statements berikut ...
+// 2 baris statements berikut ...
 let message3 = format!("the box volume is {}", res3);
 println!("{}", message3.as_str());
 

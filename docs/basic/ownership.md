@@ -14,7 +14,7 @@ O iya, diwajibkan untuk mempelajari terlebih dahulu tentang dasar [Memory Manage
 
 ## A.34.1. Konsep ownership
 
-Ownership merupakan kumpulan aturan yang ada di Rust yang dijadikan acuan oleh compiler dalam pengelolahan memory.
+Ownership merupakan kumpulan aturan yang ada di Rust yang dijadikan acuan oleh compiler dalam pengelolaan memory.
 
 Sudah disinggung pada chapter [Memory Management](/basic/basic-memory-management) bahwa Rust tidak menerapkan GC ataupun ARC dalam manajemen memory-nya. Rust membebankan manajemen memory pada penulis kode program, yaitu kita/programmer.
 
@@ -382,7 +382,7 @@ Jika dijalankan ada error di statement terakhir fungsi `main`.
 
 Seperti yang sudah dibahas, bahwa tipe `String` mengadopsi move semantics. Ketika data bertipe ini digunakan pada operasi assignment seperti contohnya sebagai argument pemanggilan fungsi, maka owner berpindah.
 
-Tapi entah kenapa, khusus dalam pemanggilan macro `println`, owner-nya tidak berpindah. Ajaib.
+Khusus dalam pemanggilan macro `println`, value yang dipakai otomatis dipinjam dulu sehingga owner-nya tidak berpindah. Ini terjadi karena macro `println!` melakukan borrowing di balik layar.
 
 Silakan lihat sendiri di gambar di atas, ketika `str1` digunakan pada macro `println`, kemudian digunakan lagi pada argument pemanggilan fungsi `do_something`, hasilnya tidak error.
 

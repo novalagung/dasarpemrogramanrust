@@ -189,7 +189,7 @@ Tambahan penjelasan mengenai notasi penulisan `[T; N]`:
 
 ## A.13.4. Melihat size array menggunakan method `len`
 
-Array secara *default* properti tipe data **slice**, yang salah satunya adalah method bernama `len` yang berguna untuk melihat size dari sebuah array. Cara penggunaannya cukup dengan menuliskan `.len()` setelah variabel array. Contoh:
+Array secara *default* memiliki method `len` untuk melihat size array tersebut. Cara penggunaannya cukup dengan menuliskan `.len()` setelah variabel array. Contoh:
 
 ```rust
 let names = ["jason", "grayon", "drake", "damian"];

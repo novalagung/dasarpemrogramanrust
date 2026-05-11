@@ -53,7 +53,7 @@ Error masih muncul, tapi pesan error-nya berbeda.
 
 <table>
 <tr>
-<td>Pengaksesan elemen vector di luar kapastias memunculkan error saat <b>RUNTIME</b>. Penjelasannya:</td>
+<td>Pengaksesan elemen vector di luar kapasitas memunculkan error saat <b>RUNTIME</b>. Penjelasannya:</td>
 </tr>
 <tr>
 <td>
@@ -72,7 +72,7 @@ Error masih muncul, tapi pesan error-nya berbeda.
 
 <table>
 <tr>
-<td>Sedangkan pengaksesan elemen array di luar kapastias memunculkan error saat <b>COMPILE TIME</b>. Penjelasannya:</td>
+<td>Sedangkan pengaksesan elemen array di luar kapasitas memunculkan error saat <b>COMPILE TIME</b>. Penjelasannya:</td>
 </tr>
 <tr>
 <td>

@@ -4,7 +4,7 @@ title: A.48. Closures
 sidebar_label: A.48. Closures
 ---
 
-Chapter ini membahas tentang closures. Closures sendiri merupakan block fungsi anonimus (anonymous function) yang memiliki kelebihan bisa mengakses item-tem yang posisinya berada di luar block closure tersebut tetapi masih dalam current block scope.
+Chapter ini membahas tentang closures. Closures sendiri merupakan block fungsi anonimus (anonymous function) yang memiliki kelebihan bisa mengakses item-item yang posisinya berada di luar block closure tersebut tetapi masih dalam current block scope.
 
 Topik closures sangat erat hubungannya dengan [Trait ➜ Function](/basic/trait-function), namun pada chapter ini pembahasan hanya difokuskan pada bagian penerapan closures saja. Penulis anjurkan untuk lanjut ke chapter berikutnya setelah selesai dengan chapter ini.
 

@@ -194,7 +194,7 @@ Ilustrasi perbandingan stack dan heap:
 
 ![Heap memory](img/basic-memory-management-3.png)
 
-Tipe data non-primitive di Rust data-nya disimpan di heap, contohnya seperti Vector, `String`, dan beberapa lainnya. Penulis tekankan, bahwa **yang disimpan di heap adalah data-nya saja, sedangkan atribut lainnya (seperti `length` dan `capacity`) tetap disimpan disimpan di stack**. Lebih jelasnya silakan lihat ilustrasi berikut:
+Banyak tipe data non-primitive di Rust mengelola data utamanya di heap, contohnya seperti Vector, `String`, dan beberapa lainnya. Namun ada juga tipe non-primitive lain yang nilainya tetap bisa berada di stack jika tidak memiliki data heap. Penulis tekankan, bahwa **yang disimpan di heap adalah data-nya saja, sedangkan atribut lainnya (seperti `length` dan `capacity`) tetap disimpan di stack**. Lebih jelasnya silakan lihat ilustrasi berikut:
 
 ```rust
 let numbers = vec![12, 24, 7];

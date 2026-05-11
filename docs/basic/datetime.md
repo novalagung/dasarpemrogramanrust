@@ -19,12 +19,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-chrono = "0.4.23"
+chrono = "0.4.44"
 ```
 
 ## A.52.2. Tipe data `DateTime`
 
-`crono` menyediakan cukup banyak tipe data untuk merepresentasikan informasi tanggal dan waktu, tetapi yang paling penting untuk diketahui dan dipahami ada dua, yaitu:
+`chrono` menyediakan cukup banyak tipe data untuk merepresentasikan informasi tanggal dan waktu, tetapi yang paling penting untuk diketahui dan dipahami ada dua, yaitu:
 
 - `DateTime<Utc>` dan `DateTime<Local>`
 - `NaiveDateTime`
@@ -162,9 +162,9 @@ Kedua datetime tersebut terpaku **7 jam** persis. Data `2023-03-02 09:53:44` UTC
 
 ## A.52.5. Tipe `NaiveDateTime`
 
-Rust memilik caranya sendiri dalam pengelolaan data datetime (yang menurut penulis cukup unik). Ada satu tipe data bernama `NaiveDateTime`, yang kegunaannya adalah untuk menampung tipe data datetime **tanpa spesifik timezone offset**.
+Rust memiliki caranya sendiri dalam pengelolaan data datetime (yang menurut penulis cukup unik). Ada satu tipe data bernama `NaiveDateTime`, yang kegunaannya adalah untuk menampung tipe data datetime **tanpa spesifik timezone offset**.
 
-Tipe data ini sangat berguna dibeberapa case yang kebanyakan adalah perihal konversi data ke bentuk `DateTime`.
+Tipe data ini sangat berguna di beberapa case yang kebanyakan adalah perihal konversi data ke bentuk `DateTime`.
 
 Mari kita praktikkan dengan contoh agar lebih jelas. Dimisalkan ada keperluan di mana data UNIX time perlu di konversi ke 2 bentuk `DateTime`, dengan timezone offset `Utc` dan `Local`. Pada kasus ini, cara ke-3 dari praktik sebelumnya bisa dilakukan untuk penyelesaian case ini.
 
@@ -174,7 +174,7 @@ let date2_in_utc = DateTime::<Utc>::from(UNIX_EPOCH + Duration::from_secs(timest
 let date2_in_local_tz = DateTime::<Local>::from(UNIX_EPOCH + Duration::from_secs(timestamp));
 ```
 
-Cara lain adalah dengan menggunakan `NaiveDateTime`, yang contoh penerapannnya kurang lebih seperti ini:
+Cara lain adalah dengan menggunakan `NaiveDateTime`, yang contoh penerapannya kurang lebih seperti ini:
 
 ```rust
 let timestamp_in_ms: i64 = 1524885322000;
@@ -191,7 +191,7 @@ println!("sample date 2 (in local_tz): {sample_date_in_local_tz}");
 // sample date 2 (in local_tz): 2018-04-28 03:15:22 +07:00
 ```
 
-Statement `NaiveDateTime::from_timestamp_millis` berguna untuk mengkonversi data UNIX time (milisecond) ke bentuk `NaiveDateTime`. Kemudian, dari data tersebut dapat kita konversi lagi ke bentuk UTC dengan mudah menggunakan `Utc.from_utc_datetime()` dan local timezone menggunakan `Local.from_local_datetime()`.
+Statement `NaiveDateTime::from_timestamp_millis` berguna untuk mengkonversi data UNIX time (millisecond) ke bentuk `NaiveDateTime`. Kemudian, dari data tersebut dapat kita konversi lagi ke bentuk UTC dengan mudah menggunakan `Utc.from_utc_datetime()` dan local timezone menggunakan `Local.from_local_datetime()`.
 
 ![DateTime](img/datetime-3.png)
 
@@ -236,14 +236,14 @@ Data `2023-03-02 10 UTC` jika ditambah 7 jam offset, maka menjadi `2023-03-02 17
 Cara konversi data `DateTime` ke bentuk UNIX time bisa dilakukan lewat 3 cara:
 
 - menggunakan method `timestamp`, nilai baliknya dalam bentuk detik/second
-- menggunakan method `timestamp_millis`, nilai baliknya dalam bentuk miliseconds
+- menggunakan method `timestamp_millis`, nilai baliknya dalam bentuk milliseconds
 - menggunakan method `timestamp_micros`, nilai baliknya dalam bentuk microseconds
 
 ```rust
 let date_in_local_tz: DateTime<Local> = Local::now();
 println!("date: {date_in_local_tz}");
 println!("date (in second timestamp):      {}", date_in_local_tz.timestamp());
-println!("date (in milisecond timestamp):  {}", date_in_local_tz.timestamp_millis());
+println!("date (in millisecond timestamp): {}", date_in_local_tz.timestamp_millis());
 println!("date (in microsecond timestamp): {}", date_in_local_tz.timestamp_micros());
 ```
 

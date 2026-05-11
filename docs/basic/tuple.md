@@ -34,7 +34,7 @@ println!("index 3: {:?}", tuple_a.3);
 
 ![tuple](img/tuple-1.png)
 
-Data pada `tuple_a` indeks ke-2 bertipe slice, untuk mengakses tiap elemennya bisa menggunakan notasi pengaksesan indeks array/slice seperti biasa.
+Elemen ke-3 `tuple_a` bertipe array, yang tiap elemennya bisa menggunakan notasi pengaksesan indeks array/slice seperti biasa.
 
 - Tuple `tuple_a.2` nilainya `["racing", "working out"]`
 - Tuple `tuple_a.2[0]` nilainya `"racing"`

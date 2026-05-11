@@ -97,7 +97,7 @@ bcrypt = "0.13"
 rand = "0.8.5"
 ```
 
-- Package [`bcrypt`](https://crates.io/keywords/bcrypt) adalah crate yang isinya banyak fungsi untuk kebutuhan enkripsi bcrypt
+- Package [`bcrypt`](https://crates.io/keywords/bcrypt) adalah crate yang isinya banyak fungsi untuk kebutuhan hashing password menggunakan bcrypt
 - Package [`rand`](https://crates.io/keywords/rand) berisi item untuk keperluan generate data random. Kita sudah beberapa kali menggunakan crate ini.
 
 Ok, sekarang kembali ke source code. Tulis isi fungsi `utilities::random::string` berikut:
@@ -152,9 +152,9 @@ mod utilities {
 }
 ```
 
-Dalam enkripsi menggunakan bcrypt ada dua hal yang penting diketahui, yang pertama adalah data yang akan di-hash (pada contoh di atas adalah `text`), dan *cost* atau biaya enkripsi dalam bentuk numerik. Pada praktik ini, `bcrypt::DEFAULT_COST` digunakan sebagai cost enkripsi.
+Dalam proses hashing password menggunakan bcrypt ada dua hal yang penting diketahui, yang pertama adalah data yang akan di-hash (pada contoh di atas adalah `text`), dan *cost* atau biaya hashing dalam bentuk numerik. Pada praktik ini, `bcrypt::DEFAULT_COST` digunakan sebagai cost hashing.
 
-Pengecekan apakah data terenkripsi adalah sama dengan data asli dilakukan menggunakan fungsi `bcrypt::verify`.
+Pengecekan apakah hasil hash cocok dengan data asli dilakukan menggunakan fungsi `bcrypt::verify`.
 
 Kedua fungsi `bcrypt::hash` dan `bcrypt::verify` menghasilkan data bertipe *generic result type* atau `Result<T, E>`. Tipe ini memiliki method bernama `unwrap` yang berguna untuk pengambilan result atau nilai.
 

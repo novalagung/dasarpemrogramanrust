@@ -12,7 +12,7 @@ Struct (kependekan dari *structure*) adalah tipe data custom yang dengannya kita
 
 Contoh analogi seperti sebuah mobil. Mobil memiliki roda, mesin, tempat kemudi, dan banyak lainnya. Mobil pada contoh ini adalah struct, sedang isi dari mobil tersebut biasa disebut dengan *attribute* atau *property* atau *field*.
 
-Selain property, mobil juga bisa melakukan aksi, contohnya seperti jalan, belok kanan, berhenti. Aksi tersebut pada contoh ini adalah yang disebut dengan *method*. Method sendiri adalah fungsi yang merupakan property sebuah struct.
+Selain property, mobil juga bisa melakukan aksi, contohnya seperti jalan, belok kanan, berhenti. Aksi tersebut pada contoh ini adalah yang disebut dengan *method*. Method sendiri adalah fungsi yang berasosiasi dengan sebuah struct.
 
 > Chapter ini fokus pada pembahasan struct beserta property-nya. Topik tentang method dibahas pada chapter selanjutnya, yaitu [Method](/basic/method).
 
@@ -32,14 +32,14 @@ Contoh, sebuah struct bernama `User` yang memiliki 4 buah property:
 
 - `name` bertipe `String`
 - `sign_in_count` bertipe numerik `u64`
-- `affliation` bertipe vektor `Vec<String>`
+- `affiliation` bertipe vektor `Vec<String>`
 - `active` bertipe boolean
 
 ```rust
 struct User {
     name: String,
     sign_in_count: u64,
-    affliation: Vec<String>,
+    affiliation: Vec<String>,
     active: bool,
 }
 ```
@@ -54,7 +54,7 @@ Struct merupakan tipe data data custom, yang berarti tipe data tersebut bisa dig
 struct User {
     name: String,
     sign_in_count: u64,
-    affliation: Vec<String>,
+    affiliation: Vec<String>,
     active: bool,
 }
 
@@ -62,7 +62,7 @@ fn main() {
     let user_one = User{
         name: String::from("Orgrim Doomhammer"),
         sign_in_count: 12,
-        affliation: vec![
+        affiliation: vec![
             String::from("Warchief of the Horde"),
             String::from("Blackrock Chieftain"),
             String::from("The Doomhammer"),
@@ -72,7 +72,7 @@ fn main() {
 
     println!("name: {}", user_one.name);
     println!("sign-in count: {}", user_one.sign_in_count);
-    println!("affliation: {:?}", user_one.affliation);
+    println!("affiliation: {:?}", user_one.affiliation);
     println!("is active? {}", user_one.active);
 }
 ```
@@ -97,7 +97,7 @@ Deklarasi variabel bertipe data struct mewajibkan isi masing-masing property har
 let user_one = User{
     name: String::from("Orgrim Doomhammer"),
     sign_in_count: 12,
-    affliation: vec![
+    affiliation: vec![
         String::from("Warchief of the Horde"),
         String::from("Blackrock Chieftain"),
         String::from("The Doomhammer"),
@@ -143,7 +143,7 @@ Sesuai anjuran di [halaman dokumentasi Rust](https://rust-lang.github.io/api-gui
 struct User {
     name: String,
     sign_in_count: u64,
-    affliation: Vec<String>,
+    affiliation: Vec<String>,
     active: bool,
 }
 ```
@@ -156,7 +156,7 @@ Penentuan *mutability* sebuah struct dilakukan dengan cara menambahkan keyword `
 let mut user_two: User = User{
     name: String::from("Varian Wrynn"),
     sign_in_count: 12,
-    affliation: vec![
+    affiliation: vec![
         String::from("High King of the Alliance"),
         String::from("King of Stormwind"),
         String::from("Champion of the Crimson Ring"),
@@ -165,16 +165,16 @@ let mut user_two: User = User{
 };
 
 user_two.name = String::from("Anduin Wrynn");
-user_two.affliation.pop();
+user_two.affiliation.pop();
 user_two.active = true;
 
 println!("name: {}", user_two.name);
 println!("sign-in count: {}", user_two.sign_in_count);
-println!("affliation: {:?}", user_two.affliation);
+println!("affiliation: {:?}", user_two.affiliation);
 println!("is active? {}", user_two.active);
 ```
 
-Pada contoh di atas, `user_two` adalah object struct yang bisa diubah nilainya (mutable). Perubahan nilai struct bisa dilakukan pada property, contohnya seperti property `name`, `affliation`, dan `active` yang dicontohkan diubah nilainya.
+Pada contoh di atas, `user_two` adalah object struct yang bisa diubah nilainya (mutable). Perubahan nilai struct bisa dilakukan pada property, contohnya seperti property `name`, `affiliation`, dan `active` yang dicontohkan diubah nilainya.
 
 Atau bisa juga perubahannya pada value struct itu sendiri, diganti dengan value baru.
 
@@ -182,7 +182,7 @@ Atau bisa juga perubahannya pada value struct itu sendiri, diganti dengan value 
 let mut user_two = User{
     name: String::from("Varian Wrynn"),
     sign_in_count: 12,
-    affliation: vec![
+    affiliation: vec![
         String::from("High King of the Alliance"),
         String::from("King of Stormwind"),
         String::from("Champion of the Crimson Ring"),
@@ -193,7 +193,7 @@ let mut user_two = User{
 user_two = User{
     name: String::from("Anduin Wrynn"),
     sign_in_count: 12,
-    affliation: vec![
+    affiliation: vec![
         String::from("High King of the Alliance"),
         String::from("King of Stormwind"),
     ],

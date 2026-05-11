@@ -14,11 +14,11 @@ O iya, perihal *visibility* dan *privacy* itu sendiri, kedua istilah tersebut di
 
 Pastikan sudah mempelajari 5 buah chapter tentang module system yang sebelumnya sudah dibahas. Kesemua chapter tersebut sangat berhubungan dengan pembahasan chapter ini.
 
-- [A.18. Module System ➜ Path & Item](/basic/path-item)
-- [A.19. Module System ➜ Package & Crate](/basic/package-crate)
-- [A.20. Module System ➜ Module](/basic/module-basic)
-- [A.21. Module System ➜ Inline Module](/basic/module-inline)
-- [A.22. Module System ➜ Scope & Akses Item](/basic/module-scope-item-access)
+- [Module System ➜ Path & Item](/basic/path-item)
+- [Module System ➜ Package & Crate](/basic/package-crate)
+- [Module System ➜ Module](/basic/module-basic)
+- [Module System ➜ Inline Module](/basic/module-inline)
+- [Module System ➜ Scope & Akses Item](/basic/module-scope-item-access)
 
 ## A.28.2. Default visibility
 
