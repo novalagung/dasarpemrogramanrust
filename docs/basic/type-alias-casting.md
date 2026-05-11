@@ -31,11 +31,9 @@ type Coordinate = Point;
 
 Struct `Point` di atas dibuat memiliki 2 item (`x` dan `y`). Dari struct tersebut dibuat tipe data baru bernama `Coordinate` yang merupakan alias dari `Point`.
 
-## A.27.2. Casting tipe data & alias
+## A.27.2. Casting tipe data numerik
 
-Casting adalah pengubahan tipe data tertentu ke tipe data lain yang keduanya masih compatible. Metode casting bisa diterapkan antara tipe data asli dan alias, dan juga antar tipe data scalar lainnya (yang memang compatible satu sama lain).
-
-Pada contoh berikut, tipe data `Inch` di cast ke tipe data `u64` menggunakan keyword `as`.
+Casting adalah pengubahan tipe data tertentu ke tipe data lain yang keduanya masih compatible. Pada contoh berikut, tipe data `Inch` di cast ke tipe data `u64` menggunakan keyword `as`.
 
 ```rust
 let height: Inch = 6;
@@ -47,29 +45,9 @@ println!("height_in_u64: {height_in_u64}");
 
 ![Type Alias Casting](img/type-alias-casting-1.png)
 
-Contoh lainnya bisa dilihat pada kode berikut, variabel `p` dibuat menggunakan struct `Point`, kemudian di-cast ke tipe `Coordinate` sebagai data mutable lalu diubah nilai itemnya, dan terakhir di-cast sekali lagi ke tipe `Point`.
-
-```rust
-let p = Point{ x: 0, y: 10 };
-println!("p: {:?}", p);
-
-let mut q: Coordinate = p as Coordinate;
-q.x = 12;
-println!("q: {:?}", q);
-
-let r: Point = q as Point;
-println!("r: {:?}", r);
-```
-
-![Type Alias Casting](img/type-alias-casting-2.png)
-
-> Operasi assignment dan type casting pada custom type `struct` membuat owner-nya berpindah. Perpindahan owner ini disebut dengan *move semantics*.
->
-> Lebih jelasnya perihal topik ini dibahas pada chapter [Ownership](/basic/ownership).
-
 ## A.27.3. Casting antar tipe scalar
 
-Casting antar tipe data numerik dilakukan dengan cara yang sama seperti casting antar tipe data dan alias. Contoh:
+Casting antar tipe data numerik dilakukan menggunakan keyword `as`, seperti pada contoh berikut:
 
 ```rust
 let number = 32;
@@ -135,6 +113,32 @@ Dari data tersebut bisa kita chain lagi dengan method `unwrap` dan `as_secs` unt
 
 > - Lebih jelasnya mengenai module `std::time` dibahas pada chapter [DateTime](/basic/datetime)
 > - Lebih jelasnya mengenai tipe data `Result` dibahas pada chapter [Tipe Data ➜ Result](/basic/result-type)
+
+## A.27.5. Type alias **bukan** casting
+
+Sekarang kita kembali ke contoh alias yang sudah dikenalkan di awal chapter. Tujuannya sederhana: membedakan mana yang benar-benar casting, dan mana yang sebenarnya hanya alias biasa.
+
+```rust
+let p = Point{ x: 0, y: 10 };
+println!("p: {:?}", p);
+
+let mut q: Coordinate = p;
+q.x = 12;
+println!("q: {:?}", q);
+
+let r: Point = q;
+println!("r: {:?}", r);
+```
+
+![Type Alias Casting](img/type-alias-casting-2.png)
+
+Tipe `Coordinate` merupakan alias dari `Point`, jadi di sini **tidak ada casting**. Yang terjadi hanya assignment biasa, karena `Coordinate` dan `Point` memang tipe yang sama. Jadi meskipun bentuk penulisannya mirip, ini bukan merupakan proses konversi.
+
+> Inti contoh di atas adalah: `Point` dan `Coordinate` adalah tipe yang sama. Karena itu, operasi assignment tetap mengikuti aturan ownership biasa. Pada tipe non-`Copy`, value akan berpindah owner ketika di-assign.
+>
+> Lebih jelasnya perihal topik ini dibahas pada chapter [Ownership](/basic/ownership).
+
+Kesimpulan dari pembahasan chapter ini: `type alias` hanya memberi nama lain untuk tipe yang sama, sedangkan `casting` adalah proses mengubah satu tipe numerik ke tipe numerik lain.
 
 ---
 
