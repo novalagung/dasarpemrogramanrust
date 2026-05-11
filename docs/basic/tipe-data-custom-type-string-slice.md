@@ -101,7 +101,7 @@ println!("{str6}");
 // output ➜ my phone is Pixel 6
 ```
 
-Parameter pertama menentukan posisi indeks string yang disisipkan.
+Parameter pertama adalah **indeks byte** (bukan indeks karakter) tempat string disisipkan. Untuk teks ASCII, seperti huruf alfabet biasa, indeks byte umumnya sama dengan indeks karakter. Namun untuk teks non-ASCII, satu karakter bisa terdiri dari beberapa byte, jadi indeks byte yang jatuh di tengah karakter multi-byte akan menyebabkan panic.
 
 - String `Pixel 6` pada indeks 0 disisipi string `my phone`, hasilnya `my phonePixel 6`
 - String `my phonePixel 6` pada indeks 8 disisipi string ` is `, hasilnya `my phone is Pixel 6`
